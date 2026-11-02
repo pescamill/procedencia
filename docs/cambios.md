@@ -1,5 +1,23 @@
 # Cambios
 
+## Iteración 11 · 2 de noviembre de 2026
+
+Más fácil para los ojos: menos contraste, letra más fina, colores empolvados y superficies como ventanas.
+
+### Qué cambió
+
+- **Tipografía.** Los títulos usan Fraunces en su versión suave, con curvas redondeadas y un peso más ligero. El texto usa Inter, que es limpia y fácil de leer en pantalla. Las dos se cargan de Google Fonts y, si no cargan, el sitio usa las fuentes anteriores.
+- **Colores suaves.** El texto ya no es casi negro sobre crema: el contraste baja de 12.6:1 a 10.3:1 en modo claro y de 15:1 a cerca de 11:1 en oscuro, sin bajar de 4.5:1 en ningún texto. El acento pasa de vino a rosa empolvado, y el jade y el azul se suavizan. Los colores de verificación no cambian, porque ya estaban validados.
+- **Ventanas de vidrio.** La cabecera, el cuadro de datos, las cifras de la portada, los paneles, los diagramas y los avisos son translúcidos, con un borde de luz arriba. Detrás hay manchas de color muy tenues que el vidrio difumina. Las tarjetas tienen un reflejo diagonal que cruza al pasar el cursor. Las rejillas grandes no difuminan el fondo, para que el teléfono no se ponga lento.
+- **Sin franjas pesadas.** El manifiesto de Aportes ya no es una franja casi negra, y la «Postura» de la portada ya no es una franja roja: los dos son ventanas de vidrio claras, con un trazo de color arriba, texto en tinta y enlaces en rosa. Las etiquetas «Cambió al mundo» pasan de café oscuro a uno más suave; sobre las fotos son de vidrio esmerilado.
+- **Sin grecas.** El borde de grecas se reemplazó por un trazo fino y abstracto en degradado (rosa, ocre, jade y azul) con un halo difuso, tanto en la cabecera y el pie como en el manifiesto. Se borró `sitio/img/borde.svg`.
+
+### Casos de uso
+
+- **Leer mucho rato.** El contraste más bajo y la letra más fina cansan menos la vista, sobre todo en modo oscuro.
+- **Compartir la portada.** La página se ve más moderna en capturas y en redes, sin perder el tono cálido.
+- **Usarlo en el teléfono.** El vidrio va donde importa (cabecera y cuadro de datos), y el desplazamiento sigue fluido.
+
 ## Iteración 10 · 2 de noviembre de 2026
 
 La ficha, con forma de artículo de enciclopedia. Tiene el mismo contenido, pero menos amontonado.

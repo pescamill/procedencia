@@ -65,7 +65,7 @@ p + p { margin-top: .8em; }
 .muted { color: var(--muted); }
 .small { font-size: 14px; }
 .serif { font-family: var(--serif); }
-.border { height: 12px; background: url("img/borde.svg") repeat-x left center; background-size: 72px 12px; }
+.border { height: 12px; background: var(--trazo); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Cabecera */
@@ -645,7 +645,7 @@ section.block.alt + section.block { border-top: 0; }
 
 /* Manifiesto de la página de aportes */
 .manifiesto { background: var(--deep); color: var(--deep-ink); padding: 40px 0 34px; position: relative; }
-.manifiesto::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: url("img/borde.svg") repeat-x left center; background-size: 72px 12px; opacity: .9; }
+.manifiesto::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: var(--trazo); opacity: .9; }
 .manifiesto .eyebrow { color: var(--ochre); }
 .m-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px 48px; }
 .m-txt { font: 500 21px/1.45 var(--serif); margin-top: 8px; }
@@ -912,3 +912,145 @@ section.block.alt { border: 0; }
   .enc .footnotes { columns: 1; }
 }
 @media print { .enc-nav, .enc-enlinea { display: none; } .infobox { box-shadow: 0 0 0 1px #999; } }
+
+/* ---------------------------------------------------------------- Iteración 11: suave y de vidrio
+   Menos contraste, tipografía más fina (Fraunces suave para títulos, Inter para el texto),
+   colores empolvados y superficies como ventanas: translúcidas, con un borde de luz y un reflejo.
+   Las grecas se cambian por un trazo abstracto de color. Los colores de verificación no cambian. */
+:root {
+  --paper: #f3efe8; --surface: #fbf9f5; --sand: #ebe5da; --sand-2: #e2dbcd;
+  --ink: #3b3732; --ink-2: #5b544b; --muted: #71675b; --line: #ddd5c7;
+  --accent: #9a4d56; --accent-hover: #7c3b44; --accent-soft: #f1e3e1;
+  --jade: #4b7262; --blue: #3c687a; --highlight: #efe2bd;
+  --land: #e6ded0; --land-mx: #d7c8ab; --water: #f0ebe2; --border-land: #fbf9f5;
+  --serif: "Fraunces", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Inter", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --glass: color-mix(in srgb, var(--surface) 66%, transparent);
+  --glass-fuerte: color-mix(in srgb, var(--surface) 82%, transparent);
+  --glass-borde: inset 0 1px 0 rgba(255,255,255,.75), inset 0 0 0 1px rgba(255,255,255,.4), 0 0 0 1px rgba(59,55,50,.06);
+  --reflejo: linear-gradient(118deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,.12) 26%, rgba(255,255,255,0) 42%);
+  --sombra-suave: 0 1px 2px rgba(59,55,50,.04), 0 12px 32px -8px rgba(59,55,50,.12);
+  --trazo: linear-gradient(90deg, #c98a92, #d9b26f 30%, #8fb5a2 62%, #8aaec0 85%, #b79ac4);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1c1b19; --surface: #252320; --sand: #2c2a26; --sand-2: #34312c;
+    --ink: #dcd5c9; --ink-2: #c3baac; --muted: #9a9081; --line: #38342f;
+    --accent: #d69ba1; --accent-hover: #e6b3b8; --accent-soft: #382a2b;
+    --jade: #93b8a6; --blue: #8db5c4; --highlight: #463c27;
+    --land: #2e2b27; --land-mx: #4a4236; --water: #201f1c; --border-land: #1c1b19;
+    --glass: color-mix(in srgb, var(--surface) 58%, transparent);
+    --glass-fuerte: color-mix(in srgb, var(--surface) 78%, transparent);
+    --glass-borde: inset 0 1px 0 rgba(255,255,255,.07), inset 0 0 0 1px rgba(255,255,255,.05), 0 0 0 1px rgba(0,0,0,.25);
+    --reflejo: linear-gradient(118deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.02) 26%, rgba(255,255,255,0) 42%);
+    --sombra-suave: 0 1px 2px rgba(0,0,0,.2), 0 14px 36px -10px rgba(0,0,0,.5);
+    --trazo: linear-gradient(90deg, #a8646d, #b08a48 30%, #5f8a76 62%, #5d8597 85%, #8a6f99);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1c1b19; --surface: #252320; --sand: #2c2a26; --sand-2: #34312c;
+  --ink: #dcd5c9; --ink-2: #c3baac; --muted: #9a9081; --line: #38342f;
+  --accent: #d69ba1; --accent-hover: #e6b3b8; --accent-soft: #382a2b;
+  --jade: #93b8a6; --blue: #8db5c4; --highlight: #463c27;
+  --land: #2e2b27; --land-mx: #4a4236; --water: #201f1c; --border-land: #1c1b19;
+  --glass: color-mix(in srgb, var(--surface) 58%, transparent);
+  --glass-fuerte: color-mix(in srgb, var(--surface) 78%, transparent);
+  --glass-borde: inset 0 1px 0 rgba(255,255,255,.07), inset 0 0 0 1px rgba(255,255,255,.05), 0 0 0 1px rgba(0,0,0,.25);
+  --reflejo: linear-gradient(118deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.02) 26%, rgba(255,255,255,0) 42%);
+  --sombra-suave: 0 1px 2px rgba(0,0,0,.2), 0 14px 36px -10px rgba(0,0,0,.5);
+  --trazo: linear-gradient(90deg, #a8646d, #b08a48 30%, #5f8a76 62%, #5d8597 85%, #8a6f99);
+}
+
+/* Fondo: manchas de color muy tenues, fijas, para que el vidrio tenga algo que difuminar */
+body {
+  font-family: var(--sans); font-size: 16px; line-height: 1.7; letter-spacing: -.003em; color: var(--ink);
+  background:
+    radial-gradient(900px 620px at 8% -6%, color-mix(in srgb, var(--accent) 11%, transparent), transparent 62%),
+    radial-gradient(820px 600px at 98% 12%, color-mix(in srgb, var(--jade) 11%, transparent), transparent 60%),
+    radial-gradient(1000px 760px at 55% 108%, color-mix(in srgb, var(--ochre) 9%, transparent), transparent 62%),
+    var(--paper);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4 { font-weight: 500; letter-spacing: -.02em; font-variation-settings: "SOFT" 100; }
+h1 { font-weight: 450; letter-spacing: -.03em; }
+.eyebrow, .enc-lbl, .state, .tag { font-weight: 600; }
+.brand { font-weight: 500; }
+
+/* Las grecas se van: un trazo fino de color, abstracto, con un halo difuso */
+.border { position: relative; height: 1px; background: var(--trazo); opacity: .75; }
+.border::after { content: ""; position: absolute; left: 10%; right: 10%; top: 0; height: 14px; background: var(--trazo); filter: blur(14px); opacity: .35; pointer-events: none; }
+.manifiesto::before { height: 2px; background: var(--trazo); background-size: auto; opacity: .8; }
+
+/* Ventanas: superficies translúcidas con borde de luz y un reflejo diagonal */
+header.top { background: color-mix(in srgb, var(--paper) 62%, transparent); -webkit-backdrop-filter: saturate(1.4) blur(18px); backdrop-filter: saturate(1.4) blur(18px); border-bottom: 0; box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--line) 55%, transparent); }
+.card, .numbers dl > div, .panel, .diagrama, .enc-mundo, .infobox, .case, .route, .pueblo, .amb, .name, .dt-tipo,
+.enc-enlinea .enc-toc, .counter, .matrix-wrap, .src-table-wrap, .def, .principle, .system .ent, .axis, .linea-txt > div, .maya-pos > div {
+  background: var(--glass); -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: var(--glass-borde), var(--sombra-suave);
+}
+.infobox, .tip { background: var(--glass-fuerte); }
+.tip { -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: var(--glass-borde), var(--sombra-suave); border: 0; }
+/* El reflejo: solo en las ventanas principales */
+.card, .numbers dl > div, .infobox, .case, .route, .pueblo, .amb { position: relative; isolation: isolate; }
+.card::after, .numbers dl > div::after, .infobox::after, .route::after, .pueblo::after, .amb::after {
+  content: ""; position: absolute; inset: 0; z-index: 2; border-radius: inherit; pointer-events: none;
+  background: var(--reflejo); background-size: 220% 100%; background-position: 100% 0; transition: background-position .9s ease;
+}
+.case::after { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: inherit; pointer-events: none; background: var(--reflejo); background-size: 220% 100%; background-position: 100% 0; transition: background-position .9s ease; }
+.card:hover::after, .case:hover::after, .route:hover::after, .pueblo:hover::after, .amb:hover::after { background-position: 0 0; }
+.card:hover, .case:hover, .route:hover, .pueblo:hover, .amb:hover, .dt-tipo:hover, a.name:hover { box-shadow: var(--glass-borde), 0 2px 4px rgba(59,55,50,.05), 0 22px 48px -12px rgba(59,55,50,.22); }
+.card.deslinde { background: var(--glass); box-shadow: var(--glass-borde), var(--sombra-suave); }
+
+/* Controles suaves */
+.btn, .chip, .search input, .theme, .lang { background: var(--glass); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: var(--glass-borde); }
+.btn.primary { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 88%, #fff), var(--accent)); color: var(--accent-ink); box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 6px 16px -6px color-mix(in srgb, var(--accent) 60%, transparent); }
+.btn:hover, .chip:hover { box-shadow: var(--glass-borde), 0 0 0 1px color-mix(in srgb, var(--accent) 45%, transparent); }
+.search input:focus { background: var(--glass-fuerte); box-shadow: var(--glass-borde), 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+nav.main a[aria-current] { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.tag { font-size: 10.5px; }
+
+/* Ficha: el texto respira un poco más */
+.enc-lead { font-weight: 400; color: var(--ink); }
+.enc-veredicto { border-left-color: color-mix(in srgb, var(--accent) 70%, transparent); }
+.enc-veredicto > p:not(.enc-meta):not(.abst) { font-weight: 400; }
+.enc-sec h2 { border-bottom-color: color-mix(in srgb, var(--line) 70%, transparent); }
+.enc-toc a { border-left-color: color-mix(in srgb, var(--line) 80%, transparent); }
+.infobox th { font-weight: 500; }
+
+/* Fotos: un velo de vidrio en el pie, en vez de una sombra oscura */
+.foto-wrap::after { background: linear-gradient(180deg, transparent 52%, rgba(20,18,16,.42)); }
+
+@media (prefers-reduced-motion: reduce) { .card::after, .case::after, .route::after, .pueblo::after, .amb::after { transition: none; } }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .card, .numbers dl > div, .panel, .diagrama, .enc-mundo, .infobox, .case, .route, .pueblo, .amb, .name, .dt-tipo, .tip, .btn, .chip { background: var(--surface); }
+}
+footer.bottom { background: color-mix(in srgb, var(--surface) 45%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+/* Las rejillas con muchas tarjetas no difuminan el fondo (es costoso en el teléfono); basta la translucidez. */
+.card, .case, .route, .pueblo, .amb, .name, .dt-tipo { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--glass-fuerte); }
+
+/* Bloques que eran franjas oscuras o de color sólido: ahora ventanas de vidrio tenues, con el texto en tinta */
+.manifiesto, .postura { background: none; color: var(--ink); padding: 28px 0 8px; }
+.manifiesto::before { display: none; }
+.manifiesto > .wrap, .postura > .wrap {
+  position: relative; isolation: isolate; overflow: hidden; padding: 30px 34px 28px; border-radius: 22px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, var(--glass)), color-mix(in srgb, var(--jade) 6%, var(--glass)));
+  -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: var(--glass-borde), var(--sombra-suave);
+}
+.manifiesto > .wrap::before, .postura > .wrap::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--trazo); opacity: .7; }
+.manifiesto > .wrap::after, .postura > .wrap::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: var(--reflejo); }
+.manifiesto .eyebrow, .postura .eyebrow { color: var(--accent); opacity: 1; }
+.m-txt { font-weight: 400; color: var(--ink); }
+.m-pie a, .postura a { color: var(--accent); font-weight: 600; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+.m-pie a:hover, .postura a:hover { color: var(--accent-hover); }
+.postura p { color: var(--ink-2); }
+@media (max-width: 820px) {
+  .manifiesto > .wrap, .postura > .wrap { margin: 0 16px; padding: 22px 20px; border-radius: 18px; }
+  .m-grid { grid-template-columns: minmax(0, 1fr); }
+  .m-txt { font-size: 18px; }
+}
+/* Alcance: el café oscuro se aclara; sobre las fotos, una pastilla de vidrio esmerilado */
+:root:not([data-theme="dark"]) .alc.mundial, :root:not([data-theme="dark"]) .chip .alc-sw.mundial { background: #85633f; color: #fbf9f5; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .alc.mundial, :root:not([data-theme="light"]) .chip .alc-sw.mundial { background: var(--seq-5); color: #1c1b19; } }
+:root .foto-wrap .alc, :root:not([data-theme]) .foto-wrap .alc.mundial, :root[data-theme] .foto-wrap .alc.mundial, :root .foto-wrap .alc.local { background: rgba(251,249,245,.72); color: #3b3732; border-color: transparent; -webkit-backdrop-filter: blur(10px) saturate(1.3); backdrop-filter: blur(10px) saturate(1.3); box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 2px 8px rgba(0,0,0,.18); }

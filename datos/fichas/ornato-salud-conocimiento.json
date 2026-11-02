@@ -574,7 +574,9 @@
   "veredicto": {
    "texto": "La expedición del médico Francisco Hernández catalogó hacia 1570 unas 3,000 plantas a partir del saber de médicos indígenas.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "bustamante2002"
+   ]
   },
   "afirmaciones": [],
   "originales": [
@@ -588,9 +590,7 @@
    }
   ],
   "nombres_mundo": [],
-  "pendientes": [
-   "Fuente académica (p. ej., Varey, 2000)."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "cruz-badiano"
   ],
@@ -877,13 +877,13 @@
   "veredicto": {
    "texto": "Magnolia mexicana, «flor del corazón», se usaba como medicina cardiaca.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "macdougall1965"
+   ]
   },
   "afirmaciones": [],
   "nombres_mundo": [],
-  "pendientes": [
-   "Fuente farmacológica o etnobotánica."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "cruz-badiano"
   ],

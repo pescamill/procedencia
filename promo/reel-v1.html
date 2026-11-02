@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Procedencia · reel</title>
+<script src="reel-datos.js"></script>
+<style>
+  /* 1080×1920, cuadro por cuadro con window.render(t). Lo importante queda entre y 220 y 1560
+     para que la interfaz de Reels no lo tape. Papel y tinta, con el guinda del sitio y un solo
+     verde: el de «fuente comprobada». */
+  :root {
+    --paper: #f4efe4; --paper-2: #ebe4d4; --ink: #1d1916; --ink-2: #5b524a; --muted: #8b8176; --rule: #d3c9b6;
+    --accent: #812d37; --accent-2: #a8434f; --ochre: #b8862f; --ok: #2f7d4f; --night: #171311;
+    --serif: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --sans: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
+    --mono: Menlo, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--paper); }
+  body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+  #cam { position: absolute; inset: 0; }
+  .scene { position: absolute; inset: 0; display: none; padding: 0 90px; }
+  .paper { background: var(--paper); }
+  .night { background: var(--night); color: var(--paper); }
+  .wine { background: var(--accent); color: #fff6ee; }
+  /* grano de papel */
+  #grain { position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+
+  .r { will-change: transform, opacity; }
+  .w > span { display: inline-block; white-space: pre; }
+  .caps { font: 700 26px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; }
+  .mono { font-family: var(--mono); }
+
+  /* encabezado de página, como un anuario */
+  .run { position: absolute; left: 90px; right: 90px; top: 236px; display: flex; justify-content: space-between; align-items: baseline;
+    font: 700 22px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--ink-2); }
+  .run::after { content: ""; position: absolute; left: 0; right: 0; top: 40px; height: 2px; background: var(--ink); transform-origin: left;
+    transform: scaleX(var(--rule, 1)); }
+  .folio { position: absolute; left: 90px; right: 90px; top: 1580px; display: flex; justify-content: space-between;
+    font: 500 21px/1 var(--mono); color: var(--muted); }
+
+  /* 1 · lo que se dice */
+  .myth { position: absolute; left: 90px; right: 90px; top: 700px; }
+  .myth .who { font: 700 24px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 40px; }
+  .myth .q { font: italic 400 112px/1.06 var(--serif); letter-spacing: -.02em; color: var(--ink); }
+  .myth .q .caret { display: inline-block; width: 6px; height: .9em; background: var(--accent); vertical-align: -.1em; margin-left: 6px; }
+  .myth .mark { position: absolute; left: -10px; top: -150px; font: 400 360px/1 var(--serif); color: var(--rule); }
+
+  /* 2 · ¿estás seguro? */
+  #q .big { position: absolute; left: 70px; right: 70px; top: 700px; font: 600 178px/0.98 var(--serif); letter-spacing: -.04em; }
+  #q .big em { color: #e9a4ac; font-style: italic; }
+  #q .sub { position: absolute; left: 90px; right: 90px; top: 1180px; font: 400 44px/1.35 var(--sans); color: #cdbfb0; }
+
+  /* láminas de datos */
+  .plate .lie { position: absolute; left: 90px; right: 90px; top: 316px; font: italic 400 40px/1.2 var(--serif); color: var(--muted); }
+  .plate .lie s { text-decoration: none; position: relative; }
+  .plate .lie s::after { content: ""; position: absolute; left: -4px; right: -4px; top: 54%; height: 5px; background: var(--accent);
+    transform-origin: left; transform: scaleX(var(--k, 0)); }
+  .plate .map { position: absolute; left: 60px; top: 390px; width: 960px; height: 630px; }
+  .plate .map svg { width: 100%; height: 100%; overflow: hidden; }
+  .plate .pinlab { position: absolute; font: 700 23px/1.2 var(--sans); letter-spacing: .06em; color: var(--accent); white-space: nowrap;
+    background: var(--paper); padding: 6px 12px; border-radius: 8px; box-shadow: 0 0 0 2px var(--accent) inset; }
+  .plate .num { position: absolute; left: 90px; right: 90px; top: 1000px; font: 600 150px/1 var(--serif); letter-spacing: -.035em; color: var(--ink); }
+  .plate .num i { font-style: italic; color: var(--accent); }
+  .plate .say { position: absolute; left: 90px; right: 90px; top: 1180px; font: 400 52px/1.22 var(--serif); letter-spacing: -.005em; }
+  .plate .say b { font-weight: 600; color: var(--accent); }
+  .plate .src { position: absolute; left: 90px; right: 90px; top: 1440px; display: flex; gap: 18px; align-items: center;
+    padding-top: 22px; border-top: 2px solid var(--rule); }
+  .plate .src .cite { font: 500 25px/1.3 var(--mono); color: var(--ink-2); }
+  .ok { display: inline-flex; align-items: center; gap: 10px; flex: none; padding: 10px 18px; border-radius: 999px;
+    background: #e3efe6; color: var(--ok); font: 700 22px/1 var(--sans); letter-spacing: .04em; }
+  .ok::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--ok); }
+  .stamp { position: absolute; right: 90px; top: 430px; padding: 18px 28px; border: 7px solid var(--accent); border-radius: 14px;
+    color: var(--accent); font: 800 46px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; background: rgba(244,239,228,.82);
+    transform-origin: center; }
+
+  /* nombres que borran */
+  #w .t, #nn .t, #h .t { position: absolute; left: 90px; right: 90px; top: 760px; font: 600 104px/1.04 var(--serif); letter-spacing: -.03em; }
+  #w .t em, #nn .t em, #h .t em { font-style: italic; color: var(--accent); }
+  #nn .t em, #h .t em { color: #e9a4ac; }
+  #n .row { position: absolute; left: 90px; right: 90px; display: flex; align-items: baseline; gap: 26px; }
+  #n .row .a { font: 600 88px/1 var(--serif); letter-spacing: -.03em; white-space: nowrap; }
+  #n .row .b { white-space: nowrap; font: 700 32px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-2); }
+
+  /* método */
+  .kick { position: absolute; left: 90px; right: 90px; top: 300px; font: 700 26px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+  .head { position: absolute; left: 90px; right: 90px; top: 360px; font: 600 92px/1.04 var(--serif); letter-spacing: -.03em; }
+  .card { position: absolute; left: 90px; right: 90px; background: #fffcf6; border-radius: 30px; padding: 48px 46px;
+    box-shadow: 0 30px 70px rgba(29,25,22,.14), 0 2px 8px rgba(29,25,22,.06); }
+  .card .eb { font: 700 22px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 22px; }
+  .card .cl { font: 400 50px/1.24 var(--serif); }
+  .card .tags { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .tag { padding: 10px 18px; border-radius: 999px; font: 700 21px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; background: #e8e1d2; color: var(--ink-2); }
+  .card .foot { margin-top: 30px; padding-top: 24px; border-top: 2px dashed var(--rule); font: 500 25px/1.4 var(--mono); color: var(--ink-2); }
+  .note { position: absolute; font: 700 24px/1.2 var(--sans); color: var(--accent); letter-spacing: .04em; display: flex; align-items: center; gap: 14px; }
+  .note::before { content: ""; width: 60px; height: 3px; background: var(--accent); }
+  .stat { position: absolute; left: 90px; right: 90px; display: flex; align-items: baseline; gap: 28px; border-bottom: 2px solid var(--rule); padding-bottom: 26px; }
+  .stat .n { font: 600 170px/1 var(--serif); letter-spacing: -.04em; min-width: 380px; }
+  .stat .l { font: 400 40px/1.25 var(--sans); color: var(--ink-2); }
+  .pill { position: absolute; left: 90px; display: flex; align-items: center; gap: 26px; }
+  .pill .tag { font-size: 34px; padding: 18px 30px; }
+  .pill .d { font: 400 38px/1.3 var(--sans); color: var(--ink-2); }
+
+  /* cómo entrar */
+  .bar { position: absolute; left: 90px; right: 90px; top: 420px; height: 112px; border-radius: 56px; background: #fffcf6;
+    box-shadow: 0 20px 50px rgba(29,25,22,.12); display: flex; align-items: center; padding: 0 44px; gap: 22px; font: 500 44px/1 var(--sans); }
+  .bar svg { width: 40px; height: 40px; flex: none; }
+  .bar .url .caret { display: inline-block; width: 4px; height: 46px; background: var(--accent); vertical-align: -8px; margin-left: 4px; }
+  .phone { position: absolute; left: 50%; width: 560px; height: 1060px; margin-left: -280px; border-radius: 74px; background: #121010; padding: 18px;
+    box-shadow: 0 40px 90px rgba(29,25,22,.3); }
+  .phone .scr { width: 100%; height: 100%; border-radius: 58px; overflow: hidden; background: var(--paper); position: relative; }
+  .phone img { width: 100%; display: block; position: absolute; left: 0; top: 0; }
+  .step { position: absolute; display: flex; align-items: center; gap: 18px; background: var(--accent); color: #fff; padding: 18px 28px 18px 18px;
+    border-radius: 999px; font: 700 34px/1 var(--sans); box-shadow: 0 16px 40px rgba(129,45,55,.35); white-space: nowrap; }
+  .step b { width: 54px; height: 54px; border-radius: 50%; background: #fff; color: var(--accent); display: grid; place-items: center; font-size: 30px; }
+
+  /* cierre */
+  #e .logo { position: absolute; left: 50%; top: 520px; width: 200px; height: 200px; margin-left: -100px; }
+  #e .word { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font: 600 150px/1 var(--serif); letter-spacing: -.035em; }
+  #e .tagl { position: absolute; left: 110px; right: 110px; top: 950px; text-align: center; font: italic 400 50px/1.3 var(--serif); color: #f6dfe2; }
+  #e .url { position: absolute; left: 70px; right: 70px; top: 1170px; text-align: center; font: 700 52px/1 var(--sans); letter-spacing: .01em;
+    background: #fff6ee; color: var(--accent); border-radius: 999px; padding: 32px 20px; }
+  #e .free { position: absolute; left: 0; right: 0; top: 1330px; text-align: center; font: 700 28px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #f6dfe2; }
+  #e .by { position: absolute; left: 0; right: 0; top: 1420px; text-align: center; font: 500 30px/1 var(--mono); color: #e7c3c8; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="cam">
+
+  <!-- 1 · lo que se dice -->
+  <section class="scene paper" id="m1"><div class="myth"><div class="mark">“</div><div class="who r">Lo que se dice</div><div class="q" data-type="El chocolate es de Suiza."></div></div></section>
+  <section class="scene paper" id="m2"><div class="myth"><div class="mark">“</div><div class="who r">Lo que se dice</div><div class="q" data-type="La palta y el choclo son de Perú."></div></div></section>
+  <section class="scene paper" id="m3"><div class="myth"><div class="mark">“</div><div class="who r">Lo que se dice</div><div class="q" data-type="Pero si México no ha aportado nada al mundo…"></div></div></section>
+  <section class="scene paper" id="m4"><div class="myth"><div class="mark">“</div><div class="who r">Lo que se dice</div><div class="q" data-type="México es tercer mundo…"></div></div></section>
+  <section class="scene paper" id="m5"><div class="myth"><div class="mark">“</div><div class="who r">Lo que se dice</div><div class="q" data-type="México es país de poca cultura y logros…"></div></div></section>
+
+  <!-- 2 · el giro -->
+  <section class="scene night" id="q"><div class="big r">¿Estás <em>seguro?</em></div><div class="sub w">Esto dicen las pruebas. Cada dato, con su fuente.</div></section>
+
+  <!-- 3 · láminas (se llenan desde LAMINAS) -->
+  <div id="laminas"></div>
+
+  <section class="scene paper" id="w"><div class="t w">¿Entonces por qué <em>casi nadie</em> lo sabe?</div></section>
+  <section class="scene night" id="n"></section>
+  <section class="scene night" id="nn"><div class="t w">Al mundo le llegó con <em>otro nombre.</em></div></section>
+  <section class="scene night" id="h"><div class="t w">¿Y cómo sé que <em>es verdad?</em></div></section>
+
+  <!-- 4 · el método -->
+  <section class="scene paper" id="k1">
+    <div class="kick r">El método</div>
+    <div class="head w">Cada afirmación lleva su fuente.</div>
+    <div class="card r" style="top:700px">
+      <div class="eb">Maíz · veredicto</div>
+      <div class="cl">El maíz se domesticó una sola vez, a partir del teocintle de la cuenca del Balsas.</div>
+      <div class="tags"><span class="tag t1">Consenso</span><span class="ok t2">Fuente comprobada</span></div>
+      <div class="foot t3">Matsuoka et al. (2002). PNAS 99(9).<br>doi:10.1073/pnas.052125199</div>
+    </div>
+    <div class="note n1" style="left:90px;top:1330px">Cuánto acuerdo hay</div>
+    <div class="note n2" style="left:90px;top:1390px">Se comprobó en línea, en Crossref</div>
+    <div class="note n3" style="left:90px;top:1450px">La fuente, para que la revises tú</div>
+  </section>
+
+  <section class="scene paper" id="k2">
+    <div class="kick r">Comprobado por un programa, no de memoria</div>
+    <div class="stat r" style="top:520px"><span class="n" data-to="320">0</span><span class="l">afirmaciones, cada una con su grado de acuerdo</span></div>
+    <div class="stat r" style="top:800px"><span class="n" data-to="187">0</span><span class="l">fuentes: artículos, libros, patentes y documentos oficiales</span></div>
+    <div class="stat r" style="top:1080px"><span class="n" data-to="173" style="color:var(--ok)">0</span><span class="l">comprobadas en línea: cada DOI en Crossref, cada enlace abierto</span></div>
+  </section>
+
+  <section class="scene paper" id="k3">
+    <div class="kick r">No es propaganda</div>
+    <div class="head w">Lo que no es de aquí, también se dice.</div>
+    <div class="card r" style="top:720px">
+      <div class="eb">Guayaba · deslinde</div>
+      <div class="cl">Su domesticación empezó en la Amazonia brasileña. México tiene su propio acervo, pero la evidencia más antigua no está aquí.</div>
+      <div class="foot">Arévalo-Marín et al. (2024). Scientific Reports 14.</div>
+    </div>
+    <div class="stamp" style="top:640px;right:80px">No se reclama</div>
+  </section>
+
+  <section class="scene paper" id="k4">
+    <div class="kick r">Y se dice cuánto se sabe</div>
+    <div class="pill" style="top:470px"><span class="tag" style="background:#dfeee4;color:var(--ok)">Consenso</span><span class="d">acuerdo amplio</span></div>
+    <div class="pill" style="top:640px"><span class="tag" style="background:#f3e6c9;color:#8a6420">Sustentada</span><span class="d">con matices por precisar</span></div>
+    <div class="pill" style="top:810px"><span class="tag" style="background:#f2dde0;color:var(--accent)">En debate</span><span class="d">hipótesis en competencia</span></div>
+    <div class="head w" style="top:1060px;font-size:76px">Y los errores se corrigen en público: <em style="color:var(--accent)">18</em> en la fe de erratas.</div>
+  </section>
+
+  <!-- 5 · cómo entrar -->
+  <section class="scene paper" id="a1">
+    <div class="kick r">Cómo entrar</div>
+    <div class="bar r"><svg viewBox="0 0 24 24" fill="none" stroke="#8b8176" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="url"></span></div>
+    <div class="phone r" style="top:600px;height:860px"><div class="scr"><img src="capturas/inicio-recorte.png" alt=""></div></div>
+    <div class="step s1" style="left:50%;margin-left:-230px;top:1490px"><b>1</b>Abre el sitio: es gratis</div>
+  </section>
+
+  <section class="scene paper" id="a2">
+    <div class="phone r" style="top:250px;height:960px"><div class="scr"><img src="capturas/maiz-recorte.png" alt=""></div></div>
+    <div class="step s2" style="left:90px;top:1250px"><b>2</b>Busca cualquier aporte</div>
+    <div class="step s3" style="left:90px;top:1360px"><b>3</b>Revisa su fuente</div>
+    <div class="step s4" style="left:90px;top:1470px"><b>4</b>Léelo en español o inglés</div>
+  </section>
+
+  <!-- 6 · cierre -->
+  <section class="scene wine" id="e">
+    <svg class="logo r" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="7" fill="#fff6ee"/><path class="arc" d="M10 23c0-6.5 2.7-11.5 6-13 3.3 1.5 6 6.5 6 13" fill="none" stroke="#812d37" stroke-width="2.4" stroke-linecap="round" pathLength="1"/><circle cx="16" cy="15.5" r="2.2" fill="#812d37"/></svg>
+    <div class="word r">Procedencia</div>
+    <div class="tagl r">Lo que el mundo recibió de México, y lo que se les quitó.</div>
+    <div class="url r">pescamill.github.io/procedencia</div>
+    <div class="free r">Gratis · Español e inglés · Datos abiertos</div>
+    <div class="by r">@pescamill</div>
+  </section>
+
+</div><div id="grain"></div><div id="flash"></div></div>
+
+<script>
+// ---------------------------------------------------------------- tiempo
+const R = window.REEL;
+const BEATS = R.beats;
+const snap = (t) => BEATS.reduce((a, b) => (Math.abs(b - t) < Math.abs(a - t) ? b : a), BEATS[0]);
+window.DURATION = 89.6;
+
+const LAMINAS = [
+  { id: "f1", n: "01", amb: "Alimentación", lie: "«El chocolate es de Suiza»", ficha: "cacao-chocolate", lab: "Paso de la Amada, Chiapas",
+    num: "1900 <i>a. C.</i>", say: "Ya había cacao en vasijas de Chiapas. La planta es amazónica; <b>la bebida de chocolate es mesoamericana.</b>",
+    stamp: "Mesoamericano", cite: "Powis et al. (2007). Antiquity 81(314) · Zarrillo et al. (2018)" },
+  { id: "f2", n: "02", amb: "Alimentación", lie: "«La palta… es de Perú»", ficha: "aguacate", lab: "Centro y sur de México",
+    num: "<i>ahuacatl</i>", say: "La palta es aguacate. <b>Sus tres razas se domesticaron en Mesoamérica,</b> y su genoma lo confirma.",
+    stamp: "Mesoamericano", cite: "Rendón-Anaya et al. (2019). PNAS 116(34)" },
+  { id: "f3", n: "03", amb: "Alimentación", lie: "«…y el choclo es de Perú»", ficha: "maiz", lab: "Cuenca del Balsas, Guerrero",
+    num: "9,000 <i>años</i>", say: "El choclo es maíz: <b>se domesticó una sola vez, en Guerrero.</b> Al Perú llegó desde Mesoamérica.",
+    stamp: "Mexicano", cite: "Matsuoka et al. (2002). PNAS 99(9) · Grobman et al. (2012)" },
+  { id: "f4", n: "04", amb: "Conocimiento", lie: "«…poca cultura y logros»", ficha: "cero", lab: "Chiapa de Corzo, Chiapas",
+    num: "36 <i>a. C.</i>", say: "La fecha más antigua escrita con el sistema que usa el cero está en Chiapas: <b>siglos antes de que la India lo documentara.</b>",
+    stamp: "Invención propia", cite: "Rojo-Garibaldi et al. (2021). Heliyon 7(3) · Plofker (2009)" },
+  { id: "f5", n: "05", amb: "Materiales", lie: "«…poca cultura y logros»", ficha: "hule", lab: "El Manatí, Veracruz",
+    num: "1600 <i>a. C.</i>", say: "Ya procesaban hule para hacer pelotas que rebotan: <b>3,400 años antes que Goodyear.</b>",
+    stamp: "Olmeca", cite: "Hosler et al. (1999). Science 284(5422)" },
+  { id: "f6", n: "06", amb: "Salud", lie: "«…poca cultura y logros»", ficha: "television-color", lab: "Syntex, Ciudad de México",
+    num: "1951", say: "Luis E. Miramontes sintetizó la noretisterona, <b>base de la primera píldora anticonceptiva.</b>",
+    stamp: "Mexicano", cite: "Patente US 2,744,122 · Djerassi, Miramontes y Rosenkranz" },
+  { id: "f7", n: "07", amb: "Conocimiento", lie: "«…poca cultura y logros»", ficha: "television-color", lab: "Ciudad de México",
+    num: "1940", say: "Guillermo González Camarena patentó <b>un sistema de televisión a color.</b>",
+    stamp: "Mexicano", cite: "Patente US 2,296,019 (concedida en 1942)" },
+];
+
+// escenas: [id, inicio aproximado]; cada inicio se ajusta al beat más cercano y dura hasta la siguiente
+const ORDEN = [
+  ["m1", 0], ["m2", 3.75], ["m3", 7.55], ["m4", 11.4], ["m5", 14.2], ["q", 18.44],
+  ["f1", 21.36], ["f2", 25.6], ["f3", 29.9], ["w", 34.18], ["n", 36.62], ["nn", 39.66],
+  ["f4", 41.33], ["f5", 45.5], ["f6", 49.7], ["f7", 53.8], ["h", 57.93],
+  ["k1", 59.65], ["k2", 63.4], ["k3", 66.8], ["k4", 70.2], ["a1", 73.5], ["a2", 79.0], ["e", 84.5],
+];
+const SC = ORDEN.map(([id, t], i) => ({ id, a: i ? snap(t) : 0 }));
+SC.forEach((s, i) => (s.b = i + 1 < SC.length ? SC[i + 1].a : window.DURATION));
+const AT = Object.fromEntries(SC.map((s) => [s.id, s]));
+// golpes fuertes de la canción: sacuden la cámara
+const HITS = [9.26, 18.44, 41.33, 59.65].map(snap);
+
+// ---------------------------------------------------------------- utilidades
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const cl = (x) => Math.max(0, Math.min(1, x));
+const seg = (t, at, d) => cl((t - at) / d);
+const expoOut = (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x));
+const cubic = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const backOut = (x, s = 1.9) => 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2);
+const set = (el, o, tr) => { el.style.opacity = o; el.style.transform = tr || ""; };
+const rv = (el, t, at, d = 0.55, dy = 40, dx = 0) => {
+  if (!el) return; const k = expoOut(seg(t, at, d));
+  set(el, k, `translate(${dx * (1 - k)}px, ${dy * (1 - k)}px)`);
+};
+const stampIn = (el, t, at, rot = -6) => {
+  const k = seg(t, at, 0.32); const s = 1 + 1.1 * (1 - backOut(k, 1.4));
+  set(el, k > 0 ? 1 : 0, `rotate(${rot}deg) scale(${k > 0 ? s : 2})`);
+};
+const words = (el, t, at, step = 0.06, d = 0.45) => $$(":scope > span", el).forEach((w, i) => rv(w, t, at + i * step, d, 26));
+const typeIn = (el, t, at, cps = 26) => {
+  const s = el.dataset.type; const n = Math.max(0, Math.min(s.length, Math.floor((t - at) * cps)));
+  const blink = n < s.length || Math.floor(t * 2.2) % 2 === 0;
+  el.innerHTML = s.slice(0, n) + (blink ? '<span class="caret"></span>' : "");
+};
+const count = (el, t, at, d) => { const k = expoOut(seg(t, at, d)); el.textContent = Math.round(k * +el.dataset.to).toLocaleString("es-MX"); };
+const pen = (paths, t, at, d, stagger = 0) => paths.forEach((p, i) => { p.style.strokeDashoffset = 1 - cubic(seg(t, at + i * stagger, d)); });
+
+// palabras sueltas para revelarlas una por una
+const splitWords = (el) => {
+  const html = el.innerHTML; const tmp = document.createElement("div"); tmp.innerHTML = html; el.innerHTML = "";
+  const walk = (node, wrap) => node.childNodes.forEach((c) => {
+    if (c.nodeType === 3) c.textContent.split(/(\s+)/).forEach((p) => {
+      if (!p) return; if (/^\s+$/.test(p)) { el.appendChild(document.createTextNode(" ")); return; }
+      const s = document.createElement("span"); s.className = "r";
+      if (wrap) { const w = document.createElement(wrap.tagName); w.textContent = p; s.appendChild(w); } else s.textContent = p;
+      el.appendChild(s);
+    });
+    else walk(c, c);
+  });
+  walk(tmp, null);
+};
+
+// ---------------------------------------------------------------- mapa de México
+const G = R.geo;
+const pt = (lat, lon) => [(lon - G.lon0) * G.k * G.escala, (G.lat1 - lat) * G.escala];
+const MX = Object.entries(G.regiones);
+const mapa = () => `<svg viewBox="-20 -30 900 620">
+  ${MX.filter(([k]) => !k.startsWith("MX")).map(([, d]) => `<path d="${d}" fill="#ebe4d4" stroke="#d3c9b6" stroke-width="1.2" class="nb"/>`).join("")}
+  ${MX.filter(([k]) => k.startsWith("MX")).map(([, d]) => `<path d="${d}" fill="#e6dccb" fill-opacity="0" stroke="#1d1916" stroke-width="2.2" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" class="mx"/>`).join("")}
+  <g class="pin"><circle class="ring" r="18" fill="none" stroke="#812d37" stroke-width="3"/><circle r="11" fill="#812d37"/></g>
+</svg>`;
+
+// ---------------------------------------------------------------- armado
+const host = $("#laminas");
+LAMINAS.forEach((L) => {
+  const s = document.createElement("section");
+  s.className = "scene paper plate"; s.id = L.id;
+  s.innerHTML = `
+    <div class="run r"><span>Lámina ${L.n}</span><span>${L.amb}</span></div>
+    <div class="lie r"><s>${L.lie}</s></div>
+    <div class="map">${mapa()}</div>
+    <div class="pinlab r">${L.lab}</div>
+    <div class="stamp">${L.stamp}</div>
+    <div class="num r">${L.num}</div>
+    <div class="say w">${L.say}</div>
+    <div class="src r"><span class="cite">${L.cite}</span><span class="ok">Comprobada</span></div>
+    <div class="folio"><span>procedencia</span><span>${L.n} / 07</span></div>`;
+  host.appendChild(s);
+  const c = L.id === "f6" ? [19.43, -99.13] : R.fichas[L.ficha].coords;
+  const [x, y] = pt(c[0], c[1]);
+  $(".pin", s).setAttribute("transform", `translate(${x} ${y})`);
+  // la etiqueta del lugar, sobre el punto (el svg mide 960×630 para un viewBox de 900×620)
+  const sx = 960 / 900, sy = 630 / 620, px = 60 + (x + 20) * sx, py = 390 + (y + 30) * sy;
+  const lab = $(".pinlab", s); lab.style.left = Math.min(px + 30, 1080 - 90 - 380) + "px"; lab.style.top = py - 80 + "px";
+});
+$$(".w").forEach(splitWords);
+
+// nombres que borran el origen
+const NOMBRES = [["turkey", "→ Turquía"], ["granoturco", "→ Turquía"], ["Bourbon vanilla", "→ isla Reunión"], ["paprika húngara", "→ Hungría"], ["chocolate suizo", "→ Suiza"]];
+$("#n").innerHTML = NOMBRES.map(([a, b], i) => `<div class="row r" style="top:${520 + i * 190}px"><span class="a">${a}</span><span class="b">${b}</span></div>`).join("");
+
+// ---------------------------------------------------------------- dibujo de cada escena
+const D = {};
+["m1", "m2", "m3", "m4", "m5"].forEach((id) => (D[id] = (t, s) => {
+  rv($(".who", s), t, s.a + 0.05, 0.5, 20);
+  typeIn($(".q", s), t, s.a + 0.25, id === "m3" || id === "m5" ? 30 : 22);
+}));
+D.q = (t, s) => {
+  const k = seg(t, s.a, 0.28); set($(".big", s), k > 0 ? 1 : 0, `scale(${1 + 0.35 * (1 - backOut(k, 1.2))})`);
+  words($(".sub", s), t, s.a + 1.1, 0.08);
+};
+LAMINAS.forEach((L) => (D[L.id] = (t, s) => {
+  const a = s.a;
+  rv($(".run", s), t, a, 0.4, 0); $(".run", s).style.setProperty("--rule", expoOut(seg(t, a, 0.6)));
+  rv($(".lie", s), t, a + 0.05, 0.35, 0);
+  $(".lie s", s).style.setProperty("--k", cubic(seg(t, a + 0.35, 0.35)));
+  pen($$(".mx", s), t, a, 0.9, 0.05);
+  $$(".mx", s).forEach((p) => p.setAttribute("fill-opacity", 0.9 * seg(t, a + 0.7, 0.5)));
+  $$(".nb", s).forEach((p) => (p.style.opacity = seg(t, a, 0.6)));
+  const pk = seg(t, a + 0.75, 0.35); const pin = $(".pin", s);
+  pin.style.opacity = pk > 0 ? 1 : 0;
+  const ring = $(".ring", pin); const ph = ((t - a) % 1.2) / 1.2;
+  ring.setAttribute("r", 14 + 30 * ph); ring.style.opacity = pk * (1 - ph);
+  rv($(".pinlab", s), t, a + 0.9, 0.4, 14);
+  const nk = seg(t, a + 0.95, 0.3); set($(".num", s), nk > 0 ? 1 : 0, `translateY(${30 * (1 - expoOut(nk))}px) scale(${1 + 0.12 * (1 - expoOut(nk))})`);
+  words($(".say", s), t, a + 1.25, 0.045);
+  stampIn($(".stamp", s), t, a + 2.15);
+  rv($(".src", s), t, a + 2.35, 0.45, 20);
+}));
+D.w = (t, s) => words($(".t", s), t, s.a + 0.1, 0.09);
+D.n = (t, s) => $$(".row", s).forEach((r, i) => {
+  const at = s.a + i * 0.5; const k = seg(t, at, 0.2);
+  set(r, k > 0 ? 1 : 0, `translateX(${-60 * (1 - expoOut(k))}px)`);
+  r.style.color = t > at + 0.5 ? "#8b8176" : "";
+});
+D.nn = (t, s) => words($(".t", s), t, s.a + 0.05, 0.08);
+D.h = (t, s) => words($(".t", s), t, s.a + 0.05, 0.08);
+D.k1 = (t, s) => {
+  rv($(".kick", s), t, s.a, 0.4, 0); words($(".head", s), t, s.a + 0.15, 0.06);
+  rv($(".card", s), t, s.a + 0.6, 0.6, 60);
+  stampIn($(".t1", s), t, s.a + 1.4, 0); stampIn($(".t2", s), t, s.a + 1.8, 0); rv($(".t3", s), t, s.a + 2.1, 0.4, 14);
+  rv($(".n1", s), t, s.a + 1.5, 0.4, 0, -30); rv($(".n2", s), t, s.a + 1.9, 0.4, 0, -30); rv($(".n3", s), t, s.a + 2.3, 0.4, 0, -30);
+};
+D.k2 = (t, s) => {
+  rv($(".kick", s), t, s.a, 0.4, 0);
+  $$(".stat", s).forEach((el, i) => { rv(el, t, s.a + 0.2 + i * 0.75, 0.45, 40); count($(".n", el), t, s.a + 0.2 + i * 0.75, 1.1); });
+};
+D.k3 = (t, s) => {
+  rv($(".kick", s), t, s.a, 0.4, 0); words($(".head", s), t, s.a + 0.15, 0.06);
+  rv($(".card", s), t, s.a + 0.7, 0.6, 60); stampIn($(".stamp", s), t, s.a + 2.0, -7);
+};
+D.k4 = (t, s) => {
+  rv($(".kick", s), t, s.a, 0.4, 0);
+  $$(".pill", s).forEach((el, i) => rv(el, t, s.a + 0.2 + i * 0.42, 0.4, 0, -60));
+  words($(".head", s), t, s.a + 1.5, 0.05);
+};
+const URL_TXT = "pescamill.github.io/procedencia";
+D.a1 = (t, s) => {
+  rv($(".kick", s), t, s.a, 0.4, 0); rv($(".bar", s), t, s.a + 0.1, 0.45, 30);
+  const n = Math.max(0, Math.min(URL_TXT.length, Math.floor((t - s.a - 0.4) * 22)));
+  $(".bar .url", s).innerHTML = URL_TXT.slice(0, n) + (n < URL_TXT.length || Math.floor(t * 2.2) % 2 ? '<span class="caret"></span>' : "");
+  rv($(".phone", s), t, s.a + 2.0, 0.7, 120);
+  $(".phone img", s).style.transform = `translateY(${-760 * cubic(seg(t, s.a + 3.0, 2.2))}px)`;
+  stampIn($(".s1", s), t, s.a + 2.6, 0);
+};
+D.a2 = (t, s) => {
+  rv($(".phone", s), t, s.a, 0.01, 0);
+  $(".phone img", s).style.transform = `translateY(${-2300 * cubic(seg(t, s.a + 0.4, 4.6))}px)`;
+  stampIn($(".s2", s), t, s.a + 0.5, 0); stampIn($(".s3", s), t, s.a + 1.8, 0); stampIn($(".s4", s), t, s.a + 3.1, 0);
+};
+D.e = (t, s) => {
+  const k = seg(t, s.a, 0.45); set($(".logo", s), k > 0 ? 1 : 0, `scale(${0.6 + 0.4 * backOut(k, 1.6)})`);
+  $(".logo .arc", s).style.strokeDasharray = 1; $(".logo .arc", s).style.strokeDashoffset = 1 - cubic(seg(t, s.a + 0.2, 0.7));
+  rv($(".word", s), t, s.a + 0.35, 0.6, 50); rv($(".tagl", s), t, s.a + 0.8, 0.6, 30);
+  stampIn($(".url", s), t, s.a + 1.4, 0); rv($(".free", s), t, s.a + 1.9, 0.5, 20); rv($(".by", s), t, s.a + 2.3, 0.5, 20);
+  // fundido final a negro
+  $("#flash").style.background = "#000"; $("#flash").style.opacity = seg(t, window.DURATION - 1.2, 1.2);
+};
+
+// ---------------------------------------------------------------- efectos de sonido
+// [segundo, tipo, ganancia]; render.py los sintetiza y los mezcla bajo la música
+const CUES = [];
+const cue = (t, tipo, g) => CUES.push([+t.toFixed(3), tipo, g]);
+["m1", "m2", "m3", "m4", "m5"].forEach((id) => {
+  const s = AT[id], q = $(`#${id} .q`).dataset.type, cps = id === "m3" || id === "m5" ? 30 : 22;
+  for (let i = 0; i < q.length; i++) if (q[i] !== " ") cue(s.a + 0.25 + i / cps, "tecla", 0.12 + 0.06 * ((i * 7) % 3) / 2);
+});
+cue(AT.q.a, "impacto", 0.9);
+LAMINAS.forEach((L) => { const a = AT[L.id].a; cue(a, "corte", 0.35); cue(a + 0.95, "golpe", 0.35); cue(a + 2.15, "sello", 0.7); });
+NOMBRES.forEach((_, i) => cue(AT.n.a + i * 0.5, "golpe", 0.4));
+[AT.f4.a, AT.k1.a].forEach((h) => cue(h, "impacto", 0.75));
+cue(AT.k1.a + 1.4, "sello", 0.35); cue(AT.k1.a + 1.8, "sello", 0.35);
+[0, 1, 2].forEach((i) => cue(AT.k2.a + 0.2 + i * 0.75, "golpe", 0.4));
+cue(AT.k3.a + 2.0, "sello", 0.7);
+[0, 1, 2].forEach((i) => cue(AT.k4.a + 0.2 + i * 0.42, "golpe", 0.35));
+for (let i = 0; i < URL_TXT.length; i++) cue(AT.a1.a + 0.4 + i / 22, "tecla", 0.16);
+cue(AT.a1.a + 2.6, "sello", 0.4); [0.5, 1.8, 3.1].forEach((d) => cue(AT.a2.a + d, "sello", 0.4));
+cue(AT.e.a, "impacto", 0.5); cue(AT.e.a + 1.4, "sello", 0.6);
+window.CUES = CUES;
+
+// ---------------------------------------------------------------- render
+window.render = (t) => {
+  let cur = null;
+  for (const s of SC) { const el = document.getElementById(s.id); const on = t >= s.a && t < s.b; el.style.display = on ? "block" : "none"; if (on) cur = s; }
+  if (!cur) return;
+  const el = document.getElementById(cur.id);
+  D[cur.id] && D[cur.id](t, Object.assign(el, { a: cur.a, b: cur.b }));
+  // sacudida en los golpes y un destello breve en cada corte fuerte
+  let sh = 0; HITS.forEach((h) => { if (t >= h) sh = Math.max(sh, Math.exp(-7 * (t - h))); });
+  const j = (n) => Math.sin(t * 91 * n + n) * 18 * sh;
+  $("#cam").style.transform = sh > 0.01 ? `translate(${j(1)}px, ${j(2)}px) rotate(${j(3) * 0.03}deg)` : "";
+  if (cur.id !== "e") {
+    $("#flash").style.background = "#fff";
+    const f = HITS.reduce((m, h) => (t >= h && t - h < 0.12 ? Math.max(m, 1 - (t - h) / 0.12) : m), 0);
+    $("#flash").style.opacity = 0.55 * f;
+  }
+};
+
+window.ready = document.fonts.ready
+  .then(() => Promise.all($$("img").map((i) => (i.complete ? 1 : new Promise((r) => (i.onload = i.onerror = r))))))
+  .then(() => { window.render(0); return true; });
+
+// vista previa en el navegador: ?t=12 congela un cuadro; si no, se reproduce
+const fixed = new URLSearchParams(location.search).get("t");
+if (fixed !== null) window.ready.then(() => window.render(Number(fixed)));
+else if (!navigator.webdriver) {
+  const t0 = performance.now();
+  const loop = () => { window.render(((performance.now() - t0) / 1000) % window.DURATION); requestAnimationFrame(loop); };
+  window.ready.then(loop);
+}
+</script>
+</body>
+</html>

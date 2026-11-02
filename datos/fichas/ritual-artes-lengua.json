@@ -217,12 +217,13 @@
    {
     "texto": "La palabra «cigarro» podría venir del maya sik'ar; la etimología no tiene consenso.",
     "solidez": "debate",
-    "fuentes": []
+    "fuentes": [
+     "britannicacigar"
+    ]
    }
   ],
   "nombres_mundo": [],
   "pendientes": [
-   "Fuente para la etimología propuesta de «cigarro».",
    "Ubicar el pasaje de Sahagún."
   ],
   "enfoque": "Contar el contraste entre el uso ritual y medicinal mesoamericano y el consumo industrial y adictivo que creó Europa, sin promover el tabaquismo.",
@@ -272,14 +273,14 @@
    {
     "texto": "Los europeos vieron fumar a los taínos en Cuba en 1492; de Jean Nicot, embajador francés, viene «nicotina».",
     "solidez": "consenso",
-    "fuentes": []
+    "fuentes": [
+     "charlton2004"
+    ]
    }
   ],
   "originales": [],
   "nombres_mundo": [],
-  "pendientes": [
-   "Fuente para Nicot y la etimología de «tabaco»."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "tabaco-mesoamericano"
   ],
@@ -727,14 +728,14 @@
   "veredicto": {
    "texto": "El muralismo mexicano influyó en el arte público de EUA en los años treinta.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "whitney2020"
+   ]
   },
   "afirmaciones": [],
   "originales": [],
   "nombres_mundo": [],
-  "pendientes": [
-   "Fuente historiográfica."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "catrina"
   ],

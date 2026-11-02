@@ -79,6 +79,14 @@
     ]
    },
    {
+    "texto": "El teocintle da unas pocas semillas encerradas en cáscaras duras; el maíz, cientos de granos desnudos en una mazorca. El cambio se debe sobre todo a unos pocos genes de gran efecto, como tga1, que dejó el grano al descubierto.",
+    "solidez": "consenso",
+    "fuentes": [
+     "doebley2004",
+     "wang2005"
+    ]
+   },
+   {
     "texto": "Las variedades reventadoras, las palomitas, son maíz; en Perú hay restos de maíz reventador de hace entre 6,700 y 3,000 años, llegados desde Mesoamérica.",
     "solidez": "sustentada",
     "fuentes": [
@@ -88,7 +96,9 @@
    {
     "texto": "Hoy es el cereal más producido del mundo.",
     "solidez": "consenso",
-    "fuentes": []
+    "fuentes": [
+     "faostat"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -125,13 +135,12 @@
     }
    }
   ],
-  "pendientes": [
-   "Enlazar la estadística de producción mundial de la FAO (FAOSTAT)."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "milpa",
    "nixtamalizacion",
-   "huitlacoche"
+   "huitlacoche",
+   "agricultura-independiente"
   ],
   "alcance": "mundial",
   "en_breve": "El cereal más producido del planeta. Está en tortillas, palomitas, aceite, jarabe para refrescos, alimento para ganado y combustible."
@@ -200,7 +209,9 @@
    {
     "texto": "En Mesoamérica se domesticaron además otras especies de frijol, como el ayocote y el tépari.",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "bitocchi2017"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -218,9 +229,7 @@
     }
    }
   ],
-  "pendientes": [
-   "Fuente para el ayocote (Phaseolus coccineus) y el tépari (P. acutifolius)."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "milpa"
   ],
@@ -578,7 +587,9 @@
    {
     "texto": "Portugueses y españoles lo llevaron a África, India y Asia en el siglo XVI; en menos de un siglo ya era parte de esas cocinas.",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "nunnqian2010"
+    ]
    },
    {
     "texto": "El chile llegó a China en la década de 1570; nadie lo importó a propósito: se difundió de campesino en campesino y Sichuan y Hunan lo hicieron suyo.",
@@ -675,9 +686,7 @@
     "pendiente": ""
    }
   },
-  "pendientes": [
-   "Fuente para la difusión del chile en Asia en el siglo XVI."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "cacao-chocolate",
    "vainilla"
@@ -737,7 +746,9 @@
    {
     "texto": "México es hoy el mayor productor del mundo.",
     "solidez": "consenso",
-    "fuentes": []
+    "fuentes": [
+     "faostat"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -757,9 +768,7 @@
     ]
    }
   ],
-  "pendientes": [
-   "Enlazar FAOSTAT para la producción."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "mundial",
   "en_breve": "El fruto del guacamole y del pan con aguacate que se come en todo el mundo; México es su origen y su mayor productor."
@@ -808,7 +817,9 @@
    {
     "texto": "Hoy se cultiva en Asia, Brasil y Australia.",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "rojassandoval2018"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -818,9 +829,7 @@
     "forma": "etiqueta_muda"
    }
   ],
-  "pendientes": [
-   "Fuente sobre su difusión mundial."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "amplio",
   "en_breve": "Una calabaza trepadora que el galeón de Manila llevó a Asia; hoy es común en China, Filipinas y Brasil."
@@ -861,7 +870,9 @@
   "veredicto": {
    "texto": "La jícama es una leguminosa de raíz nativa de Mesoamérica; el galeón de Manila la llevó a Filipinas y hoy es común en el sudeste asiático.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "cabi2019jicama"
+   ]
   },
   "afirmaciones": [],
   "nombres_mundo": [
@@ -872,9 +883,7 @@
     "nota": "Del náhuatl xicamatl."
    }
   ],
-  "pendientes": [
-   "Fuente botánica (p. ej., la monografía del IPGRI de Sørensen, 1996)."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "regional",
   "en_breve": "Raíz crujiente y dulce que se come cruda con limón y chile; también se cultiva en el sudeste asiático."
@@ -1207,14 +1216,15 @@
    }
   ],
   "veredicto": {
-   "texto": "Los quelites son las verduras silvestres o toleradas de la milpa; el epazote es su aromática más conocida.",
+   "texto": "Los quelites son las verduras silvestres o toleradas de la milpa: en México se comen más de 250 especies.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "mateosmaces2020"
+   ]
   },
   "afirmaciones": [],
   "nombres_mundo": [],
   "pendientes": [
-   "Fuente etnobotánica sobre los quelites.",
    "Confirmar la distribución nativa del epazote."
   ],
   "relacionadas": [
@@ -2425,7 +2435,9 @@
    {
     "texto": "El tequila tiene denominación de origen desde 1974.",
     "solidez": "consenso",
-    "fuentes": []
+    "fuentes": [
+     "wipo1974tequila"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -2436,9 +2448,7 @@
     "nota": "Imitaciones fuera de la denominación de origen."
    }
   ],
-  "pendientes": [
-   "Enlazar la declaratoria de denominación de origen del tequila en el DOF (1974)."
-  ],
+  "pendientes": [],
   "relacionadas": [
    "henequen"
   ],
@@ -2570,7 +2580,9 @@
   "veredicto": {
    "texto": "Se atribuye al restaurante de Caesar Cardini en Tijuana, hacia 1924; muchos la creen italiana o estadounidense.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "atlasobscura2024cesar"
+   ]
   },
   "afirmaciones": [],
   "originales": [],
@@ -2582,9 +2594,7 @@
     "nota": "Se asume italiana por el nombre."
    }
   ],
-  "pendientes": [
-   "Fuente histórica."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "amplio",
   "en_breve": "La ensalada de lechuga con aderezo de anchoa que aparece en menús de todo el mundo nació en Tijuana.",
@@ -2615,14 +2625,14 @@
   "veredicto": {
    "texto": "Ignacio «Nacho» Anaya los creó en Piedras Negras en 1943.",
    "solidez": "sustentada",
-   "fuentes": []
+   "fuentes": [
+    "time2016nachos"
+   ]
   },
   "afirmaciones": [],
   "originales": [],
   "nombres_mundo": [],
-  "pendientes": [
-   "Fuente histórica."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "amplio",
   "en_breve": "Totopos con queso derretido y jalapeño, inventados en Piedras Negras, Coahuila, y hoy comida de estadio en todo el mundo.",

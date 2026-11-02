@@ -462,5 +462,64 @@
   },
   "alcance": "regional",
   "en_breve": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España."
+ },
+ {
+  "id": "adobe",
+  "nombre": "Adobe",
+  "ambito": "construccion",
+  "naturaleza": "tecnica",
+  "clase": "deslinde",
+  "actos": [],
+  "territorio": "mexico",
+  "region": "Cholula, Puebla, y todo el México antiguo",
+  "coords": [
+   19.06,
+   -98.3
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -200,
+   "texto": "desde el Formativo"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "xamitl",
+    "lengua": "náhuatl",
+    "glosa": "adobe",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "No se reclama como invento: el ladrillo de barro secado al sol se usaba en el Cercano Oriente desde el Neolítico, y la palabra «adobe» viene del árabe. Mesoamérica lo usó por su cuenta y a escala monumental: la Gran Pirámide de Cholula, el edificio más grande de Mesoamérica, es de adobe.",
+   "solidez": "consenso",
+   "fuentes": [
+    "sadozai2024",
+    "dle",
+    "mccafferty1996"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La palabra «adobe» viene del árabe hispánico aṭṭúb, y esta del egipcio; en náhuatl se decía xamitl.",
+    "solidez": "consenso",
+    "fuentes": [
+     "dle",
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente arqueológica sobre el adobe más antiguo de Mesoamérica."
+  ],
+  "relacionadas": [
+   "basamento-piramidal",
+   "cal-corteza"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Ladrillos de barro secados al sol. Se inventaron en muchos lugares; en México levantaron la pirámide más grande de Mesoamérica."
  }
 ]

@@ -784,10 +784,6 @@
   "es": "Haudenosaunee (Nueva York)",
   "en": "Haudenosaunee (New York)"
  },
- "ad3ae76d43": {
-  "es": "Fuente sobre la difusión del sistema al este de Norteamérica.",
-  "en": "Source on the spread of the system to eastern North America."
- },
  "7feb49f3ac": {
   "es": "Fuente nutricional.",
   "en": "Nutritional source."
@@ -819,6 +815,10 @@
  "2f5b9c9332": {
   "es": "Sostenían buena parte del abasto de Tenochtitlan.",
   "en": "They supplied a large share of Tenochtitlan's food."
+ },
+ "a94e1c6e6b": {
+  "es": "Antes de los mexicas ya había chinampas extensas: las de Xaltocan, al norte de la cuenca, se abandonaron en el siglo XIV.",
+  "en": "There were extensive chinampas before the Mexica: those of Xaltocan, in the north of the basin, were abandoned in the 14th century."
  },
  "d6e8848bb0": {
   "es": "No flotan: son islas fijas.",
@@ -915,10 +915,6 @@
  "5c97780b84": {
   "es": "Verificar su uso en las casacas británicas.",
   "en": "Verify its use in the British coats."
- },
- "14a3071815": {
-  "es": "Fuente para la anilina (Perkin, 1856).",
-  "en": "Source for aniline (Perkin, 1856)."
  },
  "145396d288": {
   "es": "Un insecto que vive en el nopal y da un rojo intenso. Hoy es el colorante E120 o carmín que tiñe yogures, labiales y bebidas en todo el mundo.",
@@ -1096,10 +1092,6 @@
   "es": "Es alrededor del 90% del algodón mundial; el egipcio y el pima son otra especie, G. barbadense, sudamericana.",
   "en": "It is about 90% of the world's cotton; Egyptian and Pima cotton are another species, G. barbadense, from South America."
  },
- "ff4fd744c3": {
-  "es": "Fuente para el porcentaje mundial.",
-  "en": "Source for the world percentage."
- },
  "bf307662fd": {
   "es": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán.",
   "en": "The cotton species used to make almost all the clothing on the planet was domesticated in the Yucatán Peninsula."
@@ -1184,17 +1176,17 @@
   "es": "El henequén, Agave fourcroydes, fue domesticado por los mayas a partir de Agave angustifolia.",
   "en": "Henequen, Agave fourcroydes, was domesticated by the Maya from Agave angustifolia."
  },
- "6cb2ab66cc": {
-  "es": "La palabra «sisal» viene del puerto de Sisal, Yucatán; hoy Brasil y África oriental producen la mayoría.",
-  "en": "The word «sisal» comes from the port of Sisal, Yucatán; today Brazil and East Africa produce most of it."
+ "c9587333ab": {
+  "es": "Hoy Brasil y África oriental producen la mayor parte del sisal.",
+  "en": "Today Brazil and East Africa produce most of the world's sisal."
  },
  "01c9b810e4": {
   "es": "Por el puerto yucateco.",
   "en": "After the Yucatecan port."
  },
- "7ea67628e0": {
-  "es": "Fuente para la etimología de «sisal» y la producción actual.",
-  "en": "Source for the etymology of «sisal» and current production."
+ "1fb091030a": {
+  "es": "Fuente para la etimología de «sisal» (el puerto de Sisal, Yucatán).",
+  "en": "Source for the etymology of “sisal” (the port of Sisal, Yucatán)."
  },
  "5224e4c167": {
   "es": "Un agave de Yucatán cuya fibra dio sogas y costales al mundo; su hermano, el sisal, lleva el nombre de un puerto yucateco.",
@@ -1260,6 +1252,98 @@
   "es": "Un arbusto del desierto del norte que produce hule natural; se estudia como alternativa al árbol del hule amazónico.",
   "en": "A shrub of the northern desert that produces natural rubber; it is studied as an alternative to the Amazonian rubber tree."
  },
+ "016dd77063": {
+  "es": "Agricultura nacida aquí",
+  "en": "Agriculture born here"
+ },
+ "1f40294b7b": {
+  "es": "Occidente y sur de México (Balsas, Oaxaca)",
+  "en": "Western and southern Mexico (Balsas, Oaxaca)"
+ },
+ "c44f989633": {
+  "es": "hace unos 10,000 años",
+  "en": "about 10,000 years ago"
+ },
+ "7c8b84b4de": {
+  "es": "Mesoamérica es uno de los pocos lugares del mundo donde la agricultura nació por su cuenta, sin copiarla de nadie.",
+  "en": "Mesoamerica is one of the few places in the world where agriculture arose on its own, copied from no one."
+ },
+ "8c6d7c55b6": {
+  "es": "La calabaza de Guilá Naquitz, en Oaxaca, ya era doméstica hace unos 10,000 años, milenios antes que el maíz.",
+  "en": "The squash of Guilá Naquitz, in Oaxaca, was already domesticated about 10,000 years ago, millennia before maize."
+ },
+ "d2ef4dc31b": {
+  "es": "El maíz salió del teocintle del Balsas hace unos 9,000 años.",
+  "en": "Maize came from the teosinte of the Balsas about 9,000 years ago."
+ },
+ "41c07e4288": {
+  "es": "La agricultura no llegó a México desde otra parte: aquí se inventó sola, como en el Cercano Oriente o en China.",
+  "en": "Agriculture did not reach Mexico from somewhere else: it was invented here independently, as in the Near East or China."
+ },
+ "720d28db65": {
+  "es": "Es un hecho histórico, no una técnica con nombre propio.",
+  "en": "It is a historical fact, not a technique with a name of its own."
+ },
+ "ab6aba4f3b": {
+  "es": "Camellones mayas",
+  "en": "Maya wetland fields"
+ },
+ "f8df57417f": {
+  "es": "Tierras bajas mayas (Belice y sureste de México)",
+  "en": "Maya lowlands (Belize and southeastern Mexico)"
+ },
+ "19edb2b3b1": {
+  "es": "hace 1,800 a 900 años",
+  "en": "1,800 to 900 years ago"
+ },
+ "d569a5e456": {
+  "es": "Los mayas convirtieron los humedales en campos de cultivo con canales y camellones; el lidar muestra que cubrían áreas mucho mayores de lo que se creía.",
+  "en": "The Maya turned wetlands into farmland with canals and raised beds; lidar shows they covered far larger areas than was believed."
+ },
+ "1d7ff61e7f": {
+  "es": "En esos campos crecían maíz, arrurruz, calabaza y aguacate; funcionaron sobre todo entre hace 1,400 y 1,000 años.",
+  "en": "These fields grew maize, arrowroot, squash and avocado; they were in use mainly between 1,400 and 1,000 years ago."
+ },
+ "994f8390ec": {
+  "es": "Ejemplos en territorio mexicano (Campeche, Quintana Roo) con fuente.",
+  "en": "Examples in Mexican territory (Campeche, Quintana Roo) with a source."
+ },
+ "2694bffa58": {
+  "es": "Campos elevados entre canales, hechos en los pantanos de la selva maya para cultivar todo el año.",
+  "en": "Raised fields between canals, built in the swamps of the Maya forest to farm all year round."
+ },
+ "1da9691e9c": {
+  "es": "No se conoce su nombre maya antiguo.",
+  "en": "Their ancient Maya name is not known."
+ },
+ "1325b85dd6": {
+  "es": "Presa de Purrón",
+  "en": "Purrón Dam"
+ },
+ "26423ea58e": {
+  "es": "Valle de Tehuacán, Puebla",
+  "en": "Tehuacán Valley, Puebla"
+ },
+ "c1ddb2d3c4": {
+  "es": "desde hacia 750 a. C.",
+  "en": "from about 750 BC"
+ },
+ "2efaa9f46b": {
+  "es": "En el valle de Tehuacán se construyó una presa con canales para regar desde el Formativo: una de las obras hidráulicas más antiguas de Mesoamérica.",
+  "en": "In the Tehuacán Valley a dam with irrigation canals was built from the Formative period on: one of the oldest waterworks in Mesoamerica."
+ },
+ "6dd5b904b6": {
+  "es": "Leer el artículo de 2010 para fijar las fechas de cada etapa.",
+  "en": "Read the 2010 article to pin down the dates of each stage."
+ },
+ "310c5c5192": {
+  "es": "Una presa de tierra y piedra con canales de riego, en Puebla, siglos antes de Teotihuacan.",
+  "en": "An earth-and-stone dam with irrigation canals, in Puebla, centuries before Teotihuacan."
+ },
+ "1bf72b31c5": {
+  "es": "Se conoce por el nombre del lugar.",
+  "en": "It is known by the name of the place."
+ },
  "4177e12c81": {
   "es": "Maíz",
   "en": "Maize"
@@ -1296,6 +1380,10 @@
   "es": "Los granos de almidón y fitolitos más antiguos de maíz, de hace unos 8,700 años, están en la cueva Xihuatoxtla, en el valle central del Balsas.",
   "en": "The oldest maize starch grains and phytoliths, about 8,700 years old, are in Xihuatoxtla cave, in the central Balsas valley."
  },
+ "f789975c0c": {
+  "es": "El teocintle da unas pocas semillas encerradas en cáscaras duras; el maíz, cientos de granos desnudos en una mazorca. El cambio se debe sobre todo a unos pocos genes de gran efecto, como tga1, que dejó el grano al descubierto.",
+  "en": "Teosinte bears a few seeds sealed in hard cases; maize bears hundreds of naked kernels on a cob. The change is due mostly to a few genes of large effect, such as tga1, which left the kernel exposed."
+ },
  "813b2d09cc": {
   "es": "Las variedades reventadoras, las palomitas, son maíz; en Perú hay restos de maíz reventador de hace entre 6,700 y 3,000 años, llegados desde Mesoamérica.",
   "en": "Popping varieties, popcorn, are maize; in Peru there are remains of popping maize from between 6,700 and 3,000 years ago, which came from Mesoamerica."
@@ -1331,10 +1419,6 @@
  "7f5ea1f7d2": {
   "es": "Antillas (taíno)",
   "en": "Antilles (Taíno)"
- },
- "09fdb35f62": {
-  "es": "Enlazar la estadística de producción mundial de la FAO (FAOSTAT).",
-  "en": "Link the FAO world production statistics (FAOSTAT)."
  },
  "42658db664": {
   "es": "El cereal más producido del planeta. Está en tortillas, palomitas, aceite, jarabe para refrescos, alimento para ganado y combustible.",
@@ -1376,10 +1460,6 @@
   "es": "Italia",
   "en": "Italy"
  },
- "2e890e71ff": {
-  "es": "Fuente para el ayocote (Phaseolus coccineus) y el tépari (P. acutifolius).",
-  "en": "Source for the runner bean (Phaseolus coccineus) and the tepary bean (P. acutifolius)."
- },
  "843475316b": {
   "es": "Los frijoles negros, pintos, rojos y blancos, y también los ejotes, son una sola especie domesticada en México.",
   "en": "Black, pinto, red and white beans, and green beans too, are a single species domesticated in Mexico."
@@ -1391,10 +1471,6 @@
  "cd80fb4ba8": {
   "es": "Guilá Naquitz, Oaxaca",
   "en": "Guilá Naquitz, Oaxaca"
- },
- "c44f989633": {
-  "es": "hace unos 10,000 años",
-  "en": "about 10,000 years ago"
  },
  "d499b1d9f9": {
   "es": "Las semillas de Cucurbita pepo domesticada de la cueva de Guilá Naquitz, en Oaxaca, tienen unos 10,000 años: de los cultivos más antiguos de América.",
@@ -1592,10 +1668,6 @@
   "es": "La tradición andina del ají es antigua y propia, pero de otras especies: C. baccatum y C. chinense aparecen en sitios precerámicos de la costa peruana, y el tamaño de la semilla de C. baccatum crece a lo largo de milenios, señal de selección humana. Es una domesticación distinta; no compite con el origen mexicano de C. annuum.",
   "en": "The Andean ají tradition is ancient and its own, but of other species: C. baccatum and C. chinense appear at preceramic sites on the Peruvian coast, and C. baccatum seed size grows over millennia, a sign of human selection. It is a separate domestication; it does not compete with the Mexican origin of C. annuum."
  },
- "19e2e413a6": {
-  "es": "Fuente para la difusión del chile en Asia en el siglo XVI.",
-  "en": "Source for the spread of chili in Asia in the 16th century."
- },
  "589619399d": {
   "es": "Casi todos los picantes del mundo, de la paprika húngara al curry indio y el kimchi coreano, salen de una planta domesticada en México.",
   "en": "Almost all the world's hot spices, from Hungarian paprika to Indian curry and Korean kimchi, come from a plant domesticated in Mexico."
@@ -1632,10 +1704,6 @@
   "es": "En 2006 se demandó a Kraft porque su dip de guacamole era casi todo aceite vegetal.",
   "en": "In 2006 Kraft was sued because its guacamole dip was almost entirely vegetable oil."
  },
- "66d7136ef6": {
-  "es": "Enlazar FAOSTAT para la producción.",
-  "en": "Link FAOSTAT for production."
- },
  "901ba87814": {
   "es": "El fruto del guacamole y del pan con aguacate que se come en todo el mundo; México es su origen y su mayor productor.",
   "en": "The fruit of the guacamole and avocado toast eaten all over the world; Mexico is its origin and its largest producer."
@@ -1660,10 +1728,6 @@
   "es": "francés / inglés",
   "en": "French / English"
  },
- "a53c7d9d43": {
-  "es": "Fuente sobre su difusión mundial.",
-  "en": "Source on its worldwide spread."
- },
  "e35e6b24df": {
   "es": "Una calabaza trepadora que el galeón de Manila llevó a Asia; hoy es común en China, Filipinas y Brasil.",
   "en": "A climbing squash the Manila galleon carried to Asia; today it is common in China, the Philippines and Brazil."
@@ -1683,10 +1747,6 @@
  "f60480e9fc": {
   "es": "Del náhuatl xicamatl.",
   "en": "From the Nahuatl xicamatl."
- },
- "2a819e7dce": {
-  "es": "Fuente botánica (p. ej., la monografía del IPGRI de Sørensen, 1996).",
-  "en": "Botanical source (e.g., the IPGRI monograph by Sørensen, 1996)."
  },
  "550280afb0": {
   "es": "Raíz crujiente y dulce que se come cruda con limón y chile; también se cultiva en el sudeste asiático.",
@@ -1812,13 +1872,9 @@
   "es": "epazote",
   "en": "epazote"
  },
- "d9a3e8567a": {
-  "es": "Los quelites son las verduras silvestres o toleradas de la milpa; el epazote es su aromática más conocida.",
-  "en": "Quelites are the wild or tolerated greens of the milpa; epazote is its best-known herb."
- },
- "40791a5c74": {
-  "es": "Fuente etnobotánica sobre los quelites.",
-  "en": "Ethnobotanical source on quelites."
+ "62e85092eb": {
+  "es": "Los quelites son las verduras silvestres o toleradas de la milpa: en México se comen más de 250 especies.",
+  "en": "Quelites are the wild or tolerated greens of the milpa: more than 250 species are eaten in Mexico."
  },
  "d9e4d03a25": {
   "es": "Confirmar la distribución nativa del epazote.",
@@ -2396,10 +2452,6 @@
   "es": "Imitaciones fuera de la denominación de origen.",
   "en": "Imitations outside the denomination of origin."
  },
- "ddae646a3a": {
-  "es": "Enlazar la declaratoria de denominación de origen del tequila en el DOF (1974).",
-  "en": "Link the tequila denomination-of-origin declaration in the DOF (1974)."
- },
  "0b66d82f9d": {
   "es": "Del maguey salen el pulque, el mezcal y el tequila, que hoy se bebe en todo el mundo.",
   "en": "Maguey gives pulque, mezcal and tequila, which is now drunk all over the world."
@@ -2479,10 +2531,6 @@
  "35d4011f4c": {
   "es": "Se asume italiana por el nombre.",
   "en": "It is assumed to be Italian because of the name."
- },
- "7e8a3e048c": {
-  "es": "Fuente histórica.",
-  "en": "Historical source."
  },
  "86d133f68b": {
   "es": "La ensalada de lechuga con aderezo de anchoa que aparece en menús de todo el mundo nació en Tijuana.",
@@ -2783,6 +2831,38 @@
  "879de80972": {
   "es": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España.",
   "en": "Christs and saints made of cornstalk paste: light enough for processions and shipped all the way to Spain."
+ },
+ "7bc25d25f1": {
+  "es": "Adobe",
+  "en": "Adobe"
+ },
+ "d4ab703470": {
+  "es": "Cholula, Puebla, y todo el México antiguo",
+  "en": "Cholula, Puebla, and all of ancient Mexico"
+ },
+ "21349e0bdb": {
+  "es": "desde el Formativo",
+  "en": "since the Formative period"
+ },
+ "64a0faf175": {
+  "es": "adobe",
+  "en": "adobe"
+ },
+ "aa156c14e5": {
+  "es": "No se reclama como invento: el ladrillo de barro secado al sol se usaba en el Cercano Oriente desde el Neolítico, y la palabra «adobe» viene del árabe. Mesoamérica lo usó por su cuenta y a escala monumental: la Gran Pirámide de Cholula, el edificio más grande de Mesoamérica, es de adobe.",
+  "en": "Not claimed as an invention: sun-dried mud brick was used in the Near East from the Neolithic, and the word “adobe” comes from Arabic. Mesoamerica used it independently and on a monumental scale: the Great Pyramid of Cholula, the largest building in Mesoamerica, is made of adobe."
+ },
+ "54a480c79c": {
+  "es": "La palabra «adobe» viene del árabe hispánico aṭṭúb, y esta del egipcio; en náhuatl se decía xamitl.",
+  "en": "The word “adobe” comes from Andalusian Arabic aṭṭúb, and that from Egyptian; in Nahuatl it was xamitl."
+ },
+ "cff939b1ea": {
+  "es": "Fuente arqueológica sobre el adobe más antiguo de Mesoamérica.",
+  "en": "Archaeological source on the oldest adobe in Mesoamerica."
+ },
+ "eeffcf7398": {
+  "es": "Ladrillos de barro secados al sol. Se inventaron en muchos lugares; en México levantaron la pirámide más grande de Mesoamérica.",
+  "en": "Sun-dried mud bricks. They were invented in many places; in Mexico they raised the largest pyramid in Mesoamerica."
  },
  "cb2cfb9f9c": {
   "es": "Cempasúchil",
@@ -3088,10 +3168,6 @@
   "es": "medicina, remedio",
   "en": "medicine, remedy"
  },
- "d66eb7c0e9": {
-  "es": "Fuente académica (p. ej., Varey, 2000).",
-  "en": "Academic source (e.g., Varey, 2000)."
- },
  "7e76d35d5c": {
   "es": "El saber de los médicos nahuas que Francisco Hernández recogió en el siglo XVI y que circuló en Europa sin su crédito.",
   "en": "The knowledge of Nahua physicians that Francisco Hernández gathered in the 16th century and that circulated in Europe without their credit."
@@ -3231,10 +3307,6 @@
  "6cd877e0f4": {
   "es": "Magnolia mexicana, «flor del corazón», se usaba como medicina cardiaca.",
   "en": "Magnolia mexicana, «heart flower», was used as a heart medicine."
- },
- "f42676eebf": {
-  "es": "Fuente farmacológica o etnobotánica.",
-  "en": "Pharmacological or ethnobotanical source."
  },
  "dceb7f4cd3": {
   "es": "Magnolia cuya flor, «flor del corazón», se usaba como remedio para el corazón.",
@@ -3592,10 +3664,6 @@
   "es": "La palabra «cigarro» podría venir del maya sik'ar; la etimología no tiene consenso.",
   "en": "The word «cigar» may come from the Maya sik'ar; there is no consensus on the etymology."
  },
- "603b08ae9b": {
-  "es": "Fuente para la etimología propuesta de «cigarro».",
-  "en": "Source for the proposed etymology of «cigar»."
- },
  "7acae343ef": {
   "es": "Ubicar el pasaje de Sahagún.",
   "en": "Locate the passage in Sahagún."
@@ -3627,10 +3695,6 @@
  "3aa0201ad7": {
   "es": "Los europeos vieron fumar a los taínos en Cuba en 1492; de Jean Nicot, embajador francés, viene «nicotina».",
   "en": "Europeans saw the Taíno smoking in Cuba in 1492; «nicotine» comes from Jean Nicot, a French ambassador."
- },
- "bf74d6ed40": {
-  "es": "Fuente para Nicot y la etimología de «tabaco».",
-  "en": "Source for Nicot and the etymology of «tobacco»."
  },
  "e34c4ca4d7": {
   "es": "El tabaco de los cigarros comerciales es sudamericano. Se aclara para no atribuirlo a México.",
@@ -3832,6 +3896,10 @@
   "es": "Pedro Linares los creó en cartonería en la Ciudad de México hacia 1936; después se tallaron en madera en Oaxaca.",
   "en": "Pedro Linares created them in papier-mâché in Mexico City around 1936; later they were carved in wood in Oaxaca."
  },
+ "7e8a3e048c": {
+  "es": "Fuente histórica.",
+  "en": "Historical source."
+ },
  "cfea17b27d": {
   "es": "Figuras de criaturas fantásticas de colores, inventadas por Pedro Linares en 1936 y hoy famosas en todo el mundo.",
   "en": "Colorful figures of fantastic creatures, invented by Pedro Linares in 1936 and now famous all over the world."
@@ -3855,10 +3923,6 @@
  "2b078707fa": {
   "es": "El muralismo mexicano influyó en el arte público de EUA en los años treinta.",
   "en": "Mexican muralism influenced public art in the US in the 1930s."
- },
- "20616cb12c": {
-  "es": "Fuente historiográfica.",
-  "en": "Historiographical source."
  },
  "f369c0af8b": {
   "es": "Pintura monumental en muros públicos, de Rivera, Orozco y Siqueiros, que inspiró murales en Estados Unidos y América Latina.",
@@ -6523,5 +6587,57 @@
  "7ca8bc86d8": {
   "es": "Datos de 2006.",
   "en": "2006 data."
+ },
+ "4de96da4ba": {
+  "es": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+  "en": "Record verified; the passage could not be read (restricted access)."
+ },
+ "908afd0a34": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: cinco especies de Phaseolus se domesticaron; las formas silvestres del ayocote (P. coccineus) y del tépari (P. acutifolius) solo viven en Mesoamérica.",
+  "en": "Passage read on 2 November 2026: five Phaseolus species were domesticated; the wild forms of the runner bean (P. coccineus) and the tepary bean (P. acutifolius) grow only in Mesoamerica."
+ },
+ "f77131e645": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: Ignacio Anaya, en el Victory Club de Piedras Negras, en 1943, según la investigación de Adriana P. Orr para el Oxford English Dictionary.",
+  "en": "Passage read on 2 November 2026: Ignacio Anaya, at the Victory Club in Piedras Negras, in 1943, according to Adriana P. Orr's research for the Oxford English Dictionary."
+ },
+ "8f5ede7814": {
+  "es": "La declaratoria de 1977 sustituyó a la de 1974.",
+  "en": "The 1977 declaration replaced the one from 1974."
+ },
+ "464e92a703": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: en México se recolectan o cultivan más de 250 especies de «quelites», incluidas las toleradas en la milpa.",
+  "en": "Passage read on 2 November 2026: in Mexico more than 250 species of “quelites” are gathered or grown, including those tolerated in the milpa."
+ },
+ "e58decacef": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: Brasil es con mucho el mayor productor, seguido de Tanzania, Kenia, Madagascar y China (estimaciones de la FAO, 2004–2008). No trata la etimología.",
+  "en": "Passage read on 2 November 2026: Brazil is by far the largest producer, followed by Tanzania, Kenya, Madagascar and China (FAO estimates, 2004–2008). It does not cover the etymology."
+ },
+ "dcb18c2b9d": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: en 1492 marinos de Colón vieron fumar a los nativos de Cuba y Haití; hacia 1560, Jean Nicot, embajador de Francia en Lisboa, cultivó la planta.",
+  "en": "Passage read on 2 November 2026: in 1492 Columbus's sailors saw natives of Cuba and Haiti smoking; around 1560 Jean Nicot, the French ambassador in Lisbon, grew the plant."
+ },
+ "3c5b2fc0c7": {
+  "es": "Dice que la palabra española «probablemente» adaptó el maya sik'ar.",
+  "en": "It says the Spanish word “probably” adapted the Maya sik'ar."
+ },
+ "06f808c966": {
+  "es": "Pasaje leído el 2 de noviembre de 2026: la figura 1 marca los centros independientes de domesticación más aceptados; el texto dice que la domesticación temprana de plantas ocurrió de forma independiente en el Viejo y el Nuevo Mundo.",
+  "en": "Passage read on 2 November 2026: figure 1 marks the most widely accepted independent centers of domestication; the text says early plant domestication took place independently in the Old and New Worlds."
+ },
+ "a90392ac3b": {
+  "es": "Resumen leído el 2 de noviembre de 2026: el teocintle Zea mays ssp. parviglumis es el progenitor del maíz; unos pocos genes de gran efecto parecen ser las innovaciones clave de la domesticación.",
+  "en": "Abstract read on 2 November 2026: teosinte Zea mays ssp. parviglumis is the progenitor of maize; a few genes of large effect appear to be the key innovations of domestication."
+ },
+ "5df18e944f": {
+  "es": "Resumen leído el 2 de noviembre de 2026: el lidar reveló complejos de campos en humedales en Belice, uno cinco veces mayor de lo que se sabía; se cultivaban maíz, arrurruz, calabaza y aguacate, sobre todo entre hace 1,400 y 1,000 años.",
+  "en": "Abstract read on 2 November 2026: lidar revealed wetland field complexes in Belize, one five times larger than previously known; maize, arrowroot, squash and avocado were grown, mainly between 1,400 and 1,000 years ago."
+ },
+ "6b8b808d0c": {
+  "es": "Resumen leído el 2 de noviembre de 2026: alrededor de Xaltocan hubo un área extensa de chinampas, abandonada cuando la ciudad fue conquistada en el siglo XIV.",
+  "en": "Abstract read on 2 November 2026: around Xaltocan there was an extensive area of chinampas, abandoned when the city was conquered in the 14th century."
+ },
+ "8b3d5ad3b9": {
+  "es": "Registro comprobado; el pasaje no se pudo leer (acceso restringido). El resumen de los mismos autores en la reunión de la GSA de 2007 sitúa el inicio de la obra en el Formativo, hacia 750 a. C.",
+  "en": "Record verified; the passage could not be read (restricted access). The same authors' abstract at the 2007 GSA meeting places the start of construction in the Formative period, around 750 BC."
  }
 }

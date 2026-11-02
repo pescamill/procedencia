@@ -1,5 +1,75 @@
 # Cambios
 
+## Iteración 8 · 2 de noviembre de 2026
+
+La agricultura como ciencia propia. Cuatro fichas nuevas (ahora son 100), tres afirmaciones nuevas y siete fuentes nuevas.
+
+### Qué se agregó
+
+- **Agricultura nacida aquí.** Mesoamérica es uno de los pocos centros del mundo donde la agricultura nació sola (Larson et al., 2014). Incluye la calabaza de Guilá Naquitz y el maíz del Balsas.
+- **Camellones mayas.** Campos elevados en los humedales, revelados con lidar; uno resultó cinco veces mayor de lo que se sabía (Beach et al., 2019).
+- **Presa de Purrón.** Presa y canales en el valle de Tehuacán desde el Formativo (Aiuvalasit et al., 2010). El artículo no se pudo leer y la ficha lo dice.
+- **Adobe, como deslinde.** El ladrillo de barro se usaba en el Cercano Oriente desde el Neolítico, y la palabra viene del árabe. Lo que sí se cuenta es su uso monumental aquí: la Gran Pirámide de Cholula es de adobe. En náhuatl se decía *xamitl*.
+- **Bioingeniería del maíz.** El maíz tiene una afirmación nueva: del teocintle a la mazorca, por unos pocos genes de gran efecto, como *tga1* (Doebley, 2004; Wang et al., 2005).
+- **Chinampas.** Tienen una afirmación nueva: ya existían antes de los mexicas, en Xaltocan (Morehart y Frederick, 2014).
+- **Reel «Un mundo sin México»** (`promo/reel-mundo.html`). Lo que desaparecería sin el maíz, el nixtamal, el algodón, la calabaza, el chile, el jitomate y el cacao. Después, por qué no fue suerte: agricultura propia, teocintle, milpa y cultivo sobre el agua. Guion y fuentes en `promo/publicacion.md`.
+
+### Casos de uso
+
+- **Responder «México solo tuvo suerte con sus plantas».** La ficha «Agricultura nacida aquí» muestra que la agricultura se inventó aquí sola, como en pocos lugares del mundo.
+- **Explicar la domesticación como tecnología.** La ficha del maíz explica qué cambió del teocintle a la mazorca, con su fuente genética.
+- **Hablar del adobe sin exagerar.** La ficha deja claro qué no se reclama y qué sí: su uso monumental en Cholula.
+
+### Pendiente
+
+- Ejemplos de camellones en territorio mexicano, con fuente.
+- Leer el artículo de Purrón para fijar las fechas de cada etapa.
+- Una fuente arqueológica sobre el adobe más antiguo de Mesoamérica.
+- Fotos libres de los camellones y de Purrón.
+
+## Iteración 7 · 2 de noviembre de 2026
+
+Más imágenes y menos pendientes. Las afirmaciones sin fuente bajan de 31 a 12, y las fichas con imagen suben de 88 a 94.
+
+### Qué se agregó
+
+- **Seis imágenes nuevas de Commons**, todas con licencia libre y su autor:
+  - **Copal:** incienso de copal del Templo Mayor.
+  - **Caracol púrpura:** concha de *Plicopurpura pansa* (Naturalis). No es la de Galápagos, que se había quitado antes.
+  - **Arte indocristiano:** los murales de Ixmiquilpan.
+  - **Coatequitl:** un tequio en la Mixteca, en 2025.
+  - **Escultura de caña de maíz:** un Cristo novohispano de caña de maíz que está en Sevilla.
+  - **Estuco de cal:** las máscaras de Kohunlich.
+- **Fuentes para 19 afirmaciones.** Se agregaron 18 fuentes y se reutilizó una que ya estaba (Donkin, 1977). Todas se comprobaron en línea, salvo Britannica, que rechaza a los programas.
+  - **Frijol:** el ayocote y el tépari son mesoamericanos (Bitocchi, 2017).
+  - **Tabaco:** Colón en Cuba y Jean Nicot (Charlton, 2004).
+  - **Nachos:** Piedras Negras, 1943 (Time, 2016).
+  - **Tequila:** la denominación de origen de 1974 (WIPO Lex).
+  - **Quelites:** más de 250 especies (Mateos-Maces, 2020).
+  - **Sisal:** Brasil y África oriental (PROTA, 2011).
+  - **Maíz y aguacate:** FAOSTAT.
+  - **Muralismo:** la exposición *Vida Americana* del Whitney.
+  - **Algodón:** el 90 % mundial (Wendel y Grover, 2015).
+  - **También:** la ensalada César, el chayote, la jícama, el chile en Asia, la milpa en el noreste, la anilina, Francisco Hernández, el yoloxóchitl y el origen de «cigarro».
+- **Notas de lectura.** Cada fuente nueva dice en su nota si el pasaje se leyó y qué dice. Cuando el acceso estaba cerrado, dice que solo se comprobó el registro.
+- **Dos afirmaciones corregidas para decir solo lo que dice su fuente:**
+  - Quelites: «el epazote es su aromática más conocida» pasó a «en México se comen más de 250 especies».
+  - Sisal: la etimología se separó y quedó pendiente.
+
+### Casos de uso
+
+- **Citar un dato que antes no tenía respaldo.** «Los nachos son de Piedras Negras» o «el tequila tiene denominación de origen desde 1974» ya llevan su fuente y su enlace.
+- **Saber cuánto se leyó de cada fuente.** La nota de cada fuente nueva distingue entre «pasaje leído» y «registro comprobado».
+- **Reconocer las fichas de un vistazo.** El copal, el caracol púrpura, los murales indígenas, el tequio, los Cristos de caña y el estuco ya tienen foto en la tarjeta y en la ficha.
+
+### Pendiente
+
+- **12 afirmaciones sin fuente:** la margarita, el mole, los alebrijes, la Catrina, la piñata, las casacas británicas, la proteína de la milpa, el Día de Muertos con Halloween y otras. No se encontró una fuente sólida. Una página de museo daba fechas equivocadas de los alebrijes, así que no se usó.
+- **Dos fichas sin imagen:**
+  - Pirekua.
+  - Yoloxóchitl: en Commons no hay foto libre de *Magnolia mexicana*.
+- **Pasajes sin leer:** CABI, Nunn y Qian, Wendel y Grover, Bustamante y MacDougall.
+
 ## Iteración 6 · 1 de noviembre de 2026
 
 Constructores mexicanos: un ámbito nuevo, siete fichas, dos casos y un recorrido que va de las pirámides a los ferrocarriles de Estados Unidos.

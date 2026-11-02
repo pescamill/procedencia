@@ -1711,5 +1711,252 @@
   "publicacion": "Migration Policy Institute, Fact Sheet",
   "url": "https://www.migrationpolicy.org/research/mexican-born-persons-us-civilian-labor-force",
   "nota": "Datos de 2006."
+ },
+ {
+  "id": "mtpleasant2016",
+  "tipo": "articulo",
+  "autores": "Mt. Pleasant, J.",
+  "anio": 2016,
+  "titulo": "Food Yields and Nutrient Analyses of the Three Sisters: A Haudenosaunee Cropping System",
+  "publicacion": "Ethnobiology Letters 7(1)",
+  "doi": "10.14237/ebl.7.1.2016.721",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "hart2000",
+  "tipo": "articulo",
+  "autores": "Hart, J. P.",
+  "anio": 2000,
+  "titulo": "New Dates from Old Collections: The Roundtop Site and Maize-Beans-Squash Agriculture in the Northeast",
+  "publicacion": "North American Archaeologist 21(1)",
+  "doi": "10.2190/1m03-bngj-ffmy-ynmp",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "faostat",
+  "tipo": "base",
+  "autores": "FAO",
+  "anio": 2024,
+  "titulo": "FAOSTAT: Crops and livestock products",
+  "publicacion": "Organización de las Naciones Unidas para la Alimentación y la Agricultura",
+  "url": "https://www.fao.org/faostat/en/#data/QCL"
+ },
+ {
+  "id": "rojassandoval2018",
+  "tipo": "consulta",
+  "autores": "Rojas-Sandoval, J.",
+  "anio": 2018,
+  "titulo": "Sechium edule (chayote)",
+  "publicacion": "CABI Compendium",
+  "doi": "10.1079/cabicompendium.49493",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "nunnqian2010",
+  "tipo": "articulo",
+  "autores": "Nunn, N.; Qian, N.",
+  "anio": 2010,
+  "titulo": "The Columbian Exchange: A History of Disease, Food, and Ideas",
+  "publicacion": "Journal of Economic Perspectives 24(2)",
+  "doi": "10.1257/jep.24.2.163",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "atlasobscura2024cesar",
+  "tipo": "prensa",
+  "autores": "Atlas Obscura",
+  "anio": 2024,
+  "titulo": "Who invented Caesar salad?",
+  "publicacion": "Atlas Obscura",
+  "url": "https://www.atlasobscura.com/articles/who-invented-caesar-salad"
+ },
+ {
+  "id": "bitocchi2017",
+  "tipo": "articulo",
+  "autores": "Bitocchi, E.; Rau, D.; Bellucci, E. et al.",
+  "anio": 2017,
+  "titulo": "Beans (Phaseolus ssp.) as a Model for Understanding Crop Evolution",
+  "publicacion": "Frontiers in Plant Science 8",
+  "doi": "10.3389/fpls.2017.00722",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: cinco especies de Phaseolus se domesticaron; las formas silvestres del ayocote (P. coccineus) y del tépari (P. acutifolius) solo viven en Mesoamérica."
+ },
+ {
+  "id": "cabi2019jicama",
+  "tipo": "consulta",
+  "autores": "CABI",
+  "anio": 2019,
+  "titulo": "Pachyrhizus erosus (yam bean)",
+  "publicacion": "CABI Compendium",
+  "doi": "10.1079/cabicompendium.38361",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "time2016nachos",
+  "tipo": "prensa",
+  "autores": "Samuelson, K.",
+  "anio": 2016,
+  "titulo": "The International Day of the Nacho Would Not Be Possible Without This Man",
+  "publicacion": "Time, 20 de octubre de 2016",
+  "url": "https://time.com/4534655/international-day-of-the-nacho-history/",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: Ignacio Anaya, en el Victory Club de Piedras Negras, en 1943, según la investigación de Adriana P. Orr para el Oxford English Dictionary."
+ },
+ {
+  "id": "wipo1974tequila",
+  "tipo": "oficial",
+  "autores": "Secretaría de Industria y Comercio",
+  "anio": 1974,
+  "titulo": "Declaración general de protección a la denominación de origen «Tequila» (DOF, 9 de diciembre de 1974)",
+  "publicacion": "WIPO Lex",
+  "url": "https://www.wipo.int/wipolex/es/legislation/details/9325",
+  "nota": "La declaratoria de 1977 sustituyó a la de 1974."
+ },
+ {
+  "id": "mateosmaces2020",
+  "tipo": "articulo",
+  "autores": "Mateos-Maces, L.; Chávez-Servia, J. L.; Vera-Guzmán, A. M. et al.",
+  "anio": 2020,
+  "titulo": "Edible Leafy Plants from Mexico as Sources of Antioxidant Compounds, and Their Nutritional, Nutraceutical and Antimicrobial Potential: A Review",
+  "publicacion": "Antioxidants 9(6)",
+  "doi": "10.3390/antiox9060541",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: en México se recolectan o cultivan más de 250 especies de «quelites», incluidas las toleradas en la milpa."
+ },
+ {
+  "id": "whitney2020",
+  "tipo": "institucion",
+  "autores": "Whitney Museum of American Art",
+  "anio": 2020,
+  "titulo": "Vida Americana: Mexican Muralists Remake American Art, 1925–1945",
+  "publicacion": "Whitney Museum of American Art, Nueva York",
+  "url": "https://whitney.org/exhibitions/vida-americana"
+ },
+ {
+  "id": "wendel2015",
+  "tipo": "libro",
+  "autores": "Wendel, J. F.; Grover, C. E.",
+  "anio": 2015,
+  "titulo": "Taxonomy and Evolution of the Cotton Genus, Gossypium",
+  "publicacion": "Cotton (Agronomy Monograph 57)",
+  "doi": "10.2134/agronmonogr57.2013.0020",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "oyen2011",
+  "tipo": "consulta",
+  "autores": "Oyen, L. P. A.",
+  "anio": 2011,
+  "titulo": "Agave sisalana Perrine",
+  "publicacion": "PROTA4U, Wageningen",
+  "url": "https://plantuse.plantnet.org/en/Agave_sisalana_(PROTA)",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: Brasil es con mucho el mayor productor, seguido de Tanzania, Kenia, Madagascar y China (estimaciones de la FAO, 2004–2008). No trata la etimología."
+ },
+ {
+  "id": "charlton2004",
+  "tipo": "articulo",
+  "autores": "Charlton, A.",
+  "anio": 2004,
+  "titulo": "Medicinal Uses of Tobacco in History",
+  "publicacion": "Journal of the Royal Society of Medicine 97(6)",
+  "doi": "10.1177/014107680409700614",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: en 1492 marinos de Colón vieron fumar a los nativos de Cuba y Haití; hacia 1560, Jean Nicot, embajador de Francia en Lisboa, cultivó la planta."
+ },
+ {
+  "id": "britannicacigar",
+  "tipo": "consulta",
+  "autores": "Encyclopaedia Britannica",
+  "anio": 2024,
+  "titulo": "Cigar",
+  "publicacion": "Encyclopaedia Britannica",
+  "url": "https://www.britannica.com/topic/cigar",
+  "nota": "Dice que la palabra española «probablemente» adaptó el maya sik'ar."
+ },
+ {
+  "id": "bustamante2002",
+  "tipo": "libro",
+  "autores": "Bustamante, J.",
+  "anio": 2002,
+  "titulo": "The Natural History of New Spain",
+  "publicacion": "Varey, S. (ed.), The Mexican Treasury: The Writings of Dr. Francisco Hernández. Stanford University Press",
+  "doi": "10.1515/9781503618961-007",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "macdougall1965",
+  "tipo": "articulo",
+  "autores": "MacDougall, T.",
+  "anio": 1965,
+  "titulo": "Talauma mexicana — the heart flower tree",
+  "publicacion": "The Garden Journal 15(2)",
+  "doi": "10.5962/p.449522",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "larson2014",
+  "tipo": "articulo",
+  "autores": "Larson, G.; Piperno, D. R.; Allaby, R. G. et al.",
+  "anio": 2014,
+  "titulo": "Current perspectives and the future of domestication studies",
+  "publicacion": "PNAS 111(17)",
+  "doi": "10.1073/pnas.1323964111",
+  "nota": "Pasaje leído el 2 de noviembre de 2026: la figura 1 marca los centros independientes de domesticación más aceptados; el texto dice que la domesticación temprana de plantas ocurrió de forma independiente en el Viejo y el Nuevo Mundo."
+ },
+ {
+  "id": "doebley2004",
+  "tipo": "articulo",
+  "autores": "Doebley, J.",
+  "anio": 2004,
+  "titulo": "The Genetics of Maize Evolution",
+  "publicacion": "Annual Review of Genetics 38",
+  "doi": "10.1146/annurev.genet.38.072902.092425",
+  "nota": "Resumen leído el 2 de noviembre de 2026: el teocintle Zea mays ssp. parviglumis es el progenitor del maíz; unos pocos genes de gran efecto parecen ser las innovaciones clave de la domesticación."
+ },
+ {
+  "id": "wang2005",
+  "tipo": "articulo",
+  "autores": "Wang, H.; Nussbaum-Wagler, T.; Li, B. et al.",
+  "anio": 2005,
+  "titulo": "The origin of the naked grains of maize",
+  "publicacion": "Nature 436(7051)",
+  "doi": "10.1038/nature03863",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+ },
+ {
+  "id": "beach2019",
+  "tipo": "articulo",
+  "autores": "Beach, T.; Luzzadder-Beach, S.; Krause, S. et al.",
+  "anio": 2019,
+  "titulo": "Ancient Maya wetland fields revealed under tropical forest canopy from laser scanning and multiproxy evidence",
+  "publicacion": "PNAS 116(43)",
+  "doi": "10.1073/pnas.1910553116",
+  "nota": "Resumen leído el 2 de noviembre de 2026: el lidar reveló complejos de campos en humedales en Belice, uno cinco veces mayor de lo que se sabía; se cultivaban maíz, arrurruz, calabaza y aguacate, sobre todo entre hace 1,400 y 1,000 años."
+ },
+ {
+  "id": "morehart2014",
+  "tipo": "articulo",
+  "autores": "Morehart, C. T.; Frederick, C.",
+  "anio": 2014,
+  "titulo": "The chronology and collapse of pre-Aztec raised field (chinampa) agriculture in the northern Basin of Mexico",
+  "publicacion": "Antiquity 88(340)",
+  "doi": "10.1017/s0003598x00101164",
+  "nota": "Resumen leído el 2 de noviembre de 2026: alrededor de Xaltocan hubo un área extensa de chinampas, abandonada cuando la ciudad fue conquistada en el siglo XIV."
+ },
+ {
+  "id": "aiuvalasit2010",
+  "tipo": "articulo",
+  "autores": "Aiuvalasit, M. J.; Neely, J. A.; Bateman, M. D.",
+  "anio": 2010,
+  "titulo": "New radiometric dating of water management features at the prehistoric Purrón Dam Complex, Tehuacán Valley, Puebla, México",
+  "publicacion": "Journal of Archaeological Science 37(6)",
+  "doi": "10.1016/j.jas.2009.12.019",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido). El resumen de los mismos autores en la reunión de la GSA de 2007 sitúa el inicio de la obra en el Formativo, hacia 750 a. C."
+ },
+ {
+  "id": "sadozai2024",
+  "tipo": "consulta",
+  "autores": "Sadozaï, C.; Moriset, S.; Gandreau, D.",
+  "anio": 2024,
+  "titulo": "Stone, Mudbrick and Burnt Brick Structures",
+  "publicacion": "Encyclopedia of Archaeology, 2.ª ed. Elsevier",
+  "doi": "10.1016/b978-0-323-90799-6.00062-8",
+  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
  }
 ]

@@ -1523,5 +1523,216 @@
   "codigo": 200,
   "titulo_pagina": "Mexican-Born Persons in the U.S. Civilian Labor Force | Migration Policy Institute",
   "fecha": "2026-11-01"
+ },
+ "mtpleasant2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Food Yields and Nutrient Analyses of the Three Sisters: A Haudenosaunee Cropping System",
+  "anio_registrado": 2016,
+  "revista_registrada": "Ethnobiology Letters",
+  "fecha": "2026-11-02"
+ },
+ "hart2000": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "New Dates from Old Collections: The Roundtop Site and Maize-Beans-Squash Agriculture in the Northeast",
+  "anio_registrado": 2000,
+  "revista_registrada": "North American Archaeologist",
+  "fecha": "2026-11-02"
+ },
+ "faostat": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "FAOSTAT",
+  "fecha": "2026-11-02"
+ },
+ "rojassandoval2018": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Sechium edule (chayote)",
+  "anio_registrado": 2018,
+  "revista_registrada": "CABI Compendium",
+  "fecha": "2026-11-02"
+ },
+ "nunnqian2010": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Columbian Exchange: A History of Disease, Food, and Ideas",
+  "anio_registrado": 2010,
+  "revista_registrada": "Journal of Economic Perspectives",
+  "fecha": "2026-11-02"
+ },
+ "atlasobscura2024cesar": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "The Original Caesar Salad Was Finger Food - Gastro Obscura",
+  "fecha": "2026-11-02"
+ },
+ "bitocchi2017": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Beans (Phaseolus ssp.) as a Model for Understanding Crop Evolution",
+  "anio_registrado": 2017,
+  "revista_registrada": "Frontiers in Plant Science",
+  "fecha": "2026-11-02"
+ },
+ "cabi2019jicama": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Pachyrhizus erosus (yam bean)",
+  "anio_registrado": 2019,
+  "revista_registrada": "CABI Compendium",
+  "fecha": "2026-11-02"
+ },
+ "time2016nachos": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "International Day of the Nacho: Where Do Nachos Come From?",
+  "fecha": "2026-11-02"
+ },
+ "wipo1974tequila": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Declaración General de Protección a la Denominación de origen “Tequila”, México, WIPO Lex",
+  "fecha": "2026-11-02"
+ },
+ "mateosmaces2020": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Edible Leafy Plants from Mexico as Sources of Antioxidant Compounds, and Their Nutritional, Nutraceutical and Antimicrobial Potential: A Review",
+  "anio_registrado": 2020,
+  "revista_registrada": "Antioxidants",
+  "fecha": "2026-11-02"
+ },
+ "whitney2020": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Vida Americana: Mexican Muralists Remake American Art, 1925–1945 | Whitney Museum of American Art",
+  "fecha": "2026-11-02"
+ },
+ "wendel2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Taxonomy and Evolution of the Cotton Genus,\n                    Gossypium",
+  "anio_registrado": 2015,
+  "revista_registrada": "Agronomy Monographs",
+  "fecha": "2026-11-02"
+ },
+ "oyen2011": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Agave sisalana (PROTA) - Pl@ntUse",
+  "fecha": "2026-11-02"
+ },
+ "charlton2004": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Medicinal uses of Tobacco in History",
+  "anio_registrado": 2004,
+  "revista_registrada": "Journal of the Royal Society of Medicine",
+  "fecha": "2026-11-02"
+ },
+ "britannicacigar": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "bustamante2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Natural History of New Spain",
+  "anio_registrado": 2002,
+  "revista_registrada": "The Mexican Treasury",
+  "fecha": "2026-11-02"
+ },
+ "macdougall1965": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Talauma mexicana — the heart flower tree",
+  "anio_registrado": 1965,
+  "revista_registrada": "The garden journal",
+  "fecha": "2026-11-02"
+ },
+ "larson2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Current perspectives and the future of domestication studies",
+  "anio_registrado": 2014,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-02"
+ },
+ "doebley2004": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Genetics of Maize Evolution",
+  "anio_registrado": 2004,
+  "revista_registrada": "Annual Review of Genetics",
+  "fecha": "2026-11-02"
+ },
+ "wang2005": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The origin of the naked grains of maize",
+  "anio_registrado": 2005,
+  "revista_registrada": "Nature",
+  "fecha": "2026-11-02"
+ },
+ "beach2019": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Ancient Maya wetland fields revealed under tropical forest canopy from laser scanning and multiproxy evidence",
+  "anio_registrado": 2019,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-02"
+ },
+ "morehart2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "The chronology and collapse of pre-Aztec raised field (\n                    chinampa\n                    ) agriculture in the northern Basin of Mexico",
+  "anio_registrado": 2014,
+  "revista_registrada": "Antiquity",
+  "fecha": "2026-11-02"
+ },
+ "aiuvalasit2010": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "New radiometric dating of water management features at the prehistoric Purrón Dam Complex, Tehuacán Valley, Puebla, México",
+  "anio_registrado": 2010,
+  "revista_registrada": "Journal of Archaeological Science",
+  "fecha": "2026-11-02"
+ },
+ "sadozai2024": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Stone, Mudbrick and Burnt Brick Structures",
+  "anio_registrado": 2024,
+  "revista_registrada": "Encyclopedia of Archaeology (Second Edition)",
+  "fecha": "2026-11-02"
  }
 }

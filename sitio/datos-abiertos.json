@@ -563,8 +563,12 @@
     {
      "texto": "El sistema llegó al norte desde Mesoamérica; los haudenosaunee lo llaman «las tres hermanas».",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "mtpleasant2016",
+      "hart2000",
+      "matsuoka2002"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -583,7 +587,6 @@
     }
    ],
    "pendientes": [
-    "Fuente sobre la difusión del sistema al este de Norteamérica.",
     "Fuente nutricional."
    ],
    "relacionadas": [
@@ -660,6 +663,14 @@
       "calnek1972"
      ],
      "verificacion": "comprobada"
+    },
+    {
+     "texto": "Antes de los mexicas ya había chinampas extensas: las de Xaltocan, al norte de la cuenca, se abandonaron en el siglo XIV.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "morehart2014"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -672,7 +683,9 @@
    ],
    "pendientes": [],
    "relacionadas": [
-    "milpa"
+    "milpa",
+    "camellones-mayas",
+    "agricultura-independiente"
    ],
    "alcance": "regional",
    "en_breve": "Islas de cultivo hechas a mano sobre los lagos del valle de México, entre las tierras de cultivo más productivas que se han conocido. Aún se trabajan en Xochimilco.",
@@ -771,8 +784,10 @@
     {
      "texto": "Los tintes sintéticos de anilina, desde 1856, desplomaron su comercio.",
      "solidez": "consenso",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "donkin1977"
+     ],
+     "verificacion": "comprobada"
     },
     {
      "texto": "Hoy se usa como colorante alimentario E120 (carmín, ácido carmínico).",
@@ -851,8 +866,7 @@
     }
    },
    "pendientes": [
-    "Verificar su uso en las casacas británicas.",
-    "Fuente para la anilina (Perkin, 1856)."
+    "Verificar su uso en las casacas británicas."
    ],
    "relacionadas": [
     "nopal"
@@ -1498,6 +1512,15 @@
    "relacionadas": [],
    "alcance": "local",
    "en_breve": "Un caracol de la costa de Oaxaca que suelta un tinte morado sin morir; los tintoreros mixtecos lo ordeñan y lo devuelven a la roca.",
+   "imagen": {
+    "archivo": "Naturalis Biodiversity Center - ZMA.MOLL.29067 - Plicopurpura pansa (Gould, 1853) - Muricidae - Mollusc shell.jpeg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Naturalis_Biodiversity_Center_-_ZMA.MOLL.29067_-_Plicopurpura_pansa_%28Gould%2C_1853%29_-_Muricidae_-_Mollusc_shell.jpeg/960px-Naturalis_Biodiversity_Center_-_ZMA.MOLL.29067_-_Plicopurpura_pansa_%28Gould%2C_1853%29_-_Muricidae_-_Mollusc_shell.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.MOLL.29067_-_Plicopurpura_pansa_(Gould,_1853)_-_Muricidae_-_Mollusc_shell.jpeg",
+    "autor": "Gould, 1853",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "descripcion": "Plicopurpura pansa (Gould, 1853)"
+   },
    "wikipedias": 6,
    "wikidata": "Q7204968",
    "documentacion": "ficha"
@@ -1555,8 +1578,10 @@
     {
      "texto": "Es alrededor del 90% del algodón mundial; el egipcio y el pima son otra especie, G. barbadense, sudamericana.",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "wendel2015"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -1566,9 +1591,7 @@
      "forma": "etiqueta_muda"
     }
    ],
-   "pendientes": [
-    "Fuente para el porcentaje mundial."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "mundial",
    "en_breve": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán.",
@@ -1985,10 +2008,12 @@
    },
    "afirmaciones": [
     {
-     "texto": "La palabra «sisal» viene del puerto de Sisal, Yucatán; hoy Brasil y África oriental producen la mayoría.",
+     "texto": "Hoy Brasil y África oriental producen la mayor parte del sisal.",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "oyen2011"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -2000,7 +2025,7 @@
     }
    ],
    "pendientes": [
-    "Fuente para la etimología de «sisal» y la producción actual."
+    "Fuente para la etimología de «sisal» (el puerto de Sisal, Yucatán)."
    ],
    "relacionadas": [
     "agave-bebidas"
@@ -2221,6 +2246,185 @@
    }
   },
   {
+   "id": "agricultura-independiente",
+   "nombre": "Agricultura nacida aquí",
+   "ambito": "agricultura",
+   "naturaleza": "saber",
+   "clase": "aporte",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mesoamerica",
+   "region": "Occidente y sur de México (Balsas, Oaxaca)",
+   "coords": [
+    18.3,
+    -99.8
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": -8000,
+    "texto": "hace unos 10,000 años"
+   },
+   "pueblos": [],
+   "veredicto": {
+    "texto": "Mesoamérica es uno de los pocos lugares del mundo donde la agricultura nació por su cuenta, sin copiarla de nadie.",
+    "solidez": "consenso",
+    "fuentes": [
+     "larson2014"
+    ],
+    "verificacion": "comprobada"
+   },
+   "afirmaciones": [
+    {
+     "texto": "La calabaza de Guilá Naquitz, en Oaxaca, ya era doméstica hace unos 10,000 años, milenios antes que el maíz.",
+     "solidez": "consenso",
+     "fuentes": [
+      "smith1997"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "El maíz salió del teocintle del Balsas hace unos 9,000 años.",
+     "solidez": "consenso",
+     "fuentes": [
+      "matsuoka2002",
+      "piperno2009"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "nombres_mundo": [],
+   "pendientes": [],
+   "relacionadas": [
+    "maiz",
+    "calabaza",
+    "milpa",
+    "chinampas"
+   ],
+   "alcance": "amplio",
+   "en_breve": "La agricultura no llegó a México desde otra parte: aquí se inventó sola, como en el Cercano Oriente o en China.",
+   "sin_originario": "Es un hecho histórico, no una técnica con nombre propio.",
+   "originales": [],
+   "imagen": {
+    "archivo": "Maize-teosinte.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Maize-teosinte.jpg/960px-Maize-teosinte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Maize-teosinte.jpg",
+    "autor": "John Doebley",
+    "licencia": "CC BY 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/3.0",
+    "descripcion": "An image depicting Teosinte, Maize-teosinte hybrid, Maize."
+   },
+   "wikipedias": 53,
+   "wikidata": "Q542456",
+   "documentacion": "ficha"
+  },
+  {
+   "id": "camellones-mayas",
+   "nombre": "Camellones mayas",
+   "ambito": "agricultura",
+   "naturaleza": "tecnica",
+   "clase": "aporte",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mesoamerica",
+   "region": "Tierras bajas mayas (Belice y sureste de México)",
+   "coords": [
+    17.9,
+    -88.7
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": 700,
+    "texto": "hace 1,800 a 900 años"
+   },
+   "pueblos": [
+    "mayas"
+   ],
+   "veredicto": {
+    "texto": "Los mayas convirtieron los humedales en campos de cultivo con canales y camellones; el lidar muestra que cubrían áreas mucho mayores de lo que se creía.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "beach2019"
+    ],
+    "verificacion": "comprobada"
+   },
+   "afirmaciones": [
+    {
+     "texto": "En esos campos crecían maíz, arrurruz, calabaza y aguacate; funcionaron sobre todo entre hace 1,400 y 1,000 años.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "beach2019"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "nombres_mundo": [
+    {
+     "dice": "wetland fields, raised fields",
+     "lengua": "inglés",
+     "forma": "etiqueta_muda"
+    }
+   ],
+   "pendientes": [
+    "Ejemplos en territorio mexicano (Campeche, Quintana Roo) con fuente."
+   ],
+   "relacionadas": [
+    "chinampas",
+    "milpa"
+   ],
+   "alcance": "regional",
+   "en_breve": "Campos elevados entre canales, hechos en los pantanos de la selva maya para cultivar todo el año.",
+   "sin_originario": "No se conoce su nombre maya antiguo.",
+   "originales": [],
+   "wikipedias": 5,
+   "wikidata": "Q7285120",
+   "documentacion": "ficha"
+  },
+  {
+   "id": "presa-purron",
+   "nombre": "Presa de Purrón",
+   "ambito": "agricultura",
+   "naturaleza": "obra",
+   "clase": "aporte",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Valle de Tehuacán, Puebla",
+   "coords": [
+    18.25,
+    -97.2
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": -750,
+    "texto": "desde hacia 750 a. C."
+   },
+   "pueblos": [],
+   "veredicto": {
+    "texto": "En el valle de Tehuacán se construyó una presa con canales para regar desde el Formativo: una de las obras hidráulicas más antiguas de Mesoamérica.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "aiuvalasit2010"
+    ],
+    "verificacion": "comprobada"
+   },
+   "afirmaciones": [],
+   "nombres_mundo": [],
+   "pendientes": [
+    "Leer el artículo de 2010 para fijar las fechas de cada etapa."
+   ],
+   "relacionadas": [
+    "chinampas"
+   ],
+   "alcance": "local",
+   "en_breve": "Una presa de tierra y piedra con canales de riego, en Puebla, siglos antes de Teotihuacan.",
+   "sin_originario": "Se conoce por el nombre del lugar.",
+   "originales": [],
+   "documentacion": "ficha"
+  },
+  {
    "id": "maiz",
    "nombre": "Maíz",
    "ambito": "alimentacion",
@@ -2307,6 +2511,15 @@
      "verificacion": "comprobada"
     },
     {
+     "texto": "El teocintle da unas pocas semillas encerradas en cáscaras duras; el maíz, cientos de granos desnudos en una mazorca. El cambio se debe sobre todo a unos pocos genes de gran efecto, como tga1, que dejó el grano al descubierto.",
+     "solidez": "consenso",
+     "fuentes": [
+      "doebley2004",
+      "wang2005"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
      "texto": "Las variedades reventadoras, las palomitas, son maíz; en Perú hay restos de maíz reventador de hace entre 6,700 y 3,000 años, llegados desde Mesoamérica.",
      "solidez": "sustentada",
      "fuentes": [
@@ -2317,8 +2530,10 @@
     {
      "texto": "Hoy es el cereal más producido del mundo.",
      "solidez": "consenso",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "faostat"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -2355,13 +2570,12 @@
      }
     }
    ],
-   "pendientes": [
-    "Enlazar la estadística de producción mundial de la FAO (FAOSTAT)."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "milpa",
     "nixtamalizacion",
-    "huitlacoche"
+    "huitlacoche",
+    "agricultura-independiente"
    ],
    "alcance": "mundial",
    "en_breve": "El cereal más producido del planeta. Está en tortillas, palomitas, aceite, jarabe para refrescos, alimento para ganado y combustible.",
@@ -2675,8 +2889,10 @@
     {
      "texto": "En Mesoamérica se domesticaron además otras especies de frijol, como el ayocote y el tépari.",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "bitocchi2017"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -2694,9 +2910,7 @@
      }
     }
    ],
-   "pendientes": [
-    "Fuente para el ayocote (Phaseolus coccineus) y el tépari (P. acutifolius)."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "milpa"
    ],
@@ -3579,8 +3793,10 @@
     {
      "texto": "Portugueses y españoles lo llevaron a África, India y Asia en el siglo XVI; en menos de un siglo ya era parte de esas cocinas.",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "nunnqian2010"
+     ],
+     "verificacion": "comprobada"
     },
     {
      "texto": "El chile llegó a China en la década de 1570; nadie lo importó a propósito: se difundió de campesino en campesino y Sichuan y Hunan lo hicieron suyo.",
@@ -3684,9 +3900,7 @@
      }
     }
    },
-   "pendientes": [
-    "Fuente para la difusión del chile en Asia en el siglo XVI."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "cacao-chocolate",
     "vainilla"
@@ -3916,8 +4130,10 @@
     {
      "texto": "México es hoy el mayor productor del mundo.",
      "solidez": "consenso",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "faostat"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -3938,9 +4154,7 @@
      "verificacion": "comprobada"
     }
    ],
-   "pendientes": [
-    "Enlazar FAOSTAT para la producción."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "mundial",
    "en_breve": "El fruto del guacamole y del pan con aguacate que se come en todo el mundo; México es su origen y su mayor productor.",
@@ -4085,8 +4299,10 @@
     {
      "texto": "Hoy se cultiva en Asia, Brasil y Australia.",
      "solidez": "sustentada",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "rojassandoval2018"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -4096,9 +4312,7 @@
      "forma": "etiqueta_muda"
     }
    ],
-   "pendientes": [
-    "Fuente sobre su difusión mundial."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "amplio",
    "en_breve": "Una calabaza trepadora que el galeón de Manila llevó a Asia; hoy es común en China, Filipinas y Brasil.",
@@ -4213,8 +4427,10 @@
    "veredicto": {
     "texto": "La jícama es una leguminosa de raíz nativa de Mesoamérica; el galeón de Manila la llevó a Filipinas y hoy es común en el sudeste asiático.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "cabi2019jicama"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "nombres_mundo": [
@@ -4225,9 +4441,7 @@
      "nota": "Del náhuatl xicamatl."
     }
    ],
-   "pendientes": [
-    "Fuente botánica (p. ej., la monografía del IPGRI de Sørensen, 1996)."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "regional",
    "en_breve": "Raíz crujiente y dulce que se come cruda con limón y chile; también se cultiva en el sudeste asiático.",
@@ -4242,7 +4456,7 @@
    },
    "wikipedias": 46,
    "wikidata": "Q517283",
-   "documentacion": "inventario",
+   "documentacion": "ficha",
    "distribucion": {
     "nativa": [
      "BLZ",
@@ -4926,15 +5140,16 @@
     }
    ],
    "veredicto": {
-    "texto": "Los quelites son las verduras silvestres o toleradas de la milpa; el epazote es su aromática más conocida.",
+    "texto": "Los quelites son las verduras silvestres o toleradas de la milpa: en México se comen más de 250 especies.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "mateosmaces2020"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "nombres_mundo": [],
    "pendientes": [
-    "Fuente etnobotánica sobre los quelites.",
     "Confirmar la distribución nativa del epazote."
    ],
    "relacionadas": [
@@ -4953,7 +5168,7 @@
    },
    "wikipedias": 47,
    "wikidata": "Q640032",
-   "documentacion": "inventario",
+   "documentacion": "ficha",
    "distribucion": {
     "nativa": [
      "AGE",
@@ -7466,8 +7681,10 @@
     {
      "texto": "El tequila tiene denominación de origen desde 1974.",
      "solidez": "consenso",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "wipo1974tequila"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -7478,9 +7695,7 @@
      "nota": "Imitaciones fuera de la denominación de origen."
     }
    ],
-   "pendientes": [
-    "Enlazar la declaratoria de denominación de origen del tequila en el DOF (1974)."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "henequen"
    ],
@@ -7666,8 +7881,10 @@
    "veredicto": {
     "texto": "Se atribuye al restaurante de Caesar Cardini en Tijuana, hacia 1924; muchos la creen italiana o estadounidense.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "atlasobscura2024cesar"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "originales": [],
@@ -7679,9 +7896,7 @@
      "nota": "Se asume italiana por el nombre."
     }
    ],
-   "pendientes": [
-    "Fuente histórica."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "amplio",
    "en_breve": "La ensalada de lechuga con aderezo de anchoa que aparece en menús de todo el mundo nació en Tijuana.",
@@ -7697,7 +7912,7 @@
    },
    "wikipedias": 49,
    "wikidata": "Q275508",
-   "documentacion": "inventario"
+   "documentacion": "ficha"
   },
   {
    "id": "nachos",
@@ -7724,15 +7939,15 @@
    "veredicto": {
     "texto": "Ignacio «Nacho» Anaya los creó en Piedras Negras en 1943.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "time2016nachos"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "originales": [],
    "nombres_mundo": [],
-   "pendientes": [
-    "Fuente histórica."
-   ],
+   "pendientes": [],
    "relacionadas": [],
    "alcance": "amplio",
    "en_breve": "Totopos con queso derretido y jalapeño, inventados en Piedras Negras, Coahuila, y hoy comida de estadio en todo el mundo.",
@@ -7748,7 +7963,7 @@
    },
    "wikipedias": 52,
    "wikidata": "Q466430",
-   "documentacion": "inventario"
+   "documentacion": "ficha"
   },
   {
    "id": "margarita",
@@ -8035,6 +8250,17 @@
    },
    "alcance": "regional",
    "en_breve": "Cal mezclada con savia de árboles como el chukum. Hace el estuco más fuerte y resistente al agua; se sigue usando en Yucatán.",
+   "imagen": {
+    "archivo": "Kohunlich, Temple of the Masks (14179344508).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Kohunlich%2C_Temple_of_the_Masks_%2814179344508%29.jpg/960px-Kohunlich%2C_Temple_of_the_Masks_%2814179344508%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Kohunlich,_Temple_of_the_Masks_(14179344508).jpg",
+    "autor": "Arian Zwegers from Brussels, Belgium",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "descripcion": "Kohunlich, Temple of the Masks, right side\nKohunlich is a large archaeological site of the pre-Columbian Maya civilization, located on the Yucatán Peninsula in the state of Quintana Roo. The Spanish name does not actually derive from Mayan but from the English Cohune Ridge where cohune palm grew.\nTh"
+   },
+   "wikipedias": 6,
+   "wikidata": "Q5683155",
    "documentacion": "ficha"
   },
   {
@@ -8108,6 +8334,17 @@
    },
    "alcance": "regional",
    "en_breve": "La forma indígena de organizar el trabajo por turnos para levantar obras públicas. Con ella se construyeron los templos antiguos y las catedrales coloniales.",
+   "imagen": {
+    "archivo": "Tequio San Juan Achiutla y Santa Catarina Tayata 2025.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Tequio_San_Juan_Achiutla_y_Santa_Catarina_Tayata_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Tequio_San_Juan_Achiutla_y_Santa_Catarina_Tayata_2025.jpg",
+    "autor": "Eduardo Ruiz Mondragón",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "descripcion": "Comunidades de San Juan Achiutla y Santa Catarina Tayata, Oaxaca, México, dirigiendose a trabajar en el tequio para dar mantenimiento al carril que delimita ambos municipios. Abril 2025."
+   },
+   "wikipedias": 2,
+   "wikidata": "Q18225074",
    "documentacion": "ficha"
   },
   {
@@ -8260,6 +8497,15 @@
    },
    "alcance": "regional",
    "en_breve": "Los murales, relieves y yeserías que artistas indígenas hicieron en las iglesias coloniales, con guerreros jaguar y paraísos de Tláloc entre los santos.",
+   "imagen": {
+    "archivo": "MuralsIxmiquilpan09.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/MuralsIxmiquilpan09.jpg/960px-MuralsIxmiquilpan09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:MuralsIxmiquilpan09.jpg",
+    "autor": "Thelmadatter",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "descripcion": "Mural work inside the San Miguel Archangel Church in Ixmiquilpan, Hidalgo, Mexico"
+   },
    "documentacion": "ficha"
   },
   {
@@ -8330,6 +8576,89 @@
    },
    "alcance": "regional",
    "en_breve": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España.",
+   "imagen": {
+    "archivo": "Crucificado novohispano, Convento de Santa Paula (Sevilla).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Crucificado_novohispano%2C_Convento_de_Santa_Paula_%28Sevilla%29.jpg/960px-Crucificado_novohispano%2C_Convento_de_Santa_Paula_%28Sevilla%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Crucificado_novohispano,_Convento_de_Santa_Paula_(Sevilla).jpg",
+    "autor": "Jl FilpoC",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "descripcion": "Coro alto del Convento de Santa Paula (Sevilla). Escultura de Cristo Crucificado, caña de maiz, madera, papel, de la segunda mitad del siglo XVI."
+   },
+   "documentacion": "ficha"
+  },
+  {
+   "id": "adobe",
+   "nombre": "Adobe",
+   "ambito": "construccion",
+   "naturaleza": "tecnica",
+   "clase": "deslinde",
+   "actos": [],
+   "territorio": "mexico",
+   "region": "Cholula, Puebla, y todo el México antiguo",
+   "coords": [
+    19.06,
+    -98.3
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": -200,
+    "texto": "desde el Formativo"
+   },
+   "pueblos": [],
+   "originales": [
+    {
+     "forma": "xamitl",
+     "lengua": "náhuatl",
+     "glosa": "adobe",
+     "fuentes": [
+      "gdn2012"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "veredicto": {
+    "texto": "No se reclama como invento: el ladrillo de barro secado al sol se usaba en el Cercano Oriente desde el Neolítico, y la palabra «adobe» viene del árabe. Mesoamérica lo usó por su cuenta y a escala monumental: la Gran Pirámide de Cholula, el edificio más grande de Mesoamérica, es de adobe.",
+    "solidez": "consenso",
+    "fuentes": [
+     "sadozai2024",
+     "dle",
+     "mccafferty1996"
+    ],
+    "verificacion": "comprobada"
+   },
+   "afirmaciones": [
+    {
+     "texto": "La palabra «adobe» viene del árabe hispánico aṭṭúb, y esta del egipcio; en náhuatl se decía xamitl.",
+     "solidez": "consenso",
+     "fuentes": [
+      "dle",
+      "gdn2012"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "nombres_mundo": [],
+   "pendientes": [
+    "Fuente arqueológica sobre el adobe más antiguo de Mesoamérica."
+   ],
+   "relacionadas": [
+    "basamento-piramidal",
+    "cal-corteza"
+   ],
+   "alcance": "amplio",
+   "en_breve": "Ladrillos de barro secados al sol. Se inventaron en muchos lugares; en México levantaron la pirámide más grande de Mesoamérica.",
+   "imagen": {
+    "archivo": "Adobes.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Adobes.jpg",
+    "autor": "Altevir Vechia at Portuguese Wikipedia",
+    "licencia": "Public domain",
+    "licencia_url": null,
+    "descripcion": "Foto em mar.2004,em Cholula, Estado de Puebla, México, por Altevir Vechia"
+   },
+   "wikipedias": 40,
+   "wikidata": "Q183496",
    "documentacion": "ficha"
   },
   {
@@ -9553,8 +9882,10 @@
    "veredicto": {
     "texto": "La expedición del médico Francisco Hernández catalogó hacia 1570 unas 3,000 plantas a partir del saber de médicos indígenas.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "bustamante2002"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "originales": [
@@ -9569,9 +9900,7 @@
     }
    ],
    "nombres_mundo": [],
-   "pendientes": [
-    "Fuente académica (p. ej., Varey, 2000)."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "cruz-badiano"
    ],
@@ -9588,7 +9917,7 @@
    },
    "wikipedias": 18,
    "wikidata": "Q940017",
-   "documentacion": "inventario"
+   "documentacion": "ficha"
   },
   {
    "id": "barbasco-pildora",
@@ -9950,14 +10279,14 @@
    "veredicto": {
     "texto": "Magnolia mexicana, «flor del corazón», se usaba como medicina cardiaca.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "macdougall1965"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "nombres_mundo": [],
-   "pendientes": [
-    "Fuente farmacológica o etnobotánica."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "cruz-badiano"
    ],
@@ -9965,7 +10294,7 @@
    "en_breve": "Magnolia cuya flor, «flor del corazón», se usaba como remedio para el corazón.",
    "wikipedias": 10,
    "wikidata": "Q15493323",
-   "documentacion": "inventario",
+   "documentacion": "ficha",
    "distribucion": {
     "nativa": [
      "GUA",
@@ -10748,6 +11077,15 @@
    ],
    "alcance": "regional",
    "en_breve": "Resina aromática que se quema en ofrendas desde antes de la conquista.",
+   "imagen": {
+    "archivo": "Aztec Copal Incense (9781556773).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Aztec_Copal_Incense_%289781556773%29.jpg/960px-Aztec_Copal_Incense_%289781556773%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Aztec_Copal_Incense_(9781556773).jpg",
+    "autor": "Gary Todd from Xinzheng, China",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "descripcion": "Templo Mayor Museum at site of Aztec Great Temple, Mexico City. Complete indexed photo collection at WorldHistoryPics.com."
+   },
    "wikipedias": 32,
    "wikidata": "Q909436",
    "documentacion": "ficha",
@@ -10852,13 +11190,14 @@
     {
      "texto": "La palabra «cigarro» podría venir del maya sik'ar; la etimología no tiene consenso.",
      "solidez": "debate",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "britannicacigar"
+     ],
+     "verificacion": "citada"
     }
    ],
    "nombres_mundo": [],
    "pendientes": [
-    "Fuente para la etimología propuesta de «cigarro».",
     "Ubicar el pasaje de Sahagún."
    ],
    "enfoque": "Contar el contraste entre el uso ritual y medicinal mesoamericano y el consumo industrial y adictivo que creó Europa, sin promover el tabaquismo.",
@@ -11020,15 +11359,15 @@
     {
      "texto": "Los europeos vieron fumar a los taínos en Cuba en 1492; de Jean Nicot, embajador francés, viene «nicotina».",
      "solidez": "consenso",
-     "fuentes": [],
-     "verificacion": "pendiente"
+     "fuentes": [
+      "charlton2004"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "originales": [],
    "nombres_mundo": [],
-   "pendientes": [
-    "Fuente para Nicot y la etimología de «tabaco»."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "tabaco-mesoamericano"
    ],
@@ -11789,15 +12128,15 @@
    "veredicto": {
     "texto": "El muralismo mexicano influyó en el arte público de EUA en los años treinta.",
     "solidez": "sustentada",
-    "fuentes": [],
-    "verificacion": "pendiente"
+    "fuentes": [
+     "whitney2020"
+    ],
+    "verificacion": "comprobada"
    },
    "afirmaciones": [],
    "originales": [],
    "nombres_mundo": [],
-   "pendientes": [
-    "Fuente historiográfica."
-   ],
+   "pendientes": [],
    "relacionadas": [
     "catrina"
    ],
@@ -11815,7 +12154,7 @@
    },
    "wikipedias": 29,
    "wikidata": "Q938864",
-   "documentacion": "inventario"
+   "documentacion": "ficha"
   },
   {
    "id": "catrina",
@@ -13991,7 +14330,9 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "maiz"
+    "agricultura-independiente",
+    "maiz",
+    "milpa"
    ]
   },
   {
@@ -14012,6 +14353,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "agricultura-independiente",
     "maiz"
    ]
   },
@@ -14097,6 +14439,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "agricultura-independiente",
     "calabaza"
    ]
   },
@@ -16264,6 +16607,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "adobe",
     "cacahuate",
     "jitomate",
     "palabras-nahuatl"
@@ -16957,6 +17301,7 @@
    },
    "citada_por": [
     "achiote",
+    "adobe",
     "agave-bebidas",
     "aguacate",
     "ajolote",
@@ -17629,6 +17974,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "adobe",
     "basamento-piramidal",
     "caso-templos-iglesias",
     "talud-tablero"
@@ -17901,42 +18247,576 @@
    "citada_por": [
     "constructores"
    ]
+  },
+  {
+   "id": "mtpleasant2016",
+   "tipo": "articulo",
+   "autores": "Mt. Pleasant, J.",
+   "anio": 2016,
+   "titulo": "Food Yields and Nutrient Analyses of the Three Sisters: A Haudenosaunee Cropping System",
+   "publicacion": "Ethnobiology Letters 7(1)",
+   "doi": "10.14237/ebl.7.1.2016.721",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Food Yields and Nutrient Analyses of the Three Sisters: A Haudenosaunee Cropping System",
+    "anio_registrado": 2016,
+    "revista_registrada": "Ethnobiology Letters",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "milpa"
+   ]
+  },
+  {
+   "id": "hart2000",
+   "tipo": "articulo",
+   "autores": "Hart, J. P.",
+   "anio": 2000,
+   "titulo": "New Dates from Old Collections: The Roundtop Site and Maize-Beans-Squash Agriculture in the Northeast",
+   "publicacion": "North American Archaeologist 21(1)",
+   "doi": "10.2190/1m03-bngj-ffmy-ynmp",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "New Dates from Old Collections: The Roundtop Site and Maize-Beans-Squash Agriculture in the Northeast",
+    "anio_registrado": 2000,
+    "revista_registrada": "North American Archaeologist",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "milpa"
+   ]
+  },
+  {
+   "id": "faostat",
+   "tipo": "base",
+   "autores": "FAO",
+   "anio": 2024,
+   "titulo": "FAOSTAT: Crops and livestock products",
+   "publicacion": "Organización de las Naciones Unidas para la Alimentación y la Agricultura",
+   "url": "https://www.fao.org/faostat/en/#data/QCL",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "FAOSTAT",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "aguacate",
+    "maiz"
+   ]
+  },
+  {
+   "id": "rojassandoval2018",
+   "tipo": "consulta",
+   "autores": "Rojas-Sandoval, J.",
+   "anio": 2018,
+   "titulo": "Sechium edule (chayote)",
+   "publicacion": "CABI Compendium",
+   "doi": "10.1079/cabicompendium.49493",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Sechium edule (chayote)",
+    "anio_registrado": 2018,
+    "revista_registrada": "CABI Compendium",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "chayote"
+   ]
+  },
+  {
+   "id": "nunnqian2010",
+   "tipo": "articulo",
+   "autores": "Nunn, N.; Qian, N.",
+   "anio": 2010,
+   "titulo": "The Columbian Exchange: A History of Disease, Food, and Ideas",
+   "publicacion": "Journal of Economic Perspectives 24(2)",
+   "doi": "10.1257/jep.24.2.163",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The Columbian Exchange: A History of Disease, Food, and Ideas",
+    "anio_registrado": 2010,
+    "revista_registrada": "Journal of Economic Perspectives",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "chile"
+   ]
+  },
+  {
+   "id": "atlasobscura2024cesar",
+   "tipo": "prensa",
+   "autores": "Atlas Obscura",
+   "anio": 2024,
+   "titulo": "Who invented Caesar salad?",
+   "publicacion": "Atlas Obscura",
+   "url": "https://www.atlasobscura.com/articles/who-invented-caesar-salad",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "The Original Caesar Salad Was Finger Food - Gastro Obscura",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "ensalada-cesar"
+   ]
+  },
+  {
+   "id": "bitocchi2017",
+   "tipo": "articulo",
+   "autores": "Bitocchi, E.; Rau, D.; Bellucci, E. et al.",
+   "anio": 2017,
+   "titulo": "Beans (Phaseolus ssp.) as a Model for Understanding Crop Evolution",
+   "publicacion": "Frontiers in Plant Science 8",
+   "doi": "10.3389/fpls.2017.00722",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: cinco especies de Phaseolus se domesticaron; las formas silvestres del ayocote (P. coccineus) y del tépari (P. acutifolius) solo viven en Mesoamérica.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Beans (Phaseolus ssp.) as a Model for Understanding Crop Evolution",
+    "anio_registrado": 2017,
+    "revista_registrada": "Frontiers in Plant Science",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "frijol"
+   ]
+  },
+  {
+   "id": "cabi2019jicama",
+   "tipo": "consulta",
+   "autores": "CABI",
+   "anio": 2019,
+   "titulo": "Pachyrhizus erosus (yam bean)",
+   "publicacion": "CABI Compendium",
+   "doi": "10.1079/cabicompendium.38361",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Pachyrhizus erosus (yam bean)",
+    "anio_registrado": 2019,
+    "revista_registrada": "CABI Compendium",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "jicama"
+   ]
+  },
+  {
+   "id": "time2016nachos",
+   "tipo": "prensa",
+   "autores": "Samuelson, K.",
+   "anio": 2016,
+   "titulo": "The International Day of the Nacho Would Not Be Possible Without This Man",
+   "publicacion": "Time, 20 de octubre de 2016",
+   "url": "https://time.com/4534655/international-day-of-the-nacho-history/",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: Ignacio Anaya, en el Victory Club de Piedras Negras, en 1943, según la investigación de Adriana P. Orr para el Oxford English Dictionary.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "International Day of the Nacho: Where Do Nachos Come From?",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "nachos"
+   ]
+  },
+  {
+   "id": "wipo1974tequila",
+   "tipo": "oficial",
+   "autores": "Secretaría de Industria y Comercio",
+   "anio": 1974,
+   "titulo": "Declaración general de protección a la denominación de origen «Tequila» (DOF, 9 de diciembre de 1974)",
+   "publicacion": "WIPO Lex",
+   "url": "https://www.wipo.int/wipolex/es/legislation/details/9325",
+   "nota": "La declaratoria de 1977 sustituyó a la de 1974.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Declaración General de Protección a la Denominación de origen “Tequila”, México, WIPO Lex",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "agave-bebidas"
+   ]
+  },
+  {
+   "id": "mateosmaces2020",
+   "tipo": "articulo",
+   "autores": "Mateos-Maces, L.; Chávez-Servia, J. L.; Vera-Guzmán, A. M. et al.",
+   "anio": 2020,
+   "titulo": "Edible Leafy Plants from Mexico as Sources of Antioxidant Compounds, and Their Nutritional, Nutraceutical and Antimicrobial Potential: A Review",
+   "publicacion": "Antioxidants 9(6)",
+   "doi": "10.3390/antiox9060541",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: en México se recolectan o cultivan más de 250 especies de «quelites», incluidas las toleradas en la milpa.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Edible Leafy Plants from Mexico as Sources of Antioxidant Compounds, and Their Nutritional, Nutraceutical and Antimicrobial Potential: A Review",
+    "anio_registrado": 2020,
+    "revista_registrada": "Antioxidants",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "quelites"
+   ]
+  },
+  {
+   "id": "whitney2020",
+   "tipo": "institucion",
+   "autores": "Whitney Museum of American Art",
+   "anio": 2020,
+   "titulo": "Vida Americana: Mexican Muralists Remake American Art, 1925–1945",
+   "publicacion": "Whitney Museum of American Art, Nueva York",
+   "url": "https://whitney.org/exhibitions/vida-americana",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Vida Americana: Mexican Muralists Remake American Art, 1925–1945 | Whitney Museum of American Art",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "muralismo"
+   ]
+  },
+  {
+   "id": "wendel2015",
+   "tipo": "libro",
+   "autores": "Wendel, J. F.; Grover, C. E.",
+   "anio": 2015,
+   "titulo": "Taxonomy and Evolution of the Cotton Genus, Gossypium",
+   "publicacion": "Cotton (Agronomy Monograph 57)",
+   "doi": "10.2134/agronmonogr57.2013.0020",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Taxonomy and Evolution of the Cotton Genus,\n                    Gossypium",
+    "anio_registrado": 2015,
+    "revista_registrada": "Agronomy Monographs",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon"
+   ]
+  },
+  {
+   "id": "oyen2011",
+   "tipo": "consulta",
+   "autores": "Oyen, L. P. A.",
+   "anio": 2011,
+   "titulo": "Agave sisalana Perrine",
+   "publicacion": "PROTA4U, Wageningen",
+   "url": "https://plantuse.plantnet.org/en/Agave_sisalana_(PROTA)",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: Brasil es con mucho el mayor productor, seguido de Tanzania, Kenia, Madagascar y China (estimaciones de la FAO, 2004–2008). No trata la etimología.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Agave sisalana (PROTA) - Pl@ntUse",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "henequen"
+   ]
+  },
+  {
+   "id": "charlton2004",
+   "tipo": "articulo",
+   "autores": "Charlton, A.",
+   "anio": 2004,
+   "titulo": "Medicinal Uses of Tobacco in History",
+   "publicacion": "Journal of the Royal Society of Medicine 97(6)",
+   "doi": "10.1177/014107680409700614",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: en 1492 marinos de Colón vieron fumar a los nativos de Cuba y Haití; hacia 1560, Jean Nicot, embajador de Francia en Lisboa, cultivó la planta.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Medicinal uses of Tobacco in History",
+    "anio_registrado": 2004,
+    "revista_registrada": "Journal of the Royal Society of Medicine",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "tabaco-comun"
+   ]
+  },
+  {
+   "id": "britannicacigar",
+   "tipo": "consulta",
+   "autores": "Encyclopaedia Britannica",
+   "anio": 2024,
+   "titulo": "Cigar",
+   "publicacion": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/topic/cigar",
+   "nota": "Dice que la palabra española «probablemente» adaptó el maya sik'ar.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "tabaco-mesoamericano"
+   ]
+  },
+  {
+   "id": "bustamante2002",
+   "tipo": "libro",
+   "autores": "Bustamante, J.",
+   "anio": 2002,
+   "titulo": "The Natural History of New Spain",
+   "publicacion": "Varey, S. (ed.), The Mexican Treasury: The Writings of Dr. Francisco Hernández. Stanford University Press",
+   "doi": "10.1515/9781503618961-007",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The Natural History of New Spain",
+    "anio_registrado": 2002,
+    "revista_registrada": "The Mexican Treasury",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "herbolaria-hernandez"
+   ]
+  },
+  {
+   "id": "macdougall1965",
+   "tipo": "articulo",
+   "autores": "MacDougall, T.",
+   "anio": 1965,
+   "titulo": "Talauma mexicana — the heart flower tree",
+   "publicacion": "The Garden Journal 15(2)",
+   "doi": "10.5962/p.449522",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Talauma mexicana — the heart flower tree",
+    "anio_registrado": 1965,
+    "revista_registrada": "The garden journal",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "yoloxochitl"
+   ]
+  },
+  {
+   "id": "larson2014",
+   "tipo": "articulo",
+   "autores": "Larson, G.; Piperno, D. R.; Allaby, R. G. et al.",
+   "anio": 2014,
+   "titulo": "Current perspectives and the future of domestication studies",
+   "publicacion": "PNAS 111(17)",
+   "doi": "10.1073/pnas.1323964111",
+   "nota": "Pasaje leído el 2 de noviembre de 2026: la figura 1 marca los centros independientes de domesticación más aceptados; el texto dice que la domesticación temprana de plantas ocurrió de forma independiente en el Viejo y el Nuevo Mundo.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Current perspectives and the future of domestication studies",
+    "anio_registrado": 2014,
+    "revista_registrada": "Proceedings of the National Academy of Sciences",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "agricultura-independiente"
+   ]
+  },
+  {
+   "id": "doebley2004",
+   "tipo": "articulo",
+   "autores": "Doebley, J.",
+   "anio": 2004,
+   "titulo": "The Genetics of Maize Evolution",
+   "publicacion": "Annual Review of Genetics 38",
+   "doi": "10.1146/annurev.genet.38.072902.092425",
+   "nota": "Resumen leído el 2 de noviembre de 2026: el teocintle Zea mays ssp. parviglumis es el progenitor del maíz; unos pocos genes de gran efecto parecen ser las innovaciones clave de la domesticación.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The Genetics of Maize Evolution",
+    "anio_registrado": 2004,
+    "revista_registrada": "Annual Review of Genetics",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "maiz"
+   ]
+  },
+  {
+   "id": "wang2005",
+   "tipo": "articulo",
+   "autores": "Wang, H.; Nussbaum-Wagler, T.; Li, B. et al.",
+   "anio": 2005,
+   "titulo": "The origin of the naked grains of maize",
+   "publicacion": "Nature 436(7051)",
+   "doi": "10.1038/nature03863",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The origin of the naked grains of maize",
+    "anio_registrado": 2005,
+    "revista_registrada": "Nature",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "maiz"
+   ]
+  },
+  {
+   "id": "beach2019",
+   "tipo": "articulo",
+   "autores": "Beach, T.; Luzzadder-Beach, S.; Krause, S. et al.",
+   "anio": 2019,
+   "titulo": "Ancient Maya wetland fields revealed under tropical forest canopy from laser scanning and multiproxy evidence",
+   "publicacion": "PNAS 116(43)",
+   "doi": "10.1073/pnas.1910553116",
+   "nota": "Resumen leído el 2 de noviembre de 2026: el lidar reveló complejos de campos en humedales en Belice, uno cinco veces mayor de lo que se sabía; se cultivaban maíz, arrurruz, calabaza y aguacate, sobre todo entre hace 1,400 y 1,000 años.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Ancient Maya wetland fields revealed under tropical forest canopy from laser scanning and multiproxy evidence",
+    "anio_registrado": 2019,
+    "revista_registrada": "Proceedings of the National Academy of Sciences",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "camellones-mayas"
+   ]
+  },
+  {
+   "id": "morehart2014",
+   "tipo": "articulo",
+   "autores": "Morehart, C. T.; Frederick, C.",
+   "anio": 2014,
+   "titulo": "The chronology and collapse of pre-Aztec raised field (chinampa) agriculture in the northern Basin of Mexico",
+   "publicacion": "Antiquity 88(340)",
+   "doi": "10.1017/s0003598x00101164",
+   "nota": "Resumen leído el 2 de noviembre de 2026: alrededor de Xaltocan hubo un área extensa de chinampas, abandonada cuando la ciudad fue conquistada en el siglo XIV.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 0.99,
+    "titulo_registrado": "The chronology and collapse of pre-Aztec raised field (\n                    chinampa\n                    ) agriculture in the northern Basin of Mexico",
+    "anio_registrado": 2014,
+    "revista_registrada": "Antiquity",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "chinampas"
+   ]
+  },
+  {
+   "id": "aiuvalasit2010",
+   "tipo": "articulo",
+   "autores": "Aiuvalasit, M. J.; Neely, J. A.; Bateman, M. D.",
+   "anio": 2010,
+   "titulo": "New radiometric dating of water management features at the prehistoric Purrón Dam Complex, Tehuacán Valley, Puebla, México",
+   "publicacion": "Journal of Archaeological Science 37(6)",
+   "doi": "10.1016/j.jas.2009.12.019",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido). El resumen de los mismos autores en la reunión de la GSA de 2007 sitúa el inicio de la obra en el Formativo, hacia 750 a. C.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "New radiometric dating of water management features at the prehistoric Purrón Dam Complex, Tehuacán Valley, Puebla, México",
+    "anio_registrado": 2010,
+    "revista_registrada": "Journal of Archaeological Science",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "presa-purron"
+   ]
+  },
+  {
+   "id": "sadozai2024",
+   "tipo": "consulta",
+   "autores": "Sadozaï, C.; Moriset, S.; Gandreau, D.",
+   "anio": 2024,
+   "titulo": "Stone, Mudbrick and Burnt Brick Structures",
+   "publicacion": "Encyclopedia of Archaeology, 2.ª ed. Elsevier",
+   "doi": "10.1016/b978-0-323-90799-6.00062-8",
+   "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Stone, Mudbrick and Burnt Brick Structures",
+    "anio_registrado": 2024,
+    "revista_registrada": "Encyclopedia of Archaeology (Second Edition)",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "adobe"
+   ]
   }
  ],
  "metricas": {
-  "fichas": 96,
-  "aportes": 92,
-  "deslindes": 4,
+  "fichas": 100,
+  "aportes": 95,
+  "deslindes": 5,
   "casos": 31,
   "recorridos": 10,
-  "fuentes": 187,
+  "fuentes": 212,
   "fuentes_por_resultado": {
-   "ok": 173,
+   "ok": 197,
    "sin_enlace": 10,
-   "bloqueada": 4
+   "bloqueada": 5
   },
   "afirmaciones": {
-   "pendiente": 31,
-   "citada": 33,
-   "comprobada": 256
+   "pendiente": 12,
+   "citada": 34,
+   "comprobada": 284
   },
-  "afirmaciones_total": 320,
+  "afirmaciones_total": 330,
   "documentacion": {
-   "inventario": 12,
-   "ficha": 80,
+   "inventario": 5,
+   "ficha": 91,
    "expediente": 4
   },
   "pueblos": 15,
   "alcance": {
    "mundial": 14,
-   "amplio": 34,
-   "regional": 38,
-   "local": 10
+   "amplio": 36,
+   "regional": 39,
+   "local": 11
   },
-  "imagenes": 88,
-  "nombres_originarios": 100,
+  "imagenes": 96,
+  "nombres_originarios": 101,
   "especies_wcvp": 43,
-  "fecha": "2026-11-01"
+  "fecha": "2026-11-02"
  },
  "erratas": [
   {

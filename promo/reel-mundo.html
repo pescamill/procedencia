@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Procedencia · Un mundo sin México</title>
+<script src="reel-datos.js"></script>
+<style>
+  /* 1080×1920, cuadro por cuadro con window.render(t). Lo importante queda entre y 220 y 1560 para que la
+     interfaz de Reels no lo tape. Papel y tinta, el guinda del sitio y un solo verde: el de «comprobada».
+     Las fotos, los mapas y las tarjetas viven en 3D; el texto queda plano para que se lea. */
+  :root {
+    --paper: #f4efe4; --paper-2: #ebe4d4; --ink: #1d1916; --ink-2: #5b524a; --muted: #8b8176; --rule: #d3c9b6;
+    --accent: #812d37; --accent-2: #a8434f; --rose: #e9a4ac; --ok: #2f7d4f; --night: #171311;
+    --serif: "Palatino", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    --sans: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
+    --mono: Menlo, "SF Mono", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--night); }
+  body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  #stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--night); }
+  #cam { position: absolute; inset: 0; transform-origin: 50% 46%; }
+  .scene { position: absolute; inset: 0; display: none; overflow: hidden; }
+  .paper { background: var(--paper); }
+  .night { background: var(--night); color: var(--paper); }
+  .wine { background: var(--accent); color: #fff6ee; }
+  .v3 { position: absolute; inset: 0; perspective: 1500px; perspective-origin: 50% 40%; }
+  .p3 { transform-style: preserve-3d; }
+  #shade { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+  #grain { position: absolute; inset: 0; pointer-events: none; opacity: .5; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #vig { position: absolute; inset: 0; pointer-events: none; opacity: 0;
+    background: radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 45%, rgba(20,10,8,.55) 100%); }
+  #flash { position: absolute; inset: 0; background: #fff; opacity: 0; pointer-events: none; }
+
+  .r { will-change: transform, opacity; }
+  .w > span { display: inline-block; white-space: pre; }
+  .eyebrow { position: absolute; left: 90px; right: 90px; font: 700 24px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; }
+
+  /* foto impresa, en 3D: borde de papel, sombra y el crédito al pie */
+  .foto { position: absolute; background: #fffdf8; padding: 16px 16px 50px; border-radius: 6px;
+    box-shadow: 0 50px 90px rgba(20,12,8,.32), 0 4px 10px rgba(20,12,8,.12); backface-visibility: hidden; }
+  .foto img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 2px; }
+  .foto .cr { position: absolute; left: 16px; right: 16px; bottom: 16px; font: 500 15px/1.2 var(--mono); color: #8b8176;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .foto .lbl { position: absolute; left: 50%; top: 18px; transform: translateX(-50%) rotate(-4deg); padding: 12px 22px; border-radius: 10px;
+    background: var(--ink); color: #fff6ee; font: 700 40px/1 var(--sans); letter-spacing: .02em; white-space: nowrap; }
+  .gris img { filter: grayscale(1) contrast(.9) brightness(1.05); }
+
+  /* 1 · lo que se dice */
+  .myth { position: absolute; left: 90px; right: 90px; top: 1130px; }
+  .myth .who { font: 700 24px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); margin-bottom: 30px; }
+  .myth .q { font: italic 400 96px/1.06 var(--serif); letter-spacing: -.02em; }
+  .caret { display: inline-block; width: 6px; height: .9em; background: var(--accent); vertical-align: -.1em; margin-left: 6px; }
+  .night .myth .who { color: #a99c8e; }
+  .night .caret { background: var(--rose); }
+
+  /* anillo de fotos */
+  .ring { position: absolute; left: 540px; top: 760px; width: 0; height: 0; }
+  .ring .c { position: absolute; width: 250px; height: 300px; left: -125px; top: -150px; padding: 10px 10px 10px; background: #fffdf8;
+    border-radius: 6px; box-shadow: 0 20px 40px rgba(0,0,0,.35); }
+  .ring .c img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 2px; }
+  #b .nada { position: absolute; left: 0; right: 0; top: 1200px; text-align: center; font: 600 230px/1 var(--serif); letter-spacing: -.04em; color: #fff6ee; }
+  #b .nada em { color: var(--rose); }
+
+  /* 2 · ¿estás seguro? */
+  #q .big { position: absolute; left: 70px; right: 70px; top: 640px; font: 600 186px/0.96 var(--serif); letter-spacing: -.04em; color: #fff6ee; }
+  #q .big em { color: var(--rose); font-style: italic; }
+  #q .sub { position: absolute; left: 90px; right: 90px; top: 1150px; font: 400 46px/1.35 var(--sans); color: #cdbfb0; }
+
+  /* láminas de datos */
+  .run { position: absolute; left: 90px; right: 90px; top: 236px; display: flex; justify-content: space-between; align-items: baseline;
+    font: 700 22px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--ink-2); }
+  .run::after { content: ""; position: absolute; left: 0; right: 0; top: 38px; height: 2px; background: var(--ink); transform-origin: left; transform: scaleX(var(--rule, 1)); }
+  .lie { position: absolute; left: 90px; right: 90px; top: 300px; display: flex; align-items: center; gap: 22px; }
+  .lie s { font: italic 400 46px/1.15 var(--serif); color: var(--muted); text-decoration: none; position: relative; }
+  .lie s::after { content: ""; position: absolute; left: -6px; right: -6px; top: 52%; height: 6px; background: var(--accent); transform-origin: left; transform: scaleX(var(--k, 0)); }
+  .falso { flex: none; padding: 8px 14px; border: 4px solid var(--accent); border-radius: 8px; color: var(--accent); font: 800 28px/1 var(--sans); letter-spacing: .14em; }
+  .m3 { position: absolute; width: 900px; height: 620px; transform-style: preserve-3d; }
+  .m3 svg { position: absolute; inset: 0; width: 900px; height: 620px; overflow: visible; }
+  .pin3 { position: absolute; width: 0; height: 0; transform-style: preserve-3d; }
+  .pin3 .needle { position: absolute; left: -3px; top: -150px; width: 6px; height: 150px; background: linear-gradient(var(--accent), #4e1a21);
+    transform-origin: 50% 100%; transform: rotateX(-90deg); }
+  .pin3 .bb { position: absolute; left: 0; top: 0; transform-style: preserve-3d; }
+  .pin3 .ball { position: absolute; left: -22px; top: -22px; width: 44px; height: 44px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #d3707c, var(--accent) 55%, #4e1a21); box-shadow: 0 6px 14px rgba(0,0,0,.3); }
+  .pin3 .lab { position: absolute; left: 34px; top: -26px; white-space: nowrap; font: 700 34px/1 var(--sans); color: var(--accent);
+    background: var(--paper); padding: 10px 16px; border-radius: 10px; box-shadow: 0 0 0 3px var(--accent) inset; }
+  .pin3.izq .lab { left: auto; right: 34px; }
+  .pin3 .halo { position: absolute; left: 0; top: 0; width: 0; height: 0; }
+  .pin3 .halo i { position: absolute; border: 4px solid var(--accent); border-radius: 50%; }
+  .num { position: absolute; left: 90px; right: 90px; top: 1010px; font: 600 150px/1 var(--serif); letter-spacing: -.035em; white-space: nowrap; }
+  .num i { font-style: italic; color: var(--accent); }
+  .num.lw { font-size: 104px; top: 1040px; }
+  .say { position: absolute; left: 90px; right: 90px; top: 1180px; font: 400 49px/1.22 var(--serif); letter-spacing: -.005em; }
+  .say b { font-weight: 600; color: var(--accent); }
+  .src { position: absolute; left: 90px; right: 90px; top: 1460px; padding-top: 20px; border-top: 2px solid var(--rule); }
+  .src .cite { font: 500 24px/1.35 var(--mono); color: var(--ink-2); }
+  .src .tags { display: flex; gap: 14px; margin-top: 14px; }
+  .tag { padding: 10px 18px; border-radius: 999px; font: 700 21px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; background: #e8e1d2; color: var(--ink-2); }
+  .tag.con { background: #dfeee4; color: var(--ok); }
+  .tag.sus { background: #f3e6c9; color: #8a6420; }
+  .tag.deb { background: #f2dde0; color: var(--accent); }
+  .ok { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 999px; background: #e3efe6; color: var(--ok);
+    font: 700 21px/1 var(--sans); letter-spacing: .06em; text-transform: uppercase; }
+  .ok::before { content: ""; width: 14px; height: 14px; border-radius: 50%; background: var(--ok); }
+  .stamp { position: absolute; padding: 16px 26px; border: 8px solid var(--accent); border-radius: 14px; color: var(--accent);
+    font: 800 50px/1 var(--sans); letter-spacing: .12em; text-transform: uppercase; background: rgba(244,239,228,.88); white-space: nowrap; }
+  .neq { position: absolute; left: 470px; top: 600px; width: 140px; text-align: center; font: 600 200px/1 var(--serif); color: var(--accent); }
+
+  /* nombres que borran */
+  .t { position: absolute; left: 90px; right: 90px; font: 600 104px/1.04 var(--serif); letter-spacing: -.03em; }
+  .t em { font-style: italic; color: var(--accent); }
+  .night .t em { color: var(--rose); }
+  #n .row { position: absolute; left: 90px; right: 60px; display: flex; align-items: center; gap: 26px; }
+  #n .row .th { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; flex: none; box-shadow: 0 0 0 5px #fff6ee; }
+  #n .row .th img { width: 100%; height: 100%; object-fit: cover; }
+  #n .row .a { font: 600 74px/1 var(--serif); letter-spacing: -.03em; white-space: nowrap; color: #fff6ee; }
+  #n .row .b { white-space: nowrap; font: 700 28px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--rose); }
+
+  /* montaje: fotos que caen una por golpe */
+  .desk { position: absolute; left: 540px; top: 700px; width: 0; height: 0; transform-style: preserve-3d; }
+  .desk .foto { width: 600px; height: 640px; left: -300px; top: -320px; }
+  #mt .nm { position: absolute; left: 90px; right: 90px; top: 1150px; font: 600 140px/1 var(--serif); letter-spacing: -.035em; }
+  #mt .og { position: absolute; left: 90px; right: 90px; top: 1310px; font: 700 34px/1.25 var(--sans); color: var(--accent); }
+  #mt .ct { position: absolute; left: 90px; right: 90px; top: 1440px; font: 500 24px/1.3 var(--mono); color: var(--ink-2); }
+  #mt .cnt { position: absolute; right: 90px; top: 236px; font: 500 24px/1 var(--mono); color: var(--muted); }
+
+  /* método */
+  .head { position: absolute; left: 90px; right: 90px; top: 340px; font: 600 92px/1.04 var(--serif); letter-spacing: -.03em; }
+  .head em { font-style: italic; color: var(--accent); }
+  .card { position: absolute; left: 90px; right: 90px; background: #fffcf6; border-radius: 30px; padding: 46px 46px;
+    box-shadow: 0 50px 90px rgba(29,25,22,.2), 0 2px 8px rgba(29,25,22,.06); }
+  .card .eb, .kcard .eb { font: 700 22px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 22px; }
+  .card .cl { font: 400 48px/1.24 var(--serif); }
+  .card .cl i { color: var(--accent); }
+  .card .tags { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+  .card .foot { margin-top: 28px; padding-top: 22px; border-top: 2px dashed var(--rule); font: 500 25px/1.4 var(--mono); color: var(--ink-2); }
+  .note { position: absolute; font: 700 26px/1.2 var(--sans); color: var(--accent); letter-spacing: .04em; display: flex; align-items: center; gap: 14px; }
+  .note::before { content: ""; width: 60px; height: 3px; background: var(--accent); }
+  .stat { position: absolute; left: 90px; right: 90px; display: flex; align-items: baseline; gap: 28px; border-bottom: 2px solid var(--rule); padding-bottom: 26px; }
+  .stat .n { font: 600 170px/1 var(--serif); letter-spacing: -.04em; min-width: 380px; }
+  .stat .l { font: 400 40px/1.25 var(--sans); color: var(--ink-2); }
+  .pill { position: absolute; left: 90px; display: flex; align-items: center; gap: 26px; }
+  .pill .tag { font-size: 34px; padding: 18px 30px; }
+  .pill .d { font: 400 38px/1.3 var(--sans); color: var(--ink-2); }
+  .kcard { position: absolute; left: 90px; right: 90px; top: 760px; height: 620px; display: flex; gap: 36px; background: #fffcf6; border-radius: 30px;
+    padding: 36px; box-shadow: 0 50px 90px rgba(29,25,22,.2); }
+  .kcard img { width: 330px; height: 100%; object-fit: cover; border-radius: 14px; background: #fff; }
+  .kcard .tx { flex: 1; display: flex; flex-direction: column; }
+  .kcard .cl { font: 400 44px/1.24 var(--serif); }
+  .kcard .cl i { color: var(--accent); }
+  .kcard .ft { margin-top: 24px; font: 500 23px/1.35 var(--mono); color: var(--ink-2); }
+  .kcard .cr { font: 500 15px/1.2 var(--mono); color: var(--muted); margin-top: auto; }
+
+  /* cómo entrar */
+  .bar { position: absolute; left: 90px; right: 90px; top: 380px; height: 112px; border-radius: 56px; background: #fffcf6;
+    box-shadow: 0 20px 50px rgba(29,25,22,.12); display: flex; align-items: center; padding: 0 44px; gap: 22px; font: 500 44px/1 var(--sans); }
+  .bar svg { width: 40px; height: 40px; flex: none; }
+  .bar .caret { width: 4px; height: 46px; vertical-align: -8px; margin-left: 4px; }
+  .phone { position: absolute; left: 50%; width: 560px; height: 1060px; margin-left: -280px; border-radius: 74px; background: #121010; padding: 18px;
+    box-shadow: 0 60px 100px rgba(29,25,22,.35); }
+  .phone .scr { width: 100%; height: 100%; border-radius: 58px; overflow: hidden; background: var(--paper); position: relative; }
+  .phone img { width: 100%; display: block; position: absolute; left: 0; top: 0; }
+  .step { position: absolute; display: flex; align-items: center; gap: 18px; background: var(--accent); color: #fff; padding: 18px 28px 18px 18px;
+    border-radius: 999px; font: 700 34px/1 var(--sans); box-shadow: 0 16px 40px rgba(129,45,55,.35); white-space: nowrap; }
+  .step b { width: 54px; height: 54px; border-radius: 50%; background: #fff; color: var(--accent); display: grid; place-items: center; font-size: 30px; }
+
+  /* cierre */
+  #e .ring { top: 330px; }
+  #e .ring .c { width: 200px; height: 240px; left: -100px; top: -120px; }
+  #e .logo { position: absolute; left: 50%; top: 545px; width: 190px; height: 190px; margin-left: -95px; }
+  #e .word { position: absolute; left: 0; right: 0; top: 800px; text-align: center; font: 600 150px/1 var(--serif); letter-spacing: -.035em; }
+  #e .tagl { position: absolute; left: 110px; right: 110px; top: 975px; text-align: center; font: italic 400 48px/1.3 var(--serif); color: #f6dfe2; }
+  #e .url { position: absolute; left: 70px; right: 70px; top: 1180px; text-align: center; font: 700 52px/1 var(--sans); background: #fff6ee;
+    color: var(--accent); border-radius: 999px; padding: 32px 20px; box-shadow: 0 30px 60px rgba(0,0,0,.3); }
+  #e .free { position: absolute; left: 0; right: 0; top: 1340px; text-align: center; font: 700 28px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: #f6dfe2; }
+  #e .by { position: absolute; left: 0; right: 0; top: 1420px; text-align: center; font: 500 30px/1 var(--mono); color: #e7c3c8; }
+  #e .fotos { position: absolute; left: 90px; right: 90px; top: 1500px; text-align: center; font: 500 18px/1.35 var(--mono); color: #d9a9b0; }
+  #e .halo { position: absolute; inset: 0; background: linear-gradient(rgba(129,45,55,0) 0%, rgba(129,45,55,0) 22%, rgba(129,45,55,.97) 34%); }
+
+  /* ---- «Un mundo sin México»: lo que desaparecería y cómo se hizo ---- */
+  .gone { position: absolute; left: 90px; right: 90px; font: 600 78px/1 var(--serif); letter-spacing: -.03em; color: #fff6ee; }
+  .gone s { text-decoration: none; position: relative; }
+  .gone s::after { content: ""; position: absolute; left: -8px; right: -8px; top: 54%; height: 7px; background: var(--rose); transform-origin: left; transform: scaleX(var(--k, 0)); }
+  .titulo { position: absolute; left: 90px; right: 90px; top: 290px; font: 600 150px/1 var(--serif); letter-spacing: -.04em; white-space: nowrap; }
+  .titulo em { font-style: italic; color: var(--accent); }
+  .x { position: absolute; inset: 16px 16px 50px; pointer-events: none; }
+  .x::before, .x::after { content: ""; position: absolute; left: 50%; top: 50%; width: 130%; height: 12px; margin-left: -65%; margin-top: -6px;
+    background: var(--accent); border-radius: 6px; transform: rotate(var(--r)) scaleX(var(--k, 0)); box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+  .x::before { --r: 36deg; } .x::after { --r: -36deg; }
+  .flecha { position: absolute; font: 600 120px/1 var(--serif); color: var(--accent); }
+  .eb2 { position: absolute; left: 90px; right: 90px; top: 236px; font: 700 24px/1 var(--sans); letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+  .teo { position: absolute; left: 70px; top: 470px; width: 940px; height: 560px; }
+  .teo .tl { position: absolute; padding: 10px 18px; border-radius: 10px; background: var(--ink); color: #fff6ee; font: 700 34px/1 var(--sans); white-space: nowrap; }
+  #nc .t { top: 640px; }
+  #h .big2 { position: absolute; left: 0; right: 0; top: 760px; text-align: center; font: 600 170px/1 var(--serif); letter-spacing: -.04em; color: #fff6ee; }
+  #h .big2 em { color: var(--rose); font-style: italic; }
+  .orb { position: absolute; left: 540px; top: 740px; width: 0; height: 0; transform-style: preserve-3d; }
+  .orb .foto { width: 300px; height: 360px; left: -150px; top: -180px; padding: 12px 12px 44px; }
+  .orb .foto .lbl { font-size: 30px; padding: 10px 16px; top: auto; bottom: 56px; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="cam">
+
+  <!-- 1 · imagina: el anillo de fotos se vacía, un alimento por golpe -->
+  <section class="scene night" id="i1"><div class="v3"><div class="ring p3"></div></div>
+    <div class="myth"><div class="who r">Imagina</div><div class="q" data-type="Un mundo sin lo que salió de México…"></div></div></section>
+  <section class="scene night" id="i2"><div class="v3"><div class="ring p3"></div></div><div id="lista"></div></section>
+  <section class="scene night" id="i3"><div class="v3"><div class="ring p3"></div><div class="big r" style="position:absolute;left:70px;right:70px;top:700px;font:600 186px/0.96 var(--serif);letter-spacing:-.04em;color:#fff6ee">¿Cómo se <em style="color:var(--rose)">vería?</em></div></div></section>
+
+  <!-- 2 · un mundo sin… (se llenan desde SIN) -->
+  <div id="laminas"></div>
+
+  <section class="scene paper" id="mt">
+    <div class="eyebrow r" style="top:236px;color:var(--accent)">Y sin…</div><div class="cnt r"></div>
+    <div class="v3"><div class="desk p3"></div></div>
+    <div class="nm"></div><div class="og"></div><div class="ct"></div>
+  </section>
+
+  <!-- 3 · el giro -->
+  <section class="scene night" id="h"><div class="v3"><div class="big2 r">¿<em>Suerte?</em></div></div></section>
+  <section class="scene night" id="nc"><div class="t w">No. Es <em>ciencia agrícola,</em> hecha aquí, hace miles de años.</div></section>
+
+  <!-- 4 · cómo se hizo (se llenan desde TEC) -->
+  <div id="tecnicas"></div>
+
+  <section class="scene paper" id="k2">
+    <div class="eyebrow r" style="top:300px;color:var(--accent)">Cada dato, con su fuente</div>
+    <div class="stat r" style="top:500px"><span class="n" data-to="330">0</span><span class="l">afirmaciones, cada una con su grado de acuerdo</span></div>
+    <div class="stat r" style="top:780px"><span class="n" data-to="212">0</span><span class="l">fuentes: artículos, libros y documentos oficiales</span></div>
+    <div class="stat r" style="top:1060px"><span class="n" data-to="197" style="color:var(--ok)">0</span><span class="l">comprobadas en línea: cada DOI, en Crossref</span></div>
+  </section>
+
+  <!-- 5 · cierre -->
+  <section class="scene wine" id="e">
+    <div class="v3"><div class="ring p3"></div></div><div class="halo"></div>
+    <svg class="logo r" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="7" fill="#fff6ee"/><path class="arc" d="M10 23c0-6.5 2.7-11.5 6-13 3.3 1.5 6 6.5 6 13" fill="none" stroke="#812d37" stroke-width="2.4" stroke-linecap="round" pathLength="1"/><circle cx="16" cy="15.5" r="2.2" fill="#812d37"/></svg>
+    <div class="word r">Procedencia</div>
+    <div class="tagl r">Lo que el mundo recibió de México, con sus fuentes.</div>
+    <div class="url r">pescamill.github.io/procedencia</div>
+    <div class="free r">Gratis · Español e inglés · Datos abiertos</div>
+    <div class="by r">@pescamill</div>
+    <div class="fotos r">Fotos: Wikimedia Commons (CC BY, CC BY-SA, CC0 y dominio público); cada autor, en su foto.</div>
+  </section>
+
+</div><div id="shade"></div><div id="vig"></div><div id="grain"></div><div id="flash"></div></div>
+
+<script>
+// ---------------------------------------------------------------- tiempo
+// La misma canción y la misma rejilla que reel.html: 104.8 BPM, bombos en pares, frases de 16 octavos (4.58 s).
+const R = window.REEL;
+const KICKS = R.kicks;
+const T0 = 18.077, U = 0.28625;
+const g = (frase, octavo = 0) => +(T0 + (frase * 16 + octavo) * U).toFixed(3);
+const nearKick = (t, w = 0.35) => {
+  const k = KICKS.reduce((a, b) => (Math.abs(b - t) < Math.abs(a - t) ? b : a), Infinity);
+  return Math.abs(k - t) <= w ? k : t;
+};
+const kAfter = (t) => KICKS.find((k) => k >= t) ?? t;
+window.DURATION = 91.0;
+
+const ORDEN = [
+  ["i1", 0, "cut"], ["i2", g(-3), "cut"], ["i3", g(-1), "cut"],
+  ["s1", g(0), "cut"], ["s2", g(1), "slide"], ["s3", g(2), "slide"], ["s4", g(3), "slide"],
+  ["s5", g(4), "lift"], ["s6", g(5), "slide"], ["s7", g(6), "slide"],
+  ["mt", g(7), "lift"], ["h", g(8), "cut"], ["nc", g(8, 8), "cut"],
+  ["t1", g(9), "cut"], ["t2", g(10), "slide"], ["t3", g(11), "slide"], ["t4", g(12), "slide"],
+  ["k2", g(13), "lift"], ["e", g(14), "cut"],
+];
+const SC = ORDEN.map(([id, t, kind], i) => ({ id, a: i ? nearKick(t) : 0, kind }));
+SC.forEach((s, i) => (s.b = i + 1 < SC.length ? SC[i + 1].a : window.DURATION));
+const AT = Object.fromEntries(SC.map((s) => [s.id, s]));
+const PRE = 0.34;
+const HITS = [kAfter(9.1), AT.s1.a, AT.h.a, AT.t1.a, AT.e.a];
+
+// ---------------------------------------------------------------- utilidades (las mismas de reel.html)
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const cl = (x) => Math.max(0, Math.min(1, x));
+const seg = (t, at, d) => cl((t - at) / d);
+const lerp = (a, b, k) => a + (b - a) * k;
+const expoOut = (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x));
+const cubic = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const sine = (x) => -(Math.cos(Math.PI * cl(x)) - 1) / 2;
+const backOut = (x, s = 1.9) => 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2);
+const set = (el, o, tr) => { if (!el) return; el.style.opacity = o; el.style.transform = tr || ""; };
+const rv = (el, t, at, d = 0.5, dy = 40, dx = 0) => {
+  if (!el) return; const k = expoOut(seg(t, at, d));
+  set(el, k, `translate(${dx * (1 - k)}px, ${dy * (1 - k)}px)`);
+};
+const stampIn = (el, t, at, rot = -6, extra = "") => {
+  const k = seg(t, at, 0.3); const s = 1 + 1.2 * (1 - backOut(k, 1.4));
+  set(el, k > 0 ? 1 : 0, `${extra} rotate(${rot}deg) scale(${k > 0 ? s : 2.2})`);
+};
+const words = (el, t, at, step = 0.05, d = 0.42) => $$(":scope > span", el).forEach((w, i) => rv(w, t, at + i * step, d, 26));
+const typeIn = (el, t, at, cps = 26) => {
+  const s = el.dataset.type; const n = Math.max(0, Math.min(s.length, Math.floor((t - at) * cps)));
+  const blink = n < s.length || Math.floor(t * 2.2) % 2 === 0;
+  el.innerHTML = s.slice(0, n) + (blink ? '<span class="caret"></span>' : "");
+};
+const count = (el, t, at, d) => { const k = expoOut(seg(t, at, d)); el.textContent = Math.round(k * +el.dataset.to).toLocaleString("es-MX"); };
+const pulse = (t, decay = 11) => {
+  let p = 0; for (const k of KICKS) { if (k > t) break; const d = t - k; if (d < 0.6) p = Math.max(p, Math.exp(-decay * d)); }
+  return p;
+};
+const bump = (t, at, decay = 9) => (t >= at ? Math.exp(-decay * (t - at)) : 0);
+const splitWords = (el) => {
+  const tmp = document.createElement("div"); tmp.innerHTML = el.innerHTML; el.innerHTML = "";
+  const walk = (node, wrap) => node.childNodes.forEach((c) => {
+    if (c.nodeType === 3) c.textContent.split(/(\s+)/).forEach((p) => {
+      if (!p) return; if (/^\s+$/.test(p)) { el.appendChild(document.createTextNode(" ")); return; }
+      const s = document.createElement("span"); s.className = "r";
+      if (wrap) { const w = document.createElement(wrap.tagName); w.textContent = p; s.appendChild(w); } else s.textContent = p;
+      el.appendChild(s);
+    });
+    else walk(c, c);
+  });
+  walk(tmp, null);
+};
+
+// ---------------------------------------------------------------- fotos y créditos
+const credito = (id) => {
+  const c = R.creditos[id]; if (!c) return "";
+  const autor = c.autor === "Autor desconocido" ? "autor desconocido" : c.autor.replace(/^The original uploader was (\S+) at .*$/, "$1");
+  return `${autor} · ${c.licencia === "Public domain" ? "dominio público" : c.licencia}`;
+};
+const fotoHTML = (id, lbl) => `<img src="img/${id}.jpg" alt=""><div class="cr">Foto: ${credito(id)}</div>${lbl ? `<div class="lbl">${lbl}</div>` : ""}`;
+
+// el anillo: los alimentos que se van a borrar
+const ANILLO = ["maiz", "algodon", "calabaza", "chile", "jitomate", "cacao-chocolate", "vainilla", "aguacate", "frijol", "guajolote", "nopal", "chia"];
+$$(".ring").forEach((r) => {
+  const n = ANILLO.length, rad = r.closest("#e") ? 640 : 760;
+  r.innerHTML = ANILLO.map((id, i) => `<div class="c" style="transform: rotateY(${(i * 360) / n}deg) translateZ(${rad}px)"><img src="img/${id}.jpg" alt=""></div>`).join("");
+});
+// la lista que se tacha, una línea por golpe
+const LISTA = ["Sin maíz.", "Sin algodón.", "Sin calabaza.", "Sin chile.", "Sin jitomate.", "Sin cacao."];
+$("#lista").innerHTML = LISTA.map((x, i) => `<div class="gone r" style="top:${1010 + i * 92}px"><s>${x}</s></div>`).join("");
+const L_AT = (() => { const ks = KICKS.filter((k) => k >= AT.i2.a + 0.3 && k < AT.i3.a - 0.6); const paso = ks.length / LISTA.length; return LISTA.map((_, i) => ks[Math.floor(i * paso)]); })();
+
+// ---------------------------------------------------------------- mapa de México en 3D, con uno o varios alfileres
+const G = R.geo;
+const pt = (lat, lon) => [(lon - G.lon0) * G.k * G.escala, (G.lat1 - lat) * G.escala];
+const MX = Object.entries(G.regiones);
+const dMX = MX.filter(([k]) => k.startsWith("MX")).map(([, d]) => d).join(" ");
+const mapa3d = (pins) => {
+  const capas = [5, 4, 3, 2, 1].map((i) => `<svg viewBox="-20 -30 900 620" style="transform: translateZ(${-i * 4}px)"><path d="${dMX}" fill="${["#ddd3bf", "#d6cbb6", "#cdc1ab", "#c4b7a0", "#b9ab93"][i - 1]}"/></svg>`).join("");
+  return `<div class="m3">
+    <svg viewBox="-20 -30 900 620" style="transform: translateZ(-26px)">${MX.filter(([k]) => !k.startsWith("MX")).map(([, d]) => `<path d="${d}" fill="#e6dfcf" stroke="#d3c9b6" stroke-width="1.5"/>`).join("")}</svg>
+    ${capas}
+    <svg viewBox="-20 -30 900 620"><path class="mxf" d="${dMX}" fill="#efe7d6"/>${MX.filter(([k]) => k.startsWith("MX")).map(([, d]) => `<path class="mx" d="${d}" fill="none" stroke="#1d1916" stroke-width="2.4" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>`).join("")}</svg>
+    ${pins.map(([lat, lon, lab, lado]) => { const [x, y] = pt(lat, lon); const px = x + 20, py = y + 30;
+      return `<div class="pin3${(lado ?? (px > 520 ? "izq" : "")) === "izq" ? " izq" : ""}" style="left:${px}px;top:${py}px"><div class="halo"><i></i></div><div class="needle"></div><div class="bb"><div class="ball"></div><div class="lab">${lab}</div></div></div>`; }).join("")}
+  </div>`;
+};
+const drawMap = (s, t, a, pinAt, sc = 0.6) => {
+  const mw = $(".mapw", s); if (!mw) return;
+  const rz = lerp(-14, 6, sine(seg(t, a, s.b - a))), mk = expoOut(seg(t, a, 0.9)), tilt = lerp(70, 54, mk);
+  mw.style.transform = `translateZ(${lerp(-500, -60, mk)}px) scale(${sc}) rotateX(${tilt}deg) rotateZ(${rz}deg)`;
+  mw.style.opacity = cl(mk * 2);
+  $$(".mx", s).forEach((pth, i) => (pth.style.strokeDashoffset = 1 - cubic(seg(t, a + i * 0.04, 0.8))));
+  $(".mxf", s).style.opacity = seg(t, a + 0.5, 0.4);
+  $$(".pin3", s).forEach((pin, i) => {
+    const k1 = pinAt[i], pk = seg(t, k1, 0.35);
+    pin.style.opacity = pk > 0 ? 1 : 0;
+    $(".needle", pin).style.transform = `rotateX(-90deg) scaleY(${cl(pk * 1.2)})`;
+    $(".bb", pin).style.transform = `translateZ(${150 + lerp(260, 0, backOut(pk, 1.3))}px) rotateZ(${-rz}deg) rotateX(${-tilt}deg) scale(${1 + 0.25 * bump(t, k1)})`;
+    const ph = (((t - k1) % 1.15) + 1.15) % 1.15 / 1.15, ring = $(".halo i", pin), rr = 20 + 70 * ph;
+    Object.assign(ring.style, { left: -rr + "px", top: -rr + "px", width: 2 * rr + "px", height: 2 * rr + "px", opacity: pk * (1 - ph) });
+  });
+};
+
+// ---------------------------------------------------------------- 2 · un mundo sin…
+// Cada dato está en su ficha del sitio, con la misma fuente; todas las citadas aquí se comprobaron en línea.
+const SIN = [
+  { id: "s1", n: "01", que: "maíz", img: "maiz", lbl: "Maíz · Balsas", lost: "palomitas", lostLbl: "Palomitas",
+    num: "Nº <i>1</i>", say: "El cereal más producido del mundo se domesticó en Guerrero. <b>Sin él: ni palomitas, ni polenta, ni tortillas.</b>",
+    cite: "FAOSTAT (FAO) · Matsuoka et al. (2002), PNAS 99(9)", sol: "con" },
+  { id: "s2", n: "02", que: "nixtamal", img: "nixtamalizacion", lbl: "Nixtamal", lost: "maiz", lostLbl: "Maíz sin cal", stamp: "Pelagra",
+    num: "Maíz <i>+ cal</i>", say: "Cocerlo con cal libera su niacina. Europa adoptó el maíz sin la técnica: <b>en Italia, la pelagra enfermó a decenas de miles en el siglo XIX.</b>",
+    cite: "Katz et al. (1974), Science 184 · Ginnaio (2011), Population 66", sol: "con" },
+  { id: "s3", n: "03", que: "algodón", img: "algodon", lbl: "G. hirsutum", lost: "mezclilla", lostLbl: "Mezclilla",
+    num: "90 <i>%</i>", say: "del algodón del mundo es <i>Gossypium hirsutum,</i> domesticado en la península de Yucatán. <b>9 de cada 10 fibras de algodón empiezan aquí.</b>",
+    cite: "Wendel y Grover (2015), Agronomy Monograph 57 · Yuan et al. (2021), Advanced Science", sol: "con" },
+  { id: "s4", n: "04", que: "calabaza", img: "calabaza", lbl: "Guilá Naquitz", lost: "zucchini", lostLbl: "Zucchini",
+    num: "10,000 <i>años</i>", say: "Las semillas de Guilá Naquitz, Oaxaca, son de los cultivos más antiguos de América. <b>El zucchini italiano es la misma especie: Cucurbita pepo.</b>",
+    cite: "Smith (1997), Science 276(5314)", sol: "con" },
+  { id: "s5", n: "05", que: "chile", img: "chile", lbl: "C. annuum", lost: "kimchi", lostLbl: "Kimchi rojo",
+    num: "<i>Capsicum annuum</i>", lw: true, say: "Se domesticó en México, y ninguna especie de chile es nativa de Asia. <b>Sin México, el kimchi no sería rojo.</b>",
+    cite: "Kraft et al. (2014), PNAS 111(17)", sol: "con" },
+  { id: "s6", n: "06", que: "jitomate", img: "jitomate", lbl: "Xitomatl", lost: "pizza", lostLbl: "Margherita",
+    num: "<i>xitomatl</i>", say: "El jitomate que come el mundo terminó de domesticarse en Mesoamérica. <b>Sin él, la pizza no tendría rojo.</b>",
+    cite: "Blanca et al. (2015), BMC Genomics 16", sol: "con" },
+  { id: "s7", n: "07", que: "cacao", img: "cacao-chocolate", lbl: "Cacao", lost: "chocolate-suizo", lostLbl: "Chocolate suizo",
+    num: "1900 <i>a. C.</i>", say: "Ya se bebía cacao en Chiapas. <b>Sin Mesoamérica, Suiza no tendría chocolate.</b>",
+    cite: "Powis et al. (2007), Antiquity · Zarrillo et al. (2018), Nature Ecology & Evolution", sol: "con" },
+];
+const SOL = { con: "Consenso", sus: "Sustentada", deb: "En debate" };
+SIN.forEach((L) => {
+  const s = document.createElement("section");
+  s.className = "scene paper plate"; s.id = L.id;
+  s.innerHTML = `
+    <div class="run r"><span>Un mundo sin · ${L.n}</span><span>${L.n} / 07</span></div>
+    <div class="titulo r">Sin <em>${L.que}</em></div>
+    <div class="v3 p3">
+      <div class="foto fo r" style="left:70px;top:520px;width:420px;height:500px">${fotoHTML(L.img, L.lbl)}</div>
+      <div class="foto fl r" style="left:560px;top:470px;width:450px;height:540px">${fotoHTML(L.lost, L.lostLbl)}<div class="x"></div></div>
+    </div>
+    <div class="stamp r" style="left:600px;top:900px">${L.stamp || "Desaparece"}</div>
+    <div class="num r${L.lw ? " lw" : ""}" style="top:${L.lw ? 1110 : 1080}px">${L.num}</div>
+    <div class="say w" style="top:1230px">${L.say}</div>
+    <div class="src r"><div class="cite">${L.cite}</div><div class="tags"><span class="tag ${L.sol} t1">${SOL[L.sol]}</span><span class="ok t2">Comprobada</span></div></div>`;
+  $("#laminas").appendChild(s);
+});
+
+// ---------------------------------------------------------------- 4 · cómo se hizo
+const TEC = [
+  { id: "t1", n: "01", eb: "No fue suerte · agricultura propia", head: "Aquí se <em>inventó</em> la agricultura.",
+    pins: [[18.3, -99.8, "Balsas", "izq"], [16.9, -96.4, "Oaxaca", "der"]],
+    num: "10,000 <i>años</i>", say: "Mesoamérica es <b>uno de los pocos lugares del mundo donde la agricultura nació sola,</b> sin copiarla de nadie.",
+    cite: "Larson et al. (2014), PNAS 111(17) · Smith (1997), Science", sol: "con" },
+  { id: "t2", n: "02", eb: "Bioingeniería, hace 9,000 años", head: "Del teocintle <em>al maíz.</em>",
+    num: "<i>tga1</i>", say: "De unas pocas semillas en cáscara dura a cientos de granos desnudos en una mazorca. <b>Unos pocos genes, seleccionados generación tras generación.</b>",
+    cite: "Doebley (2004), Annual Review of Genetics 38 · Wang et al. (2005), Nature 436", sol: "con" },
+  { id: "t3", n: "03", eb: "Un sistema, no una planta", head: "La <em>milpa.</em>",
+    num: "3 <i>en uno</i>", say: "Maíz, frijol y calabaza juntos <b>aprovechan mejor el nitrógeno, el fósforo y el potasio</b> que cada uno por separado.",
+    cite: "Postma y Lynch (2012), Annals of Botany 110 · Zizumbo-Villarreal (2010)", sol: "sus" },
+  { id: "t4", n: "04", eb: "Ingeniería del agua", head: "Cultivar <em>sobre el agua.</em>",
+    pasos: ["Chinampas", "Presa de Purrón", "Camellones mayas"],
+    num: "750 <i>a. C.</i>", say: "Presas y canales en Tehuacán; campos en los humedales mayas; <b>chinampas que abastecían a Tenochtitlan.</b>",
+    cite: "Aiuvalasit et al. (2010), JAS 37 · Beach et al. (2019), PNAS · Calnek (1972)", sol: "sus" },
+];
+TEC.forEach((L) => {
+  const s = document.createElement("section");
+  s.className = "scene paper plate"; s.id = L.id;
+  let medio = "";
+  if (L.id === "t1") medio = `<div class="mapw p3" style="position:absolute;left:90px;top:400px;width:900px;height:620px;transform-origin:50% 50%">${mapa3d(L.pins)}</div>`;
+  if (L.id === "t2") medio = `<div class="foto teo r">${fotoHTML("teocintle")}<div class="tl" style="left:40px;top:40px">Teocintle</div><div class="tl" style="left:40px;top:370px;background:var(--accent)">Maíz</div></div>`;
+  if (L.id === "t3") medio = [["maiz", "Maíz", 50, 540], ["frijol", "Frijol", 390, 470], ["calabaza", "Calabaza", 730, 540]].map(([id, lb, x, y]) =>
+    `<div class="foto fm r" style="left:${x}px;top:${y}px;width:300px;height:380px">${fotoHTML(id, lb)}</div>`).join("");
+  if (L.id === "t4") medio = `<div class="foto fp r" style="left:60px;top:470px;width:470px;height:470px">${fotoHTML("chinampas", "Xochimilco")}</div>`
+    + L.pasos.map((x, i) => `<div class="step ps" style="left:600px;top:${540 + i * 125}px"><b>${i + 1}</b>${x}</div>`).join("");
+  s.innerHTML = `
+    <div class="run r"><span>${L.eb}</span><span>${L.n} / 04</span></div>
+    <div class="head w" style="top:300px;font-size:${L.id === "t1" ? 96 : 88}px">${L.head}</div>
+    <div class="v3 p3">${medio}</div>
+    <div class="num r" style="top:1080px">${L.num}</div>
+    <div class="say w" style="top:1230px">${L.say}</div>
+    <div class="src r"><div class="cite">${L.cite}</div><div class="tags"><span class="tag ${L.sol} t1">${SOL[L.sol]}</span><span class="ok t2">Comprobada</span></div></div>`;
+  $("#tecnicas").appendChild(s);
+});
+$$(".w").forEach(splitWords);
+
+// montaje: uno por tiempo
+const MONTAJE = [
+  ["vainilla", "Sin vainilla", "La cultivaron primero los totonacas", "Lubinsky et al. (2008), Economic Botany"],
+  ["aguacate", "Sin aguacate", "Sus tres razas, domesticadas en Mesoamérica", "Rendón-Anaya et al. (2019), PNAS"],
+  ["frijol", "Sin frijol", "Una de sus dos cunas: el occidente de México", "Kwak et al. (2009), Crop Science"],
+  ["guajolote", "Sin guajolote", "Domesticado en Mesoamérica", "Speller et al. (2010), PNAS"],
+  ["nopal", "Sin nopal", "Domesticado en el centro de México", "Griffith (2004), American Journal of Botany"],
+  ["chia", "Sin chía", "Planta mesoamericana; tributo en el Códice Mendoza", "Cahill (2003), Economic Botany"],
+];
+const MT_STEP = 2 * U;
+$("#mt .desk").innerHTML = MONTAJE.map(([id]) => `<div class="foto r">${fotoHTML(id)}</div>`).join("");
+
+// ---------------------------------------------------------------- dibujo de cada escena
+const D = {};
+const anillo = (s, t, vel, extra = 0, tilt = -12, z = -900) => {
+  const r = $(".ring", s); if (!r) return;
+  r.style.transform = `translateZ(${z}px) rotateX(${tilt}deg) rotateY(${t * vel + extra}deg)`;
+};
+// las tarjetas del anillo se apagan una por golpe, hasta dejarlo vacío
+const vaciar = (s, t) => $$(".ring .c", s).forEach((c, i) => {
+  const at = i < LISTA.length ? L_AT[i] : L_AT[LISTA.length - 1] + 0.12 * (i - LISTA.length + 1);
+  const k = seg(t, at, 0.3);
+  c.style.opacity = 1 - 0.9 * k; c.style.filter = `grayscale(${k}) brightness(${1 - 0.5 * k})`;
+});
+const foto3d = (el, t, a, o) => {
+  const k = expoOut(seg(t, a + (o.delay || 0), 0.7)); const p = pulse(t);
+  const ry = lerp(o.ry0 ?? -40, o.ry ?? 14, k) + Math.sin((t - a) * 0.9) * 3;
+  const rx = lerp(o.rx0 ?? 18, o.rx ?? 4, k) + Math.cos((t - a) * 0.7) * 2;
+  const z = lerp(-900, o.z ?? 0, k) + 40 * p;
+  set(el, cl(k * 1.4), `translateZ(${z}px) rotateY(${ry}deg) rotateX(${rx}deg) rotateZ(${o.rz ?? -3}deg)`);
+};
+D.i1 = (t, s) => {
+  anillo(s, t - s.a, 22, 0, -12, lerp(-2400, -900, expoOut(seg(t, s.a, 1.6))));
+  rv($(".who", s), t, s.a + 0.1, 0.5, 20); typeIn($(".q", s), t, s.a + 0.5, 22);
+};
+D.i2 = (t, s) => {
+  anillo(s, t, 22, 0, -12, -900 + 120 * pulse(t)); vaciar(s, t);
+  $$(".gone", s).forEach((el, i) => {
+    const k = seg(t, L_AT[i], 0.25);
+    set(el, k > 0 ? 1 : 0, `translateX(${-60 * (1 - expoOut(k))}px) scale(${1 + 0.08 * bump(t, L_AT[i])})`);
+    $("s", el).style.setProperty("--k", cubic(seg(t, L_AT[i] + 0.35, 0.3)));
+  });
+};
+D.i3 = (t, s) => {
+  anillo(s, t, 22, 0, -12, lerp(-900, -1600, expoOut(seg(t, s.a, 2)))); vaciar(s, t);
+  const k = seg(t, s.a, 0.3);
+  set($(".big", s), k > 0 ? 1 : 0, `translateZ(${lerp(700, 0, expoOut(k))}px) rotateX(${lerp(-25, 0, expoOut(k))}deg)`);
+};
+const lamina = (s, t, L, a) => {
+  rv($(".run", s), t, a, 0.4, 0); $(".run", s).style.setProperty("--rule", expoOut(seg(t, a, 0.6)));
+};
+SIN.forEach((L) => (D[L.id] = (t, s) => {
+  const a = s.a, k1 = kAfter(a + 0.6), k2 = kAfter(a + 1.7), k3 = Math.min(kAfter(a + 3.0), s.b - 0.4), p = pulse(t);
+  lamina(s, t, L, a);
+  const tk = seg(t, a, 0.3); set($(".titulo", s), tk > 0 ? 1 : 0, `translateY(${30 * (1 - expoOut(tk))}px) scale(${1 + 0.04 * bump(t, a)})`);
+  foto3d($(".fo", s), t, a, { ry: 14, rz: -4 });
+  foto3d($(".fl", s), t, a, { ry: -14, rz: 4, delay: 0.15, ry0: 40 });
+  // en el segundo golpe, lo que depende de México se apaga y se tacha
+  const gk = seg(t, k2, 0.35), fl = $(".fl", s);
+  $("img", fl).style.filter = `grayscale(${gk}) brightness(${1 - 0.25 * gk}) contrast(${1 - 0.15 * gk})`;
+  $(".x", fl).style.setProperty("--k", expoOut(seg(t, k2 + 0.05, 0.3)));
+  stampIn($(".stamp", s), t, k2 + 0.15, -8, `scale(${1 + 0.06 * p})`);
+  const nk = seg(t, k1, 0.3); $(".num", s).style.transformOrigin = "0 100%";
+  set($(".num", s), nk > 0 ? 1 : 0, `translateY(${30 * (1 - expoOut(nk))}px) scale(${1 + 0.14 * (1 - expoOut(nk))})`);
+  words($(".say", s), t, k1 + 0.25, 0.04);
+  rv($(".src", s), t, k2 + 0.4, 0.45, 20);
+  stampIn($(".t1", s), t, k3, 0); stampIn($(".t2", s), t, k3 + 0.1, 0);
+}));
+D.mt = (t, s) => {
+  rv($(".eyebrow", s), t, s.a, 0.4, 0);
+  const i = cl((t - s.a) / MT_STEP / (MONTAJE.length - 1)) * (MONTAJE.length - 1) | 0;
+  $$(".desk .foto", s).forEach((f, j) => {
+    const at = s.a + j * MT_STEP, k = seg(t, at, 0.22);
+    const z = lerp(1100, j * 3, expoOut(k)), rz = [-7, 5, -3, 8, -6, 4][j], dx = [-40, 50, -20, 60, -50, 30][j];
+    set(f, k > 0 ? 1 : 0, `translate3d(${dx}px, ${j * 6}px, ${z}px) rotateZ(${rz}deg)`);
+    f.style.filter = j < i ? "grayscale(1) brightness(.7)" : "";
+  });
+  $(".desk", s).style.transform = `rotateX(${lerp(34, 24, seg(t, s.a, s.b - s.a))}deg) rotateZ(-4deg) translateZ(${-120 + 50 * pulse(t)}px)`;
+  const [, nm, og, ct] = MONTAJE[i];
+  const nmE = $(".nm", s), at = s.a + i * MT_STEP, kk = seg(t, at, 0.18);
+  if (nmE.dataset.i !== String(i)) { nmE.textContent = nm; $(".og", s).textContent = og; $(".ct", s).textContent = ct; nmE.dataset.i = i; }
+  set(nmE, kk > 0 ? 1 : 0, `translateY(${24 * (1 - expoOut(kk))}px)`);
+  rv($(".og", s), t, at + 0.05, 0.25, 14); rv($(".ct", s), t, at + 0.1, 0.25, 10);
+  $(".cnt", s).textContent = `${String(i + 1).padStart(2, "0")} / ${String(MONTAJE.length).padStart(2, "0")}`;
+  rv($(".cnt", s), t, s.a, 0.3, 0);
+};
+D.h = (t, s) => {
+  const k = seg(t, s.a, 0.3);
+  set($(".big2", s), k > 0 ? 1 : 0, `translateZ(${lerp(700, 0, expoOut(k)) + 60 * pulse(t)}px) rotateX(${lerp(-25, 0, expoOut(k))}deg)`);
+};
+D.nc = (t, s) => words($(".t", s), t, s.a + 0.05, 0.09, 0.45);
+TEC.forEach((L) => (D[L.id] = (t, s) => {
+  const a = s.a, k1 = kAfter(a + 0.6), k2 = kAfter(a + 1.6), k3 = Math.min(kAfter(a + 3.0), s.b - 0.4), p = pulse(t);
+  lamina(s, t, L, a);
+  words($(".head", s), t, a + 0.05, 0.05);
+  if (L.pins) {
+    const pinAt = L.pins.map((_, i) => kAfter(a + 0.6 + i * 0.55));
+    drawMap(s, t, a, pinAt, 1.0);
+  }
+  if (L.id === "t4") {
+    foto3d($(".fp", s), t, a, { ry: 16, rz: -3, delay: 0.1 });
+    $$(".ps", s).forEach((x, i) => stampIn(x, t, kAfter(a + 0.6 + i * 0.5), -2));
+  }
+  if (L.id === "t2") {
+    const tf = $(".teo", s), k = expoOut(seg(t, a + 0.1, 0.8));
+    set(tf, cl(k * 1.4), `translateZ(${lerp(-900, 0, k) + 40 * p}px) rotateX(${lerp(30, 8, k)}deg) rotateY(${Math.sin((t - a) * 0.8) * 4}deg)`);
+    $$(".tl", tf).forEach((x, i) => stampIn(x, t, i ? k2 : k1, -3));
+  }
+  if (L.id === "t3") {
+    // las tres plantas de la milpa llegan una por golpe
+    $$(".fm", s).forEach((f, i) => foto3d(f, t, kAfter(a + 0.2 + i * 0.45) - 0.1, { ry: [14, 0, -14][i], rz: [-5, 2, 5][i] }));
+  }
+  const nk = seg(t, k1, 0.3); $(".num", s).style.transformOrigin = "0 100%";
+  set($(".num", s), nk > 0 ? 1 : 0, `translateY(${30 * (1 - expoOut(nk))}px) scale(${1 + 0.14 * (1 - expoOut(nk)) + 0.03 * bump(t, k2)})`);
+  words($(".say", s), t, k1 + 0.25, 0.04);
+  rv($(".src", s), t, k2 + 0.25, 0.45, 20);
+  stampIn($(".t1", s), t, k3, 0); stampIn($(".t2", s), t, k3 + 0.1, 0);
+}));
+D.k2 = (t, s) => {
+  rv($(".eyebrow", s), t, s.a, 0.4, 0);
+  let at = s.a;
+  $$(".stat", s).forEach((el, i) => { if (i) at = kAfter(at + 0.45); rv(el, t, at, 0.4, 40); count($(".n", el), t, at, 0.7); });
+};
+D.e = (t, s) => {
+  anillo(s, t - s.a, 14, 0, -10, lerp(-2600, -1100, expoOut(seg(t, s.a, 1.6))));
+  const k = seg(t, s.a, 0.45);
+  set($(".logo", s), k > 0 ? 1 : 0, `scale(${(0.6 + 0.4 * backOut(k, 1.6)) * (1 + 0.05 * pulse(t))}) rotateY(${lerp(180, 0, expoOut(k))}deg)`);
+  $(".logo .arc", s).style.strokeDasharray = 1; $(".logo .arc", s).style.strokeDashoffset = 1 - cubic(seg(t, s.a + 0.2, 0.7));
+  rv($(".word", s), t, s.a + 0.3, 0.6, 50); rv($(".tagl", s), t, s.a + 0.8, 0.6, 30);
+  stampIn($(".url", s), t, kAfter(s.a + 1.3), 0); rv($(".free", s), t, s.a + 2.0, 0.5, 20); rv($(".by", s), t, s.a + 2.4, 0.5, 20);
+  rv($(".fotos", s), t, s.a + 2.8, 0.5, 10);
+};
+
+// ---------------------------------------------------------------- efectos de sonido
+const CUES = [];
+const cue = (t, tipo, g) => CUES.push([+t.toFixed(3), tipo, g]);
+{ const q = $("#i1 .q").dataset.type; for (let i = 0; i < q.length; i++) if (q[i] !== " ") cue(AT.i1.a + 0.5 + i / 22, "tecla", 0.12 + 0.06 * ((i * 7) % 3) / 2); }
+L_AT.forEach((t) => { cue(t, "golpe", 0.35); cue(t + 0.35, "corte", 0.25); });
+cue(AT.i3.a, "impacto", 0.6); cue(AT.s1.a, "impacto", 0.9);
+[...SIN, ...TEC].forEach((L) => {
+  const a = AT[L.id].a;
+  if (AT[L.id].kind !== "cut") cue(a - PRE, "corte", 0.3);
+  cue(kAfter(a + 0.6), "golpe", 0.3);
+  if (SIN.includes(L)) cue(kAfter(a + 1.7) + 0.15, "sello", 0.7);
+  cue(Math.min(kAfter(a + 3.0), AT[L.id].b - 0.4), "sello", 0.3);
+});
+MONTAJE.forEach((_, j) => cue(AT.mt.a + j * MT_STEP, "golpe", 0.4));
+cue(AT.h.a, "impacto", 0.8); cue(AT.t1.a, "impacto", 0.6);
+cue(AT.e.a, "impacto", 0.5); cue(kAfter(AT.e.a + 1.3), "sello", 0.6);
+window.CUES = CUES;
+
+// ---------------------------------------------------------------- render (igual que reel.html)
+const enter = (el, kind, k) => {
+  const e = cubic(k);
+  if (kind === "lift") { el.style.transformOrigin = "50% 0%"; el.style.transform = `perspective(1800px) translateY(${(1 - e) * 1900}px) rotateX(${(1 - e) * 12}deg)`; }
+  else { el.style.transformOrigin = "0% 50%"; el.style.transform = `perspective(2200px) translateX(${(1 - e) * 1150}px) rotateY(${-(1 - e) * 16}deg)`; }
+  el.style.boxShadow = "-40px 0 90px rgba(0,0,0,.35)";
+};
+window.render = (t) => {
+  const i = Math.max(0, SC.findIndex((s) => t >= s.a && t < s.b));
+  const cur = SC[i], nxt = SC[i + 1];
+  SC.forEach((s) => { const el = document.getElementById(s.id); el.style.display = "none"; el.style.zIndex = ""; el.style.transform = ""; el.style.boxShadow = ""; });
+  const draw = (s) => { const el = document.getElementById(s.id); el.style.display = "block"; D[s.id] && D[s.id](t, Object.assign(el, { a: s.a, b: s.b })); return el; };
+  draw(cur);
+  let sh = 0;
+  if (nxt && nxt.kind !== "cut" && t >= nxt.a - PRE) {
+    const k = (t - (nxt.a - PRE)) / PRE; const el = draw(nxt); el.style.zIndex = 2; enter(el, nxt.kind, k); sh = 0.35 * cubic(k);
+  }
+  $("#shade").style.opacity = sh;
+  const p = t > 8.7 ? pulse(t) : 0.35 * pulse(t);
+  let hit = 0; HITS.forEach((h) => { if (t >= h) hit = Math.max(hit, Math.exp(-6.5 * (t - h))); });
+  const j = (n) => Math.sin(t * 91 * n + n) * 20 * hit;
+  $("#cam").style.transform = `scale(${1 + 0.016 * p + 0.04 * hit}) translate(${j(1)}px, ${j(2)}px) rotate(${j(3) * 0.03}deg)`;
+  $("#vig").style.opacity = 0.25 + 0.45 * p;
+  const f = HITS.reduce((m, h) => (t >= h && t - h < 0.12 ? Math.max(m, 1 - (t - h) / 0.12) : m), 0);
+  $("#flash").style.background = "#fff"; $("#flash").style.opacity = 0.6 * f;
+  const fin = seg(t, window.DURATION - 2.0, 2.0);
+  if (fin > 0) { $("#flash").style.background = "#000"; $("#flash").style.opacity = fin; }
+};
+
+window.ready = document.fonts.ready
+  .then(() => Promise.all($$("img").map((i) => (i.complete ? 1 : new Promise((r) => (i.onload = i.onerror = r))))))
+  .then(() => { window.render(0); return true; });
+
+const fixed = new URLSearchParams(location.search).get("t");
+if (fixed !== null) window.ready.then(() => window.render(Number(fixed)));
+else if (!navigator.webdriver) {
+  const t0 = performance.now();
+  const loop = () => { window.render(((performance.now() - t0) / 1000) % window.DURATION); requestAnimationFrame(loop); };
+  window.ready.then(loop);
+}
+</script>
+</body>
+</html>

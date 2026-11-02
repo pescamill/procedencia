@@ -158,6 +158,10 @@ def verificar(cat, fichas, fuentes, casos, recorridos, wcvp=None):
             errores.append(f"{f['id']}: alcance «{f.get('alcance')}» no está en el catálogo")
         if not (f.get("en_breve") or "").strip():
             errores.append(f"{f['id']}: falta «en_breve», la explicación para cualquier lector")
+        # el sitio recorre estas listas sin comprobar que existan: vacías sí, ausentes no
+        for lista in ("actos", "pueblos", "originales", "afirmaciones", "nombres_mundo", "pendientes", "relacionadas"):
+            if not isinstance(f.get(lista), list):
+                errores.append(f"{f['id']}: falta la lista «{lista}» (puede ir vacía)")
         if f.get("clase") == "aporte" and not f.get("originales") and not f.get("sin_originario"):
             errores.append(f"{f['id']}: un aporte lleva su nombre en lengua originaria o explica por qué no lo tiene")
         for p in f.get("pueblos", []):

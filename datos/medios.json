@@ -23,7 +23,7 @@
  },
  "caracol-purpura": {
   "wiki": "Plicopurpura pansa",
-  "archivo": null
+  "archivo": "Naturalis Biodiversity Center - ZMA.MOLL.29067 - Plicopurpura pansa (Gould, 1853) - Muricidae - Mollusc shell.jpeg"
  },
  "algodon": {
   "wiki": "Gossypium hirsutum"
@@ -219,7 +219,7 @@
  },
  "copal": {
   "wiki": "Copal",
-  "archivo": null
+  "archivo": "Aztec Copal Incense (9781556773).jpg"
  },
  "tabaco-mesoamericano": {
   "wiki": "Nicotiana rustica"
@@ -286,6 +286,33 @@
   "wiki": "Capilla abierta"
  },
  "arte-indocristiano": {
-  "wiki": "Tequitqui"
+  "wiki": "Tequitqui",
+  "archivo": "MuralsIxmiquilpan09.jpg"
+ },
+ "coatequitl": {
+  "wiki": "Tequio",
+  "archivo": "Tequio San Juan Achiutla y Santa Catarina Tayata 2025.jpg"
+ },
+ "escultura-cana-maiz": {
+  "wiki": "Corn stalk paste",
+  "archivo": "Crucificado novohispano, Convento de Santa Paula (Sevilla).jpg"
+ },
+ "cal-corteza": {
+  "wiki": "Havardia albicans",
+  "archivo": "Kohunlich, Temple of the Masks (14179344508).jpg"
+ },
+ "adobe": {
+  "wiki": "Adobe",
+  "archivo": "Adobes.jpg"
+ },
+ "agricultura-independiente": {
+  "wiki": "Teosinte",
+  "archivo": "Maize-teosinte.jpg"
+ },
+ "camellones-mayas": {
+  "wiki": "Raised field"
+ },
+ "presa-purron": {
+  "wiki": "Tehuacán Valley"
  }
 }

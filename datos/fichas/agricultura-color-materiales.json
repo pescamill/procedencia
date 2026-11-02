@@ -62,7 +62,11 @@
    {
     "texto": "El sistema llegó al norte desde Mesoamérica; los haudenosaunee lo llaman «las tres hermanas».",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "mtpleasant2016",
+     "hart2000",
+     "matsuoka2002"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -81,7 +85,6 @@
    }
   ],
   "pendientes": [
-   "Fuente sobre la difusión del sistema al este de Norteamérica.",
    "Fuente nutricional."
   ],
   "relacionadas": [
@@ -143,6 +146,13 @@
     "fuentes": [
      "calnek1972"
     ]
+   },
+   {
+    "texto": "Antes de los mexicas ya había chinampas extensas: las de Xaltocan, al norte de la cuenca, se abandonaron en el siglo XIV.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "morehart2014"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -155,7 +165,9 @@
   ],
   "pendientes": [],
   "relacionadas": [
-   "milpa"
+   "milpa",
+   "camellones-mayas",
+   "agricultura-independiente"
   ],
   "alcance": "regional",
   "en_breve": "Islas de cultivo hechas a mano sobre los lagos del valle de México, entre las tierras de cultivo más productivas que se han conocido. Aún se trabajan en Xochimilco."
@@ -236,7 +248,9 @@
    {
     "texto": "Los tintes sintéticos de anilina, desde 1856, desplomaron su comercio.",
     "solidez": "consenso",
-    "fuentes": []
+    "fuentes": [
+     "donkin1977"
+    ]
    },
    {
     "texto": "Hoy se usa como colorante alimentario E120 (carmín, ácido carmínico).",
@@ -307,8 +321,7 @@
    }
   },
   "pendientes": [
-   "Verificar su uso en las casacas británicas.",
-   "Fuente para la anilina (Perkin, 1856)."
+   "Verificar su uso en las casacas británicas."
   ],
   "relacionadas": [
    "nopal"
@@ -661,7 +674,9 @@
    {
     "texto": "Es alrededor del 90% del algodón mundial; el egipcio y el pima son otra especie, G. barbadense, sudamericana.",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "wendel2015"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -671,9 +686,7 @@
     "forma": "etiqueta_muda"
    }
   ],
-  "pendientes": [
-   "Fuente para el porcentaje mundial."
-  ],
+  "pendientes": [],
   "relacionadas": [],
   "alcance": "mundial",
   "en_breve": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán."
@@ -881,9 +894,11 @@
   },
   "afirmaciones": [
    {
-    "texto": "La palabra «sisal» viene del puerto de Sisal, Yucatán; hoy Brasil y África oriental producen la mayoría.",
+    "texto": "Hoy Brasil y África oriental producen la mayor parte del sisal.",
     "solidez": "sustentada",
-    "fuentes": []
+    "fuentes": [
+     "oyen2011"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -895,7 +910,7 @@
    }
   ],
   "pendientes": [
-   "Fuente para la etimología de «sisal» y la producción actual."
+   "Fuente para la etimología de «sisal» (el puerto de Sisal, Yucatán)."
   ],
   "relacionadas": [
    "agave-bebidas"
@@ -1028,5 +1043,162 @@
   ],
   "alcance": "regional",
   "en_breve": "Un arbusto del desierto del norte que produce hule natural; se estudia como alternativa al árbol del hule amazónico."
+ },
+ {
+  "id": "agricultura-independiente",
+  "nombre": "Agricultura nacida aquí",
+  "ambito": "agricultura",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Occidente y sur de México (Balsas, Oaxaca)",
+  "coords": [
+   18.3,
+   -99.8
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -8000,
+   "texto": "hace unos 10,000 años"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "Mesoamérica es uno de los pocos lugares del mundo donde la agricultura nació por su cuenta, sin copiarla de nadie.",
+   "solidez": "consenso",
+   "fuentes": [
+    "larson2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La calabaza de Guilá Naquitz, en Oaxaca, ya era doméstica hace unos 10,000 años, milenios antes que el maíz.",
+    "solidez": "consenso",
+    "fuentes": [
+     "smith1997"
+    ]
+   },
+   {
+    "texto": "El maíz salió del teocintle del Balsas hace unos 9,000 años.",
+    "solidez": "consenso",
+    "fuentes": [
+     "matsuoka2002",
+     "piperno2009"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "maiz",
+   "calabaza",
+   "milpa",
+   "chinampas"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La agricultura no llegó a México desde otra parte: aquí se inventó sola, como en el Cercano Oriente o en China.",
+  "sin_originario": "Es un hecho histórico, no una técnica con nombre propio.",
+  "originales": []
+ },
+ {
+  "id": "camellones-mayas",
+  "nombre": "Camellones mayas",
+  "ambito": "agricultura",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Tierras bajas mayas (Belice y sureste de México)",
+  "coords": [
+   17.9,
+   -88.7
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 700,
+   "texto": "hace 1,800 a 900 años"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "veredicto": {
+   "texto": "Los mayas convirtieron los humedales en campos de cultivo con canales y camellones; el lidar muestra que cubrían áreas mucho mayores de lo que se creía.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "beach2019"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "En esos campos crecían maíz, arrurruz, calabaza y aguacate; funcionaron sobre todo entre hace 1,400 y 1,000 años.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "beach2019"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "wetland fields, raised fields",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Ejemplos en territorio mexicano (Campeche, Quintana Roo) con fuente."
+  ],
+  "relacionadas": [
+   "chinampas",
+   "milpa"
+  ],
+  "alcance": "regional",
+  "en_breve": "Campos elevados entre canales, hechos en los pantanos de la selva maya para cultivar todo el año.",
+  "sin_originario": "No se conoce su nombre maya antiguo.",
+  "originales": []
+ },
+ {
+  "id": "presa-purron",
+  "nombre": "Presa de Purrón",
+  "ambito": "agricultura",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Valle de Tehuacán, Puebla",
+  "coords": [
+   18.25,
+   -97.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -750,
+   "texto": "desde hacia 750 a. C."
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "En el valle de Tehuacán se construyó una presa con canales para regar desde el Formativo: una de las obras hidráulicas más antiguas de Mesoamérica.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "aiuvalasit2010"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Leer el artículo de 2010 para fijar las fechas de cada etapa."
+  ],
+  "relacionadas": [
+   "chinampas"
+  ],
+  "alcance": "local",
+  "en_breve": "Una presa de tierra y piedra con canales de riego, en Puebla, siglos antes de Teotihuacan.",
+  "sin_originario": "Se conoce por el nombre del lugar.",
+  "originales": []
  }
 ]

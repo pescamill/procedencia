@@ -15,7 +15,7 @@ Nace del «Inventario de aportes de México al mundo», que definía qué artíc
 | `datos/pueblos.json` | 15 pueblos: nombre propio, lengua, región, periodo y herencia. |
 | `datos/diagramas.json` | Diagramas de proceso por ficha, con sus fuentes. |
 | `datos/medios.json`, `datos/medios_comprobados.json` | Qué imagen de Commons usa cada ficha, y su autor, licencia y número de Wikipedias. |
-| `datos/fuentes.json` | 212 fuentes con tipo, DOI o enlace. |
+| `datos/fuentes.json` | 219 fuentes con tipo, DOI o enlace. |
 | `datos/traducciones/en.json` | La versión en inglés: cada texto en español con su traducción, por huella del texto. |
 | `datos/erratas.json` | Lo que la verificación corrigió del inventario. |
 | `datos/comprobaciones.json`, `datos/wcvp/` | Lo que encontró la última comprobación en línea. |

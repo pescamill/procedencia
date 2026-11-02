@@ -6,8 +6,8 @@ Generado por `python3 procedencia.py construir`. No se edita a mano.
 
 - Fichas: 100 (95 aportes, 5 deslindes); casos: 31; recorridos: 10.
 - Documentación: 4 expedientes, 91 fichas con fuente, 5 en investigación.
-- Afirmaciones: 330 — 284 con fuente comprobada, 34 citadas sin comprobar, 12 pendientes.
-- Fuentes: 212 — 5 bloqueada, 197 ok, 10 sin_enlace.
+- Afirmaciones: 339 — 293 con fuente comprobada, 34 citadas sin comprobar, 12 pendientes.
+- Fuentes: 219 — 5 bloqueada, 204 ok, 10 sin_enlace.
 - Especies contrastadas con el WCVP: 43.
 
 ## Fuentes que no coinciden con su registro
@@ -117,6 +117,10 @@ Ninguna.
 
 ### Palabras del náhuatl en el mundo (Lengua)
 - Revisión de las formas en náhuatl y maya por un hablante o nahuatlato.
+
+### Algodón (Materiales)
+- Circula una versión de la cita de Clavijero que dice que los mexicanos hacían papel de algodón. Clavijero solo lo menciona como posible material y admite que no sabe cómo se hacía; el papel mesoamericano documentado es de amate y de maguey. No se afirma.
+- Leer Berdan 1987 para cifras de producción y tributo de algodón en todo el imperio.
 
 ### Chicle (Materiales)
 - Confirmar en el libro de Mathews y Schultz el pasaje sobre Santa Anna y Adams.

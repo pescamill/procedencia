@@ -236,9 +236,9 @@
             return `<button class="cite" type="button" data-fn="${n}" ${tip(`<b>${esc(f.autores)} (${esc(f.anio)})</b>${esc(f.titulo)}`)}>${n}</button>`;
           }).join("");
         },
-        lista() {
+        lista(sinTitulo) {
           if (!orden.length) return "";
-          return `<h2 class="sub" id="fuentes">${L("Fuentes", "Sources")} <span class="n">${orden.length}</span></h2><ol class="footnotes">${orden.map((id, i) => `<li id="fn-${i + 1}"><span class="num">${i + 1}</span><div><div class="ref">${refFuente(FUENTE[id])}</div><div>${resFuente(FUENTE[id])} <span class="muted small">· ${esc(TFUENTE[FUENTE[id].tipo].nombre)}</span></div></div></li>`).join("")}</ol>`;
+          return `${sinTitulo ? "" : `<h2 class="sub" id="fuentes">${L("Fuentes", "Sources")} <span class="n">${orden.length}</span></h2>`}<ol class="footnotes">${orden.map((id, i) => `<li id="fn-${i + 1}"><span class="num">${i + 1}</span><div><div class="ref">${refFuente(FUENTE[id])}</div><div>${resFuente(FUENTE[id])} <span class="muted small">· ${esc(TFUENTE[FUENTE[id].tipo].nombre)}</span></div></div></li>`).join("")}</ol>`;
         }
       };
     }
@@ -491,6 +491,8 @@
     }
 
     // ------------------------------------------------------------ ficha
+    // Ficha con forma de artículo de enciclopedia: índice a la izquierda, texto al centro,
+    // cuadro de datos a la derecha. En el teléfono las secciones se pliegan.
     function vistaFicha(id) {
       const f = FICHA[id];
       if (!f) return noEncontrado();
@@ -499,65 +501,89 @@
       const v = f.veredicto;
       const sinFuente = !v.fuentes || !v.fuentes.length;
       const deslinde = f.clase === "deslinde";
-      const cuando = hace(f);
-      const hechos = `<dl class="facts">
-        <div><dt>${L("Qué es", "What it is")}</dt><dd>${esc(NAT[f.naturaleza].nombre)}<span class="why">${esc(a.nombre)}: ${esc(a.pregunta)}</span></dd></div>
-        <div><dt>${deslinde ? L("Por qué no se reclama", "Why it is not claimed") : L("Qué se hizo aquí", "What was done here")}</dt><dd>${deslinde ? L("No se reclama", "Not claimed") : esc(f.actos.map((x) => ACTO[x].nombre).join(" · "))}<span class="why">${deslinde ? esc(C.clases[1].texto) : esc(yLista(f.actos.map((x) => VERBO[x])))}</span></dd></div>
-        <div><dt>${L("Dónde empezó", "Where it began")}</dt><dd>${deslinde && f.origen_biologico ? L("Fuera de México", "Outside Mexico") : esc(TERR[f.territorio].nombre)}<span class="why">${esc(f.region)}</span></dd></div>
-        <div><dt>${L("Cuándo", "When")}</dt><dd>${esc(cuando || EPOCA[f.epoca].nombre)}<span class="why">${esc(f.fecha.texto)}</span></dd></div>
-        <div><dt>${L("Alcance", "Reach")}</dt><dd>${esc(ALC[f.alcance].nombre)}<span class="why">${f.wikipedias ? L(`Tiene artículo en ${f.wikipedias} ediciones de Wikipedia`, `Has an article in ${f.wikipedias} Wikipedia editions`) : esc(ALC[f.alcance].texto)}</span></dd></div>
-      </dl>`;
+      const nah = (o) => (/^n[aá]huatl$/i.test(o.lengua) ? ' lang="nah"' : "");
+      const originales = f.originales.length ? `<p class="enc-orig">${f.originales.map((o, i) => `<span${i ? "" : ' class="o1"'}><i${nah(o)}>${esc(o.forma)}</i> <small>${esc(o.lengua)}${o.glosa ? ` · «${esc(o.glosa)}»` : ""}</small>${N.cita(o.fuentes)}</span>`).join("")}</p>`
+        : f.sin_originario ? `<p class="enc-orig sin">${esc(f.sin_originario)}</p>` : "";
       const frase = deslinde ? "" : `${yLista(f.actos.map((x) => VERBO[x])).replace(/^./, (c) => c.toUpperCase())}. ${L("Su evidencia más antigua está en", "Its oldest evidence is in")} ${TERR[f.territorio].nombre}: ${f.region}.`;
-      const [o0, ...oRest] = f.originales;
-      const originales = o0 ? `<div class="originals"><span class="o-grande" lang="${/^n[aá]huatl$/i.test(o0.lengua) ? "nah" : ""}">${esc(o0.forma)}</span><small>${esc(o0.lengua)}${o0.glosa ? ` · «${esc(o0.glosa)}»` : ""}${N.cita(o0.fuentes)}</small>
-          ${oRest.map((o) => `<span class="o-otro">${esc(o.forma)}<small>${esc(o.lengua)}${o.glosa ? ` · «${esc(o.glosa)}»` : ""}${N.cita(o.fuentes)}</small></span>`).join("")}</div>`
-        : f.sin_originario ? `<p class="sin-orig">${esc(f.sin_originario)}</p>` : "";
-      const breve = `<div class="breve" id="breve"><p class="eyebrow">${L("En pocas palabras", "In brief")}</p><p class="b">${esc(f.en_breve)}</p>${frase ? `<p class="f">${esc(frase)}</p>` : ""}</div>`;
-      const nombres = f.nombres_mundo.length ? `<h2 class="sub" id="nombres">${L("Cómo lo llama el mundo", "What the world calls it")} <span class="n">${f.nombres_mundo.length}</span></h2>
-        <table class="names"><thead><tr><th>${L("Nombre", "Name")}</th><th>${L("Forma", "Form")}</th><th>${L("Qué pasa", "What happens")}</th></tr></thead><tbody>${f.nombres_mundo.map((n) => `<tr><td>${esc(n.dice)}<div class="muted small" style="font-family:var(--sans);font-weight:400">${esc(n.lengua)}</div></td><td><a class="tag doc${BORRA.has(n.forma) ? " borra" : ""}" href="#/nombres/${n.forma}" title="${esc(BORR[n.forma].pregunta)}">${esc(BORR[n.forma].nombre)}</a></td><td>${esc(n.nota || "")}${n.apunta ? ` <span class="muted">→ ${esc(n.apunta.nombre)}</span>` : ""}${n.fuentes ? N.cita(n.fuentes) : ""}</td></tr>`).join("")}</tbody></table>` : "";
-      const exp = f.expediente ? expediente(f, N) : "";
-      const afirm = f.afirmaciones.length ? `<h2 class="sub" id="pruebas">${L("Las pruebas", "The evidence")} <span class="n">${plural(f.afirmaciones.length, L("afirmación", "claim"), L("afirmaciones", "claims"))}</span></h2><ul class="claims">${f.afirmaciones.map((x) => afirmacion(x, N)).join("")}</ul>` : "";
-      const pend = f.pendientes.length ? `<h2 class="sub">${L("Lo que falta", "What is missing")}</h2><ul class="pendientes">${f.pendientes.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>` : "";
-      const veredicto = `<div class="verdict${sinFuente ? " abstiene" : ""}" id="veredicto"><p class="eyebrow" style="margin-bottom:8px">${deslinde ? L("Por qué no se reclama", "Why it is not claimed") : L("Veredicto", "Verdict")}</p><p>${esc(v.texto)}${N.cita(v.fuentes)}</p>
-        <div class="meta">${tagSolidez(v.solidez)}${vstate(v.verificacion || "pendiente")}${tagDoc(f.documentacion)}</div>
-        ${sinFuente ? `<p class="abst">${L("Sin fuente todavía. Se muestra como pendiente, no como dato.", "No source yet. It is shown as pending, not as fact.")}</p>` : ""}</div>`;
-      const cuerpo = breve + cajaDespojo(f) + veredicto + diagrama(f, N) + afirm + nombres + exp + pend;
-      const lateral = ladoFicha(f);
-      const fuentesLista = N.lista();
-      return `<article style="${colorAmb(f.ambito)}" class="ac">
-        <div class="ficha-head"><div class="wrap">
-          <div class="cabeza${f.imagen ? " con-foto" : ""}">
-            <div>
-              <p class="eyebrow">${icono(f.ambito, "")}<a href="#/explorar?ambito=${f.ambito}" style="color:inherit;text-decoration:none">${esc(a.nombre)}</a>${alcTag(f.alcance)}</p>
-              <h1>${esc(f.nombre)}</h1>
-              ${originales}
-              <p class="muted quien">${[f.especie ? `<i>${esc(f.especie)}</i>` : "", f.autoria ? `${L("Autoría", "Authorship")}: ${esc(f.autoria)}` : ""].filter(Boolean).join(" · ")}</p>
-              ${f.pueblos.length ? `<div class="related" style="margin-top:10px"><span class="muted small" style="align-self:center">${L("Pueblos", "Peoples")}:</span>${f.pueblos.map(chipPueblo).join("")}</div>` : ""}
-              <p style="margin-top:14px">${botonCompartir()}</p>
-            </div>
-            ${f.imagen ? `<figure class="foto-ficha">${foto(f, "grande", true)}<figcaption>${credito(f.imagen)}</figcaption></figure>` : ""}
-          </div>
-          ${hechos}
-          ${indice(f)}
-        </div></div>
-        <div class="wrap"><div class="ficha-body"><div>${cuerpo}${fuentesLista}</div><aside class="side">${lateral}</aside></div></div>
-      </article>`;
-    }
-    function indice(f) {
+      const entrada = `<p class="enc-lead">${esc(f.en_breve)}</p>${frase ? `<p class="enc-frase">${esc(frase)}</p>` : ""}
+        <div class="enc-veredicto${sinFuente ? " abstiene" : ""}" id="veredicto"><span class="enc-lbl">${deslinde ? L("Por qué no se reclama", "Why it is not claimed") : L("Veredicto", "Verdict")}</span>
+          <p>${esc(v.texto)}${N.cita(v.fuentes)}</p>
+          <p class="enc-meta">${tagSolidez(v.solidez)}${vstate(v.verificacion || "pendiente")}${tagDoc(f.documentacion)}</p>
+          ${sinFuente ? `<p class="abst">${L("Sin fuente todavía. Se muestra como pendiente, no como dato.", "No source yet. It is shown as pending, not as fact.")}</p>` : ""}</div>`;
+
+      // Secciones, en orden de lectura. Cada una: [ancla, título, contenido].
+      const secs = [];
       const d = despojoDe(f);
-      const items = [["breve", L("En pocas palabras", "In brief")], d.casos.length || d.nombres.length ? ["despojo", L("Lo que se le quitó", "What was taken")] : null, ["veredicto", f.clase === "deslinde" ? L("Por qué no se reclama", "Why it is not claimed") : L("Veredicto", "Verdict")],
-        DIAG[f.id] ? ["diagrama", L("Diagrama", "Diagram")] : null, f.afirmaciones.length ? ["pruebas", L("Las pruebas", "The evidence")] : null, f.nombres_mundo.length ? ["nombres", L("Cómo lo llama el mundo", "What the world calls it")] : null,
-        f.expediente ? ["expediente", L("Expediente", "Dossier")] : null, ["fuentes", L("Fuentes", "Sources")]].filter(Boolean);
-      return `<nav class="indice" aria-label="${L("En esta ficha", "In this entry")}">${items.map(([id, t]) => `<a href="#/ficha/${f.id}#${id}">${esc(t)}</a>`).join("")}</nav>`;
+      if (d.casos.length || d.nombres.length) secs.push(["despojo", L("Lo que se le quitó", "What was taken"),
+        `${d.casos.map((c) => `<a class="enc-caso" href="#/caso/${c.id}" style="--c:${COLOR_CASO[c.tipo]}"><span class="state">${esc(TCASO[c.tipo].nombre)} · ${esc(c.fecha.texto)}</span><b>${esc(c.titulo)}</b><span>${esc(c.reclamo ? L("Se reclama: ", "We demand: ") + c.reclamo : c.resumen)}</span></a>`).join("")}
+         ${d.nombres.length ? `<p class="dn"><b>${d.nombres.length === 1 ? L("Un nombre que borra su origen", "A name that erases its origin") : L("Nombres que borran su origen", "Names that erase its origin")}:</b> ${d.nombres.map((n) => `«${esc(n.dice)}»${n.apunta ? ` <span class="muted">(→ ${esc(n.apunta.nombre)})</span>` : ""}`).join(", ")}</p>` : ""}`]);
+      const diag = diagrama(f, N);
+      if (diag) secs.push(["diagrama", DIAG[f.id].titulo, diag]);
+      if (f.afirmaciones.length) {
+        const n = { comprobada: 0, citada: 0, pendiente: 0 };
+        f.afirmaciones.forEach((x) => n[x.verificacion]++);
+        const resumen = n.comprobada === f.afirmaciones.length ? L("Todas con fuente comprobada.", "All with a verified source.")
+          : L(`${n.comprobada} de ${f.afirmaciones.length} con fuente comprobada; las demás se marcan.`, `${n.comprobada} of ${f.afirmaciones.length} with a verified source; the rest are marked.`);
+        secs.push(["pruebas", L("Las pruebas", "The evidence"), `<p class="enc-nota">${vbar(n, "vbar mini")} ${plural(f.afirmaciones.length, L("afirmación", "claim"), L("afirmaciones", "claims"))}. ${resumen}</p>
+          <ol class="enc-claims">${f.afirmaciones.map((x) => `<li class="${x.verificacion}"><p>${esc(x.texto)}${N.cita(x.fuentes)} <span class="enc-sol ${x.solidez || ""}" title="${x.solidez ? esc(SOL[x.solidez].texto) : ""}">${x.solidez ? esc(SOL[x.solidez].nombre) : ""}</span>${x.verificacion !== "comprobada" ? vstate(x.verificacion) : ""}</p></li>`).join("")}</ol>`]);
+      }
+      if (f.nombres_mundo.length) secs.push(["nombres", L("Cómo lo llama el mundo", "What the world calls it"),
+        `<div class="enc-tabla"><table class="names"><thead><tr><th>${L("Nombre", "Name")}</th><th>${L("Forma", "Form")}</th><th>${L("Qué pasa", "What happens")}</th></tr></thead><tbody>${f.nombres_mundo.map((n) => `<tr><td>${esc(n.dice)}<div class="muted small" style="font-family:var(--sans);font-weight:400">${esc(n.lengua)}</div></td><td><a class="tag doc${BORRA.has(n.forma) ? " borra" : ""}" href="#/nombres/${n.forma}" title="${esc(BORR[n.forma].pregunta)}">${esc(BORR[n.forma].nombre)}</a></td><td>${esc(n.nota || "")}${n.apunta ? ` <span class="muted">→ ${esc(n.apunta.nombre)}</span>` : ""}${n.fuentes ? N.cita(n.fuentes) : ""}</td></tr>`).join("")}</tbody></table></div>`]);
+      if (f.expediente) secs.push(["expediente", L("Expediente", "Dossier"), expediente(f, N)]);
+      const mundo = mapaMundo(f);
+      if (mundo) secs.push(["distribucion", f.distribucion ? L("Dónde crece hoy", "Where it grows today") : L("De dónde vino la especie", "Where the species came from"), mundo]);
+      if (f.pendientes.length) secs.push(["falta", L("Lo que falta", "What is missing"), `<ul class="pendientes">${f.pendientes.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`]);
+      const recs = RECORRIDOS_DE[f.id] || [];
+      if (recs.length || f.relacionadas.length) secs.push(["vease", L("Véase también", "See also"),
+        `${f.relacionadas.length ? `<div class="related">${f.relacionadas.map(chipFicha).join("")}</div>` : ""}
+         ${recs.length ? `<p class="enc-recs"><span class="muted">${L("Recorridos", "Journeys")}:</span> ${recs.map((r) => `<a href="#/recorrido/${r}">${esc(RECORRIDO[r].titulo)}</a>`).join(" · ")}</p>` : ""}`]);
+      const refs = N.lista(true);
+      if (refs) secs.push(["fuentes", L("Fuentes", "Sources"), refs]);
+
+      const seccion = ([ancla, titulo, html]) => `<details class="enc-sec" id="${ancla}" open><summary><h2>${esc(titulo)}</h2></summary><div class="enc-c">${html}</div></details>`;
+      const indice = `<details class="enc-toc" open><summary>${L("Contenido", "Contents")}</summary><ol>
+        <li><a href="#/ficha/${f.id}#arriba">${L("Inicio", "Top")}</a></li>${secs.map(([ancla, titulo]) => `<li><a href="#/ficha/${f.id}#${ancla}" data-sec="${ancla}">${esc(titulo)}</a></li>`).join("")}</ol></details>`;
+      return `<article style="${colorAmb(f.ambito)}" class="ac enc" id="arriba"><div class="wrap enc-grid">
+        <nav class="enc-nav" aria-label="${L("En esta ficha", "In this entry")}">${indice}</nav>
+        <div class="enc-art">
+          <header class="enc-titulo">
+            <p class="eyebrow">${icono(f.ambito, "")}<a href="#/explorar?ambito=${f.ambito}">${esc(a.nombre)}</a>${alcTag(f.alcance)}</p>
+            <div class="enc-h1"><h1>${esc(f.nombre)}</h1>${botonCompartir()}</div>
+            ${originales}
+          </header>
+          ${infobox(f)}
+          ${entrada}
+          <nav class="enc-enlinea" aria-label="${L("En esta ficha", "In this entry")}">${indice}</nav>
+          ${secs.map(seccion).join("")}
+        </div>
+      </div></article>`;
     }
-    function cajaDespojo(f) {
-      const d = despojoDe(f);
-      if (!d.casos.length && !d.nombres.length) return "";
-      return `<div class="despojo-box" id="despojo"><p class="eyebrow">${L("Lo que se le quitó", "What was taken")}</p>
-        ${d.casos.map((c) => `<a class="dz" href="#/caso/${c.id}" style="--c:${COLOR_CASO[c.tipo]}"><span class="state">${esc(TCASO[c.tipo].nombre)} · ${esc(c.fecha.texto)}</span><b>${esc(c.titulo)}</b><span>${esc(c.reclamo ? L("Se reclama: ", "We demand: ") + c.reclamo : c.resumen)}</span></a>`).join("")}
-        ${d.nombres.length ? `<p class="dn"><b>${d.nombres.length === 1 ? L("Un nombre que borra su origen", "A name that erases its origin") : L("Nombres que borran su origen", "Names that erase its origin")}:</b> ${d.nombres.map((n) => `«${esc(n.dice)}»${n.apunta ? ` <span class="muted">(→ ${esc(n.apunta.nombre)})</span>` : ""}`).join(", ")}</p>` : ""}
-      </div>`;
+    // Cuadro de datos, como el de una enciclopedia.
+    function infobox(f) {
+      const deslinde = f.clase === "deslinde";
+      const fila = (k, val, nota) => (val ? `<tr><th scope="row">${k}</th><td>${val}${nota ? `<span class="why">${nota}</span>` : ""}</td></tr>` : "");
+      const n = { comprobada: 0, citada: 0, pendiente: 0 };
+      afirmacionesDe(f).forEach((x) => n[x.verificacion]++);
+      const [lat, lon] = f.coords;
+      const mapa = dentroMexico(lat, lon) && !(deslinde && f.origen_biologico)
+        ? `<div class="ib-mapa">${svgMexico([{ lat, lon, r: 22, cls: "on" }], { aria: `${L("Ubicación", "Location")}: ${f.region}` })}<p class="cap">${esc(f.region)}</p></div>` : "";
+      return `<aside class="infobox" aria-label="${L("Datos", "Facts")}">
+        ${f.imagen ? `<figure>${foto(f, "grande", true)}<figcaption>${credito(f.imagen)}</figcaption></figure>` : ""}
+        <table><tbody>
+          ${fila(L("Qué es", "What it is"), esc(NAT[f.naturaleza].nombre), esc(`${AMB[f.ambito].nombre}: ${AMB[f.ambito].pregunta}`))}
+          ${f.especie ? fila(L("Especie", "Species"), `<i>${esc(f.especie)}</i>`) : ""}
+          ${f.autoria ? fila(L("Autoría", "Authorship"), esc(f.autoria)) : ""}
+          ${fila(deslinde ? L("Por qué no se reclama", "Why it is not claimed") : L("Qué se hizo aquí", "What was done here"), deslinde ? L("No se reclama", "Not claimed") : esc(f.actos.map((x) => ACTO[x].nombre).join(" · ")), deslinde ? esc(C.clases[1].texto) : "")}
+          ${fila(L("Dónde empezó", "Where it began"), deslinde && f.origen_biologico ? L("Fuera de México", "Outside Mexico") : esc(TERR[f.territorio].nombre), esc(f.region))}
+          ${fila(L("Cuándo", "When"), esc(cuando(f)), esc(f.fecha.texto))}
+          ${fila(L("Alcance", "Reach"), esc(ALC[f.alcance].nombre), f.wikipedias ? L(`Artículo en ${f.wikipedias} ediciones de Wikipedia`, `Article in ${f.wikipedias} Wikipedia editions`) : "")}
+          ${f.pueblos.length ? fila(L("Pueblos", "Peoples"), f.pueblos.map((p) => `<a href="#/pueblo/${p}">${esc(nombrePueblo(p))}</a>`).join(", ")) : ""}
+          ${fila(L("Verificación", "Verification"), `${vbar(n, "vbar mini")}<span class="why">${L(`${n.comprobada} comprobadas · ${n.citada} citadas · ${n.pendiente} pendientes`, `${n.comprobada} verified · ${n.citada} cited · ${n.pendiente} pending`)}</span>`)}
+        </tbody></table>
+        ${mapa}
+      </aside>`;
     }
+    const cuando = (f) => hace(f) || EPOCA[f.epoca].nombre;
     // Diagramas: datos/diagramas.json; cada paso resume afirmaciones de la ficha.
     function diagrama(f, N) {
       const d = DIAG[f.id];
@@ -568,7 +594,7 @@
           + (d.contraste ? `<div class="contraste"><b>${esc(d.contraste.titulo)}.</b> ${esc(d.contraste.texto)}${N.cita(d.contraste.fuentes)}</div>` : "");
       } else if (d.tipo === "linea") cuerpo = lineaDiagrama(d);
       else if (d.tipo === "numeracion") cuerpo = numeralesMayas();
-      return `<figure class="diagrama" id="diagrama"><figcaption><span class="eyebrow">${L("Diagrama", "Diagram")}</span><h3>${esc(d.titulo)}</h3></figcaption>${cuerpo}<p class="cap">${L("Resume las afirmaciones de esta ficha.", "It summarizes the claims in this entry.")}${N.cita(d.fuentes)}</p></figure>`;
+      return `<figure class="diagrama">${cuerpo}<p class="cap">${L("Resume las afirmaciones de esta ficha.", "It summarizes the claims in this entry.")}${N.cita(d.fuentes)}</p></figure>`;
     }
     function lineaDiagrama(d) {
       const W = 640, H = 120, a0 = -2000, a1 = AHORA, X = (y) => 30 + ((y - a0) / (a1 - a0)) * (W - 60);
@@ -620,32 +646,23 @@
           <p style="margin-top:10px">${esc(cmp.texto)}${N.cita(cmp.fuentes)}</p><div class="meta" style="margin-top:8px;display:flex;gap:10px;flex-wrap:wrap">${tagSolidez(cmp.solidez)}${vstate(cmp.verificacion)}</div>
           ${cmp.pendiente ? `<p class="abst">${esc(cmp.pendiente)}</p>` : ""}`;
       }
-      return `<h2 class="sub" id="expediente">${L("Expediente", "Dossier")}</h2>${contra}${tabla}`;
+      return `${contra}${tabla}`;
     }
-    function ladoFicha(f) {
-      const out = [];
+    function mapaMundo(f) {
+      if (!f.distribucion && !f.origen_biologico) return "";
       const [lat, lon] = f.coords;
-      if (dentroMexico(lat, lon) && !(f.clase === "deslinde" && f.origen_biologico)) {
-        out.push(`<div class="panel"><h3>${L("Dónde empezó", "Where it began")}</h3>${svgMexico([{ lat, lon, r: 22, cls: "on" }], { aria: `${L("Ubicación", "Location")}: ${f.region}` })}<p class="cap">${esc(f.region)}. ${esc(TERR[f.territorio].texto)}</p></div>`);
+      const d = f.distribucion || { nativa: [], introducida: [] };
+      const nat = new Set(d.nativa), intro = new Set(d.introducida);
+      const cls = (cod) => (nat.has(cod) ? " nativa" : intro.has(cod) ? " introducida" : "");
+      let extra = "";
+      if (f.origen_biologico && f.origen_biologico.coords) {
+        const o = ptMundo(...f.origen_biologico.coords), p = ptMundo(lat, lon);
+        extra = `${arco(o, p)}<circle class="pt-origen" cx="${r1(o[0])}" cy="${r1(o[1])}" r="14" ${tip(`<b>${L("Origen biológico", "Biological origin")}</b>${esc(f.origen_biologico.texto)}`)}/><circle class="pt on" cx="${r1(p[0])}" cy="${r1(p[1])}" r="14" ${tip(`<b>${esc(f.nombre)}</b>${esc(f.region)}`)}/>`;
       }
-      if (f.distribucion || f.origen_biologico) {
-        const d = f.distribucion || { nativa: [], introducida: [] };
-        const nat = new Set(d.nativa), intro = new Set(d.introducida);
-        const cls = (cod) => (nat.has(cod) ? " nativa" : intro.has(cod) ? " introducida" : "");
-        let extra = "";
-        if (f.origen_biologico && f.origen_biologico.coords) {
-          const o = ptMundo(...f.origen_biologico.coords), p = ptMundo(lat, lon);
-          extra = `${arco(o, p)}<circle class="pt-origen" cx="${r1(o[0])}" cy="${r1(o[1])}" r="14" ${tip(`<b>${L("Origen biológico", "Biological origin")}</b>${esc(f.origen_biologico.texto)}`)}/><circle class="pt on" cx="${r1(p[0])}" cy="${r1(p[1])}" r="14" ${tip(`<b>${esc(f.nombre)}</b>${esc(f.region)}`)}/>`;
-        }
-        const leyenda = f.distribucion ? `<div class="legend"><span><i class="sw" style="background:var(--ok)"></i>${L("Nativa", "Native")} (${d.nativa.length})</span><span><i class="sw" style="background:var(--cited)"></i>${L("Introducida", "Introduced")} (${d.introducida.length})</span><span><i class="sw" style="background:var(--land);border:1px solid var(--line)"></i>${L("Sin registro", "No record")}</span></div>` : "";
-        out.push(`<div class="panel"><h3>${f.distribucion ? L("Dónde crece hoy", "Where it grows today") : L("De dónde vino la especie", "Where the species came from")}</h3>
-          <svg class="map" viewBox="0 0 ${GW.ancho} ${GW.alto}" role="img" aria-label="${L("Mapa del mundo con la distribución de", "World map with the distribution of")} ${esc(f.especie || f.nombre)}"><rect width="${GW.ancho}" height="${GW.alto}" fill="var(--water)" rx="8"/>${tierras(GW, cls)}${extra}</svg>
-          ${leyenda}<p class="cap">${f.distribucion ? L(`Regiones donde el WCVP registra a <i>${esc(f.especie)}</i> como nativa o introducida. ${f.origen_biologico ? "La flecha une el origen biológico con el lugar del aporte." : ""}`, `Regions where the WCVP records <i>${esc(f.especie)}</i> as native or introduced. ${f.origen_biologico ? "The arrow joins the biological origin to the place of the contribution." : ""}`) : esc(f.origen_biologico.texto)}</p></div>`);
-      }
-      const recs = RECORRIDOS_DE[f.id] || [];
-      if (recs.length) out.push(`<div class="panel"><h3>${L("Aparece en los recorridos", "Appears in the journeys")}</h3>${recs.map((r) => `<p style="margin-top:8px"><a href="#/recorrido/${r}">${esc(RECORRIDO[r].titulo)}</a></p>`).join("")}</div>`);
-      if (f.relacionadas.length) out.push(`<div class="panel"><h3>${L("Fichas relacionadas", "Related entries")}</h3><div class="related" style="margin-top:8px">${f.relacionadas.map(chipFicha).join("")}</div></div>`);
-      return out.join("");
+      const leyenda = f.distribucion ? `<div class="legend"><span><i class="sw" style="background:var(--ok)"></i>${L("Nativa", "Native")} (${d.nativa.length})</span><span><i class="sw" style="background:var(--cited)"></i>${L("Introducida", "Introduced")} (${d.introducida.length})</span><span><i class="sw" style="background:var(--land);border:1px solid var(--line)"></i>${L("Sin registro", "No record")}</span></div>` : "";
+      return `<figure class="enc-mundo panel">
+        <svg class="map" viewBox="0 0 ${GW.ancho} ${GW.alto}" role="img" aria-label="${L("Mapa del mundo con la distribución de", "World map with the distribution of")} ${esc(f.especie || f.nombre)}"><rect width="${GW.ancho}" height="${GW.alto}" fill="var(--water)" rx="8"/>${tierras(GW, cls)}${extra}</svg>
+        ${leyenda}<figcaption class="cap">${f.distribucion ? L(`Regiones donde el WCVP registra a <i>${esc(f.especie)}</i> como nativa o introducida. ${f.origen_biologico ? "La flecha une el origen biológico con el lugar del aporte." : ""}`, `Regions where the WCVP records <i>${esc(f.especie)}</i> as native or introduced. ${f.origen_biologico ? "The arrow joins the biological origin to the place of the contribution." : ""}`) : esc(f.origen_biologico.texto)}</figcaption></figure>`;
     }
 
     // ------------------------------------------------------------ mapa
@@ -1026,6 +1043,7 @@
       };
       const v = vistas[p0 || ""] || noEncontrado;
       $main.innerHTML = v();
+      if (p0 === "ficha") prepararFicha();
       ocultarTip();
       const seccion = { ficha: "explorar", caso: "despojo", casos: "despojo", recorrido: "recorridos", pueblo: "pueblos" }[p0] || p0;
       document.querySelectorAll("nav.main a").forEach((a) => {
@@ -1037,13 +1055,34 @@
       const q = document.getElementById("q");
       if (p0 !== "explorar" && document.activeElement !== q) q.value = "";
       const ancla = location.hash.split("#")[2];
-      if (ancla) setTimeout(() => { const el = document.getElementById(ancla); if (el) el.scrollIntoView({ behavior: "instant" }); }, 0);
+      if (ancla) setTimeout(() => { const el = document.getElementById(ancla); if (el) { abrir(el); el.scrollIntoView({ behavior: "instant" }); } }, 0);
       else if (!(p0 === "explorar" && document.activeElement === q) && !(p0 === "metodo" && p1)) window.scrollTo({ top: 0, behavior: "instant" });
     }
     window.addEventListener("hashchange", pintar);
 
     // ------------------------------------------------------------ interacción
     function ocultarTip() { $tip.hidden = true; }
+    const ANCHO = matchMedia("(min-width: 821px)");
+    // Abre las secciones plegadas que contienen un elemento antes de llevar la vista a él.
+    function abrir(el) {
+      for (let d = el.closest("details"); d; d = d.parentElement.closest("details")) d.open = true;
+    }
+    let vigia;
+    function prepararFicha() {
+      // En el teléfono, como en una enciclopedia móvil: abiertas la primera sección y las pruebas; las demás, plegadas.
+      if (!ANCHO.matches) document.querySelectorAll(".enc-sec").forEach((d, i) => { if (i && d.id !== "pruebas") d.open = false; });
+      if (!ANCHO.matches) document.querySelector(".enc-enlinea .enc-toc").open = false;
+      if (vigia) vigia.disconnect();
+      const enlaces = Object.fromEntries([...document.querySelectorAll(".enc-nav a[data-sec]")].map((a) => [a.dataset.sec, a]));
+      vigia = new IntersectionObserver((entradas) => {
+        entradas.forEach((e) => {
+          if (!e.isIntersecting) return;
+          Object.values(enlaces).forEach((a) => a.removeAttribute("aria-current"));
+          if (enlaces[e.target.id]) enlaces[e.target.id].setAttribute("aria-current", "true");
+        });
+      }, { rootMargin: "-20% 0px -70% 0px" });
+      document.querySelectorAll(".enc-sec").forEach((s) => vigia.observe(s));
+    }
     document.addEventListener("mouseover", (e) => {
       const el = e.target.closest("[data-tip]");
       if (!el) return ocultarTip();
@@ -1064,10 +1103,12 @@
       const cita = e.target.closest("[data-fn]");
       if (cita) {
         const li = document.getElementById("fn-" + cita.dataset.fn);
-        if (li) { li.scrollIntoView({ block: "center" }); li.style.background = "var(--highlight)"; setTimeout(() => (li.style.background = ""), 1600); }
+        if (li) { abrir(li); li.scrollIntoView({ block: "center" }); li.style.background = "var(--highlight)"; setTimeout(() => (li.style.background = ""), 1600); }
         return;
       }
       if (e.target.closest("[data-share]")) { compartir(); return; }
+      // En pantalla ancha las secciones de la ficha no se pliegan: se lee como un artículo.
+      if (e.target.closest(".enc-sec > summary, .enc-nav summary") && ANCHO.matches) { e.preventDefault(); return; }
       const nav = e.target.closest("[data-href]");
       if (nav) { location.hash = nav.dataset.href; return; }
       if (e.target.closest("[data-toggle-facets]")) {

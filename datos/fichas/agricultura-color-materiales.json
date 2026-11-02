@@ -677,6 +677,44 @@
     "fuentes": [
      "wendel2015"
     ]
+   },
+   {
+    "texto": "En Europa, el algodón era un bien de importación: su cultivo llegó desde la India por el mundo islámico entre los años 700 y 1000, y los tejedores italianos dependían de algodón en rama traído de Siria, Armenia y Chipre. La India era el mayor productor de telas de algodón del mundo.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mazzaoui2005",
+     "riello-algodon"
+    ]
+   },
+   {
+    "texto": "Mesoamérica, en cambio, tejía su propio algodón, de una especie domesticada aquí. Cada seis meses, solo la provincia de Tochtepec entregaba a Tenochtitlan 1,600 mantas ricamente labradas, 800 mantas rayadas y 400 huipiles con sus faldas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "berdananawalt1992",
+     "mendoza"
+    ]
+   },
+   {
+    "texto": "Las mantas de algodón (quachtli) servían de moneda para las compras grandes; el cacao, para las chicas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "berdan1987",
+     "clavijero1807"
+    ]
+   },
+   {
+    "texto": "En julio de 1519, Cortés envió a Carlos V mantas de algodón blancas, ajedrezadas y de colores, camisetas, pañuelos, colchas, tapices y alfombras de algodón. Según López de Gómara, valían más por la hechura que por el material.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "clavijero1807"
+    ]
+   },
+   {
+    "texto": "En 1780, el historiador novohispano Francisco Javier Clavijero escribió que los mexicanos hacían con el algodón telas anchas, tan delicadas y finas como las holandas, el lienzo fino de referencia, y muy estimadas en Europa.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "clavijero1807"
+    ]
    }
   ],
   "nombres_mundo": [
@@ -686,8 +724,13 @@
     "forma": "etiqueta_muda"
    }
   ],
-  "pendientes": [],
-  "relacionadas": [],
+  "pendientes": [
+   "Circula una versión de la cita de Clavijero que dice que los mexicanos hacían papel de algodón. Clavijero solo lo menciona como posible material y admite que no sabe cómo se hacía; el papel mesoamericano documentado es de amate y de maguey. No se afirma.",
+   "Leer Berdan 1987 para cifras de producción y tributo de algodón en todo el imperio."
+  ],
+  "relacionadas": [
+   "textiles"
+  ],
   "alcance": "mundial",
   "en_breve": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán."
  },

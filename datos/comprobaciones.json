@@ -1734,5 +1734,56 @@
   "anio_registrado": 2024,
   "revista_registrada": "Encyclopedia of Archaeology (Second Edition)",
   "fecha": "2026-11-02"
+ },
+ "clavijero1807": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "The history of Mexico : collected from Spanish and Mexican historians, from manuscripts and ancient paintings of the Indians : illustrated by charts, and other ",
+  "fecha": "2026-11-02"
+ },
+ "berdan1987": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Cotton in Aztec Mexico: Production, Distribution and Uses",
+  "anio_registrado": 1987,
+  "revista_registrada": "Mexican Studies/Estudios Mexicanos",
+  "fecha": "2026-11-02"
+ },
+ "berdananawalt1992": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "\"Codex Mendoza, Folio 46 recto (p. 99)\" by Christopher Pool and Barry Kidder",
+  "fecha": "2026-11-02"
+ },
+ "mazzaoui2005": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "riello-algodon": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Essays - Giorgio Riello - Global Commodities: Trade, Exploration &amp; Cultural Exchange - Adam Matthew Digital - Global Commodities: Trade, Exploration & Cultu",
+  "fecha": "2026-11-02"
+ },
+ "inah2026telares": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "inah2022textiles": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
  }
 }

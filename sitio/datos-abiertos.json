@@ -1582,6 +1582,49 @@
       "wendel2015"
      ],
      "verificacion": "comprobada"
+    },
+    {
+     "texto": "En Europa, el algodón era un bien de importación: su cultivo llegó desde la India por el mundo islámico entre los años 700 y 1000, y los tejedores italianos dependían de algodón en rama traído de Siria, Armenia y Chipre. La India era el mayor productor de telas de algodón del mundo.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mazzaoui2005",
+      "riello-algodon"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Mesoamérica, en cambio, tejía su propio algodón, de una especie domesticada aquí. Cada seis meses, solo la provincia de Tochtepec entregaba a Tenochtitlan 1,600 mantas ricamente labradas, 800 mantas rayadas y 400 huipiles con sus faldas.",
+     "solidez": "consenso",
+     "fuentes": [
+      "berdananawalt1992",
+      "mendoza"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Las mantas de algodón (quachtli) servían de moneda para las compras grandes; el cacao, para las chicas.",
+     "solidez": "consenso",
+     "fuentes": [
+      "berdan1987",
+      "clavijero1807"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "En julio de 1519, Cortés envió a Carlos V mantas de algodón blancas, ajedrezadas y de colores, camisetas, pañuelos, colchas, tapices y alfombras de algodón. Según López de Gómara, valían más por la hechura que por el material.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "clavijero1807"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "En 1780, el historiador novohispano Francisco Javier Clavijero escribió que los mexicanos hacían con el algodón telas anchas, tan delicadas y finas como las holandas, el lienzo fino de referencia, y muy estimadas en Europa.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "clavijero1807"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "nombres_mundo": [
@@ -1591,8 +1634,13 @@
      "forma": "etiqueta_muda"
     }
    ],
-   "pendientes": [],
-   "relacionadas": [],
+   "pendientes": [
+    "Circula una versión de la cita de Clavijero que dice que los mexicanos hacían papel de algodón. Clavijero solo lo menciona como posible material y admite que no sabe cómo se hacía; el papel mesoamericano documentado es de amate y de maguey. No se afirma.",
+    "Leer Berdan 1987 para cifras de producción y tributo de algodón en todo el imperio."
+   ],
+   "relacionadas": [
+    "textiles"
+   ],
    "alcance": "mundial",
    "en_breve": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán.",
    "imagen": {
@@ -12002,6 +12050,39 @@
       "lfppcpcia2022"
      ],
      "verificacion": "comprobada"
+    },
+    {
+     "texto": "Hilar con malacate y tejer en telar de cintura son técnicas mesoamericanas que siguen en uso en comunidades indígenas. El Códice Mendoza ya muestra a una niña aprendiendo a tejer en ese telar (folio 60r).",
+     "solidez": "consenso",
+     "fuentes": [
+      "inah2022textiles",
+      "mendoza"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "En cuevas de Teloloapan, Guerrero, se identificaron 33 piezas de telares de cintura del Posclásico tardío (950–1521): machetes de madera, lanzaderas, agujas, enjulios y un mecapal bien conservado.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "inah2026telares"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Sin lana ni seda, tejían el algodón con plumas y con pelo de conejo hilado y teñido; con eso hacían mantas, colchas y chalecos de invierno para los señores.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "clavijero1807"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "El oficio pasa de abuelas y madres a nietas e hijas. El INAH propone estudiar los telares antiguos junto con tejedoras na savi (mixtecas) y ñomndaa (amuzgas), que guardan ese saber.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "inah2026telares"
+     ],
+     "verificacion": "comprobada"
     }
    ],
    "originales": [
@@ -12027,7 +12108,8 @@
    ],
    "relacionadas": [
     "caso-marant",
-    "caso-herrera"
+    "caso-herrera",
+    "algodon"
    ],
    "alcance": "regional",
    "en_breve": "Huipiles y bordados con diseños propios de cada pueblo; marcas de moda los han copiado sin permiso.",
@@ -16064,9 +16146,11 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "algodon",
     "caso-codices",
     "educacion",
-    "grana"
+    "grana",
+    "textiles"
    ]
   },
   {
@@ -18781,6 +18865,149 @@
    "citada_por": [
     "adobe"
    ]
+  },
+  {
+   "id": "clavijero1807",
+   "tipo": "primaria",
+   "autores": "Clavijero, F. J. (trad. C. Cullen)",
+   "anio": 1807,
+   "titulo": "The History of Mexico, vol. I",
+   "publicacion": "Londres, J. Johnson; traducción de la Storia antica del Messico (Cesena, 1780–1781)",
+   "url": "https://archive.org/details/historyofmexicoc01clav",
+   "nota": "Leídos en el libro VII: la moneda de mantas (p. 337), los tejidos «as delicate and fine as those of Holland» (p. 423) y la lista del presente de Cortés a Carlos V de julio de 1519, con el juicio de López de Gómara (pp. 425–426). Sobre el papel, Clavijero menciona el algodón entre los posibles materiales pero dice que no puede explicar cómo se hacía.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "The history of Mexico : collected from Spanish and Mexican historians, from manuscripts and ancient paintings of the Indians : illustrated by charts, and other ",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon",
+    "textiles"
+   ]
+  },
+  {
+   "id": "berdan1987",
+   "tipo": "articulo",
+   "autores": "Berdan, F. F.",
+   "anio": 1987,
+   "titulo": "Cotton in Aztec Mexico: Production, Distribution and Uses",
+   "publicacion": "Mexican Studies/Estudios Mexicanos 3(2)",
+   "doi": "10.2307/1051808",
+   "nota": "Registro comprobado; el texto completo no se pudo leer (acceso restringido).",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Cotton in Aztec Mexico: Production, Distribution and Uses",
+    "anio_registrado": 1987,
+    "revista_registrada": "Mexican Studies/Estudios Mexicanos",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon"
+   ]
+  },
+  {
+   "id": "berdananawalt1992",
+   "tipo": "libro",
+   "autores": "Berdan, F. F.; Anawalt, P. R.",
+   "anio": 1992,
+   "titulo": "The Codex Mendoza, vol. II",
+   "publicacion": "University of California Press",
+   "url": "https://uknowledge.uky.edu/world_mexico_codices/11",
+   "nota": "Las cifras de Tochtepec (folio 46r) se leyeron en la ficha de C. Pool y B. Kidder (Universidad de Kentucky), que cita el vol. II, pp. 112–114.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "\"Codex Mendoza, Folio 46 recto (p. 99)\" by Christopher Pool and Barry Kidder",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon"
+   ]
+  },
+  {
+   "id": "mazzaoui2005",
+   "tipo": "articulo",
+   "autores": "Mazzaoui, M. F.",
+   "anio": 2005,
+   "titulo": "The North-Italian Cotton Industry 1200–1800",
+   "publicacion": "Global Economic History Network, conferencia de Padua",
+   "url": "https://www.lse.ac.uk/Economic-History/Assets/Documents/Research/GEHN/Padua/PADUAMazzaoui.pdf",
+   "nota": "Leído: el cultivo pasó de la India al mundo islámico entre 700 y 1000; la industria italiana dependía de algodón en rama importado de Siria, Armenia y Chipre.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon"
+   ]
+  },
+  {
+   "id": "riello-algodon",
+   "tipo": "consulta",
+   "autores": "Riello, G.",
+   "anio": 2013,
+   "titulo": "Cotton and Cotton Textiles",
+   "publicacion": "Global Commodities, Adam Matthew Digital",
+   "url": "https://www.globalcommodities.amdigital.co.uk/FurtherResources/Essays/Cotton",
+   "nota": "Ensayo del autor de Cotton: The Fabric that Made the Modern World (Cambridge, 2013). Leído: la India era el mayor productor de algodón y de telas de algodón. Año aproximado.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Essays - Giorgio Riello - Global Commodities: Trade, Exploration &amp; Cultural Exchange - Adam Matthew Digital - Global Commodities: Trade, Exploration & Cultu",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "algodon"
+   ]
+  },
+  {
+   "id": "inah2026telares",
+   "tipo": "oficial",
+   "autores": "Instituto Nacional de Antropología e Historia",
+   "anio": 2026,
+   "titulo": "El Centro INAH Guerrero clasifica y estudia fragmentos de telares de cintura de época prehispánica",
+   "publicacion": "Boletín 136, 31 de marzo de 2026",
+   "url": "https://inah.gob.mx/images/boletines/2026/136/Boletin_136.pdf",
+   "nota": "Leído completo.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "textiles"
+   ]
+  },
+  {
+   "id": "inah2022textiles",
+   "tipo": "oficial",
+   "autores": "Hernández Reyes, C. (Centro INAH Hidalgo)",
+   "anio": 2022,
+   "titulo": "La elaboración de textiles, arte de las mujeres",
+   "publicacion": "Instituto Nacional de Antropología e Historia",
+   "url": "https://www.inah.gob.mx/images/interactivos/20220421_textiles_arte_de_las_mujeres.pdf",
+   "nota": "Leído completo. Material de divulgación; describe el malacate y el telar de cintura con base en el Códice Mendoza.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "textiles"
+   ]
   }
  ],
  "metricas": {
@@ -18789,18 +19016,18 @@
   "deslindes": 5,
   "casos": 31,
   "recorridos": 10,
-  "fuentes": 212,
+  "fuentes": 219,
   "fuentes_por_resultado": {
-   "ok": 197,
+   "ok": 204,
    "sin_enlace": 10,
    "bloqueada": 5
   },
   "afirmaciones": {
    "pendiente": 12,
    "citada": 34,
-   "comprobada": 284
+   "comprobada": 293
   },
-  "afirmaciones_total": 330,
+  "afirmaciones_total": 339,
   "documentacion": {
    "inventario": 5,
    "ficha": 91,

@@ -1,5 +1,48 @@
 # Cambios
 
+## Iteración 10 · 2 de noviembre de 2026
+
+La ficha, con forma de artículo de enciclopedia. Tiene el mismo contenido, pero menos amontonado.
+
+### Qué cambió
+
+- **Tres columnas, como en Wikipedia.** A la izquierda va el índice «Contenido», que sigue la lectura y marca la sección en la que estás. Al centro va el texto. A la derecha va el cuadro de datos: foto, qué es, especie, qué se hizo aquí, dónde, cuándo, alcance, pueblos, verificación y mapa de México. La cuadrícula de cinco datos y la barra lateral desaparecen; todo eso vive ahora en el cuadro.
+- **Entrada y veredicto sin cajas.** Primero va el resumen en letra grande y, debajo, el veredicto con una línea de color a la izquierda.
+- **Secciones con título subrayado:** Lo que se le quitó, diagrama, Las pruebas, Cómo lo llama el mundo, Expediente, Dónde crece hoy, Lo que falta, Véase también y Fuentes. El mapa del mundo se convirtió en sección.
+- **Menos etiquetas.** Cada afirmación lleva su solidez en texto pequeño de color. El estado de la fuente solo aparece cuando no está comprobada. Arriba de la sección, un resumen dice «Todas con fuente comprobada» o cuántas faltan.
+- **Citas como en una enciclopedia:** [1] en voladita. Las fuentes van en dos columnas.
+- **En el teléfono** se lee primero la entrada y luego el cuadro de datos. Las secciones se pliegan, salvo la primera y Las pruebas. Al tocar una cita, la sección Fuentes se abre sola.
+
+### Casos de uso
+
+- **Leer una ficha de corrido.** El texto ya no compite con cajas y etiquetas, y el índice permite saltar a Expediente o a Fuentes.
+- **Consultar un dato rápido.** Dónde y cuándo empezó, o qué tan verificada está la ficha: todo está en el cuadro de la derecha, sin bajar.
+- **Ver lo dudoso de un vistazo.** Como solo se marcan las afirmaciones citadas o pendientes, lo que falta comprobar resalta.
+- **Usarlo en el teléfono.** Las secciones plegadas dejan ver la ficha completa en una pantalla; se abre solo lo que interesa.
+
+## Iteración 9 · 2 de noviembre de 2026
+
+El algodón en su contexto y el oficio textil. Nueve afirmaciones nuevas y siete fuentes nuevas, todas comprobadas en línea.
+
+### Qué se agregó
+
+- **Algodón: por qué sorprendió.** En Europa el algodón era un bien importado. Su cultivo llegó de la India por el mundo islámico entre 700 y 1000, y los tejedores italianos compraban la fibra en Siria, Armenia y Chipre (Mazzaoui, 2005). La India era el gran productor de telas (Riello). Mesoamérica tejía su propio algodón, de otra especie: solo Tochtepec entregaba 2,400 mantas cada seis meses (Códice Mendoza, f. 46r).
+- **La cita de Clavijero, ya con su fuente.** Viene de la traducción de 1807, libro VII. Los mexicanos hacían telas «tan delicadas y finas como las de Holanda». También ahí están el presente de Cortés a Carlos V de julio de 1519, con mantas, pañuelos, colchas, tapices y alfombras de algodón, y las mantas usadas como moneda (pp. 337, 423 y 425–426).
+- **Lo que no se afirma.** Una versión de la cita que circula dice que hacían «papel de algodón». Clavijero no lo sostiene: dice que no sabe cómo se hacía. Por eso quedó en «Lo que falta».
+- **Oficio textil.** Malacate y telar de cintura, en el Códice Mendoza y todavía en uso (INAH Hidalgo). Hay telares del Posclásico tardío en cuevas de Teloloapan (INAH, marzo de 2026). Tejían algodón con plumas y con pelo de conejo. El oficio se transmite de madres a hijas, como entre las tejedoras na savi y ñomndaa.
+- Las fichas de algodón y de textiles ahora se enlazan entre sí. El inglés está completo.
+
+### Casos de uso
+
+- **Responder «el algodón llegó de fuera».** La ficha muestra que Europa lo importaba y que aquí había una especie propia, tejida a escala de imperio.
+- **Citar a Clavijero sin miedo.** La cita lleva libro y página, y se aclara qué parte no se sostiene.
+- **Hablar del telar de cintura como tecnología.** Hay evidencia arqueológica, un códice y comunidades vivas, cada dato con su fuente.
+
+### Pendiente
+
+- Leer Berdan (1987) para tener cifras de algodón de todo el imperio; por ahora solo está comprobado su registro.
+- Agregar casos concretos de artesanía textil actual (Tenango, huipiles de Oaxaca y Chiapas) con fuente.
+
 ## Iteración 8 · 2 de noviembre de 2026
 
 La agricultura como ciencia propia. Cuatro fichas nuevas (ahora son 100), tres afirmaciones nuevas y siete fuentes nuevas.

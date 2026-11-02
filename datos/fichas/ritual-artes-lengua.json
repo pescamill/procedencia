@@ -628,6 +628,35 @@
     "fuentes": [
      "lfppcpcia2022"
     ]
+   },
+   {
+    "texto": "Hilar con malacate y tejer en telar de cintura son técnicas mesoamericanas que siguen en uso en comunidades indígenas. El Códice Mendoza ya muestra a una niña aprendiendo a tejer en ese telar (folio 60r).",
+    "solidez": "consenso",
+    "fuentes": [
+     "inah2022textiles",
+     "mendoza"
+    ]
+   },
+   {
+    "texto": "En cuevas de Teloloapan, Guerrero, se identificaron 33 piezas de telares de cintura del Posclásico tardío (950–1521): machetes de madera, lanzaderas, agujas, enjulios y un mecapal bien conservado.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inah2026telares"
+    ]
+   },
+   {
+    "texto": "Sin lana ni seda, tejían el algodón con plumas y con pelo de conejo hilado y teñido; con eso hacían mantas, colchas y chalecos de invierno para los señores.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "clavijero1807"
+    ]
+   },
+   {
+    "texto": "El oficio pasa de abuelas y madres a nietas e hijas. El INAH propone estudiar los telares antiguos junto con tejedoras na savi (mixtecas) y ñomndaa (amuzgas), que guardan ese saber.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inah2026telares"
+    ]
    }
   ],
   "originales": [
@@ -652,7 +681,8 @@
   ],
   "relacionadas": [
    "caso-marant",
-   "caso-herrera"
+   "caso-herrera",
+   "algodon"
   ],
   "alcance": "regional",
   "en_breve": "Huipiles y bordados con diseños propios de cada pueblo; marcas de moda los han copiado sin permiso."

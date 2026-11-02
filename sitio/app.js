@@ -1,14 +1,13 @@
 /* Procedencia · aplicación estática. Lee window.PROCEDENCIA (lo genera procedencia.py construir). */
 (function () {
   "use strict";
-  // Idioma: ?lang= en la dirección, luego la elección guardada, luego el navegador. El inglés llega aparte, en datos-en.js.
+  // Idioma: ?lang= en la dirección, luego la elección guardada; si no hay ninguna, español. El inglés llega aparte, en datos-en.js.
   const IDIOMAS = ["es", "en"];
   const ELEGIDO = (() => {
     const q = new URLSearchParams(location.search).get("lang");
     if (IDIOMAS.includes(q)) { try { localStorage.setItem("procedencia-idioma", q); } catch (_) {} return q; }
     try { const g = localStorage.getItem("procedencia-idioma"); if (IDIOMAS.includes(g)) return g; } catch (_) {}
-    const nav = (navigator.languages || [navigator.language || ""]).map((l) => String(l).slice(0, 2).toLowerCase());
-    return nav.find((l) => IDIOMAS.includes(l)) || "en";
+    return "es";
   })();
   if (ELEGIDO === "en" && !window.PROCEDENCIA_EN) {
     const s = document.createElement("script");

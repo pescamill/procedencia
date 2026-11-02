@@ -103,9 +103,18 @@
     "nombre": "Conocimiento y técnica",
     "pregunta": "¿Es una forma de contar, escribir, medir el tiempo, organizar la vida o un invento técnico?",
     "incluye": "Matemáticas, escritura, calendarios, urbanismo, educación e inventos.",
-    "excluye": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura.",
+    "excluye": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura; las de construcción, en Construcción.",
     "color": "#2c4a7a",
     "icono": "glifo"
+   },
+   {
+    "id": "construccion",
+    "nombre": "Construcción",
+    "pregunta": "¿Es una forma de construir, un material de obra o el trabajo y el arte con que se levantó un edificio?",
+    "incluye": "Formas y técnicas de edificar, morteros y materiales de obra, la organización del trabajo de construcción y la escultura y la pintura hechas para un edificio.",
+    "excluye": "La traza y el tamaño de las ciudades van en Conocimiento y técnica; la pintura y los objetos que no son parte de un edificio, en Artes y oficios.",
+    "color": "#7b6a55",
+    "icono": "basamento"
    },
    {
     "id": "ritual",
@@ -7794,6 +7803,536 @@
    "documentacion": "inventario"
   },
   {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [
+    "Fuente académica sobre el volumen de la pirámide de Cholula, que suele citarse como el mayor del mundo."
+   ],
+   "relacionadas": [
+    "talud-tablero",
+    "ciudades"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "La Gran Pirámide de Cholula se construyó en cuatro grandes etapas y al menos nueve modificaciones, desde el Formativo terminal hasta el Posclásico temprano.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mccafferty1996"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Sus primeras etapas comparten rasgos de estilo con Teotihuacan; las últimas, con El Tajín y la costa del Golfo.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "mccafferty1996"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Sobre el montículo se levantó después una iglesia, el santuario de la Virgen de los Remedios, que sigue atrayendo peregrinos.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mccafferty1996"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "basamento-piramidal",
+   "nombre": "Basamentos piramidales",
+   "ambito": "construccion",
+   "naturaleza": "tecnica",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Cholula, Puebla; Teotihuacan; el área maya",
+   "coords": [
+    19.057,
+    -98.302
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": -100,
+    "texto": "del Formativo terminal a 1521"
+   },
+   "pueblos": [
+    "teotihuacanos",
+    "mayas",
+    "mexicas"
+   ],
+   "originales": [
+    {
+     "forma": "teocalli",
+     "lengua": "náhuatl",
+     "glosa": "casa de dios: el templo que corona el basamento",
+     "fuentes": [
+      "gdn2012"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "veredicto": {
+    "texto": "Los pueblos de Mesoamérica levantaron templos sobre plataformas escalonadas, ampliadas por etapas durante siglos. La Gran Pirámide de Cholula es el edificio más grande de Mesoamérica.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mccafferty1996"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "amplio",
+   "en_breve": "Plataformas escalonadas, ampliadas durante siglos, que sostenían los templos. La de Cholula es el edificio más grande de Mesoamérica.",
+   "imagen": {
+    "archivo": "Gran_Pirámide_de_Cholula,_Puebla,_México,_2013-10-12,_DD_10.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Gran_Pir%C3%A1mide_de_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_10.JPG/960px-Gran_Pir%C3%A1mide_de_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:Gran_Pir%C3%A1mide_de_Cholula,_Puebla,_M%C3%A9xico,_2013-10-12,_DD_10.JPG",
+    "autor": "Diego Delso",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "descripcion": "Great Pyramid of Cholula, Puebla, Mexico"
+   },
+   "wikipedias": 27,
+   "wikidata": "Q1417475",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [],
+   "relacionadas": [
+    "basamento-piramidal",
+    "ciudades"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Teotihuacan fue una de las ciudades más grandes de su tiempo, con entre 100,000 y 125,000 habitantes estimados.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "cowgill1997"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Sus formas aparecen en la Gran Pirámide de Cholula, cuyas primeras etapas comparten rasgos de estilo con Teotihuacan.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "mccafferty1996"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "talud-tablero",
+   "nombre": "Talud-tablero",
+   "ambito": "construccion",
+   "naturaleza": "tecnica",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Teotihuacan, Estado de México",
+   "coords": [
+    19.692,
+    -98.844
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": 200,
+    "texto": "hacia los siglos I a VI"
+   },
+   "pueblos": [
+    "teotihuacanos"
+   ],
+   "sin_originario": "«Talud» y «tablero» son palabras de los arqueólogos; no se conoce el nombre que le daban en Teotihuacan.",
+   "veredicto": {
+    "texto": "El talud-tablero, un muro inclinado coronado por un panel vertical enmarcado, es el perfil arquitectónico que distingue a Teotihuacan y que otras ciudades de Mesoamérica imitaron.",
+    "solidez": "consenso",
+    "fuentes": [
+     "langley2003"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "regional",
+   "en_breve": "El perfil de escalón de Teotihuacan: un muro inclinado y, encima, un panel recto. Se copió en toda Mesoamérica como marca de prestigio.",
+   "originales": [],
+   "imagen": {
+    "archivo": "TableroTalud.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/TableroTalud.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "pagina": "https://commons.wikimedia.org/wiki/File:TableroTalud.jpg",
+    "autor": "HJPD",
+    "licencia": "CC BY-SA 3.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "descripcion": "Construction of the Teotihuacan tablero talud system."
+   },
+   "wikipedias": 12,
+   "wikidata": "Q338739",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [],
+   "relacionadas": [
+    "basamento-piramidal"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Los albañiles de Mesoamérica han usado extractos de la corteza del chukum, el chacté, el chacah y el jabín para preparar estuco de cal desde tiempos prehispánicos.",
+     "solidez": "consenso",
+     "fuentes": [
+      "littmann1960"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Los estucos antiguos de Copán contienen polisacáridos de corteza; las réplicas hechas con esos extractos resultaron más tenaces y resistentes a la intemperie.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "rodrigueznavarro2023"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "cal-corteza",
+   "nombre": "Estuco de cal con savia de corteza",
+   "ambito": "construccion",
+   "naturaleza": "tecnica",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mesoamerica",
+   "region": "Área maya: Yucatán, Copán",
+   "coords": [
+    20.68,
+    -88.57
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": 300,
+    "texto": "época prehispánica, práctica viva"
+   },
+   "pueblos": [
+    "mayas"
+   ],
+   "originales": [
+    {
+     "forma": "chukum",
+     "lengua": "maya yucateco",
+     "glosa": "árbol cuya corteza se agrega a la cal",
+     "fuentes": [
+      "littmann1960"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "veredicto": {
+    "texto": "Los albañiles mayas mezclaban la cal con savia de la corteza de árboles como el chukum. La mezcla hace el estuco más resistente y menos soluble en agua, y la ciencia de materiales hoy la estudia para conservar edificios.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "littmann1960",
+     "rodrigueznavarro2023"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "regional",
+   "en_breve": "Cal mezclada con savia de árboles como el chukum. Hace el estuco más fuerte y resistente al agua; se sigue usando en Yucatán.",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [
+    "Fuente sobre el coatequitl prehispánico (p. ej., Rojas Rabiela, 1977) y sobre el tequio que sigue vivo en Oaxaca."
+   ],
+   "relacionadas": [
+    "capilla-abierta",
+    "arte-indocristiano"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Según las cuentas de la catedral de México de 1584 a 1586, lo que encareció la obra fueron los salarios de la élite española, no el número de trabajadores indígenas.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "pachecothiesen2025"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "La diferencia entre la arquitectura colonial y la española estaba sobre todo en el proceso de trabajo, marcado por la tecnología social indígena para movilizar mano de obra, y no en la forma final de los edificios.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "pachecothiesen2025"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "coatequitl",
+   "nombre": "Coatequitl: el trabajo colectivo de obra",
+   "ambito": "construccion",
+   "naturaleza": "practica",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Centro de México",
+   "coords": [
+    19.435,
+    -99.133
+   ],
+   "epoca": "antigua",
+   "fecha": {
+    "anio": 1450,
+    "texto": "época prehispánica a siglo XVI"
+   },
+   "pueblos": [
+    "nahuas",
+    "mexicas"
+   ],
+   "originales": [
+    {
+     "forma": "coatequitl",
+     "lengua": "náhuatl",
+     "glosa": "trabajo por turnos de los pueblos para las obras públicas",
+     "fuentes": [
+      "gdn2012"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "veredicto": {
+    "texto": "Las obras grandes de la Nueva España se hicieron con la organización indígena del trabajo: los pueblos aportaban cuadrillas por turnos. En la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que dirigía la obra.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "pachecothiesen2025"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "regional",
+   "en_breve": "La forma indígena de organizar el trabajo por turnos para levantar obras públicas. Con ella se construyeron los templos antiguos y las catedrales coloniales.",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [
+    "Citar el capítulo de McAndrew sobre el origen de la forma y su relación con las ceremonias indígenas al aire libre."
+   ],
+   "relacionadas": [
+    "arte-indocristiano",
+    "coatequitl"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Atrios, capillas posas y capillas abiertas forman un conjunto propio de los conventos mexicanos del siglo XVI.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mcandrew1965"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "capilla-abierta",
+   "nombre": "Capilla abierta",
+   "ambito": "construccion",
+   "naturaleza": "obra",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Centro de México",
+   "coords": [
+    19.205,
+    -98.8
+   ],
+   "epoca": "virreinal",
+   "fecha": {
+    "anio": 1540,
+    "texto": "siglo XVI"
+   },
+   "pueblos": [
+    "nahuas",
+    "otomies"
+   ],
+   "sin_originario": "Es un nombre español para una forma de edificio creada en la Nueva España.",
+   "veredicto": {
+    "texto": "La capilla abierta, un presbiterio que se abre a un gran atrio para que una multitud siga la misa al aire libre, es una forma de arquitectura creada en el México del siglo XVI.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mcandrew1965"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "regional",
+   "en_breve": "Una capilla que se abre a una gran plaza para que miles de personas sigan la misa al aire libre. Se inventó en México en el siglo XVI.",
+   "originales": [],
+   "imagen": {
+    "archivo": "TlalCapillaAbiertaMX.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/TlalCapillaAbiertaMX.jpg/960px-TlalCapillaAbiertaMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "pagina": "https://commons.wikimedia.org/wiki/File:TlalCapillaAbiertaMX.jpg",
+    "autor": "AlejandroLinaresGarcia",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "descripcion": "The \"Capilla Abierta\" or Open Chapel next to the San Luis Obispo Church in Tlalmanalco, Mexico State, Mexico"
+   },
+   "wikipedias": 6,
+   "wikidata": "Q1034612",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [
+    "Fuente sobre los nombres de los artistas indígenas registrados en los contratos de obra."
+   ],
+   "relacionadas": [
+    "capilla-abierta",
+    "coatequitl",
+    "escultura-cana-maiz"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "En el convento agustino de Ixmiquilpan, Hidalgo, iniciado en 1550, los murales muestran guerreros indígenas vestidos de jaguar y coyote, con armas prehispánicas, entre hojas de acanto europeas.",
+     "solidez": "consenso",
+     "fuentes": [
+      "inah2024ixmiquilpan"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "La decoración de Santa María Tonantzintla, Puebla, funde la Asunción de la Virgen con imágenes del Tlalocan, el paraíso de Tláloc.",
+     "solidez": "debate",
+     "fuentes": [
+      "glockner2016"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Moreno Villa llamó tequitqui al arte de los indígenas después de la conquista; el término sigue en uso, aunque discutido.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "morenovilla1942"
+     ],
+     "verificacion": "citada"
+    }
+   ],
+   "id": "arte-indocristiano",
+   "nombre": "Escultura y pintura indígena en los templos",
+   "ambito": "construccion",
+   "naturaleza": "obra",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Ixmiquilpan, Hidalgo; Tonantzintla, Puebla",
+   "coords": [
+    20.483,
+    -99.218
+   ],
+   "epoca": "virreinal",
+   "fecha": {
+    "anio": 1570,
+    "texto": "siglos XVI a XVIII"
+   },
+   "pueblos": [
+    "nahuas",
+    "otomies"
+   ],
+   "originales": [
+    {
+     "forma": "tequitqui",
+     "lengua": "náhuatl",
+     "glosa": "tributario; nombre que Moreno Villa dio a este arte",
+     "fuentes": [
+      "gdn2012",
+      "morenovilla1942"
+     ],
+     "verificacion": "citada"
+    }
+   ],
+   "veredicto": {
+    "texto": "Los relieves, murales y yeserías de muchos templos coloniales los hicieron artistas indígenas, que mezclaron la iconografía cristiana con formas y significados de su propia tradición.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "morenovilla1942",
+     "inah2024ixmiquilpan",
+     "glockner2016"
+    ],
+    "verificacion": "citada"
+   },
+   "alcance": "regional",
+   "en_breve": "Los murales, relieves y yeserías que artistas indígenas hicieron en las iglesias coloniales, con guerreros jaguar y paraísos de Tláloc entre los santos.",
+   "documentacion": "ficha"
+  },
+  {
+   "clase": "aporte",
+   "nombres_mundo": [],
+   "pendientes": [
+    "Fuente leída sobre el tatzingueni y sobre los Cristos de caña de España (Telde, Lerma, Vitoria)."
+   ],
+   "relacionadas": [
+    "maiz",
+    "arte-indocristiano"
+   ],
+   "afirmaciones": [
+    {
+     "texto": "Las esculturas de caña de maíz se produjeron en la Nueva España en los siglos XVI y XVII y son un ejemplo de la convergencia de las tradiciones indígenas y europeas.",
+     "solidez": "consenso",
+     "fuentes": [
+      "quinterobalbas2021"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Hay ejemplos en países europeos; el estudio de una escultura de Guadalajara la asocia a un taller del centro de México hacia 1580.",
+     "solidez": "consenso",
+     "fuentes": [
+      "quinterobalbas2021"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "id": "escultura-cana-maiz",
+   "nombre": "Escultura de caña de maíz",
+   "ambito": "construccion",
+   "naturaleza": "tecnica",
+   "actos": [
+    "creado"
+   ],
+   "territorio": "mexico",
+   "region": "Michoacán y el centro de México",
+   "coords": [
+    19.513,
+    -101.609
+   ],
+   "epoca": "virreinal",
+   "fecha": {
+    "anio": 1580,
+    "texto": "siglos XVI y XVII"
+   },
+   "pueblos": [
+    "purepechas",
+    "nahuas"
+   ],
+   "originales": [
+    {
+     "forma": "tatzingueni",
+     "lengua": "purépecha",
+     "glosa": "engrudo de bulbos de orquídea para la pasta; por verificar",
+     "fuentes": []
+    }
+   ],
+   "veredicto": {
+    "texto": "Imágenes religiosas ligeras, hechas con médula de caña de maíz, papel y madera de colorín. Unen la técnica indígena con la escultura europea y se exportaron a Europa.",
+    "solidez": "consenso",
+    "fuentes": [
+     "quinterobalbas2021"
+    ],
+    "verificacion": "comprobada"
+   },
+   "alcance": "regional",
+   "en_breve": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España.",
+   "documentacion": "ficha"
+  },
+  {
    "id": "cempasuchil",
    "nombre": "Cempasúchil",
    "ambito": "ornato",
@@ -12936,6 +13475,112 @@
    "pendientes": [
     "Fuente sobre el oso pardo mexicano y el lobo mexicano."
    ]
+  },
+  {
+   "id": "caso-templos-iglesias",
+   "tipo": "saber_borrado",
+   "titulo": "Las iglesias sobre los templos",
+   "estado": "historico",
+   "fecha": {
+    "anio": 1550,
+    "texto": "siglo XVI"
+   },
+   "lugar": "Cholula, Tenochtitlan y los pueblos de la Nueva España",
+   "coords": [
+    19.057,
+    -98.302
+   ],
+   "resumen": "Las iglesias de la Nueva España se levantaron encima de los templos o con sus piedras, y las construyeron manos indígenas. La historia del arte las atribuye a los frailes y arquitectos españoles; los albañiles, canteros y pintores quedaron sin nombre.",
+   "afirmaciones": [
+    {
+     "texto": "Sobre la Gran Pirámide de Cholula se levantó la iglesia de la Virgen de los Remedios.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mccafferty1996"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "El Templo Mayor fue derribado y sus materiales se reutilizaron en las construcciones españolas.",
+     "solidez": "consenso",
+     "fuentes": [
+      "britannica-templomayor"
+     ],
+     "verificacion": "citada"
+    },
+    {
+     "texto": "En la obra de la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que la dirigía.",
+     "solidez": "sustentada",
+     "fuentes": [
+      "pachecothiesen2025"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "reclamo": "Que las catedrales y los conventos se cuenten también como obra de los pueblos que los construyeron, pintaron y esculpieron.",
+   "fichas": [
+    "basamento-piramidal",
+    "coatequitl",
+    "arte-indocristiano"
+   ],
+   "pendientes": [
+    "Registrar nombres de canteros y pintores indígenas que aparecen en los documentos de obra."
+   ]
+  },
+  {
+   "id": "caso-braceros",
+   "tipo": "saqueo",
+   "titulo": "Los salarios retenidos de los braceros",
+   "estado": "resuelto",
+   "fecha": {
+    "anio": 1942,
+    "texto": "1942–1946; acuerdo en 2009"
+   },
+   "lugar": "Estados Unidos y México",
+   "coords": [
+    31.76,
+    -106.49
+   ],
+   "resumen": "Entre 1942 y 1964, México y Estados Unidos firmaron 4.6 millones de contratos de braceros para el campo y, durante la guerra, para los ferrocarriles. A los de 1942 a 1946 les descontaron el 10% del salario para un ahorro obligatorio que nunca recibieron. Sesenta años después, un acuerdo judicial les pagó unos 3,500 dólares a cada uno o a sus familias.",
+   "afirmaciones": [
+    {
+     "texto": "El Programa Bracero duró de 1942 a 1964 y firmó 4.6 millones de contratos, sobre todo para trabajo agrícola.",
+     "solidez": "consenso",
+     "fuentes": [
+      "braceroarchive"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "Durante la Segunda Guerra Mundial, braceros mexicanos trabajaron también en las vías de los ferrocarriles del oeste de Estados Unidos.",
+     "solidez": "consenso",
+     "fuentes": [
+      "gamboa2016"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "A los braceros de 1942 a 1946 se les retuvo el 10% del salario en cuentas de ahorro forzoso que nunca se les reembolsaron.",
+     "solidez": "consenso",
+     "fuentes": [
+      "lieffcabraser2009"
+     ],
+     "verificacion": "comprobada"
+    },
+    {
+     "texto": "En 2009, un tribunal federal de California aprobó un acuerdo por el que el gobierno de México pagó unos 3,500 dólares a cada bracero o a sus familias.",
+     "solidez": "consenso",
+     "fuentes": [
+      "lieffcabraser2009"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "reclamo": "Que se reconozca que el pago llegó seis décadas tarde, a pocos sobrevivientes, y que los braceros ayudaron a sostener la economía de guerra de Estados Unidos.",
+   "fichas": [],
+   "pendientes": [
+    "Fuente independiente sobre el número de braceros ferroviarios y sobre las críticas al acuerdo de 2009."
+   ]
   }
  ],
  "recorridos": [
@@ -13268,6 +13913,62 @@
    ],
    "pendientes": [
     "Fuente revisada por pares sobre la producción de luteína de cempasúchil en China e India."
+   ]
+  },
+  {
+   "id": "constructores",
+   "titulo": "Constructores mexicanos",
+   "entrada": "De las pirámides a las catedrales y de las catedrales a los ferrocarriles de Estados Unidos: los pueblos de aquí levantaron edificios con técnicas propias, y luego construyeron los de otros. Este recorrido sigue esas manos.",
+   "pasos": [
+    {
+     "ficha": "basamento-piramidal",
+     "texto": "Templos sobre montañas hechas a mano."
+    },
+    {
+     "ficha": "talud-tablero",
+     "texto": "Un perfil que toda Mesoamérica copió."
+    },
+    {
+     "ficha": "cal-corteza",
+     "texto": "La cal que la ciencia de materiales estudia hoy."
+    },
+    {
+     "ficha": "coatequitl",
+     "texto": "El trabajo por turnos que levantó todo lo demás."
+    },
+    {
+     "caso": "caso-templos-iglesias",
+     "texto": "Las iglesias encima, y las manos sin nombre."
+    },
+    {
+     "ficha": "capilla-abierta",
+     "texto": "Una forma de iglesia inventada aquí."
+    },
+    {
+     "ficha": "arte-indocristiano",
+     "texto": "Guerreros jaguar entre los santos."
+    },
+    {
+     "ficha": "escultura-cana-maiz",
+     "texto": "Cristos de maíz que viajaron a España."
+    },
+    {
+     "caso": "caso-braceros",
+     "texto": "Las vías y los campos de Estados Unidos."
+    }
+   ],
+   "afirmaciones": [
+    {
+     "texto": "En 2006, casi el 23% de los trabajadores nacidos en México empleados en Estados Unidos estaba en la construcción: el triple que entre los nacidos en Estados Unidos.",
+     "solidez": "consenso",
+     "fuentes": [
+      "mpi2006construccion"
+     ],
+     "verificacion": "comprobada"
+    }
+   ],
+   "pendientes": [
+    "Cifra reciente de trabajadores nacidos en México en la construcción de Estados Unidos (Censo o Pew)."
    ]
   }
  ],
@@ -14978,7 +15679,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "ciudades"
+    "ciudades",
+    "talud-tablero"
    ]
   },
   {
@@ -16262,6 +16964,8 @@
     "amaranto",
     "amate",
     "anil",
+    "arte-indocristiano",
+    "basamento-piramidal",
     "cacahuate",
     "cacao-chocolate",
     "calabaza",
@@ -16275,6 +16979,7 @@
     "chile",
     "chinampas",
     "ciudades",
+    "coatequitl",
     "cocina-tradicional",
     "copal",
     "cruz-badiano",
@@ -16624,6 +17329,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "caso-templos-iglesias",
     "caso-tenochtitlan"
    ]
   },
@@ -16904,40 +17610,331 @@
    "citada_por": [
     "caso-matanzas"
    ]
+  },
+  {
+   "id": "mccafferty1996",
+   "tipo": "articulo",
+   "autores": "McCafferty, G. G.",
+   "anio": 1996,
+   "titulo": "Reinterpreting the Great Pyramid of Cholula, Mexico",
+   "publicacion": "Ancient Mesoamerica 7(1): 1–17",
+   "doi": "10.1017/S0956536100001255",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Reinterpreting the Great Pyramid of Cholula, Mexico",
+    "anio_registrado": 1996,
+    "revista_registrada": "Ancient Mesoamerica",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "basamento-piramidal",
+    "caso-templos-iglesias",
+    "talud-tablero"
+   ]
+  },
+  {
+   "id": "langley2003",
+   "tipo": "consulta",
+   "autores": "Langley, J. C.",
+   "anio": 2003,
+   "titulo": "Talud–tablero",
+   "publicacion": "Grove Art Online, Oxford University Press",
+   "doi": "10.1093/gao/9781884446054.article.T083193",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Talud–tablero",
+    "anio_registrado": 2003,
+    "revista_registrada": "Oxford Art Online",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "talud-tablero"
+   ]
+  },
+  {
+   "id": "littmann1960",
+   "tipo": "articulo",
+   "autores": "Littmann, E. R.",
+   "anio": 1960,
+   "titulo": "Ancient Mesoamerican Mortars, Plasters, and Stuccos: The Use of Bark Extracts in Lime Plasters",
+   "publicacion": "American Antiquity 25(4): 593–597",
+   "doi": "10.2307/276642",
+   "nota": "Nombra los árboles cuya corteza se usaba: chucum, chacte, chacah y jabín.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Ancient Mesoamerican Mortars, Plasters, and Stuccos: The Use of Bark Extracts in Lime Plasters",
+    "anio_registrado": 1960,
+    "revista_registrada": "American Antiquity",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "cal-corteza"
+   ]
+  },
+  {
+   "id": "rodrigueznavarro2023",
+   "tipo": "articulo",
+   "autores": "Rodríguez-Navarro, C.; Monasterio-Guillot, L.; Burgos-Ruiz, M. et al.",
+   "anio": 2023,
+   "titulo": "Unveiling the secret of ancient Maya masons: Biomimetic lime plasters with plant extracts",
+   "publicacion": "Science Advances 9(16)",
+   "doi": "10.1126/sciadv.adf6138",
+   "nota": "Estudia estucos de Copán, Honduras, y réplicas hechas con extractos de corteza de árboles locales.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Unveiling the secret of ancient Maya masons: Biomimetic lime plasters with plant extracts",
+    "anio_registrado": 2023,
+    "revista_registrada": "Science Advances",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "cal-corteza"
+   ]
+  },
+  {
+   "id": "pachecothiesen2025",
+   "tipo": "articulo",
+   "autores": "Pacheco Thiesen, J. R.",
+   "anio": 2025,
+   "titulo": "Procesos laborales y costes en la construcción de la catedral de México (siglo XVI)",
+   "publicacion": "Revista Historia y Patrimonio 4(6): 1–21",
+   "doi": "10.5354/2810-6245.2025.78593",
+   "nota": "Analiza las cuentas de la obra de 1584 a 1586 y las compara con las catedrales de Segovia y Salamanca.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Procesos laborales y costes en la construcción de la catedral de México (siglo XVI)",
+    "anio_registrado": 2025,
+    "revista_registrada": "Revista Historia y Patrimonio",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "caso-templos-iglesias",
+    "coatequitl"
+   ]
+  },
+  {
+   "id": "mcandrew1965",
+   "tipo": "libro",
+   "autores": "McAndrew, J.",
+   "anio": 1965,
+   "titulo": "The Open-Air Churches of Sixteenth-Century Mexico: Atrios, Posas, Open Chapels, and Other Studies",
+   "publicacion": "Harvard University Press",
+   "doi": "10.4159/harvard.9780674186354",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 0.9,
+    "titulo_registrado": "The Open-Air Churches of Sixteenth-Century Mexico",
+    "anio_registrado": 1965,
+    "revista_registrada": "",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "capilla-abierta"
+   ]
+  },
+  {
+   "id": "morenovilla1942",
+   "tipo": "libro",
+   "autores": "Moreno Villa, J.",
+   "anio": 1942,
+   "titulo": "La escultura colonial mexicana",
+   "publicacion": "El Colegio de México",
+   "nota": "Propone el término tequitqui para el arte de los indígenas tras la conquista.",
+   "comprobacion": {
+    "metodo": "ninguno",
+    "resultado": "sin_enlace",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "arte-indocristiano"
+   ]
+  },
+  {
+   "id": "inah2024ixmiquilpan",
+   "tipo": "institucion",
+   "autores": "Instituto Nacional de Antropología e Historia",
+   "anio": 2024,
+   "titulo": "Murales indígenas de Ixmiquilpan",
+   "publicacion": "INAH, Foto del día, 17 de octubre de 2024",
+   "url": "https://inah.gob.mx/foto-del-dia/murales-indigenas-de-ixmiquilpan",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Murales indígenas de Ixmiquilpan",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "arte-indocristiano"
+   ]
+  },
+  {
+   "id": "glockner2016",
+   "tipo": "articulo",
+   "autores": "Glockner, J.",
+   "anio": 2016,
+   "titulo": "The Barroque Paradise of Santa María Tonantzintla (Part I)",
+   "publicacion": "Ethnologia Actualis 16(1): 8–29",
+   "doi": "10.1515/eas-2016-0001",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The Barroque Paradise of Santa María Tonantzintla (Part I)",
+    "anio_registrado": 2016,
+    "revista_registrada": "Ethnologia Actualis",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "arte-indocristiano"
+   ]
+  },
+  {
+   "id": "quinterobalbas2021",
+   "tipo": "articulo",
+   "autores": "Quintero Balbas, D.; Sánchez-Rodríguez, E.; Zárate Ramírez, Á. et al.",
+   "anio": 2021,
+   "titulo": "Holy Corn. Interdisciplinary Study of a Mexican 16th-Century Polychrome Maize Stem, Paper, and Colorín Wood Sculpture",
+   "publicacion": "Heritage 4(3): 1538–1553",
+   "doi": "10.3390/heritage4030085",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Holy Corn. Interdisciplinary Study of a Mexican 16th-Century Polychrome Maize Stem, Paper, and Colorín Wood Sculpture",
+    "anio_registrado": 2021,
+    "revista_registrada": "Heritage",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "escultura-cana-maiz"
+   ]
+  },
+  {
+   "id": "braceroarchive",
+   "tipo": "institucion",
+   "autores": "Bracero History Archive (Smithsonian NMAH, George Mason University, Brown University, UTEP)",
+   "anio": 2010,
+   "titulo": "About the Bracero Program",
+   "publicacion": "Bracero History Archive",
+   "url": "https://braceroarchive.org/about",
+   "nota": "Año aproximado del sitio.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "About · Bracero History Archive",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "caso-braceros"
+   ]
+  },
+  {
+   "id": "lieffcabraser2009",
+   "tipo": "institucion",
+   "autores": "Lieff Cabraser Heimann & Bernstein",
+   "anio": 2009,
+   "titulo": "Braceros Litigation (Cruz v. United States, Estados Unidos Mexicanos, Wells Fargo Bank et al.)",
+   "publicacion": "Página del despacho que llevó la demanda",
+   "url": "https://lieffcabraser.com/braceros",
+   "nota": "Fuente de parte: el despacho representó a los braceros.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Braceros Litigation – Lieff Cabraser",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "caso-braceros"
+   ]
+  },
+  {
+   "id": "gamboa2016",
+   "tipo": "libro",
+   "autores": "Gamboa, E.",
+   "anio": 2016,
+   "titulo": "Bracero Railroaders: The Forgotten World War II Story of Mexican Workers in the U.S. West",
+   "publicacion": "University of Washington Press",
+   "doi": "10.1515/9780295998312",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 0.9,
+    "titulo_registrado": "Bracero Railroaders",
+    "anio_registrado": 2016,
+    "revista_registrada": "",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "caso-braceros"
+   ]
+  },
+  {
+   "id": "mpi2006construccion",
+   "tipo": "institucion",
+   "autores": "Migration Policy Institute",
+   "anio": 2008,
+   "titulo": "Mexican-Born Persons in the U.S. Civilian Labor Force",
+   "publicacion": "Migration Policy Institute, Fact Sheet",
+   "url": "https://www.migrationpolicy.org/research/mexican-born-persons-us-civilian-labor-force",
+   "nota": "Datos de 2006.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Mexican-Born Persons in the U.S. Civilian Labor Force | Migration Policy Institute",
+    "fecha": "2026-11-01"
+   },
+   "citada_por": [
+    "constructores"
+   ]
   }
  ],
  "metricas": {
-  "fichas": 89,
-  "aportes": 85,
+  "fichas": 96,
+  "aportes": 92,
   "deslindes": 4,
-  "casos": 29,
-  "recorridos": 9,
-  "fuentes": 173,
+  "casos": 31,
+  "recorridos": 10,
+  "fuentes": 187,
   "fuentes_por_resultado": {
-   "ok": 160,
-   "sin_enlace": 9,
+   "ok": 173,
+   "sin_enlace": 10,
    "bloqueada": 4
   },
   "afirmaciones": {
    "pendiente": 31,
-   "citada": 30,
-   "comprobada": 229
+   "citada": 33,
+   "comprobada": 256
   },
-  "afirmaciones_total": 290,
+  "afirmaciones_total": 320,
   "documentacion": {
    "inventario": 12,
-   "ficha": 73,
+   "ficha": 80,
    "expediente": 4
   },
   "pueblos": 15,
   "alcance": {
    "mundial": 14,
-   "amplio": 33,
-   "regional": 32,
+   "amplio": 34,
+   "regional": 38,
    "local": 10
   },
-  "imagenes": 85,
-  "nombres_originarios": 95,
+  "imagenes": 88,
+  "nombres_originarios": 100,
   "especies_wcvp": 43,
   "fecha": "2026-11-01"
  },

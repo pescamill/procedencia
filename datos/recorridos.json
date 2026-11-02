@@ -320,5 +320,60 @@
   "pendientes": [
    "Fuente revisada por pares sobre la producción de luteína de cempasúchil en China e India."
   ]
+ },
+ {
+  "id": "constructores",
+  "titulo": "Constructores mexicanos",
+  "entrada": "De las pirámides a las catedrales y de las catedrales a los ferrocarriles de Estados Unidos: los pueblos de aquí levantaron edificios con técnicas propias, y luego construyeron los de otros. Este recorrido sigue esas manos.",
+  "pasos": [
+   {
+    "ficha": "basamento-piramidal",
+    "texto": "Templos sobre montañas hechas a mano."
+   },
+   {
+    "ficha": "talud-tablero",
+    "texto": "Un perfil que toda Mesoamérica copió."
+   },
+   {
+    "ficha": "cal-corteza",
+    "texto": "La cal que la ciencia de materiales estudia hoy."
+   },
+   {
+    "ficha": "coatequitl",
+    "texto": "El trabajo por turnos que levantó todo lo demás."
+   },
+   {
+    "caso": "caso-templos-iglesias",
+    "texto": "Las iglesias encima, y las manos sin nombre."
+   },
+   {
+    "ficha": "capilla-abierta",
+    "texto": "Una forma de iglesia inventada aquí."
+   },
+   {
+    "ficha": "arte-indocristiano",
+    "texto": "Guerreros jaguar entre los santos."
+   },
+   {
+    "ficha": "escultura-cana-maiz",
+    "texto": "Cristos de maíz que viajaron a España."
+   },
+   {
+    "caso": "caso-braceros",
+    "texto": "Las vías y los campos de Estados Unidos."
+   }
+  ],
+  "afirmaciones": [
+   {
+    "texto": "En 2006, casi el 23% de los trabajadores nacidos en México empleados en Estados Unidos estaba en la construcción: el triple que entre los nacidos en Estados Unidos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mpi2006construccion"
+    ]
+   }
+  ],
+  "pendientes": [
+   "Cifra reciente de trabajadores nacidos en México en la construcción de Estados Unidos (Censo o Pew)."
+  ]
  }
 ]

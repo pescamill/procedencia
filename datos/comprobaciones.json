@@ -1409,5 +1409,119 @@
   "codigo": 200,
   "titulo_pagina": "AMLO pide a España disculparse por abusos de la Conquista",
   "fecha": "2026-11-01"
+ },
+ "mccafferty1996": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Reinterpreting the Great Pyramid of Cholula, Mexico",
+  "anio_registrado": 1996,
+  "revista_registrada": "Ancient Mesoamerica",
+  "fecha": "2026-11-01"
+ },
+ "langley2003": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Talud–tablero",
+  "anio_registrado": 2003,
+  "revista_registrada": "Oxford Art Online",
+  "fecha": "2026-11-01"
+ },
+ "littmann1960": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Ancient Mesoamerican Mortars, Plasters, and Stuccos: The Use of Bark Extracts in Lime Plasters",
+  "anio_registrado": 1960,
+  "revista_registrada": "American Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "rodrigueznavarro2023": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Unveiling the secret of ancient Maya masons: Biomimetic lime plasters with plant extracts",
+  "anio_registrado": 2023,
+  "revista_registrada": "Science Advances",
+  "fecha": "2026-11-01"
+ },
+ "pachecothiesen2025": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Procesos laborales y costes en la construcción de la catedral de México (siglo XVI)",
+  "anio_registrado": 2025,
+  "revista_registrada": "Revista Historia y Patrimonio",
+  "fecha": "2026-11-01"
+ },
+ "mcandrew1965": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "The Open-Air Churches of Sixteenth-Century Mexico",
+  "anio_registrado": 1965,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "morenovilla1942": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "inah2024ixmiquilpan": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Murales indígenas de Ixmiquilpan",
+  "fecha": "2026-11-01"
+ },
+ "glockner2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Barroque Paradise of Santa María Tonantzintla (Part I)",
+  "anio_registrado": 2016,
+  "revista_registrada": "Ethnologia Actualis",
+  "fecha": "2026-11-01"
+ },
+ "quinterobalbas2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Holy Corn. Interdisciplinary Study of a Mexican 16th-Century Polychrome Maize Stem, Paper, and Colorín Wood Sculpture",
+  "anio_registrado": 2021,
+  "revista_registrada": "Heritage",
+  "fecha": "2026-11-01"
+ },
+ "braceroarchive": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "About · Bracero History Archive",
+  "fecha": "2026-11-01"
+ },
+ "lieffcabraser2009": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Braceros Litigation – Lieff Cabraser",
+  "fecha": "2026-11-01"
+ },
+ "gamboa2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Bracero Railroaders",
+  "anio_registrado": 2016,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "mpi2006construccion": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Mexican-Born Persons in the U.S. Civilian Labor Force | Migration Policy Institute",
+  "fecha": "2026-11-01"
  }
 }

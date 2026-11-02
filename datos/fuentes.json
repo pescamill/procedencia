@@ -1579,5 +1579,137 @@
   "titulo": "AMLO pide a España disculparse por los abusos cometidos en la Conquista",
   "publicacion": "Expansión, 25 de marzo de 2019",
   "url": "https://politica.expansion.mx/presidencia/2019/03/25/amlo-pide-a-espana-disculparse-por-los-abusos-cometidos-en-la-conquista"
+ },
+ {
+  "id": "mccafferty1996",
+  "tipo": "articulo",
+  "autores": "McCafferty, G. G.",
+  "anio": 1996,
+  "titulo": "Reinterpreting the Great Pyramid of Cholula, Mexico",
+  "publicacion": "Ancient Mesoamerica 7(1): 1–17",
+  "doi": "10.1017/S0956536100001255"
+ },
+ {
+  "id": "langley2003",
+  "tipo": "consulta",
+  "autores": "Langley, J. C.",
+  "anio": 2003,
+  "titulo": "Talud–tablero",
+  "publicacion": "Grove Art Online, Oxford University Press",
+  "doi": "10.1093/gao/9781884446054.article.T083193"
+ },
+ {
+  "id": "littmann1960",
+  "tipo": "articulo",
+  "autores": "Littmann, E. R.",
+  "anio": 1960,
+  "titulo": "Ancient Mesoamerican Mortars, Plasters, and Stuccos: The Use of Bark Extracts in Lime Plasters",
+  "publicacion": "American Antiquity 25(4): 593–597",
+  "doi": "10.2307/276642",
+  "nota": "Nombra los árboles cuya corteza se usaba: chucum, chacte, chacah y jabín."
+ },
+ {
+  "id": "rodrigueznavarro2023",
+  "tipo": "articulo",
+  "autores": "Rodríguez-Navarro, C.; Monasterio-Guillot, L.; Burgos-Ruiz, M. et al.",
+  "anio": 2023,
+  "titulo": "Unveiling the secret of ancient Maya masons: Biomimetic lime plasters with plant extracts",
+  "publicacion": "Science Advances 9(16)",
+  "doi": "10.1126/sciadv.adf6138",
+  "nota": "Estudia estucos de Copán, Honduras, y réplicas hechas con extractos de corteza de árboles locales."
+ },
+ {
+  "id": "pachecothiesen2025",
+  "tipo": "articulo",
+  "autores": "Pacheco Thiesen, J. R.",
+  "anio": 2025,
+  "titulo": "Procesos laborales y costes en la construcción de la catedral de México (siglo XVI)",
+  "publicacion": "Revista Historia y Patrimonio 4(6): 1–21",
+  "doi": "10.5354/2810-6245.2025.78593",
+  "nota": "Analiza las cuentas de la obra de 1584 a 1586 y las compara con las catedrales de Segovia y Salamanca."
+ },
+ {
+  "id": "mcandrew1965",
+  "tipo": "libro",
+  "autores": "McAndrew, J.",
+  "anio": 1965,
+  "titulo": "The Open-Air Churches of Sixteenth-Century Mexico: Atrios, Posas, Open Chapels, and Other Studies",
+  "publicacion": "Harvard University Press",
+  "doi": "10.4159/harvard.9780674186354"
+ },
+ {
+  "id": "morenovilla1942",
+  "tipo": "libro",
+  "autores": "Moreno Villa, J.",
+  "anio": 1942,
+  "titulo": "La escultura colonial mexicana",
+  "publicacion": "El Colegio de México",
+  "nota": "Propone el término tequitqui para el arte de los indígenas tras la conquista."
+ },
+ {
+  "id": "inah2024ixmiquilpan",
+  "tipo": "institucion",
+  "autores": "Instituto Nacional de Antropología e Historia",
+  "anio": 2024,
+  "titulo": "Murales indígenas de Ixmiquilpan",
+  "publicacion": "INAH, Foto del día, 17 de octubre de 2024",
+  "url": "https://inah.gob.mx/foto-del-dia/murales-indigenas-de-ixmiquilpan"
+ },
+ {
+  "id": "glockner2016",
+  "tipo": "articulo",
+  "autores": "Glockner, J.",
+  "anio": 2016,
+  "titulo": "The Barroque Paradise of Santa María Tonantzintla (Part I)",
+  "publicacion": "Ethnologia Actualis 16(1): 8–29",
+  "doi": "10.1515/eas-2016-0001"
+ },
+ {
+  "id": "quinterobalbas2021",
+  "tipo": "articulo",
+  "autores": "Quintero Balbas, D.; Sánchez-Rodríguez, E.; Zárate Ramírez, Á. et al.",
+  "anio": 2021,
+  "titulo": "Holy Corn. Interdisciplinary Study of a Mexican 16th-Century Polychrome Maize Stem, Paper, and Colorín Wood Sculpture",
+  "publicacion": "Heritage 4(3): 1538–1553",
+  "doi": "10.3390/heritage4030085"
+ },
+ {
+  "id": "braceroarchive",
+  "tipo": "institucion",
+  "autores": "Bracero History Archive (Smithsonian NMAH, George Mason University, Brown University, UTEP)",
+  "anio": 2010,
+  "titulo": "About the Bracero Program",
+  "publicacion": "Bracero History Archive",
+  "url": "https://braceroarchive.org/about",
+  "nota": "Año aproximado del sitio."
+ },
+ {
+  "id": "lieffcabraser2009",
+  "tipo": "institucion",
+  "autores": "Lieff Cabraser Heimann & Bernstein",
+  "anio": 2009,
+  "titulo": "Braceros Litigation (Cruz v. United States, Estados Unidos Mexicanos, Wells Fargo Bank et al.)",
+  "publicacion": "Página del despacho que llevó la demanda",
+  "url": "https://lieffcabraser.com/braceros",
+  "nota": "Fuente de parte: el despacho representó a los braceros."
+ },
+ {
+  "id": "gamboa2016",
+  "tipo": "libro",
+  "autores": "Gamboa, E.",
+  "anio": 2016,
+  "titulo": "Bracero Railroaders: The Forgotten World War II Story of Mexican Workers in the U.S. West",
+  "publicacion": "University of Washington Press",
+  "doi": "10.1515/9780295998312"
+ },
+ {
+  "id": "mpi2006construccion",
+  "tipo": "institucion",
+  "autores": "Migration Policy Institute",
+  "anio": 2008,
+  "titulo": "Mexican-Born Persons in the U.S. Civilian Labor Force",
+  "publicacion": "Migration Policy Institute, Fact Sheet",
+  "url": "https://www.migrationpolicy.org/research/mexican-born-persons-us-civilian-labor-force",
+  "nota": "Datos de 2006."
  }
 ]

@@ -4,10 +4,10 @@ Generado por `python3 procedencia.py construir`. No se edita a mano.
 
 ## Cifras
 
-- Fichas: 89 (85 aportes, 4 deslindes); casos: 29; recorridos: 9.
-- Documentación: 4 expedientes, 73 fichas con fuente, 12 en investigación.
-- Afirmaciones: 290 — 229 con fuente comprobada, 30 citadas sin comprobar, 31 pendientes.
-- Fuentes: 173 — 4 bloqueada, 160 ok, 9 sin_enlace.
+- Fichas: 96 (92 aportes, 4 deslindes); casos: 31; recorridos: 10.
+- Documentación: 4 expedientes, 80 fichas con fuente, 12 en investigación.
+- Afirmaciones: 320 — 256 con fuente comprobada, 33 citadas sin comprobar, 31 pendientes.
+- Fuentes: 187 — 4 bloqueada, 173 ok, 10 sin_enlace.
 - Especies contrastadas con el WCVP: 43.
 
 ## Fuentes que no coinciden con su registro
@@ -134,6 +134,21 @@ Ninguna.
 ### Televisión a color (Conocimiento y técnica)
 - Registro de la patente mexicana de 1940.
 
+### Basamentos piramidales (Construcción)
+- Fuente académica sobre el volumen de la pirámide de Cholula, que suele citarse como el mayor del mundo.
+
+### Capilla abierta (Construcción)
+- Citar el capítulo de McAndrew sobre el origen de la forma y su relación con las ceremonias indígenas al aire libre.
+
+### Coatequitl: el trabajo colectivo de obra (Construcción)
+- Fuente sobre el coatequitl prehispánico (p. ej., Rojas Rabiela, 1977) y sobre el tequio que sigue vivo en Oaxaca.
+
+### Escultura de caña de maíz (Construcción)
+- Fuente leída sobre el tatzingueni y sobre los Cristos de caña de España (Telde, Lerma, Vitoria).
+
+### Escultura y pintura indígena en los templos (Construcción)
+- Fuente sobre los nombres de los artistas indígenas registrados en los contratos de obra.
+
 ### Lenguas vivas (Lengua)
 - Enlazar el tabulado original del INEGI.
 
@@ -233,3 +248,4 @@ Ninguna.
 - fuente cortes1522: sin DOI ni URL; no puede comprobarse automáticamente
 - fuente lopezaustin1980: sin DOI ni URL; no puede comprobarse automáticamente
 - fuente relacionmichoacan1541: sin DOI ni URL; no puede comprobarse automáticamente
+- fuente morenovilla1942: sin DOI ni URL; no puede comprobarse automáticamente

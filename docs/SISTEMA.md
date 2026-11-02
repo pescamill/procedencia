@@ -35,7 +35,7 @@ Los **recorridos** (9) no son entidades: son vistas narrativas que ordenan ficha
 
 | Eje | Pregunta | Valores | Cardinalidad |
 |---|---|---|---|
-| Ámbito | ¿Para qué le sirve al mundo? | Alimentación, Agricultura, Color, Materiales, Plantas de ornato, Salud, Conocimiento y técnica, Ritual y fiesta, Artes y oficios, Lengua | Uno |
+| Ámbito | ¿Para qué le sirve al mundo? | Alimentación, Agricultura, Color, Materiales, Plantas de ornato, Salud, Conocimiento y técnica, Construcción, Ritual y fiesta, Artes y oficios, Lengua | Uno |
 | Naturaleza | ¿Qué es? | Planta, animal, hongo, técnica, saber, práctica, obra, lengua | Uno |
 | Actos | ¿Qué hizo aquí la gente? | Nativo, domesticado, creado, nombrado | Uno o más |
 | Territorio | ¿Dónde está la evidencia más antigua del aporte? | México, Mesoamérica | Uno |
@@ -66,6 +66,8 @@ Cada ámbito tiene una pregunta, una lista de lo que incluye y otra de lo que no
 - **Salud / Ritual y fiesta:** la ceremonia va en Ritual; la sustancia que el mundo recibió como fármaco o como objeto de investigación (psilocibina, mescalina), en Salud.
 - **Color / Alimentación:** si el mundo lo usa sobre todo para dar color (achiote como E160b), va en Color.
 - **Artes y oficios / Ritual y fiesta:** la música o el oficio que el mundo recibió como arte (mariachi) va en Artes; la danza que es sobre todo ceremonia (voladores), en Ritual.
+- **Conocimiento y técnica / Construcción:** la traza y el tamaño de una ciudad van en Conocimiento; la forma de edificar, el mortero, el trabajo de obra y el arte hecho para un edificio, en Construcción.
+- **Construcción / Artes y oficios:** un mural o un relieve que es parte de un templo va en Construcción; la pintura, el textil o la artesanía sueltos, en Artes.
 - **Lengua / cada ficha:** el nombre náhuatl de una planta va en su ficha; Lengua guarda las lenguas vivas y los préstamos como fenómeno.
 
 ### Reglas entre ejes

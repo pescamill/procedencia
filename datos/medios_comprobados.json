@@ -1297,5 +1297,56 @@
    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "descripcion": "Map about number of speakers of nahuatl in Mexico in 2010 according to the XIII Censo General de Población y Vivienda of the INEGI"
   }
+ },
+ "basamento-piramidal": {
+  "wiki": "Great Pyramid of Cholula",
+  "qid": "Q1417475",
+  "wikipedias": 27,
+  "fecha": "2026-11-01",
+  "imagen": {
+   "archivo": "Gran_Pirámide_de_Cholula,_Puebla,_México,_2013-10-12,_DD_10.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Gran_Pir%C3%A1mide_de_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_10.JPG/960px-Gran_Pir%C3%A1mide_de_Cholula%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-12%2C_DD_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Gran_Pir%C3%A1mide_de_Cholula,_Puebla,_M%C3%A9xico,_2013-10-12,_DD_10.JPG",
+   "autor": "Diego Delso",
+   "licencia": "CC BY-SA 3.0",
+   "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "descripcion": "Great Pyramid of Cholula, Puebla, Mexico"
+  }
+ },
+ "talud-tablero": {
+  "wiki": "Talud-tablero",
+  "qid": "Q338739",
+  "wikipedias": 12,
+  "fecha": "2026-11-01",
+  "imagen": {
+   "archivo": "TableroTalud.jpg",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/TableroTalud.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "pagina": "https://commons.wikimedia.org/wiki/File:TableroTalud.jpg",
+   "autor": "HJPD",
+   "licencia": "CC BY-SA 3.0",
+   "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "descripcion": "Construction of the Teotihuacan tablero talud system."
+  }
+ },
+ "capilla-abierta": {
+  "wiki": "Capilla abierta",
+  "qid": "Q1034612",
+  "wikipedias": 6,
+  "fecha": "2026-11-01",
+  "imagen": {
+   "archivo": "TlalCapillaAbiertaMX.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/TlalCapillaAbiertaMX.jpg/960px-TlalCapillaAbiertaMX.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "pagina": "https://commons.wikimedia.org/wiki/File:TlalCapillaAbiertaMX.jpg",
+   "autor": "AlejandroLinaresGarcia",
+   "licencia": "CC BY-SA 4.0",
+   "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "descripcion": "The \"Capilla Abierta\" or Open Chapel next to the San Luis Obispo Church in Tlalmanalco, Mexico State, Mexico"
+  }
+ },
+ "arte-indocristiano": {
+  "wiki": "Tequitqui",
+  "qid": null,
+  "wikipedias": null,
+  "fecha": "2026-11-01"
  }
 }

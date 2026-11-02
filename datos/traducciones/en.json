@@ -172,9 +172,25 @@
   "es": "Matemáticas, escritura, calendarios, urbanismo, educación e inventos.",
   "en": "Mathematics, writing, calendars, urban planning, education and inventions."
  },
- "1a6d52cfcb": {
-  "es": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura.",
-  "en": "Cooking techniques go under Food; farming techniques, under Agriculture."
+ "26c1f7266f": {
+  "es": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura; las de construcción, en Construcción.",
+  "en": "Cooking techniques go in Food; farming ones, in Agriculture; building ones, in Construction."
+ },
+ "722636ff8c": {
+  "es": "Construcción",
+  "en": "Construction"
+ },
+ "21a78445f4": {
+  "es": "¿Es una forma de construir, un material de obra o el trabajo y el arte con que se levantó un edificio?",
+  "en": "Is it a way of building, a building material, or the labor and art with which a building was raised?"
+ },
+ "d34df546eb": {
+  "es": "Formas y técnicas de edificar, morteros y materiales de obra, la organización del trabajo de construcción y la escultura y la pintura hechas para un edificio.",
+  "en": "Forms and techniques of building, mortars and building materials, the organization of construction labor, and the sculpture and painting made for a building."
+ },
+ "dfc9d66f9f": {
+  "es": "La traza y el tamaño de las ciudades van en Conocimiento y técnica; la pintura y los objetos que no son parte de un edificio, en Artes y oficios.",
+  "en": "The layout and size of cities go in Knowledge and technique; painting and objects that are not part of a building, in Arts and crafts."
  },
  "e22ab8c9f5": {
   "es": "Ritual y fiesta",
@@ -2532,6 +2548,242 @@
   "es": "Cóctel del siglo XX con nombre en español.",
   "en": "A 20th-century cocktail with a Spanish name."
  },
+ "8f758c3e2f": {
+  "es": "Fuente académica sobre el volumen de la pirámide de Cholula, que suele citarse como el mayor del mundo.",
+  "en": "Academic source on the volume of the Cholula pyramid, often cited as the largest in the world."
+ },
+ "7907098d17": {
+  "es": "La Gran Pirámide de Cholula se construyó en cuatro grandes etapas y al menos nueve modificaciones, desde el Formativo terminal hasta el Posclásico temprano.",
+  "en": "The Great Pyramid of Cholula was built in four major stages and at least nine modifications, from the Terminal Formative to the Early Postclassic."
+ },
+ "734ac4ea6b": {
+  "es": "Sus primeras etapas comparten rasgos de estilo con Teotihuacan; las últimas, con El Tajín y la costa del Golfo.",
+  "en": "Its early stages share stylistic traits with Teotihuacan; the later ones, with El Tajín and the Gulf Coast."
+ },
+ "e369ce71af": {
+  "es": "Sobre el montículo se levantó después una iglesia, el santuario de la Virgen de los Remedios, que sigue atrayendo peregrinos.",
+  "en": "A church was later built on the mound, the shrine of the Virgin of the Remedies, which still draws pilgrims."
+ },
+ "ca35587ddb": {
+  "es": "Basamentos piramidales",
+  "en": "Pyramidal platforms"
+ },
+ "a584c5bb7f": {
+  "es": "Cholula, Puebla; Teotihuacan; el área maya",
+  "en": "Cholula, Puebla; Teotihuacan; the Maya area"
+ },
+ "2a6fac4757": {
+  "es": "del Formativo terminal a 1521",
+  "en": "from the Terminal Formative to 1521"
+ },
+ "78e360c673": {
+  "es": "casa de dios: el templo que corona el basamento",
+  "en": "god's house: the temple that crowns the platform"
+ },
+ "12f3c8fd4a": {
+  "es": "Los pueblos de Mesoamérica levantaron templos sobre plataformas escalonadas, ampliadas por etapas durante siglos. La Gran Pirámide de Cholula es el edificio más grande de Mesoamérica.",
+  "en": "The peoples of Mesoamerica raised temples on stepped platforms, enlarged in stages over centuries. The Great Pyramid of Cholula is the largest building in Mesoamerica."
+ },
+ "f703b30f3a": {
+  "es": "Plataformas escalonadas, ampliadas durante siglos, que sostenían los templos. La de Cholula es el edificio más grande de Mesoamérica.",
+  "en": "Stepped platforms, enlarged over centuries, that held up the temples. Cholula's is the largest building in Mesoamerica."
+ },
+ "7861bc4434": {
+  "es": "Teotihuacan fue una de las ciudades más grandes de su tiempo, con entre 100,000 y 125,000 habitantes estimados.",
+  "en": "Teotihuacan was one of the largest cities of its time, with an estimated 100,000 to 125,000 inhabitants."
+ },
+ "309592b64f": {
+  "es": "Sus formas aparecen en la Gran Pirámide de Cholula, cuyas primeras etapas comparten rasgos de estilo con Teotihuacan.",
+  "en": "Its forms appear in the Great Pyramid of Cholula, whose early stages share stylistic traits with Teotihuacan."
+ },
+ "901b6710ca": {
+  "es": "Talud-tablero",
+  "en": "Talud-tablero"
+ },
+ "152595af22": {
+  "es": "Teotihuacan, Estado de México",
+  "en": "Teotihuacan, State of Mexico"
+ },
+ "c6aa50bca8": {
+  "es": "hacia los siglos I a VI",
+  "en": "around the 1st to 6th centuries"
+ },
+ "8a0677dff3": {
+  "es": "«Talud» y «tablero» son palabras de los arqueólogos; no se conoce el nombre que le daban en Teotihuacan.",
+  "en": "«Talud» and «tablero» are archaeologists' words; the name used in Teotihuacan is unknown."
+ },
+ "c6c35c87d5": {
+  "es": "El talud-tablero, un muro inclinado coronado por un panel vertical enmarcado, es el perfil arquitectónico que distingue a Teotihuacan y que otras ciudades de Mesoamérica imitaron.",
+  "en": "The talud-tablero, a sloping wall topped by a framed vertical panel, is the architectural profile that marks Teotihuacan and that other Mesoamerican cities imitated."
+ },
+ "05bf98f94c": {
+  "es": "El perfil de escalón de Teotihuacan: un muro inclinado y, encima, un panel recto. Se copió en toda Mesoamérica como marca de prestigio.",
+  "en": "Teotihuacan's stepped profile: a sloping wall with a straight panel on top. It was copied across Mesoamerica as a mark of prestige."
+ },
+ "7a761fa242": {
+  "es": "Los albañiles de Mesoamérica han usado extractos de la corteza del chukum, el chacté, el chacah y el jabín para preparar estuco de cal desde tiempos prehispánicos.",
+  "en": "Mesoamerican masons have used bark extracts from the chukum, chacté, chacah and jabín trees to prepare lime plaster since pre-Hispanic times."
+ },
+ "345abacf31": {
+  "es": "Los estucos antiguos de Copán contienen polisacáridos de corteza; las réplicas hechas con esos extractos resultaron más tenaces y resistentes a la intemperie.",
+  "en": "Ancient plasters from Copán contain bark polysaccharides; replicas made with those extracts turned out tougher and more resistant to weathering."
+ },
+ "27d5c0353b": {
+  "es": "Estuco de cal con savia de corteza",
+  "en": "Lime plaster with bark sap"
+ },
+ "8ec98de92d": {
+  "es": "Área maya: Yucatán, Copán",
+  "en": "Maya area: Yucatán, Copán"
+ },
+ "8fdc8a84a8": {
+  "es": "árbol cuya corteza se agrega a la cal",
+  "en": "tree whose bark is added to lime"
+ },
+ "a6ce901ded": {
+  "es": "Los albañiles mayas mezclaban la cal con savia de la corteza de árboles como el chukum. La mezcla hace el estuco más resistente y menos soluble en agua, y la ciencia de materiales hoy la estudia para conservar edificios.",
+  "en": "Maya masons mixed lime with sap from the bark of trees such as the chukum. The mix makes plaster stronger and less soluble in water, and materials science studies it today to conserve buildings."
+ },
+ "3dd4384dd5": {
+  "es": "Cal mezclada con savia de árboles como el chukum. Hace el estuco más fuerte y resistente al agua; se sigue usando en Yucatán.",
+  "en": "Lime mixed with sap from trees like the chukum. It makes plaster stronger and water-resistant; it is still used in Yucatán."
+ },
+ "7b80389bbf": {
+  "es": "Fuente sobre el coatequitl prehispánico (p. ej., Rojas Rabiela, 1977) y sobre el tequio que sigue vivo en Oaxaca.",
+  "en": "Source on pre-Hispanic coatequitl (e.g., Rojas Rabiela, 1977) and on the tequio that is still alive in Oaxaca."
+ },
+ "ce480e679f": {
+  "es": "Según las cuentas de la catedral de México de 1584 a 1586, lo que encareció la obra fueron los salarios de la élite española, no el número de trabajadores indígenas.",
+  "en": "According to the Mexico City cathedral accounts from 1584 to 1586, what made the work expensive was the wages of the Spanish elite, not the number of Indigenous workers."
+ },
+ "1e37a7cba3": {
+  "es": "La diferencia entre la arquitectura colonial y la española estaba sobre todo en el proceso de trabajo, marcado por la tecnología social indígena para movilizar mano de obra, y no en la forma final de los edificios.",
+  "en": "The difference between colonial and Spanish architecture lay mainly in the work process, shaped by Indigenous social technology for mobilizing labor, and not in the final form of the buildings."
+ },
+ "477366960d": {
+  "es": "Coatequitl: el trabajo colectivo de obra",
+  "en": "Coatequitl: collective building labor"
+ },
+ "163e8906f6": {
+  "es": "época prehispánica a siglo XVI",
+  "en": "pre-Hispanic period to the 16th century"
+ },
+ "fc298e1680": {
+  "es": "trabajo por turnos de los pueblos para las obras públicas",
+  "en": "rotating labor of the towns for public works"
+ },
+ "6b5455d16b": {
+  "es": "Las obras grandes de la Nueva España se hicieron con la organización indígena del trabajo: los pueblos aportaban cuadrillas por turnos. En la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que dirigía la obra.",
+  "en": "The great works of New Spain were built with the Indigenous organization of labor: towns supplied crews in rotation. At the Mexico City cathedral, Indigenous workers were the majority and earned far less than the Spanish elite who ran the project."
+ },
+ "6620b3bb6d": {
+  "es": "La forma indígena de organizar el trabajo por turnos para levantar obras públicas. Con ella se construyeron los templos antiguos y las catedrales coloniales.",
+  "en": "The Indigenous way of organizing rotating labor to raise public works. The ancient temples and the colonial cathedrals were built with it."
+ },
+ "cc2ef03460": {
+  "es": "Citar el capítulo de McAndrew sobre el origen de la forma y su relación con las ceremonias indígenas al aire libre.",
+  "en": "Cite McAndrew's chapter on the origin of the form and its relation to Indigenous open-air ceremonies."
+ },
+ "945242b972": {
+  "es": "Atrios, capillas posas y capillas abiertas forman un conjunto propio de los conventos mexicanos del siglo XVI.",
+  "en": "Atriums, posa chapels and open chapels form an ensemble specific to 16th-century Mexican convents."
+ },
+ "6512cc9d0f": {
+  "es": "Capilla abierta",
+  "en": "Open chapel"
+ },
+ "57ad79092b": {
+  "es": "Es un nombre español para una forma de edificio creada en la Nueva España.",
+  "en": "It is a Spanish name for a building form created in New Spain."
+ },
+ "f2e79d4934": {
+  "es": "La capilla abierta, un presbiterio que se abre a un gran atrio para que una multitud siga la misa al aire libre, es una forma de arquitectura creada en el México del siglo XVI.",
+  "en": "The open chapel, a sanctuary that opens onto a large atrium so a crowd can follow Mass in the open air, is an architectural form created in 16th-century Mexico."
+ },
+ "f272c5df2c": {
+  "es": "Una capilla que se abre a una gran plaza para que miles de personas sigan la misa al aire libre. Se inventó en México en el siglo XVI.",
+  "en": "A chapel that opens onto a large plaza so thousands of people can follow Mass in the open air. It was invented in Mexico in the 16th century."
+ },
+ "58ad09c7bc": {
+  "es": "Fuente sobre los nombres de los artistas indígenas registrados en los contratos de obra.",
+  "en": "Source on the names of Indigenous artists recorded in building contracts."
+ },
+ "d1103d9e96": {
+  "es": "En el convento agustino de Ixmiquilpan, Hidalgo, iniciado en 1550, los murales muestran guerreros indígenas vestidos de jaguar y coyote, con armas prehispánicas, entre hojas de acanto europeas.",
+  "en": "In the Augustinian convent of Ixmiquilpan, Hidalgo, begun in 1550, the murals show Indigenous warriors dressed as jaguars and coyotes, with pre-Hispanic weapons, among European acanthus leaves."
+ },
+ "3bbfab2758": {
+  "es": "La decoración de Santa María Tonantzintla, Puebla, funde la Asunción de la Virgen con imágenes del Tlalocan, el paraíso de Tláloc.",
+  "en": "The decoration of Santa María Tonantzintla, Puebla, blends the Assumption of the Virgin with images of Tlalocan, Tlaloc's paradise."
+ },
+ "2324194da2": {
+  "es": "Moreno Villa llamó tequitqui al arte de los indígenas después de la conquista; el término sigue en uso, aunque discutido.",
+  "en": "Moreno Villa called the art of Indigenous people after the conquest tequitqui; the term is still used, though disputed."
+ },
+ "3ec6bd4edd": {
+  "es": "Escultura y pintura indígena en los templos",
+  "en": "Indigenous sculpture and painting in churches"
+ },
+ "0003959007": {
+  "es": "Ixmiquilpan, Hidalgo; Tonantzintla, Puebla",
+  "en": "Ixmiquilpan, Hidalgo; Tonantzintla, Puebla"
+ },
+ "e38c76a5ff": {
+  "es": "siglos XVI a XVIII",
+  "en": "16th to 18th centuries"
+ },
+ "4b9f788373": {
+  "es": "tributario; nombre que Moreno Villa dio a este arte",
+  "en": "tributary; the name Moreno Villa gave this art"
+ },
+ "495609c9ea": {
+  "es": "Los relieves, murales y yeserías de muchos templos coloniales los hicieron artistas indígenas, que mezclaron la iconografía cristiana con formas y significados de su propia tradición.",
+  "en": "The reliefs, murals and plasterwork of many colonial churches were made by Indigenous artists, who blended Christian iconography with forms and meanings from their own tradition."
+ },
+ "321770b702": {
+  "es": "Los murales, relieves y yeserías que artistas indígenas hicieron en las iglesias coloniales, con guerreros jaguar y paraísos de Tláloc entre los santos.",
+  "en": "The murals, reliefs and plasterwork that Indigenous artists made in colonial churches, with jaguar warriors and Tlaloc's paradises among the saints."
+ },
+ "ce316a38db": {
+  "es": "Fuente leída sobre el tatzingueni y sobre los Cristos de caña de España (Telde, Lerma, Vitoria).",
+  "en": "A read source on tatzingueni and on the cornstalk Christs in Spain (Telde, Lerma, Vitoria)."
+ },
+ "87de3c517f": {
+  "es": "Las esculturas de caña de maíz se produjeron en la Nueva España en los siglos XVI y XVII y son un ejemplo de la convergencia de las tradiciones indígenas y europeas.",
+  "en": "Cornstalk sculptures were produced in New Spain in the 16th and 17th centuries and are an example of the convergence of Indigenous and European traditions."
+ },
+ "8be06d6719": {
+  "es": "Hay ejemplos en países europeos; el estudio de una escultura de Guadalajara la asocia a un taller del centro de México hacia 1580.",
+  "en": "There are examples in European countries; the study of a sculpture in Guadalajara links it to a workshop in central Mexico around 1580."
+ },
+ "35719ddf88": {
+  "es": "Escultura de caña de maíz",
+  "en": "Cornstalk sculpture"
+ },
+ "e7e9d0365f": {
+  "es": "Michoacán y el centro de México",
+  "en": "Michoacán and central Mexico"
+ },
+ "4948a2c46d": {
+  "es": "siglos XVI y XVII",
+  "en": "16th and 17th centuries"
+ },
+ "387aff2a53": {
+  "es": "purépecha",
+  "en": "P'urhépecha"
+ },
+ "cf10b0942d": {
+  "es": "engrudo de bulbos de orquídea para la pasta; por verificar",
+  "en": "glue of orchid bulbs for the paste; to be verified"
+ },
+ "ef76c2936d": {
+  "es": "Imágenes religiosas ligeras, hechas con médula de caña de maíz, papel y madera de colorín. Unen la técnica indígena con la escultura europea y se exportaron a Europa.",
+  "en": "Light religious images made with cornstalk pith, paper and colorín wood. They join Indigenous technique with European sculpture and were exported to Europe."
+ },
+ "879de80972": {
+  "es": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España.",
+  "en": "Christs and saints made of cornstalk paste: light enough for processions and shipped all the way to Spain."
+ },
  "cb2cfb9f9c": {
   "es": "Cempasúchil",
   "en": "Cempasúchil (Mexican marigold)"
@@ -3684,10 +3936,6 @@
   "es": "Canto tradicional de los p'urhépechas, inscrito por la UNESCO en 2010.",
   "en": "Traditional song of the P'urhépecha, inscribed by UNESCO in 2010."
  },
- "387aff2a53": {
-  "es": "purépecha",
-  "en": "P'urhépecha"
- },
  "b7b043b04b": {
   "es": "canción",
   "en": "song"
@@ -4748,6 +4996,74 @@
   "es": "Fuente sobre el oso pardo mexicano y el lobo mexicano.",
   "en": "Source on the Mexican grizzly bear and the Mexican wolf."
  },
+ "a5848f30b3": {
+  "es": "Las iglesias sobre los templos",
+  "en": "The churches on top of the temples"
+ },
+ "a7ddfd13b5": {
+  "es": "Cholula, Tenochtitlan y los pueblos de la Nueva España",
+  "en": "Cholula, Tenochtitlan and the towns of New Spain"
+ },
+ "ad18d5c323": {
+  "es": "Las iglesias de la Nueva España se levantaron encima de los templos o con sus piedras, y las construyeron manos indígenas. La historia del arte las atribuye a los frailes y arquitectos españoles; los albañiles, canteros y pintores quedaron sin nombre.",
+  "en": "The churches of New Spain were raised on top of the temples or with their stones, and Indigenous hands built them. Art history credits them to Spanish friars and architects; the masons, stonecutters and painters were left nameless."
+ },
+ "f9b8f9ecc9": {
+  "es": "Sobre la Gran Pirámide de Cholula se levantó la iglesia de la Virgen de los Remedios.",
+  "en": "The church of the Virgin of the Remedies was built on top of the Great Pyramid of Cholula."
+ },
+ "f1e66ca299": {
+  "es": "En la obra de la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que la dirigía.",
+  "en": "On the Mexico City cathedral works, Indigenous workers were the majority and earned far less than the Spanish elite who ran them."
+ },
+ "0f3fc766a4": {
+  "es": "Que las catedrales y los conventos se cuenten también como obra de los pueblos que los construyeron, pintaron y esculpieron.",
+  "en": "That the cathedrals and convents also be counted as the work of the peoples who built, painted and carved them."
+ },
+ "ebb9a66232": {
+  "es": "Registrar nombres de canteros y pintores indígenas que aparecen en los documentos de obra.",
+  "en": "Record the names of Indigenous stonecutters and painters that appear in building documents."
+ },
+ "a6a0a0281a": {
+  "es": "Los salarios retenidos de los braceros",
+  "en": "The braceros' withheld wages"
+ },
+ "919743543b": {
+  "es": "1942–1946; acuerdo en 2009",
+  "en": "1942–1946; settlement in 2009"
+ },
+ "a2dcb8d860": {
+  "es": "Estados Unidos y México",
+  "en": "United States and Mexico"
+ },
+ "423edffe04": {
+  "es": "Entre 1942 y 1964, México y Estados Unidos firmaron 4.6 millones de contratos de braceros para el campo y, durante la guerra, para los ferrocarriles. A los de 1942 a 1946 les descontaron el 10% del salario para un ahorro obligatorio que nunca recibieron. Sesenta años después, un acuerdo judicial les pagó unos 3,500 dólares a cada uno o a sus familias.",
+  "en": "Between 1942 and 1964, Mexico and the United States signed 4.6 million bracero contracts for farm work and, during the war, for the railroads. Workers from 1942 to 1946 had 10% of their wages deducted into compulsory savings they never received. Sixty years later, a court settlement paid about 3,500 dollars to each of them or their families."
+ },
+ "787408706d": {
+  "es": "El Programa Bracero duró de 1942 a 1964 y firmó 4.6 millones de contratos, sobre todo para trabajo agrícola.",
+  "en": "The Bracero Program ran from 1942 to 1964 and signed 4.6 million contracts, mostly for farm labor."
+ },
+ "5e9c6d6b58": {
+  "es": "Durante la Segunda Guerra Mundial, braceros mexicanos trabajaron también en las vías de los ferrocarriles del oeste de Estados Unidos.",
+  "en": "During World War II, Mexican braceros also worked on the tracks of railroads in the western United States."
+ },
+ "4ef06d1f9c": {
+  "es": "A los braceros de 1942 a 1946 se les retuvo el 10% del salario en cuentas de ahorro forzoso que nunca se les reembolsaron.",
+  "en": "Braceros from 1942 to 1946 had 10% of their wages withheld in forced savings accounts that were never reimbursed to them."
+ },
+ "73c8ee7efc": {
+  "es": "En 2009, un tribunal federal de California aprobó un acuerdo por el que el gobierno de México pagó unos 3,500 dólares a cada bracero o a sus familias.",
+  "en": "In 2009, a federal court in California approved a settlement under which the Mexican government paid about 3,500 dollars to each bracero or their families."
+ },
+ "fc3b17d85b": {
+  "es": "Que se reconozca que el pago llegó seis décadas tarde, a pocos sobrevivientes, y que los braceros ayudaron a sostener la economía de guerra de Estados Unidos.",
+  "en": "That it be acknowledged that the payment came six decades late, to few survivors, and that the braceros helped sustain the United States' wartime economy."
+ },
+ "35fc412152": {
+  "es": "Fuente independiente sobre el número de braceros ferroviarios y sobre las críticas al acuerdo de 2009.",
+  "en": "Independent source on the number of railroad braceros and on the criticism of the 2009 settlement."
+ },
  "ec9ea72aff": {
   "es": "Lo que salió sin consentimiento",
   "en": "What left without consent"
@@ -5039,6 +5355,58 @@
  "73a4f08af8": {
   "es": "Fuente revisada por pares sobre la producción de luteína de cempasúchil en China e India.",
   "en": "Peer-reviewed source on cempasúchil lutein production in China and India."
+ },
+ "e52b1a62ff": {
+  "es": "Constructores mexicanos",
+  "en": "Mexican builders"
+ },
+ "e162509630": {
+  "es": "De las pirámides a las catedrales y de las catedrales a los ferrocarriles de Estados Unidos: los pueblos de aquí levantaron edificios con técnicas propias, y luego construyeron los de otros. Este recorrido sigue esas manos.",
+  "en": "From the pyramids to the cathedrals, and from the cathedrals to the railroads of the United States: the peoples of this land raised buildings with their own techniques, and then built those of others. This journey follows those hands."
+ },
+ "2577938ba9": {
+  "es": "Templos sobre montañas hechas a mano.",
+  "en": "Temples on mountains made by hand."
+ },
+ "bcbf067ec5": {
+  "es": "Un perfil que toda Mesoamérica copió.",
+  "en": "A profile all of Mesoamerica copied."
+ },
+ "46f19d875c": {
+  "es": "La cal que la ciencia de materiales estudia hoy.",
+  "en": "The lime that materials science studies today."
+ },
+ "938e0891da": {
+  "es": "El trabajo por turnos que levantó todo lo demás.",
+  "en": "The rotating labor that raised everything else."
+ },
+ "7d4f28230a": {
+  "es": "Las iglesias encima, y las manos sin nombre.",
+  "en": "The churches on top, and the nameless hands."
+ },
+ "112840a456": {
+  "es": "Una forma de iglesia inventada aquí.",
+  "en": "A kind of church invented here."
+ },
+ "afac44f7e8": {
+  "es": "Guerreros jaguar entre los santos.",
+  "en": "Jaguar warriors among the saints."
+ },
+ "820f1831ae": {
+  "es": "Cristos de maíz que viajaron a España.",
+  "en": "Cornstalk Christs that traveled to Spain."
+ },
+ "43378c5165": {
+  "es": "Las vías y los campos de Estados Unidos.",
+  "en": "The tracks and fields of the United States."
+ },
+ "99625c4e4a": {
+  "es": "En 2006, casi el 23% de los trabajadores nacidos en México empleados en Estados Unidos estaba en la construcción: el triple que entre los nacidos en Estados Unidos.",
+  "en": "In 2006, nearly 23% of Mexican-born workers employed in the United States were in construction: three times the share among the U.S.-born."
+ },
+ "1b91747ddb": {
+  "es": "Cifra reciente de trabajadores nacidos en México en la construcción de Estados Unidos (Censo o Pew).",
+  "en": "A recent figure for Mexican-born workers in U.S. construction (Census or Pew)."
  },
  "483ac89c39": {
   "es": "Olmecas",
@@ -6127,5 +6495,33 @@
  "73729d3882": {
   "es": "Describe la única filmación de la especie, hecha en Durango en 1956.",
   "en": "It describes the only film of the species, shot in Durango in 1956."
+ },
+ "15ae62a3cf": {
+  "es": "Nombra los árboles cuya corteza se usaba: chucum, chacte, chacah y jabín.",
+  "en": "It names the trees whose bark was used: chucum, chacte, chacah and jabín."
+ },
+ "d74cac9467": {
+  "es": "Estudia estucos de Copán, Honduras, y réplicas hechas con extractos de corteza de árboles locales.",
+  "en": "It studies plasters from Copán, Honduras, and replicas made with bark extracts from local trees."
+ },
+ "ca86b6efd7": {
+  "es": "Analiza las cuentas de la obra de 1584 a 1586 y las compara con las catedrales de Segovia y Salamanca.",
+  "en": "It analyzes the building accounts from 1584 to 1586 and compares them with the cathedrals of Segovia and Salamanca."
+ },
+ "d73d3f1474": {
+  "es": "Propone el término tequitqui para el arte de los indígenas tras la conquista.",
+  "en": "It proposes the term tequitqui for the art of Indigenous people after the conquest."
+ },
+ "667bcfdf99": {
+  "es": "Año aproximado del sitio.",
+  "en": "Approximate year of the site."
+ },
+ "a24d9ac601": {
+  "es": "Fuente de parte: el despacho representó a los braceros.",
+  "en": "A partisan source: the firm represented the braceros."
+ },
+ "7ca8bc86d8": {
+  "es": "Datos de 2006.",
+  "en": "2006 data."
  }
 }

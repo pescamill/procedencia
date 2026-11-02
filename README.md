@@ -9,13 +9,13 @@ Nace del «Inventario de aportes de México al mundo», que definía qué artíc
 | Ruta | Qué es |
 |---|---|
 | `datos/catalogo.json` | El sistema: principios, ejes y sus valores, líneas de evidencia, formas de borrado, tipos de caso y de fuente. |
-| `datos/fichas/*.json` | 89 fichas (85 aportes y 4 deslindes), agrupadas por ámbito en cuatro archivos. |
-| `datos/casos.json` | 29 casos de saber borrado, biopiratería, apropiación y saqueo. |
-| `datos/recorridos.json` | 9 recorridos que ordenan fichas y casos para contar algo. |
+| `datos/fichas/*.json` | 96 fichas (92 aportes y 4 deslindes), agrupadas por ámbito en cinco archivos. |
+| `datos/casos.json` | 31 casos de saber borrado, biopiratería, apropiación y saqueo. |
+| `datos/recorridos.json` | 10 recorridos que ordenan fichas y casos para contar algo. |
 | `datos/pueblos.json` | 15 pueblos: nombre propio, lengua, región, periodo y herencia. |
 | `datos/diagramas.json` | Diagramas de proceso por ficha, con sus fuentes. |
 | `datos/medios.json`, `datos/medios_comprobados.json` | Qué imagen de Commons usa cada ficha, y su autor, licencia y número de Wikipedias. |
-| `datos/fuentes.json` | 173 fuentes con tipo, DOI o enlace. |
+| `datos/fuentes.json` | 187 fuentes con tipo, DOI o enlace. |
 | `datos/traducciones/en.json` | La versión en inglés: cada texto en español con su traducción, por huella del texto. |
 | `datos/erratas.json` | Lo que la verificación corrigió del inventario. |
 | `datos/comprobaciones.json`, `datos/wcvp/` | Lo que encontró la última comprobación en línea. |

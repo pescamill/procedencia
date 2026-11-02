@@ -1,5 +1,43 @@
 # Cambios
 
+## Iteración 6 · 1 de noviembre de 2026
+
+Constructores mexicanos: un ámbito nuevo, siete fichas, dos casos y un recorrido que va de las pirámides a los ferrocarriles de Estados Unidos.
+
+### Qué se agregó
+
+- **Ámbito «Construcción».** Su pregunta: «¿Es una forma de construir, un material de obra o el trabajo y el arte con que se levantó un edificio?». Tiene su propio ícono, un basamento escalonado. Las fronteras con Conocimiento y técnica y con Artes y oficios quedan escritas en `docs/SISTEMA.md`.
+- **Siete fichas:**
+  - **Basamentos piramidales.** La Gran Pirámide de Cholula es el edificio más grande de Mesoamérica: cuatro etapas, al menos nueve modificaciones y una iglesia encima (McCafferty, 1996). Que sea la de mayor volumen del mundo queda pendiente hasta tener una fuente académica.
+  - **Talud-tablero.** El perfil de Teotihuacan que Mesoamérica imitó.
+  - **Estuco de cal con savia de corteza.** Los mayas mezclaban la cal con savia de chukum (Littmann, 1960). En 2023, un estudio en *Science Advances* mostró que la mezcla hace el estuco más tenaz y resistente a la intemperie.
+  - **Coatequitl.** La organización indígena del trabajo por turnos. Las cuentas de la catedral de México (1584–1586) muestran que los indígenas eran la mayoría de los trabajadores y cobraban mucho menos que la élite española (Pacheco Thiesen, 2025).
+  - **Capilla abierta.** Una forma de iglesia inventada en el México del siglo XVI (McAndrew, 1965).
+  - **Escultura y pintura indígena en los templos.**
+    - Los guerreros jaguar y coyote de los murales de Ixmiquilpan.
+    - El Tlalocan en Tonantzintla, presentado como debate.
+    - El término tequitqui de Moreno Villa.
+  - **Escultura de caña de maíz.** Imágenes hechas con médula de caña, papel y colorín, que llegaron a Europa (Quintero Balbas et al., 2021). Su nombre purépecha, tatzingueni, queda «por verificar».
+- **Dos casos:**
+  - **Las iglesias sobre los templos.** Cholula, el Templo Mayor y los constructores sin nombre.
+  - **Los salarios retenidos de los braceros.** Hubo 4.6 millones de contratos entre 1942 y 1964. A los braceros de 1942 a 1946 se les retuvo el 10% del salario, y el acuerdo de 2009 pagó unos 3,500 dólares por persona.
+- **Recorrido «Constructores mexicanos».** Nueve pasos. Cierra con el dato del MPI: en 2006, el 23% de los trabajadores nacidos en México empleados en Estados Unidos estaba en la construcción.
+- **14 fuentes nuevas, todas comprobadas.** La excepción es Moreno Villa, un libro de 1942 sin enlace. Cuatro fichas tienen foto de Commons con licencia libre.
+- **100 textos nuevos traducidos al inglés.**
+
+### Casos de uso
+
+- **«Las catedrales las hicieron los españoles».** La ficha del coatequitl y el caso de las iglesias muestran, con las cuentas de la obra, quiénes las construyeron y cuánto cobraban.
+- **Arquitectura y conservación.** La cal con savia de corteza es una técnica maya que hoy se estudia para restaurar edificios: un aporte vivo, no solo histórico.
+- **Visitar Cholula, Ixmiquilpan o Tonantzintla.** Cada ficha explica qué mirar y de quién es la obra.
+- **La historia de los braceros.** El caso trae fechas, cifras y el acuerdo judicial para hablar de lo que los mexicanos construyeron en Estados Unidos y de lo que no se les pagó.
+- **Seguir investigando.** Los pendientes dicen qué falta:
+  - el volumen de Cholula;
+  - el tequio en Oaxaca;
+  - los nombres de los canteros indígenas en los documentos;
+  - los Cristos de caña de España;
+  - una cifra reciente de trabajadores de la construcción en Estados Unidos.
+
 ## Iteración 5 · 1 de noviembre de 2026
 
 El sitio en inglés y en español, y «saber borrado» ampliado a lo que la Conquista y los siglos siguientes destruyeron.

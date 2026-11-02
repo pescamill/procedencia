@@ -1233,5 +1233,104 @@
   "pendientes": [
    "Fuente sobre el oso pardo mexicano y el lobo mexicano."
   ]
+ },
+ {
+  "id": "caso-templos-iglesias",
+  "tipo": "saber_borrado",
+  "titulo": "Las iglesias sobre los templos",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1550,
+   "texto": "siglo XVI"
+  },
+  "lugar": "Cholula, Tenochtitlan y los pueblos de la Nueva España",
+  "coords": [
+   19.057,
+   -98.302
+  ],
+  "resumen": "Las iglesias de la Nueva España se levantaron encima de los templos o con sus piedras, y las construyeron manos indígenas. La historia del arte las atribuye a los frailes y arquitectos españoles; los albañiles, canteros y pintores quedaron sin nombre.",
+  "afirmaciones": [
+   {
+    "texto": "Sobre la Gran Pirámide de Cholula se levantó la iglesia de la Virgen de los Remedios.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mccafferty1996"
+    ]
+   },
+   {
+    "texto": "El Templo Mayor fue derribado y sus materiales se reutilizaron en las construcciones españolas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "britannica-templomayor"
+    ]
+   },
+   {
+    "texto": "En la obra de la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que la dirigía.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "pachecothiesen2025"
+    ]
+   }
+  ],
+  "reclamo": "Que las catedrales y los conventos se cuenten también como obra de los pueblos que los construyeron, pintaron y esculpieron.",
+  "fichas": [
+   "basamento-piramidal",
+   "coatequitl",
+   "arte-indocristiano"
+  ],
+  "pendientes": [
+   "Registrar nombres de canteros y pintores indígenas que aparecen en los documentos de obra."
+  ]
+ },
+ {
+  "id": "caso-braceros",
+  "tipo": "saqueo",
+  "titulo": "Los salarios retenidos de los braceros",
+  "estado": "resuelto",
+  "fecha": {
+   "anio": 1942,
+   "texto": "1942–1946; acuerdo en 2009"
+  },
+  "lugar": "Estados Unidos y México",
+  "coords": [
+   31.76,
+   -106.49
+  ],
+  "resumen": "Entre 1942 y 1964, México y Estados Unidos firmaron 4.6 millones de contratos de braceros para el campo y, durante la guerra, para los ferrocarriles. A los de 1942 a 1946 les descontaron el 10% del salario para un ahorro obligatorio que nunca recibieron. Sesenta años después, un acuerdo judicial les pagó unos 3,500 dólares a cada uno o a sus familias.",
+  "afirmaciones": [
+   {
+    "texto": "El Programa Bracero duró de 1942 a 1964 y firmó 4.6 millones de contratos, sobre todo para trabajo agrícola.",
+    "solidez": "consenso",
+    "fuentes": [
+     "braceroarchive"
+    ]
+   },
+   {
+    "texto": "Durante la Segunda Guerra Mundial, braceros mexicanos trabajaron también en las vías de los ferrocarriles del oeste de Estados Unidos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "gamboa2016"
+    ]
+   },
+   {
+    "texto": "A los braceros de 1942 a 1946 se les retuvo el 10% del salario en cuentas de ahorro forzoso que nunca se les reembolsaron.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lieffcabraser2009"
+    ]
+   },
+   {
+    "texto": "En 2009, un tribunal federal de California aprobó un acuerdo por el que el gobierno de México pagó unos 3,500 dólares a cada bracero o a sus familias.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lieffcabraser2009"
+    ]
+   }
+  ],
+  "reclamo": "Que se reconozca que el pago llegó seis décadas tarde, a pocos sobrevivientes, y que los braceros ayudaron a sostener la economía de guerra de Estados Unidos.",
+  "fichas": [],
+  "pendientes": [
+   "Fuente independiente sobre el número de braceros ferroviarios y sobre las críticas al acuerdo de 2009."
+  ]
  }
 ]

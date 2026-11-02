@@ -102,9 +102,18 @@
    "nombre": "Conocimiento y técnica",
    "pregunta": "¿Es una forma de contar, escribir, medir el tiempo, organizar la vida o un invento técnico?",
    "incluye": "Matemáticas, escritura, calendarios, urbanismo, educación e inventos.",
-   "excluye": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura.",
+   "excluye": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura; las de construcción, en Construcción.",
    "color": "#2c4a7a",
    "icono": "glifo"
+  },
+  {
+   "id": "construccion",
+   "nombre": "Construcción",
+   "pregunta": "¿Es una forma de construir, un material de obra o el trabajo y el arte con que se levantó un edificio?",
+   "incluye": "Formas y técnicas de edificar, morteros y materiales de obra, la organización del trabajo de construcción y la escultura y la pintura hechas para un edificio.",
+   "excluye": "La traza y el tamaño de las ciudades van en Conocimiento y técnica; la pintura y los objetos que no son parte de un edificio, en Artes y oficios.",
+   "color": "#7b6a55",
+   "icono": "basamento"
   },
   {
    "id": "ritual",

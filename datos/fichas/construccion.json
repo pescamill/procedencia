@@ -1,0 +1,466 @@
+[
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente académica sobre el volumen de la pirámide de Cholula, que suele citarse como el mayor del mundo."
+  ],
+  "relacionadas": [
+   "talud-tablero",
+   "ciudades"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "La Gran Pirámide de Cholula se construyó en cuatro grandes etapas y al menos nueve modificaciones, desde el Formativo terminal hasta el Posclásico temprano.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mccafferty1996"
+    ]
+   },
+   {
+    "texto": "Sus primeras etapas comparten rasgos de estilo con Teotihuacan; las últimas, con El Tajín y la costa del Golfo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "mccafferty1996"
+    ]
+   },
+   {
+    "texto": "Sobre el montículo se levantó después una iglesia, el santuario de la Virgen de los Remedios, que sigue atrayendo peregrinos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mccafferty1996"
+    ]
+   }
+  ],
+  "id": "basamento-piramidal",
+  "nombre": "Basamentos piramidales",
+  "ambito": "construccion",
+  "naturaleza": "tecnica",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Cholula, Puebla; Teotihuacan; el área maya",
+  "coords": [
+   19.057,
+   -98.302
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -100,
+   "texto": "del Formativo terminal a 1521"
+  },
+  "pueblos": [
+   "teotihuacanos",
+   "mayas",
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "teocalli",
+    "lengua": "náhuatl",
+    "glosa": "casa de dios: el templo que corona el basamento",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los pueblos de Mesoamérica levantaron templos sobre plataformas escalonadas, ampliadas por etapas durante siglos. La Gran Pirámide de Cholula es el edificio más grande de Mesoamérica.",
+   "solidez": "consenso",
+   "fuentes": [
+    "mccafferty1996"
+   ]
+  },
+  "alcance": "amplio",
+  "en_breve": "Plataformas escalonadas, ampliadas durante siglos, que sostenían los templos. La de Cholula es el edificio más grande de Mesoamérica."
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "basamento-piramidal",
+   "ciudades"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "Teotihuacan fue una de las ciudades más grandes de su tiempo, con entre 100,000 y 125,000 habitantes estimados.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "cowgill1997"
+    ]
+   },
+   {
+    "texto": "Sus formas aparecen en la Gran Pirámide de Cholula, cuyas primeras etapas comparten rasgos de estilo con Teotihuacan.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "mccafferty1996"
+    ]
+   }
+  ],
+  "id": "talud-tablero",
+  "nombre": "Talud-tablero",
+  "ambito": "construccion",
+  "naturaleza": "tecnica",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Teotihuacan, Estado de México",
+  "coords": [
+   19.692,
+   -98.844
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 200,
+   "texto": "hacia los siglos I a VI"
+  },
+  "pueblos": [
+   "teotihuacanos"
+  ],
+  "sin_originario": "«Talud» y «tablero» son palabras de los arqueólogos; no se conoce el nombre que le daban en Teotihuacan.",
+  "veredicto": {
+   "texto": "El talud-tablero, un muro inclinado coronado por un panel vertical enmarcado, es el perfil arquitectónico que distingue a Teotihuacan y que otras ciudades de Mesoamérica imitaron.",
+   "solidez": "consenso",
+   "fuentes": [
+    "langley2003"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "El perfil de escalón de Teotihuacan: un muro inclinado y, encima, un panel recto. Se copió en toda Mesoamérica como marca de prestigio.",
+  "originales": []
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "basamento-piramidal"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "Los albañiles de Mesoamérica han usado extractos de la corteza del chukum, el chacté, el chacah y el jabín para preparar estuco de cal desde tiempos prehispánicos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "littmann1960"
+    ]
+   },
+   {
+    "texto": "Los estucos antiguos de Copán contienen polisacáridos de corteza; las réplicas hechas con esos extractos resultaron más tenaces y resistentes a la intemperie.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "rodrigueznavarro2023"
+    ]
+   }
+  ],
+  "id": "cal-corteza",
+  "nombre": "Estuco de cal con savia de corteza",
+  "ambito": "construccion",
+  "naturaleza": "tecnica",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Área maya: Yucatán, Copán",
+  "coords": [
+   20.68,
+   -88.57
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 300,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "originales": [
+   {
+    "forma": "chukum",
+    "lengua": "maya yucateco",
+    "glosa": "árbol cuya corteza se agrega a la cal",
+    "fuentes": [
+     "littmann1960"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los albañiles mayas mezclaban la cal con savia de la corteza de árboles como el chukum. La mezcla hace el estuco más resistente y menos soluble en agua, y la ciencia de materiales hoy la estudia para conservar edificios.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "littmann1960",
+    "rodrigueznavarro2023"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "Cal mezclada con savia de árboles como el chukum. Hace el estuco más fuerte y resistente al agua; se sigue usando en Yucatán."
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente sobre el coatequitl prehispánico (p. ej., Rojas Rabiela, 1977) y sobre el tequio que sigue vivo en Oaxaca."
+  ],
+  "relacionadas": [
+   "capilla-abierta",
+   "arte-indocristiano"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "Según las cuentas de la catedral de México de 1584 a 1586, lo que encareció la obra fueron los salarios de la élite española, no el número de trabajadores indígenas.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "pachecothiesen2025"
+    ]
+   },
+   {
+    "texto": "La diferencia entre la arquitectura colonial y la española estaba sobre todo en el proceso de trabajo, marcado por la tecnología social indígena para movilizar mano de obra, y no en la forma final de los edificios.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "pachecothiesen2025"
+    ]
+   }
+  ],
+  "id": "coatequitl",
+  "nombre": "Coatequitl: el trabajo colectivo de obra",
+  "ambito": "construccion",
+  "naturaleza": "practica",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.435,
+   -99.133
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1450,
+   "texto": "época prehispánica a siglo XVI"
+  },
+  "pueblos": [
+   "nahuas",
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "coatequitl",
+    "lengua": "náhuatl",
+    "glosa": "trabajo por turnos de los pueblos para las obras públicas",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Las obras grandes de la Nueva España se hicieron con la organización indígena del trabajo: los pueblos aportaban cuadrillas por turnos. En la catedral de México, los trabajadores indígenas eran la mayoría y cobraban mucho menos que la élite española que dirigía la obra.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "pachecothiesen2025"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "La forma indígena de organizar el trabajo por turnos para levantar obras públicas. Con ella se construyeron los templos antiguos y las catedrales coloniales."
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [
+   "Citar el capítulo de McAndrew sobre el origen de la forma y su relación con las ceremonias indígenas al aire libre."
+  ],
+  "relacionadas": [
+   "arte-indocristiano",
+   "coatequitl"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "Atrios, capillas posas y capillas abiertas forman un conjunto propio de los conventos mexicanos del siglo XVI.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mcandrew1965"
+    ]
+   }
+  ],
+  "id": "capilla-abierta",
+  "nombre": "Capilla abierta",
+  "ambito": "construccion",
+  "naturaleza": "obra",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.205,
+   -98.8
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1540,
+   "texto": "siglo XVI"
+  },
+  "pueblos": [
+   "nahuas",
+   "otomies"
+  ],
+  "sin_originario": "Es un nombre español para una forma de edificio creada en la Nueva España.",
+  "veredicto": {
+   "texto": "La capilla abierta, un presbiterio que se abre a un gran atrio para que una multitud siga la misa al aire libre, es una forma de arquitectura creada en el México del siglo XVI.",
+   "solidez": "consenso",
+   "fuentes": [
+    "mcandrew1965"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "Una capilla que se abre a una gran plaza para que miles de personas sigan la misa al aire libre. Se inventó en México en el siglo XVI.",
+  "originales": []
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente sobre los nombres de los artistas indígenas registrados en los contratos de obra."
+  ],
+  "relacionadas": [
+   "capilla-abierta",
+   "coatequitl",
+   "escultura-cana-maiz"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "En el convento agustino de Ixmiquilpan, Hidalgo, iniciado en 1550, los murales muestran guerreros indígenas vestidos de jaguar y coyote, con armas prehispánicas, entre hojas de acanto europeas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "inah2024ixmiquilpan"
+    ]
+   },
+   {
+    "texto": "La decoración de Santa María Tonantzintla, Puebla, funde la Asunción de la Virgen con imágenes del Tlalocan, el paraíso de Tláloc.",
+    "solidez": "debate",
+    "fuentes": [
+     "glockner2016"
+    ]
+   },
+   {
+    "texto": "Moreno Villa llamó tequitqui al arte de los indígenas después de la conquista; el término sigue en uso, aunque discutido.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "morenovilla1942"
+    ]
+   }
+  ],
+  "id": "arte-indocristiano",
+  "nombre": "Escultura y pintura indígena en los templos",
+  "ambito": "construccion",
+  "naturaleza": "obra",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Ixmiquilpan, Hidalgo; Tonantzintla, Puebla",
+  "coords": [
+   20.483,
+   -99.218
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1570,
+   "texto": "siglos XVI a XVIII"
+  },
+  "pueblos": [
+   "nahuas",
+   "otomies"
+  ],
+  "originales": [
+   {
+    "forma": "tequitqui",
+    "lengua": "náhuatl",
+    "glosa": "tributario; nombre que Moreno Villa dio a este arte",
+    "fuentes": [
+     "gdn2012",
+     "morenovilla1942"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los relieves, murales y yeserías de muchos templos coloniales los hicieron artistas indígenas, que mezclaron la iconografía cristiana con formas y significados de su propia tradición.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "morenovilla1942",
+    "inah2024ixmiquilpan",
+    "glockner2016"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "Los murales, relieves y yeserías que artistas indígenas hicieron en las iglesias coloniales, con guerreros jaguar y paraísos de Tláloc entre los santos."
+ },
+ {
+  "clase": "aporte",
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente leída sobre el tatzingueni y sobre los Cristos de caña de España (Telde, Lerma, Vitoria)."
+  ],
+  "relacionadas": [
+   "maiz",
+   "arte-indocristiano"
+  ],
+  "afirmaciones": [
+   {
+    "texto": "Las esculturas de caña de maíz se produjeron en la Nueva España en los siglos XVI y XVII y son un ejemplo de la convergencia de las tradiciones indígenas y europeas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "quinterobalbas2021"
+    ]
+   },
+   {
+    "texto": "Hay ejemplos en países europeos; el estudio de una escultura de Guadalajara la asocia a un taller del centro de México hacia 1580.",
+    "solidez": "consenso",
+    "fuentes": [
+     "quinterobalbas2021"
+    ]
+   }
+  ],
+  "id": "escultura-cana-maiz",
+  "nombre": "Escultura de caña de maíz",
+  "ambito": "construccion",
+  "naturaleza": "tecnica",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Michoacán y el centro de México",
+  "coords": [
+   19.513,
+   -101.609
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1580,
+   "texto": "siglos XVI y XVII"
+  },
+  "pueblos": [
+   "purepechas",
+   "nahuas"
+  ],
+  "originales": [
+   {
+    "forma": "tatzingueni",
+    "lengua": "purépecha",
+    "glosa": "engrudo de bulbos de orquídea para la pasta; por verificar",
+    "fuentes": []
+   }
+  ],
+  "veredicto": {
+   "texto": "Imágenes religiosas ligeras, hechas con médula de caña de maíz, papel y madera de colorín. Unen la técnica indígena con la escultura europea y se exportaron a Europa.",
+   "solidez": "consenso",
+   "fuentes": [
+    "quinterobalbas2021"
+   ]
+  },
+  "alcance": "regional",
+  "en_breve": "Cristos y santos hechos con pasta de caña de maíz: ligeros para las procesiones y enviados hasta España."
+ }
+]

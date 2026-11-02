@@ -1,0 +1,28 @@
+{
+ "especie": "Agave fourcroydes",
+ "estado": "ok",
+ "gbif": 206602488,
+ "nombre_aceptado": "Agave fourcroydes Lem.",
+ "url": "https://www.gbif.org/species/206602488",
+ "nativa": [
+  "GUA",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [
+  "BAL",
+  "CAY",
+  "CNY",
+  "COS",
+  "CUB",
+  "DOM",
+  "HAI",
+  "ITA",
+  "LEE",
+  "MDR",
+  "PUE",
+  "SPA",
+  "TUN"
+ ],
+ "fecha": "2026-11-01"
+}

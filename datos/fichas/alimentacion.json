@@ -1,0 +1,2670 @@
+[
+ {
+  "id": "maiz",
+  "nombre": "Maíz",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "Cuenca del río Balsas, Guerrero",
+  "coords": [
+   18.3,
+   -99.6
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -7000,
+   "texto": "hace unos 9,000 años"
+  },
+  "pueblos": [],
+  "especie": "Zea mays",
+  "originales": [
+   {
+    "forma": "tlaolli",
+    "lengua": "náhuatl",
+    "glosa": "grano de maíz",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "centli",
+    "lengua": "náhuatl",
+    "glosa": "mazorca",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "elotl",
+    "lengua": "náhuatl",
+    "glosa": "elote",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "ixim",
+    "lengua": "maya yucateco",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El maíz se domesticó una sola vez, a partir del teocintle de la cuenca del Balsas.",
+   "solidez": "consenso",
+   "fuentes": [
+    "matsuoka2002",
+    "piperno2009"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Un análisis genético de 264 plantas de maíz y teocintle concluye que hubo una sola domesticación, a partir del teocintle Zea mays parviglumis del Balsas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "matsuoka2002"
+    ]
+   },
+   {
+    "texto": "Los granos de almidón y fitolitos más antiguos de maíz, de hace unos 8,700 años, están en la cueva Xihuatoxtla, en el valle central del Balsas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "piperno2009"
+    ]
+   },
+   {
+    "texto": "Las variedades reventadoras, las palomitas, son maíz; en Perú hay restos de maíz reventador de hace entre 6,700 y 3,000 años, llegados desde Mesoamérica.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "grobman2012"
+    ]
+   },
+   {
+    "texto": "Hoy es el cereal más producido del mundo.",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "granoturco",
+    "lengua": "italiano",
+    "forma": "nombre_ajeno",
+    "nota": "«Grano turco».",
+    "apunta": {
+     "nombre": "Turquía",
+     "coords": [
+      39,
+      35
+     ]
+    }
+   },
+   {
+    "dice": "Indian corn",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Señala a «los indios», no a un lugar."
+   },
+   {
+    "dice": "maíz",
+    "lengua": "español",
+    "forma": "nombre_ajeno",
+    "nota": "La palabra viene del taíno de las Antillas, no de una lengua de México.",
+    "apunta": {
+     "nombre": "Antillas (taíno)",
+     "coords": [
+      18.5,
+      -70
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Enlazar la estadística de producción mundial de la FAO (FAOSTAT)."
+  ],
+  "relacionadas": [
+   "milpa",
+   "nixtamalizacion",
+   "huitlacoche"
+  ],
+  "alcance": "mundial",
+  "en_breve": "El cereal más producido del planeta. Está en tortillas, palomitas, aceite, jarabe para refrescos, alimento para ganado y combustible."
+ },
+ {
+  "id": "frijol",
+  "nombre": "Frijol común",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "Cuenca Lerma–Santiago, occidente de México",
+  "coords": [
+   20.6,
+   -103.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -6000,
+   "texto": "hace unos 8,000 años"
+  },
+  "pueblos": [],
+  "especie": "Phaseolus vulgaris",
+  "originales": [
+   {
+    "forma": "etl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "búul",
+    "lengua": "maya yucateco",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El frijol común se domesticó dos veces, por separado: una en Mesoamérica y otra en los Andes.",
+   "solidez": "consenso",
+   "fuentes": [
+    "schmutz2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El genoma de referencia del frijol muestra dos domesticaciones independientes, con genes distintos seleccionados en cada una.",
+    "solidez": "consenso",
+    "fuentes": [
+     "schmutz2014"
+    ]
+   },
+   {
+    "texto": "El centro de domesticación mesoamericano se ubica en la cuenca Lerma–Santiago, en el occidente de México.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "kwak2009"
+    ]
+   },
+   {
+    "texto": "En Mesoamérica se domesticaron además otras especies de frijol, como el ayocote y el tépari.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "borlotti, cannellini",
+    "lengua": "italiano",
+    "forma": "identidad_ajena",
+    "nota": "Variedades italianas de Phaseolus vulgaris.",
+    "apunta": {
+     "nombre": "Italia",
+     "coords": [
+      44.5,
+      11.3
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Fuente para el ayocote (Phaseolus coccineus) y el tépari (P. acutifolius)."
+  ],
+  "relacionadas": [
+   "milpa"
+  ],
+  "alcance": "mundial",
+  "en_breve": "Los frijoles negros, pintos, rojos y blancos, y también los ejotes, son una sola especie domesticada en México."
+ },
+ {
+  "id": "calabaza",
+  "nombre": "Calabaza",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "Guilá Naquitz, Oaxaca",
+  "coords": [
+   16.95,
+   -96.4
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -8000,
+   "texto": "hace unos 10,000 años"
+  },
+  "pueblos": [],
+  "especie": "Cucurbita pepo",
+  "originales": [
+   {
+    "forma": "ayohtli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Las semillas de Cucurbita pepo domesticada de la cueva de Guilá Naquitz, en Oaxaca, tienen unos 10,000 años: de los cultivos más antiguos de América.",
+   "solidez": "consenso",
+   "fuentes": [
+    "smith1997"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Las semillas y pedúnculos de Guilá Naquitz, fechados directamente, muestran rasgos domésticos entre hace 10,000 y 8,000 años, milenios antes que el maíz en el mismo sitio.",
+    "solidez": "consenso",
+    "fuentes": [
+     "smith1997"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "zucchini",
+    "lengua": "italiano / inglés",
+    "forma": "identidad_ajena",
+    "nota": "La calabacita es Cucurbita pepo seleccionada en Italia.",
+    "apunta": {
+     "nombre": "Italia",
+     "coords": [
+      41.9,
+      14.5
+     ]
+    }
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "milpa"
+  ],
+  "alcance": "mundial",
+  "en_breve": "La calabaza de Halloween, el calabacín de la cocina italiana y muchas calabacitas son la misma especie, domesticada en México hace unos 10,000 años."
+ },
+ {
+  "id": "jitomate",
+  "nombre": "Jitomate",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Golfo y centro de México",
+  "coords": [
+   19.2,
+   -96.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -5000,
+   "texto": "hace unos 7,000 años"
+  },
+  "pueblos": [],
+  "especie": "Solanum lycopersicum",
+  "origen_biologico": {
+   "texto": "Ancestro silvestre (Solanum pimpinellifolium) de Ecuador y Perú",
+   "coords": [
+    -4.5,
+    -79.5
+   ],
+   "region_tdwg": "PER"
+  },
+  "originales": [
+   {
+    "forma": "xitomatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "tomatl",
+    "lengua": "náhuatl",
+    "glosa": "fruto carnoso; origen de «tomate»",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El jitomate cultivado que come el mundo terminó de domesticarse en Mesoamérica, a partir de formas que llegaron del sur.",
+   "solidez": "consenso",
+   "fuentes": [
+    "blanca2015",
+    "razifard2020"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Un estudio genómico de más de mil variedades concluye que la domesticación tuvo dos pasos; el segundo, en Mesoamérica, la completó, y los jitomates europeos descienden de los mesoamericanos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "blanca2015"
+    ]
+   },
+   {
+    "texto": "Con genomas completos, otro equipo concluye que las poblaciones que llegaron del sur eran más silvestres de lo que se creía, así que los rasgos domésticos se seleccionaron de nuevo en México.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "razifard2020"
+    ]
+   },
+   {
+    "texto": "«Tomate», «tomato» y «pomodoro» nombran al fruto que en náhuatl se llamaba xitomatl; la palabra viene del náhuatl tomatl.",
+    "solidez": "consenso",
+    "fuentes": [
+     "dle"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "pomodoro",
+    "lengua": "italiano",
+    "forma": "identidad_ajena",
+    "nota": "«Manzana de oro»; la cocina italiana se volvió sinónimo del jitomate.",
+    "apunta": {
+     "nombre": "Italia",
+     "coords": [
+      42.8,
+      12.5
+     ]
+    }
+   }
+  ],
+  "expediente": {
+   "contrapuntos": [
+    {
+     "dice": "«El tomate es peruano».",
+     "respuesta": "De Ecuador y Perú vienen el ancestro silvestre y una forma semidomesticada pequeña. El jitomate como cultivo, y su nombre, son mesoamericanos. Se confunde el ancestro silvestre con el lugar donde la gente terminó de domesticarlo.",
+     "fuentes": [
+      "blanca2015",
+      "razifard2020"
+     ]
+    }
+   ],
+   "comparacion": {
+    "region": "Andes",
+    "texto": "En Ecuador y el norte de Perú hubo selección precolombina de jitomates pequeños semidomesticados. Del jitomate cultivado se conocen muy pocos restos arqueológicos en cualquier parte, y no hay evidencia sólida de que formara parte de la cocina andina antes de la conquista.",
+    "lineas": {
+     "aqui": [
+      "produccion",
+      "nombre",
+      "testimonio"
+     ],
+     "alla": [
+      "aislada"
+     ]
+    },
+    "solidez": "sustentada",
+    "fuentes": [
+     "blanca2015"
+    ],
+    "pendiente": "Falta una fuente arqueológica directa sobre el jitomate en los Andes."
+   }
+  },
+  "pendientes": [
+   "Fuente arqueológica sobre los Andes."
+  ],
+  "relacionadas": [
+   "tomate-verde"
+  ],
+  "alcance": "mundial",
+  "en_breve": "La salsa de la pizza, el kétchup y la ensalada de medio mundo llevan un fruto que terminó de domesticarse aquí y conserva su nombre náhuatl."
+ },
+ {
+  "id": "tomate-verde",
+  "nombre": "Tomate verde",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.4,
+   -98.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Physalis philadelphica",
+  "originales": [
+   {
+    "forma": "tomatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "miltomatl",
+    "lengua": "náhuatl",
+    "glosa": "tomate de la milpa",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Physalis philadelphica, base de las salsas verdes, es un cultivo mexicano que todavía se siembra junto a sus parientes silvestres.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "gonzalezperez2021",
+    "labate2015"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Su diversidad genética mayor está en México, donde conviven variedades cultivadas, toleradas y silvestres.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "labate2015"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "tomatillo",
+    "lengua": "inglés",
+    "forma": "conserva",
+    "nota": "Conserva la raíz náhuatl."
+   }
+  ],
+  "pendientes": [
+   "Fecha de domesticación con fuente arqueológica."
+  ],
+  "relacionadas": [
+   "jitomate"
+  ],
+  "alcance": "regional",
+  "en_breve": "El tomate de cáscara de la salsa verde; fuera de México se conoce como tomatillo."
+ },
+ {
+  "id": "chile",
+  "nombre": "Chile",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro-oriente de México (Puebla, Veracruz) y Tamaulipas",
+  "coords": [
+   18.5,
+   -97.4
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -4500,
+   "texto": "hace más de 6,500 años"
+  },
+  "pueblos": [],
+  "especie": "Capsicum annuum",
+  "originales": [
+   {
+    "forma": "chilli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "ik",
+    "lengua": "maya yucateco",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Capsicum annuum, la especie de chile más cultivada del mundo, se domesticó en México.",
+   "solidez": "consenso",
+   "fuentes": [
+    "kraft2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Cuatro líneas independientes, genética, arqueología, lingüística y paleoclima, ubican la domesticación en el noreste o el centro-oriente de México.",
+    "solidez": "consenso",
+    "fuentes": [
+     "kraft2014"
+    ]
+   },
+   {
+    "texto": "La palabra para chile ya existía en el protootomangue, una de las lenguas más antiguas reconstruidas de la región.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "kraft2014"
+    ]
+   },
+   {
+    "texto": "C. annuum incluye el jalapeño, el serrano, el poblano, la cayena, el pimiento morrón, la paprika y la mayoría de los chiles de Asia.",
+    "solidez": "consenso",
+    "fuentes": [
+     "kraft2014"
+    ]
+   },
+   {
+    "texto": "Portugueses y españoles lo llevaron a África, India y Asia en el siglo XVI; en menos de un siglo ya era parte de esas cocinas.",
+    "solidez": "sustentada",
+    "fuentes": []
+   },
+   {
+    "texto": "El chile llegó a China en la década de 1570; nadie lo importó a propósito: se difundió de campesino en campesino y Sichuan y Hunan lo hicieron suyo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "dott2020"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "paprika húngara",
+    "lengua": "húngaro",
+    "forma": "identidad_ajena",
+    "apunta": {
+     "nombre": "Hungría",
+     "coords": [
+      47.2,
+      19.5
+     ]
+    }
+   },
+   {
+    "dice": "gochugaru, kimchi",
+    "lengua": "coreano",
+    "forma": "identidad_ajena",
+    "apunta": {
+     "nombre": "Corea",
+     "coords": [
+      36.5,
+      127.8
+     ]
+    }
+   },
+   {
+    "dice": "cayenne pepper",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Por Cayena, en la Guayana Francesa.",
+    "apunta": {
+     "nombre": "Cayena",
+     "coords": [
+      4.9,
+      -52.3
+     ]
+    }
+   },
+   {
+    "dice": "jalapeño, poblano, serrano",
+    "lengua": "todas",
+    "forma": "conserva",
+    "nota": "Guardan su geografía mexicana: Xalapa, Puebla, la sierra."
+   },
+   {
+    "dice": "chili",
+    "lengua": "inglés",
+    "forma": "conserva",
+    "nota": "Del náhuatl chilli."
+   }
+  ],
+  "expediente": {
+   "contrapuntos": [
+    {
+     "dice": "«El chile viene de Sudamérica».",
+     "respuesta": "El género Capsicum es americano y algunas especies (habanero, ají, rocoto) son sudamericanas, pero el chile que domina el mundo, del jalapeño a la paprika, es C. annuum, domesticado en México.",
+     "fuentes": [
+      "kraft2014",
+      "perry2007"
+     ]
+    }
+   ],
+   "comparacion": {
+    "region": "Andes",
+    "texto": "La tradición andina del ají es antigua y propia, pero de otras especies: C. baccatum y C. chinense aparecen en sitios precerámicos de la costa peruana, y el tamaño de la semilla de C. baccatum crece a lo largo de milenios, señal de selección humana. Es una domesticación distinta; no compite con el origen mexicano de C. annuum.",
+    "lineas": {
+     "aqui": [
+      "recurrente",
+      "produccion",
+      "nombre",
+      "testimonio"
+     ],
+     "alla": [
+      "recurrente",
+      "produccion",
+      "nombre",
+      "testimonio"
+     ]
+    },
+    "solidez": "consenso",
+    "fuentes": [
+     "perry2007",
+     "chiou2014"
+    ],
+    "pendiente": ""
+   }
+  },
+  "pendientes": [
+   "Fuente para la difusión del chile en Asia en el siglo XVI."
+  ],
+  "relacionadas": [
+   "cacao-chocolate",
+   "vainilla"
+  ],
+  "alcance": "mundial",
+  "en_breve": "Casi todos los picantes del mundo, de la paprika húngara al curry indio y el kimchi coreano, salen de una planta domesticada en México."
+ },
+ {
+  "id": "aguacate",
+  "nombre": "Aguacate",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Centro y sur de México y Centroamérica",
+  "coords": [
+   19.1,
+   -101.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -5000,
+   "texto": "época prehispánica temprana"
+  },
+  "pueblos": [],
+  "especie": "Persea americana",
+  "originales": [
+   {
+    "forma": "ahuacatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El aguacate es nativo de Mesoamérica y ahí se domesticaron sus tres razas: mexicana, guatemalteca y antillana.",
+   "solidez": "consenso",
+   "fuentes": [
+    "galindo2007",
+    "rendon2019"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El genoma del aguacate confirma que las razas cultivadas proceden de poblaciones mesoamericanas, con hibridación entre ellas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "rendon2019"
+    ]
+   },
+   {
+    "texto": "México es hoy el mayor productor del mundo.",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "avocado",
+    "lengua": "inglés",
+    "forma": "conserva",
+    "nota": "Del náhuatl ahuacatl, por vía del español."
+   },
+   {
+    "dice": "guacamole industrial con menos de 2% de aguacate",
+    "lengua": "inglés",
+    "forma": "sustituto",
+    "nota": "En 2006 se demandó a Kraft porque su dip de guacamole era casi todo aceite vegetal.",
+    "fuentes": [
+     "consumerist2006"
+    ]
+   }
+  ],
+  "pendientes": [
+   "Enlazar FAOSTAT para la producción."
+  ],
+  "relacionadas": [],
+  "alcance": "mundial",
+  "en_breve": "El fruto del guacamole y del pan con aguacate que se come en todo el mundo; México es su origen y su mayor productor."
+ },
+ {
+  "id": "chayote",
+  "nombre": "Chayote",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Sur de México",
+  "coords": [
+   19.5,
+   -97.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Sechium edule",
+  "originales": [
+   {
+    "forma": "chayohtli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La evidencia botánica ubica el origen del chayote cultivado en México, donde viven sus parientes silvestres.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "newstrom1991"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Hoy se cultiva en Asia, Brasil y Australia.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "christophine, choko",
+    "lengua": "francés / inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre su difusión mundial."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Una calabaza trepadora que el galeón de Manila llevó a Asia; hoy es común en China, Filipinas y Brasil."
+ },
+ {
+  "id": "jicama",
+  "nombre": "Jícama",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Mesoamérica",
+  "coords": [
+   17.0,
+   -96.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Pachyrhizus erosus",
+  "originales": [
+   {
+    "forma": "xicamatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La jícama es una leguminosa de raíz nativa de Mesoamérica; el galeón de Manila la llevó a Filipinas y hoy es común en el sudeste asiático.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "singkamas",
+    "lengua": "tagalo",
+    "forma": "conserva",
+    "nota": "Del náhuatl xicamatl."
+   }
+  ],
+  "pendientes": [
+   "Fuente botánica (p. ej., la monografía del IPGRI de Sørensen, 1996)."
+  ],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Raíz crujiente y dulce que se come cruda con limón y chile; también se cultiva en el sudeste asiático."
+ },
+ {
+  "id": "nopal",
+  "nombre": "Nopal y tuna",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.7,
+   -98.8
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Opuntia ficus-indica",
+  "originales": [
+   {
+    "forma": "nopalli",
+    "lengua": "náhuatl",
+    "glosa": "la planta",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "nochtli",
+    "lengua": "náhuatl",
+    "glosa": "el fruto",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Opuntia ficus-indica se domesticó en el centro de México.",
+   "solidez": "consenso",
+   "fuentes": [
+    "griffith2004"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El ADN la emparenta con nopales arborescentes del centro y sur de México y ubica ahí su domesticación.",
+    "solidez": "consenso",
+    "fuentes": [
+     "griffith2004"
+    ]
+   },
+   {
+    "texto": "Las variedades cultivadas fuera de México tienen una base genética estrecha, como corresponde a plantas llevadas desde su centro de origen.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "caruso2010"
+    ]
+   },
+   {
+    "texto": "Hoy crece en el Mediterráneo, Etiopía y Sudáfrica.",
+    "solidez": "consenso",
+    "fuentes": [
+     "wcvp"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "ficus-indica, Barbary fig, higo chumbo",
+    "lengua": "latín / inglés / español",
+    "forma": "nombre_ajeno",
+    "nota": "«Higo de Indias»: refleja la creencia europea del siglo XVI de que venía de las Antillas.",
+    "apunta": {
+     "nombre": "Berbería (Magreb)",
+     "coords": [
+      32,
+      -5
+     ]
+    }
+   },
+   {
+    "dice": "tuna",
+    "lengua": "español",
+    "forma": "nombre_ajeno",
+    "nota": "La palabra es de origen taíno; la planta es mexicana.",
+    "apunta": {
+     "nombre": "Antillas (taíno)",
+     "coords": [
+      19,
+      -71
+     ]
+    }
+   }
+  ],
+  "expediente": {
+   "contrapuntos": [
+    {
+     "dice": "Sus nombres la desplazan: «higo de Indias», «higo de Berbería».",
+     "respuesta": "El nombre científico guarda un error geográfico europeo del siglo XVI; la evidencia molecular ubica su domesticación en el centro de México.",
+     "fuentes": [
+      "griffith2004"
+     ]
+    }
+   ],
+   "comparacion": {
+    "region": "Andes",
+    "texto": "La presencia precolombina de O. ficus-indica en Perú está en disputa: hay indicios de uso en la cultura nazca y otros autores sostienen que era desconocida en Sudamérica antes de la conquista. Aun si se confirmara, sería presencia, no tradición. La gran producción peruana de tuna, ligada al carmín, es moderna.",
+    "lineas": {
+     "aqui": [
+      "recurrente",
+      "produccion",
+      "nombre",
+      "testimonio"
+     ],
+     "alla": [
+      "aislada"
+     ]
+    },
+    "solidez": "sustentada",
+    "fuentes": [
+     "griffith2004"
+    ],
+    "pendiente": ""
+   }
+  },
+  "pendientes": [],
+  "relacionadas": [
+   "grana"
+  ],
+  "alcance": "amplio",
+  "en_breve": "El cactus que se come en ensalada y da la tuna. Se cultiva del Mediterráneo a Etiopía y es la planta del escudo nacional."
+ },
+ {
+  "id": "amaranto",
+  "nombre": "Amaranto",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Centro de México",
+  "coords": [
+   19.1,
+   -98.3
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -2000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "especie": "Amaranthus hypochondriacus",
+  "originales": [
+   {
+    "forma": "huauhtli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Amaranthus hypochondriacus y A. cruentus se domesticaron en Mesoamérica; la especie andina, A. caudatus, tiene otra historia.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "sauer1967",
+    "stetter2020"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La genómica muestra varios intentos de domesticación del amaranto en América, con adaptaciones paralelas del color de la semilla.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "stetter2020"
+    ]
+   },
+   {
+    "texto": "Tras la conquista su cultivo decayó por su uso en ceremonias mexicas.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sauer1967"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "superfood",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda",
+    "nota": "Se vende como «superalimento» sin decir su origen."
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "chia"
+  ],
+  "alcance": "regional",
+  "en_breve": "La semilla de la alegría; los mexicas la usaban en ceremonias y hoy se vende en todo el mundo como superalimento."
+ },
+ {
+  "id": "chia",
+  "nombre": "Chía",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Occidente y centro de México",
+  "coords": [
+   19.9,
+   -103.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Salvia hispanica",
+  "originales": [
+   {
+    "forma": "chian",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Salvia hispanica es una planta mesoamericana; el Códice Mendoza la registra como tributo.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "cahill2003"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Su domesticación y su variedad cultivada se concentran en el occidente y centro de México.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "cahill2003"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "superfood",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   },
+   {
+    "dice": "chia",
+    "lengua": "inglés",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "amaranto"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La semilla que se hincha en el agua de chía y hoy se vende como superalimento en todo el mundo."
+ },
+ {
+  "id": "quelites",
+  "nombre": "Quelites y hierbas de la milpa",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Todo México",
+  "coords": [
+   19.0,
+   -99.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Dysphania ambrosioides",
+  "originales": [
+   {
+    "forma": "quilitl",
+    "lengua": "náhuatl",
+    "glosa": "verdura comestible",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "epazotl",
+    "lengua": "náhuatl",
+    "glosa": "epazote",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "huauhtzontli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los quelites son las verduras silvestres o toleradas de la milpa; el epazote es su aromática más conocida.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente etnobotánica sobre los quelites.",
+   "Confirmar la distribución nativa del epazote."
+  ],
+  "relacionadas": [
+   "milpa"
+  ],
+  "alcance": "local",
+  "en_breve": "Hojas tiernas que crecen en la milpa, como el epazote o los quintoniles, y se comen como verdura."
+ },
+ {
+  "id": "huitlacoche",
+  "nombre": "Huitlacoche",
+  "ambito": "alimentacion",
+  "naturaleza": "hongo",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.3,
+   -99.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "cuitlacochin",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Ustilago maydis es una plaga del maíz en casi todo el mundo; en México se come como manjar.",
+   "solidez": "consenso",
+   "fuentes": [
+    "valverde1995"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El aporte es el uso: convertir en alimento un hongo que otros agricultores combaten.",
+    "solidez": "consenso",
+    "fuentes": [
+     "valverde1995"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "corn smut",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda",
+    "nota": "«Tizón del maíz»: el nombre de la plaga."
+   },
+   {
+    "dice": "Mexican truffle",
+    "lengua": "inglés",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "maiz"
+  ],
+  "alcance": "local",
+  "en_breve": "Un hongo que crece en el elote y que aquí es manjar; en otros países se considera plaga."
+ },
+ {
+  "id": "zapotes",
+  "nombre": "Zapotes, mamey y chicozapote",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Sureste de México y Centroamérica",
+  "coords": [
+   18.5,
+   -90.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "especie": "Manilkara zapota",
+  "originales": [
+   {
+    "forma": "tzapotl",
+    "lengua": "náhuatl",
+    "glosa": "fruto dulce y suave",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los zapotes son frutos mesoamericanos; del chicozapote sale además la savia del chicle.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "mathews2009"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "sapodilla",
+    "lengua": "inglés",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [
+   "Fuente botánica para el mamey (Pouteria sapota)."
+  ],
+  "relacionadas": [
+   "chicle"
+  ],
+  "alcance": "regional",
+  "en_breve": "Frutos dulces de pulpa suave: mamey, zapote negro y chicozapote."
+ },
+ {
+  "id": "papaya",
+  "nombre": "Papaya",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Sur de México y Centroamérica",
+  "coords": [
+   17.5,
+   -93.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Carica papaya",
+  "originales": [
+   {
+    "forma": "puut",
+    "lengua": "maya yucateco",
+    "glosa": "papaya",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La papaya se originó y domesticó en el sur de Mesoamérica, donde sobreviven sus poblaciones silvestres.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "chavez2017"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Fruta tropical que se originó en el sur de México y Centroamérica y hoy se cultiva en todos los trópicos."
+ },
+ {
+  "id": "guayaba",
+  "nombre": "Guayaba",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "deslinde",
+  "actos": [],
+  "territorio": "mesoamerica",
+  "region": "Origen probable de su domesticación: Amazonia brasileña. México es un centro de diversidad propio.",
+  "coords": [
+   17.0,
+   -95.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Psidium guajava",
+  "originales": [
+   {
+    "forma": "xalxocotl",
+    "lengua": "náhuatl",
+    "glosa": "fruto arenoso",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "No se reclama: el estudio genético más amplio, con 215 plantas de 11 países, sitúa el origen de su domesticación en la Amazonia brasileña, desde donde llegó a Centroamérica y México. México tiene su propio acervo, muy diverso, y la nombró xalxocotl, pero la evidencia más antigua no está aquí.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "arevalo2024",
+    "arevalo2021"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Hay más registros arqueológicos de guayaba, y más antiguos, en Sudamérica que en Mesoamérica; en Mesoamérica abundan los registros históricos.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "arevalo2021"
+    ]
+   },
+   {
+    "texto": "Un estudio de 215 plantas de 11 países encontró un acervo genético en México y cuatro en Sudamérica; las poblaciones de Mesoamérica tienen una diversidad genética alta.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "arevalo2024"
+    ]
+   },
+   {
+    "texto": "Los modelos de dispersión apuntan a la Amazonia brasileña como origen probable de la domesticación, desde donde se extendió a los Andes, el norte de Sudamérica, Centroamérica y México.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "arevalo2024"
+    ]
+   },
+   {
+    "texto": "El WCVP, consultado vía GBIF, la registra como nativa solo de Perú. Es un registro estrecho; por eso aquí pesan más los estudios genético y arqueológico.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "wcvp"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Registro arqueológico de la guayaba en México, con fechas.",
+   "Si aparece evidencia más antigua en México, la ficha se reabre."
+  ],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Fruta aromática del ponche navideño. México guarda guayabas muy diversas, pero el estudio genético más amplio pone el origen de su domesticación en la Amazonia; por eso no se reclama.",
+  "origen_biologico": {
+   "texto": "Origen probable de la domesticación: Amazonia brasileña, según el estudio genético más amplio (2024).",
+   "coords": [
+    -8.5,
+    -63.0
+   ]
+  }
+ },
+ {
+  "id": "pitahaya",
+  "nombre": "Pitahaya",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Mesoamérica",
+  "coords": [
+   20.5,
+   -88.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "especie": "Selenicereus undatus",
+  "originales": [
+   {
+    "forma": "wo'ob",
+    "lengua": "maya yucateco",
+    "glosa": "pitahaya",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La pitahaya (Hylocereus o Selenicereus) es un cactus trepador mesoamericano; hoy Vietnam es su gran exportador.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "dragon fruit",
+    "lengua": "inglés",
+    "forma": "identidad_ajena",
+    "nota": "Se asocia con el sudeste asiático, que la exporta.",
+    "apunta": {
+     "nombre": "Vietnam",
+     "coords": [
+      14,
+      108
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre la producción vietnamita."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "La fruta del dragón que hoy exporta Vietnam es un cactus trepador mesoamericano."
+ },
+ {
+  "id": "cacahuate",
+  "nombre": "Cacahuate",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "El nombre: centro de México",
+  "coords": [
+   19.4,
+   -99.1
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1500,
+   "texto": "el nombre, antes de 1521"
+  },
+  "pueblos": [],
+  "origen_biologico": {
+   "texto": "Sudamérica (sur de Bolivia y norte de Argentina)",
+   "coords": [
+    -21.0,
+    -64.0
+   ],
+   "region_tdwg": "BOL"
+  },
+  "originales": [
+   {
+    "forma": "tlalcacahuatl",
+    "lengua": "náhuatl",
+    "glosa": "cacao de tierra",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El cacahuate es sudamericano; lo mexicano es la palabra.",
+   "solidez": "consenso",
+   "fuentes": [
+    "bertioli2019",
+    "dle"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "La planta es sudamericana; lo que viene de aquí es su nombre en México, del náhuatl tlalcacahuatl, «cacao de la tierra»."
+ },
+ {
+  "id": "camote",
+  "nombre": "Camote",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Entre Centroamérica y el norte de Sudamérica",
+  "coords": [
+   14.5,
+   -87.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -2500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Ipomoea batatas",
+  "originales": [
+   {
+    "forma": "camohtli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El origen del camote cultivado se ubica entre Centroamérica y el norte de Sudamérica; hay al menos dos linajes. La palabra «camote» es náhuatl.",
+   "solidez": "debate",
+   "fuentes": [
+    "roullier2013"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "El origen de la planta está entre Centroamérica y Sudamérica; lo que viene de aquí es la palabra camote, del náhuatl."
+ },
+ {
+  "id": "girasol",
+  "nombre": "Girasol",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "Tabasco (hallazgo de San Andrés)",
+  "coords": [
+   18.2,
+   -93.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -2600,
+   "texto": "hace unos 4,600 años"
+  },
+  "pueblos": [],
+  "especie": "Helianthus annuus",
+  "veredicto": {
+   "texto": "El girasol se domesticó en el este de Norteamérica; unos restos de Tabasco sugieren un segundo centro en México, pero la genética no lo respalda.",
+   "solidez": "debate",
+   "fuentes": [
+    "lentz2008",
+    "blackman2011"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Semillas y un aquenio de San Andrés, Tabasco, se interpretaron como girasol domesticado de hace unos 4,600 años.",
+    "solidez": "debate",
+    "fuentes": [
+     "lentz2008"
+    ]
+   },
+   {
+    "texto": "Los alelos de domesticación de los girasoles modernos apuntan a un solo centro, en el este de Norteamérica.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "blackman2011"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "chimalxochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor escudo",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "La flor del aceite de girasol y de las pipas; parte de la evidencia apunta a una domesticación en México."
+ },
+ {
+  "id": "cacao-chocolate",
+  "nombre": "Cacao y chocolate",
+  "ambito": "alimentacion",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Soconusco, Chiapas, y la costa del Golfo",
+  "coords": [
+   14.87,
+   -92.43
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1900,
+   "texto": "hacia 1900–1500 a. C."
+  },
+  "pueblos": [
+   "mokayas",
+   "olmecas",
+   "mayas",
+   "mexicas"
+  ],
+  "especie": "Theobroma cacao",
+  "origen_biologico": {
+   "texto": "Alta Amazonía (Ecuador), con uso de hace unos 5,300 años",
+   "coords": [
+    -4.0,
+    -78.9
+   ],
+   "region_tdwg": "ECU"
+  },
+  "originales": [
+   {
+    "forma": "kakaw",
+    "lengua": "maya",
+    "glosa": "probable préstamo del mixe-zoque",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   },
+   {
+    "forma": "cacahuatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La planta del cacao es amazónica; la bebida de chocolate, su cultivo intensivo y su cultura son mesoamericanos.",
+   "solidez": "consenso",
+   "fuentes": [
+    "zarrillo2018",
+    "powis2007",
+    "powis2011"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El uso más antiguo conocido del cacao está en Santa Ana–La Florida, Ecuador, hace unos 5,300 años.",
+    "solidez": "consenso",
+    "fuentes": [
+     "zarrillo2018"
+    ]
+   },
+   {
+    "texto": "Hay residuos de cacao en vasijas de Paso de la Amada, Chiapas, de hacia 1900–1500 a. C.: de los más antiguos de Mesoamérica.",
+    "solidez": "consenso",
+    "fuentes": [
+     "powis2007"
+    ]
+   },
+   {
+    "texto": "En Colhá, Belice, hay residuos de cacao en vasijas mayas de hacia 600 a. C.",
+    "solidez": "consenso",
+    "fuentes": [
+     "hurst2002"
+    ]
+   },
+   {
+    "texto": "Los olmecas de San Lorenzo ya usaban cacao hacia 1800–1000 a. C.",
+    "solidez": "consenso",
+    "fuentes": [
+     "powis2011"
+    ]
+   },
+   {
+    "texto": "La palabra para cacao (kakawa) probablemente viene del mixe-zoque, la familia lingüística asociada a los olmecas.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "kaufman2007"
+    ]
+   },
+   {
+    "texto": "La etimología de «chocolate» está en debate: la forma xocolatl no aparece en las fuentes tempranas.",
+    "solidez": "debate",
+    "fuentes": [
+     "dakin2000",
+     "kaufman2007"
+    ]
+   },
+   {
+    "texto": "La receta mesoamericana era una bebida espumosa con vainilla, chile, achiote y flores; Europa le añadió azúcar.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "coe1996"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "chocolate suizo",
+    "lengua": "todas",
+    "forma": "identidad_ajena",
+    "nota": "El chocolate con leche de Daniel Peter, 1875.",
+    "apunta": {
+     "nombre": "Suiza",
+     "coords": [
+      46.8,
+      8.2
+     ]
+    }
+   },
+   {
+    "dice": "chocolate belga, holandés",
+    "lengua": "todas",
+    "forma": "identidad_ajena",
+    "nota": "El cacao en polvo de Van Houten, 1828.",
+    "apunta": {
+     "nombre": "Bélgica y Países Bajos",
+     "coords": [
+      51.5,
+      4.8
+     ]
+    }
+   },
+   {
+    "dice": "chocolate, cacao",
+    "lengua": "todas",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [
+   "Fuente para los inventos de Peter y Van Houten.",
+   "Fuente para la producción actual de Costa de Marfil y Ghana."
+  ],
+  "relacionadas": [
+   "vainilla",
+   "chile",
+   "achiote"
+  ],
+  "alcance": "mundial",
+  "en_breve": "La planta vino de la Amazonía, pero el chocolate como bebida, su cultivo y su nombre se crearon aquí. Todo el chocolate del mundo viene de esa invención."
+ },
+ {
+  "id": "vainilla",
+  "nombre": "Vainilla",
+  "ambito": "alimentacion",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Papantla, Veracruz",
+  "coords": [
+   20.45,
+   -97.32
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1400,
+   "texto": "época prehispánica tardía"
+  },
+  "pueblos": [
+   "totonacas"
+  ],
+  "especie": "Vanilla planifolia",
+  "originales": [
+   {
+    "forma": "tlilxochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor negra",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "xanath",
+    "lengua": "totonaco"
+   }
+  ],
+  "veredicto": {
+   "texto": "La vainilla cultivada del mundo, Vanilla planifolia, procede de México; los totonacas de Papantla la cultivaron y curaron primero.",
+   "solidez": "consenso",
+   "fuentes": [
+    "lubinsky2008"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La genética de las vainillas cultivadas apunta a un origen en el noreste de Mesoamérica, con una base muy estrecha fuera de México.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lubinsky2008"
+    ]
+   },
+   {
+    "texto": "Fuera de su hábitat la flor no se polinizaba sola. En 1841 Edmond Albius, un niño esclavizado de 12 años en la isla Reunión, inventó la polinización manual, que acabó con el monopolio mexicano.",
+    "solidez": "consenso",
+    "fuentes": [
+     "fouche1999"
+    ]
+   },
+   {
+    "texto": "Casi todo el sabor a vainilla que se consume es vainillina sintética.",
+    "solidez": "consenso",
+    "fuentes": [
+     "gallage2015"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "Bourbon vanilla",
+    "lengua": "inglés",
+    "forma": "identidad_ajena",
+    "nota": "Por la isla Borbón, hoy Reunión.",
+    "apunta": {
+     "nombre": "Isla Reunión (antes Borbón)",
+     "coords": [
+      -21.1,
+      55.5
+     ]
+    }
+   },
+   {
+    "dice": "vainilla de Madagascar",
+    "lengua": "todas",
+    "forma": "identidad_ajena",
+    "nota": "Madagascar produce hoy la mayor parte.",
+    "apunta": {
+     "nombre": "Madagascar",
+     "coords": [
+      -19,
+      46.7
+     ]
+    }
+   },
+   {
+    "dice": "vanillin, vainillina",
+    "lengua": "todas",
+    "forma": "sustituto"
+   }
+  ],
+  "pendientes": [
+   "Polinizador natural (abejas euglosinas o meliponas): por confirmar.",
+   "Fuente para la producción actual de Madagascar."
+  ],
+  "relacionadas": [
+   "cacao-chocolate"
+  ],
+  "alcance": "mundial",
+  "en_breve": "El sabor de vainilla de helados, pasteles y perfumes viene de una orquídea de Veracruz que los totonacos cultivaban."
+ },
+ {
+  "id": "guajolote",
+  "nombre": "Guajolote",
+  "ambito": "alimentacion",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro y sur de México",
+  "coords": [
+   19.0,
+   -98.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -300,
+   "texto": "hacia 300 a. C.–100 d. C."
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "huexolotl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "totolin",
+    "lengua": "náhuatl",
+    "glosa": "gallina, guajolota",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El guajolote, una de las pocas aves domesticadas del mundo, se domesticó en Mesoamérica y, por separado, en el suroeste de EUA.",
+   "solidez": "consenso",
+   "fuentes": [
+    "speller2010",
+    "thornton2012"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El ADN antiguo muestra al menos dos domesticaciones: una en el sur de México y otra en el suroeste de EUA.",
+    "solidez": "consenso",
+    "fuentes": [
+     "speller2010"
+    ]
+   },
+   {
+    "texto": "Los guajolotes más antiguos de la zona maya, de hacia 300 a. C., ya eran Meleagris gallopavo del centro de México, llevados por comercio.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "thornton2012"
+    ]
+   },
+   {
+    "texto": "Los isótopos y el ADN muestran distintas formas de crianza en Mesoamérica.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "manin2018"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "turkey",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Turquía.",
+    "apunta": {
+     "nombre": "Turquía",
+     "coords": [
+      38.5,
+      32
+     ]
+    }
+   },
+   {
+    "dice": "dinde",
+    "lengua": "francés",
+    "forma": "nombre_ajeno",
+    "nota": "«De Indias».",
+    "apunta": {
+     "nombre": "India",
+     "coords": [
+      21,
+      78
+     ]
+    }
+   },
+   {
+    "dice": "hindi",
+    "lengua": "turco",
+    "forma": "nombre_ajeno",
+    "nota": "La India.",
+    "apunta": {
+     "nombre": "India",
+     "coords": [
+      24,
+      80
+     ]
+    }
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "El pavo de Navidad y de Acción de Gracias es el guajolote, domesticado en México."
+ },
+ {
+  "id": "pato-criollo",
+  "nombre": "Pato criollo",
+  "ambito": "alimentacion",
+  "naturaleza": "animal",
+  "clase": "deslinde",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mesoamerica",
+  "region": "América tropical",
+  "coords": [
+   17.0,
+   -93.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 0,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "Cairina moschata se domesticó en la América tropical; no puede atribuirse a México en particular.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "stahl2006"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Hay restos de pato criollo doméstico en sitios precolombinos de Ecuador.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "stahl2006"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "canauhtli",
+    "lengua": "náhuatl",
+    "glosa": "pato",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "Muscovy duck",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "«De Moscovia».",
+    "apunta": {
+     "nombre": "Moscovia",
+     "coords": [
+      55.75,
+      37.6
+     ]
+    }
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "guajolote"
+  ],
+  "alcance": "regional",
+  "en_breve": "Pato doméstico de la América tropical. No se reclama como aporte de México porque las pruebas no lo sitúan solo aquí."
+ },
+ {
+  "id": "melipona",
+  "nombre": "Abeja melipona y meliponicultura",
+  "ambito": "alimentacion",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Península de Yucatán",
+  "coords": [
+   20.6,
+   -89.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 300,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "originales": [
+   {
+    "forma": "xunáan kab",
+    "lengua": "maya yucateco",
+    "glosa": "señora abeja",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los mayas criaban Melipona beecheii, una abeja sin aguijón, en troncos huecos; la práctica sigue viva, aunque en declive.",
+   "solidez": "consenso",
+   "fuentes": [
+    "quezada2001"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Abejas sin aguijón que los mayas crían desde hace siglos para obtener una miel medicinal."
+ },
+ {
+  "id": "chapulines",
+  "nombre": "Chapulines y escamoles",
+  "ambito": "alimentacion",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Oaxaca e Hidalgo",
+  "coords": [
+   17.06,
+   -96.72
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "chapolin",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "azcamolli",
+    "lengua": "náhuatl",
+    "glosa": "guiso de hormiga",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "México es de los países con más especies de insectos comestibles registradas; su consumo es una tradición viva.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "ramoselorduy2009"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La FAO promueve hoy los insectos como fuente de proteína para el futuro.",
+    "solidez": "consenso",
+    "fuentes": [
+     "fao2013insectos"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "proteína del futuro",
+    "lengua": "todas",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Saltamontes y huevas de hormiga que se comen tostados; hoy el mundo los estudia como proteína del futuro."
+ },
+ {
+  "id": "nixtamalizacion",
+  "nombre": "Nixtamalización",
+  "ambito": "alimentacion",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Mesoamérica",
+  "coords": [
+   18.0,
+   -97.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1500,
+   "texto": "hacia 1500 a. C."
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "nextamalli",
+    "lengua": "náhuatl",
+    "glosa": "de nextli, ceniza o cal, y tamalli, masa",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Cocer el maíz con cal o ceniza libera la niacina y mejora su proteína; los pueblos que dependían del maíz desarrollaron esta técnica.",
+   "solidez": "consenso",
+   "fuentes": [
+    "katz1974"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Las sociedades americanas que consumían mucho maíz lo procesaban con álcali; las que no, eran raras.",
+    "solidez": "consenso",
+    "fuentes": [
+     "katz1974"
+    ]
+   },
+   {
+    "texto": "Europa adoptó el maíz sin la técnica. Donde se volvió alimento base hubo pelagra: en Italia afectó a decenas de miles en el siglo XIX.",
+    "solidez": "consenso",
+    "fuentes": [
+     "ginnaio2011"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "nixtamalization",
+    "lengua": "inglés",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [
+   "Fecha arqueológica de la técnica con fuente directa."
+  ],
+  "relacionadas": [
+   "maiz"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Cocer el maíz con cal para hacer masa. Sin este paso, quien vive de maíz enferma de pelagra; con él existen la tortilla, el tamal y los totopos."
+ },
+ {
+  "id": "agave-bebidas",
+  "nombre": "Pulque, mezcal y tequila",
+  "ambito": "alimentacion",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro y occidente de México",
+  "coords": [
+   20.88,
+   -103.84
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 200,
+   "texto": "pulque desde época prehispánica; destilados desde la virreinal"
+  },
+  "pueblos": [],
+  "especie": "Agave tequilana",
+  "originales": [
+   {
+    "forma": "metl",
+    "lengua": "náhuatl",
+    "glosa": "maguey",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "octli",
+    "lengua": "náhuatl",
+    "glosa": "pulque",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "mexcalli",
+    "lengua": "náhuatl",
+    "glosa": "maguey cocido",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El aguamiel fermentado, el pulque, se bebía en Teotihuacan; el mezcal y el tequila son destilados mexicanos de agave.",
+   "solidez": "consenso",
+   "fuentes": [
+    "correa2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Los isótopos de huesos de Teotihuacan indican que el pulque fue un complemento alimenticio importante.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "correa2014"
+    ]
+   },
+   {
+    "texto": "Se ha propuesto que en el occidente de México ya se destilaba agave antes del contacto europeo.",
+    "solidez": "debate",
+    "fuentes": [
+     "zizumbo2009"
+    ]
+   },
+   {
+    "texto": "El tequila tiene denominación de origen desde 1974.",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "licores de agave de otros países",
+    "lengua": "todas",
+    "forma": "sustituto",
+    "nota": "Imitaciones fuera de la denominación de origen."
+   }
+  ],
+  "pendientes": [
+   "Enlazar la declaratoria de denominación de origen del tequila en el DOF (1974)."
+  ],
+  "relacionadas": [
+   "henequen"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Del maguey salen el pulque, el mezcal y el tequila, que hoy se bebe en todo el mundo."
+ },
+ {
+  "id": "cocina-tradicional",
+  "nombre": "Cocina tradicional mexicana",
+  "ambito": "alimentacion",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Michoacán (paradigma)",
+  "coords": [
+   19.5,
+   -101.6
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 2010,
+   "texto": "reconocida por la UNESCO en 2010"
+  },
+  "pueblos": [
+   "purepechas"
+  ],
+  "veredicto": {
+   "texto": "La cocina tradicional mexicana fue la primera cocina nacional inscrita en la Lista Representativa de la UNESCO, en 2010.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2010cocina"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [
+   {
+    "forma": "tlacualli",
+    "lengua": "náhuatl",
+    "glosa": "comida",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "mole",
+   "maiz",
+   "nixtamalizacion"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La cocina mexicana, con su maíz nixtamalizado, sus chiles y sus técnicas, es Patrimonio de la Humanidad y se come en todo el mundo."
+ },
+ {
+  "id": "mole",
+  "nombre": "Mole",
+  "ambito": "alimentacion",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Puebla y Oaxaca",
+  "coords": [
+   19.04,
+   -98.2
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1700,
+   "texto": "Nueva España"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "molli",
+    "lengua": "náhuatl",
+    "glosa": "salsa, guiso",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El mole es mestizo: une las salsas de chile prehispánicas (molli) con especias y técnicas llegadas en la Colonia.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente histórica sobre el origen del mole."
+  ],
+  "relacionadas": [
+   "chile",
+   "cacao-chocolate"
+  ],
+  "alcance": "regional",
+  "en_breve": "Salsa espesa de chiles, especias y a veces chocolate, para las fiestas grandes."
+ },
+ {
+  "id": "ensalada-cesar",
+  "nombre": "Ensalada César",
+  "ambito": "alimentacion",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Tijuana, Baja California",
+  "coords": [
+   32.53,
+   -117.04
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1924,
+   "texto": "hacia 1924"
+  },
+  "pueblos": [],
+  "autoria": "Restaurante de Caesar Cardini",
+  "veredicto": {
+   "texto": "Se atribuye al restaurante de Caesar Cardini en Tijuana, hacia 1924; muchos la creen italiana o estadounidense.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "Caesar salad",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda",
+    "nota": "Se asume italiana por el nombre."
+   }
+  ],
+  "pendientes": [
+   "Fuente histórica."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "La ensalada de lechuga con aderezo de anchoa que aparece en menús de todo el mundo nació en Tijuana.",
+  "sin_originario": "Creación de 1924 en un restaurante de Tijuana; su nombre es el de su autor, no tiene nombre en lengua originaria."
+ },
+ {
+  "id": "nachos",
+  "nombre": "Nachos",
+  "ambito": "alimentacion",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Piedras Negras, Coahuila",
+  "coords": [
+   28.7,
+   -100.52
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1943,
+   "texto": "1943"
+  },
+  "pueblos": [],
+  "autoria": "Ignacio «Nacho» Anaya",
+  "veredicto": {
+   "texto": "Ignacio «Nacho» Anaya los creó en Piedras Negras en 1943.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente histórica."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Totopos con queso derretido y jalapeño, inventados en Piedras Negras, Coahuila, y hoy comida de estadio en todo el mundo.",
+  "sin_originario": "Creación de 1943; se llama así por su autor, Ignacio «Nacho» Anaya."
+ },
+ {
+  "id": "margarita",
+  "nombre": "Margarita",
+  "ambito": "alimentacion",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Varios lugares de México y EUA",
+  "coords": [
+   31.7,
+   -106.4
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1940,
+   "texto": "década de 1930–1940"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "Varios lugares de México y EUA se disputan la invención del coctel.",
+   "solidez": "debate",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuentes de las versiones en disputa."
+  ],
+  "relacionadas": [
+   "agave-bebidas"
+  ],
+  "alcance": "amplio",
+  "en_breve": "El cóctel de tequila, limón y licor de naranja; uno de los más pedidos del mundo.",
+  "sin_originario": "Cóctel del siglo XX con nombre en español."
+ }
+]

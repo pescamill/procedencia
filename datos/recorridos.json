@@ -1,0 +1,324 @@
+[
+ {
+  "id": "saqueo",
+  "titulo": "Lo que salió sin consentimiento",
+  "entrada": "Oro fundido, plata extraída con trabajo forzado, códices quemados o llevados a Europa y piezas que hoy están en museos y subastas extranjeras. Cada caso vive en su propia ficha; este recorrido los ordena en el tiempo.",
+  "pasos": [
+   {
+    "caso": "caso-quinto-real",
+    "texto": "El primer envío a Europa."
+   },
+   {
+    "caso": "caso-noche-triste",
+    "texto": "El oro que se hundió en el lago."
+   },
+   {
+    "caso": "caso-plata",
+    "texto": "La plata que se volvió moneda mundial."
+   },
+   {
+    "caso": "caso-mani",
+    "texto": "Los libros quemados."
+   },
+   {
+    "caso": "caso-codices",
+    "texto": "Los libros que sobrevivieron, lejos."
+   },
+   {
+    "caso": "caso-penacho",
+    "texto": "El objeto que no puede viajar."
+   },
+   {
+    "caso": "caso-subastas",
+    "texto": "El saqueo que sigue."
+   }
+  ],
+  "afirmaciones": [
+   {
+    "texto": "La población indígena del centro de México cayó cerca de 90% en el siglo XVI por epidemias, guerra y trabajo forzado; la magnitud tiene consenso y las cifras exactas se debaten.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "acuna2002"
+    ]
+   }
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "italia",
+  "titulo": "La cocina italiana sin México",
+  "entrada": "El jitomate llegó a Europa en el siglo XVI y durante décadas se vio como planta ornamental o sospechosa. Sin Mesoamérica, a la cocina italiana le faltarían varios de sus ingredientes centrales.",
+  "pasos": [
+   {
+    "ficha": "jitomate",
+    "texto": "Salsa pomodoro, pizza marinara y margherita, ragù, caprese."
+   },
+   {
+    "ficha": "calabaza",
+    "texto": "El zucchini es Cucurbita pepo."
+   },
+   {
+    "ficha": "frijol",
+    "texto": "Borlotti y cannellini son Phaseolus vulgaris."
+   },
+   {
+    "ficha": "maiz",
+    "texto": "La polenta, que Italia llamó granoturco."
+   },
+   {
+    "ficha": "chile",
+    "texto": "El peperoncino de Calabria y la 'nduja."
+   },
+   {
+    "ficha": "cacao-chocolate",
+    "texto": "El chocolate de Módica, en Sicilia, todavía se trabaja en frío."
+   },
+   {
+    "ficha": "nixtamalizacion",
+    "texto": "Lo que no llegó: la técnica. Italia comió maíz sin nixtamalizar y sufrió pelagra."
+   }
+  ],
+  "pendientes": [
+   "Fuente para la receta de Antonio Latini (Lo scalco alla moderna, 1692) como primera salsa de jitomate impresa en Italia.",
+   "Fuente sobre el chocolate de Módica."
+  ]
+ },
+ {
+  "id": "sabores",
+  "titulo": "Los sabores que el mundo cree suyos",
+  "entrada": "Chile, chocolate y vainilla son tres de los sabores más consumidos del planeta, y los tres salen de la cultura mesoamericana. El mundo los conoce con nombres de otros países.",
+  "pasos": [
+   {
+    "ficha": "chile",
+    "texto": "Kimchi coreano, cocina de Sichuan, curry indio, paprika húngara, pimentón español, berbere etíope, harissa del Magreb."
+   },
+   {
+    "ficha": "cacao-chocolate",
+    "texto": "Chocolate suizo, belga y holandés."
+   },
+   {
+    "ficha": "vainilla",
+    "texto": "Vainilla Bourbon y de Madagascar; y casi todo, vainillina sintética."
+   }
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "humo",
+  "titulo": "La cultura del humo",
+  "entrada": "El tabaco es un aporte de todo el continente americano. Lo propio de Mesoamérica es una especie cultivada, una cultura ritual del humo y probablemente el antecedente del cigarro. La misma vara obliga a decir qué no es mexicano.",
+  "pasos": [
+   {
+    "ficha": "tabaco-comun",
+    "texto": "Primero, el deslinde: casi todo el tabaco comercial es un híbrido sudamericano."
+   },
+   {
+    "ficha": "tabaco-mesoamericano",
+    "texto": "Lo mesoamericano: picietl, ofrenda, medicina, cañas de humo."
+   },
+   {
+    "ficha": "copal",
+    "texto": "El otro humo ritual, que sigue en cada ofrenda de Día de Muertos."
+   }
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "saber-ajeno",
+  "titulo": "Saber indígena, ganancia ajena",
+  "entrada": "Saberes indígenas sobre plantas y hongos están en el origen de la píldora anticonceptiva y de la medicina psicodélica moderna. El saber fue de los pueblos; las patentes y las ganancias, de otros.",
+  "pasos": [
+   {
+    "ficha": "barbasco-pildora",
+    "caso": "caso-barbasco",
+    "texto": "La píldora: química mexicana sobre un tubérculo recolectado por campesinos."
+   },
+   {
+    "ficha": "psilocibina",
+    "caso": "caso-psilocibina",
+    "texto": "Los hongos de Huautla: de María Sabina a las patentes."
+   },
+   {
+    "ficha": "frijol",
+    "caso": "caso-enola",
+    "texto": "Un frijol sonorense patentado en EUA."
+   },
+   {
+    "caso": "caso-pozol",
+    "texto": "Una bebida maya convertida en patente."
+   }
+  ],
+  "pendientes": [],
+  "afirmaciones": [
+   {
+    "texto": "El Protocolo de Nagoya, en vigor desde 2014, exige consentimiento y reparto de beneficios por el uso de recursos genéticos y saberes tradicionales; México es parte.",
+    "solidez": "consenso",
+    "fuentes": [
+     "nagoya"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rojo",
+  "titulo": "El rojo que valía como plata",
+  "entrada": "Un insecto del nopal fue, después de la plata, una de las exportaciones más valiosas de la Nueva España. Hoy está en yogures y labiales bajo una etiqueta que no dice de dónde viene.",
+  "pasos": [
+   {
+    "ficha": "nopal",
+    "texto": "La planta que lo alimenta, domesticada en el centro de México."
+   },
+   {
+    "ficha": "grana",
+    "texto": "La cría, la industria, la caída y el debate sobre su origen."
+   },
+   {
+    "caso": "caso-plata",
+    "texto": "La otra gran riqueza extraída."
+   }
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "china",
+  "titulo": "La cocina china sin México",
+  "entrada": "El picante de Sichuan y de Hunan, el maíz del norte y el camote de los años de hambre llegaron de América después de 1550. Hoy se viven como chinos, y pocos saben de dónde vinieron.",
+  "afirmaciones": [
+   {
+    "texto": "No había chiles en China antes de la década de 1570; llegaron de América y se difundieron de campesino en campesino, hasta volverse el sabor de Sichuan y Hunan.",
+    "solidez": "consenso",
+    "fuentes": [
+     "dott2020"
+    ]
+   },
+   {
+    "texto": "El maíz, el camote y el cacahuate llegaron a China en el siglo XVI y permitieron cultivar tierras de montaña y arena donde el arroz no crecía; sostuvieron el crecimiento de la población.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "ho1955"
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "ficha": "chile",
+    "texto": "El chile: domesticado en México, hoy el alma de la cocina de Sichuan y de Hunan."
+   },
+   {
+    "ficha": "maiz",
+    "texto": "El maíz: subió a las montañas del sur y del oeste de China."
+   },
+   {
+    "ficha": "camote",
+    "texto": "El camote: alimento de los años de hambre; su nombre en México es náhuatl."
+   },
+   {
+    "ficha": "cacahuate",
+    "texto": "El cacahuate: planta sudamericana con nombre náhuatl, hoy en el aceite y los platos chinos."
+   },
+   {
+    "ficha": "jitomate",
+    "texto": "El jitomate: llegó después y hoy está en el huevo con tomate de cualquier casa china."
+   },
+   {
+    "ficha": "chayote",
+    "texto": "El chayote: llegó por el galeón de Manila y se volvió verdura común en el sur de China."
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre la llegada del jitomate y el chayote a China."
+  ]
+ },
+ {
+  "id": "corea",
+  "titulo": "La cocina coreana sin México",
+  "entrada": "El kimchi rojo y el gochujang, símbolos de Corea, llevan chile, una planta domesticada en México que llegó a la península a fines del siglo XVI.",
+  "afirmaciones": [
+   {
+    "texto": "El chile (Capsicum annuum) se domesticó en México; ninguna especie de Capsicum es nativa de Asia.",
+    "solidez": "consenso",
+    "fuentes": [
+     "kraft2014"
+    ]
+   },
+   {
+    "texto": "Autores coreanos sostienen que en Corea había chile antes de la invasión japonesa de 1592. Aunque así fuera, el chile sigue siendo mexicano: ninguna especie de Capsicum es nativa de Asia.",
+    "solidez": "debate",
+    "fuentes": [
+     "kwon2014",
+     "kraft2014"
+    ]
+   },
+   {
+    "texto": "El chile pudo entrar al noreste de China a través de la península coreana.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "dott2020"
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "ficha": "chile",
+    "texto": "El gochu, el chile coreano, y su polvo, el gochugaru: la base del kimchi rojo y del gochujang."
+   },
+   {
+    "ficha": "maiz",
+    "texto": "El maíz: en té de maíz y en palomitas, otro grano que cruzó el Pacífico."
+   },
+   {
+    "ficha": "camote",
+    "texto": "El camote: el goguma asado de los inviernos coreanos."
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre la llegada del maíz y el camote a Corea."
+  ]
+ },
+ {
+  "id": "marigold",
+  "titulo": "La flor que India cree suya",
+  "entrada": "En India el cempasúchil se llama genda y forma las guirnaldas de templos, bodas y funerales; en China se cultiva por hectáreas para extraer su pigmento, que México hoy le compra. En inglés se le llama «African marigold». Su origen, México, desapareció del nombre, y su pigmento y su semilla se patentaron fuera.",
+  "afirmaciones": [
+   {
+    "texto": "Tagetes erecta es nativa de México y Centroamérica; en India, África y Asia está introducida.",
+    "solidez": "consenso",
+    "fuentes": [
+     "wcvp"
+    ]
+   },
+   {
+    "texto": "En India hay quien identifica la flor con nombres de textos antiguos; la especie americana llegó después de 1500, probablemente con los portugueses.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "livehistory2023"
+    ]
+   }
+  ],
+  "pasos": [
+   {
+    "ficha": "cempasuchil",
+    "texto": "El cempasúchil, cempohualxochitl, «flor de veinte pétalos», guía a los muertos en México."
+   },
+   {
+    "caso": "caso-cempasuchil",
+    "texto": "Afuera se patentaron su pigmento y su semilla, y la industria del pigmento se fue a China."
+   },
+   {
+    "ficha": "dia-muertos",
+    "texto": "Aquí sigue siendo la flor de las ofrendas."
+   },
+   {
+    "ficha": "nardo",
+    "texto": "El nardo, otra flor mexicana, también se ensarta en las guirnaldas de India."
+   },
+   {
+    "ficha": "palabras-nahuatl",
+    "texto": "En otras flores el nombre náhuatl sobrevivió; en esta se perdió."
+   }
+  ],
+  "pendientes": [
+   "Fuente revisada por pares sobre la producción de luteína de cempasúchil en China e India."
+  ]
+ }
+]

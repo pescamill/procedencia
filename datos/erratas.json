@@ -1,0 +1,174 @@
+[
+ {
+  "donde": "Nopal y tuna",
+  "decia": "La diversidad genética se citaba como «Las Casas et al., 2010».",
+  "dice": "El artículo es de Caruso et al. (2010), en Plant Systematics and Evolution; Las Casas es el tercer autor.",
+  "como": "Búsqueda bibliográfica en Crossref.",
+  "fuentes": [
+   "caruso2010"
+  ]
+ },
+ {
+  "donde": "Frijol Enola",
+  "decia": "«La patente se revocó en 2008».",
+  "dice": "En 2008 la junta de apelaciones de la oficina de patentes rechazó todas las reivindicaciones; el tribunal federal lo confirmó el 10 de julio de 2009. El caso duró de 1999 a 2009.",
+  "como": "Lectura de la decisión de la USPTO y del comunicado de ETC Group.",
+  "fuentes": [
+   "bpai2008enola",
+   "etc2009"
+  ]
+ },
+ {
+  "donde": "Bacteria del pozol",
+  "decia": "«Una empresa y la Universidad de Minnesota patentaron una bacteria; la patente se abandonó tras protestas».",
+  "dice": "La patente US 5,919,695 es de la Universidad de Minnesota y Quest International, cubre un cultivo de Bacillus subtilis, y Google Patents la marca como expirada por falta de pago. Que se abandonara por las protestas queda pendiente.",
+  "como": "Registro de la patente.",
+  "fuentes": [
+   "us5919695"
+  ]
+ },
+ {
+  "donde": "Guacamole industrial",
+  "decia": "«Demanda contra Kraft en 2007».",
+  "dice": "La demanda se presentó el 29 de noviembre de 2006.",
+  "como": "Prensa de la época.",
+  "fuentes": [
+   "consumerist2006"
+  ]
+ },
+ {
+  "donde": "Barra de oro de la Noche Triste",
+  "decia": "Confianza media; por verificar.",
+  "dice": "El INAH confirmó en 2020, con análisis de composición, que el tejo hallado en 1981 es oro fundido por los españoles durante la huida.",
+  "como": "Artículo de López Luján y Ruvalcaba en Arqueología Mexicana 161.",
+  "fuentes": [
+   "lopezlujan2020"
+  ]
+ },
+ {
+  "donde": "Guayaba",
+  "decia": "Aparecía como fruta nativa de México.",
+  "dice": "El WCVP la registra nativa solo de Perú e introducida en México y Centroamérica. Pasa a deslinde hasta que haya un estudio que sostenga otra área nativa.",
+  "como": "Contraste automático con la distribución del WCVP (vía GBIF).",
+  "fuentes": [
+   "wcvp"
+  ]
+ },
+ {
+  "donde": "Chinampas",
+  "decia": "«Año del reconocimiento por verificar».",
+  "dice": "La FAO las reconoció como Sistema Importante del Patrimonio Agrícola Mundial en 2017.",
+  "como": "Página del programa SIPAM de la FAO.",
+  "fuentes": [
+   "fao2017chinampas"
+  ]
+ },
+ {
+  "donde": "Patrimonio inmaterial",
+  "decia": "«Años por verificar».",
+  "dice": "Voladores 2009; cocina, parachicos y pirekua 2010; mariachi 2011; charrería 2016. Día de Muertos: proclamado en 2003 e inscrito en 2008.",
+  "como": "Lista oficial de elementos de México en la UNESCO.",
+  "fuentes": [
+   "unesco2009voladores",
+   "unesco2010cocina",
+   "unesco2011mariachi",
+   "unesco2016charreria",
+   "unesco2008muertos"
+  ]
+ },
+ {
+  "donde": "Lenguas vivas",
+  "decia": "«Más de 1.5 millones de hablantes de náhuatl (cifra por verificar)».",
+  "dice": "1,651,958 hablantes de 3 años o más en el censo de 2020, según tabulados que citan al INEGI; falta enlazar el tabulado original.",
+  "como": "Tabulados estatales basados en el censo.",
+  "fuentes": [
+   "inegi2020"
+  ]
+ },
+ {
+  "donde": "Maíz transgénico",
+  "decia": "«Fechas por verificar».",
+  "dice": "El panel del T-MEC emitió su informe final el 20 de diciembre de 2024; el Senado aprobó la reforma constitucional el 6 de marzo de 2025. Falta la fecha de publicación en el DOF.",
+  "como": "Prensa especializada.",
+  "fuentes": [
+   "afs2024maiz",
+   "expansion2025maiz"
+  ]
+ },
+ {
+  "donde": "Enlaces caídos",
+  "decia": "La nota de Consumerist sobre Kraft (sitio cerrado), el catálogo del INALI (página movida) y el Códice de Dresde (dominio nuevo).",
+  "dice": "Se enlazan la copia del Internet Archive, el PDF del catálogo y la nueva dirección de la biblioteca de Sajonia.",
+  "como": "Comprobación HTTP de cada enlace.",
+  "fuentes": [
+   "consumerist2006",
+   "inali2008",
+   "dresde"
+  ]
+ },
+ {
+  "donde": "Fuentes del inventario",
+  "decia": "Diez DOIs escritos de memoria al preparar este proyecto apuntaban a otros artículos (de recubrimientos comestibles, ácaros, almortas, hongos de Burkina Faso…).",
+  "dice": "El verificador los detectó comparando el título registrado en Crossref; se buscaron y corrigieron todos antes de publicar.",
+  "como": "Comparación automática de título y año.",
+  "fuentes": []
+ },
+ {
+  "donde": "Pato criollo, tabaco común, piñata",
+  "decia": "Aparecían en el inventario junto a los aportes, con tipo «Americano», «No mexicano» o «Debatida».",
+  "dice": "Ahora son deslindes: se publican para aplicar la misma vara, sin contarlos como aportes.",
+  "como": "Aplicación del principio «un eje, una pregunta».",
+  "fuentes": []
+ },
+ {
+  "donde": "Duplicados",
+  "decia": "El chile, el jitomate, la grana, el barbasco y la psilocibina aparecían en dos secciones cada uno; las palomitas tenían fila propia.",
+  "dice": "Cada cosa tiene una sola ficha. Los «Sabores», la «Cocina italiana» y la «Biopiratería» son recorridos que las citan; las palomitas son una afirmación dentro del maíz.",
+  "como": "Aplicación del principio «una cosa, una ficha».",
+  "fuentes": []
+ },
+ {
+  "donde": "Papel amate",
+  "decia": "«En investigación»: el veredicto no tenía fuente.",
+  "dice": "El amate es papel mexicano de tradición prehispánica, con dos estudios de Economic Botany que lo sustentan; la ficha pasa a «consenso».",
+  "como": "Búsqueda bibliográfica en Crossref.",
+  "fuentes": [
+   "lopezbinnquist2012",
+   "peters1987"
+  ]
+ },
+ {
+  "donde": "El cero",
+  "decia": "Se presentaba como invención maya, en territorio «Mesoamérica» y sin fuente.",
+  "dice": "Las primeras fechas de Cuenta Larga están en Chiapas y Veracruz, fuera de la zona maya, y se atribuyen a los olmecas o sus herederos; el cero mesoamericano es independiente y anterior al de la India.",
+  "como": "Lectura de Rojo-Garibaldi et al. (2021) y Diehl (2004).",
+  "fuentes": [
+   "rojo2021",
+   "diehl2004",
+   "plofker2009"
+  ]
+ },
+ {
+  "donde": "Territorio",
+  "decia": "«Mesoamérica» se usaba para todo lo compartido con Guatemala o Belice.",
+  "dice": "El eje ahora pregunta dónde está la evidencia más antigua. Milpa, chía, jitomate, hule, cacao, azul maya, cero, escritura y calendarios pasan a México porque sus pruebas más antiguas están aquí.",
+  "como": "Revisión de las fuentes de cada ficha.",
+  "fuentes": [
+   "zizumbo2010",
+   "hosler1999",
+   "powis2007",
+   "pohl2002",
+   "sprajc2023"
+  ]
+ },
+ {
+  "donde": "Guayaba (segunda revisión)",
+  "decia": "El deslinde se apoyaba solo en el WCVP, que la registra nativa únicamente de Perú.",
+  "dice": "Dos estudios recientes sostienen el deslinde con más fuerza: hay registros arqueológicos más antiguos en Sudamérica, y el análisis genético de 215 plantas sitúa el origen de la domesticación en la Amazonia brasileña. También muestran que México tiene un acervo propio de alta diversidad.",
+  "como": "Búsqueda bibliográfica y lectura de los resúmenes en Europe PMC.",
+  "fuentes": [
+   "arevalo2021",
+   "arevalo2024"
+  ]
+ }
+]

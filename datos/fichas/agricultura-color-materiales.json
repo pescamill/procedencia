@@ -1,0 +1,1032 @@
+[
+ {
+  "id": "milpa",
+  "nombre": "Milpa",
+  "ambito": "agricultura",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Occidente de México; después toda Mesoamérica",
+  "coords": [
+   19.6,
+   -103.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "milpan",
+    "lengua": "náhuatl",
+    "glosa": "de milli, parcela, y -pan, en: «en la parcela»",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La milpa es el policultivo de maíz, frijol y calabaza, con chile, quelites y tomate; sus plantas se complementan en el uso del suelo.",
+   "solidez": "consenso",
+   "fuentes": [
+    "zizumbo2010",
+    "postma2012"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Un modelo de raíces muestra que maíz, frijol y calabaza juntos aprovechan mejor el nitrógeno, el fósforo y el potasio que cada uno solo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "postma2012"
+    ]
+   },
+   {
+    "texto": "La agricultura y la domesticación de las plantas de la milpa empezaron probablemente en el occidente de México, en la cuenca del Balsas y Jalisco.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "zizumbo2010"
+    ]
+   },
+   {
+    "texto": "Maíz y frijol juntos dan una proteína más completa: uno aporta los aminoácidos que le faltan al otro.",
+    "solidez": "consenso",
+    "fuentes": []
+   },
+   {
+    "texto": "El sistema llegó al norte desde Mesoamérica; los haudenosaunee lo llaman «las tres hermanas».",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "Three Sisters",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Nombre de los haudenosaunee (iroqueses); borra el origen mesoamericano.",
+    "apunta": {
+     "nombre": "Haudenosaunee (Nueva York)",
+     "coords": [
+      43,
+      -76
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre la difusión del sistema al este de Norteamérica.",
+   "Fuente nutricional."
+  ],
+  "relacionadas": [
+   "maiz",
+   "frijol",
+   "calabaza",
+   "chinampas"
+  ],
+  "alcance": "regional",
+  "en_breve": "Sembrar maíz, frijol y calabaza juntos en la misma parcela, para que se ayuden entre sí. Es la base del campo mexicano desde hace milenios."
+ },
+ {
+  "id": "chinampas",
+  "nombre": "Chinampas",
+  "ambito": "agricultura",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Xochimilco, Tláhuac y Milpa Alta, Ciudad de México",
+  "coords": [
+   19.26,
+   -99.1
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1200,
+   "texto": "época prehispánica tardía"
+  },
+  "pueblos": [
+   "mexicas",
+   "xochimilcas"
+  ],
+  "originales": [
+   {
+    "forma": "chinamitl",
+    "lengua": "náhuatl",
+    "glosa": "cerco de cañas",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Parcelas construidas sobre el lago, de altísima productividad. La FAO las reconoció en 2017 como Sistema Importante del Patrimonio Agrícola Mundial.",
+   "solidez": "consenso",
+   "fuentes": [
+    "fao2017chinampas",
+    "calnek1972"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Sostenían buena parte del abasto de Tenochtitlan.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "calnek1972"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "floating gardens",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda",
+    "nota": "No flotan: son islas fijas."
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "milpa"
+  ],
+  "alcance": "regional",
+  "en_breve": "Islas de cultivo hechas a mano sobre los lagos del valle de México, entre las tierras de cultivo más productivas que se han conocido. Aún se trabajan en Xochimilco."
+ },
+ {
+  "id": "grana",
+  "nombre": "Grana cochinilla",
+  "ambito": "color",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Mixteca y Valles Centrales, Oaxaca",
+  "coords": [
+   17.3,
+   -97.4
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 950,
+   "texto": "cría documentada desde el siglo X"
+  },
+  "pueblos": [
+   "mixtecos",
+   "zapotecos"
+  ],
+  "originales": [
+   {
+    "forma": "nocheztli",
+    "lengua": "náhuatl",
+    "glosa": "sangre de tuna",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La cría de la grana fina y su industria son oaxaqueñas sin discusión. El origen de la especie sigue en debate, pero el estudio molecular de mayor alcance se inclina por Oaxaca.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "vandam2015",
+    "campana2015"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Con ADN mitocondrial y modelos de nicho climático, el estudio de mayor alcance ubica el centro de origen de Dactylopius coccus en Oaxaca, aunque pide más datos genómicos.",
+    "solidez": "debate",
+    "fuentes": [
+     "vandam2015"
+    ]
+   },
+   {
+    "texto": "Una filogenia de 2001, basada solo en la forma de los insectos, propuso un origen sudamericano.",
+    "solidez": "debate",
+    "fuentes": [
+     "rodriguez2001"
+    ]
+   },
+   {
+    "texto": "En Oaxaca sobrevive un linaje propio de México, conservado por pequeños productores; la grana comercial mexicana se parece a la andina, probablemente por importaciones del siglo XX.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "campana2015"
+    ]
+   },
+   {
+    "texto": "Fue de las exportaciones más valiosas de la Nueva España, después de la plata.",
+    "solidez": "consenso",
+    "fuentes": [
+     "donkin1977"
+    ]
+   },
+   {
+    "texto": "Los tintes sintéticos de anilina, desde 1856, desplomaron su comercio.",
+    "solidez": "consenso",
+    "fuentes": []
+   },
+   {
+    "texto": "Hoy se usa como colorante alimentario E120 (carmín, ácido carmínico).",
+    "solidez": "consenso",
+    "fuentes": [
+     "efsa2015"
+    ]
+   },
+   {
+    "texto": "Se cuenta que tiñó las casacas rojas del ejército británico.",
+    "solidez": "debate",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "E120, carmín, «rojo natural 4»",
+    "lengua": "todas",
+    "forma": "etiqueta_muda",
+    "nota": "Ninguna etiqueta menciona Oaxaca."
+   },
+   {
+    "dice": "cochinilla peruana",
+    "lengua": "todas",
+    "forma": "identidad_ajena",
+    "nota": "Perú es hoy el mayor productor.",
+    "apunta": {
+     "nombre": "Perú",
+     "coords": [
+      -12,
+      -76
+     ]
+    }
+   }
+  ],
+  "expediente": {
+   "contrapuntos": [
+    {
+     "dice": "«La cochinilla es peruana».",
+     "respuesta": "Perú es hoy el mayor productor, pero eso es consecuencia de la caída de la industria mexicana tras la Independencia, no de su origen.",
+     "fuentes": [
+      "campana2015",
+      "donkin1977"
+     ]
+    }
+   ],
+   "comparacion": {
+    "region": "Andes",
+    "texto": "En los Andes hay uso precolombino de rojo de cochinilla, pero su base es más débil: en Paracas apareció en pocos textiles y los propios analistas dicen que esa frecuencia no indica una práctica sólida. Falta demostrar cría local precolombina. En México hay cría en sitios toltecas del siglo X, nombre náhuatl, registros de tributo en la Matrícula de Tributos y el Códice Mendoza, y tratados coloniales sobre su cría.",
+    "lineas": {
+     "aqui": [
+      "produccion",
+      "nombre",
+      "testimonio"
+     ],
+     "alla": [
+      "aislada",
+      "recurrente"
+     ]
+    },
+    "solidez": "sustentada",
+    "fuentes": [
+     "wouters1992",
+     "campana2015",
+     "mendoza"
+    ],
+    "pendiente": "Seguir la literatura genómica posterior a 2015. Fuente sobre el posible nombre andino (magno o macnu)."
+   }
+  },
+  "pendientes": [
+   "Verificar su uso en las casacas británicas.",
+   "Fuente para la anilina (Perkin, 1856)."
+  ],
+  "relacionadas": [
+   "nopal"
+  ],
+  "alcance": "mundial",
+  "en_breve": "Un insecto que vive en el nopal y da un rojo intenso. Hoy es el colorante E120 o carmín que tiñe yogures, labiales y bebidas en todo el mundo."
+ },
+ {
+  "id": "azul-maya",
+  "nombre": "Azul maya",
+  "ambito": "color",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Chichén Itzá y Bonampak",
+  "coords": [
+   20.68,
+   -88.57
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 300,
+   "texto": "desde el Clásico"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "veredicto": {
+   "texto": "Pigmento de añil fijado en arcilla paligorskita, de estabilidad excepcional; se produjo en ceremonias en Chichén Itzá.",
+   "solidez": "consenso",
+   "fuentes": [
+    "arnold2008",
+    "gettens1962"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Su resistencia a ácidos, álcalis y al tiempo intrigó a los químicos durante décadas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "gettens1962"
+    ]
+   },
+   {
+    "texto": "Residuos en un recipiente de copal del Cenote Sagrado son la primera evidencia directa de cómo se producía.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "arnold2008"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "yax",
+    "lengua": "maya yucateco",
+    "glosa": "verde-azul, el color",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "anil",
+   "copal"
+  ],
+  "alcance": "regional",
+  "en_breve": "Un azul turquesa hecho con añil y una arcilla, tan resistente que sigue brillante en murales de más de mil años."
+ },
+ {
+  "id": "anil",
+  "nombre": "Añil americano",
+  "ambito": "color",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Mesoamérica y Centroamérica",
+  "coords": [
+   14.0,
+   -89.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 300,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Indigofera suffruticosa",
+  "originales": [
+   {
+    "forma": "xiuhquilitl",
+    "lengua": "náhuatl",
+    "glosa": "hierba azul",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Indigofera suffruticosa es el añil americano: la base del azul maya y una exportación colonial, sobre todo desde Centroamérica.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "arnold2008"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente sobre la exportación colonial del añil."
+  ],
+  "relacionadas": [
+   "azul-maya"
+  ],
+  "alcance": "regional",
+  "en_breve": "La planta americana de la que sale el tinte azul; fue base del azul maya y una gran exportación colonial."
+ },
+ {
+  "id": "palo-campeche",
+  "nombre": "Palo de Campeche",
+  "ambito": "color",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mexico",
+  "region": "Campeche",
+  "coords": [
+   19.0,
+   -90.3
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1550,
+   "texto": "siglo XVI"
+  },
+  "pueblos": [],
+  "especie": "Haematoxylum campechianum",
+  "veredicto": {
+   "texto": "De Haematoxylum campechianum, árbol de Campeche, se extrae la hematoxilina: primero tinte textil y hoy la base de la tinción más usada en patología.",
+   "solidez": "consenso",
+   "fuentes": [
+    "titford2005"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La tinción hematoxilina-eosina se usa en casi todos los laboratorios de patología del mundo.",
+    "solidez": "consenso",
+    "fuentes": [
+     "titford2005"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "eek'",
+    "lengua": "maya yucateco",
+    "glosa": "palo de tinte; negro",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "logwood",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Un árbol de Campeche cuya madera da un tinte negro y morado. De él sale la hematoxilina, el colorante que usan los laboratorios de todo el mundo para ver tejidos al microscopio."
+ },
+ {
+  "id": "achiote",
+  "nombre": "Achiote",
+  "ambito": "color",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "El nombre y el uso: Mesoamérica",
+  "coords": [
+   20.9,
+   -89.6
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "especie": "Bixa orellana",
+  "origen_biologico": {
+   "texto": "Amazonía, a partir de Bixa urucurana",
+   "coords": [
+    -3.1,
+    -60.0
+   ],
+   "region_tdwg": "BZN"
+  },
+  "originales": [
+   {
+    "forma": "achiotl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El achiote se domesticó en la Amazonía; en Mesoamérica tuvo un uso amplio y de ahí viene su nombre.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "moreira2015"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Hoy es el colorante E160b que tiñe el queso cheddar y la mantequilla.",
+    "solidez": "consenso",
+    "fuentes": [
+     "efsa2016"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "annatto, E160b",
+    "lengua": "inglés / todas",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "cacao-chocolate"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Semillas rojas que dan color y sabor a la cochinita pibil. Como colorante E160b tiñe quesos y mantequillas en muchos países."
+ },
+ {
+  "id": "caracol-purpura",
+  "nombre": "Caracol púrpura",
+  "ambito": "color",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Costa de Oaxaca (Pinotepa de Don Luis)",
+  "coords": [
+   16.0,
+   -97.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1000,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [
+   "mixtecos"
+  ],
+  "originales": [
+   {
+    "forma": "tixinda",
+    "lengua": "mixteco de la costa",
+    "glosa": "caracol del tinte"
+   }
+  ],
+  "veredicto": {
+   "texto": "En la costa de Oaxaca los tintoreros mixtecos tiñen con la secreción de Plicopurpura pansa sin matar al caracol.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "cervantes2016"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente etnográfica sobre la técnica mixteca."
+  ],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Un caracol de la costa de Oaxaca que suelta un tinte morado sin morir; los tintoreros mixtecos lo ordeñan y lo devuelven a la roca."
+ },
+ {
+  "id": "algodon",
+  "nombre": "Algodón",
+  "ambito": "materiales",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Península de Yucatán",
+  "coords": [
+   20.2,
+   -89.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -3000,
+   "texto": "hace unos 5,000 años"
+  },
+  "pueblos": [],
+  "especie": "Gossypium hirsutum",
+  "originales": [
+   {
+    "forma": "ichcatl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Gossypium hirsutum, el algodón con el que se viste casi todo el planeta, se domesticó en la región de la península de Yucatán.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "yuan2021"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La genómica de cientos de accesiones ubica la domesticación de G. hirsutum en la península de Yucatán, con flujo posterior entre formas.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "yuan2021"
+    ]
+   },
+   {
+    "texto": "Es alrededor del 90% del algodón mundial; el egipcio y el pima son otra especie, G. barbadense, sudamericana.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "upland cotton",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Fuente para el porcentaje mundial."
+  ],
+  "relacionadas": [],
+  "alcance": "mundial",
+  "en_breve": "La especie de algodón con la que se hace casi toda la ropa del planeta se domesticó en la península de Yucatán."
+ },
+ {
+  "id": "hule",
+  "nombre": "Hule procesado y pelota",
+  "ambito": "materiales",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Costa del Golfo (El Manatí, Veracruz)",
+  "coords": [
+   17.9,
+   -94.6
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1600,
+   "texto": "hacia 1600 a. C."
+  },
+  "pueblos": [
+   "olmecas"
+  ],
+  "originales": [
+   {
+    "forma": "olli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Desde hacia 1600 a. C. se mezclaba látex de Castilla elastica con jugo de Ipomoea alba para obtener hule de distintas propiedades: unos 3,400 años antes de la vulcanización.",
+   "solidez": "consenso",
+   "fuentes": [
+    "hosler1999",
+    "tarkanian2011"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Variando la proporción de látex y enredadera se lograban pelotas que rebotan, suelas resistentes o bandas adhesivas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "tarkanian2011"
+    ]
+   },
+   {
+    "texto": "«Olmeca» significa en náhuatl «gente del país del hule».",
+    "solidez": "consenso",
+    "fuentes": [
+     "karttunen1983"
+    ]
+   },
+   {
+    "texto": "Charles Goodyear patentó en 1844 la vulcanización, el tratamiento del hule con azufre y calor, y la historia industrial lo presenta como el inicio del hule útil.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us3633"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "vulcanización (Goodyear, 1839)",
+    "lengua": "todas",
+    "forma": "identidad_ajena",
+    "nota": "La historia industrial del hule empieza en EUA, no en el Golfo de México.",
+    "apunta": {
+     "nombre": "Connecticut, EUA",
+     "coords": [
+      41.3,
+      -72.9
+     ]
+    }
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "ulama"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Hace 3,600 años los pueblos del Golfo ya sabían convertir el látex en hule resistente para pelotas, sandalias y pegamentos, miles de años antes que la industria europea."
+ },
+ {
+  "id": "chicle",
+  "nombre": "Chicle",
+  "ambito": "materiales",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Península de Yucatán y Petén",
+  "coords": [
+   18.5,
+   -89.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas",
+   "mexicas"
+  ],
+  "especie": "Manilkara zapota",
+  "originales": [
+   {
+    "forma": "tzictli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Mayas y mexicas masticaban la savia del chicozapote; de ahí salió la industria mundial del chicle.",
+   "solidez": "consenso",
+   "fuentes": [
+    "mathews2009"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Según la historia difundida, Antonio López de Santa Anna, en Nueva York, se la presentó a Thomas Adams hacia 1869.",
+    "solidez": "debate",
+    "fuentes": [
+     "mathews2009"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "chewing gum",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   },
+   {
+    "dice": "Chiclets",
+    "lengua": "marca",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [
+   "Confirmar en el libro de Mathews y Schultz el pasaje sobre Santa Anna y Adams."
+  ],
+  "relacionadas": [
+   "zapotes"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La savia del chicozapote que mayas y mexicas masticaban; de ahí nació la industria mundial del chicle, que hoy usa sobre todo sustitutos sintéticos."
+ },
+ {
+  "id": "henequen",
+  "nombre": "Henequén y sisal",
+  "ambito": "materiales",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Yucatán",
+  "coords": [
+   21.15,
+   -90.03
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 600,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mayas"
+  ],
+  "especie": "Agave fourcroydes",
+  "originales": [
+   {
+    "forma": "ki",
+    "lengua": "maya yucateco",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El henequén, Agave fourcroydes, fue domesticado por los mayas a partir de Agave angustifolia.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "colunga1997"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La palabra «sisal» viene del puerto de Sisal, Yucatán; hoy Brasil y África oriental producen la mayoría.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "sisal",
+    "lengua": "todas",
+    "forma": "conserva",
+    "nota": "Por el puerto yucateco."
+   }
+  ],
+  "pendientes": [
+   "Fuente para la etimología de «sisal» y la producción actual."
+  ],
+  "relacionadas": [
+   "agave-bebidas"
+  ],
+  "alcance": "regional",
+  "en_breve": "Un agave de Yucatán cuya fibra dio sogas y costales al mundo; su hermano, el sisal, lleva el nombre de un puerto yucateco."
+ },
+ {
+  "id": "amate",
+  "nombre": "Papel amate",
+  "ambito": "materiales",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "San Pablito, Pahuatlán, Puebla",
+  "coords": [
+   20.28,
+   -98.15
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [
+   "otomies",
+   "nahuas"
+  ],
+  "originales": [
+   {
+    "forma": "amatl",
+    "lengua": "náhuatl",
+    "glosa": "papel; también el árbol del que sale",
+    "fuentes": [
+     "gdn2012",
+     "lopezbinnquist2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El amate es papel mexicano: se hace golpeando la corteza de árboles de la familia de los higos desde antes de la conquista, en él se pintaron códices, y los otomíes de San Pablito, Puebla, nunca dejaron de hacerlo.",
+   "solidez": "consenso",
+   "fuentes": [
+    "lopezbinnquist2012",
+    "peters1987"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El uso de la corteza interna de árboles para hacer el papel amate se remonta a la época prehispánica.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lopezbinnquist2012"
+    ]
+   },
+   {
+    "texto": "Un estudio reunió 13 especies usadas para hacer amate y encontró que las de hoy difieren, en anatomía y química, de las que se usaban antes de la conquista.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lopezbinnquist2012"
+    ]
+   },
+   {
+    "texto": "Los otomíes de San Pablito, Pahuatlán, conservaron la técnica prehispánica y la llevaron al mercado nacional e internacional en el siglo XX.",
+    "solidez": "consenso",
+    "fuentes": [
+     "peters1987"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente sobre el amate como tributo en la Matrícula de Tributos y el Códice Mendoza."
+  ],
+  "relacionadas": [
+   "calendarios",
+   "escritura"
+  ],
+  "alcance": "regional",
+  "en_breve": "Papel hecho golpeando la corteza de árboles de la familia de los higos. En él se pintaron los códices, y los otomíes de Puebla lo siguen haciendo."
+ },
+ {
+  "id": "guayule",
+  "nombre": "Guayule",
+  "ambito": "materiales",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mexico",
+  "region": "Desierto chihuahuense",
+  "coords": [
+   27.0,
+   -103.5
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1900,
+   "texto": "explotación industrial desde 1900"
+  },
+  "pueblos": [],
+  "especie": "Parthenium argentatum",
+  "veredicto": {
+   "texto": "Parthenium argentatum, arbusto del desierto del norte, produce hule; hoy se estudia como alternativa al árbol del caucho.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "rasutis2015"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [
+   {
+    "forma": "cuauholli",
+    "lengua": "náhuatl",
+    "glosa": "hule de árbol",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "hule"
+  ],
+  "alcance": "regional",
+  "en_breve": "Un arbusto del desierto del norte que produce hule natural; se estudia como alternativa al árbol del hule amazónico."
+ }
+]

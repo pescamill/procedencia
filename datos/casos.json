@@ -1,0 +1,1237 @@
+[
+ {
+  "id": "caso-quinto-real",
+  "tipo": "saqueo",
+  "titulo": "Los regalos de Moctezuma y el quinto real",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1519,
+   "texto": "1519–1520"
+  },
+  "lugar": "Veracruz → Bruselas",
+  "coords": [
+   19.2,
+   -96.13
+  ],
+  "resumen": "Cortés envió a Carlos V el quinto real con discos de oro y plata «del tamaño de ruedas de carreta». En Bruselas, en 1520, Alberto Durero escribió en su diario que nunca había visto nada que le alegrara tanto el corazón.",
+  "afirmaciones": [
+   {
+    "texto": "Bernal Díaz describe los discos de oro y plata enviados al emperador.",
+    "solidez": "consenso",
+    "fuentes": [
+     "diazdelcastillo1632"
+    ]
+   },
+   {
+    "texto": "Durero vio las piezas en Bruselas en 1520 y lo dejó escrito en su diario.",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "fichas": [],
+  "pendientes": [
+   "Fuente para el diario de Durero."
+  ]
+ },
+ {
+  "id": "caso-noche-triste",
+  "tipo": "saqueo",
+  "titulo": "El tesoro de Axayácatl y la Noche Triste",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1520,
+   "texto": "30 de junio de 1520"
+  },
+  "lugar": "Tenochtitlan",
+  "coords": [
+   19.437,
+   -99.147
+  ],
+  "resumen": "Los españoles tomaron el tesoro del palacio de Axayácatl y huyeron cargados de oro; mucho se hundió en el lago. En 1981 apareció bajo la Ciudad de México un tejo de oro que el INAH identificó en 2020 como parte de esa huida.",
+  "afirmaciones": [
+   {
+    "texto": "El tejo, de 1.93 kg, se halló en 1981 durante obras del Banco de México; su composición y su ubicación coinciden con el oro fundido por los españoles en la huida.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "lopezlujan2020"
+    ]
+   },
+   {
+    "texto": "Para que revelara dónde estaba el oro, los españoles le quemaron los pies a Cuauhtémoc.",
+    "solidez": "consenso",
+    "fuentes": [
+     "diazdelcastillo1632"
+    ]
+   },
+   {
+    "texto": "Casi toda la orfebrería se fundió en lingotes; por eso sobreviven muy pocas piezas. El tesoro mixteco de la Tumba 7 de Monte Albán, hallado por Alfonso Caso en 1932, muestra lo que se perdió.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "fichas": [],
+  "pendientes": [
+   "Fuente para la Tumba 7."
+  ]
+ },
+ {
+  "id": "caso-plata",
+  "tipo": "saqueo",
+  "titulo": "La plata y el trabajo forzado",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1546,
+   "texto": "desde 1546"
+  },
+  "lugar": "Zacatecas, Guanajuato, Taxco, Pachuca",
+  "coords": [
+   22.77,
+   -102.58
+  ],
+  "resumen": "La plata novohispana se extrajo con encomienda y repartimiento; el beneficio de patio, con mercurio, envenenaba a los trabajadores. El peso de plata acuñado en México circuló en China por el galeón de Manila y fue moneda legal en EUA hasta 1857.",
+  "afirmaciones": [
+   {
+    "texto": "El peso de plata hispanoamericano fue patrón monetario en China y en EUA hasta mediados del siglo XIX.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "irigoin2009"
+    ]
+   },
+   {
+    "texto": "Se le considera antecedente del dólar y de monedas asiáticas como el yuan.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "irigoin2009"
+    ]
+   }
+  ],
+  "fichas": [
+   "grana"
+  ],
+  "pendientes": [
+   "Fuente para el beneficio de patio (Pachuca, 1555)."
+  ]
+ },
+ {
+  "id": "caso-mani",
+  "tipo": "saber_borrado",
+  "titulo": "La quema de códices en Maní",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1562,
+   "texto": "1562"
+  },
+  "lugar": "Maní, Yucatán",
+  "coords": [
+   20.39,
+   -89.39
+  ],
+  "resumen": "El franciscano Diego de Landa quemó libros mayas en el auto de fe de Maní. Sobreviven muy pocos códices prehispánicos. No fue la única destrucción: hacia 1430 el tlatoani mexica Itzcóatl también ordenó quemar historias anteriores.",
+  "afirmaciones": [
+   {
+    "texto": "El propio Landa narra que quemó los libros porque «no tenían cosa en que no hubiese superstición».",
+    "solidez": "consenso",
+    "fuentes": [
+     "landa1566"
+    ]
+   },
+   {
+    "texto": "Itzcóatl ordenó quemar las pinturas antiguas hacia 1430.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sahagun1577"
+    ]
+   }
+  ],
+  "fichas": [
+   "escritura"
+  ],
+  "pendientes": [
+   "Ubicar el pasaje del Códice Florentino sobre Itzcóatl."
+  ]
+ },
+ {
+  "id": "caso-codices",
+  "tipo": "saqueo",
+  "titulo": "Dónde están los códices",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1550,
+   "texto": "siglos XVI a XIX"
+  },
+  "lugar": "Europa",
+  "coords": [
+   48.0,
+   8.0
+  ],
+  "resumen": "La mayoría de los códices prehispánicos y de los primeros coloniales están en bibliotecas y museos de Europa.",
+  "ubicaciones": [
+   {
+    "codice": "Dresde (maya)",
+    "ciudad": "Dresde",
+    "institucion": "Biblioteca Estatal de Sajonia",
+    "coords": [
+     51.03,
+     13.73
+    ]
+   },
+   {
+    "codice": "Madrid (maya)",
+    "ciudad": "Madrid",
+    "institucion": "Museo de América",
+    "coords": [
+     40.44,
+     -3.72
+    ]
+   },
+   {
+    "codice": "París (maya)",
+    "ciudad": "París",
+    "institucion": "Biblioteca Nacional de Francia",
+    "coords": [
+     48.87,
+     2.34
+    ]
+   },
+   {
+    "codice": "Borbónico",
+    "ciudad": "París",
+    "institucion": "Biblioteca de la Asamblea Nacional",
+    "coords": [
+     48.86,
+     2.32
+    ]
+   },
+   {
+    "codice": "Borgia",
+    "ciudad": "Ciudad del Vaticano",
+    "institucion": "Biblioteca Apostólica Vaticana",
+    "coords": [
+     41.9,
+     12.45
+    ]
+   },
+   {
+    "codice": "Mendoza",
+    "ciudad": "Oxford",
+    "institucion": "Biblioteca Bodleiana",
+    "coords": [
+     51.75,
+     -1.25
+    ]
+   },
+   {
+    "codice": "Laud",
+    "ciudad": "Oxford",
+    "institucion": "Biblioteca Bodleiana",
+    "coords": [
+     51.76,
+     -1.26
+    ]
+   },
+   {
+    "codice": "Florentino",
+    "ciudad": "Florencia",
+    "institucion": "Biblioteca Medicea Laurenziana",
+    "coords": [
+     43.77,
+     11.25
+    ]
+   },
+   {
+    "codice": "Nuttall",
+    "ciudad": "Londres",
+    "institucion": "Museo Británico",
+    "coords": [
+     51.52,
+     -0.13
+    ]
+   },
+   {
+    "codice": "Vindobonensis",
+    "ciudad": "Viena",
+    "institucion": "Biblioteca Nacional de Austria",
+    "coords": [
+     48.21,
+     16.37
+    ]
+   },
+   {
+    "codice": "Fejérváry-Mayer",
+    "ciudad": "Liverpool",
+    "institucion": "Museo Mundial de Liverpool",
+    "coords": [
+     53.41,
+     -2.98
+    ]
+   },
+   {
+    "codice": "Cospi",
+    "ciudad": "Bolonia",
+    "institucion": "Biblioteca Universitaria",
+    "coords": [
+     44.5,
+     11.35
+    ]
+   }
+  ],
+  "afirmaciones": [
+   {
+    "texto": "El Códice de Dresde está en la Biblioteca Estatal de Sajonia, que lo publica en línea.",
+    "solidez": "consenso",
+    "fuentes": [
+     "dresde"
+    ]
+   },
+   {
+    "texto": "El Códice Mendoza está en la Biblioteca Bodleiana de Oxford; el INAH publica su edición digital.",
+    "solidez": "consenso",
+    "fuentes": [
+     "mendoza"
+    ]
+   },
+   {
+    "texto": "El Códice Florentino está en la Biblioteca Medicea Laurenziana.",
+    "solidez": "consenso",
+    "fuentes": [
+     "sahagun1577"
+    ]
+   }
+  ],
+  "fichas": [
+   "escritura",
+   "calendarios",
+   "amate"
+  ],
+  "pendientes": [
+   "Fuente institucional para cada uno de los otros nueve códices."
+  ]
+ },
+ {
+  "id": "caso-aubin",
+  "tipo": "saqueo",
+  "titulo": "El Tonalámatl Aubin",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1982,
+   "texto": "1982"
+  },
+  "lugar": "París → Ciudad de México",
+  "coords": [
+   48.87,
+   2.34
+  ],
+  "resumen": "En 1982 un mexicano sacó el códice de la Biblioteca Nacional de Francia y lo trajo a México. Lo custodia el INAH; Francia nunca renunció a su propiedad.",
+  "afirmaciones": [
+   {
+    "texto": "El códice está bajo custodia del INAH y la disputa de propiedad con Francia sigue sin resolverse del todo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "traffickingaubin"
+    ]
+   }
+  ],
+  "fichas": [
+   "calendarios"
+  ],
+  "pendientes": [
+   "Fecha y términos del acuerdo de préstamo con Francia (las fuentes difieren)."
+  ]
+ },
+ {
+  "id": "caso-penacho",
+  "tipo": "saqueo",
+  "titulo": "El penacho del Weltmuseum",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1596,
+   "texto": "en colecciones europeas desde el siglo XVI"
+  },
+  "lugar": "Viena",
+  "coords": [
+   48.205,
+   16.36
+  ],
+  "resumen": "México pide el regreso del penacho de plumas de quetzal; Austria sostiene que es demasiado frágil para viajar. Que perteneciera a Moctezuma no está probado.",
+  "afirmaciones": [
+   {
+    "texto": "Un estudio binacional de 2010 a 2012, con expertos mexicanos, concluyó que no puede transportarse con seguridad.",
+    "solidez": "consenso",
+    "fuentes": [
+     "weltmuseum"
+    ]
+   },
+   {
+    "texto": "El propio museo sostiene que no perteneció a Moctezuma II.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "weltmuseum"
+    ]
+   }
+  ],
+  "fichas": [],
+  "pendientes": []
+ },
+ {
+  "id": "caso-turquesa",
+  "tipo": "saqueo",
+  "titulo": "Los mosaicos de turquesa del Museo Británico",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1894,
+   "texto": "en el museo desde el siglo XIX"
+  },
+  "lugar": "Londres",
+  "coords": [
+   51.52,
+   -0.127
+  ],
+  "resumen": "Máscaras y la serpiente de dos cabezas de mosaico de turquesa están en el Museo Británico.",
+  "afirmaciones": [
+   {
+    "texto": "La serpiente bicéfala de turquesa es parte de la colección del Museo Británico.",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "fichas": [],
+  "pendientes": [
+   "Fuente institucional (la página del museo bloquea la comprobación automática)."
+  ]
+ },
+ {
+  "id": "caso-cenote",
+  "tipo": "saqueo",
+  "titulo": "El dragado del Cenote Sagrado",
+  "estado": "resuelto",
+  "fecha": {
+   "anio": 1904,
+   "texto": "1904–1910"
+  },
+  "lugar": "Chichén Itzá → Cambridge, Massachusetts",
+  "coords": [
+   20.69,
+   -88.57
+  ],
+  "resumen": "Edward H. Thompson dragó el Cenote Sagrado de Chichén Itzá y envió piezas al Museo Peabody de Harvard; parte volvió después.",
+  "afirmaciones": [
+   {
+    "texto": "Del cenote salió además la evidencia de cómo se producía el azul maya.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "arnold2008"
+    ]
+   }
+  ],
+  "fichas": [
+   "azul-maya"
+  ],
+  "pendientes": [
+   "Fuente sobre Thompson y las devoluciones del Peabody."
+  ]
+ },
+ {
+  "id": "caso-subastas",
+  "tipo": "saqueo",
+  "titulo": "Subastas y repatriaciones",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 2018,
+   "texto": "desde 2018"
+  },
+  "lugar": "París, Múnich y otras ciudades",
+  "coords": [
+   48.14,
+   11.58
+  ],
+  "resumen": "Casas de subastas europeas siguen vendiendo piezas pese a las protestas de México. Desde 2018 México ha recuperado miles de bienes; las cifras oficiales varían según el corte.",
+  "afirmaciones": [
+   {
+    "texto": "En abril de 2026 se informó que México había recuperado unas 16,500 piezas desde 2018.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "publimetro2026"
+    ]
+   }
+  ],
+  "fichas": [],
+  "pendientes": [
+   "Cifra en un comunicado oficial del INAH o la Secretaría de Cultura."
+  ]
+ },
+ {
+  "id": "caso-enola",
+  "tipo": "biopirateria",
+  "titulo": "El frijol Enola",
+  "estado": "resuelto",
+  "fecha": {
+   "anio": 1999,
+   "texto": "1999–2009"
+  },
+  "lugar": "Sonora → Colorado",
+  "coords": [
+   29.1,
+   -110.95
+  ],
+  "resumen": "Un empresario de EUA patentó en 1999 un frijol amarillo comprado en Sonora y demandó a importadores mexicanos. Tras un reexamen, la oficina de patentes rechazó todas las reivindicaciones en 2008 y el tribunal federal lo confirmó en 2009.",
+  "afirmaciones": [
+   {
+    "texto": "La patente US 5,894,079 se concedió en 1999 para un frijol llamado Enola.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us5894079"
+    ]
+   },
+   {
+    "texto": "El análisis genético mostró que Enola era prácticamente idéntico a la variedad mexicana Azufrado Peruano 87.",
+    "solidez": "consenso",
+    "fuentes": [
+     "pallottini2004"
+    ]
+   },
+   {
+    "texto": "La junta de apelaciones de la oficina de patentes rechazó las reivindicaciones en 2008; el tribunal federal lo confirmó en 2009.",
+    "solidez": "consenso",
+    "fuentes": [
+     "bpai2008enola",
+     "etc2009"
+    ]
+   },
+   {
+    "texto": "La OMPI lo documenta como caso de estudio sobre conocimientos tradicionales y recursos genéticos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "wipotk"
+    ]
+   }
+  ],
+  "fichas": [
+   "frijol"
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "caso-pozol",
+  "tipo": "biopirateria",
+  "titulo": "La bacteria del pozol",
+  "estado": "resuelto",
+  "fecha": {
+   "anio": 1999,
+   "texto": "1999"
+  },
+  "lugar": "Chiapas → Minnesota",
+  "coords": [
+   16.75,
+   -93.11
+  ],
+  "resumen": "La Universidad de Minnesota y la empresa Quest International patentaron un cultivo de Bacillus subtilis aislado del pozol, bebida maya de maíz fermentado.",
+  "afirmaciones": [
+   {
+    "texto": "La patente US 5,919,695 cubre un cultivo bacteriano aislado del pozol con propiedades antimicrobianas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us5919695"
+    ]
+   },
+   {
+    "texto": "Google Patents la marca como expirada por falta de pago de cuotas. El inventario decía que se abandonó tras protestas; eso falta comprobarlo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "us5919695"
+    ]
+   }
+  ],
+  "fichas": [],
+  "pendientes": [
+   "Fuente sobre las protestas y su efecto en la patente."
+  ]
+ },
+ {
+  "id": "caso-barbasco",
+  "tipo": "biopirateria",
+  "titulo": "Barbasco: saber campesino, ganancia ajena",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1940,
+   "texto": "1940–1970"
+  },
+  "lugar": "Veracruz y Oaxaca",
+  "coords": [
+   18.0,
+   -95.8
+  ],
+  "resumen": "La industria hormonal mundial se construyó sobre un tubérculo recolectado por campesinos que recibieron muy poco.",
+  "afirmaciones": [
+   {
+    "texto": "Miles de campesinos recolectaban barbasco para la industria de esteroides; su papel quedó fuera de la historia oficial de la píldora.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sotolaveaga2009"
+    ]
+   }
+  ],
+  "fichas": [
+   "barbasco-pildora"
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "caso-psilocibina",
+  "tipo": "biopirateria",
+  "titulo": "Patentes de psilocibina",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 2020,
+   "texto": "década de 2020"
+  },
+  "lugar": "EUA y Europa",
+  "coords": [
+   40.7,
+   -74.0
+  ],
+  "resumen": "Empresas patentan formulaciones de psilocibina sin reconocimiento ni beneficio para los mazatecos.",
+  "afirmaciones": [
+   {
+    "texto": "Hay patentes recientes sobre formas y usos de la psilocibina.",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "fichas": [
+   "psilocibina"
+  ],
+  "pendientes": [
+   "Citar patentes concretas y una fuente sobre la falta de reparto de beneficios."
+  ]
+ },
+ {
+  "id": "caso-maiz-transgenico",
+  "tipo": "biopirateria",
+  "titulo": "Maíz nativo y transgénicos",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 2001,
+   "texto": "2001 a hoy"
+  },
+  "lugar": "Oaxaca; panel del T-MEC",
+  "coords": [
+   17.3,
+   -96.5
+  ],
+  "resumen": "Desde 2001 se debate la presencia de transgenes en maíz nativo de Oaxaca. En diciembre de 2024 un panel del T-MEC falló contra las restricciones mexicanas al maíz transgénico; en 2025 México elevó a la Constitución la prohibición de sembrarlo.",
+  "afirmaciones": [
+   {
+    "texto": "El panel del T-MEC publicó su informe final el 20 de diciembre de 2024 y dio la razón a EUA en todas sus reclamaciones.",
+    "solidez": "consenso",
+    "fuentes": [
+     "afs2024maiz"
+    ]
+   },
+   {
+    "texto": "En marzo de 2025 el Senado aprobó reformar los artículos 4 y 27 de la Constitución para prohibir la siembra de maíz transgénico.",
+    "solidez": "consenso",
+    "fuentes": [
+     "expansion2025maiz"
+    ]
+   }
+  ],
+  "fichas": [
+   "maiz"
+  ],
+  "pendientes": [
+   "Fecha de publicación de la reforma en el DOF.",
+   "Fuente sobre los transgenes en Oaxaca (2001)."
+  ]
+ },
+ {
+  "id": "caso-disney",
+  "tipo": "apropiacion",
+  "titulo": "Disney y la marca «Día de los Muertos»",
+  "estado": "resuelto",
+  "fecha": {
+   "anio": 2013,
+   "texto": "mayo de 2013"
+  },
+  "lugar": "Oficina de Patentes de EUA",
+  "coords": [
+   38.8,
+   -77.05
+  ],
+  "resumen": "Disney solicitó registrar «Día de los Muertos» como marca para una película de Pixar y lo retiró una semana después, tras las protestas. La película se estrenó en 2017 como Coco.",
+  "afirmaciones": [
+   {
+    "texto": "La solicitud se presentó el 1 de mayo de 2013 y se retiró pocos días después.",
+    "solidez": "consenso",
+    "fuentes": [
+     "kpbs2013"
+    ]
+   }
+  ],
+  "fichas": [
+   "dia-muertos"
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "caso-marant",
+  "tipo": "apropiacion",
+  "titulo": "Isabel Marant y la blusa de Tlahuitoltepec",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 2015,
+   "texto": "2015"
+  },
+  "lugar": "Santa María Tlahuitoltepec, Oaxaca",
+  "coords": [
+   17.1,
+   -96.06
+  ],
+  "resumen": "La comunidad mixe de Santa María Tlahuitoltepec acusó a Isabel Marant de copiar su blusa tradicional; la diseñadora reconoció ante un tribunal de París que el diseño venía del pueblo, en un litigio con otra marca francesa.",
+  "afirmaciones": [
+   {
+    "texto": "La comunidad acusó en 2015 a Isabel Marant de plagiar su blusa; la campaña #MiBlusaDeTlahui se volvió tendencia.",
+    "solidez": "consenso",
+    "fuentes": [
+     "globalvoices2015"
+    ]
+   }
+  ],
+  "fichas": [
+   "textiles"
+  ],
+  "pendientes": [
+   "Desenlace judicial."
+  ]
+ },
+ {
+  "id": "caso-herrera",
+  "tipo": "apropiacion",
+  "titulo": "Carolina Herrera y los bordados de Tenango",
+  "estado": "historico",
+  "fecha": {
+   "anio": 2019,
+   "texto": "junio de 2019"
+  },
+  "lugar": "Tenango de Doria, Hidalgo; Saltillo, Coahuila",
+  "coords": [
+   20.34,
+   -98.23
+  ],
+  "resumen": "La Secretaría de Cultura pidió a Carolina Herrera explicar el uso de bordados de Tenango de Doria, del sarape de Saltillo y del Istmo en su colección Resort 2020.",
+  "afirmaciones": [
+   {
+    "texto": "La secretaria de Cultura envió una carta a la marca pidiendo una explicación por el uso de diseños de pueblos originarios.",
+    "solidez": "consenso",
+    "fuentes": [
+     "expansion2019"
+    ]
+   }
+  ],
+  "fichas": [
+   "textiles"
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "caso-vulcanizacion",
+  "tipo": "saber_borrado",
+  "titulo": "El hule, 3,400 años antes de Goodyear",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1844,
+   "texto": "1600 a. C. → 1844"
+  },
+  "lugar": "El Manatí, Veracruz → Estados Unidos",
+  "coords": [
+   17.9,
+   -94.6
+  ],
+  "resumen": "Los pueblos del Golfo de México mezclaban látex con el jugo de una enredadera para hacer hule resistente desde hacia 1600 a. C. Cuando Charles Goodyear patentó la vulcanización en 1844, la historia industrial la contó como el comienzo del hule útil y dejó fuera a quienes ya lo procesaban.",
+  "afirmaciones": [
+   {
+    "texto": "Desde hacia 1600 a. C. se mezclaba látex de Castilla elastica con jugo de Ipomoea alba para obtener hule de distintas propiedades.",
+    "solidez": "consenso",
+    "fuentes": [
+     "hosler1999"
+    ]
+   },
+   {
+    "texto": "Variando la proporción se obtenían pelotas que rebotan, suelas resistentes al desgaste o bandas adhesivas: química de polímeros aplicada.",
+    "solidez": "consenso",
+    "fuentes": [
+     "tarkanian2011"
+    ]
+   },
+   {
+    "texto": "Goodyear patentó en 1844 el tratamiento del hule con azufre y calor.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us3633"
+    ]
+   }
+  ],
+  "reclamo": "Que la historia del hule empiece en el Golfo de México, con los olmecas, «la gente del país del hule», y no en una patente de 1844.",
+  "fichas": [
+   "hule",
+   "ulama"
+  ],
+  "pendientes": [
+   "Fuente sobre cómo los cronistas europeos describieron las pelotas de hule en el siglo XVI."
+  ]
+ },
+ {
+  "id": "caso-pelagra",
+  "tipo": "saber_borrado",
+  "titulo": "El maíz sin la cal: la pelagra",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1800,
+   "texto": "siglos XVIII y XIX"
+  },
+  "lugar": "Mesoamérica → Italia, España y sur de Estados Unidos",
+  "coords": [
+   18.0,
+   -97.0
+  ],
+  "resumen": "Europa adoptó el maíz pero no la nixtamalización, el cocimiento con cal que libera su niacina. Donde el maíz se volvió alimento base, miles de personas enfermaron de pelagra, una enfermedad que los pueblos de aquí habían evitado durante milenios.",
+  "afirmaciones": [
+   {
+    "texto": "Las sociedades americanas que dependían del maíz lo procesaban con álcali; las que no lo hacían eran raras.",
+    "solidez": "consenso",
+    "fuentes": [
+     "katz1974"
+    ]
+   },
+   {
+    "texto": "En la Italia del siglo XIX, la pelagra afectó a decenas de miles de personas que comían sobre todo maíz.",
+    "solidez": "consenso",
+    "fuentes": [
+     "ginnaio2011"
+    ]
+   }
+  ],
+  "reclamo": "Que el maíz viaje con su saber: la nixtamalización es tecnología mesoamericana y su ausencia costó miles de vidas.",
+  "fichas": [
+   "nixtamalizacion",
+   "maiz"
+  ],
+  "pendientes": []
+ },
+ {
+  "id": "caso-cempasuchil",
+  "tipo": "biopirateria",
+  "titulo": "El cempasúchil patentado y el pigmento que hoy se compra a China",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1995,
+   "texto": "1995 → hoy"
+  },
+  "lugar": "México → Estados Unidos, China e India",
+  "coords": [
+   19.26,
+   -99.1
+  ],
+  "resumen": "La flor de veinte pétalos se domesticó y se nombró aquí. Fuera de México se patentó cómo sacarle el pigmento amarillo, la luteína, y se patentaron híbridos de la planta, su semilla y su polen. La industria que México dominó hasta los noventa se fue a China, Perú e India, y hoy México le compra a China casi todo el pigmento que usa.",
+  "afirmaciones": [
+   {
+    "texto": "En 1995 se patentó en Estados Unidos un proceso para obtener luteína de la flor de cempasúchil (Tagetes erecta); la patente quedó a nombre de la Catholic University of America.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us5382714"
+    ]
+   },
+   {
+    "texto": "En 2005 Ball Horticultural obtuvo una patente sobre un híbrido de Tagetes erecta que cubre su semilla, la planta, su polen, sus óvulos y sus esquejes.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us6894208"
+    ]
+   },
+   {
+    "texto": "Una búsqueda de 2006 contó más de 130 patentes sobre el cempasúchil en el mundo, de empresas como BASF, SunGene y Ball Horticultural; varias tienen validez en México, aunque la planta es de aquí.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "ribeiro2006"
+    ]
+   },
+   {
+    "texto": "Entre 1960 y 1990 empresas mexicanas dominaban la industria de los pigmentos de cempasúchil; después llevaron la producción a China, Perú e India. Hoy México importa cerca del 90 % del pigmento que usa, casi todo de China.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "zamarron2021"
+    ]
+   },
+   {
+    "texto": "En 2024 los países de la OMPI acordaron un tratado que obliga a declarar en las solicitudes de patente el país de origen de los recursos genéticos; México firmó además el Protocolo de Nagoya sobre reparto de beneficios.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "ramos2024"
+    ]
+   }
+  ],
+  "reclamo": "Que el cempasúchil se reconozca como recurso genético de México y de sus pueblos: quien patente su semilla o venda su pigmento debe declarar su origen y compartir los beneficios.",
+  "fichas": [
+   "cempasuchil"
+  ],
+  "pendientes": [
+   "Contrastar en una base de patentes la cifra de más de 130 patentes.",
+   "Saber si alguna patente declaró el origen mexicano de la planta."
+  ]
+ },
+ {
+  "id": "caso-tenochtitlan",
+  "tipo": "saber_borrado",
+  "titulo": "La destrucción de Tenochtitlan",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1521,
+   "texto": "mayo a agosto de 1521"
+  },
+  "lugar": "Tenochtitlan, hoy Ciudad de México",
+  "coords": [
+   19.435,
+   -99.133
+  ],
+  "resumen": "Una de las ciudades más grandes del mundo fue sitiada durante meses y arrasada casa por casa. Sus templos se desmontaron y con sus piedras se levantó la ciudad colonial. Lo que hoy se ve del Templo Mayor salió de excavaciones del siglo XX.",
+  "afirmaciones": [
+   {
+    "texto": "El sitio terminó el 13 de agosto de 1521 con la captura de Cuauhtémoc; los relatos nahuas del Códice Florentino describen el hambre, la peste y la matanza en la ciudad sitiada.",
+    "solidez": "consenso",
+    "fuentes": [
+     "sahagun1577",
+     "diazdelcastillo1632"
+    ]
+   },
+   {
+    "texto": "Cortés narra al rey que, para avanzar, mandó derribar y quemar las casas de la ciudad.",
+    "solidez": "consenso",
+    "fuentes": [
+     "cortes1522"
+    ]
+   },
+   {
+    "texto": "El Templo Mayor fue derribado y sus materiales se reutilizaron en las construcciones españolas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "britannica-templomayor"
+    ]
+   }
+  ],
+  "reclamo": "Que Tenochtitlan se cuente como lo que fue: una ciudad destruida por una guerra de conquista, no una ciudad que «cayó».",
+  "fichas": [
+   "ciudades",
+   "chinampas"
+  ],
+  "pendientes": [
+   "Citar el pasaje exacto de la tercera carta y una fuente del INAH sobre el Templo Mayor."
+  ]
+ },
+ {
+  "id": "caso-matanzas",
+  "tipo": "saber_borrado",
+  "titulo": "Las matanzas de Cholula y del Templo Mayor",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1520,
+   "texto": "octubre de 1519 y mayo de 1520"
+  },
+  "lugar": "Cholula y Tenochtitlan",
+  "coords": [
+   19.06,
+   -98.3
+  ],
+  "resumen": "En Cholula, las tropas de Cortés mataron a cientos de personas en el patio del templo. Meses después, en la fiesta de Tóxcatl, los hombres de Pedro de Alvarado atacaron a una multitud desarmada que celebraba a Huitzilopochtli. Los relatos nahuas lo cuentan como una masacre premeditada; los españoles lo negaron o lo justificaron.",
+  "afirmaciones": [
+   {
+    "texto": "En la fiesta de Tóxcatl de mayo de 1520, los españoles al mando de Alvarado entraron al patio del templo y atacaron a la gente desarmada que bailaba.",
+    "solidez": "consenso",
+    "fuentes": [
+     "sahagun1577",
+     "sousaterraciano-toxcatl"
+    ]
+   },
+   {
+    "texto": "Los relatos españoles niegan, minimizan o justifican la matanza; Cortés no la menciona en su carta al rey.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sousaterraciano-toxcatl"
+    ]
+   },
+   {
+    "texto": "Bernal Díaz, soldado de Cortés, narra la matanza de Cholula y la presenta como castigo a una conspiración.",
+    "solidez": "consenso",
+    "fuentes": [
+     "diazdelcastillo1632"
+    ]
+   },
+   {
+    "texto": "En 2019, México pidió por carta al rey de España que reconociera los abusos de la Conquista; el gobierno español rechazó la petición «con toda firmeza».",
+    "solidez": "consenso",
+    "fuentes": [
+     "expansion2019disculpa"
+    ]
+   },
+   {
+    "texto": "En 2021, el Estado mexicano pidió perdón al pueblo maya por los abusos de la Conquista, de la Colonia y de dos siglos de México independiente.",
+    "solidez": "consenso",
+    "fuentes": [
+     "aljazeera2021"
+    ]
+   }
+  ],
+  "reclamo": "Que se nombren como matanzas de población desarmada y que la Corona española responda la petición de 2019.",
+  "fichas": [],
+  "pendientes": [
+   "Agregar una fuente académica sobre el número de muertos de Cholula, que varía mucho según el relato."
+  ]
+ },
+ {
+  "id": "caso-cocoliztli",
+  "tipo": "saber_borrado",
+  "titulo": "El cocoliztli: la gran mortandad",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1545,
+   "texto": "1545–1548 y 1576–1578"
+  },
+  "lugar": "Centro y sur de México",
+  "coords": [
+   17.51,
+   -97.48
+  ],
+  "resumen": "Tras la viruela de 1520 llegaron dos epidemias que los nahuas llamaron cocoliztli, «pestilencia». Murieron millones de personas, y con ellas los médicos, los sabios y los hablantes que guardaban el saber de cada pueblo.",
+  "afirmaciones": [
+   {
+    "texto": "Las epidemias de cocoliztli de 1545 y 1576 mataron, según las estimaciones, entre 5 y 15 millones de personas y hasta el 80% de la población indígena.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "acunasoto2002"
+    ]
+   },
+   {
+    "texto": "El ADN antiguo de víctimas de Teposcolula-Yucundaa, Oaxaca, contiene Salmonella enterica Paratyphi C, una causa candidata de la epidemia de 1545.",
+    "solidez": "debate",
+    "fuentes": [
+     "vagene2018"
+    ]
+   },
+   {
+    "texto": "Acuña-Soto y colegas proponen que fue una fiebre hemorrágica agravada por una megasequía.",
+    "solidez": "debate",
+    "fuentes": [
+     "acunasoto2002"
+    ]
+   }
+  ],
+  "reclamo": "Que el derrumbe demográfico se cuente como parte de la Conquista y no como un accidente natural: la guerra, el hambre y el trabajo forzado lo agravaron.",
+  "fichas": [],
+  "pendientes": [
+   "Fuente sobre el papel del trabajo forzado y la encomienda en la mortalidad."
+  ]
+ },
+ {
+  "id": "caso-museo-1985",
+  "tipo": "saqueo",
+  "titulo": "El robo al Museo Nacional de Antropología",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 1985,
+   "texto": "25 de diciembre de 1985"
+  },
+  "lugar": "Museo Nacional de Antropología, Ciudad de México",
+  "coords": [
+   19.426,
+   -99.186
+  ],
+  "resumen": "En la madrugada de Navidad de 1985, dos estudiantes entraron por los ductos del aire acondicionado y se llevaron 124 piezas de las salas maya, mixteca y mexica. En 1989 la policía recuperó 111. Las demás siguen sin volver.",
+  "afirmaciones": [
+   {
+    "texto": "El 25 de diciembre de 1985 fueron robadas 124 piezas, entre ellas la máscara zapoteca del dios murciélago, objetos del cenote sagrado de Chichén Itzá y joyas de oro mixtecas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "elsiglo2025",
+     "lanacion2024"
+    ]
+   },
+   {
+    "texto": "El 10 de junio de 1989 se recuperaron 111 piezas en una casa de Ciudad Satélite; el resto no ha vuelto completo al museo.",
+    "solidez": "consenso",
+    "fuentes": [
+     "elsiglo2025"
+    ]
+   }
+  ],
+  "reclamo": "Que las piezas que faltan sigan buscándose y se registren en las bases de bienes culturales robados.",
+  "fichas": [],
+  "pendientes": [
+   "Confirmar en una fuente oficial del INAH cuántas piezas faltan hoy."
+  ]
+ },
+ {
+  "id": "caso-medicina",
+  "tipo": "saber_borrado",
+  "titulo": "La medicina nahua sin sus médicos",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1552,
+   "texto": "siglo XVI"
+  },
+  "lugar": "Tlatelolco y el centro de México",
+  "coords": [
+   19.45,
+   -99.14
+  ],
+  "resumen": "Los médicos nahuas, los ticitl, tenían remedios que funcionaban y un vocabulario detallado del cuerpo humano. Ese saber se copió en libros europeos, se catalogó como «superstición» o se atribuyó a quienes lo transcribieron.",
+  "afirmaciones": [
+   {
+    "texto": "El análisis de remedios nahuas del siglo XVI con farmacología moderna muestra que buena parte tenía efectos reales, no solo simbólicos.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "ortizdemontellano1975"
+    ]
+   },
+   {
+    "texto": "El libro X del Códice Florentino contiene un inventario de las partes del cuerpo en náhuatl, dictado por médicos indígenas a Sahagún.",
+    "solidez": "consenso",
+    "fuentes": [
+     "sahagun1577",
+     "lopezaustin1980"
+    ]
+   },
+   {
+    "texto": "El herbario de 1552 del médico nahua Martín de la Cruz se conoció en Europa con el nombre de su traductor, Badiano.",
+    "solidez": "consenso",
+    "fuentes": [
+     "cruzbadiano"
+    ]
+   }
+  ],
+  "reclamo": "Que la medicina nahua se cite por sus autores, los ticitl, y no por los europeos que la copiaron.",
+  "fichas": [
+   "cruz-badiano",
+   "herbolaria-hernandez"
+  ],
+  "pendientes": [
+   "Fuente sobre la pérdida de los manuscritos originales de Francisco Hernández en el incendio de El Escorial de 1671."
+  ]
+ },
+ {
+  "id": "caso-lenguas",
+  "tipo": "saber_borrado",
+  "titulo": "Las lenguas que se pierden",
+  "estado": "abierto",
+  "fecha": {
+   "anio": 2012,
+   "texto": "de la Conquista a hoy"
+  },
+  "lugar": "Todo México",
+  "coords": [
+   18.16,
+   -100.39
+  ],
+  "resumen": "Cada lengua guarda nombres de plantas, de lugares y de saberes que no existen en otra. Algunas ya se extinguieron, como el cuitlateco de Guerrero. Según el INALI, 64 de las 364 variantes del país están en muy alto riesgo de desaparecer.",
+  "afirmaciones": [
+   {
+    "texto": "De las 364 variantes lingüísticas del país, 64 están en muy alto riesgo de desaparición, 43 en alto y 72 en mediano.",
+    "solidez": "consenso",
+    "fuentes": [
+     "inali2012"
+    ]
+   },
+   {
+    "texto": "El cuitlateco, lengua de Guerrero sin parientes conocidos, está extinto.",
+    "solidez": "consenso",
+    "fuentes": [
+     "glottolog-cuitlateco"
+    ]
+   }
+  ],
+  "reclamo": "Que las lenguas originarias tengan escuelas, medios y servicios públicos en su propia lengua, para que no sigan perdiéndose.",
+  "fichas": [
+   "lenguas-vivas",
+   "palabras-nahuatl"
+  ],
+  "pendientes": [
+   "Fuente sobre la real cédula de 1770 que ordenaba extinguir las lenguas indígenas.",
+   "Fuente sobre otras lenguas extintas, como el chiapaneco."
+  ]
+ },
+ {
+  "id": "caso-estados",
+  "tipo": "saber_borrado",
+  "titulo": "El fin de los gobiernos originarios",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1530,
+   "texto": "1525–1530"
+  },
+  "lugar": "Tenochtitlan y Tzintzuntzan",
+  "coords": [
+   19.63,
+   -101.58
+  ],
+  "resumen": "La Conquista no solo tomó territorio: desmontó los gobiernos que existían. Cuauhtémoc, último tlatoani mexica, fue ahorcado en 1525. El cazonci purépecha, que había recibido a los españoles en paz, fue quemado en 1530 por orden de Nuño de Guzmán.",
+  "afirmaciones": [
+   {
+    "texto": "Cuauhtémoc fue ejecutado por orden de Cortés en 1525, durante la expedición a las Hibueras.",
+    "solidez": "consenso",
+    "fuentes": [
+     "diazdelcastillo1632"
+    ]
+   },
+   {
+    "texto": "La Relación de Michoacán, escrita con informantes purépechas, cierra con la muerte del cazonci a manos de Nuño de Guzmán.",
+    "solidez": "consenso",
+    "fuentes": [
+     "relacionmichoacan1541"
+    ]
+   }
+  ],
+  "reclamo": "Que se cuente que había Estados con gobierno, leyes y tributo, y que fueron desmontados por la fuerza.",
+  "fichas": [
+   "educacion"
+  ],
+  "pendientes": [
+   "Fuente académica sobre el fin del calmecac y del Colegio de Santa Cruz de Tlatelolco (p. ej., Alberro, 2014)."
+  ]
+ },
+ {
+  "id": "caso-especies",
+  "tipo": "saber_borrado",
+  "titulo": "Las especies que México perdió",
+  "estado": "historico",
+  "fecha": {
+   "anio": 1956,
+   "texto": "siglo XX"
+  },
+  "lugar": "Isla Guadalupe y Sierra Madre Occidental",
+  "coords": [
+   24.0,
+   -105.5
+  ],
+  "resumen": "Algunos animales que solo vivían en México ya no existen. El caracara de la isla Guadalupe se extinguió a principios del siglo XX. El carpintero imperial, el más grande del mundo, solo quedó en una película de 1956.",
+  "afirmaciones": [
+   {
+    "texto": "El caracara de Guadalupe (Caracara lutosa), endémico de la isla Guadalupe, Baja California, está clasificado como extinto.",
+    "solidez": "consenso",
+    "fuentes": [
+     "iucn2021caracara"
+    ]
+   },
+   {
+    "texto": "El carpintero imperial (Campephilus imperialis), el carpintero más grande del mundo, probablemente se extinguió a finales del siglo XX por la caza y la tala de los pinos grandes.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "lammertink2011"
+    ]
+   }
+  ],
+  "reclamo": "Que las especies que quedan se protejan antes de que se pierdan, y con ellas los nombres y saberes que los pueblos tenían de ellas.",
+  "fichas": [
+   "ajolote"
+  ],
+  "pendientes": [
+   "Fuente sobre el oso pardo mexicano y el lobo mexicano."
+  ]
+ }
+]

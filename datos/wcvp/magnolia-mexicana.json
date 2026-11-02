@@ -1,0 +1,17 @@
+{
+ "especie": "Magnolia mexicana",
+ "estado": "ok",
+ "gbif": 207254788,
+ "nombre_aceptado": "Magnolia mexicana DC.",
+ "url": "https://www.gbif.org/species/207254788",
+ "nativa": [
+  "GUA",
+  "MXC",
+  "MXE",
+  "MXG",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [],
+ "fecha": "2026-11-01"
+}

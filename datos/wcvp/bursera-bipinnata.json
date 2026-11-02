@@ -1,0 +1,20 @@
+{
+ "especie": "Bursera bipinnata",
+ "estado": "ok",
+ "gbif": 206821274,
+ "nombre_aceptado": "Bursera bipinnata (Moc. & Sessé ex DC.) Engl.",
+ "url": "https://www.gbif.org/species/206821274",
+ "nativa": [
+  "ELS",
+  "GUA",
+  "HON",
+  "MXC",
+  "MXE",
+  "MXG",
+  "MXN",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [],
+ "fecha": "2026-11-01"
+}

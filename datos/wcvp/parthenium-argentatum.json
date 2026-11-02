@@ -1,0 +1,21 @@
+{
+ "especie": "Parthenium argentatum",
+ "estado": "ok",
+ "gbif": 206735575,
+ "nombre_aceptado": "Parthenium argentatum A.Gray",
+ "url": "https://www.gbif.org/species/206735575",
+ "nativa": [
+  "MXE",
+  "MXS",
+  "TEX"
+ ],
+ "introducida": [
+  "ARI",
+  "BZL",
+  "KRY",
+  "TCS",
+  "TZK",
+  "UKR"
+ ],
+ "fecha": "2026-11-01"
+}

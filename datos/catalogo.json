@@ -1,0 +1,486 @@
+{
+ "version": 1,
+ "principios": [
+  {
+   "id": "defensa",
+   "nombre": "Defender con pruebas",
+   "texto": "El sitio toma partido por el patrimonio de México. Por eso cada reclamo se sostiene con una fuente comprobable: un alegato sin pruebas se pierde."
+  },
+  {
+   "id": "identidad",
+   "nombre": "Una cosa, una ficha",
+   "texto": "Cada aporte existe una sola vez. Las secciones, los mapas y los recorridos son vistas que lo citan; ninguna lo duplica."
+  },
+  {
+   "id": "pregunta",
+   "nombre": "Un eje, una pregunta",
+   "texto": "Cada clasificación responde a una sola pregunta, y sus valores se excluyen entre sí. Si un dato responde otra pregunta, va en otro eje."
+  },
+  {
+   "id": "afirmacion",
+   "nombre": "La afirmación es la unidad de verdad",
+   "texto": "La solidez y las fuentes se asignan a cada afirmación, no a la ficha entera: la cría de la grana y el origen de la especie no tienen la misma certeza."
+  },
+  {
+   "id": "vara",
+   "nombre": "La misma vara",
+   "texto": "Las mismas líneas de evidencia se aplican a México y a cualquier otra región. Un resto aislado prueba presencia, no tradición, aquí y allá."
+  },
+  {
+   "id": "separar",
+   "nombre": "Lo aportado no es lo que le pasó",
+   "texto": "Los aportes, los casos (saqueo, biopiratería, apropiación) y los nombres que borran el origen son cosas distintas y viven en lugares distintos."
+  },
+  {
+   "id": "abstencion",
+   "nombre": "Sin fuente, no se afirma",
+   "texto": "Una afirmación sin fuente se muestra como pendiente, nunca como dato. La ficha dice qué falta."
+  },
+  {
+   "id": "verificador",
+   "nombre": "El verificador también se verifica",
+   "texto": "Un programa revisa que cada clasificación exista, que cada afirmación tenga fuente y que cada fuente exista y coincida con su registro. Sus cifras se publican."
+  }
+ ],
+ "ambitos": [
+  {
+   "id": "alimentacion",
+   "nombre": "Alimentación",
+   "pregunta": "¿Se come o se bebe, o es una forma de prepararlo?",
+   "incluye": "Cultivos comestibles, animales de consumo, bebidas, platos y técnicas de cocina.",
+   "excluye": "La forma de cultivar la tierra va en Agricultura.",
+   "color": "#b8862f",
+   "icono": "mazorca"
+  },
+  {
+   "id": "agricultura",
+   "nombre": "Agricultura",
+   "pregunta": "¿Es una forma de cultivar la tierra?",
+   "incluye": "Sistemas de cultivo y de manejo del paisaje.",
+   "excluye": "Lo que se cosecha va en su propio ámbito.",
+   "color": "#3d6252",
+   "icono": "milpa"
+  },
+  {
+   "id": "color",
+   "nombre": "Color",
+   "pregunta": "¿Se usa para dar color?",
+   "incluye": "Tintes, pigmentos y colorantes, sean de planta, insecto o mineral.",
+   "excluye": "Si el mundo lo usa sobre todo para comer, va en Alimentación; el textil ya teñido va en Artes y oficios.",
+   "color": "#9b2335",
+   "icono": "gota"
+  },
+  {
+   "id": "materiales",
+   "nombre": "Materiales",
+   "pregunta": "¿Con él se fabrican objetos?",
+   "incluye": "Fibras, hule, papel, gomas y resinas industriales.",
+   "excluye": "La resina que se quema en ceremonias va en Ritual y fiesta.",
+   "color": "#7a5a3a",
+   "icono": "fibra"
+  },
+  {
+   "id": "ornato",
+   "nombre": "Plantas de ornato",
+   "pregunta": "¿Se cultiva por su belleza o su aroma?",
+   "incluye": "Flores de jardín y de corte, suculentas, plantas de perfumería.",
+   "excluye": "Una flor que se usa sobre todo para curar va en Salud.",
+   "color": "#d27b26",
+   "icono": "flor"
+  },
+  {
+   "id": "salud",
+   "nombre": "Salud",
+   "pregunta": "¿Se usa para curar o para investigar el cuerpo?",
+   "incluye": "Herbolaria documentada, fármacos, sustancias de uso terapéutico y animales modelo de la biomedicina.",
+   "excluye": "La ceremonia en sí (ofrenda, fiesta, baño ritual) va en Ritual y fiesta; aquí va la sustancia que el mundo recibió como remedio, fármaco u objeto de investigación.",
+   "color": "#2f7480",
+   "icono": "hoja"
+  },
+  {
+   "id": "conocimiento",
+   "nombre": "Conocimiento y técnica",
+   "pregunta": "¿Es una forma de contar, escribir, medir el tiempo, organizar la vida o un invento técnico?",
+   "incluye": "Matemáticas, escritura, calendarios, urbanismo, educación e inventos.",
+   "excluye": "Las técnicas de cocina van en Alimentación; las de cultivo, en Agricultura.",
+   "color": "#2c4a7a",
+   "icono": "glifo"
+  },
+  {
+   "id": "ritual",
+   "nombre": "Ritual y fiesta",
+   "pregunta": "¿Se practica en ceremonias o celebraciones?",
+   "incluye": "Fiestas, ceremonias, juegos rituales, ofrendas y los seres vinculados a ellas.",
+   "excluye": "Una sustancia sagrada que el mundo recibió como fármaco va en Salud; la música o el oficio que el mundo recibió como arte van en Artes y oficios.",
+   "color": "#6b3a6b",
+   "icono": "copal"
+  },
+  {
+   "id": "artes",
+   "nombre": "Artes y oficios",
+   "pregunta": "¿Es una forma de crear imágenes, objetos, música o diseño?",
+   "incluye": "Textiles, artesanías, pintura, música y diseño.",
+   "excluye": "Las danzas y fiestas que son sobre todo ceremonia van en Ritual y fiesta; los tintes y pigmentos, en Color.",
+   "color": "#a8325e",
+   "icono": "telar"
+  },
+  {
+   "id": "lengua",
+   "nombre": "Lengua",
+   "pregunta": "¿Son palabras o lenguas?",
+   "incluye": "Lenguas vivas y palabras que el mundo tomó de ellas.",
+   "excluye": "El nombre de una planta concreta va en su ficha, en Nombres originales.",
+   "color": "#4a4540",
+   "icono": "voluta"
+  }
+ ],
+ "naturalezas": [
+  {
+   "id": "planta",
+   "nombre": "Planta"
+  },
+  {
+   "id": "animal",
+   "nombre": "Animal"
+  },
+  {
+   "id": "hongo",
+   "nombre": "Hongo"
+  },
+  {
+   "id": "tecnica",
+   "nombre": "Técnica",
+   "texto": "Una manera de hacer: proceso, sistema, tecnología."
+  },
+  {
+   "id": "saber",
+   "nombre": "Saber",
+   "texto": "Un conocimiento o sistema de pensamiento."
+  },
+  {
+   "id": "practica",
+   "nombre": "Práctica",
+   "texto": "Algo que se vive: fiesta, ceremonia, juego, cocina."
+  },
+  {
+   "id": "obra",
+   "nombre": "Obra",
+   "texto": "Una creación con forma concreta: plato, artesanía, pintura, música."
+  },
+  {
+   "id": "lengua",
+   "nombre": "Lengua",
+   "texto": "Palabras y lenguas."
+  }
+ ],
+ "pregunta_naturaleza": "¿Qué es?",
+ "actos": [
+  {
+   "id": "nativo",
+   "nombre": "Nativo",
+   "marca": "N",
+   "texto": "La especie, o su ancestro silvestre, ya existía aquí antes de la gente."
+  },
+  {
+   "id": "domesticado",
+   "nombre": "Domesticado",
+   "marca": "D",
+   "texto": "Aquí la gente la convirtió en cultivo o en animal de cría, seleccionándola durante generaciones."
+  },
+  {
+   "id": "creado",
+   "nombre": "Creado",
+   "marca": "C",
+   "texto": "Aquí se inventó la técnica, el saber, la práctica o la obra."
+  },
+  {
+   "id": "nombrado",
+   "nombre": "Nombrado",
+   "marca": "P",
+   "texto": "El mundo lo llama con una palabra de una lengua de aquí."
+  }
+ ],
+ "pregunta_actos": "¿Qué hizo aquí la gente? (puede ser más de una cosa)",
+ "territorios": [
+  {
+   "id": "mexico",
+   "nombre": "México",
+   "texto": "La evidencia más antigua está dentro del territorio actual de México, aunque después se compartiera con otros pueblos de Mesoamérica."
+  },
+  {
+   "id": "mesoamerica",
+   "nombre": "Mesoamérica",
+   "texto": "La evidencia más antigua está fuera de México, abarca varias regiones a la vez o todavía no permite situarla."
+  }
+ ],
+ "pregunta_territorio": "¿Dónde está la evidencia más antigua del aporte?",
+ "epocas": [
+  {
+   "id": "antigua",
+   "nombre": "Antes de 1521",
+   "texto": "Obra de los pueblos originarios antes de la conquista."
+  },
+  {
+   "id": "virreinal",
+   "nombre": "1521–1821",
+   "texto": "Nueva España: creaciones mestizas o de los pueblos bajo el dominio colonial."
+  },
+  {
+   "id": "moderna",
+   "nombre": "Desde 1821",
+   "texto": "México independiente; suele tener autoría identificable."
+  }
+ ],
+ "pregunta_epoca": "¿Cuándo ocurrió?",
+ "clases": [
+  {
+   "id": "aporte",
+   "nombre": "Aporte",
+   "texto": "Algo que el mundo recibió de aquí."
+  },
+  {
+   "id": "deslinde",
+   "nombre": "Deslinde",
+   "texto": "Algo que suele atribuirse a México y no le pertenece, o no del modo en que se dice. Se publica para aplicar la misma vara."
+  }
+ ],
+ "solidez": [
+  {
+   "id": "consenso",
+   "nombre": "Consenso",
+   "texto": "Acuerdo científico o histórico amplio."
+  },
+  {
+   "id": "sustentada",
+   "nombre": "Sustentada",
+   "texto": "Bien sustentada, con matices o cifras por precisar."
+  },
+  {
+   "id": "debate",
+   "nombre": "En debate",
+   "texto": "Hay hipótesis en competencia; se presenta como debate, no como hecho."
+  }
+ ],
+ "pregunta_solidez": "¿Cuánto acuerdo hay sobre esta afirmación?",
+ "verificacion": [
+  {
+   "id": "pendiente",
+   "nombre": "Pendiente",
+   "texto": "Sin fuente. No se presenta como dato."
+  },
+  {
+   "id": "citada",
+   "nombre": "Citada",
+   "texto": "Tiene fuente, pero el verificador aún no comprobó que la fuente exista y coincida."
+  },
+  {
+   "id": "comprobada",
+   "nombre": "Fuente comprobada",
+   "texto": "El verificador comprobó que cada fuente existe y coincide con su registro (DOI en Crossref o página en línea). No sustituye la lectura del pasaje por una persona."
+  }
+ ],
+ "pregunta_verificacion": "¿Qué se comprobó de sus fuentes?",
+ "documentacion": [
+  {
+   "id": "inventario",
+   "nombre": "En investigación",
+   "texto": "El veredicto aún no tiene fuente."
+  },
+  {
+   "id": "ficha",
+   "nombre": "Ficha",
+   "texto": "El veredicto tiene fuente."
+  },
+  {
+   "id": "expediente",
+   "nombre": "Expediente",
+   "texto": "Además, responde a lo que se dice en contra y compara regiones con las líneas de evidencia."
+  }
+ ],
+ "lineas_evidencia": [
+  {
+   "id": "aislada",
+   "n": 1,
+   "nombre": "Presencia aislada",
+   "texto": "Un resto en un objeto o en pocos. Prueba contacto o comercio, no tradición.",
+   "sostiene_tradicion": false
+  },
+  {
+   "id": "recurrente",
+   "n": 2,
+   "nombre": "Presencia recurrente",
+   "texto": "Muchos hallazgos en varios sitios y a lo largo de siglos.",
+   "sostiene_tradicion": false
+  },
+  {
+   "id": "produccion",
+   "n": 3,
+   "nombre": "Producción local",
+   "texto": "Cultivo, cría, talleres o rasgos seleccionados a lo largo del tiempo.",
+   "sostiene_tradicion": true
+  },
+  {
+   "id": "nombre",
+   "n": 4,
+   "nombre": "Nombre propio",
+   "texto": "Palabra para la planta, el animal o el producto en la lengua local.",
+   "sostiene_tradicion": true
+  },
+  {
+   "id": "testimonio",
+   "n": 5,
+   "nombre": "Testimonio escrito o pictográfico",
+   "texto": "Códices, registros de tributo o crónicas tempranas que describen su uso.",
+   "sostiene_tradicion": true
+  }
+ ],
+ "regla_tradicion": "La palabra «tradición» exige al menos una de las líneas 3, 4 o 5, idealmente combinadas. Las líneas 1 y 2 solo prueban presencia.",
+ "borrado": [
+  {
+   "id": "nombre_ajeno",
+   "nombre": "Nombre ajeno",
+   "pregunta": "¿El nombre señala otro país, otra persona u otro pueblo?"
+  },
+  {
+   "id": "identidad_ajena",
+   "nombre": "Identidad ajena",
+   "pregunta": "¿Otro país se volvió sinónimo de su versión famosa o de su producción?"
+  },
+  {
+   "id": "sustituto",
+   "nombre": "Sustituto",
+   "pregunta": "¿Un sintético o una imitación ocupa su lugar?"
+  },
+  {
+   "id": "etiqueta_muda",
+   "nombre": "Etiqueta muda",
+   "pregunta": "¿La etiqueta o el mercado lo nombran sin decir de dónde viene?"
+  },
+  {
+   "id": "conserva",
+   "nombre": "Conserva su origen",
+   "pregunta": "¿El nombre que usa el mundo guarda la huella de su origen?"
+  }
+ ],
+ "tipos_caso": [
+  {
+   "id": "saqueo",
+   "nombre": "Saqueo",
+   "pregunta": "¿Se extrajeron, destruyeron o trasladaron bienes sin consentimiento?",
+   "color": "#812d37"
+  },
+  {
+   "id": "biopirateria",
+   "nombre": "Biopiratería",
+   "pregunta": "¿Se patentó o comercializó un recurso genético o un saber sin consentimiento ni reparto de beneficios?",
+   "color": "#3d6252"
+  },
+  {
+   "id": "apropiacion",
+   "nombre": "Apropiación cultural",
+   "pregunta": "¿Se usaron diseños, nombres o prácticas de un pueblo sin crédito ni consentimiento?",
+   "color": "#245b70"
+  },
+  {
+   "id": "saber_borrado",
+   "nombre": "Saber borrado",
+   "pregunta": "¿Se destruyó o se borró lo que un pueblo sabía, hablaba, construyó o cuidaba —sus libros, ciudades, gobiernos, lenguas, especies, su propia gente—, o el mundo tomó el producto y atribuyó su saber a otros?",
+   "color": "#c99538"
+  }
+ ],
+ "estados_caso": [
+  {
+   "id": "abierto",
+   "nombre": "Abierto",
+   "texto": "La disputa o la reclamación sigue."
+  },
+  {
+   "id": "resuelto",
+   "nombre": "Resuelto",
+   "texto": "Hubo devolución, revocación o retiro."
+  },
+  {
+   "id": "historico",
+   "nombre": "Histórico",
+   "texto": "Ocurrió y no admite reparación directa."
+  }
+ ],
+ "tipos_fuente": [
+  {
+   "id": "articulo",
+   "nombre": "Artículo revisado por pares",
+   "rango": 1
+  },
+  {
+   "id": "libro",
+   "nombre": "Libro académico",
+   "rango": 1
+  },
+  {
+   "id": "oficial",
+   "nombre": "Documento oficial",
+   "rango": 1,
+   "texto": "Leyes, decretos, patentes, listas de la UNESCO o la FAO, censos."
+  },
+  {
+   "id": "base",
+   "nombre": "Base de datos científica",
+   "rango": 1
+  },
+  {
+   "id": "primaria",
+   "nombre": "Fuente histórica",
+   "rango": 2,
+   "texto": "Códices, crónicas y diarios de época: testimonio, no verificación."
+  },
+  {
+   "id": "institucion",
+   "nombre": "Institución o museo",
+   "rango": 2
+  },
+  {
+   "id": "consulta",
+   "nombre": "Obra de consulta",
+   "rango": 2,
+   "texto": "Diccionarios y enciclopedias."
+  },
+  {
+   "id": "prensa",
+   "nombre": "Prensa",
+   "rango": 3,
+   "texto": "Para hechos recientes y públicos, no para cuestiones científicas."
+  }
+ ],
+ "alcance": [
+  {
+   "id": "mundial",
+   "nombre": "Cambió al mundo",
+   "texto": "Hoy forma parte de la vida diaria de buena parte de la humanidad, en todos los continentes."
+  },
+  {
+   "id": "amplio",
+   "nombre": "Muy extendido",
+   "texto": "Se usa o se reconoce en muchos países, aunque no a diario en todas partes."
+  },
+  {
+   "id": "regional",
+   "nombre": "Conocido fuera",
+   "texto": "Se conoce fuera de México, sobre todo en América o entre especialistas."
+  },
+  {
+   "id": "local",
+   "nombre": "Sobre todo aquí",
+   "texto": "Vive sobre todo en México; el mundo apenas lo conoce."
+  }
+ ],
+ "pregunta_alcance": "¿Cuánto llegó al mundo?",
+ "nota_alcance": "El alcance es una valoración editorial. Junto a él se muestra un indicador medible: en cuántas ediciones de Wikipedia tiene artículo.",
+ "postura": {
+  "titulo": "Este sitio defiende",
+  "texto": "Procedencia no es neutral: existe para defender el patrimonio de México y de sus pueblos originarios frente al saqueo, a la desterritorialización y al borrado de su autoría. Como en un alegato, la fuerza está en la prueba: cada afirmación lleva su fuente y cada fuente fue comprobada. Cuando otro país reclama un origen, el sitio expone su argumento y muestra por qué la evidencia lo pone aquí. Lo que no se puede probar todavía queda como pendiente y no se reclama, para no debilitar los reclamos que sí están probados."
+ },
+ "manifiesto": {
+  "creencia": "Creemos que a México y a sus pueblos originarios los han despojado de muchos de sus aportes. El mundo cree suyos alimentos, flores, saberes y nombres que nacieron aquí: el chile del kimchi, la flor de las guirnaldas de India, el hule que se atribuye a Goodyear.",
+  "objetivo": "Divulgar esta información y dignificar a nuestros pueblos originarios y su aporte al mundo. Cada aporte lleva el nombre que le dieron quienes lo crearon, y cada afirmación, una fuente que cualquiera puede comprobar."
+ }
+}

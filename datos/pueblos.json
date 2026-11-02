@@ -1,0 +1,368 @@
+[
+ {
+  "id": "olmecas",
+  "nombre": "Olmecas",
+  "nombre_propio": null,
+  "lengua": "Probablemente mixe-zoque",
+  "region": "Sur de Veracruz y Tabasco",
+  "periodo": "hacia 1400–400 a. C.",
+  "inicio": -1400,
+  "coords": [
+   17.75,
+   -94.76
+  ],
+  "territorio": "mexico",
+  "en_breve": "La primera gran civilización de Mesoamérica, toda dentro del actual México. Su centro de San Lorenzo sirvió de modelo a los primeros centros mayas. «Olmeca» es un nombre náhuatl posterior: «gente del país del hule».",
+  "afirmaciones": [
+   {
+    "texto": "San Lorenzo, el centro olmeca más antiguo, tenía un espacio rectangular central que probablemente sirvió de plantilla a sitios posteriores de la región olmeca y del occidente maya.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inomata2021"
+    ]
+   },
+   {
+    "texto": "«Olmeca» significa en náhuatl «gente del país del hule»; no se sabe cómo se llamaban a sí mismos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "karttunen1983"
+    ]
+   }
+  ],
+  "heredan": [
+   "mayas"
+  ],
+  "fin": -400,
+  "fuentes_periodo": [
+   "diehl2004"
+  ]
+ },
+ {
+  "id": "mayas",
+  "nombre": "Mayas",
+  "nombre_propio": "maaya (maya yucateco), entre otros",
+  "lengua": "Familia mayense (en México: maya, tseltal, tsotsil, ch'ol y otras)",
+  "region": "Sureste de México, Guatemala y Belice",
+  "periodo": "desde hacia 1000 a. C. hasta hoy",
+  "inicio": -1000,
+  "coords": [
+   18.14,
+   -91.07
+  ],
+  "territorio": "mexico",
+  "en_breve": "Su civilización se formó en estrecho contacto con la olmeca. El monumento maya más grande y antiguo que se conoce, Aguada Fénix, está en Tabasco y repite la planta de San Lorenzo. Hoy millones de personas hablan lenguas mayas.",
+  "afirmaciones": [
+   {
+    "texto": "Aguada Fénix, en Tabasco, es la construcción monumental más grande y más antigua conocida del área maya, levantada hacia 1000–800 a. C.",
+    "solidez": "consenso",
+    "fuentes": [
+     "inomata2020"
+    ]
+   },
+   {
+    "texto": "Los primeros conjuntos ceremoniales mayas, como Aguada Fénix, adoptaron y formalizaron la planta del centro olmeca de San Lorenzo.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inomata2021"
+    ]
+   },
+   {
+    "texto": "Que los olmecas fueran la «cultura madre» de los mayas o una cultura hermana con la que intercambiaron se sigue discutiendo; en Ceibal, Guatemala, la formación maya aparece como resultado de la interacción entre regiones.",
+    "solidez": "debate",
+    "fuentes": [
+     "inomata2013",
+     "inomata2021"
+    ]
+   }
+  ],
+  "heredan": [],
+  "fin": null,
+  "fuentes_periodo": [
+   "inomata2020"
+  ]
+ },
+ {
+  "id": "mexicas",
+  "nombre": "Mexicas",
+  "nombre_propio": "mexihcah",
+  "lengua": "Náhuatl",
+  "region": "Valle de México",
+  "periodo": "1325–1521",
+  "inicio": 1325,
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "territorio": "mexico",
+  "en_breve": "Fundaron Tenochtitlan en 1325 y dominaban buena parte de Mesoamérica cuando llegaron los españoles. Muchos nombres que el mundo usa vienen de su lengua.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fin": 1521,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "nahuas",
+  "nombre": "Nahuas",
+  "nombre_propio": "macehualmeh, mexicanos",
+  "lengua": "Náhuatl",
+  "region": "Centro, Golfo y occidente de México",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   19.0,
+   -98.2
+  ],
+  "territorio": "mexico",
+  "en_breve": "El pueblo indígena más numeroso de México; su lengua, el náhuatl, tiene más de un millón y medio de hablantes.",
+  "afirmaciones": [
+   {
+    "texto": "El náhuatl tenía 1,651,958 hablantes de 3 años o más en 2020.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inegi2020"
+    ]
+   }
+  ],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "zapotecos",
+  "nombre": "Zapotecos",
+  "nombre_propio": "binnizá (Istmo), ben'zaa (Valles)",
+  "lengua": "Zapoteco",
+  "region": "Oaxaca",
+  "periodo": "desde hacia 500 a. C. hasta hoy",
+  "inicio": -500,
+  "coords": [
+   17.04,
+   -96.77
+  ],
+  "territorio": "mexico",
+  "en_breve": "Construyeron Monte Albán y siguen viviendo en Oaxaca.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "mixtecos",
+  "nombre": "Mixtecos",
+  "nombre_propio": "ñuu savi, «pueblo de la lluvia»",
+  "lengua": "Mixteco",
+  "region": "Oaxaca, Puebla y Guerrero",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   17.3,
+   -97.7
+  ],
+  "territorio": "mexico",
+  "en_breve": "Pintores de códices y orfebres; los tintoreros mixtecos de la costa todavía tiñen con caracol púrpura.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "otomies",
+  "nombre": "Otomíes",
+  "nombre_propio": "hñähñu",
+  "lengua": "Otomí",
+  "region": "Centro de México",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   20.28,
+   -98.15
+  ],
+  "territorio": "mexico",
+  "en_breve": "Los otomíes de San Pablito, Puebla, mantuvieron viva la fabricación del papel amate.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "totonacas",
+  "nombre": "Totonacas",
+  "nombre_propio": "tutunakú",
+  "lengua": "Totonaco",
+  "region": "Veracruz y Puebla",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   20.45,
+   -97.32
+  ],
+  "territorio": "mexico",
+  "en_breve": "Cultivadores de la vainilla y guardianes de la ceremonia de los Voladores.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "purepechas",
+  "nombre": "Purépechas",
+  "nombre_propio": "p'urhépecha",
+  "lengua": "Purépecha",
+  "region": "Michoacán",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   19.6,
+   -101.6
+  ],
+  "territorio": "mexico",
+  "en_breve": "Pueblo de Michoacán con lengua propia, sin parientes conocidos; la pirekua es su canción.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "wixaritari",
+  "nombre": "Wixaritari (huicholes)",
+  "nombre_propio": "wixárika",
+  "lengua": "Wixárika",
+  "region": "Sierra de Jalisco y Nayarit",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   22.0,
+   -104.0
+  ],
+  "territorio": "mexico",
+  "en_breve": "Peregrinan a Wirikuta, San Luis Potosí, donde crece el peyote, su planta sagrada.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "mazatecos",
+  "nombre": "Mazatecos",
+  "nombre_propio": "ha shuta enima",
+  "lengua": "Mazateco",
+  "region": "Sierra Mazateca, Oaxaca",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   18.13,
+   -96.86
+  ],
+  "territorio": "mexico",
+  "en_breve": "Guardianes del uso ritual de los hongos sagrados y de la Salvia divinorum.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "mixes",
+  "nombre": "Mixes",
+  "nombre_propio": "ayuuk",
+  "lengua": "Mixe",
+  "region": "Sierra Norte de Oaxaca",
+  "periodo": "hasta hoy",
+  "inicio": null,
+  "coords": [
+   17.1,
+   -95.9
+  ],
+  "territorio": "mexico",
+  "en_breve": "Su lengua pertenece a la familia mixe-zoque, la que probablemente hablaban los olmecas.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fuentes_nombre": [
+   "inali2008"
+  ],
+  "fin": null,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "mokayas",
+  "nombre": "Mokayas",
+  "nombre_propio": null,
+  "lengua": "Probablemente mixe-zoque",
+  "region": "Soconusco, Chiapas",
+  "periodo": "hacia 1900–1000 a. C.",
+  "inicio": -1900,
+  "coords": [
+   14.87,
+   -92.43
+  ],
+  "territorio": "mexico",
+  "en_breve": "Pueblo antiguo de la costa de Chiapas; en sus vasijas de Paso de la Amada están de los restos de cacao más antiguos de Mesoamérica.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fin": -1000,
+  "fuentes_periodo": [
+   "powis2007"
+  ]
+ },
+ {
+  "id": "teotihuacanos",
+  "nombre": "Teotihuacanos",
+  "nombre_propio": null,
+  "lengua": "Desconocida",
+  "region": "Valle de Teotihuacan",
+  "periodo": "hacia 100 a. C.–550 d. C.",
+  "inicio": -100,
+  "coords": [
+   19.69,
+   -98.84
+  ],
+  "territorio": "mexico",
+  "en_breve": "Construyeron Teotihuacan, una de las ciudades más grandes del mundo en su tiempo. No se sabe qué lengua hablaban.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fin": 550,
+  "fuentes_periodo": []
+ },
+ {
+  "id": "xochimilcas",
+  "nombre": "Xochimilcas",
+  "nombre_propio": null,
+  "lengua": "Náhuatl",
+  "region": "Sur del valle de México",
+  "periodo": "desde el siglo XII",
+  "inicio": 1100,
+  "coords": [
+   19.26,
+   -99.1
+  ],
+  "territorio": "mexico",
+  "en_breve": "Pueblo nahua de los lagos del sur, maestros de las chinampas.",
+  "afirmaciones": [],
+  "heredan": [],
+  "fin": null,
+  "fuentes_periodo": []
+ }
+]

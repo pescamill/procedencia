@@ -1,0 +1,17 @@
+{
+ "especie": "Agave tequilana",
+ "estado": "ok",
+ "gbif": 206601370,
+ "nombre_aceptado": "Agave tequilana F.A.C.Weber",
+ "url": "https://www.gbif.org/species/206601370",
+ "nativa": [
+  "MXC",
+  "MXN",
+  "MXS"
+ ],
+ "introducida": [
+  "CNY",
+  "QLD"
+ ],
+ "fecha": "2026-11-01"
+}

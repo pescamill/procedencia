@@ -1,0 +1,59 @@
+{
+ "_nota": "Diagramas por ficha. Cada paso resume afirmaciones de la ficha; 'fuentes' son las que lo sostienen. tipo: proceso (pasos en orden), linea (fechas comparadas), numeracion (numerales mayas, se dibuja por código).",
+ "nixtamalizacion": {"tipo": "proceso", "titulo": "Del grano a la masa", "fuentes": ["katz1974"], "pasos": [
+  {"icono": "grano", "titulo": "Maíz seco", "texto": "El grano tiene niacina, pero el cuerpo no puede aprovecharla."},
+  {"icono": "fuego", "titulo": "Cocer con cal", "texto": "Se hierve con agua y cal (o ceniza) y se deja reposar."},
+  {"icono": "agua", "titulo": "Lavar: nixtamal", "texto": "Se suelta la cáscara; la niacina queda libre."},
+  {"icono": "metate", "titulo": "Moler: masa", "texto": "De la masa salen la tortilla, el tamal y los totopos."}],
+  "contraste": {"titulo": "Sin este paso", "texto": "Europa tomó el maíz y dejó la cal. Donde se volvió alimento base apareció la pelagra.", "fuentes": ["ginnaio2011"]}},
+ "milpa": {"tipo": "proceso", "titulo": "Tres plantas que se ayudan", "fuentes": ["postma2012", "zizumbo2010"], "pasos": [
+  {"icono": "maiz", "titulo": "Maíz", "texto": "Crece alto y sirve de tutor."},
+  {"icono": "frijol", "titulo": "Frijol", "texto": "Trepa por el maíz; sus raíces exploran otra parte del suelo."},
+  {"icono": "calabaza", "titulo": "Calabaza", "texto": "Cubre el suelo con sus hojas grandes."},
+  {"icono": "suelo", "titulo": "Juntas", "texto": "Aprovechan mejor nitrógeno, fósforo y potasio que cada una sola."}]},
+ "grana": {"tipo": "proceso", "titulo": "Del nopal al carmín", "fuentes": ["campana2015", "efsa2015"], "pasos": [
+  {"icono": "nopal", "titulo": "Nopal", "texto": "El insecto vive y se alimenta en las pencas."},
+  {"icono": "insecto", "titulo": "Cochinilla", "texto": "La hembra produce ácido carmínico; se cosecha a mano."},
+  {"icono": "sol", "titulo": "Secar y moler", "texto": "Seca, se vuelve polvo rojo."},
+  {"icono": "frasco", "titulo": "E120", "texto": "Hoy tiñe alimentos y cosméticos en todo el mundo."}]},
+ "cacao-chocolate": {"tipo": "proceso", "titulo": "La invención del chocolate", "fuentes": ["powis2007", "powis2011", "coe1996"], "pasos": [
+  {"icono": "mazorca", "titulo": "Mazorca de cacao", "texto": "La planta llegó de Sudamérica."},
+  {"icono": "sol", "titulo": "Fermentar y secar", "texto": "Las semillas se fermentan, se secan y se tuestan."},
+  {"icono": "metate", "titulo": "Moler", "texto": "Se muelen con vainilla, chile, achiote o flores."},
+  {"icono": "jarra", "titulo": "Bebida espumosa", "texto": "Se vierte de alto para hacer espuma. Hay residuos en Chiapas de hacia 1900 a. C."}]},
+ "maiz": {"tipo": "proceso", "titulo": "Del teocintle al maíz", "fuentes": ["matsuoka2002", "piperno2009"], "pasos": [
+  {"icono": "teocintle", "titulo": "Teocintle", "texto": "Pasto silvestre del Balsas, con pocos granos duros."},
+  {"icono": "manos", "titulo": "Selección", "texto": "Generación tras generación se guardaron las mejores semillas."},
+  {"icono": "maiz", "titulo": "Maíz", "texto": "Hace unos 8,700 años ya había maíz en el valle del Balsas, Guerrero."},
+  {"icono": "mundo", "titulo": "El mundo", "texto": "Hoy es el cereal más producido del planeta."}]},
+ "vainilla": {"tipo": "proceso", "titulo": "De la orquídea al sabor", "fuentes": ["lubinsky2008", "fouche1999", "gallage2015"], "pasos": [
+  {"icono": "flor", "titulo": "Orquídea", "texto": "Una orquídea trepadora del noreste de Mesoamérica."},
+  {"icono": "manos", "titulo": "Polinizar a mano", "texto": "Fuera de su tierra no da fruto sola: hay que polinizarla flor por flor."},
+  {"icono": "sol", "titulo": "Curar la vaina", "texto": "La vaina verde se cura al sol durante semanas."},
+  {"icono": "frasco", "titulo": "Vainillina", "texto": "Casi todo el sabor que se consume hoy es sintético."}]},
+ "hule": {"tipo": "linea", "titulo": "¿Quién inventó el hule útil?", "fuentes": ["hosler1999", "us3633"], "marcas": [
+  {"anio": -1600, "titulo": "Golfo de México", "texto": "Látex de Castilla elastica + jugo de enredadera: pelotas, suelas, bandas.", "lado": "mexico"},
+  {"anio": 1844, "titulo": "Patente de Goodyear", "texto": "Hule con azufre y calor: la historia industrial empieza aquí.", "lado": "fuera"}],
+  "conclusion": "Unos 3,400 años de diferencia."},
+ "barbasco-pildora": {"tipo": "proceso", "titulo": "Del monte a la píldora", "fuentes": ["sotolaveaga2009", "us2744122"], "pasos": [
+  {"icono": "raiz", "titulo": "Barbasco", "texto": "Un camote silvestre de las selvas de Veracruz y Oaxaca."},
+  {"icono": "manos", "titulo": "Recolección", "texto": "Lo recolectaban campesinos, muchos de ellos indígenas."},
+  {"icono": "frasco", "titulo": "Diosgenina", "texto": "De él se extraía la materia prima de las hormonas."},
+  {"icono": "pildora", "titulo": "Noretisterona, 1951", "texto": "En la Ciudad de México se sintetizó el compuesto de la primera píldora."}]},
+ "amate": {"tipo": "proceso", "titulo": "Cómo se hace el amatl", "fuentes": ["lopezbinnquist2012", "peters1987"], "pasos": [
+  {"icono": "arbol", "titulo": "Corteza", "texto": "Se arranca la corteza interna de árboles de la familia de los higos."},
+  {"icono": "fuego", "titulo": "Hervir", "texto": "Se hierve para ablandar las fibras."},
+  {"icono": "piedra", "titulo": "Golpear", "texto": "Las tiras se cruzan sobre una tabla y se golpean con una piedra hasta unirse."},
+  {"icono": "sol", "titulo": "Secar", "texto": "Se seca al sol: queda una hoja lista para pintar."}]},
+ "azul-maya": {"tipo": "proceso", "titulo": "Un pigmento que no se borra", "fuentes": ["arnold2008", "gettens1962"], "pasos": [
+  {"icono": "hoja", "titulo": "Añil", "texto": "Tinte azul de las hojas de una planta americana."},
+  {"icono": "arcilla", "titulo": "Paligorskita", "texto": "Una arcilla blanca de Yucatán."},
+  {"icono": "fuego", "titulo": "Calentar con copal", "texto": "Se calientan juntas; el tinte se encierra en la arcilla."},
+  {"icono": "muro", "titulo": "Azul maya", "texto": "Resiste ácidos, álcalis y siglos."}]},
+ "chinampas": {"tipo": "proceso", "titulo": "Una isla de cultivo", "fuentes": ["fao2017chinampas", "calnek1972"], "pasos": [
+  {"icono": "agua", "titulo": "Lago somero", "texto": "Se marca un rectángulo en el agua."},
+  {"icono": "arbol", "titulo": "Estacas y ahuejotes", "texto": "Se cerca con estacas; los árboles fijan las orillas."},
+  {"icono": "suelo", "titulo": "Lodo y plantas", "texto": "Capas de lodo del fondo y vegetación forman el suelo."},
+  {"icono": "maiz", "titulo": "Cosecha", "texto": "Tierra fértil y húmeda: sostenía el abasto de Tenochtitlan."}]},
+ "cero": {"tipo": "numeracion", "titulo": "Contar con punto, barra y cero", "fuentes": ["rojo2021", "stuart2012"]}
+}

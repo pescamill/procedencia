@@ -1,0 +1,35 @@
+{
+ "especie": "Agave amica",
+ "estado": "ok",
+ "gbif": 206600888,
+ "nombre_aceptado": "Polianthes tuberosa L.",
+ "url": "https://www.gbif.org/species/206600888",
+ "nativa": [
+  "MXE",
+  "MXS"
+ ],
+ "introducida": [
+  "BLZ",
+  "CRL",
+  "CUB",
+  "DOM",
+  "ELS",
+  "GUA",
+  "HAI",
+  "HON",
+  "LEE",
+  "MRN",
+  "MXC",
+  "MXT",
+  "NIC",
+  "PAN",
+  "PER",
+  "PUE",
+  "RWA",
+  "SCI",
+  "SEY",
+  "TUR",
+  "WIN"
+ ],
+ "fecha": "2026-11-01"
+}

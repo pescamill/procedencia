@@ -1,0 +1,14 @@
+{
+ "especie": "Lophophora williamsii",
+ "estado": "ok",
+ "gbif": 206867317,
+ "nombre_aceptado": "Lophophora williamsii (Lem. ex J.F.Cels) J.M.Coult.",
+ "url": "https://www.gbif.org/species/206867317",
+ "nativa": [
+  "MXE",
+  "MXS",
+  "TEX"
+ ],
+ "introducida": [],
+ "fecha": "2026-11-01"
+}

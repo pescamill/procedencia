@@ -1,0 +1,279 @@
+{
+ "_nota": "Por ficha: el artículo de Wikipedia en inglés cuya imagen principal y cuyo elemento de Wikidata se usan. 'archivo' fija otra imagen de Commons. 'procedencia.py medios' comprueba licencia y autor y cuenta en cuántas Wikipedias tiene artículo.",
+ "milpa": {
+  "wiki": "Milpa"
+ },
+ "chinampas": {
+  "wiki": "Chinampa"
+ },
+ "grana": {
+  "wiki": "Cochineal"
+ },
+ "azul-maya": {
+  "wiki": "Maya blue"
+ },
+ "anil": {
+  "wiki": "Indigofera suffruticosa"
+ },
+ "palo-campeche": {
+  "wiki": "Haematoxylum campechianum"
+ },
+ "achiote": {
+  "wiki": "Bixa orellana"
+ },
+ "caracol-purpura": {
+  "wiki": "Plicopurpura pansa",
+  "archivo": null
+ },
+ "algodon": {
+  "wiki": "Gossypium hirsutum"
+ },
+ "hule": {
+  "wiki": "Castilla elastica"
+ },
+ "chicle": {
+  "wiki": "Chicle"
+ },
+ "henequen": {
+  "wiki": "Agave fourcroydes"
+ },
+ "amate": {
+  "wiki": "Amate",
+  "archivo": "Papel Amate, San Pablito, Puebla (2).jpg"
+ },
+ "guayule": {
+  "wiki": "Guayule"
+ },
+ "maiz": {
+  "wiki": "Maize"
+ },
+ "frijol": {
+  "wiki": "Phaseolus vulgaris"
+ },
+ "calabaza": {
+  "wiki": "Cucurbita pepo"
+ },
+ "jitomate": {
+  "wiki": "Tomato"
+ },
+ "tomate-verde": {
+  "wiki": "Tomatillo"
+ },
+ "chile": {
+  "wiki": "Capsicum annuum"
+ },
+ "aguacate": {
+  "wiki": "Avocado"
+ },
+ "chayote": {
+  "wiki": "Chayote"
+ },
+ "jicama": {
+  "wiki": "Jícama"
+ },
+ "nopal": {
+  "wiki": "Opuntia ficus-indica"
+ },
+ "amaranto": {
+  "wiki": "Amaranthus hypochondriacus"
+ },
+ "chia": {
+  "wiki": "Salvia hispanica"
+ },
+ "quelites": {
+  "wiki": "Epazote"
+ },
+ "huitlacoche": {
+  "wiki": "Corn smut"
+ },
+ "zapotes": {
+  "wiki": "Pouteria sapota"
+ },
+ "papaya": {
+  "wiki": "Papaya"
+ },
+ "guayaba": {
+  "wiki": "Psidium guajava"
+ },
+ "pitahaya": {
+  "wiki": "Selenicereus undatus"
+ },
+ "cacahuate": {
+  "wiki": "Peanut"
+ },
+ "camote": {
+  "wiki": "Sweet potato"
+ },
+ "girasol": {
+  "wiki": "Common sunflower"
+ },
+ "cacao-chocolate": {
+  "wiki": "Theobroma cacao"
+ },
+ "vainilla": {
+  "wiki": "Vanilla planifolia"
+ },
+ "guajolote": {
+  "wiki": "Wild turkey"
+ },
+ "pato-criollo": {
+  "wiki": "Muscovy duck"
+ },
+ "melipona": {
+  "wiki": "Melipona beecheii"
+ },
+ "chapulines": {
+  "wiki": "Chapulines"
+ },
+ "nixtamalizacion": {
+  "wiki": "Nixtamalization"
+ },
+ "agave-bebidas": {
+  "wiki": "Pulque"
+ },
+ "cocina-tradicional": {
+  "wiki": "Mexican cuisine"
+ },
+ "mole": {
+  "wiki": "Mole (sauce)"
+ },
+ "ensalada-cesar": {
+  "wiki": "Caesar salad"
+ },
+ "nachos": {
+  "wiki": "Nachos"
+ },
+ "margarita": {
+  "wiki": "Margarita"
+ },
+ "cempasuchil": {
+  "wiki": "Tagetes erecta"
+ },
+ "nochebuena": {
+  "wiki": "Poinsettia"
+ },
+ "dalia": {
+  "wiki": "Dahlia"
+ },
+ "nardo": {
+  "wiki": "Agave amica"
+ },
+ "cosmos": {
+  "wiki": "Cosmos bipinnatus"
+ },
+ "zinnia": {
+  "wiki": "Zinnia elegans"
+ },
+ "tigridia": {
+  "wiki": "Tigridia pavonia"
+ },
+ "echeverias": {
+  "wiki": "Echeveria"
+ },
+ "cruz-badiano": {
+  "wiki": "Libellus de Medicinalibus Indorum Herbis"
+ },
+ "herbolaria-hernandez": {
+  "wiki": "Francisco Hernández de Toledo"
+ },
+ "barbasco-pildora": {
+  "wiki": "Luis E. Miramontes"
+ },
+ "psilocibina": {
+  "wiki": "Psilocybe mexicana"
+ },
+ "peyote": {
+  "wiki": "Peyote"
+ },
+ "salvia-divinorum": {
+  "wiki": "Salvia divinorum"
+ },
+ "yoloxochitl": {
+  "wiki": "Magnolia mexicana"
+ },
+ "ajolote": {
+  "wiki": "Axolotl"
+ },
+ "cero": {
+  "wiki": "Maya numerals"
+ },
+ "escritura": {
+  "wiki": "Mesoamerican writing systems",
+  "archivo": "Cartucho glífico maya. Período clásico tardío. 600-900 d. C. Museo de América 02.jpg"
+ },
+ "calendarios": {
+  "wiki": "Aztec sun stone"
+ },
+ "ciudades": {
+  "wiki": "Teotihuacan",
+  "archivo": "Teotihuacan - Calzada de los Muertos 16.jpg"
+ },
+ "educacion": {
+  "wiki": "Calmecac"
+ },
+ "television-color": {
+  "wiki": "Guillermo González Camarena"
+ },
+ "dia-muertos": {
+  "wiki": "Day of the Dead"
+ },
+ "copal": {
+  "wiki": "Copal",
+  "archivo": null
+ },
+ "tabaco-mesoamericano": {
+  "wiki": "Nicotiana rustica"
+ },
+ "tabaco-comun": {
+  "wiki": "Nicotiana tabacum"
+ },
+ "temazcal": {
+  "wiki": "Temazcal",
+  "archivo": "Temazcal - Tlatelolco Archeological Zone - Mexico 2024.jpg"
+ },
+ "ulama": {
+  "wiki": "Ulama",
+  "archivo": "Ulama player in Sinaloa 2004.jpg"
+ },
+ "voladores": {
+  "wiki": "Danza de los Voladores"
+ },
+ "parachicos": {
+  "wiki": "Parachicos"
+ },
+ "perros": {
+  "wiki": "Xoloitzcuintle"
+ },
+ "pinata": {
+  "wiki": "Piñata"
+ },
+ "textiles": {
+  "wiki": "Huipil",
+  "archivo": "Huipil de Santa María Yucunicoco.jpg"
+ },
+ "alebrijes": {
+  "wiki": "Alebrije"
+ },
+ "muralismo": {
+  "wiki": "Mexican muralism"
+ },
+ "catrina": {
+  "wiki": "La Calavera Catrina"
+ },
+ "mariachi": {
+  "wiki": "Mariachi"
+ },
+ "pirekua": {
+  "wiki": "Pirekua"
+ },
+ "charreria": {
+  "wiki": "Charrería"
+ },
+ "palabras-nahuatl": {
+  "wiki": "Nahuatl"
+ },
+ "lenguas-vivas": {
+  "wiki": "Languages of Mexico",
+  "archivo": "Nahuatl speakers in Mexico in 2010.svg"
+ }
+}

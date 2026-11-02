@@ -1,0 +1,1031 @@
+[
+ {
+  "id": "dia-muertos",
+  "nombre": "Día de Muertos",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Todo México; Pátzcuaro, Mixquic, Oaxaca",
+  "coords": [
+   19.52,
+   -101.6
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1600,
+   "texto": "raíz prehispánica, forma actual desde la Colonia"
+  },
+  "pueblos": [
+   "nahuas",
+   "purepechas",
+   "mayas",
+   "zapotecos"
+  ],
+  "veredicto": {
+   "texto": "Las fiestas indígenas dedicadas a los muertos unen rituales mesoamericanos con el Todos Santos católico; la UNESCO las inscribió en su Lista Representativa en 2008.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2008muertos"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "En 2013 Disney solicitó registrar «Día de los Muertos» como marca y lo retiró una semana después, tras las protestas.",
+    "solidez": "consenso",
+    "fuentes": [
+     "kpbs2013"
+    ]
+   },
+   {
+    "texto": "El gran desfile de la Ciudad de México no existía: se creó en 2016 a partir del que mostró la película Spectre (2015).",
+    "solidez": "consenso",
+    "fuentes": [
+     "telemetro2016"
+    ]
+   },
+   {
+    "texto": "Fuera de México se mezcla con Halloween y se reduce a disfraces de «sugar skull».",
+    "solidez": "sustentada",
+    "fuentes": []
+   }
+  ],
+  "originales": [
+   {
+    "forma": "Miccailhuitontli",
+    "lengua": "náhuatl",
+    "glosa": "fiesta de los muertitos",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "«Halloween mexicano»",
+    "lengua": "todas",
+    "forma": "etiqueta_muda",
+    "nota": "Reducción a disfraz."
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "cempasuchil",
+   "catrina",
+   "copal",
+   "caso-disney"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La fiesta en que los muertos vuelven a casa, con ofrendas, flores y calaveras. Hoy se celebra y se imita en todo el mundo."
+ },
+ {
+  "id": "copal",
+  "nombre": "Copal",
+  "ambito": "ritual",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Toda Mesoamérica",
+  "coords": [
+   18.0,
+   -98.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 0,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [],
+  "especie": "Bursera bipinnata",
+  "originales": [
+   {
+    "forma": "copalli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La resina de árboles del género Bursera se quema en rituales desde época prehispánica hasta hoy, incluido el Día de Muertos.",
+   "solidez": "consenso",
+   "fuentes": [
+    "case2003",
+    "lucero2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El análisis químico de ofrendas del Templo Mayor identifica copal de Bursera.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "lucero2014"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "dia-muertos",
+   "azul-maya"
+  ],
+  "alcance": "regional",
+  "en_breve": "Resina aromática que se quema en ofrendas desde antes de la conquista."
+ },
+ {
+  "id": "tabaco-mesoamericano",
+  "nombre": "Tabaco mesoamericano y cultura del humo",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Zona maya y centro de México",
+  "coords": [
+   17.5,
+   -91.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 700,
+   "texto": "Clásico tardío"
+  },
+  "pueblos": [
+   "mayas",
+   "mexicas"
+  ],
+  "especie": "Nicotiana rustica",
+  "originales": [
+   {
+    "forma": "picietl",
+    "lengua": "náhuatl",
+    "glosa": "tabaco silvestre (N. rustica)",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "may",
+    "lengua": "maya",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   },
+   {
+    "forma": "acayetl",
+    "lengua": "náhuatl",
+    "glosa": "caña de humo",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Lo propio de Mesoamérica es una cultura ritual y medicinal del humo: N. rustica molida con cal, ofrendas y cañas de humo; hay frascos mayas con restos de nicotina.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "zagorevski2012",
+    "sahagun1577"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Un frasco maya del Clásico tardío con la inscripción «casa de su tabaco» contenía nicotina.",
+    "solidez": "consenso",
+    "fuentes": [
+     "zagorevski2012"
+    ]
+   },
+   {
+    "texto": "Sahagún describe cañas rellenas de tabaco y aromáticos, antecedente del cigarro.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sahagun1577"
+    ]
+   },
+   {
+    "texto": "La palabra «cigarro» podría venir del maya sik'ar; la etimología no tiene consenso.",
+    "solidez": "debate",
+    "fuentes": []
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente para la etimología propuesta de «cigarro».",
+   "Ubicar el pasaje de Sahagún."
+  ],
+  "enfoque": "Contar el contraste entre el uso ritual y medicinal mesoamericano y el consumo industrial y adictivo que creó Europa, sin promover el tabaquismo.",
+  "relacionadas": [
+   "tabaco-comun",
+   "copal"
+  ],
+  "alcance": "regional",
+  "en_breve": "Fumar, mascar o untar tabaco como medicina y ofrenda es una práctica mesoamericana antigua; de ahí viene el puro."
+ },
+ {
+  "id": "tabaco-comun",
+  "nombre": "Tabaco común",
+  "ambito": "ritual",
+  "naturaleza": "planta",
+  "clase": "deslinde",
+  "actos": [],
+  "territorio": "mesoamerica",
+  "region": "Sudamérica",
+  "coords": [
+   -17.0,
+   -64.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1000,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Nicotiana tabacum",
+  "origen_biologico": {
+   "texto": "Sudamérica: híbrido de N. sylvestris y N. tomentosiformis",
+   "coords": [
+    -17.0,
+    -64.0
+   ],
+   "region_tdwg": "BOL"
+  },
+  "veredicto": {
+   "texto": "Nicotiana tabacum, casi todo el tabaco comercial, es un híbrido sudamericano; no es aporte mexicano. La palabra «tabaco» tampoco: su origen probable es taíno o árabe-español.",
+   "solidez": "consenso",
+   "fuentes": [
+    "sierro2014"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Los europeos vieron fumar a los taínos en Cuba en 1492; de Jean Nicot, embajador francés, viene «nicotina».",
+    "solidez": "consenso",
+    "fuentes": []
+   }
+  ],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente para Nicot y la etimología de «tabaco»."
+  ],
+  "relacionadas": [
+   "tabaco-mesoamericano"
+  ],
+  "alcance": "regional",
+  "en_breve": "El tabaco de los cigarros comerciales es sudamericano. Se aclara para no atribuirlo a México.",
+  "sin_originario": "No es un aporte mexicano; la planta y el nombre vienen de otra parte."
+ },
+ {
+  "id": "temazcal",
+  "nombre": "Temazcal",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mesoamerica",
+  "region": "Toda Mesoamérica",
+  "coords": [
+   18.9,
+   -99.2
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "temazcalli",
+    "lengua": "náhuatl",
+    "glosa": "casa del baño de vapor",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Baño de vapor ritual y medicinal mesoamericano; hoy se ofrece en spas de todo el mundo.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "sahagun1577"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "Mayan sauna, Aztec sweat lodge",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Fuente arqueológica o etnográfica."
+  ],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Baño de vapor para curar y purificar; hoy se ofrece en spas de todo el mundo."
+ },
+ {
+  "id": "ulama",
+  "nombre": "Ulama, el juego de pelota vivo",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Sinaloa",
+  "coords": [
+   23.25,
+   -106.4
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1600,
+   "texto": "pelotas de hule desde 1600 a. C.; se juega hoy"
+  },
+  "pueblos": [],
+  "originales": [
+   {
+    "forma": "ollamaliztli",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El juego de pelota mesoamericano se sigue jugando en Sinaloa, con pelota de hule maciza.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "tarkanian2011"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente etnográfica sobre el ulama sinaloense."
+  ],
+  "relacionadas": [
+   "hule"
+  ],
+  "alcance": "regional",
+  "en_breve": "El juego de pelota con cadera y pelota de hule, de más de 3,000 años, que todavía se juega en Sinaloa."
+ },
+ {
+  "id": "voladores",
+  "nombre": "Ceremonia de los Voladores",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Papantla, Veracruz",
+  "coords": [
+   20.45,
+   -97.32
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1200,
+   "texto": "época prehispánica, práctica viva"
+  },
+  "pueblos": [
+   "totonacas"
+  ],
+  "veredicto": {
+   "texto": "Danza ritual de fertilidad en la que cuatro voladores descienden girando desde un palo; inscrita por la UNESCO en 2009.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2009voladores"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Cuatro hombres giran colgados de un poste de 30 metros mientras un quinto toca la flauta en la punta: una ceremonia totonaca para pedir lluvia.",
+  "sin_originario": "Falta documentar el nombre de la ceremonia en totonaco."
+ },
+ {
+  "id": "parachicos",
+  "nombre": "Parachicos",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Chiapa de Corzo, Chiapas",
+  "coords": [
+   16.71,
+   -93.01
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1700,
+   "texto": "Colonia"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "La danza de los parachicos en la fiesta de enero de Chiapa de Corzo fue inscrita por la UNESCO en 2010.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2010parachicos"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Danzantes de máscara de madera que recorren Chiapa de Corzo cada enero.",
+  "sin_originario": "Nombre en español; falta documentar el nombre en lengua chiapaneca."
+ },
+ {
+  "id": "perros",
+  "nombre": "Xoloitzcuintle y perros mesoamericanos",
+  "ambito": "ritual",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Occidente y centro de México",
+  "coords": [
+   19.2,
+   -103.7
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1000,
+   "texto": "más de 3,000 años"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "xoloitzcuintli",
+    "lengua": "náhuatl",
+    "glosa": "perro de Xólotl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "techichi",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El perro sin pelo es una raza antigua de México, vinculada en la cosmovisión mexica al viaje de las almas. Su relación genética exacta con los perros precolombinos está por precisar.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "leathlobhair2018"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Los linajes de perros llegados con los primeros pobladores casi desaparecieron tras el contacto europeo; pocas razas actuales conservan su huella.",
+    "solidez": "consenso",
+    "fuentes": [
+     "leathlobhair2018"
+    ]
+   },
+   {
+    "texto": "Que el chihuahua descienda del techichi prehispánico es una hipótesis sin consenso.",
+    "solidez": "debate",
+    "fuentes": [
+     "leathlobhair2018"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "Mexican hairless dog",
+    "lengua": "inglés",
+    "forma": "conserva"
+   },
+   {
+    "dice": "chihuahua",
+    "lengua": "todas",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [
+   "Fuente arqueológica sobre entierros de perros y su papel funerario."
+  ],
+  "relacionadas": [
+   "dia-muertos"
+  ],
+  "alcance": "regional",
+  "en_breve": "El xoloitzcuintle, perro sin pelo de los mexicas, acompañaba a los muertos en su viaje."
+ },
+ {
+  "id": "pinata",
+  "nombre": "Piñata",
+  "ambito": "ritual",
+  "naturaleza": "practica",
+  "clase": "deslinde",
+  "actos": [],
+  "territorio": "mexico",
+  "region": "Acolman, Estado de México (según la tradición)",
+  "coords": [
+   19.64,
+   -98.9
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1586,
+   "texto": "siglo XVI"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "El origen de la piñata se disputa entre China, Italia, España y prácticas mexicas; no se presenta como aporte mexicano hasta que haya fuente.",
+   "solidez": "debate",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuentes de cada versión."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "La piñata se rompe en fiestas de todo el mundo, pero su origen se disputa. Se aclara para no atribuirla sin pruebas.",
+  "sin_originario": "Palabra de origen italiano (pignatta)."
+ },
+ {
+  "id": "textiles",
+  "nombre": "Textiles e iconografía de los pueblos",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Oaxaca, Hidalgo, Chiapas, Coahuila y otros",
+  "coords": [
+   17.1,
+   -96.0
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1000,
+   "texto": "tradición viva"
+  },
+  "pueblos": [
+   "mixes",
+   "otomies",
+   "zapotecos",
+   "mayas"
+  ],
+  "veredicto": {
+   "texto": "Huipiles, bordados y telares de cintura con iconografía propia de cada pueblo; de lo más copiado sin crédito por la moda internacional.",
+   "solidez": "consenso",
+   "fuentes": [
+    "globalvoices2015",
+    "expansion2019"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Desde 2022 una ley federal protege el patrimonio cultural y la propiedad intelectual colectiva de los pueblos indígenas y afromexicanos.",
+    "solidez": "consenso",
+    "fuentes": [
+     "lfppcpcia2022"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "huipilli",
+    "lengua": "náhuatl",
+    "glosa": "huipil",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "boho, ethnic print",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Verificar uno a uno los casos señalados de Zara, Mango y Shein."
+  ],
+  "relacionadas": [
+   "caso-marant",
+   "caso-herrera"
+  ],
+  "alcance": "regional",
+  "en_breve": "Huipiles y bordados con diseños propios de cada pueblo; marcas de moda los han copiado sin permiso."
+ },
+ {
+  "id": "alebrijes",
+  "nombre": "Alebrijes",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Ciudad de México y Oaxaca",
+  "coords": [
+   17.0,
+   -96.75
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1936,
+   "texto": "1936"
+  },
+  "pueblos": [
+   "zapotecos"
+  ],
+  "autoria": "Pedro Linares",
+  "veredicto": {
+   "texto": "Pedro Linares los creó en cartonería en la Ciudad de México hacia 1936; después se tallaron en madera en Oaxaca.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "alebrijes hechos en China",
+    "lengua": "todas",
+    "forma": "sustituto"
+   }
+  ],
+  "pendientes": [
+   "Fuente histórica."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Figuras de criaturas fantásticas de colores, inventadas por Pedro Linares en 1936 y hoy famosas en todo el mundo.",
+  "sin_originario": "Palabra inventada por Pedro Linares en 1936."
+ },
+ {
+  "id": "muralismo",
+  "nombre": "Muralismo",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Ciudad de México",
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1922,
+   "texto": "desde 1922"
+  },
+  "pueblos": [],
+  "autoria": "Rivera, Orozco, Siqueiros y otros",
+  "veredicto": {
+   "texto": "El muralismo mexicano influyó en el arte público de EUA en los años treinta.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente historiográfica."
+  ],
+  "relacionadas": [
+   "catrina"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Pintura monumental en muros públicos, de Rivera, Orozco y Siqueiros, que inspiró murales en Estados Unidos y América Latina.",
+  "sin_originario": "Movimiento artístico del siglo XX."
+ },
+ {
+  "id": "catrina",
+  "nombre": "La Catrina",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Ciudad de México",
+  "coords": [
+   19.436,
+   -99.147
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1912,
+   "texto": "hacia 1912; nombrada en 1947"
+  },
+  "pueblos": [],
+  "autoria": "José Guadalupe Posada y Diego Rivera",
+  "veredicto": {
+   "texto": "La Catrina es mestiza y moderna: nace de La Calavera Garbancera de José Guadalupe Posada y Diego Rivera le dio nombre y vestido en 1947.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "sugar skull",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre Posada y el mural de Rivera."
+  ],
+  "relacionadas": [
+   "dia-muertos",
+   "muralismo"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La calavera elegante de José Guadalupe Posada, hoy símbolo mundial del Día de Muertos.",
+  "sin_originario": "Personaje gráfico de José Guadalupe Posada, de hacia 1910."
+ },
+ {
+  "id": "mariachi",
+  "nombre": "Mariachi",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Jalisco y el occidente",
+  "coords": [
+   20.67,
+   -103.35
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1850,
+   "texto": "siglo XIX"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "Música de cuerdas, canto y trompeta del occidente de México, inscrita por la UNESCO en 2011.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2011mariachi"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "charreria"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Música de cuerdas y trompetas con traje de charro, que hoy tiene grupos en todos los continentes.",
+  "sin_originario": "Palabra de origen discutido; no hay acuerdo sobre una raíz indígena."
+ },
+ {
+  "id": "pirekua",
+  "nombre": "Pirekua",
+  "ambito": "artes",
+  "naturaleza": "obra",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Meseta p'urhépecha, Michoacán",
+  "coords": [
+   19.6,
+   -102.0
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1700,
+   "texto": "tradición mestiza"
+  },
+  "pueblos": [
+   "purepechas"
+  ],
+  "veredicto": {
+   "texto": "Canto tradicional de los p'urhépechas, inscrito por la UNESCO en 2010.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2010pirekua"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [
+   {
+    "forma": "pirekua",
+    "lengua": "purépecha",
+    "glosa": "canción"
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Canción tradicional de los purépechas de Michoacán, en su propia lengua."
+ },
+ {
+  "id": "charreria",
+  "nombre": "Charrería",
+  "ambito": "artes",
+  "naturaleza": "practica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Jalisco, Hidalgo y el centro",
+  "coords": [
+   20.6,
+   -103.3
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1700,
+   "texto": "haciendas novohispanas"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "Tradición ecuestre nacida en las haciendas, inscrita por la UNESCO en 2016.",
+   "solidez": "consenso",
+   "fuentes": [
+    "unesco2016charreria"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "mariachi"
+  ],
+  "alcance": "regional",
+  "en_breve": "Las suertes a caballo de los charros; de ella vienen el vaquero y parte del rodeo.",
+  "sin_originario": "Práctica nacida en el virreinato, con nombre en español."
+ },
+ {
+  "id": "palabras-nahuatl",
+  "nombre": "Palabras del náhuatl en el mundo",
+  "ambito": "lengua",
+  "naturaleza": "lengua",
+  "clase": "aporte",
+  "actos": [
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1550,
+   "texto": "desde el siglo XVI"
+  },
+  "pueblos": [
+   "nahuas"
+  ],
+  "veredicto": {
+   "texto": "El mundo dice chocolate, tomato, avocado, chili, chipotle, guacamole, coyote, ocelot, axolotl, chia, mesquite y peyote: palabras del náhuatl llegadas por el español.",
+   "solidez": "consenso",
+   "fuentes": [
+    "karttunen1983",
+    "dle"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [
+   {
+    "forma": "nahuatlahtolli",
+    "lengua": "náhuatl",
+    "glosa": "la lengua náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Revisión de las formas en náhuatl y maya por un hablante o nahuatlato."
+  ],
+  "relacionadas": [
+   "lenguas-vivas"
+  ],
+  "alcance": "mundial",
+  "en_breve": "Chocolate, tomate, aguacate, chile, coyote: palabras náhuatl que se dicen en decenas de lenguas."
+ },
+ {
+  "id": "lenguas-vivas",
+  "nombre": "Lenguas vivas",
+  "ambito": "lengua",
+  "naturaleza": "lengua",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Todo México",
+  "coords": [
+   18.5,
+   -97.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 2020,
+   "texto": "hoy"
+  },
+  "pueblos": [],
+  "veredicto": {
+   "texto": "México reconoce 68 agrupaciones lingüísticas indígenas; el náhuatl tiene más de 1.6 millones de hablantes.",
+   "solidez": "consenso",
+   "fuentes": [
+    "inali2008",
+    "inegi2020"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El catálogo del INALI distingue 11 familias, 68 agrupaciones y 364 variantes.",
+    "solidez": "consenso",
+    "fuentes": [
+     "inali2008"
+    ]
+   },
+   {
+    "texto": "El censo de 2020 registró 1,651,958 hablantes de náhuatl de 3 años o más.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "inegi2020"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "tlahtolli",
+    "lengua": "náhuatl",
+    "glosa": "palabra, lengua",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Enlazar el tabulado original del INEGI."
+  ],
+  "relacionadas": [
+   "palabras-nahuatl"
+  ],
+  "alcance": "local",
+  "en_breve": "En México se hablan 68 lenguas indígenas; el náhuatl tiene más de un millón y medio de hablantes."
+ }
+]

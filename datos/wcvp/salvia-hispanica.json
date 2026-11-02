@@ -1,0 +1,41 @@
+{
+ "especie": "Salvia hispanica",
+ "estado": "ok",
+ "gbif": 207221557,
+ "nombre_aceptado": "Salvia hispanica L.",
+ "url": "https://www.gbif.org/species/207221557",
+ "nativa": [
+  "GUA",
+  "MXC",
+  "MXE",
+  "MXG",
+  "MXN",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [
+  "AUT",
+  "BAH",
+  "BAL",
+  "BOL",
+  "BUL",
+  "CLM",
+  "CUB",
+  "CZE",
+  "ECU",
+  "ELS",
+  "FLA",
+  "GER",
+  "GRB",
+  "HON",
+  "JAW",
+  "MDR",
+  "NIC",
+  "RUC",
+  "SAR",
+  "SPA",
+  "TEX",
+  "VEN"
+ ],
+ "fecha": "2026-11-01"
+}

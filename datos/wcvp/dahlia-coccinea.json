@@ -1,0 +1,30 @@
+{
+ "especie": "Dahlia coccinea",
+ "estado": "ok",
+ "gbif": 206735651,
+ "nombre_aceptado": "Dahlia coccinea Cav.",
+ "url": "https://www.gbif.org/species/206735651",
+ "nativa": [
+  "BLZ",
+  "ELS",
+  "GUA",
+  "MXC",
+  "MXE",
+  "MXG",
+  "MXN",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [
+  "BOL",
+  "ETH",
+  "GER",
+  "GRB",
+  "MDR",
+  "PER",
+  "POL",
+  "ROM",
+  "YUG"
+ ],
+ "fecha": "2026-11-01"
+}

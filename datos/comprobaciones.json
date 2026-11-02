@@ -1,0 +1,1413 @@
+{
+ "matsuoka2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "A single domestication for maize shown by multilocus microsatellite genotyping",
+  "anio_registrado": 2002,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "piperno2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Starch grain and phytolith evidence for early ninth millennium B.P. maize from the Central Balsas River Valley, Mexico",
+  "anio_registrado": 2009,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "grobman2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Preceramic maize from Paredones and Huaca Prieta, Peru",
+  "anio_registrado": 2011,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "kwak2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Putative Mesoamerican Domestication Center of Phaseolus vulgaris Is Located in the Lerma–Santiago Basin of Mexico",
+  "anio_registrado": 2009,
+  "revista_registrada": "Crop Science",
+  "fecha": "2026-11-01"
+ },
+ "schmutz2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "A reference genome for common bean and genome-wide analysis of dual domestications",
+  "anio_registrado": 2014,
+  "revista_registrada": "Nature Genetics",
+  "fecha": "2026-11-01"
+ },
+ "smith1997": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Initial Domestication of\n            Cucurbita pepo\n            in the Americas 10,000 Years Ago",
+  "anio_registrado": 1997,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "blanca2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Genomic variation in tomato, from wild ancestors to contemporary breeding accessions",
+  "anio_registrado": 2015,
+  "revista_registrada": "BMC Genomics",
+  "fecha": "2026-11-01"
+ },
+ "razifard2020": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Genomic Evidence for Complex Domestication History of the Cultivated Tomato in Latin America",
+  "anio_registrado": 2020,
+  "revista_registrada": "Molecular Biology and Evolution",
+  "fecha": "2026-11-01"
+ },
+ "labate2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Nucleotide diversity estimates of tomatillo (Physalis philadelphica) accessions including nine new inbred lines",
+  "anio_registrado": 2015,
+  "revista_registrada": "Molecular Breeding",
+  "fecha": "2026-11-01"
+ },
+ "gonzalezperez2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Tomatillo or husk tomato (Physalis philadelphica and Physalis ixocarpa): A review",
+  "anio_registrado": 2021,
+  "revista_registrada": "Scientia Horticulturae",
+  "fecha": "2026-11-01"
+ },
+ "galindo2007": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Some aspects of avocado (Persea americana Mill.) diversity and domestication in Mesoamerica",
+  "anio_registrado": 2007,
+  "revista_registrada": "Genetic Resources and Crop Evolution",
+  "fecha": "2026-11-01"
+ },
+ "rendon2019": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The avocado genome informs deep angiosperm phylogeny, highlights introgressive hybridization, and reveals pathogen-influenced gene space adaptation",
+  "anio_registrado": 2019,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "newstrom1991": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Evidence for the origin of chayote, sechium edule (Cucurbitaceae) Evidéncia para el centro do origen del chayote, Sechium edule (Cucurbitaceae).",
+  "anio_registrado": 1991,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "griffith2004": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "The origins of an important cactus crop, Opuntia ficus‐indica (Cactaceae): new molecular evidence",
+  "anio_registrado": 2004,
+  "revista_registrada": "American Journal of Botany",
+  "fecha": "2026-11-01"
+ },
+ "caruso2010": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Microsatellite markers help to assess genetic diversity among Opuntia ficus indica cultivated genotypes and their relation with related species",
+  "anio_registrado": 2010,
+  "revista_registrada": "Plant Systematics and Evolution",
+  "fecha": "2026-11-01"
+ },
+ "sauer1967": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Grain Amaranths and Their Relatives: A Revised Taxonomic and Geographic Survey",
+  "anio_registrado": 1967,
+  "revista_registrada": "Annals of the Missouri Botanical Garden",
+  "fecha": "2026-11-01"
+ },
+ "stetter2020": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Parallel Seed Color Adaptation during Multiple Domestication Attempts of an Ancient New World Grain",
+  "anio_registrado": 2019,
+  "revista_registrada": "Molecular Biology and Evolution",
+  "fecha": "2026-11-01"
+ },
+ "cahill2003": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Ethnobotany of Chia, Salvia hispanica L. (Lamiaceae)",
+  "anio_registrado": 2003,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "valverde1995": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Huitlacoche (\n                    ustilago maydis\n                    ) as a food source — biology, composition, and production",
+  "anio_registrado": 1995,
+  "revista_registrada": "Critical Reviews in Food Science and Nutrition",
+  "fecha": "2026-11-01"
+ },
+ "chavez2017": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Domestication and Genetics of Papaya: A Review",
+  "anio_registrado": 2017,
+  "revista_registrada": "Frontiers in Ecology and Evolution",
+  "fecha": "2026-11-01"
+ },
+ "bertioli2019": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The genome sequence of segmental allotetraploid peanut Arachis hypogaea",
+  "anio_registrado": 2019,
+  "revista_registrada": "Nature Genetics",
+  "fecha": "2026-11-01"
+ },
+ "roullier2013": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Disentangling the Origins of Cultivated Sweet Potato (Ipomoea batatas (L.) Lam.)",
+  "anio_registrado": 2013,
+  "revista_registrada": "PLoS ONE",
+  "fecha": "2026-11-01"
+ },
+ "lentz2008": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Sunflower (\n                    Helianthus annuus\n                    L.) as a pre-Columbian domesticate in Mexico",
+  "anio_registrado": 2008,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "blackman2011": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Sunflower domestication alleles support single domestication center in eastern North America",
+  "anio_registrado": 2011,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "kraft2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Multiple lines of evidence for the origin of domesticated chili pepper,\n                    Capsicum annuum\n                    , in Mexico",
+  "anio_registrado": 2014,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "perry2007": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Starch Fossils and the Domestication and Dispersal of Chili Peppers (\n            Capsicum\n            spp. L.) in the Americas",
+  "anio_registrado": 2007,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "chiou2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "A Systematic Approach to Species–Level Identification of Chile Pepper (Capsicum spp.) Seeds: Establishing the Groundwork for Tracking the Domestication and Movement of Chile Peppers through the Americas and Beyond",
+  "anio_registrado": 2014,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "zarrillo2018": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The use and domestication of Theobroma cacao during the mid-Holocene in the upper Amazon",
+  "anio_registrado": 2018,
+  "revista_registrada": "Nature Ecology &amp; Evolution",
+  "fecha": "2026-11-01"
+ },
+ "powis2007": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Oldest chocolate in the New World",
+  "anio_registrado": 2007,
+  "revista_registrada": "Antiquity Project Gallery, 2002–2016",
+  "fecha": "2026-11-01"
+ },
+ "powis2011": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Cacao use and the San Lorenzo Olmec",
+  "anio_registrado": 2011,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "hurst2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Cacao usage by the earliest Maya civilization",
+  "anio_registrado": 2002,
+  "revista_registrada": "Nature",
+  "fecha": "2026-11-01"
+ },
+ "dakin2000": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "CACAO AND CHOCOLATE",
+  "anio_registrado": 2000,
+  "revista_registrada": "Ancient Mesoamerica",
+  "fecha": "2026-11-01"
+ },
+ "kaufman2007": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "THE HISTORY OF THE WORD FOR CACAO IN ANCIENT MESOAMERICA",
+  "anio_registrado": 2007,
+  "revista_registrada": "Ancient Mesoamerica",
+  "fecha": "2026-11-01"
+ },
+ "lubinsky2008": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Origins and Dispersal of Cultivated Vanilla (Vanilla planifolia Jacks. [Orchidaceae])1",
+  "anio_registrado": 2008,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "fouche1999": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Vanilla planifolia: history, botany and culture in Reunion island",
+  "anio_registrado": 1999,
+  "revista_registrada": "Agronomie",
+  "fecha": "2026-11-01"
+ },
+ "gallage2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Vanillin–Bioconversion and Bioengineering of the Most Popular Plant Flavor and Its De Novo Biosynthesis in the Vanilla Orchid",
+  "anio_registrado": 2015,
+  "revista_registrada": "Molecular Plant",
+  "fecha": "2026-11-01"
+ },
+ "sierro2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The tobacco genome sequence and its comparison with those of tomato and potato",
+  "anio_registrado": 2014,
+  "revista_registrada": "Nature Communications",
+  "fecha": "2026-11-01"
+ },
+ "zagorevski2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The detection of nicotine in a Late Mayan period flask by gas chromatography and liquid chromatography mass spectrometry methods",
+  "anio_registrado": 2012,
+  "revista_registrada": "Rapid Communications in Mass Spectrometry",
+  "fecha": "2026-11-01"
+ },
+ "case2003": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Chemistry and Ethnobotany of Commercial Incense Copals, Copal Blanco, Copal Oro, and Copal Negro, of North America",
+  "anio_registrado": 2003,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "lucero2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Analysis of Mexican reference standards for Bursera spp. resins by Gas Chromatography–Mass Spectrometry and application to archaeological objects",
+  "anio_registrado": 2014,
+  "revista_registrada": "Journal of Archaeological Science",
+  "fecha": "2026-11-01"
+ },
+ "vandam2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Range Wide Phylogeography of Dactylopius coccus (Hemiptera: Dactylopiidae)",
+  "anio_registrado": 2015,
+  "revista_registrada": "Annals of the Entomological Society of America",
+  "fecha": "2026-11-01"
+ },
+ "campana2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "America's red gold: multiple lineages of cultivated cochineal in Mexico",
+  "anio_registrado": 2015,
+  "revista_registrada": "Ecology and Evolution",
+  "fecha": "2026-11-01"
+ },
+ "rodriguez2001": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Direction of dispersion of cochineal (Dactylopius coccus Costa) within the Americas",
+  "anio_registrado": 2001,
+  "revista_registrada": "Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "wouters1992": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Dye Analysis of Pre-Columbian Peruvian Textiles With High-Performance Liquid Chromatography and Diode-Array Detection",
+  "anio_registrado": 1992,
+  "revista_registrada": "Journal of the American Institute for Conservation",
+  "fecha": "2026-11-01"
+ },
+ "donkin1977": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Spanish Red: An Ethnogeographical Study of Cochineal and the Opuntia Cactus",
+  "anio_registrado": 1977,
+  "revista_registrada": "Transactions of the American Philosophical Society",
+  "fecha": "2026-11-01"
+ },
+ "efsa2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Scientific Opinion on the re‐evaluation of cochineal, carminic acid, carmines (E 120) as a food additive",
+  "anio_registrado": 2015,
+  "revista_registrada": "EFSA Journal",
+  "fecha": "2026-11-01"
+ },
+ "arnold2008": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The first direct evidence for the production of Maya Blue: rediscovery of a technology",
+  "anio_registrado": 2008,
+  "revista_registrada": "Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "gettens1962": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Maya Blue: An Unsolved Problem in Ancient Pigments",
+  "anio_registrado": 1962,
+  "revista_registrada": "American Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "titford2005": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The long history of hematoxylin",
+  "anio_registrado": 2005,
+  "revista_registrada": "Biotechnic &amp; Histochemistry",
+  "fecha": "2026-11-01"
+ },
+ "moreira2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Domestication of Annatto (Bixa orellana) from Bixa urucurana in Amazonia",
+  "anio_registrado": 2015,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "efsa2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The safety of annatto extracts (E 160b) as a food additive",
+  "anio_registrado": 2016,
+  "revista_registrada": "EFSA Journal",
+  "fecha": "2026-11-01"
+ },
+ "cervantes2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.98,
+  "titulo_registrado": "Reproductiveand Recruitmentseasons of the Purple SnailPlicopurpura pansa(Gould, 1853) in Oaxaca, Mexico",
+  "anio_registrado": 2016,
+  "revista_registrada": "Journal of Shellfish Research",
+  "fecha": "2026-11-01"
+ },
+ "yuan2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Parallel and Intertwining Threads of Domestication in Allopolyploid Cotton",
+  "anio_registrado": 2021,
+  "revista_registrada": "Advanced Science",
+  "fecha": "2026-11-01"
+ },
+ "hosler1999": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Prehistoric Polymers: Rubber Processing in Ancient Mesoamerica",
+  "anio_registrado": 1999,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "tarkanian2011": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "America’s First Polymer Scientists: Rubber Processing, Use and Transport in Mesoamerica",
+  "anio_registrado": 2011,
+  "revista_registrada": "Latin American Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "mathews2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Chicle",
+  "anio_registrado": 2009,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "correa2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Pulque production from fermented agave sap as a dietary supplement in Prehispanic Mesoamerica",
+  "anio_registrado": 2014,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "zizumbo2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Distillation in Western Mesoamerica before European Contact",
+  "anio_registrado": 2009,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "colunga1997": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Morphological variation of henequén (Agave fourcroydes, Agavaceae) germplasm and its wild ancestor (A. angustifolia) under uniform growth conditions: diversity and domestication",
+  "anio_registrado": 1997,
+  "revista_registrada": "American Journal of Botany",
+  "fecha": "2026-11-01"
+ },
+ "rasutis2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "A sustainability review of domestic rubber from the guayule plant",
+  "anio_registrado": 2015,
+  "revista_registrada": "Industrial Crops and Products",
+  "fecha": "2026-11-01"
+ },
+ "speller2010": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Ancient mitochondrial DNA analysis reveals complexity of indigenous North American turkey domestication",
+  "anio_registrado": 2010,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "thornton2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Earliest Mexican Turkeys (Meleagris gallopavo) in the Maya Region: Implications for Pre-Hispanic Animal Trade and the Timing of Turkey Domestication",
+  "anio_registrado": 2012,
+  "revista_registrada": "PLoS ONE",
+  "fecha": "2026-11-01"
+ },
+ "manin2018": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Diversity of management strategies in Mesoamerican turkeys: archaeological, isotopic and genetic evidence",
+  "anio_registrado": 2018,
+  "revista_registrada": "Royal Society Open Science",
+  "fecha": "2026-11-01"
+ },
+ "stahl2006": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "New evidence for pre‐Columbian Muscovy Duck Cairina moschata from Ecuador",
+  "anio_registrado": 2006,
+  "revista_registrada": "Ibis",
+  "fecha": "2026-11-01"
+ },
+ "leathlobhair2018": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The evolutionary history of dogs in the Americas",
+  "anio_registrado": 2018,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "reiss2015": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "The history of the oldest self‐sustaining laboratory animal: 150 years of axolotl research",
+  "anio_registrado": 2015,
+  "revista_registrada": "Journal of Experimental Zoology Part B: Molecular and Developmental Evolution",
+  "fecha": "2026-11-01"
+ },
+ "iucn2020axolotl": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Ambystoma mexicanum: IUCN SSC Amphibian Specialist Group",
+  "anio_registrado": 2019,
+  "revista_registrada": "IUCN Red List of Threatened Species",
+  "fecha": "2026-11-01"
+ },
+ "quezada2001": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Meliponiculture in Mexico: problems and perspective for development",
+  "anio_registrado": 2001,
+  "revista_registrada": "Bee World",
+  "fecha": "2026-11-01"
+ },
+ "ramoselorduy2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.98,
+  "titulo_registrado": "Anthropo‐entomophagy: Cultures, evolution and sustainability",
+  "anio_registrado": 2009,
+  "revista_registrada": "Entomological Research",
+  "fecha": "2026-11-01"
+ },
+ "fao2013insectos": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "zizumbo2010": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Origin of agriculture and plant domestication in West Mesoamerica",
+  "anio_registrado": 2010,
+  "revista_registrada": "Genetic Resources and Crop Evolution",
+  "fecha": "2026-11-01"
+ },
+ "postma2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Complementarity in root architecture for nutrient uptake in ancient maize/bean and maize/bean/squash polycultures",
+  "anio_registrado": 2012,
+  "revista_registrada": "Annals of Botany",
+  "fecha": "2026-11-01"
+ },
+ "katz1974": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Traditional Maize Processing Techniques in the New World",
+  "anio_registrado": 1974,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "ginnaio2011": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Pellagra in Late Nineteenth Century Italy: Effects of a Deficiency Disease",
+  "anio_registrado": 2011,
+  "revista_registrada": "Population (english edition)",
+  "fecha": "2026-11-01"
+ },
+ "fao2017chinampas": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Login",
+  "fecha": "2026-11-01"
+ },
+ "calnek1972": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Settlement Pattern and Chinampa Agriculture at Tenochtitlan",
+  "anio_registrado": 1972,
+  "revista_registrada": "American Antiquity",
+  "fecha": "2026-11-01"
+ },
+ "saturno2006": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Early Maya Writing at San Bartolo, Guatemala",
+  "anio_registrado": 2006,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "rodriguez2006": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Oldest Writing in the New World",
+  "anio_registrado": 2006,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "sprajc2023": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Origins of Mesoamerican astronomy and calendar: Evidence from the Olmec and Maya regions",
+  "anio_registrado": 2023,
+  "revista_registrada": "Science Advances",
+  "fecha": "2026-11-01"
+ },
+ "dresde": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Sachsen.digital Sammlungen: Codex Dresdensis - Mscr.Dresd.R.310",
+  "fecha": "2026-11-01"
+ },
+ "cowgill1997": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "State and Society at Teotihuacan, Mexico",
+  "anio_registrado": 1997,
+  "revista_registrada": "Annual Review of Anthropology",
+  "fecha": "2026-11-01"
+ },
+ "smith2005": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "City Size in Late Postclassic Mesoamerica",
+  "anio_registrado": 2005,
+  "revista_registrada": "Journal of Urban History",
+  "fecha": "2026-11-01"
+ },
+ "mendoza": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "sotolaveaga2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Jungle Laboratories",
+  "anio_registrado": 2009,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "djerassi1954": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.98,
+  "titulo_registrado": "Steroids. LIV.1 Synthesis of 19-Nov-17α-ethynyltestosterone and 19-Nor-17α-methyltestosterone2",
+  "anio_registrado": 1954,
+  "revista_registrada": "Journal of the American Chemical Society",
+  "fecha": "2026-11-01"
+ },
+ "us2744122": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US2744122A - delta 4-19-nor-17alpha-ethinylandrosten-17beta-ol-3-one and process - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "cruzbadiano": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "An Aztec Herbal: First medical text published in the Americas | CSUN University Library",
+  "fecha": "2026-11-01"
+ },
+ "hofmann1958": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Psilocybin, ein psychotroper Wirkstoff aus dem mexikanischen RauschpilzPsilocybe mexicana Heim",
+  "anio_registrado": 1958,
+  "revista_registrada": "Experientia",
+  "fecha": "2026-11-01"
+ },
+ "carhart2016": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Psilocybin with psychological support for treatment-resistant depression: an open-label feasibility study",
+  "anio_registrado": 2016,
+  "revista_registrada": "The Lancet Psychiatry",
+  "fecha": "2026-11-01"
+ },
+ "davis2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Effects of Psilocybin-Assisted Therapy on Major Depressive Disorder",
+  "anio_registrado": 2021,
+  "revista_registrada": "JAMA Psychiatry",
+  "fecha": "2026-11-01"
+ },
+ "heffter1898": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Ueber Pellote",
+  "anio_registrado": 1898,
+  "revista_registrada": "Archiv für Experimentelle Pathologie und Pharmakologie",
+  "fecha": "2026-11-01"
+ },
+ "elseedi2005": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Prehistoric peyote use: Alkaloid analysis and radiocarbon dating of archaeological specimens of Lophophora from Texas",
+  "anio_registrado": 2005,
+  "revista_registrada": "Journal of Ethnopharmacology",
+  "fecha": "2026-11-01"
+ },
+ "ortega1982": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.99,
+  "titulo_registrado": "Salvinorin, a new trans-neoclerodane diterpene from Salvia divinorum(Labiatae)",
+  "anio_registrado": 1982,
+  "revista_registrada": "Journal of the Chemical Society, Perkin Transactions 1",
+  "fecha": "2026-11-01"
+ },
+ "roth2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Salvinorin A: A potent naturally occurring nonnitrogenous κ opioid selective agonist",
+  "anio_registrado": 2002,
+  "revista_registrada": "Proceedings of the National Academy of Sciences",
+  "fecha": "2026-11-01"
+ },
+ "unesco2008muertos": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Las fiestas indígenas dedicadas a los muertos - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2010cocina": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La cocina tradicional mexicana: Una cultura comunitaria, ancestral y viva y el paradigma de Michoacán - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2009voladores": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La ceremonia ritual de los Voladores - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2010parachicos": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Los parachicos en la fiesta tradicional de enero de Chiapa de Corzo - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2010pirekua": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La pirekua, canto tradicional de los p’urhépechas - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2011mariachi": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "El Mariachi, música de cuerdas, canto y trompeta - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "unesco2016charreria": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La charrería, tradición ecuestre en México - UNESCO Patrimonio cultural inmaterial",
+  "fecha": "2026-11-01"
+ },
+ "kpbs2013": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "After Outcry, Disney Withdraws Effort To Trademark 'Dia De Los Muertos' | KPBS Public Media",
+  "fecha": "2026-11-01"
+ },
+ "telemetro2016": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "México tendrá su primer desfile del Día de Muertos inspirado en Spectre",
+  "fecha": "2026-11-01"
+ },
+ "globalvoices2015": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Mexican Indigenous Community Accuses Famous Designer of Plagiarism · Global Voices",
+  "fecha": "2026-11-01"
+ },
+ "expansion2019": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Gobierno de México acusa a Carolina Herrera de apropiación cultural",
+  "fecha": "2026-11-01"
+ },
+ "lfppcpcia2022": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "The Federal Law for the Protection of Cultural Heritage of Indigenous and Afro-Mexican Peoples and Communities (published in the Official Journal of the Federat",
+  "fecha": "2026-11-01"
+ },
+ "inegi2020": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Lengua indígena",
+  "fecha": "2026-11-01"
+ },
+ "inali2008": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "karttunen1983": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "dle": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Diccionario de la lengua española | Edición del Tricentenario | RAE - ASALE",
+  "fecha": "2026-11-01"
+ },
+ "acuna2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Megadrought and Megadeath in 16th Century Mexico",
+  "anio_registrado": 2002,
+  "revista_registrada": "Emerging Infectious Diseases",
+  "fecha": "2026-11-01"
+ },
+ "irigoin2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The End of a Silver Era: The Consequences of the Breakdown of the Spanish Peso Standard in China and the United States, 1780s–1850s",
+  "anio_registrado": 2009,
+  "revista_registrada": "Journal of World History",
+  "fecha": "2026-11-01"
+ },
+ "lopezlujan2020": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "weltmuseum": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "The feather headdress - Weltmuseum Wien",
+  "fecha": "2026-11-01"
+ },
+ "traffickingaubin": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Aubin Tonalamatl « Trafficking Culture",
+  "fecha": "2026-11-01"
+ },
+ "us5894079": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US5894079A - Field bean cultivar named enola - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "bpai2008enola": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "pallottini2004": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Genetic Anatomy of a Patented Yellow Bean",
+  "anio_registrado": 2004,
+  "revista_registrada": "Crop Science",
+  "fecha": "2026-11-01"
+ },
+ "etc2009": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "us5919695": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US5919695A - Method and culture for inhibiting undesired microorganisms with culture of Bacillus subtilis - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "nagoya": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "The Nagoya Protocol on Access and Benefit-sharing",
+  "fecha": "2026-11-01"
+ },
+ "expansion2025maiz": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Senado avala reforma para prohibir el maíz transgénico; pasa a congresos locales",
+  "fecha": "2026-11-01"
+ },
+ "afs2024maiz": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "United States Prevailed in USMCA Dispute Against Mexico on Genetically Modified Corn | ArentFox Schiff",
+  "fecha": "2026-11-01"
+ },
+ "us2296019": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US2296019A - Chromoscopic adapter for television equipment - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "consumerist2006": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Kraft: Fake Guacamole Lawsuit – Consumerist",
+  "fecha": "2026-11-01"
+ },
+ "publimetro2026": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "México recupera 160 piezas en el extranjero: refuerza ofensiva contra tráfico de patrimonio – Publimetro México",
+  "fecha": "2026-11-01"
+ },
+ "landa1566": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "diazdelcastillo1632": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "sahagun1577": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Digital Florentine Codex",
+  "fecha": "2026-11-01"
+ },
+ "wipotk": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "coe1996": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "wcvp": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-01"
+ },
+ "lopezbinnquist2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Mexican Bark Paper: Evidence of History of Tree Species Used and Their Fiber Characteristics",
+  "anio_registrado": 2012,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "peters1987": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Otomi bark paper in Mexico: Commercialization of a pre-hispanic technology",
+  "anio_registrado": 1987,
+  "revista_registrada": "Economic Botany",
+  "fecha": "2026-11-01"
+ },
+ "rojo2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Non-power positional number representation systems, bijective numeration, and the Mesoamerican discovery of zero",
+  "anio_registrado": 2021,
+  "revista_registrada": "Heliyon",
+  "fecha": "2026-11-01"
+ },
+ "blume2011": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-01"
+ },
+ "stuart2012": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-01"
+ },
+ "diehl2004": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "plofker2009": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Mathematics in India",
+  "anio_registrado": 2008,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "inomata2020": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Monumental architecture at Aguada Fénix and the rise of Maya civilization",
+  "anio_registrado": 2020,
+  "revista_registrada": "Nature",
+  "fecha": "2026-11-01"
+ },
+ "inomata2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Origins and spread of formal ceremonial complexes in the Olmec and Maya regions revealed by airborne lidar",
+  "anio_registrado": 2021,
+  "revista_registrada": "Nature Human Behaviour",
+  "fecha": "2026-11-01"
+ },
+ "inomata2013": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Early Ceremonial Constructions at Ceibal, Guatemala, and the Origins of Lowland Maya Civilization",
+  "anio_registrado": 2013,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "pohl2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Olmec Origins of Mesoamerican Writing",
+  "anio_registrado": 2002,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "gdn2012": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Gran Diccionario Náhuatl",
+  "fecha": "2026-11-01"
+ },
+ "barreravasquez1980": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "dott2020": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "The Chile Pepper in China",
+  "anio_registrado": 2020,
+  "revista_registrada": "",
+  "fecha": "2026-11-01"
+ },
+ "ho1955": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.98,
+  "titulo_registrado": "The Introduction of American Food Plants into China\n                    1",
+  "anio_registrado": 1955,
+  "revista_registrada": "American Anthropologist",
+  "fecha": "2026-11-01"
+ },
+ "kwon2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "History of Korean gochu, gochujang, and kimchi",
+  "anio_registrado": 2014,
+  "revista_registrada": "Journal of Ethnic Foods",
+  "fecha": "2026-11-01"
+ },
+ "livehistory2023": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Marigold Flower and Dyeing with Marigold",
+  "fecha": "2026-11-01"
+ },
+ "us3633": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US3633A - Charles guudyear - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "us5382714": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US5382714A - Process for isolation, purification, and recrystallization of lutein from saponified marigold oleoresin and uses thereof - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "us6894208": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "US6894208B2 - Marigold hybrid 50011 - Google Patents",
+  "fecha": "2026-11-01"
+ },
+ "ribeiro2006": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "zamarron2021": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Cempasúchil: una flor muy mexicana… hecha en China",
+  "fecha": "2026-11-01"
+ },
+ "ramos2024": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "LexLatin | Recursos genéticos en Latinoamérica: ¿Qué hace el cempasúchil en China, tan lejos de casa?",
+  "fecha": "2026-11-01"
+ },
+ "arevalo2021": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Taming of Psidium guajava: Natural and Cultural History of a Neotropical Fruit",
+  "anio_registrado": 2021,
+  "revista_registrada": "Frontiers in Plant Science",
+  "fecha": "2026-11-01"
+ },
+ "arevalo2024": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Genetic analyses and dispersal patterns unveil the Amazonian origin of guava domestication",
+  "anio_registrado": 2024,
+  "revista_registrada": "Scientific Reports",
+  "fecha": "2026-11-01"
+ },
+ "cortes1522": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "britannica-templomayor": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-01"
+ },
+ "sousaterraciano-toxcatl": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La matanza de Toxcatl | Noticonquista",
+  "fecha": "2026-11-01"
+ },
+ "acunasoto2002": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Megadrought and Megadeath in 16th Century Mexico",
+  "anio_registrado": 2002,
+  "revista_registrada": "Emerging Infectious Diseases",
+  "fecha": "2026-11-01"
+ },
+ "vagene2018": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico",
+  "anio_registrado": 2018,
+  "revista_registrada": "Nature Ecology &amp; Evolution",
+  "fecha": "2026-11-01"
+ },
+ "aljazeera2021": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Mexico apologises to Indigenous Maya people for historic abuses | Indigenous Rights News | Al Jazeera",
+  "fecha": "2026-11-01"
+ },
+ "elsiglo2025": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "No solo el Louvre, así fue el 'Robo del Siglo' al Museo Nacional de Antropología en 1985 | El Siglo de Torreón",
+  "fecha": "2026-11-01"
+ },
+ "lanacion2024": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "El robo que fascinó a García Márquez. Cómo dos estudiantes hurtaron 124 piezas del Museo Nacional de Antropología en 1985 - LA NACION",
+  "fecha": "2026-11-01"
+ },
+ "ortizdemontellano1975": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Empirical Aztec Medicine",
+  "anio_registrado": 1975,
+  "revista_registrada": "Science",
+  "fecha": "2026-11-01"
+ },
+ "lopezaustin1980": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "inali2012": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-01"
+ },
+ "glottolog-cuitlateco": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Glottolog 5.3 - Cuitlatec",
+  "fecha": "2026-11-01"
+ },
+ "relacionmichoacan1541": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-01"
+ },
+ "iucn2021caracara": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 0.9,
+  "titulo_registrado": "Caracara lutosa: BirdLife International",
+  "anio_registrado": 2021,
+  "revista_registrada": "IUCN Red List of Threatened Species",
+  "fecha": "2026-11-01"
+ },
+ "lammertink2011": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Film documentation of the probably extinct Imperial Woodpecker (Campephilus imperialis)",
+  "anio_registrado": 2011,
+  "revista_registrada": "The Auk",
+  "fecha": "2026-11-01"
+ },
+ "expansion2019disculpa": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "AMLO pide a España disculparse por abusos de la Conquista",
+  "fecha": "2026-11-01"
+ }
+}

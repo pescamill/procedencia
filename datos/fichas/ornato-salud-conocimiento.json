@@ -1,0 +1,1386 @@
+[
+ {
+  "id": "cempasuchil",
+  "nombre": "Cempasúchil",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.2,
+   -98.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1300,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "especie": "Tagetes erecta",
+  "originales": [
+   {
+    "forma": "cempohualxochitl",
+    "lengua": "náhuatl",
+    "glosa": "veinte flores, flor de muchos pétalos",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Tagetes erecta es nativa de México; guía a las almas en el Día de Muertos.",
+   "solidez": "consenso",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "En India forma las guirnaldas de templos, bodas y funerales. Muchos la creen nativa y la identifican con flores de textos antiguos, aunque la especie llegó de América después de 1500.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "livehistory2023",
+     "wcvp"
+    ]
+   },
+   {
+    "texto": "De sus pétalos se extrae el pigmento amarillo que colorea la yema del huevo. Esa industria, que empresas mexicanas dominaron hasta los años noventa, pasó a China, Perú e India; hoy México le compra a China casi todo el pigmento.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "zamarron2021"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "African marigold",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "África.",
+    "apunta": {
+     "nombre": "África",
+     "coords": [
+      8,
+      20
+     ]
+    }
+   },
+   {
+    "dice": "French marigold",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Para su especie hermana, Tagetes patula, también americana.",
+    "apunta": {
+     "nombre": "Francia",
+     "coords": [
+      46.5,
+      2.5
+     ]
+    }
+   },
+   {
+    "dice": "marigold",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "«Oro de María»; antes nombraba a la caléndula europea."
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre su uso en India.",
+   "Fuente sobre la industria de la luteína."
+  ],
+  "relacionadas": [
+   "dia-muertos"
+  ],
+  "alcance": "mundial",
+  "en_breve": "La flor naranja del Día de Muertos. En India forma las guirnaldas de templos y bodas, y de sus pétalos sale el colorante amarillo de las yemas de huevo."
+ },
+ {
+  "id": "nochebuena",
+  "nombre": "Nochebuena",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Taxco, Guerrero, y la vertiente del Pacífico",
+  "coords": [
+   18.56,
+   -99.6
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1828,
+   "texto": "llevada a EUA hacia 1828"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "especie": "Euphorbia pulcherrima",
+  "originales": [
+   {
+    "forma": "cuetlaxochitl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Euphorbia pulcherrima es nativa de México. Joel R. Poinsett, primer embajador de EUA en México, la llevó a su país hacia 1828; el mundo la llama poinsettia.",
+   "solidez": "consenso",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "poinsettia",
+    "lengua": "inglés y otras",
+    "forma": "nombre_ajeno",
+    "nota": "Por Joel R. Poinsett.",
+    "apunta": {
+     "nombre": "Charleston, EUA (Joel R. Poinsett)",
+     "coords": [
+      32.8,
+      -79.9
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Fuente histórica sobre Poinsett."
+  ],
+  "relacionadas": [],
+  "alcance": "mundial",
+  "en_breve": "La planta roja que decora casas en Navidad en todo el mundo, y que en inglés lleva el nombre de un embajador estadounidense."
+ },
+ {
+  "id": "dalia",
+  "nombre": "Dalia",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.9,
+   -99.4
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1400,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "especie": "Dahlia coccinea",
+  "originales": [
+   {
+    "forma": "acocoxochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor de tallo hueco",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El género Dahlia es mexicano; es flor nacional desde 1963 y hoy tiene miles de cultivares europeos.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "dahlia",
+    "lengua": "todas",
+    "forma": "nombre_ajeno",
+    "nota": "Por el botánico sueco Anders Dahl.",
+    "apunta": {
+     "nombre": "Suecia (Anders Dahl)",
+     "coords": [
+      62,
+      15
+     ]
+    }
+   }
+  ],
+  "pendientes": [
+   "Enlazar el decreto de 1963 en el DOF."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "La flor nacional de México, con miles de variedades cultivadas en jardines de todo el mundo."
+ },
+ {
+  "id": "nardo",
+  "nombre": "Nardo",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "México",
+  "coords": [
+   20.0,
+   -100.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1400,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Agave amica",
+  "originales": [
+   {
+    "forma": "omixochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor de hueso",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "El nardo (Polianthes tuberosa, hoy Agave amica) es un cultivo mexicano que no se conoce en estado silvestre; es la «tuberosa» de la perfumería francesa.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [
+   {
+    "dice": "tuberose",
+    "lengua": "inglés / francés",
+    "forma": "etiqueta_muda",
+    "nota": "Nombre botánico sin rastro de origen."
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre su domesticación."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Flor blanca de perfume intenso; se usa en perfumería y en las guirnaldas de India."
+ },
+ {
+  "id": "cosmos",
+  "nombre": "Cosmos",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.7,
+   -101.2
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1789,
+   "texto": "llevada a Europa a fines del siglo XVIII"
+  },
+  "pueblos": [],
+  "especie": "Cosmos bipinnatus",
+  "veredicto": {
+   "texto": "Cosmos bipinnatus es nativa de México y hoy es flor de jardín en todo el mundo.",
+   "solidez": "consenso",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "Mexican aster",
+    "lengua": "inglés",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Flor de jardín que hoy crece silvestre en medio mundo, de Sudáfrica a Japón.",
+  "sin_originario": "Falta documentar su nombre náhuatl."
+ },
+ {
+  "id": "zinnia",
+  "nombre": "Zinnia",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mexico",
+  "region": "México",
+  "coords": [
+   21.5,
+   -102.0
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1750,
+   "texto": "siglo XVIII"
+  },
+  "pueblos": [],
+  "especie": "Zinnia elegans",
+  "veredicto": {
+   "texto": "La zinnia de jardín es nativa de México.",
+   "solidez": "consenso",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "zinnia",
+    "lengua": "todas",
+    "forma": "nombre_ajeno",
+    "nota": "Por el botánico alemán Johann Gottfried Zinn.",
+    "apunta": {
+     "nombre": "Alemania (Johann Zinn)",
+     "coords": [
+      51.5,
+      9.9
+     ]
+    }
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Flor de jardín de colores vivos; hasta se cultivó en la Estación Espacial Internacional.",
+  "sin_originario": "Falta documentar su nombre náhuatl; el nombre científico honra a J. G. Zinn."
+ },
+ {
+  "id": "tigridia",
+  "nombre": "Flor de tigre",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "domesticado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro de México",
+  "coords": [
+   19.4,
+   -99.6
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1400,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [],
+  "especie": "Tigridia pavonia",
+  "originales": [
+   {
+    "forma": "oceloxochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor de jaguar",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Tigridia pavonia es nativa de México y se cultivaba desde época prehispánica, también como alimento.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente para el cultivo prehispánico."
+  ],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Flor de tres pétalos moteados; su bulbo se comía en el México antiguo."
+ },
+ {
+  "id": "echeverias",
+  "nombre": "Echeverias",
+  "ambito": "ornato",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo"
+  ],
+  "territorio": "mexico",
+  "region": "Altiplano y sierras de México",
+  "coords": [
+   21.0,
+   -100.0
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1900,
+   "texto": "comercio global en el siglo XX"
+  },
+  "pueblos": [],
+  "especie": "Echeveria elegans",
+  "veredicto": {
+   "texto": "La mayoría de las especies de Echeveria, suculentas de venta global, son mexicanas.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "wcvp"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [
+   {
+    "dice": "echeveria",
+    "lengua": "todas",
+    "forma": "conserva",
+    "nota": "Por el ilustrador novohispano Atanasio Echeverría."
+   }
+  ],
+  "pendientes": [
+   "Fuente sobre el número de especies mexicanas del género."
+  ],
+  "relacionadas": [],
+  "alcance": "amplio",
+  "en_breve": "Las suculentas en forma de rosa que llenan macetas en todo el mundo son casi todas de México.",
+  "sin_originario": "Falta documentar sus nombres en lenguas indígenas; el género honra a Atanasio Echeverría."
+ },
+ {
+  "id": "cruz-badiano",
+  "nombre": "Códice de la Cruz-Badiano",
+  "ambito": "salud",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Colegio de Santa Cruz de Tlatelolco",
+  "coords": [
+   19.45,
+   -99.14
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1552,
+   "texto": "1552"
+  },
+  "pueblos": [
+   "nahuas"
+  ],
+  "autoria": "Martín de la Cruz y Juan Badiano",
+  "veredicto": {
+   "texto": "Herbario de 1552 del médico nahua Martín de la Cruz, traducido al latín por el xochimilca Juan Badiano: el primer libro de medicina escrito en América.",
+   "solidez": "consenso",
+   "fuentes": [
+    "cruzbadiano"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Estuvo siglos en Roma; Juan Pablo II lo devolvió a México en 1990 y hoy lo custodia el INAH.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "cruzbadiano"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "Amate-cehuatl-xihuitl pitli",
+    "lengua": "náhuatl",
+    "glosa": "título atribuido; por verificar",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "Badianus Manuscript",
+    "lengua": "inglés",
+    "forma": "nombre_ajeno",
+    "nota": "Nombra al traductor, no al autor."
+   }
+  ],
+  "pendientes": [
+   "Verificar el título náhuatl.",
+   "Fuente académica sobre el códice."
+  ],
+  "relacionadas": [
+   "herbolaria-hernandez"
+  ],
+  "alcance": "regional",
+  "en_breve": "El primer libro de medicina escrito en América, por un médico nahua en 1552, con plantas pintadas y sus usos."
+ },
+ {
+  "id": "herbolaria-hernandez",
+  "nombre": "Saber herbolario recogido por Francisco Hernández",
+  "ambito": "salud",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Nueva España",
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "epoca": "virreinal",
+  "fecha": {
+   "anio": 1571,
+   "texto": "1571–1577"
+  },
+  "pueblos": [
+   "nahuas"
+  ],
+  "veredicto": {
+   "texto": "La expedición del médico Francisco Hernández catalogó hacia 1570 unas 3,000 plantas a partir del saber de médicos indígenas.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "originales": [
+   {
+    "forma": "pahtli",
+    "lengua": "náhuatl",
+    "glosa": "medicina, remedio",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente académica (p. ej., Varey, 2000)."
+  ],
+  "relacionadas": [
+   "cruz-badiano"
+  ],
+  "alcance": "regional",
+  "en_breve": "El saber de los médicos nahuas que Francisco Hernández recogió en el siglo XVI y que circuló en Europa sin su crédito."
+ },
+ {
+  "id": "barbasco-pildora",
+  "nombre": "Barbasco y la píldora anticonceptiva",
+  "ambito": "salud",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Veracruz, Oaxaca y Ciudad de México (Syntex)",
+  "coords": [
+   18.2,
+   -96.1
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1951,
+   "texto": "1951"
+  },
+  "pueblos": [],
+  "autoria": "Luis E. Miramontes (Syntex)",
+  "veredicto": {
+   "texto": "En 1951 el químico mexicano Luis E. Miramontes sintetizó en Syntex la noretisterona, base de las primeras píldoras anticonceptivas, a partir de esteroides del barbasco mexicano.",
+   "solidez": "consenso",
+   "fuentes": [
+    "djerassi1954",
+    "us2744122",
+    "sotolaveaga2009"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La patente estadounidense de la noretisterona, solicitada en 1951, nombra a Djerassi, Miramontes y Rosenkranz.",
+    "solidez": "consenso",
+    "fuentes": [
+     "us2744122"
+    ]
+   },
+   {
+    "texto": "La industria hormonal se construyó sobre la diosgenina de un tubérculo silvestre, el barbasco, recolectado por campesinos que recibieron muy poco.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sotolaveaga2009"
+    ]
+   }
+  ],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "caso-barbasco"
+  ],
+  "alcance": "mundial",
+  "en_breve": "La primera píldora anticonceptiva se sintetizó en México en 1951, a partir de un camote silvestre que recolectaban campesinos indígenas.",
+  "sin_originario": "Logro químico del siglo XX; el camote silvestre se llamaba barbasco o cabeza de negro en español regional. Falta documentar su nombre en lenguas indígenas."
+ },
+ {
+  "id": "psilocibina",
+  "nombre": "Hongos sagrados y psilocibina",
+  "ambito": "salud",
+  "naturaleza": "hongo",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Huautla de Jiménez, Oaxaca",
+  "coords": [
+   18.13,
+   -96.84
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1500,
+   "texto": "uso ritual prehispánico; publicado en 1957"
+  },
+  "pueblos": [
+   "mazatecos"
+  ],
+  "originales": [
+   {
+    "forma": "teonanacatl",
+    "lengua": "náhuatl",
+    "glosa": "hongo divino",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "La ceremonia mazateca de los hongos, que la curandera María Sabina compartió con Gordon Wasson, llevó a Albert Hofmann a aislar la psilocibina en 1958.",
+   "solidez": "consenso",
+   "fuentes": [
+    "hofmann1958"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Hofmann aisló la psilocibina de Psilocybe mexicana, cultivada a partir de hongos recogidos en México.",
+    "solidez": "consenso",
+    "fuentes": [
+     "hofmann1958"
+    ]
+   },
+   {
+    "texto": "Hoy se estudia contra la depresión resistente y la depresión mayor.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "carhart2016",
+     "davis2021"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "magic mushrooms",
+    "lengua": "inglés",
+    "forma": "etiqueta_muda"
+   }
+  ],
+  "pendientes": [
+   "Fuente primaria del artículo de Wasson en Life (1957)."
+  ],
+  "relacionadas": [
+   "caso-psilocibina"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Hongos sagrados de los mazatecos cuyo compuesto, la psilocibina, hoy se estudia en todo el mundo contra la depresión."
+ },
+ {
+  "id": "peyote",
+  "nombre": "Peyote y mescalina",
+  "ambito": "salud",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Wirikuta, San Luis Potosí",
+  "coords": [
+   23.7,
+   -100.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -3800,
+   "texto": "uso documentado desde hace casi 6,000 años"
+  },
+  "pueblos": [
+   "wixaritari"
+  ],
+  "especie": "Lophophora williamsii",
+  "originales": [
+   {
+    "forma": "peyotl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "hikuri",
+    "lengua": "wixárika"
+   }
+  ],
+  "veredicto": {
+   "texto": "El peyote es sacramento wixárika; de él se aisló la mescalina en 1897.",
+   "solidez": "consenso",
+   "fuentes": [
+    "heffter1898",
+    "elseedi2005"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Especímenes arqueológicos de Lophophora de Texas, fechados en unos 5,700 años, conservan mescalina.",
+    "solidez": "consenso",
+    "fuentes": [
+     "elseedi2005"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Cactus sagrado de los wixaritari; de él se aisló la mescalina."
+ },
+ {
+  "id": "salvia-divinorum",
+  "nombre": "Salvia divinorum",
+  "ambito": "salud",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Sierra Mazateca, Oaxaca",
+  "coords": [
+   18.2,
+   -96.9
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1500,
+   "texto": "uso ritual mazateco"
+  },
+  "pueblos": [
+   "mazatecos"
+  ],
+  "especie": "Salvia divinorum",
+  "originales": [
+   {
+    "forma": "ska pastora",
+    "lengua": "mazateco"
+   }
+  ],
+  "veredicto": {
+   "texto": "La planta ritual mazateca es la fuente de la salvinorina A, el primer agonista opioide kappa natural sin nitrógeno conocido.",
+   "solidez": "consenso",
+   "fuentes": [
+    "ortega1982",
+    "roth2002"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "psilocibina"
+  ],
+  "alcance": "regional",
+  "en_breve": "Planta sagrada de los mazatecos; su compuesto principal se estudia en neurociencia."
+ },
+ {
+  "id": "yoloxochitl",
+  "nombre": "Yoloxóchitl",
+  "ambito": "salud",
+  "naturaleza": "planta",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "creado",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Centro y sur de México",
+  "coords": [
+   19.0,
+   -97.5
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1500,
+   "texto": "época prehispánica"
+  },
+  "pueblos": [
+   "nahuas"
+  ],
+  "especie": "Magnolia mexicana",
+  "originales": [
+   {
+    "forma": "yoloxochitl",
+    "lengua": "náhuatl",
+    "glosa": "flor del corazón",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Magnolia mexicana, «flor del corazón», se usaba como medicina cardiaca.",
+   "solidez": "sustentada",
+   "fuentes": []
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente farmacológica o etnobotánica."
+  ],
+  "relacionadas": [
+   "cruz-badiano"
+  ],
+  "alcance": "local",
+  "en_breve": "Magnolia cuya flor, «flor del corazón», se usaba como remedio para el corazón."
+ },
+ {
+  "id": "ajolote",
+  "nombre": "Ajolote",
+  "ambito": "salud",
+  "naturaleza": "animal",
+  "clase": "aporte",
+  "actos": [
+   "nativo",
+   "nombrado"
+  ],
+  "territorio": "mexico",
+  "region": "Xochimilco, Ciudad de México",
+  "coords": [
+   19.27,
+   -99.09
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1864,
+   "texto": "en laboratorios desde 1864"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "axolotl",
+    "lengua": "náhuatl",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Ambystoma mexicanum, endémico de Xochimilco, es el animal de laboratorio autosostenido más antiguo y un modelo mundial de regeneración; en estado silvestre está en peligro crítico.",
+   "solidez": "consenso",
+   "fuentes": [
+    "reiss2015",
+    "iucn2020axolotl"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Las colonias de laboratorio descienden de 34 ajolotes enviados a París en 1864.",
+    "solidez": "consenso",
+    "fuentes": [
+     "reiss2015"
+    ]
+   },
+   {
+    "texto": "La UICN lo clasifica en peligro crítico.",
+    "solidez": "consenso",
+    "fuentes": [
+     "iucn2020axolotl"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "axolotl",
+    "lengua": "todas",
+    "forma": "conserva"
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "chinampas"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Una salamandra de Xochimilco que regenera patas y órganos; laboratorios de todo el mundo la estudian y está en peligro crítico."
+ },
+ {
+  "id": "cero",
+  "nombre": "El cero",
+  "ambito": "conocimiento",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Chiapa de Corzo, Chiapas, y Tres Zapotes, Veracruz",
+  "coords": [
+   16.71,
+   -93.02
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -36,
+   "texto": "36 a. C., la fecha de Cuenta Larga más antigua"
+  },
+  "pueblos": [
+   "olmecas",
+   "mayas"
+  ],
+  "veredicto": {
+   "texto": "El cero se inventó aquí, por cuenta propia y siglos antes que en la India: la Cuenta Larga del calendario mesoamericano lo necesitaba para escribir sus fechas, y las más antiguas están en Chiapas y Veracruz.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "rojo2021",
+    "diehl2004",
+    "plofker2009"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La fecha de Cuenta Larga más antigua conocida está en la Estela 2 de Chiapa de Corzo, Chiapas: 7.16.3.2.13, el año 36 a. C.",
+    "solidez": "consenso",
+    "fuentes": [
+     "rojo2021"
+    ]
+   },
+   {
+    "texto": "Las primeras fechas de Cuenta Larga aparecen fuera de la zona maya, en tierras olmecas y de sus herederos, como Tres Zapotes, Veracruz; por eso el uso del cero se atribuye a ellos antes que a los mayas.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "diehl2004"
+    ]
+   },
+   {
+    "texto": "Los mayas del Clásico dieron al cero signos propios, como la flor de tres pétalos o la concha, que se leían mih, «nada».",
+    "solidez": "consenso",
+    "fuentes": [
+     "blume2011",
+     "stuart2012"
+    ]
+   },
+   {
+    "texto": "El cero que hoy se escribe en todo el mundo viene del sistema decimal de la India, documentado con firmeza desde el siglo VII y llegado a Europa por el mundo árabe. El cero mesoamericano es una invención independiente y anterior, no su antecesor.",
+    "solidez": "consenso",
+    "fuentes": [
+     "plofker2009"
+    ]
+   },
+   {
+    "texto": "Un estudio propone que Mesoamérica pudo concebir el cero porque estaba acostumbrada a escribir un mismo número de varias maneras.",
+    "solidez": "debate",
+    "fuentes": [
+     "rojo2021"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "mih",
+    "lengua": "maya clásico",
+    "glosa": "nada, cero",
+    "fuentes": [
+     "stuart2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Leer en Blume (2011) cuál es el signo de cero explícito más antiguo y su fecha."
+  ],
+  "relacionadas": [
+   "calendarios",
+   "escritura"
+  ],
+  "alcance": "amplio",
+  "en_breve": "La idea de «nada» como número. Aquí se inventó por cuenta propia, siglos antes que en la India, para escribir fechas del calendario."
+ },
+ {
+  "id": "escritura",
+  "nombre": "Escritura",
+  "ambito": "conocimiento",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Veracruz y Tabasco, en tierra olmeca",
+  "coords": [
+   18.2,
+   -94.8
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -900,
+   "texto": "hacia 900 a. C. (bloque de Cascajal)"
+  },
+  "pueblos": [
+   "olmecas",
+   "mayas"
+  ],
+  "veredicto": {
+   "texto": "La escritura se inventó en Mesoamérica sin copiarla de nadie, uno de los pocos casos en el mundo; sus muestras más antiguas propuestas están en Veracruz y Tabasco, en tierra olmeca.",
+   "solidez": "consenso",
+   "fuentes": [
+    "rodriguez2006",
+    "pohl2002",
+    "saturno2006"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "El bloque de Cascajal, Veracruz, con 62 signos, se ha propuesto como la escritura más antigua de América.",
+    "solidez": "debate",
+    "fuentes": [
+     "rodriguez2006"
+    ]
+   },
+   {
+    "texto": "En San Andrés, Tabasco, un sello y fragmentos de placa olmecas de hacia 650 a. C. muestran signos que sus autores proponen como el origen de la escritura mesoamericana.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "pohl2002"
+    ]
+   },
+   {
+    "texto": "En San Bartolo, Guatemala, hay escritura maya de hacia 300 a. C.",
+    "solidez": "consenso",
+    "fuentes": [
+     "saturno2006"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "tlahcuilolli",
+    "lengua": "náhuatl",
+    "glosa": "lo pintado, lo escrito",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "tz'ib",
+    "lengua": "maya yucateco",
+    "glosa": "escritura, pintura",
+    "fuentes": [
+     "barreravasquez1980"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "amate",
+   "calendarios"
+  ],
+  "alcance": "regional",
+  "en_breve": "Mesoamérica es uno de los pocos lugares del mundo donde se inventó la escritura, sin copiarla de nadie."
+ },
+ {
+  "id": "calendarios",
+  "nombre": "Calendarios y astronomía",
+  "ambito": "conocimiento",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Tierra olmeca: Veracruz y Tabasco",
+  "coords": [
+   17.8,
+   -94.3
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": -1100,
+   "texto": "hacia 1100 a. C."
+  },
+  "pueblos": [
+   "olmecas",
+   "mayas",
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "xiuhpohualli",
+    "lengua": "náhuatl",
+    "glosa": "cuenta del año, 365 días",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "tonalpohualli",
+    "lengua": "náhuatl",
+    "glosa": "cuenta de los días, 260",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Mesoamérica combinó ciclos de 365 y 260 días y la Cuenta Larga; el Códice de Dresde contiene tablas de Venus y de eclipses.",
+   "solidez": "consenso",
+   "fuentes": [
+    "sprajc2023",
+    "dresde"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "La orientación de conjuntos arquitectónicos olmecas y mayas indica que el calendario de 260 días ya se usaba hacia 1100 a. C.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sprajc2023"
+    ]
+   },
+   {
+    "texto": "Los conjuntos ceremoniales más antiguos alineados con el calendario están en la región olmeca, en Veracruz y Tabasco, y en el occidente maya.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "sprajc2023",
+     "inomata2021"
+    ]
+   }
+  ],
+  "nombres_mundo": [
+   {
+    "dice": "«profecía maya de 2012»",
+    "lengua": "todas",
+    "forma": "etiqueta_muda",
+    "nota": "El fin de un ciclo de la Cuenta Larga se convirtió en mito apocalíptico."
+   }
+  ],
+  "pendientes": [],
+  "relacionadas": [
+   "cero",
+   "escritura"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Calendarios de 260 y 365 días y una cuenta larga de miles de años, con tablas para predecir eclipses."
+ },
+ {
+  "id": "ciudades",
+  "nombre": "Ciudades",
+  "ambito": "conocimiento",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Teotihuacan y Tenochtitlan",
+  "coords": [
+   19.69,
+   -98.84
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 500,
+   "texto": "Teotihuacan hacia 500 d. C.; Tenochtitlan en 1519"
+  },
+  "pueblos": [
+   "teotihuacanos",
+   "mexicas"
+  ],
+  "veredicto": {
+   "texto": "Teotihuacan estuvo entre las ciudades más grandes del mundo hacia 500 d. C., y Tenochtitlan superaba en 1519 a casi todas las de Europa.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "cowgill1997",
+    "smith2005"
+   ]
+  },
+  "afirmaciones": [
+   {
+    "texto": "Teotihuacan tuvo una población estimada de entre 100,000 y 125,000 habitantes.",
+    "solidez": "sustentada",
+    "fuentes": [
+     "cowgill1997"
+    ]
+   },
+   {
+    "texto": "Las estimaciones para Tenochtitlan rondan los 200,000 habitantes.",
+    "solidez": "debate",
+    "fuentes": [
+     "smith2005"
+    ]
+   }
+  ],
+  "originales": [
+   {
+    "forma": "altepetl",
+    "lengua": "náhuatl",
+    "glosa": "agua-cerro: el pueblo, la ciudad",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "nombres_mundo": [],
+  "pendientes": [],
+  "relacionadas": [
+   "chinampas"
+  ],
+  "alcance": "amplio",
+  "en_breve": "Teotihuacan y Tenochtitlan estuvieron entre las ciudades más grandes del mundo en su tiempo."
+ },
+ {
+  "id": "educacion",
+  "nombre": "Escuela para todos los jóvenes",
+  "ambito": "conocimiento",
+  "naturaleza": "saber",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Tenochtitlan",
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "epoca": "antigua",
+  "fecha": {
+   "anio": 1450,
+   "texto": "siglo XV"
+  },
+  "pueblos": [
+   "mexicas"
+  ],
+  "originales": [
+   {
+    "forma": "calmecac",
+    "lengua": "náhuatl",
+    "glosa": "escuela de nobles y sacerdotes",
+    "fuentes": [
+     "gdn2012"
+    ]
+   },
+   {
+    "forma": "telpochcalli",
+    "lengua": "náhuatl",
+    "glosa": "casa de los jóvenes",
+    "fuentes": [
+     "gdn2012"
+    ]
+   }
+  ],
+  "veredicto": {
+   "texto": "Los mexicas escolarizaban a los varones de todas las clases, en el calmecac o el telpochcalli; el Códice Mendoza retrata esa educación.",
+   "solidez": "sustentada",
+   "fuentes": [
+    "mendoza"
+   ]
+  },
+  "afirmaciones": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Fuente académica sobre la escolarización universal."
+  ],
+  "relacionadas": [],
+  "alcance": "local",
+  "en_breve": "Los mexicas tenían escuelas obligatorias para todos los jóvenes, cuando en Europa casi nadie iba a la escuela."
+ },
+ {
+  "id": "television-color",
+  "nombre": "Televisión a color",
+  "ambito": "conocimiento",
+  "naturaleza": "tecnica",
+  "clase": "aporte",
+  "actos": [
+   "creado"
+  ],
+  "territorio": "mexico",
+  "region": "Ciudad de México",
+  "coords": [
+   19.43,
+   -99.13
+  ],
+  "epoca": "moderna",
+  "fecha": {
+   "anio": 1940,
+   "texto": "1940"
+  },
+  "pueblos": [],
+  "autoria": "Guillermo González Camarena",
+  "veredicto": {
+   "texto": "Guillermo González Camarena patentó en 1940 un sistema tricromático secuencial de televisión a color; en EUA se le concedió la patente en 1942.",
+   "solidez": "consenso",
+   "fuentes": [
+    "us2296019"
+   ]
+  },
+  "afirmaciones": [],
+  "originales": [],
+  "nombres_mundo": [],
+  "pendientes": [
+   "Registro de la patente mexicana de 1940."
+  ],
+  "relacionadas": [],
+  "alcance": "regional",
+  "en_breve": "Un ingeniero mexicano, Guillermo González Camarena, patentó en 1942 un sistema de televisión a color.",
+  "sin_originario": "Invento del siglo XX."
+ }
+]

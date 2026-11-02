@@ -1,0 +1,27 @@
+{
+ "especie": "Tigridia pavonia",
+ "estado": "ok",
+ "gbif": 207178051,
+ "nombre_aceptado": "Tigridia pavonia (L.f.) Redouté",
+ "url": "https://www.gbif.org/species/207178051",
+ "nativa": [
+  "ELS",
+  "GUA",
+  "HON",
+  "MXC",
+  "MXE",
+  "MXG",
+  "MXN",
+  "MXS",
+  "MXT"
+ ],
+ "introducida": [
+  "BOL",
+  "CLM",
+  "ECU",
+  "GRB",
+  "MDR",
+  "PER"
+ ],
+ "fecha": "2026-11-01"
+}

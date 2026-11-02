@@ -1,0 +1,14 @@
+{
+ "especie": "Echeveria elegans",
+ "estado": "ok",
+ "gbif": 206929770,
+ "nombre_aceptado": "Echeveria elegans Rose",
+ "url": "https://www.gbif.org/species/206929770",
+ "nativa": [
+  "MXE",
+  "MXG",
+  "MXS"
+ ],
+ "introducida": [],
+ "fecha": "2026-11-01"
+}

@@ -585,12 +585,13 @@
     // Cuadro de datos, como el de una enciclopedia.
     function infobox(f) {
       const deslinde = f.clase === "deslinde";
-      const fila = (k, val, nota) => (val ? `<tr><th scope="row">${k}</th><td>${val}${nota ? `<span class="why">${nota}</span>` : ""}</td></tr>` : "");
+      // La segunda línea solo cuando dice algo distinto de la primera (p. ej. «hace unos 9,000 años» dos veces).
+      const fila = (k, val, nota) => (val ? `<tr><th scope="row">${k}</th><td>${val}${nota && !mismoTexto(val, nota) ? `<span class="why">${nota}</span>` : ""}</td></tr>` : "");
       const n = { comprobada: 0, citada: 0, pendiente: 0 };
       afirmacionesDe(f).forEach((x) => n[x.verificacion]++);
       const [lat, lon] = f.coords;
       const mapa = dentroMexico(lat, lon) && !(deslinde && f.origen_biologico)
-        ? `<div class="ib-mapa">${svgMexico([{ lat, lon, r: 22, cls: "on" }], { aria: `${L("Ubicación", "Location")}: ${f.region}` })}<p class="cap">${esc(f.region)}</p></div>` : "";
+        ? `<div class="ib-mapa">${svgMexico([{ lat, lon, r: 22, cls: "on" }], { aria: `${L("Ubicación", "Location")}: ${f.region}` })}</div>` : "";
       return `<aside class="infobox" aria-label="${L("Datos", "Facts")}">
         ${f.imagen ? `<figure>${foto(f, "grande", true)}<figcaption>${credito(f.imagen)}</figcaption></figure>` : ""}
         <table><tbody>
@@ -608,6 +609,7 @@
       </aside>`;
     }
     const cuando = (f) => hace(f) || EPOCA[f.epoca].nombre;
+    const mismoTexto = (a, b) => { const n = (x) => String(x).toLowerCase().normalize("NFD").replace(/[^a-z0-9]/g, ""); return n(a) === n(b); };
     // Diagramas: datos/diagramas.json; cada paso resume afirmaciones de la ficha.
     function diagrama(f, N) {
       const d = DIAG[f.id];
@@ -1156,7 +1158,22 @@
     }
 
     // ------------------------------------------------------------ recorridos
-    const tarjetaRecorrido = (r) => `<a class="route" href="#/recorrido/${r.id}"><span class="mini">${r.pasos.filter((p) => p.ficha).slice(0, 5).map((p) => foto(FICHA[p.ficha], "mini")).join("")}</span><h3>${esc(r.titulo)}</h3><p>${esc(r.entrada)}</p><span class="steps">${r.pasos.map((p) => `<i class="${p.caso ? "c" : ""}"></i>`).join("")}</span><p class="muted small" style="margin-top:6px">${plural(r.pasos.length, L("paso", "step"), L("pasos", "steps"))}</p></a>`;
+    // Miniatura de un paso: la foto de la ficha; si es un caso, la lámina del capítulo que lo cuenta,
+    // la foto de una ficha suya o, si no hay ninguna, una tesela con el color del tipo de caso.
+    function miniPaso(p) {
+      if (p.ficha) return { clave: p.ficha, html: foto(FICHA[p.ficha], "mini") };
+      const c = CASO[p.caso];
+      const cap = CUENTA.capitulos.find((k) => k.lamina && (k.casos || []).includes(c.id));
+      if (cap) return { clave: cap.lamina.archivo, html: `<span class="foto mini"><img src="${esc(cap.lamina.archivo)}" alt="${L("Lámina", "Plate")}: ${esc(cap.lamina.codice)}" loading="lazy" decoding="async"></span>` };
+      const fi = c.fichas.map((id) => FICHA[id]).find((f) => f && f.imagen);
+      if (fi) return { clave: fi.id, html: foto(fi, "mini") };
+      return { clave: c.id, html: `<span class="foto mini vacia caso-mini" style="--c:${COLOR_CASO[c.tipo]}" title="${esc(c.titulo)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span>` };
+    }
+    const minisRecorrido = (r) => {
+      const vistas = new Set();
+      return r.pasos.map(miniPaso).filter((m) => !vistas.has(m.clave) && vistas.add(m.clave)).slice(0, 5).map((m) => m.html).join("");
+    };
+    const tarjetaRecorrido = (r) => `<a class="route" href="#/recorrido/${r.id}"><span class="mini">${minisRecorrido(r)}</span><h3>${esc(r.titulo)}</h3><p>${esc(r.entrada)}</p><span class="steps">${r.pasos.map((p) => `<i class="${p.caso ? "c" : ""}"></i>`).join("")}</span><p class="muted small" style="margin-top:6px">${plural(r.pasos.length, L("paso", "step"), L("pasos", "steps"))}</p></a>`;
     function vistaRecorridos() {
       return `<div class="wrap map-page"><p class="eyebrow">${L("Recorridos", "Journeys")}</p><h1>${L("Historias que cruzan fichas", "Stories that run across entries")}</h1>
         <p class="lede">${L("Un recorrido no duplica fichas: las ordena para contar algo que ninguna cuenta sola, como la cocina china sin México o la flor que India cree suya.", "A journey does not duplicate entries: it orders them to tell something none tells alone, like Chinese cooking without Mexico or the flower India believes is its own.")}</p>
@@ -1177,6 +1194,10 @@
     }
 
     // ------------------------------------------------------------ fuentes
+    // Fuentes y método comparten una entrada del menú; cada página lleva a la otra.
+    const pestanasComprobar = (actual) => `<nav class="indice comprobar" aria-label="${L("Fuentes y método", "Sources and method")}">${[
+      ["fuentes", "#/fuentes", L("Fuentes", "Sources")], ["metodo", "#/metodo", L("Método", "Method")], ["erratas", "#/metodo/erratas", L("Fe de erratas", "Errata")]
+    ].map(([id, href, txt]) => `<a href="${href}"${id === actual ? ' aria-current="page"' : ""}>${txt}</a>`).join("")}</nav>`;
     function vistaFuentes(filtros) {
       const m = D.metricas;
       const tipo = filtros.tipo || "", res = filtros.res || "";
@@ -1189,7 +1210,7 @@
       const destinos = (ids) => ids.map((id) => FICHA[id] ? `<a href="#/ficha/${id}">${esc(FICHA[id].nombre)}</a>` : CASO[id] ? `<a href="#/caso/${id}">${esc(CASO[id].titulo)}</a>` : RECORRIDO[id] ? `<a href="#/recorrido/${id}">${esc(RECORRIDO[id].titulo)}</a>` : CAP[id] ? `<a href="#/cuenta#${id}">${esc(CAP[id].titulo)}</a>` : PUEBLO[id] ? `<a href="#/pueblo/${id}">${esc(PUEBLO[id].nombre)}</a>` : esc(id)).join(", ");
       const filas = lista.map((f) => `<tr><td class="t">${refFuente(f)}</td><td>${esc(TFUENTE[f.tipo].nombre)}<div class="muted small">${L("rango", "rank")} ${TFUENTE[f.tipo].rango}</div></td><td>${resFuente(f)}</td><td class="small">${destinos(f.citada_por || [])}</td></tr>`).join("");
       const hf = (o) => `#/fuentes?${Object.entries(o).filter(([, v]) => v).map(([k, v]) => `${k}=${v}`).join("&")}`;
-      return `<div class="wrap map-page"><p class="eyebrow">${L("Fuentes", "Sources")}</p><h1>${L(`${fmt(m.fuentes)} fuentes y lo que se comprobó de cada una`, `${fmt(m.fuentes)} sources and what was checked about each one`)}</h1>
+      return `<div class="wrap map-page">${pestanasComprobar("fuentes")}<p class="eyebrow">${L("Fuentes", "Sources")}</p><h1>${L(`${fmt(m.fuentes)} fuentes y lo que se comprobó de cada una`, `${fmt(m.fuentes)} sources and what was checked about each one`)}</h1>
         <p class="lede">${L("El verificador busca cada DOI en Crossref y compara el título y el año registrados; abre cada enlace y anota si responde. <b>Comprobar el registro no es leer el pasaje</b>: confirma que la fuente existe y es la que se dice, no que diga lo que se le atribuye.", "The checker looks up each DOI in Crossref and compares the registered title and year; it opens each link and notes whether it responds. <b>Checking the record is not reading the passage</b>: it confirms that the source exists and is the one cited, not that it says what is attributed to it.")}</p>
         <div class="defs" style="margin-top:24px">
           <div class="def"><h3>${L("Afirmaciones", "Claims")}</h3><p class="q">${esc(C.pregunta_verificacion)}</p>${vbar(m.afirmaciones, "stack")}
@@ -1249,7 +1270,7 @@
         ["What is not Mexican («Not Mexican», «Debated»)", "They are clarifications: published with the same yardstick and not counted."]
       ]);
       setTimeout(() => { if (ancla) { const el = document.getElementById(ancla); if (el) el.scrollIntoView(); } }, 0);
-      return `<div class="wrap map-page"><p class="eyebrow">${L("Método", "Method")}</p><h1>${L("Cómo se clasifica y se verifica", "How it is classified and verified")}</h1>
+      return `<div class="wrap map-page">${pestanasComprobar(ancla === "erratas" ? "erratas" : "metodo")}<p class="eyebrow">${L("Método", "Method")}</p><h1>${L("Cómo se clasifica y se verifica", "How it is classified and verified")}</h1>
         <div class="postura" style="margin:22px 0 0;border-radius:12px"><div style="padding:0 22px"><p class="eyebrow">${L("Postura", "Our stance")}</p><h2>${esc(C.postura.titulo)}</h2><p>${esc(C.postura.texto)}</p></div></div>
         <p class="lede">${L(`${C.principios.length} principios sostienen todo el sistema. De ellos salen los ejes, las líneas de evidencia y las reglas que el verificador aplica antes de cada publicación.`, `${C.principios.length} principles hold up the whole system. From them come the axes, the lines of evidence and the rules the checker applies before each publication.`)}</p>
         <h2 class="sub" style="margin-top:34px">${L("Principios", "Principles")}</h2>
@@ -1348,9 +1369,11 @@
       ocultarTip();
       const seccion = { ficha: "explorar", caso: "despojo", casos: "despojo", recorrido: "recorridos", pueblo: "pueblos" }[p0] || p0;
       document.querySelectorAll("nav.main a").forEach((a) => {
-        if (a.getAttribute("href") === `#/${seccion}`) a.setAttribute("aria-current", "page");
+        const secciones = a.dataset.secciones ? a.dataset.secciones.split(" ") : [a.getAttribute("href").slice(2)];
+        if (secciones.includes(seccion)) a.setAttribute("aria-current", "page");
         else a.removeAttribute("aria-current");
       });
+      document.getElementById("sub-btn").classList.toggle("actual", !!document.querySelector(".sub-menu a[aria-current]"));
       const titulo = $main.querySelector("h1");
       document.title = p0 && titulo ? `${titulo.textContent} · Procedencia` : "Procedencia";
       const q = document.getElementById("q");
@@ -1480,6 +1503,37 @@
       if (e.key === "Escape") cerrarEvidencia();
     });
     const $q = document.getElementById("q");
+    // Cabecera: «Explorar» despliega su submenú; en pantallas angostas el menú y la búsqueda se abren con su botón.
+    const $cab = document.querySelector("header.top"), $menuBtn = document.getElementById("menu-btn"), $buscarBtn = document.getElementById("buscar-btn");
+    const $subBtn = document.getElementById("sub-btn"), $sub = document.getElementById("sub-explorar");
+    const subMenu = (abrir) => { $subBtn.setAttribute("aria-expanded", abrir); $sub.hidden = !abrir; };
+    const menu = (abrir) => {
+      $cab.classList.toggle("menu-abierto", abrir);
+      $menuBtn.setAttribute("aria-expanded", abrir);
+      $menuBtn.setAttribute("aria-label", abrir ? L("Cerrar el menú", "Close the menu") : L("Menú", "Menu"));
+      subMenu(abrir);
+      if (abrir) buscar(false);
+    };
+    const buscar = (abrir) => {
+      $cab.classList.toggle("buscando", abrir);
+      $buscarBtn.setAttribute("aria-expanded", abrir);
+      if (abrir) { menu(false); $q.focus(); }
+    };
+    $subBtn.addEventListener("click", () => subMenu($sub.hidden));
+    $menuBtn.addEventListener("click", () => menu(!$cab.classList.contains("menu-abierto")));
+    $buscarBtn.addEventListener("click", () => buscar(!$cab.classList.contains("buscando")));
+    document.addEventListener("click", (e) => {
+      if (!$cab.classList.contains("menu-abierto") && !e.target.closest(".sub")) subMenu(false);
+      if (!e.target.closest("header.top")) menu(false);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key !== "Escape") return;
+      if (!$sub.hidden && !$cab.classList.contains("menu-abierto")) { subMenu(false); $subBtn.focus(); }
+      else if ($cab.classList.contains("menu-abierto")) { menu(false); $menuBtn.focus(); }
+      else if ($cab.classList.contains("buscando")) { buscar(false); $buscarBtn.focus(); }
+    });
+    window.addEventListener("hashchange", () => { menu(false); if (document.activeElement !== $q) buscar(false); });
+    matchMedia("(max-width: 1080px)").addEventListener("change", () => menu(false));
     $q.addEventListener("input", () => {
       const { partes, filtros } = ruta();
       const base = partes[0] === "explorar" ? filtros : {};

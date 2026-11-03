@@ -79,9 +79,6 @@ nav.main::-webkit-scrollbar { display: none; }
 nav.main a { flex: none; padding: 8px 10px; border-radius: 6px; font: 600 14px/1.2 var(--sans); color: var(--ink-2); text-decoration: none; }
 nav.main a:hover { background: var(--sand); color: var(--ink); }
 nav.main a[aria-current="page"] { color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); border-radius: 6px 6px 0 0; }
-nav.main a.sec { font-weight: 500; color: var(--muted); }
-nav.main a.sec:nth-child(5) { margin-left: 10px; position: relative; }
-nav.main a.sec:nth-child(5)::before { content: ""; position: absolute; left: -6px; top: 9px; bottom: 9px; width: 1px; background: var(--line); }
 .search { flex: none; position: relative; }
 .search input { width: 210px; min-height: 40px; padding: 0 12px 0 34px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: 15px var(--sans); }
 .search svg { position: absolute; left: 10px; top: 11px; width: 18px; height: 18px; color: var(--muted); }
@@ -275,7 +272,7 @@ table.names td:first-child { font: 600 16px/1.35 var(--serif); }
 .related { display: flex; flex-wrap: wrap; gap: 6px; }
 
 /* Mapas */
-.map-page { padding: 32px 0 60px; }
+.map-page { padding: 32px 16px 60px; }
 .map-stage { position: relative; border: 1px solid var(--line); border-radius: 12px; background: var(--water); overflow: hidden; }
 .map-stage svg { display: block; width: 100%; height: auto; }
 .map-tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
@@ -435,7 +432,6 @@ footer.bottom p { font-size: 14px; color: var(--muted); max-width: 40em; }
 }
 @media (max-width: 480px) {
   body { font-size: 16px; }
-  .search input { width: 80px; }
   .brand { font-size: 22px; }
   header.top .wrap { column-gap: 8px; }
   .theme, .lang { width: 36px; min-width: 36px; height: 36px; padding: 0; }
@@ -668,7 +664,6 @@ section.block.alt + section.block { border-top: 0; }
   .mosaico { grid-auto-rows: 104px; }
   .m-grid { grid-template-columns: minmax(0, 1fr); }
   .m-txt { font-size: 19px; }
-  nav.main a.sec:nth-child(5)::before { display: none; }
   .indice { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-left: -16px; margin-right: -16px; padding: 0 16px; }
   .indice a { flex: none; }
 }
@@ -1354,3 +1349,63 @@ dialog.visor img { display: block; width: 100%; height: 100%; max-height: calc(1
   .ac-caja { grid-template-columns: 1fr; padding: 22px 20px; }
   .ac-laminas { height: 200px; order: -1; max-width: 420px; width: 100%; }
 }
+
+/* ---------------------------------------------------------------- Menú en cinco entradas
+   Aportes, lo que aún se niega, lo que se les quitó, «Explorar» (que despliega pueblos,
+   recorridos, mapa, tiempo y nombres) y fuentes y método. En pantallas angostas el menú
+   entero se abre con un botón y la búsqueda se vuelve un icono que abre el campo a lo ancho. */
+nav.main { overflow: visible; align-items: center; }
+.sub { position: relative; flex: none; }
+.sub-btn { display: flex; align-items: center; gap: 4px; padding: 8px 10px; border: 0; border-radius: 6px; background: none; color: var(--ink-2); font: 600 13.5px/1.2 var(--sans); cursor: pointer; }
+.sub-btn svg { width: 14px; height: 14px; transition: transform .2s ease; }
+.sub-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.sub-btn:hover { background: var(--sand); color: var(--ink); }
+.sub-btn.actual { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.sub-menu { position: absolute; top: calc(100% + 8px); left: 0; z-index: 30; min-width: 200px; display: flex; flex-direction: column; gap: 2px; padding: 6px;
+  border-radius: 14px; background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: var(--glass-borde), 0 18px 40px -12px rgba(30,26,22,.28); }
+.sub-menu[hidden] { display: none; }
+nav.main .sub-menu a { padding: 10px 12px; border-radius: 8px; }
+nav.main .sub-menu a[aria-current="page"] { box-shadow: none; border-radius: 8px; }
+.menu-btn, .buscar-btn { display: none; flex: none; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 999px; place-items: center; cursor: pointer; color: var(--ink-2);
+  background: var(--glass); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: var(--glass-borde); }
+.menu-btn:hover, .buscar-btn:hover { color: var(--ink); }
+.menu-btn svg, .buscar-btn svg { width: 19px; height: 19px; }
+.menu-btn path { transform-box: fill-box; transform-origin: center; transition: transform .2s ease, opacity .2s ease; }
+.menu-btn[aria-expanded="true"] .l1 { transform: translateY(5px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] .l2 { opacity: 0; }
+.menu-btn[aria-expanded="true"] .l3 { transform: translateY(-5px) rotate(-45deg); }
+.buscar-btn[aria-expanded="true"] { color: var(--accent); }
+
+@media (max-width: 1080px) {
+  header.top .wrap { flex-wrap: wrap; gap: 8px 10px; padding-top: 9px; padding-bottom: 9px; }
+  .menu-btn { display: grid; }
+  .search { margin-left: auto; }
+  nav.main { display: none; order: 5; flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 2px; padding: 4px 0 6px;
+    max-height: calc(100vh - 80px); overflow-y: auto; }
+  header.top.menu-abierto nav.main { display: flex; }
+  nav.main a, .sub-btn { padding: 12px; border-radius: 10px; font-size: 16px; }
+  nav.main a[aria-current="page"] { box-shadow: none; border-radius: 10px; }
+  .sub-btn { width: 100%; justify-content: space-between; }
+  .sub-btn svg { width: 18px; height: 18px; }
+  .sub-menu { position: static; min-width: 0; padding: 0 0 4px 14px; background: none; box-shadow: none; }
+  nav.main .sub-menu a { padding: 11px 12px; border-radius: 10px; font-weight: 500; }
+}
+@media (max-width: 560px) {
+  header.top .wrap { column-gap: 6px; }
+  .brand { font-size: 21px; gap: 8px; }
+  .buscar-btn { display: grid; margin-left: auto; }
+  .search { display: none; order: 4; flex-basis: 100%; margin-left: 0; }
+  header.top.buscando .search { display: block; }
+  .search input { width: 100%; }
+  .menu-btn, .buscar-btn { width: 36px; height: 36px; }
+}
+@media print { .menu-btn, .buscar-btn { display: none !important; } }
+@media (prefers-reduced-motion: reduce) { .sub-btn svg, .menu-btn path { transition: none; } }
+
+/* Recorridos: miniatura de un caso sin imagen, con el color de su tipo */
+.foto.mini.caso-mini { display: grid; place-items: center; color: var(--c); background: color-mix(in srgb, var(--c) 14%, var(--surface)); }
+.foto.mini.caso-mini svg { width: 20px; height: 20px; }
+
+/* Fuentes y método: pestañas entre las dos páginas */
+.indice.comprobar { margin: 0 0 18px; padding: 0; flex-wrap: wrap; overflow: visible; }
+.indice.comprobar a[aria-current="page"] { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }

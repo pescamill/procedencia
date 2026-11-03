@@ -1,5 +1,27 @@
 # Cambios
 
+## Iteración 14 · 2 de noviembre de 2026
+
+Un menú más corto y ordenado, y cuatro detalles corregidos después de recorrer el sitio publicado en un teléfono.
+
+### Qué cambió
+
+- **El menú pasa de diez entradas a cinco.** Aportes, Lo que aún se niega, Lo que se les quitó, Explorar y Fuentes y método. «Explorar» abre un submenú con Pueblos, Recorridos, Mapa, Tiempo y Nombres; se cierra con Esc o al hacer clic fuera. «Fuentes y método» queda marcado en las dos páginas. Todas las direcciones siguen igual (`#/pueblos`, `#/mapa`, `#/metodo`…).
+- **En el teléfono, un botón de menú.** Antes la tira mostraba 3 de 10 secciones sin señal de que se podía deslizar. Ahora un botón de tres rayas (que se vuelve una ✕) abre el menú completo a lo ancho, con las cinco entradas y el submenú de Explorar desplegado. Se cierra al elegir una sección o con Esc. Pasa a este modo por debajo de 1080 px, donde las cinco entradas ya no caben en una línea.
+- **La búsqueda, un icono en el teléfono.** El campo se encogía a 80 px y solo se leía «Bu». Por debajo de 560 px es una lupa que abre el campo a todo lo ancho, bajo la cabecera, con el cursor puesto.
+- **Fuentes, Método y Fe de erratas se enlazan entre sí.** Como comparten una entrada del menú, cada una lleva arriba tres pestañas para pasar a las otras.
+- **La ficha ya no repite datos.** En el cuadro de datos, la segunda línea de «Cuándo» solo aparece si dice algo distinto: el maíz decía «hace unos 9,000 años» dos veces, y pasaba lo mismo con frijol, calabaza, jitomate, algodón, girasol y la agricultura independiente. «Dónde empezó» hace lo mismo cuando la región coincide con el territorio (jícama, pitahaya, nixtamalización, nardo y zinnia decían «Mesoamérica» dos veces). El mapa del cuadro ya no repite la región como pie, porque la fila de arriba ya la dice.
+- **«Lo que salió sin consentimiento» tiene miniaturas.** El recorrido solo tiene casos, no fichas, y su tarjeta salía vacía. Ahora cada caso usa la lámina del acto de «Lo que aún se niega» que lo cuenta (el Códice Durán para el quinto real y la Noche Triste, la quema de códices de Muñoz Camargo para Maní y los códices) o la foto de una ficha suya (la grana para la plata). Si no hay ninguna, como en el penacho y las subastas, usa una tesela con el color del tipo de caso. «Saber indígena, ganancia ajena» también gana las miniaturas de sus casos.
+- **Las páginas interiores recuperan el margen en el teléfono.** Recorridos, Fuentes, Método y las demás páginas de ese tipo pegaban el texto al borde de la pantalla, porque su relleno anulaba el margen de 16 px. Ya lo tienen.
+
+### Casos de uso
+
+- **Encontrar una sección desde el teléfono.** Quien llega desde un enlace compartido ve en la cabecera la marca, la lupa, el idioma, el tema y el menú; un toque muestra todas las secciones, sin deslizar a ciegas.
+- **Buscar una ficha en el teléfono.** La lupa abre un campo que se puede leer, se escribe «cacao» y los resultados aparecen debajo.
+- **Saber dónde se está.** La entrada del menú de la sección actual queda marcada; si es Pueblos, Mapa u otra de Explorar, también se marca «Explorar».
+- **Leer el cuadro de una ficha sin ruido.** Cada fila dice una cosa una vez, y la segunda línea solo aparece cuando agrega algo.
+- **Elegir un recorrido por su imagen.** Las diez tarjetas de Recorridos tienen miniaturas, incluida la del saqueo, que ahora muestra láminas de códices de la época.
+
 ## Iteración 13 · 2 de noviembre de 2026
 
 «Lo que aún se niega» lleva un subtítulo, «Evidencia de censura sistemática», abre con lo que sostiene en tres frases y cuenta con más detalle todo lo que salió de México y lo que cobraba la Corona.

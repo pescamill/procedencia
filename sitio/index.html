@@ -26,19 +26,26 @@
       <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="currentColor"/><path d="M10 23c0-6.5 2.7-11.5 6-13 3.3 1.5 6 6.5 6 13" fill="none" stroke="var(--surface)" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="15.5" r="2.2" fill="var(--surface)"/></svg>
       Procedencia
     </a>
-    <nav class="main" aria-label="Secciones" data-en-aria="Sections">
+    <nav class="main" id="menu" aria-label="Secciones" data-en-aria="Sections">
       <a href="#/explorar" data-en="Contributions">Aportes</a>
       <a href="#/cuenta" data-en="Still denied">Lo que aún se niega</a>
       <a href="#/despojo" data-en="What was taken">Lo que se les quitó</a>
-      <a href="#/pueblos" data-en="Peoples">Pueblos</a>
-      <a href="#/recorridos" data-en="Journeys">Recorridos</a>
-      <a class="sec" href="#/mapa" data-en="Map">Mapa</a>
-      <a class="sec" href="#/tiempo" data-en="Time">Tiempo</a>
-      <a class="sec" href="#/nombres" data-en="Names">Nombres</a>
-      <a class="sec" href="#/fuentes" data-en="Sources">Fuentes</a>
-      <a class="sec" href="#/metodo" data-en="Method">Método</a>
+      <div class="sub">
+        <button class="sub-btn" id="sub-btn" type="button" aria-expanded="false" aria-controls="sub-explorar"><span data-en="Explore">Explorar</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="sub-menu" id="sub-explorar" hidden>
+          <a href="#/pueblos" data-en="Peoples">Pueblos</a>
+          <a href="#/recorridos" data-en="Journeys">Recorridos</a>
+          <a href="#/mapa" data-en="Map">Mapa</a>
+          <a href="#/tiempo" data-en="Time">Tiempo</a>
+          <a href="#/nombres" data-en="Names">Nombres</a>
+        </div>
+      </div>
+      <a href="#/fuentes" data-secciones="fuentes metodo" data-en="Sources and method">Fuentes y método</a>
     </nav>
-    <label class="search">
+    <button class="buscar-btn" id="buscar-btn" type="button" aria-expanded="false" aria-controls="buscar" aria-label="Buscar una ficha" data-en-aria="Search for an entry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    </button>
+    <label class="search" id="buscar">
       <span class="sr-only" data-en="Search for an entry">Buscar una ficha</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Buscar…" data-en-placeholder="Search…" autocomplete="off">
@@ -46,6 +53,9 @@
     <button class="lang" id="lang" type="button" lang="en" aria-label="Read in English" title="Read in English">EN</button>
     <button class="theme" id="theme" type="button" aria-label="Cambiar tema claro u oscuro" data-en-aria="Switch between light and dark theme">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menú" data-en-aria="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M4 7h16"/><path class="l2" d="M4 12h16"/><path class="l3" d="M4 17h16"/></svg>
     </button>
   </div>
 </header>

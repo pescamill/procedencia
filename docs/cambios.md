@@ -11,6 +11,7 @@ Más fácil para los ojos: menos contraste, letra más fina, colores empolvados 
 - **Ventanas de vidrio.** La cabecera, el cuadro de datos, las cifras de la portada, los paneles, los diagramas y los avisos son translúcidos, con un borde de luz arriba. Detrás hay manchas de color muy tenues que el vidrio difumina. Las tarjetas tienen un reflejo diagonal que cruza al pasar el cursor. Las rejillas grandes no difuminan el fondo, para que el teléfono no se ponga lento.
 - **Sin franjas pesadas.** El manifiesto de Aportes ya no es una franja casi negra, y la «Postura» de la portada ya no es una franja roja: los dos son ventanas de vidrio claras, con un trazo de color arriba, texto en tinta y enlaces en rosa. Las etiquetas «Cambió al mundo» pasan de café oscuro a uno más suave; sobre las fotos son de vidrio esmerilado.
 - **Sin grecas.** El borde de grecas se reemplazó por un trazo fino y abstracto en degradado (rosa, ocre, jade y azul) con un halo difuso, tanto en la cabecera y el pie como en el manifiesto. Se borró `sitio/img/borde.svg`.
+- **Globos de los mapas.** Los globos que salen al pasar el cursor sobre los mapas y las líneas de tiempo usan texto en tinta sobre vidrio, en claro y en oscuro. Antes el texto conservaba el color del papel y casi no se veía sobre el vidrio claro.
 
 ### Casos de uso
 

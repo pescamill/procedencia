@@ -990,7 +990,9 @@ header.top { background: color-mix(in srgb, var(--paper) 62%, transparent); -web
   box-shadow: var(--glass-borde), var(--sombra-suave);
 }
 .infobox, .tip { background: var(--glass-fuerte); }
-.tip { -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: var(--glass-borde), var(--sombra-suave); border: 0; }
+.tip { -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: var(--glass-borde), var(--sombra-suave); border: 0; border-radius: 12px; color: var(--ink); }
+.tip b { color: var(--ink); }
+.tip .k { opacity: 1; color: var(--ink-2); }
 /* El reflejo: solo en las ventanas principales */
 .card, .numbers dl > div, .infobox, .case, .route, .pueblo, .amb { position: relative; isolation: isolate; }
 .card::after, .numbers dl > div::after, .infobox::after, .route::after, .pueblo::after, .amb::after {

@@ -7,3 +7,4 @@ promo/fotos/
 promo/capturas/*.png
 !promo/capturas/*-recorte.png
 promo/img/
+.cache/

@@ -5,23 +5,27 @@
     python3 procedencia.py comprobar --nuevas   # solo las fuentes sin comprobar
     python3 procedencia.py medios        # red: imagen de Commons y alcance en Wikipedia
     python3 procedencia.py traducir      # datos/traducciones/en.json: textos nuevos y pendientes
-    python3 procedencia.py construir     # sitio/datos.js, sitio/datos-en.js y reportes/estado.md
+    python3 procedencia.py construir     # sitio/datos.js, sitio/datos-en.js, reportes/estado.md y las páginas para compartir
 
-Solo usa la biblioteca estándar. `comprobar` y `medios` son los únicos que salen a la red y
-guardan lo que encontraron en datos/comprobaciones.json, datos/wcvp/ y datos/medios_comprobados.json.
+Solo usa la biblioteca estándar. `comprobar` y `medios` salen a la red y guardan lo que encontraron en
+datos/comprobaciones.json, datos/wcvp/ y datos/medios_comprobados.json. `construir` pinta las tarjetas para
+compartir con Chrome sin ventana, y solo baja de Commons las fotos de dominio público de las tarjetas que cambiaron.
 """
 
+import concurrent.futures
 import datetime as dt
 import copy
 import difflib
 import hashlib
 import html
 import json
+import os
 import re
 import shutil
 import ssl
 import subprocess
 import sys
+import tempfile
 import time
 import unicodedata
 import urllib.error
@@ -740,6 +744,7 @@ def construir(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp):
     }
     js = "/* Generado por procedencia.py construir; no editar a mano. */\nwindow.PROCEDENCIA = " + json.dumps(paquete, ensure_ascii=False, separators=(",", ":")) + ";\n"
     (SITIO / "datos.js").write_text(js, encoding="utf-8")
+    por_idioma = {"es": paquete}
     for idioma in IDIOMAS:
         mapa = mapa_traducciones(idioma)
         partes = {k: paquete[k] for k in ("catalogo", "fichas", "casos", "recorridos", "erratas", "pueblos", "diagramas", "cuenta")}
@@ -748,11 +753,13 @@ def construir(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp):
         js_i = (f"/* Generado por procedencia.py construir; no editar a mano. */\nwindow.PROCEDENCIA_{idioma.upper()} = "
                 + json.dumps(partes, ensure_ascii=False, separators=(",", ":")) + ";\n")
         (SITIO / f"datos-{idioma}.js").write_text(js_i, encoding="utf-8")
+        por_idioma[idioma] = {**paquete, **partes}
     abiertos = {k: v for k, v in paquete.items() if k not in ("geo", "avisos")}
     abiertos["licencia"] = "Textos y datos: CC BY 4.0. Imágenes: la licencia de cada una, en fichas[].imagen."
     (SITIO / "datos-abiertos.json").write_text(json.dumps(abiertos, ensure_ascii=False, indent=1), encoding="utf-8")
     escribir_reporte(cat, fichas, fuentes, casos, metricas, avisos)
     print(f"sitio/datos.js ({round(len(js.encode()) / 1024)} KB), sitio/datos-abiertos.json y reportes/estado.md")
+    escribir_paginas(por_idioma)
     print(json.dumps(metricas, ensure_ascii=False, indent=1))
 
 
@@ -779,6 +786,414 @@ def escribir_reporte(cat, fichas, fuentes, casos, m, avisos):
             L.append("")
     L += ["## Avisos", ""] + [f"- {a}" for a in avisos]
     (RAIZ / "reportes" / "estado.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+
+
+# ---------------------------------------------------------------- páginas para compartir
+
+URL_SITIO = "https://pescamill.github.io/procedencia/"
+AGENTE_IMAGENES = "ProcedenciaReel/1.0 (https://pescamill.github.io/procedencia)"
+CACHE = RAIZ / ".cache"
+COMPARTIR = SITIO / "compartir"
+# Carpetas de sitio/ que escribe escribir_paginas: se borran y se vuelven a escribir en cada construcción.
+GENERADAS = ("ficha", "caso", "pueblo", "recorrido", "cuenta", *IDIOMAS)
+MARCA_SVG = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="{fondo}"/>'
+             '<path d="M10 23c0-6.5 2.7-11.5 6-13 3.3 1.5 6 6.5 6 13" fill="none" stroke="{trazo}" stroke-width="2.4" stroke-linecap="round"/>'
+             '<circle cx="16" cy="15.5" r="2.2" fill="{trazo}"/></svg>')
+
+
+def sin_marcas(s):
+    return MARCA.sub(r"\1", s or "").strip()
+
+
+def recortar(s, tope):
+    s = " ".join((s or "").split())
+    return s if len(s) <= tope else s[:tope].rsplit(" ", 1)[0].rstrip(",;:—–") + "…"
+
+
+def primera_frase(s, tope=150):
+    """La primera oración, sin cortar en abreviaturas como «a. C.»."""
+    s = sin_marcas(s)
+    m = re.search(r"(?<![\s.]\w)[.!?](?=\s+[«“¿¡A-ZÁÉÍÓÚÑ])", s)
+    return recortar(s[:m.end()] if m else s, tope)
+
+
+def de_dominio_publico(img):
+    return (img.get("licencia") or "").lower().startswith(("public domain", "cc0", "pd"))
+
+
+def credito_foto(img, L):
+    """Autor y licencia de la foto de una tarjeta; si Commons no da un autor legible, la fuente."""
+    autor = recortar(re.sub(r"^No machine-readable author provided\.\s*", "", img.get("autor") or ""), 50)
+    if pliegue(autor) in ("", "see above", "unknown", "desconocido"):
+        autor = "Wikimedia Commons"
+    lic = img.get("licencia") or ""
+    lic = L("dominio público", "public domain") if lic.lower().startswith(("public domain", "pd")) else lic
+    return f"{L('Imagen', 'Image')}: {autor} · {lic}"
+
+
+def referencia(f):
+    e = html.escape
+    enlace = f"https://doi.org/{f['doi']}" if f.get("doi") else f.get("url")
+    titulo = f'<a href="{e(enlace)}" rel="external">{e(f["titulo"])}</a>' if enlace else e(f["titulo"])
+    return f"{e(f['autores'])} ({f['anio']}). {titulo}. <i>{e(f['publicacion'])}</i>."
+
+
+def paginas_de(D, idioma):
+    """Las páginas que se comparten, en un idioma: ruta, cabecera, resumen legible y tarjeta."""
+    L = (lambda es, en: en) if idioma == "en" else (lambda es, en: es)
+    pre = "" if idioma == "es" else f"{idioma}/"
+    app = "#/" if idioma == "es" else f"?lang={idioma}#/"
+    e = html.escape
+    cat = D["catalogo"]
+    fuente = {f["id"]: f for f in D["fuentes"]}
+    ambito = {a["id"]: a for a in cat["ambitos"]}
+    clase = {c["id"]: c["nombre"] for c in cat["clases"]}
+    solidez = {s["id"]: s["nombre"] for s in cat["solidez"]}
+    tipo_caso = {t["id"]: t for t in cat["tipos_caso"]}
+    ficha = {f["id"]: f for f in D["fichas"]}
+    caso = {c["id"]: c for c in D["casos"]}
+
+    def citas():
+        """citar(ids) devuelve la llamada [n]; lista() las fuentes citadas, en orden de aparición."""
+        orden = []
+        def citar(ids):
+            ids = [x for x in ids if x in fuente]
+            orden.extend(x for x in ids if x not in orden)
+            return f" <sup>[{', '.join(str(orden.index(x) + 1) for x in ids)}]</sup>" if ids else ""
+        def lista():
+            refs = "".join(f"<li>{referencia(fuente[x])}</li>" for x in orden)
+            return f"<h2>{L('Fuentes', 'Sources')}</h2><ol>{refs}</ol>" if orden else ""
+        return citar, lista
+
+    def con_citas(s, citar):
+        """Texto con frases marcadas [[frase|fuentes]]: la frase queda y lleva su llamada."""
+        partes, pos = [], 0
+        for m in MARCA.finditer(s):
+            partes += [e(s[pos:m.start()]), e(m.group(1)), citar([x.strip() for x in m.group(2).split(",")])]
+            pos = m.end()
+        return "".join(partes) + e(s[pos:])
+
+    def afirmaciones(obj, citar):
+        lis = "".join(f"<li>{e(sin_marcas(a['texto']))}{citar(a['fuentes']) if a.get('fuentes') else ' <span class=\"muted\">· ' + L('sin fuente todavía', 'no source yet') + '</span>'}</li>"
+                      for a in obj.get("afirmaciones", []) if a.get("texto"))
+        return f"<h2>{L('Lo que sostienen las fuentes', 'What the sources show')}</h2><ul>{lis}</ul>" if lis else ""
+
+    def enlaces(titulo, items):
+        lis = "".join(f'<li><a href="{pre}{tipo}/{x["id"]}/">{e(x.get("nombre") or x["titulo"])}</a></li>' for tipo, x in items)
+        return f"<h2>{titulo}</h2><ul>{lis}</ul>" if lis else ""
+
+    def abrir(ruta, texto):
+        return f'<p><a class="btn" href="{app}{ruta}">{texto}</a></p>'
+
+    paginas = []
+    for f in D["fichas"]:
+        citar, lista = citas()
+        a, v, img = ambito[f["ambito"]], f["veredicto"], f.get("imagen") or {}
+        o = (f.get("originales") or [None])[0]
+        origs = "".join(f"<li><b>{e(x['forma'])}</b> ({e(x['lengua'])}){': ' + e(x['glosa']) if x.get('glosa') else ''}{citar(x.get('fuentes', []))}</li>"
+                        for x in f.get("originales", []))
+        cuerpo = (f'<p class="eyebrow">{e(a["nombre"])}</p><h1>{e(f["nombre"])}</h1>'
+                  + (f"<p>{L('Su nombre originario', 'Its original name')}:</p><ul>{origs}</ul>" if origs else "")
+                  + f'<p class="lede">{e(f["en_breve"])}</p>'
+                  + f"<h2>{L('Veredicto', 'Verdict')}</h2><p>{e(v['texto'])}{citar(v.get('fuentes', []))} <span class=\"muted\">· {e(solidez.get(v.get('solidez'), ''))}</span></p>"
+                  + afirmaciones(f, citar)
+                  + enlaces(L("Véase también", "See also"), [("ficha" if r in ficha else "caso", ficha.get(r) or caso[r]) for r in f["relacionadas"]])
+                  + lista() + abrir(f"ficha/{f['id']}", L("Abrir la ficha completa", "Open the full entry")))
+        nombre_o = L(f"«{o['forma']}» en {o['lengua']}", f"“{o['forma']}” in {o['lengua']}") if o else ""
+        paginas.append({
+            "ruta": f"ficha/{f['id']}",
+            "titulo": f"{f['nombre']}" + (f" ({o['forma']})" if o else "") + " · Procedencia",
+            "og_titulo": f"{f['nombre']}: {nombre_o}" if o else f"{f['nombre']} · Procedencia",
+            "descripcion": recortar(f["en_breve"], 200), "cuerpo": cuerpo,
+            "tarjeta": {
+                "cejilla": (f"{clase[f['clase']]} · " if f["clase"] == "deslinde" else "") + (o["lengua"] if o else a["nombre"]),
+                "grande": o["forma"] if o else f["nombre"], "nombre": f["nombre"] if o else "",
+                "linea": primera_frase(f["en_breve"]), "color": a["color"],
+                "foto": img.get("url") if de_dominio_publico(img) else None,
+                "credito": credito_foto(img, L) if de_dominio_publico(img) else "",
+            },
+        })
+
+    for c in D["casos"]:
+        citar, lista = citas()
+        t = tipo_caso.get(c["tipo"], {})
+        fecha = (c.get("fecha") or {}).get("texto", "")
+        cuerpo = (f'<p class="eyebrow">{e(t.get("nombre", ""))} · {e(fecha)}</p><h1>{e(c["titulo"])}</h1>'
+                  + f'<p class="lede">{e(c["resumen"])}</p>' + (f'<p class="muted">{e(c["lugar"])}</p>' if c.get("lugar") else "")
+                  + afirmaciones(c, citar)
+                  + enlaces(L("Fichas de este caso", "Entries in this case"), [("ficha", ficha[x]) for x in c.get("fichas", [])])
+                  + lista() + abrir(f"caso/{c['id']}", L("Abrir el caso completo", "Open the full case")))
+        paginas.append({
+            "ruta": f"caso/{c['id']}", "titulo": f"{c['titulo']} · Procedencia", "og_titulo": c["titulo"],
+            "descripcion": recortar(c["resumen"], 200), "cuerpo": cuerpo,
+            "tarjeta": {"cejilla": f"{t.get('nombre', '')} · {fecha}", "grande": c["titulo"], "nombre": c.get("lugar", ""),
+                        "linea": primera_frase(c["resumen"]), "color": t.get("color", "#812d37")},
+        })
+
+    for p in D["pueblos"]:
+        citar, lista = citas()
+        datos = [(L("Nombre propio", "Own name"), p.get("nombre_propio")), (L("Lengua", "Language"), p.get("lengua")),
+                 (L("Región", "Region"), p.get("region")), (L("Periodo", "Period"), p.get("periodo"))]
+        cuerpo = (f'<p class="eyebrow">{L("Pueblo", "People")}</p><h1>{e(p["nombre"])}</h1><p class="lede">{e(p["en_breve"])}</p>'
+                  + "<ul>" + "".join(f"<li>{k}: {e(x)}</li>" for k, x in datos if x) + "</ul>"
+                  + afirmaciones(p, citar)
+                  + enlaces(L("Sus aportes", "Their contributions"), [("ficha", f) for f in D["fichas"] if p["id"] in f["pueblos"]])
+                  + lista() + abrir(f"pueblo/{p['id']}", L("Abrir la página completa", "Open the full page")))
+        propio = p.get("nombre_propio")
+        paginas.append({
+            "ruta": f"pueblo/{p['id']}", "titulo": f"{p['nombre']} · Procedencia",
+            "og_titulo": f"{p['nombre']} ({propio})" if propio else p["nombre"],
+            "descripcion": recortar(p["en_breve"], 200), "cuerpo": cuerpo,
+            "tarjeta": {"cejilla": f"{L('Pueblo', 'People')} · {p.get('periodo', '')}", "grande": propio or p["nombre"],
+                        "nombre": p["nombre"] if propio else p.get("lengua", ""), "linea": primera_frase(p["en_breve"]), "color": "#3d6252"},
+        })
+
+    for r in D["recorridos"]:
+        citar, lista = citas()
+        pasos = "".join(f'<li><a href="{pre}{"ficha" if "ficha" in x else "caso"}/{x.get("ficha") or x.get("caso")}/">'
+                        f'{e((ficha.get(x.get("ficha")) or caso.get(x.get("caso")))["nombre" if "ficha" in x else "titulo"])}</a>: {e(x["texto"])}</li>'
+                        for x in r["pasos"])
+        cuerpo = (f'<p class="eyebrow">{L("Recorrido", "Journey")}</p><h1>{e(r["titulo"])}</h1><p class="lede">{e(r["entrada"])}</p>'
+                  + f"<ol>{pasos}</ol>" + afirmaciones(r, citar) + lista()
+                  + abrir(f"recorrido/{r['id']}", L("Hacer el recorrido", "Take the journey")))
+        foto = next((ficha[x["ficha"]]["imagen"] for x in r["pasos"] if "ficha" in x and de_dominio_publico(ficha[x["ficha"]].get("imagen") or {})), {})
+        paginas.append({
+            "ruta": f"recorrido/{r['id']}", "titulo": f"{r['titulo']} · Procedencia", "og_titulo": r["titulo"],
+            "descripcion": recortar(r["entrada"], 200), "cuerpo": cuerpo,
+            "tarjeta": {"cejilla": f"{L('Recorrido', 'Journey')} · {len(r['pasos'])} {L('pasos', 'steps')}", "grande": r["titulo"],
+                        "linea": primera_frase(r["entrada"]), "color": "#c99538", "foto": foto.get("url"),
+                        "credito": credito_foto(foto, L) if foto else ""},
+        })
+
+    cu = D["cuenta"]
+    citar, lista = citas()
+    tesis = "".join(f"<li><b>{e(t['titulo'])}.</b> {con_citas(t['texto'], citar)}</li>" for t in cu.get("tesis", []))
+    actos = "".join(f"<h2>{e(c['titulo'])}</h2><p class=\"muted\">{e(c.get('periodo', ''))}</p><p><i>{e(c.get('entrada', ''))}</i></p>"
+                    + "".join(f"<p>{con_citas(x, citar)}</p>" for x in c["texto"]) for c in cu["capitulos"])
+    lam = next(c["lamina"] for c in cu["capitulos"] if c.get("lamina"))
+    paginas.append({
+        "ruta": "cuenta", "titulo": f"{cu['titulo']} · Procedencia", "og_titulo": f"{cu['titulo']}: {cu.get('subtitulo', '')}",
+        "descripcion": recortar(cu["entrada"], 200),
+        "cuerpo": (f'<p class="eyebrow">{e(cu.get("subtitulo", ""))}</p><h1>{e(cu["titulo"])}</h1><p class="lede">{e(cu["entrada"])}</p>'
+                   + f"<ul>{tesis}</ul>{actos}{lista()}" + abrir("cuenta", L("Leer el relato completo", "Read the full story"))),
+        "tarjeta": {"cejilla": cu.get("subtitulo", ""), "grande": cu["titulo"], "linea": primera_frase(cu["entrada"]), "color": "#812d37",
+                    "foto": str(SITIO / lam["archivo"]), "credito": f"{lam['codice']}, {lam['fecha']} · {L('dominio público', 'public domain')}"},
+    })
+    return paginas
+
+
+def tarjeta_portada(D, idioma):
+    L = (lambda es, en: en) if idioma == "en" else (lambda es, en: es)
+    img = next(f for f in D["fichas"] if f["id"] == "maiz").get("imagen") or {}
+    return {"cejilla": L("Aportes de México al mundo", "Mexico's gifts to the world"),
+            "grande": L("Lo que el mundo recibió de México", "What the world got from Mexico"),
+            "linea": L("Del maíz al cero: cada aporte con su nombre originario y cada afirmación con su fuente.",
+                       "From maize to zero: each one with its Indigenous name, each claim with its source."),
+            "color": "#c99538", "foto": img.get("url") if de_dominio_publico(img) else None,
+            "credito": credito_foto(img, L) if de_dominio_publico(img) else ""}
+
+
+def tarjeta_html(t, src):
+    """La tarjeta de 1200×630: el nombre originario grande, el nombre de hoy, una frase y la marca."""
+    e = html.escape
+    grande = t["grande"]
+    ancho = 530 if src else 960
+    n = max(len(grande), 1)
+    tam = min(150, int(ancho / (0.56 * n))) if n <= 14 else min(88, int(2 * ancho / (0.56 * n)))
+    tam = max(tam, 54)
+    foto = (f'<div class="foto"><img src="{e(src)}"></div>' if src else
+            f'<div class="eco">{MARCA_SVG.format(fondo="none", trazo=t["color"])}</div>')
+    return f"""<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,600,100;1,9..144,400,100&family=Inter:wght@400;500;600&display=block">
+<style>
+html,body{{margin:0;width:1200px;height:630px;overflow:hidden;background:#2b211a;color:#f6f0e2;font-family:Inter,sans-serif}}
+.franja{{position:absolute;left:0;top:0;bottom:0;width:14px;background:{t['color']}}}
+.foto{{position:absolute;top:0;right:0;bottom:0;width:600px}}
+.foto img{{width:100%;height:100%;object-fit:cover}}
+.foto::after{{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#2b211a 0%,rgba(43,33,26,.6) 18%,rgba(43,33,26,0) 50%)}}
+.eco{{position:absolute;right:-90px;top:-40px;width:620px;height:620px;opacity:.16}}
+.eco svg{{width:100%;height:100%}}
+.texto{{position:absolute;left:78px;top:62px;bottom:52px;width:{ancho}px;display:flex;flex-direction:column}}
+.cejilla{{font:600 21px/1.3 Inter;letter-spacing:.16em;text-transform:uppercase;color:#d9a84d}}
+.grande{{font-family:Fraunces;font-weight:600;font-size:{tam}px;line-height:1.02;letter-spacing:-.02em;margin-top:22px;text-wrap:balance;overflow-wrap:anywhere}}
+.nombre{{font:italic 400 46px/1.15 Fraunces;color:#eadba9;margin-top:14px}}
+.linea{{font:400 27px/1.4 Inter;color:#dacfbd;margin-top:22px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}}
+.marca{{margin-top:auto;display:flex;align-items:center;gap:14px;font:600 30px Fraunces}}
+.marca svg{{width:46px;height:46px}}
+.marca span{{font:400 17px Inter;color:#a89a86;margin-left:6px;white-space:nowrap}}
+.credito{{position:absolute;right:12px;bottom:12px;max-width:560px;padding:3px 8px;border-radius:4px;background:rgba(43,33,26,.72);font:400 14px Inter;color:rgba(246,240,226,.85)}}
+</style></head><body>
+{foto}<div class="franja"></div>
+<div class="texto">
+<div class="cejilla">{e(t.get('cejilla', ''))}</div>
+<div class="grande">{e(grande)}</div>
+{f'<div class="nombre">{e(t["nombre"])}</div>' if t.get('nombre') else ''}
+<div class="linea">{e(t.get('linea', ''))}</div>
+<div class="marca">{MARCA_SVG.format(fondo="#c99538", trazo="#2b211a")}Procedencia<span>pescamill.github.io/procedencia</span></div>
+</div>
+{f'<div class="credito">{e(t["credito"])}</div>' if t.get('credito') else ''}
+</body></html>"""
+
+
+def navegador():
+    for c in (os.environ.get("CHROME"), "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+              "/Applications/Chromium.app/Contents/MacOS/Chromium", "google-chrome", "chromium", "chromium-browser"):
+        if c and (Path(c).exists() or shutil.which(c)):
+            return shutil.which(c) or c
+    return None
+
+
+def a_jpeg(png, jpg):
+    if shutil.which("sips"):
+        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "78", str(png), "--out", str(jpg)], capture_output=True)
+    elif shutil.which("ffmpeg"):
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(png), "-q:v", "3", str(jpg)], capture_output=True)
+    return jpg.exists()
+
+
+def foto_local(foto):
+    """La foto de la tarjeta como archivo local: las de Commons se bajan una vez a .cache/imagenes/."""
+    if not foto.startswith("http"):
+        return Path(foto)
+    destino = CACHE / "imagenes" / (hashlib.sha1(foto.encode()).hexdigest()[:12] + (Path(urllib.parse.urlparse(foto).path).suffix.lower() or ".jpg"))
+    if not destino.exists():
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        req = urllib.request.Request(foto, headers={"User-Agent": AGENTE_IMAGENES})
+        with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
+            destino.write_bytes(r.read())
+        time.sleep(0.3)
+    return destino
+
+
+def pintar_tarjeta(chrome, ruta, t, fotos):
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        src = fotos.get(t.get("foto"))
+        (tmp / "t.html").write_text(tarjeta_html(t, src.as_uri() if src else None), encoding="utf-8")
+        subprocess.run([chrome, "--headless", "--disable-gpu", "--hide-scrollbars", "--no-first-run", "--no-default-browser-check",
+                        f"--user-data-dir={tmp / 'perfil'}", "--window-size=1200,630", "--virtual-time-budget=6000",
+                        f"--screenshot={tmp / 't.png'}", (tmp / "t.html").as_uri()], capture_output=True, timeout=120)
+        destino = SITIO / ruta
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        return (tmp / "t.png").exists() and a_jpeg(tmp / "t.png", destino)
+
+
+def pintar_tarjetas(tarjetas):
+    """Una imagen de 1200×630 por página, pintada con Chrome sin ventana. Solo se pinta la que cambió:
+    sitio/compartir/huellas.json guarda la huella de cada tarjeta, que también va en la dirección de og:image."""
+    ruta_huellas = COMPARTIR / "huellas.json"
+    viejas = json.loads(ruta_huellas.read_text(encoding="utf-8")) if ruta_huellas.exists() else {}
+    huellas, pendientes = {}, []
+    for ruta, t in tarjetas.items():
+        h = hashlib.sha1(tarjeta_html(t, t.get("foto")).encode("utf-8")).hexdigest()[:10]
+        if viejas.get(ruta) == h and (SITIO / ruta).exists():
+            huellas[ruta] = h
+        else:
+            pendientes.append((ruta, t, h))
+    chrome = navegador()
+    if pendientes and not (chrome and (shutil.which("sips") or shutil.which("ffmpeg"))):
+        print(f"  · {len(pendientes)} tarjetas sin pintar: hace falta Chrome (o la variable CHROME) y sips o ffmpeg")
+        huellas.update({r: viejas[r] for r, _, _ in pendientes if r in viejas and (SITIO / r).exists()})
+    elif pendientes:
+        fotos = {}
+        for _, t, _ in pendientes:
+            if t.get("foto") and t["foto"] not in fotos:
+                try:
+                    fotos[t["foto"]] = foto_local(t["foto"])
+                except Exception as ex:  # sin red: la tarjeta sale sin foto
+                    print(f"  · no se pudo bajar {t['foto']}: {ex}")
+                    fotos[t["foto"]] = None
+        with concurrent.futures.ThreadPoolExecutor(6) as hilos:
+            hechas = hilos.map(lambda x: (x[0], x[2], pintar_tarjeta(chrome, x[0], x[1], fotos)), pendientes)
+            for ruta, h, ok in hechas:
+                if ok:
+                    huellas[ruta] = h
+                elif ruta in viejas and (SITIO / ruta).exists():
+                    huellas[ruta] = viejas[ruta]
+        print(f"{len(pendientes)} tarjetas pintadas en sitio/compartir/ ({sum(r in huellas for r, _, _ in pendientes)} bien)")
+    for archivo in COMPARTIR.rglob("*.jpg"):
+        if archivo.relative_to(SITIO).as_posix() not in tarjetas:
+            archivo.unlink()
+    COMPARTIR.mkdir(exist_ok=True)
+    ruta_huellas.write_text(json.dumps(dict(sorted(huellas.items())), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return huellas
+
+
+def pagina_html(plantilla, p, idioma, imagen):
+    """index.html con la cabecera, el idioma y el resumen de una página; la aplicación la toma al cargar."""
+    e = html.escape
+    pre = "" if idioma == "es" else f"{idioma}/"
+    alternas = {i: f"{URL_SITIO}{'' if i == 'es' else i + '/'}{p['ruta']}/" for i in ("es", *IDIOMAS)}
+    url = alternas[idioma]
+    locale = {"es": "es_MX", "en": "en_US"}
+    cabecera = "\n".join([
+        f'<base href="{"../" * (pre + p["ruta"]).count("/")}../">',
+        f"<title>{e(p['titulo'])}</title>",
+        f'<meta name="description" content="{e(p["descripcion"])}">',
+        f'<link rel="canonical" href="{url}">',
+        *[f'<link rel="alternate" hreflang="{i}" href="{u}">' for i, u in alternas.items()],
+        f'<link rel="alternate" hreflang="x-default" href="{alternas["en"]}">',
+        '<meta property="og:type" content="article">',
+        '<meta property="og:site_name" content="Procedencia">',
+        f'<meta property="og:url" content="{url}">',
+        f'<meta property="og:title" content="{e(p["og_titulo"])}">',
+        f'<meta property="og:description" content="{e(p["descripcion"])}">',
+        *([f'<meta property="og:image" content="{imagen}">', '<meta property="og:image:width" content="1200">',
+           '<meta property="og:image:height" content="630">', f'<meta property="og:image:alt" content="{e(p["og_titulo"])}">'] if imagen else []),
+        f'<meta property="og:locale" content="{locale[idioma]}">',
+        *[f'<meta property="og:locale:alternate" content="{locale[i]}">' for i in alternas if i != idioma],
+        '<meta name="twitter:card" content="summary_large_image">',
+    ])
+    cambios = [
+        (r'<html lang="es">', lambda m: f'<html lang="{idioma}" data-ruta="/{p["ruta"]}">'),
+        (r"<!-- cabecera:.*?<!-- /cabecera -->", lambda m: cabecera),
+        (r'<main id="contenido" tabindex="-1"></main>',
+         lambda m: f'<main id="contenido" tabindex="-1"><article class="wrap map-page" style="max-width:820px">{p["cuerpo"]}</article></main>'),
+    ]
+    for patron, nuevo in cambios:
+        plantilla, n = re.subn(patron, nuevo, plantilla, count=1, flags=re.S)
+        if n != 1:
+            sys.exit(f"sitio/index.html ya no tiene «{patron}»: escribir_paginas no sabe dónde poner la página")
+    if idioma != "es":  # la cabecera y el pie, ya en el idioma, para quien lee sin JavaScript
+        plantilla = re.sub(r'(<[^>]*\sdata-en="([^"]*)"[^>]*>)[^<]*<', lambda m: m.group(1) + m.group(2) + "<", plantilla)
+    return plantilla
+
+
+def escribir_paginas(por_idioma):
+    """Una página por ficha, caso, pueblo y recorrido, y la de «Lo que aún se niega», en cada idioma, con su
+    tarjeta para compartir; además sitio/sitemap.xml y sitio/robots.txt."""
+    plantilla = (SITIO / "index.html").read_text(encoding="utf-8")
+    todas = {i: paginas_de(D, i) for i, D in por_idioma.items()}
+    tarjetas = {}
+    for idioma, paginas in todas.items():
+        pre = "" if idioma == "es" else f"{idioma}/"
+        tarjetas[f"compartir/{pre}procedencia.jpg"] = tarjeta_portada(por_idioma[idioma], idioma)
+        tarjetas.update({f"compartir/{pre}{p['ruta']}.jpg": p["tarjeta"] for p in paginas})
+    huellas = pintar_tarjetas(tarjetas)
+    for d in GENERADAS:
+        shutil.rmtree(SITIO / d, ignore_errors=True)
+    for idioma, paginas in todas.items():
+        pre = "" if idioma == "es" else f"{idioma}/"
+        for p in paginas:
+            img = next((x for x in (f"compartir/{pre}{p['ruta']}.jpg", f"compartir/{pre}procedencia.jpg") if x in huellas), None)
+            destino = SITIO / pre / p["ruta"] / "index.html"
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            destino.write_text(pagina_html(plantilla, p, idioma, img and f"{URL_SITIO}{img}?v={huellas[img]}"), encoding="utf-8")
+
+    urls = [f"<url><loc>{URL_SITIO}</loc></url>"]
+    for p in todas["es"]:
+        alternas = {i: f"{URL_SITIO}{'' if i == 'es' else i + '/'}{p['ruta']}/" for i in todas}
+        enlaces = "".join(f'<xhtml:link rel="alternate" hreflang="{i}" href="{u}"/>' for i, u in alternas.items())
+        enlaces += f'<xhtml:link rel="alternate" hreflang="x-default" href="{alternas["en"]}"/>'
+        urls += [f"<url><loc>{u}</loc>{enlaces}</url>" for u in alternas.values()]
+    (SITIO / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n'
+                                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+                                       + "\n".join(urls) + "\n</urlset>\n", encoding="utf-8")
+    (SITIO / "robots.txt").write_text(
+        "# Los buscadores solo leen robots.txt en la raíz del dominio; aquí sirve si el sitio pasa a tener dominio propio.\n"
+        f"User-agent: *\nAllow: /\n\nSitemap: {URL_SITIO}sitemap.xml\n", encoding="utf-8")
+    n = sum(len(x) for x in todas.values())
+    print(f"{n} páginas en sitio/{{{','.join(GENERADAS)}}}/, {len(huellas)} tarjetas, sitio/sitemap.xml y sitio/robots.txt")
 
 
 def main():

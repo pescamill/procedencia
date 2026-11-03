@@ -24,6 +24,8 @@ Nace del «Inventario de aportes de México al mundo», que definía qué artíc
 | `procedencia.py` | Verificador y constructor. Solo biblioteca estándar. |
 | `herramientas/mapas.py` | Convierte el geojson de TDWG en los mapas de `datos/geo/`. |
 | `sitio/` | El sitio estático: `index.html`, `estilo.css`, `app.js`, los `datos.js` y `datos-en.js` generados y `datos-abiertos.json`. |
+| `sitio/ficha/`, `caso/`, `pueblo/`, `recorrido/`, `cuenta/`, `en/` | Generadas: una página por id, en español y en inglés, para compartir y para los buscadores. Cargan la misma aplicación. |
+| `sitio/compartir/` | Generadas: la tarjeta de 1200×630 de cada página, y `huellas.json` para pintar solo las que cambian. |
 | `reportes/estado.md` | Cifras y pendientes de la última construcción. |
 | `docs/` | El sistema explicado, la política de fuentes, el plan de difusión y el registro de cambios. |
 
@@ -35,7 +37,8 @@ python3 procedencia.py comprobar    # sale a la red: Crossref, enlaces y WCVP (u
 python3 procedencia.py comprobar --nuevas   # solo las fuentes que aún no se comprobaron
 python3 procedencia.py medios       # sale a la red: imagen y licencia en Commons, Wikipedias en Wikidata
 python3 procedencia.py traducir     # agrega a datos/traducciones/en.json los textos nuevos o cambiados
-python3 procedencia.py construir    # verifica y genera sitio/datos.js, sitio/datos-en.js y reportes/estado.md
+python3 procedencia.py construir    # verifica y genera sitio/datos.js, sitio/datos-en.js, reportes/estado.md,
+                                    # las páginas por id, sus tarjetas (con Chrome), sitemap.xml y robots.txt
 ```
 
 Para ver el sitio:

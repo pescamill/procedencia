@@ -1,5 +1,32 @@
 # Cambios
 
+## Iteración 15 · 2 de noviembre de 2026
+
+Cada ficha, caso, pueblo, recorrido y «Lo que aún se niega» tiene ahora su propia dirección, en español y en inglés, con su propia vista previa al compartirla. Antes todo vivía en una sola página con rutas de `#`: los buscadores no leían más que la portada y un enlace en WhatsApp o X mostraba siempre la misma vista previa, sin imagen.
+
+### Qué cambió
+
+- **Una página por id.** `construir` escribe `sitio/ficha/maiz/`, `sitio/caso/<id>/`, `sitio/pueblo/<id>/`, `sitio/recorrido/<id>/` y `sitio/cuenta/`, y lo mismo bajo `sitio/en/` en inglés: 314 páginas. Cada una lleva su título, descripción, `og:title`, `og:description`, `og:image`, dirección canónica y sus versiones `hreflang` en español y en inglés (`x-default` apunta al inglés, para quien no lee ninguno de los dos).
+- **Un resumen que se lee sin JavaScript.** La ficha trae su nombre originario con su lengua y su glosa, la explicación breve, el veredicto con su solidez, las afirmaciones con sus llamadas [1], [2] y la lista de fuentes con su DOI o enlace. Los casos, pueblos y recorridos traen lo suyo, y «Lo que aún se niega», el relato completo con sus fuentes. Las fichas relacionadas se enlazan por su dirección limpia, así que los buscadores pueden recorrerlas.
+- **La misma aplicación.** Cada página carga `app.js`, toma su lugar y pasa a la dirección con `#` sin recargar (`ficha/maiz/` → `#/ficha/maiz`; `cuenta/#cuenta-plata` → `#/cuenta#cuenta-plata`). La página en inglés abre la aplicación en inglés y deja guardado el idioma.
+- **Una tarjeta para compartir por página.** 1200×630, con el nombre originario en grande («kakaw», «tlaolli»), el nombre de hoy, una frase y la marca. Si la ficha tiene una imagen de dominio público o CC0 en Commons, va a la derecha con su autor; si no, la tarjeta es solo tipográfica. «Lo que aún se niega» lleva la fundación de Tenochtitlan del Códice Mendoza. Hay una en español y otra en inglés para cada página, y una de la portada. Se pintan con Chrome sin ventana y pesan menos de 300 KB, el límite de WhatsApp.
+- **Solo se pinta lo que cambió.** `sitio/compartir/huellas.json` guarda la huella de cada tarjeta. La primera vez tarda unos 4 minutos; después, solo las que cambiaron. La huella va también en la dirección de la imagen (`?v=`), para que WhatsApp y Facebook no se queden con la vieja. Sin Chrome, `construir` avisa y deja las tarjetas que ya había.
+- **El botón «Compartir»** comparte la dirección limpia de la ficha, el caso, el pueblo, el recorrido o el relato, con el acto si se está leyendo uno, en el idioma en que se lee.
+- **`sitio/sitemap.xml` y `sitio/robots.txt`.** El mapa del sitio lista las 314 páginas y la portada, con sus versiones en cada idioma. La portada también tiene ya imagen, dirección canónica y tarjeta grande.
+
+### Casos de uso
+
+- **Mandar la vainilla por WhatsApp.** El enlace `…/ficha/vainilla/` se ve con la tarjeta «tlilxochitl · Vainilla» y su frase, no con la vista previa genérica del sitio.
+- **Compartir en inglés.** A alguien de fuera se le manda `…/en/ficha/cacao-chocolate/`: la vista previa, el resumen y la aplicación salen en inglés.
+- **Que alguien encuentre la ficha desde un buscador.** Quien busca «where does chocolate come from» o «tlaolli» puede llegar a la ficha: la página tiene el texto, las fuentes y su versión en el otro idioma.
+- **Citar una ficha.** La dirección limpia sirve para un trabajo escolar o una nota: no cambia y abre la ficha completa.
+- **Compartir un acto del relato.** «Compartir» dentro de «La plata, y todo lo demás» da `…/cuenta/#cuenta-plata`, que abre el relato en ese acto.
+
+### Pendiente
+
+- GitHub Pages sirve el sitio en `/procedencia/`, y los buscadores solo leen `robots.txt` en la raíz del dominio. Para que Google use el mapa del sitio hay que darlo de alta en Search Console, o pasar el sitio a un dominio propio.
+- Las fichas con imagen CC BY o CC BY-SA (el cacao, el jitomate, el aguacate) tienen tarjeta solo tipográfica. Se podrían usar con el autor y la licencia en la tarjeta.
+
 ## Iteración 14 · 2 de noviembre de 2026
 
 Un menú más corto y ordenado, y cuatro detalles corregidos después de recorrer el sitio publicado en un teléfono.

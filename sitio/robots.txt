@@ -1,0 +1,5 @@
+# Los buscadores solo leen robots.txt en la raíz del dominio; aquí sirve si el sitio pasa a tener dominio propio.
+User-agent: *
+Allow: /
+
+Sitemap: https://pescamill.github.io/procedencia/sitemap.xml

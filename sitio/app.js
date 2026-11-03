@@ -1,10 +1,13 @@
 /* Procedencia · aplicación estática. Lee window.PROCEDENCIA (lo genera procedencia.py construir). */
 (function () {
   "use strict";
-  // Idioma: ?lang= en la dirección, luego la elección guardada; si no hay ninguna, español. El inglés llega aparte, en datos-en.js.
+  // Idioma: ?lang= en la dirección (o el de la página estática, como en/ficha/maiz/), luego la elección guardada;
+  // si no hay ninguna, español. El inglés llega aparte, en datos-en.js.
   const IDIOMAS = ["es", "en"];
+  // Las páginas estáticas (ficha/<id>/, caso/<id>/, cuenta/…) que genera procedencia.py dicen su ruta en <html data-ruta>.
+  const PAGINA = document.documentElement.dataset.ruta;
   const ELEGIDO = (() => {
-    const q = new URLSearchParams(location.search).get("lang");
+    const q = new URLSearchParams(location.search).get("lang") || (PAGINA && document.documentElement.lang);
     if (IDIOMAS.includes(q)) { try { localStorage.setItem("procedencia-idioma", q); } catch (_) {} return q; }
     try { const g = localStorage.getItem("procedencia-idioma"); if (IDIOMAS.includes(g)) return g; } catch (_) {}
     return "es";
@@ -1323,10 +1326,19 @@
       t.textContent = texto; t.hidden = false;
       clearTimeout(aviso.t); aviso.t = setTimeout(() => (t.hidden = true), 2200);
     }
+    // Lo que tiene página estática se comparte con su dirección limpia (ficha/maiz/), que lleva su vista previa.
+    function enlaceLimpio() {
+      const [p0, p1] = ruta().partes;
+      const existe = { ficha: FICHA, caso: CASO, pueblo: PUEBLO, recorrido: RECORRIDO }[p0];
+      const camino = p0 === "cuenta" ? "cuenta/" : existe && existe[p1] ? `${p0}/${p1}/` : null;
+      if (!camino) return location.href;
+      const ancla = location.hash.split("#")[2];
+      return new URL((LANG === "es" ? "" : `${LANG}/`) + camino + (ancla ? `#${ancla}` : ""), document.baseURI).href;
+    }
     function compartir() {
-      const datos = { title: document.title, url: location.href };
-      if (navigator.share) { navigator.share(datos).catch(() => {}); return; }
-      (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject()).then(() => aviso(L("Enlace copiado", "Link copied")), () => aviso(location.href));
+      const url = enlaceLimpio();
+      if (navigator.share) { navigator.share({ title: document.title, url }).catch(() => {}); return; }
+      (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(() => aviso(L("Enlace copiado", "Link copied")), () => aviso(url));
     }
 
     function noEncontrado() {
@@ -1573,6 +1585,13 @@
     document.getElementById("pie-datos").textContent = L(
       `Datos generados el ${D.metricas.fecha} · ${D.metricas.fichas} fichas · ${D.metricas.fuentes} fuentes · ${D.metricas.pueblos} pueblos · ${D.metricas.especies_wcvp} especies contrastadas con el WCVP.`,
       `Data generated on ${D.metricas.fecha} · ${D.metricas.fichas} entries · ${D.metricas.fuentes} sources · ${D.metricas.pueblos} peoples · ${D.metricas.especies_wcvp} species checked against the WCVP.`);
+    // En una página estática, la aplicación toma su lugar: pasa a la dirección con # sin recargar
+    // (ficha/maiz/#fuentes → #/ficha/maiz#fuentes) y los enlaces internos siguen como en la portada.
+    // Sin ?lang=: el idioma ya quedó guardado, y con él los enlaces #/… recargarían la página (<base> no lo lleva).
+    if (PAGINA && !location.hash.startsWith("#/")) {
+      const ancla = location.hash.slice(1);
+      history.replaceState(null, "", new URL(`#${PAGINA}` + (ancla ? `#${ancla}` : ""), document.baseURI));
+    }
     pintar();
   }
 })();

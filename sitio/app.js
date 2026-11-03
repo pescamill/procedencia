@@ -1610,6 +1610,8 @@
           if (!a) return;
           Object.values(enlaces).forEach((x) => x.removeAttribute("aria-current"));
           a.setAttribute("aria-current", "step");
+          // La dirección sigue al acto que se lee, para que «Compartir» o copiarla lleven a ese acto.
+          if (location.hash !== a.getAttribute("href")) history.replaceState(null, "", a.getAttribute("href"));
           tira.scrollTo({ left: a.parentElement.offsetLeft - 16, behavior: "smooth" });
         });
       }, { rootMargin: "-35% 0px -55% 0px" });

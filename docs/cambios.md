@@ -1,5 +1,43 @@
 # Cambios
 
+## Iteración 12 · 2 de noviembre de 2026
+
+Una sección nueva, «Lo que aún se niega», en `#/cuenta`. Es la segunda pestaña del menú y se anuncia en la portada. Cuenta como un relato la riqueza que se sacó de México durante la Colonia: el saqueo, el trabajo forzado que lo hizo posible, a dónde fue la plata y lo que se borró en el camino.
+
+### Qué cambió
+
+- **Un relato en diez actos, no una lista de afirmaciones.** La ciudad (1519), la caída, la peste, el tributo, las minas, la plata y todo lo demás, a dónde fue, lo que se borró, lo que aún se niega y lo que no entró en la cuenta. Cada acto tiene un periodo, una entrada en cursiva y su texto. La Conquista y el saqueo son el punto de partida, no algo que haya que demostrar a cada frase.
+- **Las fuentes, a la vista sin estorbar.** Las frases con fuente van subrayadas con puntos y llevan su número. Al pasar el mouse se ve el autor, el año y el título. Al hacer clic (o al tocar en el teléfono), un panel abajo muestra la frase, la referencia completa, si el enlace se comprobó y el tipo de fuente. Lo que no va subrayado es el hilo del relato. Todas las fuentes, 42, están al final en una lista plegada. Se quitaron las aclaraciones «Se dice / Lo que muestran las fuentes» y las etiquetas de solidez.
+- **Láminas de códices de la época.** Seis imágenes de dominio público, tomadas de Wikimedia Commons y guardadas en `sitio/img/cuenta/`. Del Códice Mendoza, la fundación de Tenochtitlan y una página de tributo. Del Códice Durán, la matanza del Templo Mayor. Del Códice Florentino, los enfermos de viruela. Del Códice Kingsborough, un español que arrastra del cabello a un indígena ensangrentado. De la Descripción de Tlaxcala de Muñoz Camargo, frailes quemando códices. Cada lámina se amplía con un clic, con su códice, fecha, archivo, licencia y enlace a Commons.
+- **La voz de la época.** Tres citas cortas de fray Toribio de Motolinía, con la voluta de la palabra de los códices: «su casa era su sepultura» (la viruela), «zánganos que comen la miel que labran las pobres abejas, que son los Indios» (los cobradores de tributo) y «apenas se podía pasar sino sobre hombres muertos o sobre huesos» (las minas). Salen de sus diez plagas de la Nueva España, escritas hacia 1541.
+- **El trabajo forzado, contado desde el pueblo indígena.** El acto de las minas reúne lo que escribió Motolinía: los esclavos marcados con hierro en la cara, los niños y la gente común que se llevaban cuando no bastaban, los cargadores que morían en el camino. También el juicio que Tepetlaoztoc pintó contra sus encomenderos (el primero fue Cortés) y el mercurio de las minas: 612 toneladas al año de 1580 a 1900 (Nriagu, 1994), dibujadas como 196 gotas de mil toneladas cada una.
+- **Un camino que une todo.** Una línea de huellas, como las de los códices, baja por la izquierda y se entinta conforme se lee. Cada acto lleva su número en numerales mesoamericanos, de puntos y barras. Una tira de actos queda pegada arriba, marca el acto que se lee y lleva a cualquiera de ellos.
+- **El mapa de la plata.** Un esquema con diez puntos: las minas, la Casa de Moneda, Veracruz, el Caribe, España, las guerras, Inglaterra y los Países Bajos, Acapulco, Manila y China. Las monedas recorren las rutas, salvo si el sistema pide menos movimiento, y cada punto abre su frase con fuente.
+- **Lo que ya estaba se conserva.** Las dos gráficas de la población (Cook y Borah, y las diez estimaciones de McCaa), la cuenta del dinero (2,000 millones de pesos de Humboldt, casi 48,900 toneladas, al menos 79,000 millones de dólares de hoy) y las cifras de la ciudad.
+- **Saber lo que pasó no es lo mismo que exigir perdón.** El acto «Lo que aún se niega» separa las dos cosas y habla de lo que se enseña. En México se aprende desde la primaria: la ficha de Historia de la SEP para cuarto grado (2025) dice que las epidemias hicieron caer la población indígena, que «comunidades enteras de Mesoamérica se vaciaron» y que llegaron nuevas formas de explotación del trabajo. En España no suele ser así: un estudio de 2026 en la revista *Arbor* (CSIC) sobre tres libros de Historia de 2º de ESO encontró que la aniquilación de la Conquista queda escondida tras el relato del «encuentro» y de la civilización, y que la esclavitud aparece como un trámite. El acto explica también el discurso de la «leyenda negra», con la crítica de Breny Mendoza (2022) a *Imperiofobia y leyenda negra*.
+- **Lo que el mundo no sabe.** Fuera de México y de España falta algo más simple: saber de dónde vino. El acto lo muestra con nombres que el sitio ya documenta (chocolate «suizo», vainilla «Bourbon», *pomodoro*, *turkey*, *poinsettia*), enlaza esas fichas y lleva a todos los aportes. Quien no sabe lo que México dio tampoco puede ver lo que perdió.
+- **Quién lo reconoce y quién lo niega.** Una línea de tiempo con dos lados pone frente a frente lo que reconoce y lo que niega o minimiza: la carta de López Obrador al rey (2019) y el rechazo «con toda firmeza» del gobierno español; el perdón del Estado mexicano al pueblo maya (2021); el rey sin invitación a la toma de posesión de Sheinbaum (2024); el «dolor e injusticia» que reconoció el canciller Albares (2025) y la renuncia que le pidió la Comunidad de Madrid; y el «mucho abuso» que admitió Felipe VI (2026). Ya no se cita la encuesta de 2023 sobre el perdón: no es el punto.
+- **En la portada y en el menú.** La sección pasa a ser la segunda pestaña, después de Aportes. La portada la anuncia con un botón en el encabezado y, debajo de las cifras, una tarjeta con tres láminas: la fundación de Tenochtitlan, el encomendero del Códice Kingsborough y la quema de códices.
+- **Fuentes.** Entran once: Motolinía (c. 1541), Nriagu (1994), el registro del British Museum sobre el Códice Kingsborough, el Códice Durán, la Descripción de Tlaxcala, Mendoza (2022), la ficha de Historia de la SEP (2025), el estudio de *Arbor* sobre libros de texto españoles (2026) y cuatro notas de prensa de 2024 a 2026. Salen dos de Britannica que ya no se citan. En total hay 248.
+- **El verificador lee el relato.** `verificar` revisa que cada marca `[[frase|fuente]]` esté bien cerrada y que su fuente exista, que cada lámina esté en `sitio/` y tenga su ficha de Commons y su licencia, y que el mapa y las gráficas citen fuentes reales. La traducción al inglés conserva las marcas.
+
+### Casos de uso
+
+- **Contar la Colonia de corrido.** Se lee como un artículo largo de principio a fin; quien quiera la prueba la tiene en el subrayado, sin cortar la lectura.
+- **Responder «no fue para tanto».** Para cada dato hay un clic que lleva a la referencia completa: las diez plagas de Motolinía, el juicio de Tepetlaoztoc, las 612 toneladas de mercurio al año, la cuenta de la plata.
+- **Dar clase con imágenes de la época.** Las láminas se amplían a pantalla completa y dicen de qué códice son, dónde está el original y bajo qué licencia se pueden usar.
+- **Explicar por qué en España «no se sabe».** Para quien creció con otro relato, el acto pone lado a lado lo que enseña la SEP y lo que encontró el estudio de los libros de ESO, cada cosa con su fuente.
+- **Mostrar lo que México le dio al mundo.** De «lo que aún se niega» se pasa con un clic a las fichas del chocolate, la vainilla, el jitomate, el guajolote y la nochebuena, y de ahí a todos los aportes.
+- **Responder a «eso es leyenda negra».** El acto «Lo que aún se niega» muestra quién lo dice, qué le contestan los historiadores y cómo hasta el rey de España terminó por admitir «mucho abuso».
+- **Seguir la plata.** El mapa muestra en un vistazo que la riqueza salió de México y se repartió entre España, las guerras europeas, el norte de Europa, el Caribe y China.
+
+### Pendiente
+
+- La producción total de plata de la Nueva España de 1521 a 1821 (TePaske y Brown, 2010).
+- Una lámina para el acto de las minas, si se encuentra un códice o un dibujo de la época con licencia libre.
+- Fuentes sobre el repartimiento minero en la Nueva España y sobre el daño del mercurio en los trabajadores.
+- Leer el proceso de 1539 contra don Carlos Ometochtzin y el capítulo de Ruiz Medrano (2014).
+
 ## Iteración 11 · 2 de noviembre de 2026
 
 Más fácil para los ojos: menos contraste, letra más fina, colores empolvados y superficies como ventanas.

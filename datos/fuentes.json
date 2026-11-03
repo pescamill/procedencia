@@ -2028,5 +2028,286 @@
   "publicacion": "Instituto Nacional de Antropología e Historia",
   "url": "https://www.inah.gob.mx/images/interactivos/20220421_textiles_arte_de_las_mujeres.pdf",
   "nota": "Leído completo. Material de divulgación; describe el malacate y el telar de cintura con base en el Códice Mendoza."
+ },
+ {
+  "id": "cookborah1979",
+  "tipo": "libro",
+  "autores": "Cook, S. F.; Borah, W.",
+  "anio": 1979,
+  "titulo": "Essays in Population History: Mexico and California, vol. III",
+  "publicacion": "Berkeley, University of California Press",
+  "url": "https://archive.org/details/bub_gb_SIZ7utYJlFYC",
+  "nota": "Leído el capítulo 1: la serie de 1518 a 1605 (p. 1) y la cifra de unas 730,000 personas en 1620–1625, cerca del 3 % de 1518 (pp. 100–101). Son las estimaciones más altas que se han propuesto."
+ },
+ {
+  "id": "mccaa1995",
+  "tipo": "articulo",
+  "autores": "McCaa, R.",
+  "anio": 1995,
+  "titulo": "Spanish and Nahuatl views on smallpox and demographic catastrophe in Mexico",
+  "publicacion": "Journal of Interdisciplinary History 25(3)",
+  "doi": "10.2307/205693",
+  "nota": "Leída la tabla 2, que el autor publica en línea (users.pop.umn.edu/~rmccaa/mxpoprev/table2.htm): diez estimaciones de 1519 y 1595."
+ },
+ {
+  "id": "marichal1999",
+  "tipo": "libro",
+  "autores": "Marichal, C.",
+  "anio": 1999,
+  "titulo": "La bancarrota del virreinato. Nueva España y las finanzas del Imperio español, 1780–1810",
+  "publicacion": "México, Fondo de Cultura Económica y El Colegio de México",
+  "url": "https://carlosmarichal.colmex.mx/banca/Book-La%20bancarrota%20del%20virreinato.pdf",
+  "nota": "Leídas la introducción (cita de Humboldt, 1803, y las remesas anuales) y el capítulo 1, pp. 31–32 (peso de las remesas en la tesorería de España)."
+ },
+ {
+  "id": "abadpalma2021",
+  "tipo": "articulo",
+  "autores": "Arroyo Abad, L.; Palma, N.",
+  "anio": 2021,
+  "titulo": "The fruits of El Dorado: the global impact of American precious metals",
+  "publicacion": "Economics Discussion Paper EDP-2003, Universidad de Mánchester; capítulo de The Fruits of the Early Globalization (Palgrave)",
+  "url": "https://hummedia.manchester.ac.uk/schools/soss/economics/discussionpapers/EDP-2003.pdf",
+  "nota": "Leído completo: producción de plata de 1500 a 1800, impuestos sobre los metales, efecto en Europa, encomienda y plata en China."
+ },
+ {
+  "id": "gerhard1977",
+  "tipo": "articulo",
+  "autores": "Gerhard, P.",
+  "anio": 1977,
+  "titulo": "Congregaciones de indios en la Nueva España antes de 1570",
+  "publicacion": "Historia Mexicana 26(3): 347–395",
+  "url": "https://ru.historicas.unam.mx/handle/20.500.12525/3076",
+  "nota": "Leído: los calpultin (pp. 348–349), el propósito de las congregaciones (p. 349), su efecto en los calpultin (pp. 350–351) y Tututepec (p. 372)."
+ },
+ {
+  "id": "leonportilla1998",
+  "tipo": "articulo",
+  "autores": "León-Portilla, M.",
+  "anio": 1998,
+  "titulo": "Volumen 28: Felipe II y el mundo indígena",
+  "publicacion": "Estudios de Cultura Náhuatl 28: 13–16",
+  "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/view/77908",
+  "nota": "Leído completo: la real cédula de 1577 sobre la obra de Sahagún, el encargo a Francisco Hernández (1570–1577) y lo que los pueblos nahuas conservaron según Lockhart (1992)."
+ },
+ {
+  "id": "candiani2012",
+  "tipo": "articulo",
+  "autores": "Candiani, V. S.",
+  "anio": 2012,
+  "titulo": "The Desagüe reconsidered: environmental dimensions of class conflict in colonial Mexico",
+  "publicacion": "Hispanic American Historical Review 92(1): 5–39",
+  "doi": "10.1215/00182168-1470959",
+  "nota": "Leído el resumen."
+ },
+ {
+  "id": "lopesdon2006",
+  "tipo": "articulo",
+  "autores": "Lopes Don, P.",
+  "anio": 2006,
+  "titulo": "Franciscans, Indian sorcerers, and the Inquisition in New Spain, 1536–1543",
+  "publicacion": "Journal of World History 17(1): 27–48",
+  "doi": "10.1353/jwh.2006.0025",
+  "nota": "Leído el resumen."
+ },
+ {
+  "id": "ruizmedrano2014",
+  "tipo": "libro",
+  "autores": "Ruiz Medrano, E.",
+  "anio": 2014,
+  "titulo": "Don Carlos de Tezcoco and the universal rights of Emperor Carlos V",
+  "publicacion": "En Texcoco: Prehispanic and Colonial Perspectives, University Press of Colorado, pp. 165–181",
+  "doi": "10.5876/9781607322849.c007",
+  "nota": "No leído: capítulo dedicado al proceso de 1539."
+ },
+ {
+  "id": "victoria2020",
+  "tipo": "articulo",
+  "autores": "Victoria Ojeda, J.",
+  "anio": 2020,
+  "titulo": "El arribo de esclavos africanos a Campeche durante la Colonia",
+  "publicacion": "Glifos 25: 6–11, INAH Campeche",
+  "url": "https://revistas.inah.gob.mx/index.php/glifos/article/view/15718",
+  "nota": "Leído: la cifra de 1580–1650 (p. 7), que toma de Velázquez e Iturralde (2016)."
+ },
+ {
+  "id": "resendez2016",
+  "tipo": "libro",
+  "autores": "Reséndez, A.",
+  "anio": 2016,
+  "titulo": "The Other Slavery: The Uncovered Story of Indian Enslavement in America",
+  "publicacion": "Boston, Houghton Mifflin Harcourt",
+  "nota": "No leído: la cifra es la estimación del propio autor, citada en reseñas."
+ },
+ {
+  "id": "gaceta2023resendez",
+  "tipo": "prensa",
+  "autores": "Chargoy Guajardo, R.",
+  "anio": 2023,
+  "titulo": "La esclavitud en México no fue sólo de africanos. También la padecían los indígenas: Andrés Reséndez",
+  "publicacion": "Gaceta UNAM, 19 de junio de 2023",
+  "url": "https://www.gaceta.unam.mx/la-esclavitud-en-mexico-no-fue-solo-de-africanos/",
+  "nota": "Leída completa."
+ },
+ {
+  "id": "britannica-tenochtitlan",
+  "tipo": "consulta",
+  "autores": "Encyclopaedia Britannica",
+  "anio": 2026,
+  "titulo": "Tenochtitlán",
+  "publicacion": "Encyclopaedia Britannica",
+  "url": "https://www.britannica.com/place/Tenochtitlan",
+  "nota": "Leída: estima unas 400,000 personas en 1519."
+ },
+ {
+  "id": "britannica-cuernavaca",
+  "tipo": "consulta",
+  "autores": "Encyclopaedia Britannica",
+  "anio": 2026,
+  "titulo": "Cuernavaca",
+  "publicacion": "Encyclopaedia Britannica",
+  "url": "https://www.britannica.com/place/Cuernavaca",
+  "nota": "Leída."
+ },
+ {
+  "id": "britannica-morelia",
+  "tipo": "consulta",
+  "autores": "Encyclopaedia Britannica",
+  "anio": 2026,
+  "titulo": "Morelia",
+  "publicacion": "Encyclopaedia Britannica",
+  "url": "https://www.britannica.com/place/Morelia-Mexico"
+ },
+ {
+  "id": "coinvarieties-8reales",
+  "tipo": "base",
+  "autores": "CoinVarieties",
+  "anio": 2026,
+  "titulo": "Mexico 1773-Mo FM 8 reales",
+  "publicacion": "Catálogo numismático en línea",
+  "url": "https://coinvarieties.com/index.php/Mexico_1773-Mo_FM_8_reales",
+  "nota": "Peso de 8 reales de la Casa de Moneda de México de 1773: 27.07 g de ley 0.903, es decir, 0.786 onzas troy de plata fina."
+ },
+ {
+  "id": "goldapi-plata",
+  "tipo": "base",
+  "autores": "Gold API",
+  "anio": 2026,
+  "titulo": "Silver (XAG) spot price",
+  "publicacion": "Consultado el 3 de noviembre de 2026: 50.43 dólares la onza troy",
+  "url": "https://api.gold-api.com/price/XAG"
+ },
+ {
+  "id": "motolinia1541",
+  "tipo": "primaria",
+  "autores": "Benavente, T. de (Motolinía)",
+  "anio": 1541,
+  "titulo": "Historia de los indios de la Nueva España",
+  "publicacion": "Biblioteca Virtual Miguel de Cervantes, edición de J. García Icazbalceta (1858)",
+  "url": "https://www.cervantesvirtual.com/obra/historia-de-los-indios-de-la-nueva-espana/",
+  "nota": "Tratado I, capítulo 1: las diez plagas (viruela, guerra, hambre, calpixques, tributos, minas de oro, obras de la ciudad, esclavos, servicio de las minas, bandos). Fecha aproximada de redacción."
+ },
+ {
+  "id": "nriagu1994",
+  "tipo": "articulo",
+  "autores": "Nriagu, J. O.",
+  "anio": 1994,
+  "titulo": "Mercury pollution from the past mining of gold and silver in the Americas",
+  "publicacion": "Science of the Total Environment 149(3): 167–181",
+  "doi": "10.1016/0048-9697(94)90177-5"
+ },
+ {
+  "id": "britishmuseum-kingsborough",
+  "tipo": "institucion",
+  "autores": "British Museum (comentario de J. Harwood)",
+  "anio": 2026,
+  "titulo": "Codex Tepetlaoztoc (Codex Kingsborough), Am2006,Drg.13964",
+  "publicacion": "British Museum, Collection online",
+  "url": "https://www.britishmuseum.org/collection/object/E_Am2006-Drg-13964",
+  "nota": "Encargado por el pueblo de Tepetlaoztoc y su gobernador Luis de Tepada para un juicio contra sus encomenderos; registra el tributo de 1522–1523 a 1555–1556 y las muertes por las exigencias y los castigos."
+ },
+ {
+  "id": "duran1581",
+  "tipo": "primaria",
+  "autores": "Durán, D.",
+  "anio": 1581,
+  "titulo": "Historia de las Indias de Nueva España e islas de la Tierra Firme (Códice Durán)",
+  "publicacion": "Biblioteca Nacional de España; reproducción en Wikimedia Commons",
+  "url": "https://commons.wikimedia.org/wiki/File:Matanza_templo2.jpg",
+  "nota": "Fecha aproximada. Lámina de la matanza del Templo Mayor."
+ },
+ {
+  "id": "munozcamargo1585",
+  "tipo": "primaria",
+  "autores": "Muñoz Camargo, D.",
+  "anio": 1585,
+  "titulo": "Descripción de la ciudad y provincia de Tlaxcala (MS Hunter 242, folio 242r)",
+  "publicacion": "Universidad de Glasgow; reproducción en Wikimedia Commons",
+  "url": "https://commons.wikimedia.org/wiki/File:Destruction_of_Mexican_Codices.jpg",
+  "nota": "Fecha aproximada. Lámina de frailes quemando códices y objetos sagrados."
+ },
+ {
+  "id": "mendoza2022",
+  "tipo": "articulo",
+  "autores": "Mendoza, B.",
+  "anio": 2022,
+  "titulo": "La cuestión del imperio español y la Leyenda Negra",
+  "publicacion": "eHumanista 50: 87–105",
+  "url": "https://www.ehumanista.ucsb.edu/sites/default/files/sitefiles/ehumanista/volume50/ehum50.jgf.mendoza.pdf",
+  "nota": "Lectura descolonial de Imperiofobia y leyenda negra (Roca Barea, 2016) y de sus críticos, como Villacañas (2019)."
+ },
+ {
+  "id": "expansion2024rey",
+  "tipo": "prensa",
+  "autores": "Expansión Política",
+  "anio": 2024,
+  "titulo": "Claudia Sheinbaum no invitó al rey Felipe VI a su toma de posesión",
+  "publicacion": "Expansión, 25 de septiembre de 2024",
+  "url": "https://politica.expansion.mx/presidencia/2024/09/25/claudia-sheinbaum-no-invito-rey-felipe-vi"
+ },
+ {
+  "id": "vanguardia2025sheinbaum",
+  "tipo": "prensa",
+  "autores": "Vanguardia",
+  "anio": 2025,
+  "titulo": "Sheinbaum celebra que España reconozca las injusticias de la Conquista: «Es el primer paso»",
+  "publicacion": "Vanguardia, 31 de octubre de 2025",
+  "url": "https://vanguardia.com.mx/noticias/mexico/sheinbaum-celebra-que-espana-reconozca-las-injusticias-de-la-conquista-es-el-primer-paso-KN17927904"
+ },
+ {
+  "id": "elfinanciero2025albares",
+  "tipo": "prensa",
+  "autores": "El Financiero",
+  "anio": 2025,
+  "titulo": "Exigen la renuncia del canciller José Manuel Albares por disculparse con México",
+  "publicacion": "El Financiero, 1 de noviembre de 2025",
+  "url": "https://www.elfinanciero.com.mx/mundo/2025/11/01/exigen-la-renuncia-del-canciller-jose-manuel-albares-por-disculparse-con-mexico-desprestigia-a-espana/"
+ },
+ {
+  "id": "nmas2026rey",
+  "tipo": "prensa",
+  "autores": "N+",
+  "anio": 2026,
+  "titulo": "Sheinbaum reconoce acercamiento del rey Felipe VI por su declaración sobre la Conquista",
+  "publicacion": "N+, 17 de marzo de 2026",
+  "url": "https://www.nmas.com.mx/politica/sheinbaum-responde-rey-felipe-vi-declaracion-conquista-espanola-mexico/"
+ },
+ {
+  "id": "sep2025caida",
+  "tipo": "oficial",
+  "autores": "Secretaría de Educación Pública",
+  "anio": 2025,
+  "titulo": "Consecuencias de la caída de Tenochtitlan",
+  "publicacion": "Nueva Escuela Mexicana, Historia, cuarto grado de primaria; 6 de febrero de 2025",
+  "url": "https://nuevaescuelamexicana.sep.gob.mx/contenido/coleccion/consecuencias-de-la-caida-de-tenochtitlan/"
+ },
+ {
+  "id": "ramirez2026arbor",
+  "tipo": "articulo",
+  "autores": "Ramírez, G.; Brescó de Luna, I.; Pérez-Manjarrez, E.",
+  "anio": 2026,
+  "titulo": "La violencia del pasado colonial: un análisis visual de libros de historia",
+  "publicacion": "Arbor 202 (815): 3118",
+  "url": "https://doi.org/10.3989/arbor.2026.815.3118",
+  "nota": "Tres libros de Geografía e Historia de 2º de ESO usados en España. Retoma a Bermúdez y Argumero (2018)."
  }
 ]

@@ -12,10 +12,11 @@ Nace del «Inventario de aportes de México al mundo», que definía qué artíc
 | `datos/fichas/*.json` | 96 fichas (92 aportes y 4 deslindes), agrupadas por ámbito en cinco archivos. |
 | `datos/casos.json` | 31 casos de saber borrado, biopiratería, apropiación y saqueo. |
 | `datos/recorridos.json` | 10 recorridos que ordenan fichas y casos para contar algo. |
+| `datos/cuenta.json` | «Lo que aún se niega»: un relato en 10 actos sobre la riqueza que se sacó de México. Las frases con fuente se marcan `[[frase\|fuente]]`; lleva láminas de códices, gráficas, el mapa de la plata y la cuenta del dinero. |
 | `datos/pueblos.json` | 15 pueblos: nombre propio, lengua, región, periodo y herencia. |
 | `datos/diagramas.json` | Diagramas de proceso por ficha, con sus fuentes. |
 | `datos/medios.json`, `datos/medios_comprobados.json` | Qué imagen de Commons usa cada ficha, y su autor, licencia y número de Wikipedias. |
-| `datos/fuentes.json` | 219 fuentes con tipo, DOI o enlace. |
+| `datos/fuentes.json` | 248 fuentes con tipo, DOI o enlace. |
 | `datos/traducciones/en.json` | La versión en inglés: cada texto en español con su traducción, por huella del texto. |
 | `datos/erratas.json` | Lo que la verificación corrigió del inventario. |
 | `datos/comprobaciones.json`, `datos/wcvp/` | Lo que encontró la última comprobación en línea. |

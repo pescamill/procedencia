@@ -15343,6 +15343,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
+    "cuenta-plata",
     "grana"
    ]
   },
@@ -15999,7 +16000,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "chinampas"
+    "chinampas",
+    "cuenta-ciudad"
    ]
   },
   {
@@ -16126,7 +16128,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "ciudades"
+    "ciudades",
+    "cuenta-ciudad"
    ]
   },
   {
@@ -16148,6 +16151,8 @@
    "citada_por": [
     "algodon",
     "caso-codices",
+    "cuenta-ciudad",
+    "cuenta-plata",
     "educacion",
     "grana",
     "textiles"
@@ -16736,7 +16741,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-plata"
+    "caso-plata",
+    "cuenta-destino"
    ]
   },
   {
@@ -16755,7 +16761,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-noche-triste"
+    "caso-noche-triste",
+    "cuenta-caida"
    ]
   },
   {
@@ -17046,7 +17053,9 @@
     "caso-matanzas",
     "caso-noche-triste",
     "caso-quinto-real",
-    "caso-tenochtitlan"
+    "caso-tenochtitlan",
+    "cuenta-caida",
+    "cuenta-ciudad"
    ]
   },
   {
@@ -17070,6 +17079,8 @@
     "caso-matanzas",
     "caso-medicina",
     "caso-tenochtitlan",
+    "cuenta-caida",
+    "cuenta-peste",
     "tabaco-mesoamericano",
     "temazcal"
    ]
@@ -17738,7 +17749,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-tenochtitlan"
+    "caso-tenochtitlan",
+    "cuenta-caida"
    ]
   },
   {
@@ -17759,7 +17771,8 @@
    },
    "citada_por": [
     "caso-templos-iglesias",
-    "caso-tenochtitlan"
+    "caso-tenochtitlan",
+    "cuenta-tributo"
    ]
   },
   {
@@ -17779,7 +17792,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-matanzas"
+    "caso-matanzas",
+    "cuenta-caida"
    ]
   },
   {
@@ -17800,7 +17814,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-cocoliztli"
+    "caso-cocoliztli",
+    "cuenta-peste"
    ]
   },
   {
@@ -17841,7 +17856,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-matanzas"
+    "caso-matanzas",
+    "cuenta-niega"
    ]
   },
   {
@@ -18037,7 +18053,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-matanzas"
+    "caso-matanzas",
+    "cuenta-niega"
    ]
   },
   {
@@ -18884,6 +18901,7 @@
    },
    "citada_por": [
     "algodon",
+    "cuenta-plata",
     "textiles"
    ]
   },
@@ -19008,6 +19026,594 @@
    "citada_por": [
     "textiles"
    ]
+  },
+  {
+   "id": "cookborah1979",
+   "tipo": "libro",
+   "autores": "Cook, S. F.; Borah, W.",
+   "anio": 1979,
+   "titulo": "Essays in Population History: Mexico and California, vol. III",
+   "publicacion": "Berkeley, University of California Press",
+   "url": "https://archive.org/details/bub_gb_SIZ7utYJlFYC",
+   "nota": "Leído el capítulo 1: la serie de 1518 a 1605 (p. 1) y la cifra de unas 730,000 personas en 1620–1625, cerca del 3 % de 1518 (pp. 100–101). Son las estimaciones más altas que se han propuesto.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Essays in population history: Mexico and the Caribbean : Cook, Sherburne Friend, 1896-1974 : Free Download, Borrow, and Streaming : Internet Archive",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-peste"
+   ]
+  },
+  {
+   "id": "mccaa1995",
+   "tipo": "articulo",
+   "autores": "McCaa, R.",
+   "anio": 1995,
+   "titulo": "Spanish and Nahuatl views on smallpox and demographic catastrophe in Mexico",
+   "publicacion": "Journal of Interdisciplinary History 25(3)",
+   "doi": "10.2307/205693",
+   "nota": "Leída la tabla 2, que el autor publica en línea (users.pop.umn.edu/~rmccaa/mxpoprev/table2.htm): diez estimaciones de 1519 y 1595.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Spanish and Nahuatl Views on Smallpox and Demographic Catastrophe in Mexico",
+    "anio_registrado": 1995,
+    "revista_registrada": "Journal of Interdisciplinary History",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-peste"
+   ]
+  },
+  {
+   "id": "marichal1999",
+   "tipo": "libro",
+   "autores": "Marichal, C.",
+   "anio": 1999,
+   "titulo": "La bancarrota del virreinato. Nueva España y las finanzas del Imperio español, 1780–1810",
+   "publicacion": "México, Fondo de Cultura Económica y El Colegio de México",
+   "url": "https://carlosmarichal.colmex.mx/banca/Book-La%20bancarrota%20del%20virreinato.pdf",
+   "nota": "Leídas la introducción (cita de Humboldt, 1803, y las remesas anuales) y el capítulo 1, pp. 31–32 (peso de las remesas en la tesorería de España).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-ciudad",
+    "cuenta-destino",
+    "cuenta-plata"
+   ]
+  },
+  {
+   "id": "abadpalma2021",
+   "tipo": "articulo",
+   "autores": "Arroyo Abad, L.; Palma, N.",
+   "anio": 2021,
+   "titulo": "The fruits of El Dorado: the global impact of American precious metals",
+   "publicacion": "Economics Discussion Paper EDP-2003, Universidad de Mánchester; capítulo de The Fruits of the Early Globalization (Palgrave)",
+   "url": "https://hummedia.manchester.ac.uk/schools/soss/economics/discussionpapers/EDP-2003.pdf",
+   "nota": "Leído completo: producción de plata de 1500 a 1800, impuestos sobre los metales, efecto en Europa, encomienda y plata en China.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-destino",
+    "cuenta-plata",
+    "cuenta-tributo"
+   ]
+  },
+  {
+   "id": "gerhard1977",
+   "tipo": "articulo",
+   "autores": "Gerhard, P.",
+   "anio": 1977,
+   "titulo": "Congregaciones de indios en la Nueva España antes de 1570",
+   "publicacion": "Historia Mexicana 26(3): 347–395",
+   "url": "https://ru.historicas.unam.mx/handle/20.500.12525/3076",
+   "nota": "Leído: los calpultin (pp. 348–349), el propósito de las congregaciones (p. 349), su efecto en los calpultin (pp. 350–351) y Tututepec (p. 372).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado",
+    "cuenta-peste"
+   ]
+  },
+  {
+   "id": "leonportilla1998",
+   "tipo": "articulo",
+   "autores": "León-Portilla, M.",
+   "anio": 1998,
+   "titulo": "Volumen 28: Felipe II y el mundo indígena",
+   "publicacion": "Estudios de Cultura Náhuatl 28: 13–16",
+   "url": "https://nahuatl.historicas.unam.mx/index.php/ecn/article/view/77908",
+   "nota": "Leído completo: la real cédula de 1577 sobre la obra de Sahagún, el encargo a Francisco Hernández (1570–1577) y lo que los pueblos nahuas conservaron según Lockhart (1992).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "candiani2012",
+   "tipo": "articulo",
+   "autores": "Candiani, V. S.",
+   "anio": 2012,
+   "titulo": "The Desagüe reconsidered: environmental dimensions of class conflict in colonial Mexico",
+   "publicacion": "Hispanic American Historical Review 92(1): 5–39",
+   "doi": "10.1215/00182168-1470959",
+   "nota": "Leído el resumen.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "The Desagüe Reconsidered: Environmental Dimensions of Class Conflict in Colonial Mexico",
+    "anio_registrado": 2012,
+    "revista_registrada": "Hispanic American Historical Review",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "lopesdon2006",
+   "tipo": "articulo",
+   "autores": "Lopes Don, P.",
+   "anio": 2006,
+   "titulo": "Franciscans, Indian sorcerers, and the Inquisition in New Spain, 1536–1543",
+   "publicacion": "Journal of World History 17(1): 27–48",
+   "doi": "10.1353/jwh.2006.0025",
+   "nota": "Leído el resumen.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Franciscans, Indian Sorcerers, and the Inquisition in New Spain, 1536-1543",
+    "anio_registrado": 2006,
+    "revista_registrada": "Journal of World History",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "ruizmedrano2014",
+   "tipo": "libro",
+   "autores": "Ruiz Medrano, E.",
+   "anio": 2014,
+   "titulo": "Don Carlos de Tezcoco and the universal rights of Emperor Carlos V",
+   "publicacion": "En Texcoco: Prehispanic and Colonial Perspectives, University Press of Colorado, pp. 165–181",
+   "doi": "10.5876/9781607322849.c007",
+   "nota": "No leído: capítulo dedicado al proceso de 1539.",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Don Carlos de Tezcoco and the Universal Rights of Emperor Carlos V",
+    "anio_registrado": 2014,
+    "revista_registrada": "Texcoco: Prehispanic and Colonial Perspectives",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "victoria2020",
+   "tipo": "articulo",
+   "autores": "Victoria Ojeda, J.",
+   "anio": 2020,
+   "titulo": "El arribo de esclavos africanos a Campeche durante la Colonia",
+   "publicacion": "Glifos 25: 6–11, INAH Campeche",
+   "url": "https://revistas.inah.gob.mx/index.php/glifos/article/view/15718",
+   "nota": "Leído: la cifra de 1580–1650 (p. 7), que toma de Velázquez e Iturralde (2016).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "El arribo de esclavos africanos a Campeche durante la Colonia | Glifos",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-minas"
+   ]
+  },
+  {
+   "id": "resendez2016",
+   "tipo": "libro",
+   "autores": "Reséndez, A.",
+   "anio": 2016,
+   "titulo": "The Other Slavery: The Uncovered Story of Indian Enslavement in America",
+   "publicacion": "Boston, Houghton Mifflin Harcourt",
+   "nota": "No leído: la cifra es la estimación del propio autor, citada en reseñas.",
+   "comprobacion": {
+    "metodo": "ninguno",
+    "resultado": "sin_enlace",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-minas"
+   ]
+  },
+  {
+   "id": "gaceta2023resendez",
+   "tipo": "prensa",
+   "autores": "Chargoy Guajardo, R.",
+   "anio": 2023,
+   "titulo": "La esclavitud en México no fue sólo de africanos. También la padecían los indígenas: Andrés Reséndez",
+   "publicacion": "Gaceta UNAM, 19 de junio de 2023",
+   "url": "https://www.gaceta.unam.mx/la-esclavitud-en-mexico-no-fue-solo-de-africanos/",
+   "nota": "Leída completa.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "La esclavitud en México no fue sólo de africanos - Gaceta UNAM",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-minas"
+   ]
+  },
+  {
+   "id": "britannica-tenochtitlan",
+   "tipo": "consulta",
+   "autores": "Encyclopaedia Britannica",
+   "anio": 2026,
+   "titulo": "Tenochtitlán",
+   "publicacion": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/place/Tenochtitlan",
+   "nota": "Leída: estima unas 400,000 personas en 1519.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-ciudad"
+   ]
+  },
+  {
+   "id": "britannica-cuernavaca",
+   "tipo": "consulta",
+   "autores": "Encyclopaedia Britannica",
+   "anio": 2026,
+   "titulo": "Cuernavaca",
+   "publicacion": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/place/Cuernavaca",
+   "nota": "Leída.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "britannica-morelia",
+   "tipo": "consulta",
+   "autores": "Encyclopaedia Britannica",
+   "anio": 2026,
+   "titulo": "Morelia",
+   "publicacion": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/place/Morelia-Mexico",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "coinvarieties-8reales",
+   "tipo": "base",
+   "autores": "CoinVarieties",
+   "anio": 2026,
+   "titulo": "Mexico 1773-Mo FM 8 reales",
+   "publicacion": "Catálogo numismático en línea",
+   "url": "https://coinvarieties.com/index.php/Mexico_1773-Mo_FM_8_reales",
+   "nota": "Peso de 8 reales de la Casa de Moneda de México de 1773: 27.07 g de ley 0.903, es decir, 0.786 onzas troy de plata fina.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Mexico 1773-Mo FM 8 reales - CoinVarieties",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-plata"
+   ]
+  },
+  {
+   "id": "goldapi-plata",
+   "tipo": "base",
+   "autores": "Gold API",
+   "anio": 2026,
+   "titulo": "Silver (XAG) spot price",
+   "publicacion": "Consultado el 3 de noviembre de 2026: 50.43 dólares la onza troy",
+   "url": "https://api.gold-api.com/price/XAG",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-plata"
+   ]
+  },
+  {
+   "id": "motolinia1541",
+   "tipo": "primaria",
+   "autores": "Benavente, T. de (Motolinía)",
+   "anio": 1541,
+   "titulo": "Historia de los indios de la Nueva España",
+   "publicacion": "Biblioteca Virtual Miguel de Cervantes, edición de J. García Icazbalceta (1858)",
+   "url": "https://www.cervantesvirtual.com/obra/historia-de-los-indios-de-la-nueva-espana/",
+   "nota": "Tratado I, capítulo 1: las diez plagas (viruela, guerra, hambre, calpixques, tributos, minas de oro, obras de la ciudad, esclavos, servicio de las minas, bandos). Fecha aproximada de redacción.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-caida",
+    "cuenta-minas",
+    "cuenta-peste",
+    "cuenta-tributo"
+   ]
+  },
+  {
+   "id": "nriagu1994",
+   "tipo": "articulo",
+   "autores": "Nriagu, J. O.",
+   "anio": 1994,
+   "titulo": "Mercury pollution from the past mining of gold and silver in the Americas",
+   "publicacion": "Science of the Total Environment 149(3): 167–181",
+   "doi": "10.1016/0048-9697(94)90177-5",
+   "comprobacion": {
+    "metodo": "crossref",
+    "resultado": "ok",
+    "parecido": 1.0,
+    "titulo_registrado": "Mercury pollution from the past mining of gold and silver in the Americas",
+    "anio_registrado": 1994,
+    "revista_registrada": "Science of The Total Environment",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-destino",
+    "cuenta-minas"
+   ]
+  },
+  {
+   "id": "britishmuseum-kingsborough",
+   "tipo": "institucion",
+   "autores": "British Museum (comentario de J. Harwood)",
+   "anio": 2026,
+   "titulo": "Codex Tepetlaoztoc (Codex Kingsborough), Am2006,Drg.13964",
+   "publicacion": "British Museum, Collection online",
+   "url": "https://www.britishmuseum.org/collection/object/E_Am2006-Drg-13964",
+   "nota": "Encargado por el pueblo de Tepetlaoztoc y su gobernador Luis de Tepada para un juicio contra sus encomenderos; registra el tributo de 1522–1523 a 1555–1556 y las muertes por las exigencias y los castigos.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "bloqueada",
+    "codigo": 403,
+    "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-tributo"
+   ]
+  },
+  {
+   "id": "duran1581",
+   "tipo": "primaria",
+   "autores": "Durán, D.",
+   "anio": 1581,
+   "titulo": "Historia de las Indias de Nueva España e islas de la Tierra Firme (Códice Durán)",
+   "publicacion": "Biblioteca Nacional de España; reproducción en Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Matanza_templo2.jpg",
+   "nota": "Fecha aproximada. Lámina de la matanza del Templo Mayor.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "File:Matanza templo2.jpg - Wikimedia Commons",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-caida"
+   ]
+  },
+  {
+   "id": "munozcamargo1585",
+   "tipo": "primaria",
+   "autores": "Muñoz Camargo, D.",
+   "anio": 1585,
+   "titulo": "Descripción de la ciudad y provincia de Tlaxcala (MS Hunter 242, folio 242r)",
+   "publicacion": "Universidad de Glasgow; reproducción en Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Destruction_of_Mexican_Codices.jpg",
+   "nota": "Fecha aproximada. Lámina de frailes quemando códices y objetos sagrados.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "File:Destruction of Mexican Codices.jpg - Wikimedia Commons",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-borrado"
+   ]
+  },
+  {
+   "id": "mendoza2022",
+   "tipo": "articulo",
+   "autores": "Mendoza, B.",
+   "anio": 2022,
+   "titulo": "La cuestión del imperio español y la Leyenda Negra",
+   "publicacion": "eHumanista 50: 87–105",
+   "url": "https://www.ehumanista.ucsb.edu/sites/default/files/sitefiles/ehumanista/volume50/ehum50.jgf.mendoza.pdf",
+   "nota": "Lectura descolonial de Imperiofobia y leyenda negra (Roca Barea, 2016) y de sus críticos, como Villacañas (2019).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "expansion2024rey",
+   "tipo": "prensa",
+   "autores": "Expansión Política",
+   "anio": 2024,
+   "titulo": "Claudia Sheinbaum no invitó al rey Felipe VI a su toma de posesión",
+   "publicacion": "Expansión, 25 de septiembre de 2024",
+   "url": "https://politica.expansion.mx/presidencia/2024/09/25/claudia-sheinbaum-no-invito-rey-felipe-vi",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Claudia Sheinbaum: no se invitó al rey Felipe VI porque no respondió carta a AMLO",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "vanguardia2025sheinbaum",
+   "tipo": "prensa",
+   "autores": "Vanguardia",
+   "anio": 2025,
+   "titulo": "Sheinbaum celebra que España reconozca las injusticias de la Conquista: «Es el primer paso»",
+   "publicacion": "Vanguardia, 31 de octubre de 2025",
+   "url": "https://vanguardia.com.mx/noticias/mexico/sheinbaum-celebra-que-espana-reconozca-las-injusticias-de-la-conquista-es-el-primer-paso-KN17927904",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Sheinbaum celebra que España reconozca las injusticias de la Conquista: ‘Es el primer paso’",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "elfinanciero2025albares",
+   "tipo": "prensa",
+   "autores": "El Financiero",
+   "anio": 2025,
+   "titulo": "Exigen la renuncia del canciller José Manuel Albares por disculparse con México",
+   "publicacion": "El Financiero, 1 de noviembre de 2025",
+   "url": "https://www.elfinanciero.com.mx/mundo/2025/11/01/exigen-la-renuncia-del-canciller-jose-manuel-albares-por-disculparse-con-mexico-desprestigia-a-espana/",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Exigen la renuncia del canciller José Manuel Albares por disculparse con México: ‘Desprestigia a España’ – El Financiero",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "nmas2026rey",
+   "tipo": "prensa",
+   "autores": "N+",
+   "anio": 2026,
+   "titulo": "Sheinbaum reconoce acercamiento del rey Felipe VI por su declaración sobre la Conquista",
+   "publicacion": "N+, 17 de marzo de 2026",
+   "url": "https://www.nmas.com.mx/politica/sheinbaum-responde-rey-felipe-vi-declaracion-conquista-espanola-mexico/",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Sheinbaum Reconoce Acercamiento del Rey de España por Declaración de la Conquista en México | N+",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "sep2025caida",
+   "tipo": "oficial",
+   "autores": "Secretaría de Educación Pública",
+   "anio": 2025,
+   "titulo": "Consecuencias de la caída de Tenochtitlan",
+   "publicacion": "Nueva Escuela Mexicana, Historia, cuarto grado de primaria; 6 de febrero de 2025",
+   "url": "https://nuevaescuelamexicana.sep.gob.mx/contenido/coleccion/consecuencias-de-la-caida-de-tenochtitlan/",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Consecuencias de la caída de Tenochtitlan - Nueva Escuela Mexicana Digital",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
+  },
+  {
+   "id": "ramirez2026arbor",
+   "tipo": "articulo",
+   "autores": "Ramírez, G.; Brescó de Luna, I.; Pérez-Manjarrez, E.",
+   "anio": 2026,
+   "titulo": "La violencia del pasado colonial: un análisis visual de libros de historia",
+   "publicacion": "Arbor 202 (815): 3118",
+   "url": "https://doi.org/10.3989/arbor.2026.815.3118",
+   "nota": "Tres libros de Geografía e Historia de 2º de ESO usados en España. Retoma a Bermúdez y Argumero (2018).",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-niega"
+   ]
   }
  ],
  "metricas": {
@@ -19016,11 +19622,12 @@
   "deslindes": 5,
   "casos": 31,
   "recorridos": 10,
-  "fuentes": 219,
+  "capitulos": 10,
+  "fuentes": 248,
   "fuentes_por_resultado": {
-   "ok": 204,
-   "sin_enlace": 10,
-   "bloqueada": 5
+   "ok": 226,
+   "sin_enlace": 11,
+   "bloqueada": 11
   },
   "afirmaciones": {
    "pendiente": 12,
@@ -19933,6 +20540,674 @@
     "stuart2012"
    ]
   }
+ },
+ "cuenta": {
+  "_nota": "Sección «Lo que aún se niega», contada como narrativa en actos. En 'texto', [[frase|fuente1,fuente2]] marca una frase con fuente: el sitio la subraya, muestra la fuente al pasar el mouse y la abre abajo al hacer clic. Lo que no lleva marca es el hilo del relato. Las láminas son de dominio público (Wikimedia Commons); 'commons' es su ficha. 'visual' elige la gráfica o el mapa de cada acto.",
+  "titulo": "Lo que aún se niega",
+  "entrada": "La historia de la riqueza de Europa suele empezar en Europa. Esta empieza en Tenochtitlan, sigue el camino de la plata y del trabajo que la sacó, y termina en lo que no se puede contar. En México se enseña en la escuela; fuera de aquí, casi siempre se cuenta como un encuentro, o no se cuenta. Lo que aún se niega es que fue un saqueo.",
+  "capitulos": [
+   {
+    "id": "cuenta-ciudad",
+    "titulo": "La ciudad",
+    "periodo": "1519",
+    "entrada": "Antes de la plata hubo una ciudad sobre el agua, y una red de tributo que llegaba hasta las costas.",
+    "lamina": {
+     "archivo": "img/cuenta/mendoza-2r.jpg",
+     "codice": "Códice Mendoza, folio 2r",
+     "fecha": "c. 1542",
+     "custodia": "Biblioteca Bodleiana, Oxford",
+     "pie": "La fundación de Tenochtitlan: el águila sobre el nopal, en medio del lago y sus canales.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Codex_Mendoza_folio_2r.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "mendoza"
+     ]
+    },
+    "texto": [
+     "En 1519, Tenochtitlan era una ciudad de calzadas, canales y chinampas. [[Junto con Tlatelolco tenía entre unas 212,500 y 400,000 personas, según la estimación: era de las ciudades más grandes del mundo|smith2005]]. [[Las chinampas sostenían buena parte de su abasto|calnek1972]].",
+     "[[Soldados de Cortés que habían estado en Constantinopla, en Italia y en Roma dijeron no haber visto un mercado tan grande, tan ordenado y con tanta gente como el de Tlatelolco|diazdelcastillo1632]].",
+     "A la ciudad llegaba el tributo de cientos de pueblos: mantas de algodón, plumas, cacao, piedras verdes, oro. [[El virrey Antonio de Mendoza mandó pintar ese registro, provincia por provincia, para conocer la tierra recién conquistada|mendoza]]. Esa red es la que encontraron los españoles. No la desmontaron: la heredaron y la exprimieron."
+    ],
+    "visual": "ciudad",
+    "ciudad": {
+     "fuentes": [
+      "smith2005",
+      "britannica-tenochtitlan",
+      "marichal1999"
+     ],
+     "antes": [
+      212500,
+      400000
+     ],
+     "despues": 100000
+    },
+    "fichas": [
+     "ciudades",
+     "chinampas"
+    ],
+    "casos": []
+   },
+   {
+    "id": "cuenta-caida",
+    "titulo": "La caída",
+    "periodo": "1520–1521",
+    "entrada": "La ciudad cayó por la guerra, el cerco y el hambre. Lo primero que se llevaron fue el oro.",
+    "lamina": {
+     "archivo": "img/cuenta/duran-toxcatl.jpg",
+     "codice": "Códice Durán (Historia de las Indias de Nueva España)",
+     "fecha": "c. 1581",
+     "custodia": "Biblioteca Nacional de España, Madrid",
+     "pie": "La matanza del Templo Mayor en la fiesta de Tóxcatl, en mayo de 1520.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Matanza_templo2.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "duran1581"
+     ]
+    },
+    "texto": [
+     "[[En la fiesta de Tóxcatl, en mayo de 1520, los españoles al mando de Pedro de Alvarado entraron al patio del templo y atacaron a la gente desarmada que bailaba|sahagun1577,sousaterraciano-toxcatl]]. [[Cortés no la menciona en su carta al rey|sousaterraciano-toxcatl]].",
+     "Al año siguiente vino el cerco. [[Para avanzar, Cortés mandó derribar y quemar las casas de la ciudad|cortes1522]]. [[Fray Toribio de Motolinía escribió que los capitanes «ponían por tierra todo lo que ganaban de la ciudad», y comparó a los muertos con los de Jerusalén cuando la destruyó Tito|motolinia1541]]. [[El sitio terminó el 13 de agosto de 1521 con la captura de Cuauhtémoc|sahagun1577,diazdelcastillo1632]].",
+     "[[Después vino el hambre: en plena guerra nadie pudo sembrar, y lo que unos sembraban los otros lo destruían|motolinia1541]].",
+     "Y el oro. [[Para que dijera dónde estaba, a Cuauhtémoc le quemaron los pies|diazdelcastillo1632]]. [[Los discos de oro y plata de Moctezuma viajaron como regalo a Carlos V|diazdelcastillo1632]]. [[El tejo de oro hallado en 1981 bajo el Banco de México coincide con el oro que los españoles fundieron y perdieron en la huida de la Noche Triste|lopezlujan2020]]."
+    ],
+    "fichas": [],
+    "casos": [
+     "caso-matanzas",
+     "caso-tenochtitlan",
+     "caso-noche-triste",
+     "caso-quinto-real"
+    ]
+   },
+   {
+    "id": "cuenta-peste",
+    "titulo": "La peste",
+    "periodo": "1520–1625",
+    "entrada": "Las epidemias no llegaron a un pueblo en paz: llegaron sobre la guerra, el hambre y el trabajo forzado.",
+    "lamina": {
+     "archivo": "img/cuenta/florentino-viruela.jpg",
+     "codice": "Códice Florentino, libro XII, folio 54",
+     "fecha": "c. 1577",
+     "custodia": "Biblioteca Medicea Laurenziana, Florencia",
+     "pie": "Enfermos de viruela en 1520. Una curandera atiende a uno; los demás yacen cubiertos de llagas.",
+     "commons": "https://commons.wikimedia.org/wiki/File:FlorentineCodex_BK12_F54_smallpox.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "sahagun1577"
+     ]
+    },
+    "texto": [
+     "[[La viruela llegó en 1520 con la gente de Narváez. En la mayoría de las provincias murió más de la mitad de la gente; en muchas casas murieron todos, y como no había quien los enterrara, les echaban la casa encima|motolinia1541]].",
+     "Después vinieron otras. [[Las epidemias de cocoliztli de 1545 y 1576 mataron, según las estimaciones, entre 5 y 15 millones de personas|acunasoto2002]]. [[Y mientras millones de indígenas morían, a los que quedaban se les exigía servicio y tributo sin medida|gerhard1977]].",
+     "[[Cook y Borah calcularon 25.2 millones de personas en el centro de México en 1518 y unas 730,000 hacia 1620–1625: cerca del 3 %|cookborah1979]]. [[Otros autores parten de menos gente, pero todos encuentran la caída|mccaa1995]]."
+    ],
+    "cita": {
+     "texto": "de manera que su casa era su sepultura",
+     "quien": "Motolinía, sobre la viruela de 1520",
+     "fuentes": [
+      "motolinia1541"
+     ]
+    },
+    "visual": "poblacion",
+    "graficas": {
+     "serie": {
+      "nombre": "Población indígena del centro de México, según Cook y Borah (millones)",
+      "fuentes": [
+       "cookborah1979"
+      ],
+      "puntos": [
+       {
+        "anio": 1518,
+        "millones": 25.2
+       },
+       {
+        "anio": 1532,
+        "millones": 16.8
+       },
+       {
+        "anio": 1548,
+        "millones": 6.3
+       },
+       {
+        "anio": 1568,
+        "millones": 2.65
+       },
+       {
+        "anio": 1585,
+        "millones": 1.9
+       },
+       {
+        "anio": 1595,
+        "millones": 1.375
+       },
+       {
+        "anio": 1605,
+        "millones": 1.075
+       },
+       {
+        "anio": 1622,
+        "millones": 0.73,
+        "texto": "1620–1625"
+       }
+      ]
+     },
+     "estimaciones": {
+      "nombre": "Cuánto cayó la población de 1519 a 1595, según cada autor",
+      "fuentes": [
+       "mccaa1995"
+      ],
+      "filas": [
+       {
+        "autor": "Rosenblat",
+        "lugar": "México",
+        "inicio": [
+         4.5,
+         4.5
+        ],
+        "fin": [
+         3.5,
+         3.5
+        ],
+        "caida": [
+         22,
+         22
+        ]
+       },
+       {
+        "autor": "Kubler",
+        "lugar": "128 pueblos",
+        "inicio": [
+         0.2,
+         0.2
+        ],
+        "fin": [
+         0.1,
+         0.1
+        ],
+        "caida": [
+         50,
+         50
+        ]
+       },
+       {
+        "autor": "Aguirre Beltrán",
+        "lugar": "México",
+        "inicio": [
+         4.5,
+         4.5
+        ],
+        "fin": [
+         2.0,
+         2.0
+        ],
+        "caida": [
+         56,
+         56
+        ]
+       },
+       {
+        "autor": "Mendizábal",
+        "lugar": "México",
+        "inicio": [
+         8.2,
+         8.2
+        ],
+        "fin": [
+         2.4,
+         2.4
+        ],
+        "caida": [
+         71,
+         71
+        ]
+       },
+       {
+        "autor": "Cook y Simpson",
+        "lugar": "México",
+        "inicio": [
+         10.5,
+         10.5
+        ],
+        "fin": [
+         2.1,
+         3.0
+        ],
+        "caida": [
+         71,
+         80
+        ]
+       },
+       {
+        "autor": "Zambardino",
+        "lugar": "México",
+        "inicio": [
+         5,
+         10
+        ],
+        "fin": [
+         1.1,
+         1.7
+        ],
+        "caida": [
+         64,
+         89
+        ]
+       },
+       {
+        "autor": "Sanders",
+        "lugar": "Centro de México",
+        "inicio": [
+         2.6,
+         3.1
+        ],
+        "fin": [
+         0.4,
+         0.4
+        ],
+        "caida": [
+         85,
+         87
+        ]
+       },
+       {
+        "autor": "Gibson",
+        "lugar": "Valle de México",
+        "inicio": [
+         1.5,
+         1.5
+        ],
+        "fin": [
+         0.2,
+         0.2
+        ],
+        "caida": [
+         87,
+         87
+        ]
+       },
+       {
+        "autor": "Sanders",
+        "lugar": "Valle de México",
+        "inicio": [
+         1.0,
+         1.2
+        ],
+        "fin": [
+         0.1,
+         0.1
+        ],
+        "caida": [
+         90,
+         90
+        ]
+       },
+       {
+        "autor": "Whitmore",
+        "lugar": "Valle de México",
+        "inicio": [
+         1.3,
+         2.7
+        ],
+        "fin": [
+         0.1,
+         0.4
+        ],
+        "caida": [
+         69,
+         96
+        ]
+       },
+       {
+        "autor": "Cook y Borah",
+        "lugar": "México",
+        "inicio": [
+         18,
+         30
+        ],
+        "fin": [
+         1.4,
+         1.4
+        ],
+        "caida": [
+         78,
+         95
+        ]
+       }
+      ]
+     }
+    },
+    "fichas": [],
+    "casos": [
+     "caso-cocoliztli"
+    ]
+   },
+   {
+    "id": "cuenta-tributo",
+    "titulo": "El tributo",
+    "periodo": "1522–1556",
+    "entrada": "Ganada la guerra, la tierra se repartió con su gente. Los pueblos pagaron con su trabajo, sus cosas y sus hijos.",
+    "lamina": {
+     "archivo": "img/cuenta/kingsborough.jpg",
+     "codice": "Códice Kingsborough (Memorial de los indios de Tepetlaoztoc)",
+     "fecha": "c. 1555",
+     "custodia": "British Museum, Londres",
+     "pie": "Un español arrastra del cabello a un indígena ensangrentado. El pueblo pintó los abusos de sus encomenderos para llevarlos a juicio.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Kingsborough.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "britishmuseum-kingsborough"
+     ]
+    },
+    "texto": [
+     "[[Con la encomienda, cada pueblo quedaba obligado a dar tributo y trabajo a un colono|abadpalma2021]]. [[El primer encomendero de Tepetlaoztoc, al oriente del lago de Texcoco, fue el propio Hernán Cortés|britishmuseum-kingsborough]].",
+     "[[De 1522 a 1556, Tepetlaoztoc entregó joyas de oro, espejos de obsidiana, una caja de oro con esmeraldas, frijol, harina, gallinas y cargadores. Las exigencias y los castigos mataron a tanta gente que la población cayó en pocas décadas. El pueblo lo pintó todo en un códice y llevó a sus encomenderos a juicio|britishmuseum-kingsborough]].",
+     "[[Los tributos eran tan continuos que, para cumplir, la gente vendía a sus hijos y sus tierras; muchos de los que no podían pagar murieron con tormentos o en prisiones crueles|motolinia1541]]. [[Los calpixques que cobraban mandaban a los señores de los pueblos como si fueran sus esclavos|motolinia1541]].",
+     "[[La Ciudad de México española se levantó con ese trabajo: los indígenas ponían los materiales, cargaban a cuestas las vigas y las piedras, y si no llevaban qué comer, ayunaban. Muchos murieron en las obras|motolinia1541]]. [[Las piedras del Templo Mayor se reutilizaron en las construcciones españolas|britannica-templomayor]]."
+    ],
+    "cita": {
+     "texto": "son zánganos que comen la miel que labran las pobres abejas, que son los Indios",
+     "quien": "Motolinía, sobre los cobradores de tributo",
+     "fuentes": [
+      "motolinia1541"
+     ]
+    },
+    "fichas": [
+     "algodon",
+     "textiles"
+    ],
+    "casos": []
+   },
+   {
+    "id": "cuenta-minas",
+    "titulo": "Las minas",
+    "periodo": "siglos XVI–XVIII",
+    "entrada": "La riqueza que cruzó el mar salió de la tierra a costa de vidas. El pueblo indígena entero cargó con ese trabajo.",
+    "texto": [
+     "[[Desde los primeros años se buscaron minas, y los esclavos indígenas que murieron en ellas, escribió Motolinía, «no se podrían contar»|motolinia1541]].",
+     "[[Para llenarlas se hicieron esclavos a toda prisa: a México entraban «tan grandes manadas como de ovejas» para marcarlos con hierro. Cuando no bastaban, se llevaban a los hijos y a la gente común; y como cada dueño que los compraba les ponía su marca, a algunos les cubrían la cara de letras|motolinia1541]].",
+     "[[Los pueblos cargaban a cuestas la comida para las minas desde sesenta leguas y más. Muchos se quedaban sin comida y morían allá o en el camino de vuelta, y por el hedor de los muertos se despoblaron pueblos enteros|motolinia1541]].",
+     "En México, la esclavitud y el trabajo forzado cayeron sobre todo el pueblo indígena: esclavos marcados, cargadores, tributarios de encomienda. Trabajaron hasta morir. [[Se esclavizó a indígenas antes y después de las leyes que lo prohibieron|gaceta2023resendez]]; [[en toda América fueron entre 2.5 y 5 millones|resendez2016]]. [[Y entre 1580 y 1650 se trajo a la fuerza a la Nueva España a entre 200,000 y 250,000 africanos esclavizados|victoria2020]].",
+     "[[Desde 1554, la plata se separó con mercurio en el beneficio de patio. Las minas de la América española perdieron en promedio 612 toneladas de mercurio al año entre 1580 y 1900|nriagu1994]]."
+    ],
+    "cita": {
+     "texto": "apenas se podía pasar sino sobre hombres muertos o sobre huesos",
+     "quien": "Motolinía, sobre las minas de Oaxyecac",
+     "fuentes": [
+      "motolinia1541"
+     ]
+    },
+    "visual": "minas",
+    "minas": {
+     "mercurio": 612,
+     "desde": 1580,
+     "hasta": 1900,
+     "fuentes": [
+      "nriagu1994"
+     ],
+     "total": 196000,
+     "zona_total": "centro-sudamerica"
+    },
+    "fichas": [],
+    "casos": [
+     "caso-plata"
+    ]
+   },
+   {
+    "id": "cuenta-plata",
+    "titulo": "La plata, y todo lo demás",
+    "periodo": "1521–1821",
+    "entrada": "El oro fue lo primero que se vio. Lo que movió tres siglos fue la plata, y con ella salió todo lo demás.",
+    "lamina": {
+     "archivo": "img/cuenta/mendoza-47r.jpg",
+     "codice": "Códice Mendoza, folio 47r",
+     "fecha": "c. 1542",
+     "custodia": "Biblioteca Bodleiana, Oxford",
+     "pie": "Una página de tributo: plumas preciosas, trajes de guerrero y escudos. El virrey quería saber qué daba la tierra.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Codex_Mendoza_folio_47r.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "mendoza"
+     ]
+    },
+    "texto": [
+     "[[Entre 1500 y 1800, la América española produjo entre 85,000 y 150,000 toneladas de plata: más que todo el resto del mundo junto|abadpalma2021]].",
+     "[[Humboldt escribió en 1803 que de la Casa de Moneda de México habían salido «más de dos mil millones de pesos fuertes» en menos de 300 años|marichal1999]]. Esa sola cifra, pasada a plata de hoy, da la cuenta de abajo.",
+     "Con la plata salió todo lo demás. [[La grana cochinilla fue, después de la plata, de las exportaciones más valiosas de la Nueva España|donkin1977]]. [[Entre los primeros envíos de Cortés a Carlos V iban mantas, colchas y tapices de algodón tejidos aquí|clavijero1807]]. Y las plantas que hoy el mundo cree suyas."
+    ],
+    "visual": "dinero",
+    "calculo": {
+     "pesos": 2000000000,
+     "onzas_por_peso": 0.786,
+     "precio_onza": 50.43,
+     "fecha_precio": "3 de noviembre de 2026",
+     "total_america": [
+      85000,
+      150000
+     ],
+     "fuentes": [
+      "marichal1999",
+      "coinvarieties-8reales",
+      "goldapi-plata",
+      "abadpalma2021"
+     ],
+     "nota": "Es un piso, no un total. Los pesos anteriores a 1772 tenían más plata; no cuenta la plata sin acuñar, el contrabando, el oro, la grana, el tributo ni el trabajo. Y el precio de hoy no dice lo que esa plata compraba entonces."
+    },
+    "fichas": [
+     "grana",
+     "algodon",
+     "textiles",
+     "cacao-chocolate",
+     "vainilla",
+     "maiz",
+     "jitomate"
+    ],
+    "casos": []
+   },
+   {
+    "id": "cuenta-destino",
+    "titulo": "A dónde fue",
+    "periodo": "siglos XVI–XIX",
+    "entrada": "La plata salió por Veracruz hacia Sevilla y por Acapulco hacia Manila. Casi nunca se quedó en España.",
+    "texto": [
+     "Elige cada punto del mapa para seguir la plata.",
+     "[[Un estudio con seis economías europeas encuentra que, cuando subía la llegada de metales de América, el producto de esas economías subía a los seis a nueve años|abadpalma2021]]."
+    ],
+    "visual": "flujo",
+    "flujo": {
+     "nodos": [
+      {
+       "id": "minas",
+       "titulo": "Las minas",
+       "lugar": "Zacatecas, Guanajuato, Pachuca, Taxco",
+       "texto": "[[Desde 1554, la plata se separaba con mercurio en el beneficio de patio|nriagu1994]]. La sacaban y la cargaban manos indígenas."
+      },
+      {
+       "id": "mexico",
+       "titulo": "Casa de Moneda",
+       "lugar": "Ciudad de México",
+       "texto": "[[Más de dos mil millones de pesos salieron de aquí en menos de 300 años, según Humboldt|marichal1999]]."
+      },
+      {
+       "id": "veracruz",
+       "titulo": "Veracruz",
+       "lugar": "Golfo de México",
+       "texto": "[[En los años buenos salían de las tesorerías de la Nueva España hasta nueve millones de pesos al año|marichal1999]]."
+      },
+      {
+       "id": "caribe",
+       "titulo": "El Caribe",
+       "lugar": "Cuba, Puerto Rico y otras plazas",
+       "texto": "[[Con los situados, la plata mexicana pagaba las guarniciones del Gran Caribe y de Filipinas|marichal1999]]."
+      },
+      {
+       "id": "sevilla",
+       "titulo": "España",
+       "lugar": "Sevilla y Cádiz",
+       "texto": "[[En la década de 1790 llegaban a España cerca de cinco millones de pesos al año, y el dinero de América era más del 25 % de los ingresos ordinarios de su tesorería|marichal1999]]."
+      },
+      {
+       "id": "guerras",
+       "titulo": "Las guerras",
+       "lugar": "Europa",
+       "texto": "[[La plata de América pagó las grandes campañas militares del imperio español en Europa|abadpalma2021]]."
+      },
+      {
+       "id": "norte",
+       "titulo": "Inglaterra y los Países Bajos",
+       "lugar": "Norte de Europa",
+       "texto": "[[A la larga, los que más ganaron fueron Inglaterra y los Países Bajos; España y Portugal no aprovecharon la riqueza de sus colonias|abadpalma2021]]."
+      },
+      {
+       "id": "acapulco",
+       "titulo": "Acapulco",
+       "lugar": "Pacífico",
+       "texto": "[[El galeón de Manila unía Acapulco con Filipinas|abadpalma2021]]."
+      },
+      {
+       "id": "manila",
+       "titulo": "Manila",
+       "lugar": "Filipinas",
+       "texto": "[[En Manila, la plata se cambiaba por seda y porcelana|abadpalma2021]]."
+      },
+      {
+       "id": "china",
+       "titulo": "China",
+       "lugar": "Asia",
+       "texto": "[[Buena parte de la plata terminó en China|abadpalma2021]]. [[El peso de plata fue moneda de referencia en China y en Estados Unidos hasta mediados del siglo XIX|irigoin2009]]."
+      }
+     ]
+    },
+    "fichas": [],
+    "casos": [
+     "caso-plata"
+    ]
+   },
+   {
+    "id": "cuenta-borrado",
+    "titulo": "Lo que se borró",
+    "periodo": "1536–1607",
+    "entrada": "No bastó con quitar la riqueza. Se quemaron los libros, se juntó a los pueblos, se cambiaron los nombres y se secó el lago.",
+    "lamina": {
+     "archivo": "img/cuenta/munozcamargo-codices.jpg",
+     "codice": "Descripción de la ciudad y provincia de Tlaxcala, de Diego Muñoz Camargo",
+     "fecha": "c. 1585",
+     "custodia": "Universidad de Glasgow (MS Hunter 242)",
+     "pie": "Frailes queman códices, trajes y objetos sagrados.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Destruction_of_Mexican_Codices.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "munozcamargo1585"
+     ]
+    },
+    "texto": [
+     "[[Entre 1536 y 1543, el obispo Juan de Zumárraga usó la Inquisición contra unos treinta líderes, casi todos indígenas, acusados de paganismo|lopesdon2006]]. [[En 1539 quemaron a don Carlos Ometochtzin, señor de Texcoco y nieto de Nezahualcóyotl|ruizmedrano2014]].",
+     "[[En 1577, Felipe II mandó recoger los manuscritos de fray Bernardino de Sahagún y prohibió que nadie escribiera, «en ninguna lengua», sobre la «manera de vivir» de los indios|leonportilla1998]]. La lámina de la viruela que viste arriba es de esa obra: la que se mandó recoger.",
+     "Se borró también el mapa. [[Para cobrar tributo y vigilar la fe, la Colonia juntó a la gente dispersa de los calpultin en pueblos nuevos, las congregaciones|gerhard1977]]. [[En Tututepec, los asentamientos otomíes y tepehuas pasaron de 88 a 27|gerhard1977]], y [[quien volvía a su parcela podía encontrarla ocupada por un rancho de ganado o una hacienda|gerhard1977]].",
+     "Y los nombres. [[Cuauhnáhuac, «junto al bosque», se volvió Cuernavaca, «cuerno de vaca»|britannica-cuernavaca]]. [[Sobre un asentamiento purépecha se fundó Valladolid en 1541; hoy se llama Morelia, y su nombre propio no volvió|britannica-morelia]].",
+     "[[Desde 1607, el Desagüe de Huehuetoca empezó a secar los lagos para proteger a la ciudad española, y les quitó el sustento a los pueblos que vivían del lago|candiani2012]]."
+    ],
+    "enlace": {
+     "href": "#/nombres",
+     "texto": "Cómo llama el mundo a lo que salió de aquí"
+    },
+    "fichas": [
+     "escritura",
+     "calendarios",
+     "amate",
+     "chinampas"
+    ],
+    "casos": [
+     "caso-codices",
+     "caso-mani",
+     "caso-lenguas",
+     "caso-templos-iglesias"
+    ]
+   },
+   {
+    "id": "cuenta-niega",
+    "titulo": "Lo que aún se niega",
+    "periodo": "Hoy",
+    "entrada": "Una cosa es exigir perdón y otra ignorar lo que pasó. En México se aprende en la escuela. En España suele contarse como un encuentro, y en el resto del mundo casi no se cuenta.",
+    "texto": [
+     "Si México debe exigir que España pida perdón es una discusión. Saber lo que pasó es otra, y en México se aprende desde la primaria: [[la ficha de Historia de la SEP para cuarto grado enseña que las epidemias del siglo XVI hicieron caer la población indígena, que comunidades enteras de Mesoamérica se vaciaron y que llegaron nuevas formas de explotación del trabajo|sep2025caida]].",
+     "En España no suele ser parte de lo que se enseña. [[Un estudio de 2026 sobre tres libros de Historia de 2º de ESO, para alumnos de 13 y 14 años, encontró que la aniquilación demográfica y cultural de la Conquista queda escondida tras el relato del «encuentro» entre culturas y del avance de la civilización|ramirez2026arbor]]. [[En uno de esos libros, la esclavitud aparece como un trámite: personas «llevadas» desde África «allí donde la mano de obra indígena escaseaba»|ramirez2026arbor]]. [[El relato abiertamente civilizador se ha ido dejando atrás, pero la esclavitud se sigue omitiendo con frecuencia|ramirez2026arbor]].",
+     "Y hay quien va más lejos y lo llama «leyenda negra»: propaganda inventada por los rivales del imperio. [[El libro Imperiofobia y leyenda negra (2016) vendió más de 100,000 ejemplares en España con una reivindicación del imperio español; sus críticos le señalan citas fuera de contexto, manipulaciones de la bibliografía y omisiones|mendoza2022]]. [[Entre lo que el libro no resuelve, escribe Breny Mendoza, está la destrucción del mundo indígena|mendoza2022]].",
+     "Fuera de México y de España, lo que falta es más simple: saber de dónde vino. El chocolate se dice suizo o belga; la vainilla, de Madagascar o «Bourbon»; el jitomate, italiano. El guajolote se llama turkey, como si viniera de Turquía, y la nochebuena lleva el nombre de un diplomático estadounidense. El mundo usa cada día lo que México aportó sin saber que salió de aquí. Y quien no sabe lo que México dio tampoco puede ver lo que perdió.",
+     "Mientras tanto, el Estado mexicano lo dice cada vez más alto, y España empieza apenas a admitirlo. La línea de abajo pone frente a frente lo que se reconoce y lo que se niega.",
+     "Negarlo no lo borra, e ignorarlo tampoco. Los códices, las crónicas y las cifras de este recorrido están a la vista de quien quiera verlos."
+    ],
+    "visual": "linea",
+    "linea": [
+     {
+      "anio": "2019",
+      "lado": "reconoce",
+      "texto": "[[El presidente López Obrador pidió por carta al rey de España que reconociera los abusos de la Conquista|expansion2019disculpa]]."
+     },
+     {
+      "anio": "2019",
+      "lado": "niega",
+      "texto": "[[El gobierno español rechazó la petición «con toda firmeza»|expansion2019disculpa]]."
+     },
+     {
+      "anio": "2021",
+      "lado": "reconoce",
+      "texto": "[[El Estado mexicano pidió perdón al pueblo maya por los abusos de la Conquista, de la Colonia y de dos siglos de México independiente|aljazeera2021]]."
+     },
+     {
+      "anio": "2024",
+      "lado": "reconoce",
+      "texto": "[[La presidenta Claudia Sheinbaum no invitó al rey Felipe VI a su toma de posesión, porque nunca respondió la carta de 2019|expansion2024rey]]."
+     },
+     {
+      "anio": "2025",
+      "lado": "reconoce",
+      "texto": "[[El canciller español José Manuel Albares reconoció «dolor e injusticia hacia los pueblos originarios». Sheinbaum: «Es la primera vez que un gobierno español lamenta públicamente las injusticias hacia nuestros pueblos originarios»|vanguardia2025sheinbaum]]."
+     },
+     {
+      "anio": "2025",
+      "lado": "niega",
+      "texto": "[[El gobierno de la Comunidad de Madrid pidió la renuncia del canciller por «desprestigiar» a España|elfinanciero2025albares]]."
+     },
+     {
+      "anio": "2026",
+      "lado": "reconoce",
+      "texto": "[[El rey Felipe VI admitió que hubo «mucho abuso» y que esos hechos «no pueden hacernos sentir orgullosos». Sheinbaum lo llamó un gesto de acercamiento, aunque «no fue todo lo que hubiéramos querido»|nmas2026rey]]."
+     }
+    ],
+    "fichas": [
+     "cacao-chocolate",
+     "vainilla",
+     "jitomate",
+     "guajolote",
+     "nochebuena"
+    ],
+    "casos": [
+     "caso-matanzas"
+    ],
+    "cita": {
+     "texto": "Comunidades enteras de Mesoamérica se vaciaron.",
+     "quien": "Ficha de Historia para cuarto de primaria, Secretaría de Educación Pública (2025)",
+     "fuentes": [
+      "sep2025caida"
+     ]
+    },
+    "enlace": {
+     "href": "#/explorar",
+     "texto": "Todo lo que México aportó al mundo"
+    }
+   },
+   {
+    "id": "cuenta-cierre",
+    "titulo": "Lo que no entró en la cuenta",
+    "periodo": "",
+    "entrada": "Ninguna cifra de este recorrido cuenta lo que más costó.",
+    "texto": [
+     "El trabajo de millones de personas no se pagó. Las vidas no tienen precio. Los libros que se quemaron no se pueden volver a comprar, y los nombres que se perdieron no vuelven solos.",
+     "Por eso esta sección se llama así. No porque México no lo sepa, sino porque fuera de aquí todavía se niega, se minimiza o, simplemente, no se cuenta."
+    ],
+    "fichas": [],
+    "casos": []
+   }
+  ]
  },
  "licencia": "Textos y datos: CC BY 4.0. Imágenes: la licencia de cada una, en fichas[].imagen."
 }

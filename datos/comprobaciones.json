@@ -1785,5 +1785,230 @@
   "codigo": 200,
   "titulo_pagina": "",
   "fecha": "2026-11-02"
+ },
+ "cookborah1979": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Essays in population history: Mexico and the Caribbean : Cook, Sherburne Friend, 1896-1974 : Free Download, Borrow, and Streaming : Internet Archive",
+  "fecha": "2026-11-02"
+ },
+ "mccaa1995": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Spanish and Nahuatl Views on Smallpox and Demographic Catastrophe in Mexico",
+  "anio_registrado": 1995,
+  "revista_registrada": "Journal of Interdisciplinary History",
+  "fecha": "2026-11-02"
+ },
+ "marichal1999": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "abadpalma2021": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "candiani2012": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "The Desagüe Reconsidered: Environmental Dimensions of Class Conflict in Colonial Mexico",
+  "anio_registrado": 2012,
+  "revista_registrada": "Hispanic American Historical Review",
+  "fecha": "2026-11-02"
+ },
+ "lopesdon2006": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Franciscans, Indian Sorcerers, and the Inquisition in New Spain, 1536-1543",
+  "anio_registrado": 2006,
+  "revista_registrada": "Journal of World History",
+  "fecha": "2026-11-02"
+ },
+ "ruizmedrano2014": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Don Carlos de Tezcoco and the Universal Rights of Emperor Carlos V",
+  "anio_registrado": 2014,
+  "revista_registrada": "Texcoco: Prehispanic and Colonial Perspectives",
+  "fecha": "2026-11-02"
+ },
+ "victoria2020": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "El arribo de esclavos africanos a Campeche durante la Colonia | Glifos",
+  "fecha": "2026-11-02"
+ },
+ "resendez2016": {
+  "metodo": "ninguno",
+  "resultado": "sin_enlace",
+  "fecha": "2026-11-02"
+ },
+ "gaceta2023resendez": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "La esclavitud en México no fue sólo de africanos - Gaceta UNAM",
+  "fecha": "2026-11-02"
+ },
+ "britannica-tenochtitlan": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "britannica-especias": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "britannica-renacimiento": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "britannica-cuernavaca": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "britannica-morelia": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "coinvarieties-8reales": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Mexico 1773-Mo FM 8 reales - CoinVarieties",
+  "fecha": "2026-11-02"
+ },
+ "goldapi-plata": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "leonportilla1998": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+  "fecha": "2026-11-02"
+ },
+ "gerhard1977": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "motolinia1541": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "nriagu1994": {
+  "metodo": "crossref",
+  "resultado": "ok",
+  "parecido": 1.0,
+  "titulo_registrado": "Mercury pollution from the past mining of gold and silver in the Americas",
+  "anio_registrado": 1994,
+  "revista_registrada": "Science of The Total Environment",
+  "fecha": "2026-11-02"
+ },
+ "britishmuseum-kingsborough": {
+  "metodo": "http",
+  "resultado": "bloqueada",
+  "codigo": 403,
+  "detalle": "El sitio rechaza a los programas; no se comprueba automáticamente.",
+  "fecha": "2026-11-02"
+ },
+ "duran1581": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "File:Matanza templo2.jpg - Wikimedia Commons",
+  "fecha": "2026-11-02"
+ },
+ "munozcamargo1585": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "File:Destruction of Mexican Codices.jpg - Wikimedia Commons",
+  "fecha": "2026-11-02"
+ },
+ "mendoza2022": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "",
+  "fecha": "2026-11-02"
+ },
+ "expansion2024rey": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Claudia Sheinbaum: no se invitó al rey Felipe VI porque no respondió carta a AMLO",
+  "fecha": "2026-11-02"
+ },
+ "vanguardia2025sheinbaum": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Sheinbaum celebra que España reconozca las injusticias de la Conquista: ‘Es el primer paso’",
+  "fecha": "2026-11-02"
+ },
+ "elfinanciero2025albares": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Exigen la renuncia del canciller José Manuel Albares por disculparse con México: ‘Desprestigia a España’ – El Financiero",
+  "fecha": "2026-11-02"
+ },
+ "nmas2026rey": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Sheinbaum Reconoce Acercamiento del Rey de España por Declaración de la Conquista en México | N+",
+  "fecha": "2026-11-02"
+ },
+ "sep2025caida": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Consecuencias de la caída de Tenochtitlan - Nueva Escuela Mexicana Digital",
+  "fecha": "2026-11-02"
+ },
+ "ramirez2026arbor": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+  "fecha": "2026-11-02"
  }
 }

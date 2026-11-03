@@ -227,11 +227,17 @@
     // Numera las fuentes en el orden en que se citan dentro de una página.
     function notas() {
       const orden = [];
+      const numero = (id) => {
+        let n = orden.indexOf(id) + 1;
+        if (!n) { orden.push(id); n = orden.length; }
+        return n;
+      };
       return {
+        numero,
+        total: () => orden.length,
         cita(ids) {
           return (ids || []).map((id) => {
-            let n = orden.indexOf(id) + 1;
-            if (!n) { orden.push(id); n = orden.length; }
+            const n = numero(id);
             const f = FUENTE[id];
             return `<button class="cite" type="button" data-fn="${n}" ${tip(`<b>${esc(f.autores)} (${esc(f.anio)})</b>${esc(f.titulo)}`)}>${n}</button>`;
           }).join("");
@@ -276,6 +282,22 @@
     }
 
     // ------------------------------------------------------------ portada
+    // El anuncio de «Lo que aún se niega» en la portada, con tres láminas del relato.
+    function anuncioCuenta() {
+      const laminas = ["cuenta-ciudad", "cuenta-tributo", "cuenta-borrado"].map((id) => CAP[id] && CAP[id].lamina).filter(Boolean);
+      if (!laminas.length) return "";
+      return `<section class="anuncio-cuenta"><div class="wrap">
+        <a class="ac-caja" href="#/cuenta">
+          <span class="ac-texto">
+            <span class="eyebrow">${L(`Un relato en ${CUENTA.capitulos.length} actos`, `A story in ${CUENTA.capitulos.length} acts`)}</span>
+            <b class="ac-t">${esc(CUENTA.titulo)}</b>
+            <span class="ac-p">${L("La riqueza que se sacó de México durante la Colonia, el trabajo forzado del pueblo indígena que la hizo posible y a dónde fue a parar. Contada con códices de la época, y con la fuente de cada dato a un clic. México lo enseña en sus escuelas; fuera de aquí, todavía se niega o se ignora.", "The wealth taken from Mexico during the colonial era, the forced labor of Indigenous people that made it possible, and where it ended up. Told with codices of the period, with the source of every fact one click away. Mexico teaches it in its schools; elsewhere it is still denied or ignored.")}</span>
+            <span class="btn primary">${L("Leer el relato", "Read the story")}</span>
+          </span>
+          <span class="ac-laminas" aria-hidden="true">${laminas.map((l, i) => `<img class="l${i}" src="${esc(l.archivo)}" alt="" loading="lazy" decoding="async">`).join("")}</span>
+        </a>
+      </div></section>`;
+    }
     function vistaPortada() {
       const m = D.metricas;
       const aportes = D.fichas.filter((f) => f.clase === "aporte");
@@ -311,7 +333,7 @@
           <p class="eyebrow">${L("Patrimonio de México y de sus pueblos", "The heritage of Mexico and its peoples")}</p>
           <h1>${L("Lo que el mundo recibió de <em>aquí</em>, y lo que se les quitó.", "What the world received from <em>here</em>, and what was taken from them.")}</h1>
           <p class="lede">${L(`${fmt(m.aportes)} aportes, del maíz al cero, ordenados por cuánto cambiaron al mundo. Cada uno con su nombre en la lengua de quienes lo crearon, y cada afirmación con una fuente que se puede comprobar.`, `${fmt(m.aportes)} contributions, from maize to zero, ordered by how much they changed the world. Each one carries its name in the language of those who created it, and each claim a source that can be checked.`)}</p>
-          <div class="cta"><a class="btn primary" href="#/explorar">${L("Ver los aportes", "See the contributions")}</a><a class="btn" href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a></div>
+          <div class="cta"><a class="btn primary" href="#/explorar">${L("Ver los aportes", "See the contributions")}</a><a class="btn" href="#/cuenta">${L("Lo que aún se niega", "What is still denied")}</a></div>
         </div>
         <div class="mosaico" aria-label="${L("Aportes que cambiaron al mundo", "Contributions that changed the world")}">${mundial.filter((f) => f.imagen).slice(0, 6).map((f, i) => `<a href="#/ficha/${f.id}" class="tesela t${i}">${foto(f, i === 0 ? "grande" : "", i < 3)}<span><b>${esc(f.originales[0] ? f.originales[0].forma : f.nombre)}</b>${esc(f.nombre)}</span></a>`).join("")}</div>
       </div></section>
@@ -321,6 +343,8 @@
         <div><dd>${fmt(m.casos)}</dd><dt>${L("casos de despojo documentados", "documented cases of dispossession")}</dt></div>
         <div><dd>${fmt(okF)}<span style="font-size:.55em;color:var(--muted)"> / ${fmt(m.fuentes)}</span></dd><dt>${L("fuentes comprobadas en línea", "sources checked online")}</dt></div>
       </dl></div></div>
+
+      ${anuncioCuenta()}
 
       <section class="block"><div class="wrap">
         <div class="section-head"><p class="eyebrow">${esc(ALC.mundial.nombre)}</p><h2>${L("Sin esto, el mundo comería, vestiría y hablaría distinto", "Without these, the world would eat, dress and speak differently")}</h2>
@@ -803,6 +827,7 @@
       return `<div class="wrap map-page">
         <p class="eyebrow">${L("Lo que se les quitó", "What was taken from them")}</p><h1>${L("Despojo: lo que se destruyó, se borró o salió de aquí sin crédito ni permiso", "Dispossession: what was destroyed, erased, or taken from here without credit or permission")}</h1>
         <p class="lede">${esc(C.postura.texto)}</p>
+        ${CUENTA.capitulos.length ? `<a class="cuenta-aviso" href="#/cuenta"><span class="enc-lbl">${L("Contexto", "Context")}</span><b>${esc(CUENTA.titulo)}</b><span>${esc(CUENTA.entrada)}</span></a>` : ""}
         <div class="despojo-tipos" style="margin-top:26px">${TIPOS_CASO.map((t) => `<a class="dt-tipo" href="#/despojo#t-${t.id}" style="--c:${COLOR_CASO[t.id]}"><span class="n">${D.casos.filter((c) => c.tipo === t.id).length}</span><b>${esc(t.nombre)}</b><span>${esc(t.pregunta)}</span></a>`).join("")}
           <a class="dt-tipo" href="#/despojo#t-nombres" style="--c:var(--ink-2)"><span class="n">${borr.length}</span><b>${L("Nombres ajenos", "Foreign names")}</b><span>${L("¿El nombre que usa el mundo borra de dónde viene?", "Does the name the world uses erase where it comes from?")}</span></a>
           <a class="dt-tipo" href="#/despojo#t-desterritorio" style="--c:var(--muted)"><span class="n">${desterr.length}</span><b>${L("Desterritorialización", "Deterritorialization")}</b><span>${L("¿Otro país lo vive como propio y olvidó de dónde vino?", "Does another country live it as its own and forget where it came from?")}</span></a></div>
@@ -856,6 +881,235 @@
         </div><aside class="side"><div class="panel"><h3>${L("Dónde", "Where")}</h3>${svgMexico([{ lat: p.coords[0], lon: p.coords[1], r: 22, cls: "on" }], { aria: p.region })}<p class="cap">${esc(p.region)}</p></div></aside></div></div></article>`;
     }
 
+    // ------------------------------------------------------------ lo que aún se niega
+    // datos/cuenta.json: una narrativa en actos. En el texto, [[frase|id,id]] marca una frase con su fuente:
+    // se subraya, muestra la fuente al pasar el mouse y la abre abajo al hacer clic.
+    const CUENTA = D.cuenta || { capitulos: [] };
+    const CAP = porId(CUENTA.capitulos);
+    const MARCA = /\[\[([^|\]]+)\|([^\]]+)\]\]/g;
+    const millones = (n) => (n >= 1 ? fmt(Math.round(n * 100) / 100) : fmt(Math.round(n * 1000) * 1000));
+    const rango = (a, b, f) => (a === b ? f(a) : `${f(a)}–${f(b)}`);
+    const sinMarcas = (s) => s.replace(MARCA, "$1");
+    // Numeral mesoamericano: un punto por unidad y una barra por cada cinco, como en los códices.
+    function numeral(n) {
+      const barras = Math.floor(n / 5), puntos = n % 5, h = (puntos ? 14 : 4) + barras * 9;
+      const ps = Array.from({ length: puntos }, (_, i) => `<circle cx="${20 + (i - (puntos - 1) / 2) * 9}" cy="6" r="3.4"/>`).join("");
+      const bs = Array.from({ length: barras }, (_, i) => `<rect x="4" y="${(puntos ? 14 : 4) + i * 9}" width="32" height="5.5" rx="2.75"/>`).join("");
+      return `<svg class="numeral" viewBox="0 0 40 ${h}" aria-hidden="true">${ps}${bs}</svg>`;
+    }
+    function prosa(s, N) {
+      let html = "", i = 0;
+      for (const m of s.matchAll(MARCA)) {
+        html += esc(s.slice(i, m.index));
+        i = m.index + m[0].length;
+        const ids = m[2].split(",").map((x) => x.trim()).filter((x) => FUENTE[x]);
+        const t = ids.map((id) => `<b>${esc(FUENTE[id].autores)} (${esc(FUENTE[id].anio)})</b>${esc(FUENTE[id].titulo)}`).join("<br>") + `<span class="k">${L("Clic para abrir la fuente abajo", "Click to open the source below")}</span>`;
+        html += `<span class="ev" tabindex="0" role="button" data-ev="${ids.join(",")}" ${tip(t)}>${esc(m[1])}<sup>${ids.map((id) => N.numero(id)).join(",")}</sup></span>`;
+      }
+      return html + esc(s.slice(i));
+    }
+    function dineroCuenta(c, N) {
+      const onzas = c.pesos * c.onzas_por_peso, toneladas = (onzas * 31.1034768) / 1e6, usd = onzas * c.precio_onza;
+      const mil = (n) => fmt(Math.round(n / 1e8) / 10);
+      const t = Math.round(toneladas / 100) * 100;
+      return `<figure class="calc">
+        <div class="calc-filas">
+          <p><span class="k">${L("Pesos que salieron de la Casa de Moneda de México", "Pesos that left the Mexico City Mint")}</span><b>${L("más de", "over")} ${fmt(c.pesos / 1e6)} ${L("millones", "million")}</b></p>
+          <p><span class="k">× ${fmt(c.onzas_por_peso)} ${L("onzas troy de plata fina por peso", "troy ounces of fine silver per peso")}</span><b>${mil(onzas)} ${L("mil millones de onzas", "billion ounces")}</b></p>
+          <p><span class="k">${L("En toneladas", "In metric tons")}</span><b>${L("casi", "almost")} ${fmt(t)} t</b></p>
+          <p class="total"><span class="k">× ${fmt(c.precio_onza)} ${L("dólares la onza", "dollars an ounce")} (${esc(c.fecha_precio)})</span><b>${L("al menos", "at least")} ${fmt(Math.floor(usd / 1e9))} ${L("mil millones de dólares", "billion dollars")}</b></p>
+        </div>
+        <p class="calc-comp">${L(`Toda la América española produjo entre ${fmt(c.total_america[0])} y ${fmt(c.total_america[1])} toneladas de plata de 1500 a 1800. Solo esta casa de moneda acuñó entre ${pct(t, c.total_america[1])} % y ${pct(t, c.total_america[0])} % de esa cifra.`,
+          `All of Spanish America produced between ${fmt(c.total_america[0])} and ${fmt(c.total_america[1])} metric tons of silver from 1500 to 1800. This mint alone struck between ${pct(t, c.total_america[1])}% and ${pct(t, c.total_america[0])}% of that.`)}</p>
+        <figcaption class="cap">${esc(c.nota)}${N.cita(c.fuentes)}</figcaption>
+      </figure>`;
+    }
+    function graficaSerie(g, N) {
+      const W = 640, H = 270, x0 = 52, x1 = W - 20, y0 = 20, y1 = H - 34, a0 = 1510, a1 = 1630, top = 26;
+      const X = (a) => x0 + ((a - a0) / (a1 - a0)) * (x1 - x0), Y = (v) => y1 - (v / top) * (y1 - y0);
+      const pts = g.puntos;
+      const linea = pts.map((p, i) => `${i ? "L" : "M"}${r1(X(p.anio))},${r1(Y(p.millones))}`).join(" ");
+      const area = `${linea} L${r1(X(pts[pts.length - 1].anio))},${y1} L${r1(X(pts[0].anio))},${y1} Z`;
+      const rejilla = [0, 5, 10, 15, 20, 25].map((v) => `<line class="gl" x1="${x0}" x2="${x1}" y1="${r1(Y(v))}" y2="${r1(Y(v))}"/><text class="gt" x="${x0 - 8}" y="${r1(Y(v) + 4)}" text-anchor="end">${v}</text>`).join("");
+      const anios = [1520, 1540, 1560, 1580, 1600, 1620].map((a) => `<text class="gt" x="${r1(X(a))}" y="${H - 12}" text-anchor="middle">${a}</text>`).join("");
+      const marcas = pts.map((p) => {
+        const t = `<b>${esc(p.texto || p.anio)}</b>${millones(p.millones)} ${p.millones >= 1 ? L("millones de personas", "million people") : L("personas", "people")}`;
+        return `<g class="pg" ${tip(t)}><circle class="hit" cx="${r1(X(p.anio))}" cy="${r1(Y(p.millones))}" r="14"/><circle class="dot" cx="${r1(X(p.anio))}" cy="${r1(Y(p.millones))}" r="5"/></g>`;
+      }).join("");
+      const ini = pts[0], fin = pts[pts.length - 1];
+      return `<figure class="graf">
+        <figcaption class="graf-t">${esc(g.nombre)}</figcaption>
+        <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(g.nombre)}: ${pts.map((p) => `${p.texto || p.anio}, ${p.millones}`).join("; ")}">
+          ${rejilla}${anios}<path class="area" d="${area}"/><path class="ln" d="${linea}"/>${marcas}
+          <text class="dl" x="${r1(X(ini.anio) + 10)}" y="${r1(Y(ini.millones) + 4)}">${fmt(ini.millones)} ${L("millones", "million")} (${ini.anio})</text>
+          <text class="dl" x="${r1(X(fin.anio) - 4)}" y="${r1(Y(fin.millones) - 14)}" text-anchor="end">${L("unas", "about")} ${millones(fin.millones)} (${esc(fin.texto || fin.anio)})</text>
+        </svg>
+        <details class="graf-datos"><summary>${L("Ver los datos", "See the data")}</summary><table><thead><tr><th>${L("Año", "Year")}</th><th>${L("Millones de personas", "Million people")}</th></tr></thead><tbody>${pts.map((p) => `<tr><td>${esc(p.texto || p.anio)}</td><td>${fmt(p.millones)}</td></tr>`).join("")}</tbody></table></details>
+        <p class="cap">${L("Es la estimación más alta; las demás parten de menos gente, pero todas muestran la caída.", "This is the highest estimate; the others start from fewer people, but all show the collapse.")}${N.cita(g.fuentes)}</p>
+      </figure>`;
+    }
+    function graficaCaidas(g, N) {
+      const filas = g.filas, W = 640, izq = 236, der = W - 62, alto = 30, H = filas.length * alto + 34;
+      const X = (v) => izq + (v / 100) * (der - izq);
+      const valle = (f) => /valle/i.test(f.lugar) || /valley/i.test(f.lugar);
+      const barras = filas.map((f, i) => {
+        const y = 10 + i * alto, [a, b] = f.caida, cls = valle(f) ? "valle" : "otro";
+        const t = `<b>${esc(f.autor)} · ${esc(f.lugar)}</b>1519: ${rango(f.inicio[0], f.inicio[1], millones)} ${L("millones", "million")} → 1595: ${rango(f.fin[0], f.fin[1], millones)} ${L("millones", "million")}<br>${L("Caída", "Decline")}: ${rango(a, b, String)} %`;
+        return `<g class="fila ${cls}" ${tip(t)}><rect class="hit" x="0" y="${y - 4}" width="${W}" height="${alto}"/>
+          <text class="gk" x="${izq - 10}" y="${y + 15}" text-anchor="end">${esc(f.autor)}<tspan class="gl2"> · ${esc(f.lugar)}</tspan></text>
+          <rect class="b" x="${izq}" y="${y + 4}" width="${r1(X(a) - izq)}" height="14" rx="3"/>${b > a ? `<rect class="b ext" x="${r1(X(a) + 2)}" y="${y + 4}" width="${r1(X(b) - X(a) - 2)}" height="14" rx="3"/>` : ""}
+          <text class="gv" x="${r1(X(b) + 8)}" y="${y + 15}">${rango(a, b, String)} %</text></g>`;
+      }).join("");
+      const ejes = [0, 25, 50, 75, 100].map((v) => `<line class="gl" x1="${r1(X(v))}" x2="${r1(X(v))}" y1="6" y2="${H - 26}"/><text class="gt" x="${r1(X(v))}" y="${H - 10}" text-anchor="middle">${v} %</text>`).join("");
+      return `<figure class="graf">
+        <figcaption class="graf-t">${esc(g.nombre)}</figcaption>
+        <p class="leyenda"><span><i class="sw valle"></i>${L("Valle de México, donde está la capital", "Valley of Mexico, where the capital is")}</span><span><i class="sw otro"></i>${L("Todo México u otras regiones", "All of Mexico or other regions")}</span><span><i class="sw ext"></i>${L("Rango de la estimación", "Range of the estimate")}</span></p>
+        <div class="graf-scroll"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(g.nombre)}">${ejes}${barras}</svg></div>
+        <details class="graf-datos"><summary>${L("Ver los datos", "See the data")}</summary><table><thead><tr><th>${L("Autor", "Author")}</th><th>${L("Zona", "Area")}</th><th>1519</th><th>1595</th><th>${L("Caída", "Decline")}</th></tr></thead><tbody>${filas.map((f) => `<tr><td>${esc(f.autor)}</td><td>${esc(f.lugar)}</td><td>${rango(f.inicio[0], f.inicio[1], fmt)}</td><td>${rango(f.fin[0], f.fin[1], fmt)}</td><td>${rango(f.caida[0], f.caida[1], String)} %</td></tr>`).join("")}</tbody></table><p class="muted small">${L("En millones de personas.", "In millions of people.")}</p></details>
+        <p class="cap">${L("Se discute cuánta gente había, no si murió.", "What is debated is how many people there were, not whether they died.")}${N.cita(g.fuentes)}</p>
+      </figure>`;
+    }
+    function ciudadCuenta(g, N) {
+      return `<div class="ciudad">
+        <div><span class="k">1519 · Tenochtitlan-Tlatelolco</span><b>${fmt(g.antes[0])}–${fmt(g.antes[1])}</b><span class="muted small">${L("personas, según la estimación", "people, depending on the estimate")}${N.cita(g.fuentes.slice(0, -1))}</span></div>
+        <div><span class="k">1803 · ${L("Ciudad de México", "Mexico City")}</span><b>${L("algo más de", "just over")} ${fmt(g.despues)}</b><span class="muted small">${L("habitantes de todos los orígenes, casi 300 años después", "inhabitants of every origin, almost 300 years later")}${N.cita(g.fuentes.slice(-1))}</span></div></div>`;
+    }
+    // El mercurio de las minas: cada gota, mil toneladas.
+    function mercurio(m, N) {
+      const gotas = Math.round(m.total / 1000);
+      return `<figure class="mercurio">
+        <div class="merc-cifra"><b>${fmt(m.mercurio)} t</b><span>${L(`de mercurio al año se perdían en las minas de la América española, de ${m.desde} a ${m.hasta}`, `of mercury a year were lost in the mines of Spanish America, from ${m.desde} to ${m.hasta}`)}</span></div>
+        <div class="gotas" role="img" aria-label="${L(`${fmt(m.total)} toneladas de mercurio en total`, `${fmt(m.total)} metric tons of mercury in all`)}" ${tip(`<b>${fmt(m.total)} t</b>${L("dispersas en Centro y Sudamérica por la minería del oro y la plata", "dispersed across Central and South America by gold and silver mining")}`)}>${"<i></i>".repeat(gotas)}</div>
+        <figcaption class="cap">${L(`En total, ${fmt(m.total)} toneladas en Centro y Sudamérica. Cada gota son mil toneladas.`, `In all, ${fmt(m.total)} metric tons across Central and South America. Each drop is a thousand tons.`)}${N.cita(m.fuentes)}</figcaption>
+      </figure>`;
+    }
+    // A dónde fue la plata: un mapa esquemático, no a escala. Cada punto abre su frase con fuente.
+    const FLUJO_XY = { china: [84, 160], manila: [200, 236], acapulco: [356, 262], minas: [392, 122], mexico: [424, 196, "w"], veracruz: [500, 206], caribe: [574, 286], sevilla: [664, 190], guerras: [744, 150], norte: [664, 84] };
+    const FLUJO_RUTAS = [["minas", "mexico"], ["mexico", "veracruz"], ["mexico", "acapulco"], ["veracruz", "sevilla"], ["veracruz", "caribe"], ["sevilla", "guerras"], ["sevilla", "norte"], ["acapulco", "manila"], ["manila", "china"]];
+    function flujo(f, N) {
+      const quieto = matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const curva = ([a, b]) => {
+        const [x1, y1] = FLUJO_XY[a], [x2, y2] = FLUJO_XY[b], mx = (x1 + x2) / 2, my = (y1 + y2) / 2, dx = x2 - x1, dy = y2 - y1;
+        return `M${x1},${y1} Q${r1(mx - dy * 0.18)},${r1(my + dx * 0.18)} ${x2},${y2}`;
+      };
+      const rutas = FLUJO_RUTAS.map((r, i) => `<path id="ruta-${i}" class="ruta" d="${curva(r)}"/>${quieto ? "" : [0, 1].map((k) => `<circle class="moneda" r="3"><animateMotion dur="${5 + (i % 3)}s" begin="${-k * 2.6 - i * 0.7}s" repeatCount="indefinite"><mpath href="#ruta-${i}"/></animateMotion></circle>`).join("")}`).join("");
+      const zonas = [[24, 70, 236, 214, L("Asia", "Asia")], [318, 70, 220, 214, L("Nueva España", "New Spain")], [604, 24, 176, 210, L("Europa", "Europe")]]
+        .map(([x, y, w, h, t]) => `<rect class="zona" x="${x}" y="${y}" width="${w}" height="${h}" rx="18"/><text class="zona-t" x="${x + 14}" y="${y + 22}">${t}</text>`).join("");
+      const nodos = f.nodos.map((n, i) => {
+        const [x, y, lado] = FLUJO_XY[n.id];
+        const etiqueta = lado === "w" ? `x="${x - 16}" y="${y + 5}" text-anchor="end"` : `x="${x}" y="${y + 28}" text-anchor="middle"`;
+        return `<g class="nodo${i ? "" : " on"}" tabindex="0" role="button" aria-pressed="${i ? "false" : "true"}" data-nodo="${n.id}" aria-label="${esc(n.titulo)}"><circle class="halo" cx="${x}" cy="${y}" r="18"/><circle class="pt" cx="${x}" cy="${y}" r="7"/><text ${etiqueta}>${esc(n.titulo)}</text></g>`;
+      }).join("");
+      const paneles = f.nodos.map((n, i) => `<div class="flujo-nodo" data-panel="${n.id}" ${i ? "hidden" : ""}><p class="k">${esc(n.lugar)}</p><h3>${esc(n.titulo)}</h3><p>${prosa(n.texto, N)}</p></div>`).join("");
+      return `<figure class="flujo">
+        <div class="graf-scroll"><svg viewBox="0 0 790 330" role="group" aria-label="${L("Mapa de las rutas de la plata", "Map of the silver routes")}">
+          <text class="mar" x="236" y="318">${L("Océano Pacífico", "Pacific Ocean")}</text><text class="mar" x="552" y="128">${L("Océano Atlántico", "Atlantic Ocean")}</text>
+          ${zonas}${rutas}${nodos}</svg></div>
+        <div class="flujo-panel" aria-live="polite">${paneles}</div>
+        <figcaption class="cap">${L("Esquema de las rutas, no a escala.", "Schematic of the routes, not to scale.")}</figcaption>
+      </figure>`;
+    }
+    // Quién lo reconoce y quién lo niega: una línea de tiempo con dos lados.
+    function lineaNiega(eventos, N) {
+      const lado = { reconoce: L("Lo reconoce", "Acknowledges it"), niega: L("Lo niega o lo minimiza", "Denies or downplays it") };
+      return `<figure class="linea-niega">
+        <p class="leyenda"><span><i class="sw reconoce"></i>${lado.reconoce}</span><span><i class="sw niega"></i>${lado.niega}</span></p>
+        <ol>${eventos.map((e) => `<li class="${e.lado}"><span class="ln-anio">${esc(e.anio)}</span><div class="ln-c"><span class="k">${lado[e.lado]}</span><p>${prosa(e.texto, N)}</p></div></li>`).join("")}</ol>
+      </figure>`;
+    }
+    function lamina(l, id) {
+      return `<figure class="lamina">
+        <button class="lam-btn" type="button" data-lamina="${id}" aria-label="${L("Ampliar la lámina", "Enlarge the plate")}: ${esc(l.codice)}">
+          <img src="${esc(l.archivo)}" alt="${esc(l.pie)}" loading="lazy" decoding="async"><span class="lam-zoom">${L("Ampliar", "Enlarge")}</span></button>
+        <figcaption><b>${esc(l.codice)}</b><span class="muted"> · ${esc(l.fecha)}</span><span class="lam-pie">${esc(l.pie)}</span></figcaption>
+      </figure>`;
+    }
+    const voz = (q, N) => `<figure class="voz"><svg class="voluta" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 42c0-17 11-30 25-30 9 0 13 6 13 11 0 6-5 9-9 9-5 0-7-4-6-7 1-2 3-3 5-2"/></svg>
+      <blockquote>«${esc(q.texto)}»</blockquote><figcaption>${esc(q.quien)}${N.cita(q.fuentes)}</figcaption></figure>`;
+    function vistaCuenta() {
+      const N = notas();
+      const caps = CUENTA.capitulos;
+      const seguir = (c) => {
+        const casos = c.casos.map((id) => CASO[id]).filter(Boolean), fichas = c.fichas.filter((id) => FICHA[id]);
+        if (!casos.length && !fichas.length && !c.enlace) return "";
+        return `<div class="seguir"><span class="k">${L("Para seguir", "Keep going")}</span>
+          ${casos.map((k) => `<a class="chip" href="#/caso/${k.id}"><span class="sw" style="background:${COLOR_CASO[k.tipo]}"></span>${esc(k.titulo)}</a>`).join("")}
+          ${fichas.map(chipFicha).join("")}${c.enlace ? `<a class="chip enl" href="${esc(c.enlace.href)}">${esc(c.enlace.texto)} →</a>` : ""}</div>`;
+      };
+      const visual = (c) => ({
+        ciudad: () => ciudadCuenta(c.ciudad, N),
+        poblacion: () => graficaSerie(c.graficas.serie, N) + graficaCaidas(c.graficas.estimaciones, N),
+        minas: () => mercurio(c.minas, N),
+        dinero: () => dineroCuenta(c.calculo, N),
+        flujo: () => flujo(c.flujo, N),
+        linea: () => lineaNiega(c.linea, N)
+      }[c.visual] || (() => ""))();
+      const acto = (c, i) => {
+        const ultimo = i === caps.length - 1;
+        return `<section class="cn-acto${ultimo ? " cierre" : ""}" id="${c.id}">
+          <span class="acto-glifo">${numeral(i + 1)}</span>
+          <header class="acto-cab">${c.periodo ? `<p class="acto-per">${esc(c.periodo)}</p>` : ""}<h2>${esc(c.titulo)}</h2><p class="acto-ent">${esc(c.entrada)}</p></header>
+          <div class="acto-cuerpo${c.lamina ? " con-lamina" : ""}">
+            <div class="acto-texto">${c.texto.map((p) => `<p>${prosa(p, N)}</p>`).join("")}${c.cita ? voz(c.cita, N) : ""}</div>
+            ${c.lamina ? `<div class="acto-lam">${lamina(c.lamina, c.id)}</div>` : ""}
+          </div>
+          ${c.visual ? `<div class="acto-visual">${visual(c)}</div>` : ""}
+          ${seguir(c)}
+          ${ultimo ? `<p class="cierre-enl"><a class="btn" href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> <a class="btn ghost" href="#/nombres">${L("Los nombres", "The names")}</a></p>` : ""}
+        </section>`;
+      };
+      const actos = caps.map(acto).join("");
+      const refs = N.lista(true);
+      const tira = `<nav class="cn-tira" aria-label="${L("Actos", "Acts")}"><ol>${caps.map((c, i) => `<li><a href="#/cuenta#${c.id}" data-acto="${c.id}">${numeral(i + 1)}<span>${esc(c.titulo)}</span></a></li>`).join("")}</ol></nav>`;
+      return `<article class="cuenta-n" id="arriba">
+        <header class="cn-hero wrap">
+          <p class="eyebrow"><a href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> · ${L("contexto", "context")}</p>
+          <div class="enc-h1"><h1>${esc(CUENTA.titulo)}</h1>${botonCompartir()}</div>
+          <p class="cn-lead">${esc(CUENTA.entrada)}</p>
+          <p class="cn-guia"><span class="ev muestra">${L("Las frases subrayadas", "Underlined phrases")}</span> ${L("llevan su fuente: pasa el mouse para verla o haz clic para abrirla abajo. Las láminas son de códices de la época y se amplían con un clic.", "carry their source: hover to see it, or click to open it below. The plates come from codices of the period and enlarge with a click.")}</p>
+        </header>
+        ${tira}
+        <div class="cn-camino wrap"><div class="huellas" aria-hidden="true"><i></i></div>
+          ${actos}
+          ${refs ? `<section class="cn-acto fuentes-acto" id="fuentes"><details class="cn-fuentes"><summary>${L("Todas las fuentes", "All the sources")} <span class="n">${N.total()}</span></summary>${refs}</details></section>` : ""}
+        </div>
+        <aside class="evid" hidden aria-live="polite" aria-label="${L("Fuente", "Source")}"><button class="evid-x" type="button" aria-label="${L("Cerrar", "Close")}">×</button><div class="evid-c"></div></aside>
+        <dialog class="visor" aria-label="${L("Lámina", "Plate")}"></dialog>
+      </article>`;
+    }
+    function abrirEvidencia(el) {
+      const caja = document.querySelector(".evid");
+      if (!caja) return;
+      document.querySelectorAll(".ev.activa").forEach((x) => x.classList.remove("activa"));
+      el.classList.add("activa");
+      const frase = el.cloneNode(true);
+      frase.querySelectorAll("sup").forEach((s) => s.remove());
+      const nums = el.querySelector("sup").textContent.split(",");
+      caja.querySelector(".evid-c").innerHTML = `<p class="k">${L("La frase", "The phrase")}</p><p class="evid-frase">${esc(frase.textContent)}</p>
+        <p class="k">${el.dataset.ev.includes(",") ? L("Las fuentes", "The sources") : L("La fuente", "The source")}</p>
+        <ol class="evid-refs">${el.dataset.ev.split(",").map((id, i) => `<li><span class="num">${nums[i]}</span><div><div class="ref">${refFuente(FUENTE[id])}</div><div>${resFuente(FUENTE[id])} <span class="muted small">· ${esc(TFUENTE[FUENTE[id].tipo].nombre)}</span></div></div></li>`).join("")}</ol>`;
+      caja.hidden = false;
+    }
+    function cerrarEvidencia() {
+      const caja = document.querySelector(".evid");
+      if (caja) caja.hidden = true;
+      document.querySelectorAll(".ev.activa").forEach((x) => x.classList.remove("activa"));
+    }
+    function abrirVisor(id) {
+      const l = CAP[id].lamina, v = document.querySelector("dialog.visor");
+      v.innerHTML = `<button class="visor-x" type="button" aria-label="${L("Cerrar", "Close")}">×</button>
+        <img src="${esc(l.archivo)}" alt="${esc(l.pie)}">
+        <div class="visor-pie"><p class="k">${esc(l.codice)} · ${esc(l.fecha)}</p><p>${esc(l.pie)}</p>
+          <p class="muted small">${esc(l.custodia)} · ${L("Dominio público", "Public domain")} · <a href="${esc(l.commons)}" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+          <p class="small">${l.fuentes.map((x) => refFuente(FUENTE[x])).join("<br>")}</p></div>`;
+      v.showModal();
+    }
+    function elegirNodo(g) {
+      const fig = g.closest(".flujo");
+      fig.querySelectorAll(".nodo").forEach((n) => { n.classList.toggle("on", n === g); n.setAttribute("aria-pressed", n === g); });
+      fig.querySelectorAll("[data-panel]").forEach((p) => (p.hidden = p.dataset.panel !== g.dataset.nodo));
+    }
+
     // ------------------------------------------------------------ recorridos
     const tarjetaRecorrido = (r) => `<a class="route" href="#/recorrido/${r.id}"><span class="mini">${r.pasos.filter((p) => p.ficha).slice(0, 5).map((p) => foto(FICHA[p.ficha], "mini")).join("")}</span><h3>${esc(r.titulo)}</h3><p>${esc(r.entrada)}</p><span class="steps">${r.pasos.map((p) => `<i class="${p.caso ? "c" : ""}"></i>`).join("")}</span><p class="muted small" style="margin-top:6px">${plural(r.pasos.length, L("paso", "step"), L("pasos", "steps"))}</p></a>`;
     function vistaRecorridos() {
@@ -887,7 +1141,7 @@
       const nombreRes = L(
         { ok: "Comprobadas", discrepancia: "No coinciden", error: "Enlace roto", bloqueada: "Bloquean la comprobación", sin_enlace: "Sin enlace" },
         { ok: "Verified", discrepancia: "Do not match", error: "Broken link", bloqueada: "Block checking", sin_enlace: "No link" });
-      const destinos = (ids) => ids.map((id) => FICHA[id] ? `<a href="#/ficha/${id}">${esc(FICHA[id].nombre)}</a>` : CASO[id] ? `<a href="#/caso/${id}">${esc(CASO[id].titulo)}</a>` : RECORRIDO[id] ? `<a href="#/recorrido/${id}">${esc(RECORRIDO[id].titulo)}</a>` : PUEBLO[id] ? `<a href="#/pueblo/${id}">${esc(PUEBLO[id].nombre)}</a>` : esc(id)).join(", ");
+      const destinos = (ids) => ids.map((id) => FICHA[id] ? `<a href="#/ficha/${id}">${esc(FICHA[id].nombre)}</a>` : CASO[id] ? `<a href="#/caso/${id}">${esc(CASO[id].titulo)}</a>` : RECORRIDO[id] ? `<a href="#/recorrido/${id}">${esc(RECORRIDO[id].titulo)}</a>` : CAP[id] ? `<a href="#/cuenta#${id}">${esc(CAP[id].titulo)}</a>` : PUEBLO[id] ? `<a href="#/pueblo/${id}">${esc(PUEBLO[id].nombre)}</a>` : esc(id)).join(", ");
       const filas = lista.map((f) => `<tr><td class="t">${refFuente(f)}</td><td>${esc(TFUENTE[f.tipo].nombre)}<div class="muted small">${L("rango", "rank")} ${TFUENTE[f.tipo].rango}</div></td><td>${resFuente(f)}</td><td class="small">${destinos(f.citada_por || [])}</td></tr>`).join("");
       const hf = (o) => `#/fuentes?${Object.entries(o).filter(([, v]) => v).map(([k, v]) => `${k}=${v}`).join("&")}`;
       return `<div class="wrap map-page"><p class="eyebrow">${L("Fuentes", "Sources")}</p><h1>${L(`${fmt(m.fuentes)} fuentes y lo que se comprobó de cada una`, `${fmt(m.fuentes)} sources and what was checked about each one`)}</h1>
@@ -1033,6 +1287,7 @@
         nombres: () => vistaNombres(p1),
         casos: () => vistaCasos(),
         despojo: () => vistaDespojo(),
+        cuenta: () => vistaCuenta(),
         pueblos: () => vistaPueblos(),
         pueblo: () => vistaPueblo(p1),
         caso: () => vistaCaso(p1),
@@ -1044,6 +1299,7 @@
       const v = vistas[p0 || ""] || noEncontrado;
       $main.innerHTML = v();
       if (p0 === "ficha") prepararFicha();
+      if (p0 === "cuenta") prepararCuenta();
       ocultarTip();
       const seccion = { ficha: "explorar", caso: "despojo", casos: "despojo", recorrido: "recorridos", pueblo: "pueblos" }[p0] || p0;
       document.querySelectorAll("nav.main a").forEach((a) => {
@@ -1083,6 +1339,45 @@
       }, { rootMargin: "-20% 0px -70% 0px" });
       document.querySelectorAll(".enc-sec").forEach((s) => vigia.observe(s));
     }
+    // La narrativa: el camino de huellas se entinta al avanzar y la tira marca el acto que se lee.
+    let vigiaActos;
+    function prepararCuenta() {
+      if (vigiaActos) vigiaActos.disconnect();
+      const enlaces = Object.fromEntries([...document.querySelectorAll(".cn-tira a")].map((a) => [a.dataset.acto, a]));
+      const tira = document.querySelector(".cn-tira ol");
+      vigiaActos = new IntersectionObserver((entradas) => {
+        entradas.forEach((e) => {
+          if (!e.isIntersecting) return;
+          e.target.classList.add("visto");
+          const a = enlaces[e.target.id];
+          if (!a) return;
+          Object.values(enlaces).forEach((x) => x.removeAttribute("aria-current"));
+          a.setAttribute("aria-current", "step");
+          tira.scrollTo({ left: a.parentElement.offsetLeft - 16, behavior: "smooth" });
+        });
+      }, { rootMargin: "-35% 0px -55% 0px" });
+      document.querySelectorAll(".cn-acto").forEach((s) => vigiaActos.observe(s));
+      pegarTira();
+      avanceCamino();
+    }
+    // La tira se pega justo debajo de la cabecera, que cambia de alto según el ancho.
+    function pegarTira() {
+      const t = document.querySelector(".cn-tira"), cab = document.querySelector("header.top");
+      if (t && cab) t.style.top = cab.offsetHeight + "px";
+    }
+    window.addEventListener("resize", pegarTira);
+    function avanceCamino() {
+      const camino = document.querySelector(".cn-camino");
+      if (!camino) return;
+      const r = camino.getBoundingClientRect();
+      camino.style.setProperty("--avance", Math.min(1, Math.max(0, (innerHeight * 0.55 - r.top) / r.height)).toFixed(4));
+    }
+    let pendienteAvance = false;
+    window.addEventListener("scroll", () => {
+      if (pendienteAvance) return;
+      pendienteAvance = true;
+      requestAnimationFrame(() => { pendienteAvance = false; avanceCamino(); });
+    }, { passive: true });
     document.addEventListener("mouseover", (e) => {
       const el = e.target.closest("[data-tip]");
       if (!el) return ocultarTip();
@@ -1100,6 +1395,23 @@
       $tip.style.top = Math.max(8, y) + "px";
     });
     document.addEventListener("click", (e) => {
+      const ev = e.target.closest(".ev[data-ev]");
+      if (ev) { ocultarTip(); abrirEvidencia(ev); return; }
+      if (e.target.closest(".evid-x")) { cerrarEvidencia(); return; }
+      const lam = e.target.closest("[data-lamina]");
+      if (lam) { abrirVisor(lam.dataset.lamina); return; }
+      const visor = e.target.closest("dialog.visor");
+      if (visor && (e.target === visor || e.target.closest(".visor-x"))) { visor.close(); return; }
+      const nodo = e.target.closest("[data-nodo]");
+      if (nodo) { elegirNodo(nodo); return; }
+      const paso = e.target.closest(".cn-tira a");
+      if (paso) {
+        e.preventDefault();
+        const destino = document.getElementById(paso.dataset.acto);
+        history.replaceState(null, "", paso.getAttribute("href"));
+        destino.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+        return;
+      }
       const cita = e.target.closest("[data-fn]");
       if (cita) {
         const li = document.getElementById("fn-" + cita.dataset.fn);
@@ -1118,6 +1430,9 @@
     });
     document.addEventListener("keydown", (e) => {
       if ((e.key === "Enter" || e.key === " ") && e.target.matches("[data-href]")) { e.preventDefault(); location.hash = e.target.dataset.href; }
+      if ((e.key === "Enter" || e.key === " ") && e.target.matches(".ev[data-ev]")) { e.preventDefault(); abrirEvidencia(e.target); }
+      if ((e.key === "Enter" || e.key === " ") && e.target.matches("[data-nodo]")) { e.preventDefault(); elegirNodo(e.target); }
+      if (e.key === "Escape") cerrarEvidencia();
     });
     const $q = document.getElementById("q");
     $q.addEventListener("input", () => {

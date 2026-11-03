@@ -18,7 +18,9 @@ import hashlib
 import html
 import json
 import re
+import shutil
 import ssl
+import subprocess
 import sys
 import time
 import unicodedata
@@ -70,6 +72,35 @@ def extras():
     return leer("pueblos.json"), diagramas, medios
 
 
+def cuenta():
+    """La sección «Lo que aún se niega»: una narrativa en actos con frases marcadas con su fuente."""
+    ruta = DATOS / "cuenta.json"
+    return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else {"capitulos": []}
+
+
+MARCA = re.compile(r"\[\[([^|\]]+)\|([^\]]+)\]\]")
+
+
+def fuentes_de_datos(cap):
+    """Fuentes de un acto: las de sus frases marcadas [[frase|id,id]] y las de su lámina, cita, mapa y gráficas."""
+    ids = []
+    def recorrer(x, clave=None):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                recorrer(v, k)
+        elif isinstance(x, list):
+            for v in x:
+                recorrer(v, clave)
+        elif isinstance(x, str):
+            if clave == "fuentes":
+                ids.append(x)
+            else:
+                for _, fs in MARCA.findall(x):
+                    ids.extend(i.strip() for i in fs.split(","))
+    recorrer(cap)
+    return list(dict.fromkeys(ids))
+
+
 # ---------------------------------------------------------------- verificar
 
 def afirmaciones_de(obj):
@@ -89,6 +120,8 @@ def afirmaciones_de(obj):
     for i, o in enumerate(obj.get("originales", [])):
         if o.get("fuentes"):
             yield f"originales[{i}]", o
+    for i, c in enumerate(obj.get("aclaraciones", [])):
+        yield f"aclaraciones[{i}]", c
 
 
 def verificar(cat, fichas, fuentes, casos, recorridos, wcvp=None):
@@ -215,8 +248,32 @@ def verificar(cat, fichas, fuentes, casos, recorridos, wcvp=None):
                 if clave in p and p[clave] not in vistos:
                     errores.append(f"recorrido {r['id']}: {clave} «{p[clave]}» no existe")
 
+    capitulos = cuenta()["capitulos"]
+    for cap in capitulos:
+        if cap["id"] in vistos:
+            errores.append(f"{cap['id']}: id repetido")
+        for clave in ("texto", "fichas", "casos"):
+            if not isinstance(cap.get(clave), list):
+                errores.append(f"{cap['id']}: falta la lista «{clave}» (puede ir vacía)")
+        for x in cap.get("fichas", []) + cap.get("casos", []):
+            if x not in vistos:
+                errores.append(f"{cap['id']}: «{x}» no existe")
+        for p in cap.get("texto", []) + [n["texto"] for n in (cap.get("flujo") or {}).get("nodos", []) + cap.get("linea", [])]:
+            if p.count("[[") != len(MARCA.findall(p)) or p.count("]]") != p.count("[["):
+                errores.append(f"{cap['id']}: marca [[frase|fuentes]] mal cerrada: {p[:60]}")
+        lam = cap.get("lamina")
+        if lam:
+            if not (RAIZ / "sitio" / lam["archivo"]).exists():
+                errores.append(f"{cap['id']}: la lámina «{lam['archivo']}» no está en sitio/")
+            if not lam.get("commons") or not lam.get("licencia"):
+                errores.append(f"{cap['id']}: la lámina necesita su ficha de Commons y su licencia")
+        for x in fuentes_de_datos(cap):
+            usadas.add(x)
+            if x not in conjunto_fuentes:
+                errores.append(f"{cap['id']}: fuente «{x}» no existe")
+
     # Principio 3: la afirmación es la unidad de verdad
-    for obj in fichas + casos + recorridos + pueblos:
+    for obj in fichas + casos + recorridos + pueblos + capitulos:
         for lugar, a in afirmaciones_de(obj):
             if "solidez" in a and a["solidez"] not in solidez:
                 errores.append(f"{obj['id']}.{lugar}: solidez «{a['solidez']}» no está en el catálogo")
@@ -311,8 +368,26 @@ def comprobar_doi(f):
     }
 
 
+def pedir_con_curl(url):
+    """Segundo intento para servidores que no envían su cadena de certificados completa.
+
+    curl usa los certificados del sistema y sigue verificándolos; solo se usa cuando Python no pudo."""
+    if not shutil.which("curl"):
+        return 0
+    r = subprocess.run(["curl", "-sS", "-L", "-o", "/dev/null", "-w", "%{http_code}", "-A", AGENTE, "--max-time", "30", url],
+                       capture_output=True, text=True)
+    return int(r.stdout or 0) if r.returncode == 0 else 0
+
+
 def comprobar_url(f):
     estado, cuerpo = pedir(f["url"], json_=False, intentos=2)
+    if estado == 0 and "CERTIFICATE_VERIFY_FAILED" in str(cuerpo):
+        codigo = pedir_con_curl(f["url"])
+        if codigo == 200:
+            return {"metodo": "http", "resultado": "ok", "codigo": 200,
+                    "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa."}
+        if codigo in (401, 403):
+            estado, cuerpo = codigo, ""
     if estado == 200 and isinstance(cuerpo, str):
         if "Just a moment" in cuerpo[:3000] or "challenge-platform" in cuerpo[:6000]:
             return {"metodo": "http", "resultado": "bloqueada", "detalle": "El sitio pide una prueba de navegador; no se comprueba automáticamente."}
@@ -463,7 +538,7 @@ TRADUCIBLES = {
     "lengua", "glosa", "sin_originario", "excluye", "incluye", "respuesta", "lugar", "reclamo",
     "institucion", "ciudad", "codice", "nombre_propio", "autoria", "periodo", "enfoque", "pendiente",
     "conclusion", "creencia", "objetivo", "nota_alcance", "regla_tradicion", "donde", "decia", "como",
-    "marca",
+    "marca", "por_que", "fecha_precio", "pie", "custodia", "quien",
 }
 NO_SE_TRADUCEN = {"fuentes", "relacionadas", "pueblos", "fichas", "heredan", "aqui", "alla", "lineas"}
 
@@ -508,7 +583,8 @@ def contenido(cat, fichas, fuentes, casos, recorridos):
     pueblos, diagramas, _ = extras()
     notas = {f["id"]: {"nota": f["nota"]} for f in fuentes if f.get("nota")}
     return {"catalogo": cat, "fichas": fichas, "casos": casos, "recorridos": recorridos,
-            "pueblos": pueblos, "diagramas": diagramas, "erratas": leer("erratas.json"), "notas_fuentes": notas}
+            "pueblos": pueblos, "diagramas": diagramas, "erratas": leer("erratas.json"), "notas_fuentes": notas,
+            "cuenta": cuenta()}
 
 
 def leer_traducciones(idioma):
@@ -555,7 +631,7 @@ def estado_fuente(fid, comprobaciones):
     return (comprobaciones.get(fid) or {}).get("resultado", "sin_comprobar")
 
 
-def derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, pueblos=(), medios=None):
+def derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, pueblos=(), medios=None, capitulos=()):
     """Calcula verificación por afirmación, documentación por ficha y métricas."""
     medios = medios or {}
     def verif(a):
@@ -565,7 +641,7 @@ def derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, puebl
         return "comprobada" if all(estado_fuente(x, comprobaciones) == "ok" for x in fs) else "citada"
 
     total_af = {"pendiente": 0, "citada": 0, "comprobada": 0}
-    for obj in fichas + casos + recorridos + list(pueblos):
+    for obj in fichas + casos + recorridos + list(pueblos) + list(capitulos):
         for lugar, a in afirmaciones_de(obj):
             a["verificacion"] = verif(a)
             if not lugar.startswith("originales"):
@@ -593,10 +669,13 @@ def derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, puebl
                 comp["tradicion"] = {lado: bool(set(comp["lineas"].get(lado, [])) & sostienen) for lado in ("aqui", "alla")}
 
     citas = {}
-    for obj in fichas + casos + recorridos + list(pueblos):
+    for obj in fichas + casos + recorridos + list(pueblos) + list(capitulos):
         for _, a in afirmaciones_de(obj):
             for fid in a.get("fuentes", []):
                 citas.setdefault(fid, set()).add(obj["id"])
+    for cap in capitulos:
+        for fid in fuentes_de_datos(cap):
+            citas.setdefault(fid, set()).add(cap["id"])
     for f in fuentes:
         f["comprobacion"] = comprobaciones.get(f["id"], {"resultado": "sin_comprobar"})
         f["citada_por"] = sorted(citas.get(f["id"], []))
@@ -611,6 +690,7 @@ def derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, puebl
         "deslindes": sum(f["clase"] == "deslinde" for f in fichas),
         "casos": len(casos),
         "recorridos": len(recorridos),
+        "capitulos": len(capitulos),
         "fuentes": len(fuentes),
         "fuentes_por_resultado": por_resultado,
         "afirmaciones": total_af,
@@ -634,7 +714,8 @@ def construir(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp):
             print("  ✗", e)
         sys.exit(1)
     pueblos, diagramas, medios = extras()
-    metricas = derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, pueblos, medios)
+    cta = cuenta()
+    metricas = derivar(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp, pueblos, medios, cta["capitulos"])
     for fid, d in diagramas.items():
         for x in d.get("fuentes", []) + (d.get("contraste") or {}).get("fuentes", []):
             f = next(f for f in fuentes if f["id"] == x)
@@ -644,13 +725,13 @@ def construir(cat, fichas, fuentes, casos, recorridos, comprobaciones, wcvp):
     paquete = {
         "catalogo": cat, "fichas": fichas, "casos": casos, "recorridos": recorridos,
         "fuentes": fuentes, "metricas": metricas, "avisos": avisos, "geo": geo,
-        "erratas": leer("erratas.json"), "pueblos": pueblos, "diagramas": diagramas,
+        "erratas": leer("erratas.json"), "pueblos": pueblos, "diagramas": diagramas, "cuenta": cta,
     }
     js = "/* Generado por procedencia.py construir; no editar a mano. */\nwindow.PROCEDENCIA = " + json.dumps(paquete, ensure_ascii=False, separators=(",", ":")) + ";\n"
     (SITIO / "datos.js").write_text(js, encoding="utf-8")
     for idioma in IDIOMAS:
         mapa = mapa_traducciones(idioma)
-        partes = {k: paquete[k] for k in ("catalogo", "fichas", "casos", "recorridos", "erratas", "pueblos", "diagramas")}
+        partes = {k: paquete[k] for k in ("catalogo", "fichas", "casos", "recorridos", "erratas", "pueblos", "diagramas", "cuenta")}
         partes["notas_fuentes"] = {f["id"]: {"nota": f["nota"]} for f in fuentes if f.get("nota")}
         partes = {k: traducido(v, mapa) for k, v in partes.items()}
         js_i = (f"/* Generado por procedencia.py construir; no editar a mano. */\nwindow.PROCEDENCIA_{idioma.upper()} = "

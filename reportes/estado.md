@@ -7,7 +7,7 @@ Generado por `python3 procedencia.py construir`. No se edita a mano.
 - Fichas: 100 (95 aportes, 5 deslindes); casos: 31; recorridos: 10.
 - Documentación: 4 expedientes, 91 fichas con fuente, 5 en investigación.
 - Afirmaciones: 339 — 293 con fuente comprobada, 34 citadas sin comprobar, 12 pendientes.
-- Fuentes: 219 — 5 bloqueada, 204 ok, 10 sin_enlace.
+- Fuentes: 248 — 11 bloqueada, 226 ok, 11 sin_enlace.
 - Especies contrastadas con el WCVP: 43.
 
 ## Fuentes que no coinciden con su registro
@@ -197,3 +197,4 @@ Ninguna.
 - fuente lopezaustin1980: sin DOI ni URL; no puede comprobarse automáticamente
 - fuente relacionmichoacan1541: sin DOI ni URL; no puede comprobarse automáticamente
 - fuente morenovilla1942: sin DOI ni URL; no puede comprobarse automáticamente
+- fuente resendez2016: sin DOI ni URL; no puede comprobarse automáticamente

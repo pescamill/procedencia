@@ -1,5 +1,29 @@
 # Cambios
 
+## Iteración 13 · 2 de noviembre de 2026
+
+«Lo que aún se niega» lleva un subtítulo, «Evidencia de censura sistemática», abre con lo que sostiene en tres frases y cuenta con más detalle todo lo que salió de México y lo que cobraba la Corona.
+
+### Qué cambió
+
+- **Un preámbulo corto.** Título, subtítulo, una entrada de tres frases y tres tarjetas compactas. En escritorio cabe en una pantalla. El subtítulo lleva a la censura, con fecha.
+- **Tres puntos, cada uno con su fuente y un enlace al acto que lo desarrolla:**
+  - *México cambió a Europa y a la cultura occidental.* Su plata sostuvo al imperio español y sus cultivos cambiaron la mesa del Viejo Mundo. Antes decía «cultura madre, como Grecia o Roma»; se matizó porque era más de lo que las fuentes sostienen.
+  - *Europa no lo sabe.* En España se enseña como un «encuentro» (Arbor, 2026).
+  - *Ni en México se dimensiona el genocidio.* En el centro de México, de cada cien personas quedaron tres; la SEP lo llama «un descenso importante».
+- **La censura, con fecha, baja al acto «Lo que se borró».** Cinco momentos de 1536 a hoy: la Inquisición de Zumárraga, don Carlos Ometochtzin en la hoguera, la quema de Maní, la orden de Felipe II contra la obra de Sahagún y los libros de texto de hoy.
+- **La plata, y todo lo demás.** Una gráfica de lo que salía cada año por Veracruz en años de paz, según Humboldt (hacia 1803): 17 millones de pesos en oro y plata, 2.4 en grana, 1.3 en azúcar, y harina, añil, cueros, vainilla, jalapa, palo de Campeche. El algodón de los primeros envíos de Cortés. El maguey: el mezcal estuvo prohibido casi toda la Colonia para que solo se bebiera vino de España y pulque, y en Guadalajara se cobró con un estanco (Lozano Armendares). Y los cultivos que cambiaron la mesa del mundo.
+- **Un acto nuevo: «Lo que cobraba la Corona».** Unos 20 millones de pesos al año hacia 1803. Una gráfica con lo que dejaba cada ramo: minas, tabaco, alcabalas, tributo indígena, pulque, aduanas, bulas, correo, pólvora, naipes, papel sellado, peleas de gallos y hasta la nieve de los volcanes. Otra con a dónde iba: 10.5 millones dentro del virreinato, 3.5 a otras colonias y 6 al tesoro del rey en Madrid. El texto añade, con Marichal (1999): el estanco del tabaco, el recargo de casi 200 % del pulque que pagaban los barrios indígenas, la sal como estanco, el tributo, el saqueo de las cajas de comunidad después de 1795, el 47 % de lo recaudado que se mandaba fuera en 1792 y la Consolidación de Vales Reales que terminó pagando deudas con Napoleón.
+- **Fuentes.** Entran Humboldt (*Political Essay*, vol. IV, 1814) y Lozano Armendares (2005). En total hay 250; la página cita 48. El relato tiene ahora 11 actos.
+- **El verificador** revisa las tarjetas del preámbulo y la franja de censura dentro del acto.
+
+### Casos de uso
+
+- **Entender la tesis en diez segundos.** Quien llega ve qué sostiene la sección sin bajar, y abre la fuente de cada punto con un clic.
+- **Responder «¿qué se llevaron, además del oro?».** Dos gráficas lo ponen en pesos de la época: lo que salía por Veracruz y lo que cobraba el rey, rubro por rubro.
+- **Responder «la Colonia no le costaba nada a nadie».** El acto de la Corona muestra a quién le cobraban (el pulque de los barrios indígenas, el tributo por jefe de familia, hasta un 20 % del ingreso de un trabajador) y cuánto iba a Madrid.
+- **Explicar por qué no hubo tequila legal por siglos.** El mezcal estuvo prohibido para proteger el vino y el aguardiente de España.
+
 ## Iteración 12 · 2 de noviembre de 2026
 
 Una sección nueva, «Lo que aún se niega», en `#/cuenta`. Es la segunda pestaña del menú y se anuncia en la portada. Cuenta como un relato la riqueza que se sacó de México durante la Colonia: el saqueo, el trabajo forzado que lo hizo posible, a dónde fue la plata y lo que se borró en el camino.

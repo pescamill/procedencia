@@ -2010,5 +2010,19 @@
   "codigo": 200,
   "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
   "fecha": "2026-11-02"
+ },
+ "humboldt1814": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "titulo_pagina": "Political essay on the kingdom of New Spain : Humboldt, Alexander von, 1769-1859 : Free Download, Borrow, and Streaming : Internet Archive",
+  "fecha": "2026-11-02"
+ },
+ "lozano2005": {
+  "metodo": "http",
+  "resultado": "ok",
+  "codigo": 200,
+  "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+  "fecha": "2026-11-02"
  }
 }

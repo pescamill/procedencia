@@ -16085,7 +16085,8 @@
    },
    "citada_por": [
     "calendarios",
-    "caso-codices"
+    "caso-codices",
+    "cuenta-niega"
    ]
   },
   {
@@ -16152,6 +16153,7 @@
     "algodon",
     "caso-codices",
     "cuenta-ciudad",
+    "cuenta-niega",
     "cuenta-plata",
     "educacion",
     "grana",
@@ -16782,7 +16784,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-penacho"
+    "caso-penacho",
+    "cuenta-niega"
    ]
   },
   {
@@ -17033,7 +17036,8 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "caso-mani"
+    "caso-mani",
+    "cuenta-borrado"
    ]
   },
   {
@@ -17080,6 +17084,7 @@
     "caso-medicina",
     "caso-tenochtitlan",
     "cuenta-caida",
+    "cuenta-niega",
     "cuenta-peste",
     "tabaco-mesoamericano",
     "temazcal"
@@ -18454,7 +18459,8 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "chile"
+    "chile",
+    "cuenta-plata"
    ]
   },
   {
@@ -19044,6 +19050,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
+    "cuenta-niega",
     "cuenta-peste"
    ]
   },
@@ -19087,6 +19094,7 @@
    },
    "citada_por": [
     "cuenta-ciudad",
+    "cuenta-corona",
     "cuenta-destino",
     "cuenta-plata"
    ]
@@ -19612,7 +19620,49 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
+    "cuenta-borrado",
     "cuenta-niega"
+   ]
+  },
+  {
+   "id": "humboldt1814",
+   "tipo": "primaria",
+   "autores": "Humboldt, A. de (trad. J. Black)",
+   "anio": 1814,
+   "titulo": "Political Essay on the Kingdom of New Spain, vol. IV",
+   "publicacion": "Londres, Longman, Hurst, Rees, Orme y Brown; segunda edición",
+   "url": "https://archive.org/details/politicalessayo03humbgoog",
+   "nota": "Leídos el libro V, cap. XII (lo que se exportaba por Veracruz) y el libro VI, cap. XIII (los ramos de la Real Hacienda y su destino). Cifras de hacia 1803.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "titulo_pagina": "Political essay on the kingdom of New Spain : Humboldt, Alexander von, 1769-1859 : Free Download, Borrow, and Streaming : Internet Archive",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-corona",
+    "cuenta-plata"
+   ]
+  },
+  {
+   "id": "lozano2005",
+   "tipo": "libro",
+   "autores": "Lozano Armendares, T.",
+   "anio": 2005,
+   "titulo": "Las bebidas prohibidas, en El chinguirito vindicado. El contrabando de aguardiente de caña y la política colonial",
+   "publicacion": "México, UNAM, Instituto de Investigaciones Históricas; segunda edición, pp. 17–42",
+   "url": "https://historicas.unam.mx/publicaciones/publicadigital/libros/305/305_04_02_BebidasProhibidas.pdf",
+   "nota": "Leído el capítulo: bebidas legales, prohibición del mezcal y estanco de Guadalajara, viñedos.",
+   "comprobacion": {
+    "metodo": "http",
+    "resultado": "ok",
+    "codigo": 200,
+    "detalle": "Comprobada con curl: el servidor no envía su cadena de certificados completa.",
+    "fecha": "2026-11-02"
+   },
+   "citada_por": [
+    "cuenta-plata"
    ]
   }
  ],
@@ -19622,10 +19672,10 @@
   "deslindes": 5,
   "casos": 31,
   "recorridos": 10,
-  "capitulos": 10,
-  "fuentes": 248,
+  "capitulos": 11,
+  "fuentes": 250,
   "fuentes_por_resultado": {
-   "ok": 226,
+   "ok": 228,
    "sin_enlace": 11,
    "bloqueada": 11
   },
@@ -20544,7 +20594,34 @@
  "cuenta": {
   "_nota": "Sección «Lo que aún se niega», contada como narrativa en actos. En 'texto', [[frase|fuente1,fuente2]] marca una frase con fuente: el sitio la subraya, muestra la fuente al pasar el mouse y la abre abajo al hacer clic. Lo que no lleva marca es el hilo del relato. Las láminas son de dominio público (Wikimedia Commons); 'commons' es su ficha. 'visual' elige la gráfica o el mapa de cada acto.",
   "titulo": "Lo que aún se niega",
-  "entrada": "La historia de la riqueza de Europa suele empezar en Europa. Esta empieza en Tenochtitlan, sigue el camino de la plata y del trabajo que la sacó, y termina en lo que no se puede contar. En México se enseña en la escuela; fuera de aquí, casi siempre se cuenta como un encuentro, o no se cuenta. Lo que aún se niega es que fue un saqueo.",
+  "subtitulo": "Evidencia de censura sistemática",
+  "entrada": "La riqueza de Europa también salió de aquí: de la plata, de la tierra y del trabajo de un pueblo entero. En México se enseña; fuera, casi siempre se cuenta como un encuentro, o no se cuenta. Lo que aún se niega es que fue un saqueo.",
+  "tesis": [
+   {
+    "titulo": "México cambió a Europa y a la cultura occidental",
+    "texto": "[[Su plata sostuvo al imperio español|marichal1999]] y [[sus cultivos cambiaron la mesa del Viejo Mundo|nunnqian2010]].",
+    "enlace": {
+     "href": "#/cuenta#cuenta-plata",
+     "texto": "La plata, y todo lo demás"
+    }
+   },
+   {
+    "titulo": "Europa no lo sabe",
+    "texto": "[[En España se enseña como un «encuentro»|ramirez2026arbor]]; en el resto de Europa, casi no se cuenta.",
+    "enlace": {
+     "href": "#/cuenta#cuenta-niega",
+     "texto": "Lo que se enseña y lo que no"
+    }
+   },
+   {
+    "titulo": "Ni en México se dimensiona el genocidio",
+    "texto": "[[En el centro de México, de cada cien personas quedaron tres|cookborah1979]]. [[La SEP lo llama «un descenso importante»|sep2025caida]].",
+    "enlace": {
+     "href": "#/cuenta#cuenta-peste",
+     "texto": "La peste y sus cifras"
+    }
+   }
+  ],
   "capitulos": [
    {
     "id": "cuenta-ciudad",
@@ -20955,7 +21032,7 @@
     "id": "cuenta-plata",
     "titulo": "La plata, y todo lo demás",
     "periodo": "1521–1821",
-    "entrada": "El oro fue lo primero que se vio. Lo que movió tres siglos fue la plata, y con ella salió todo lo demás.",
+    "entrada": "El oro fue lo primero que se vio. Lo que movió tres siglos fue la plata, y con ella salieron la grana, el azúcar, el algodón y lo que daba la tierra.",
     "lamina": {
      "archivo": "img/cuenta/mendoza-47r.jpg",
      "codice": "Códice Mendoza, folio 47r",
@@ -20971,7 +21048,10 @@
     "texto": [
      "[[Entre 1500 y 1800, la América española produjo entre 85,000 y 150,000 toneladas de plata: más que todo el resto del mundo junto|abadpalma2021]].",
      "[[Humboldt escribió en 1803 que de la Casa de Moneda de México habían salido «más de dos mil millones de pesos fuertes» en menos de 300 años|marichal1999]]. Esa sola cifra, pasada a plata de hoy, da la cuenta de abajo.",
-     "Con la plata salió todo lo demás. [[La grana cochinilla fue, después de la plata, de las exportaciones más valiosas de la Nueva España|donkin1977]]. [[Entre los primeros envíos de Cortés a Carlos V iban mantas, colchas y tapices de algodón tejidos aquí|clavijero1807]]. Y las plantas que hoy el mundo cree suyas."
+     "Con la plata salió todo lo demás. [[En los años de paz salían cada año por Veracruz unos 17 millones de pesos en oro y plata, 2.4 millones en grana cochinilla y 1.3 millones en azúcar; además, harina, añil, cueros, zarzaparrilla, vainilla, jalapa, jabón y palo de Campeche|humboldt1814]]. [[La grana fue, después de la plata, de las exportaciones más valiosas de la Nueva España|donkin1977]]. La caña de azúcar vino de fuera; la tierra donde se sembró era de aquí.",
+     "[[Entre los primeros envíos de Cortés a Carlos V iban mantas, colchas y tapices de algodón tejidos aquí|clavijero1807]].",
+     "Hasta el maguey se volvió negocio ajeno. [[Durante la Colonia, las únicas bebidas alcohólicas legales eran los vinos y aguardientes traídos de España y el pulque|lozano2005]]. [[El mezcal estuvo prohibido en la mayor parte de la Nueva España durante tres siglos; en Guadalajara, donde se permitió desde mediados del siglo XVII, se cobró con un estanco|lozano2005]]. De ese vino mezcal viene el tequila. [[Y se prohibió plantar viñedos, para proteger el comercio del imperio|lozano2005]].",
+     "Y las plantas que hoy el mundo cree suyas: el maíz, el jitomate, el chile, el cacao, la vainilla. Esas no dejaron una cuenta en pesos: [[los cultivos de América cambiaron la alimentación y la población del Viejo Mundo|nunnqian2010]]."
     ],
     "visual": "dinero",
     "calculo": {
@@ -20994,11 +21074,186 @@
     "fichas": [
      "grana",
      "algodon",
-     "textiles",
-     "cacao-chocolate",
-     "vainilla",
+     "agave-bebidas",
+     "palo-campeche",
      "maiz",
-     "jitomate"
+     "jitomate",
+     "chile",
+     "cacao-chocolate",
+     "vainilla"
+    ],
+    "casos": [],
+    "exporta": {
+     "nombre": "Lo que salía cada año por Veracruz, en años de paz",
+     "unidad": "pesos",
+     "filas": [
+      {
+       "nombre": "Oro y plata",
+       "valor": 17000000,
+       "destaca": true
+      },
+      {
+       "nombre": "Grana cochinilla",
+       "valor": 2400000
+      },
+      {
+       "nombre": "Azúcar",
+       "valor": 1300000
+      },
+      {
+       "nombre": "Harina",
+       "valor": 300000
+      },
+      {
+       "nombre": "Añil",
+       "valor": 280000
+      },
+      {
+       "nombre": "Comestibles",
+       "valor": 100000,
+       "nota": "carne salada, legumbres secas y otros"
+      },
+      {
+       "nombre": "Zarzaparrilla",
+       "valor": 90000
+      },
+      {
+       "nombre": "Cueros curtidos",
+       "valor": 80000
+      },
+      {
+       "nombre": "Vainilla",
+       "valor": 60000
+      },
+      {
+       "nombre": "Jalapa",
+       "valor": 60000
+      },
+      {
+       "nombre": "Jabón",
+       "valor": 50000
+      },
+      {
+       "nombre": "Palo de Campeche",
+       "valor": 40000
+      }
+     ],
+     "cap": "Valores declarados en la aduana hacia 1803, en pesos. No cuenta el contrabando.",
+     "fuentes": [
+      "humboldt1814"
+     ]
+    }
+   },
+   {
+    "id": "cuenta-corona",
+    "titulo": "Lo que cobraba la Corona",
+    "periodo": "1765–1810",
+    "entrada": "Además de la plata, el rey cobraba por casi todo: el tabaco, el pulque, la sal, lo que se vendía y hasta la nieve de los volcanes. Y una parte iba directo a Madrid.",
+    "texto": [
+     "[[Hacia 1803, la Corona cobraba en la Nueva España unos 20 millones de pesos al año|humboldt1814]]. [[Las minas de oro y plata le dejaban unos 5.5 millones; el tabaco, de 4 a 4.5 millones; las alcabalas, casi 3 millones; el tributo de los indígenas, 1.3 millones, y el pulque, unos 800,000|humboldt1814]].",
+     "El tabaco era el estanco más rico. [[Sus ventas pasaron de 1.5 millones de pesos en 1765 a más de 8 millones al año hacia 1800, y su producto neto se reservaba para mandarlo a España o para Cuba|marichal1999]]. [[Hacia 1790, el estanco empleaba a 17,256 personas|marichal1999]].",
+     "[[El pulque era quizá la mercancía con los impuestos más pesados: llevaba un recargo de cerca del 200 % sobre su costo|marichal1999]], [[y lo pagaban sobre todo los barrios indígenas de las ciudades|marichal1999]]. [[Hasta la sal, la pólvora, los naipes, la nieve y las peleas de gallos eran estancos del rey|marichal1999]]. [[El indígena que subía a los volcanes por nieve no podía venderla sin pagarle al rey|humboldt1814]].",
+     "[[Cada jefe de familia indígena pagaba unos dos pesos de tributo al año|marichal1999]]. [[Y después de 1795, la Real Hacienda saqueó sistemáticamente las cajas de comunidad de los pueblos indígenas|marichal1999]]. [[En la década de 1780, un trabajador libre posiblemente pagaba hasta el 20 % de lo que ganaba en impuestos|marichal1999]].",
+     "¿A dónde iba? [[De los 20 millones, 10.5 se gastaban dentro del virreinato, 3.5 se mandaban a otras colonias y 6 entraban al tesoro del rey en Madrid|humboldt1814]]. [[En 1792, lo que se mandó fuera sumó 9,354,334 pesos: el 47 % de todo lo recaudado. Entre 1795 y 1799 pasó de 11 millones al año|marichal1999]]. [[Entre 1805 y 1808, la Consolidación de Vales Reales reunió en la Nueva España más de 10 millones de pesos, y la mayor parte terminó pagando deudas con Napoleón|marichal1999]]."
+    ],
+    "visual": "corona",
+    "corona": {
+     "ingresos": {
+      "nombre": "Lo que dejaba cada ramo al año, hacia 1803",
+      "unidad": "pesos",
+      "filas": [
+       {
+        "nombre": "Minas de oro y plata",
+        "valor": 5500000,
+        "destaca": true
+       },
+       {
+        "nombre": "Tabaco",
+        "valor": 4250000,
+        "rango": [
+         4000000,
+         4500000
+        ]
+       },
+       {
+        "nombre": "Alcabalas (lo que se vendía)",
+        "valor": 2888356
+       },
+       {
+        "nombre": "Tributo de los indígenas",
+        "valor": 1300000
+       },
+       {
+        "nombre": "Pulque",
+        "valor": 800000
+       },
+       {
+        "nombre": "Aduanas (almojarifazgo)",
+        "valor": 500000
+       },
+       {
+        "nombre": "Bulas de la Santa Cruzada",
+        "valor": 270000
+       },
+       {
+        "nombre": "Correo",
+        "valor": 250000
+       },
+       {
+        "nombre": "Pólvora",
+        "valor": 150000
+       },
+       {
+        "nombre": "Naipes",
+        "valor": 120000
+       },
+       {
+        "nombre": "Media anata",
+        "valor": 100000
+       },
+       {
+        "nombre": "Papel sellado",
+        "valor": 80000
+       },
+       {
+        "nombre": "Peleas de gallos",
+        "valor": 45000
+       },
+       {
+        "nombre": "Nieve",
+        "valor": 30000
+       }
+      ],
+      "cap": "Producto neto de cada ramo, en pesos, según Humboldt. Los 20 millones son el ingreso total; aquí faltan ramos menores y los gastos de cobro.",
+      "fuentes": [
+       "humboldt1814"
+      ]
+     },
+     "reparto": {
+      "nombre": "A dónde iban los 20 millones",
+      "partes": [
+       {
+        "nombre": "Se gastaba dentro del virreinato",
+        "valor": 10500000
+       },
+       {
+        "nombre": "A otras colonias (situados)",
+        "valor": 3500000
+       },
+       {
+        "nombre": "Al tesoro del rey, en Madrid",
+        "valor": 6000000,
+        "destaca": true
+       }
+      ],
+      "fuentes": [
+       "humboldt1814"
+      ]
+     }
+    },
+    "fichas": [
+     "tabaco-mesoamericano",
+     "agave-bebidas"
     ],
     "casos": []
    },
@@ -21099,8 +21354,7 @@
      ]
     },
     "texto": [
-     "[[Entre 1536 y 1543, el obispo Juan de Zumárraga usó la Inquisición contra unos treinta líderes, casi todos indígenas, acusados de paganismo|lopesdon2006]]. [[En 1539 quemaron a don Carlos Ometochtzin, señor de Texcoco y nieto de Nezahualcóyotl|ruizmedrano2014]].",
-     "[[En 1577, Felipe II mandó recoger los manuscritos de fray Bernardino de Sahagún y prohibió que nadie escribiera, «en ninguna lengua», sobre la «manera de vivir» de los indios|leonportilla1998]]. La lámina de la viruela que viste arriba es de esa obra: la que se mandó recoger.",
+     "Primero se persiguió a quienes guardaban el saber, y después a lo que se escribía. La franja de abajo pone las fechas. La lámina de la viruela que viste arriba es de la obra de Sahagún: la que Felipe II mandó recoger.",
      "Se borró también el mapa. [[Para cobrar tributo y vigilar la fe, la Colonia juntó a la gente dispersa de los calpultin en pueblos nuevos, las congregaciones|gerhard1977]]. [[En Tututepec, los asentamientos otomíes y tepehuas pasaron de 88 a 27|gerhard1977]], y [[quien volvía a su parcela podía encontrarla ocupada por un rancho de ganado o una hacienda|gerhard1977]].",
      "Y los nombres. [[Cuauhnáhuac, «junto al bosque», se volvió Cuernavaca, «cuerno de vaca»|britannica-cuernavaca]]. [[Sobre un asentamiento purépecha se fundó Valladolid en 1541; hoy se llama Morelia, y su nombre propio no volvió|britannica-morelia]].",
      "[[Desde 1607, el Desagüe de Huehuetoca empezó a secar los lagos para proteger a la ciudad española, y les quitó el sustento a los pueblos que vivían del lago|candiani2012]]."
@@ -21120,7 +21374,33 @@
      "caso-mani",
      "caso-lenguas",
      "caso-templos-iglesias"
-    ]
+    ],
+    "visual": "censura",
+    "censura": {
+     "titulo": "La censura, con fecha",
+     "eventos": [
+      {
+       "anio": "1536–1543",
+       "texto": "[[El obispo Zumárraga usó la Inquisición contra unos treinta líderes, casi todos indígenas, acusados de paganismo|lopesdon2006]]."
+      },
+      {
+       "anio": "1539",
+       "texto": "[[La Inquisición quemó en la hoguera a don Carlos Ometochtzin, señor de Texcoco y nieto de Nezahualcóyotl|ruizmedrano2014]]."
+      },
+      {
+       "anio": "1562",
+       "texto": "[[Diego de Landa quemó los libros mayas en Maní porque «no tenían cosa en que no hubiese superstición»|landa1566]]."
+      },
+      {
+       "anio": "1577",
+       "texto": "[[Felipe II mandó recoger los manuscritos de Sahagún y prohibió escribir, «en ninguna lengua», sobre la manera de vivir de los indios|leonportilla1998]]."
+      },
+      {
+       "anio": "Hoy",
+       "texto": "[[En los libros de Historia de secundaria en España, la aniquilación de la Conquista queda escondida tras el relato del «encuentro»|ramirez2026arbor]]."
+      }
+     ]
+    }
    },
    {
     "id": "cuenta-niega",
@@ -21129,6 +21409,7 @@
     "entrada": "Una cosa es exigir perdón y otra ignorar lo que pasó. En México se aprende en la escuela. En España suele contarse como un encuentro, y en el resto del mundo casi no se cuenta.",
     "texto": [
      "Si México debe exigir que España pida perdón es una discusión. Saber lo que pasó es otra, y en México se aprende desde la primaria: [[la ficha de Historia de la SEP para cuarto grado enseña que las epidemias del siglo XVI hicieron caer la población indígena, que comunidades enteras de Mesoamérica se vaciaron y que llegaron nuevas formas de explotación del trabajo|sep2025caida]].",
+     "Aun así, ni en México se dimensiona del todo. La misma ficha habla de «un descenso importante». [[Cook y Borah calcularon 25.2 millones de personas en el centro de México en 1518 y unas 730,000 hacia 1620–1625|cookborah1979]]: de cada cien, quedaron tres. Y lo que sobrevivió de su escritura está lejos: [[el Códice de Dresde, en Sajonia|dresde]]; [[el Mendoza, en Oxford|mendoza]]; [[el Florentino, en Florencia|sahagun1577]]. [[El penacho de plumas de quetzal sigue en Viena, que dice que es demasiado frágil para viajar|weltmuseum]].",
      "En España no suele ser parte de lo que se enseña. [[Un estudio de 2026 sobre tres libros de Historia de 2º de ESO, para alumnos de 13 y 14 años, encontró que la aniquilación demográfica y cultural de la Conquista queda escondida tras el relato del «encuentro» entre culturas y del avance de la civilización|ramirez2026arbor]]. [[En uno de esos libros, la esclavitud aparece como un trámite: personas «llevadas» desde África «allí donde la mano de obra indígena escaseaba»|ramirez2026arbor]]. [[El relato abiertamente civilizador se ha ido dejando atrás, pero la esclavitud se sigue omitiendo con frecuencia|ramirez2026arbor]].",
      "Y hay quien va más lejos y lo llama «leyenda negra»: propaganda inventada por los rivales del imperio. [[El libro Imperiofobia y leyenda negra (2016) vendió más de 100,000 ejemplares en España con una reivindicación del imperio español; sus críticos le señalan citas fuera de contexto, manipulaciones de la bibliografía y omisiones|mendoza2022]]. [[Entre lo que el libro no resuelve, escribe Breny Mendoza, está la destrucción del mundo indígena|mendoza2022]].",
      "Fuera de México y de España, lo que falta es más simple: saber de dónde vino. El chocolate se dice suizo o belga; la vainilla, de Madagascar o «Bourbon»; el jitomate, italiano. El guajolote se llama turkey, como si viniera de Turquía, y la nochebuena lleva el nombre de un diplomático estadounidense. El mundo usa cada día lo que México aportó sin saber que salió de aquí. Y quien no sabe lo que México dio tampoco puede ver lo que perdió.",
@@ -21181,7 +21462,9 @@
      "nochebuena"
     ],
     "casos": [
-     "caso-matanzas"
+     "caso-matanzas",
+     "caso-codices",
+     "caso-penacho"
     ],
     "cita": {
      "texto": "Comunidades enteras de Mesoamérica se vaciaron.",

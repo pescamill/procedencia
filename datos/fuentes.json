@@ -2309,5 +2309,25 @@
   "publicacion": "Arbor 202 (815): 3118",
   "url": "https://doi.org/10.3989/arbor.2026.815.3118",
   "nota": "Tres libros de Geografía e Historia de 2º de ESO usados en España. Retoma a Bermúdez y Argumero (2018)."
+ },
+ {
+  "id": "humboldt1814",
+  "tipo": "primaria",
+  "autores": "Humboldt, A. de (trad. J. Black)",
+  "anio": 1814,
+  "titulo": "Political Essay on the Kingdom of New Spain, vol. IV",
+  "publicacion": "Londres, Longman, Hurst, Rees, Orme y Brown; segunda edición",
+  "url": "https://archive.org/details/politicalessayo03humbgoog",
+  "nota": "Leídos el libro V, cap. XII (lo que se exportaba por Veracruz) y el libro VI, cap. XIII (los ramos de la Real Hacienda y su destino). Cifras de hacia 1803."
+ },
+ {
+  "id": "lozano2005",
+  "tipo": "libro",
+  "autores": "Lozano Armendares, T.",
+  "anio": 2005,
+  "titulo": "Las bebidas prohibidas, en El chinguirito vindicado. El contrabando de aguardiente de caña y la política colonial",
+  "publicacion": "México, UNAM, Instituto de Investigaciones Históricas; segunda edición, pp. 17–42",
+  "url": "https://historicas.unam.mx/publicaciones/publicadigital/libros/305/305_04_02_BebidasProhibidas.pdf",
+  "nota": "Leído el capítulo: bebidas legales, prohibición del mezcal y estanco de Guadalajara, viñedos."
  }
 ]

@@ -1066,6 +1066,47 @@ footer.bottom { background: color-mix(in srgb, var(--surface) 45%, transparent);
 .cn-hero h1 { font-size: clamp(40px, 6.4vw, 72px); letter-spacing: -.03em; }
 .cn-lead { margin: 16px 0 0; max-width: 40em; font: 400 clamp(19px, 2.2vw, 23px)/1.5 var(--serif); color: var(--ink); text-wrap: pretty; }
 .cn-guia { margin: 16px 0 0; max-width: 46em; font-size: 14.5px; color: var(--ink-2); }
+.cn-sub { margin: 10px 0 0; font: 500 italic clamp(20px, 2.6vw, 28px)/1.25 var(--serif); letter-spacing: -.01em; color: var(--accent); }
+
+/* La portada del relato: lo que sostiene, en corto */
+.cn-sub a { color: inherit; text-decoration: none; }
+.cn-sub a:hover { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.cn-portada { max-width: 1140px; padding-top: 20px; }
+.cn-tesis ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.tesis { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; padding: 14px 16px; border-radius: var(--r); background: var(--glass-fuerte); box-shadow: var(--glass-borde); }
+.tesis .numeral { display: block; width: 30px; height: auto; margin-top: 4px; fill: var(--accent); }
+.tesis h2 { margin: 0; font: 500 18px/1.2 var(--serif); letter-spacing: -.01em; text-wrap: balance; }
+.tesis p { margin: 5px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink-2); text-wrap: pretty; }
+.tesis-enl { display: inline-block; margin-top: 6px; font: 600 13px/1.3 var(--sans); color: var(--accent); text-decoration: none; }
+.tesis-enl:hover { text-decoration: underline; }
+
+/* La censura, con fecha (va dentro del acto «Lo que se borró») */
+.cn-censura { padding: 16px 18px 18px; border-radius: var(--r); background: var(--surface); box-shadow: var(--ring); }
+.cn-censura ol { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+.cn-censura li { position: relative; padding: 22px 14px 0 0; }
+.cn-censura li::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--line); }
+.cn-censura li::after { content: ""; position: absolute; left: 0; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--surface); }
+.cn-censura li:last-child::after { background: var(--surface); box-shadow: inset 0 0 0 2px var(--accent), 0 0 0 3px var(--surface); }
+.cs-anio { display: block; font: 700 12.5px/1.3 var(--sans); color: var(--accent); letter-spacing: .02em; }
+.cn-censura p { margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+
+/* Lo que cobraba la Corona: a dónde iba */
+.rp-barra { display: flex; gap: 2px; height: 22px; border-radius: 6px; overflow: hidden; }
+.rp-p, .rp-ley .sw { background: var(--g-otro); }
+.rp-p.p1, .rp-ley .sw.p1 { background: color-mix(in srgb, var(--g-otro) 45%, var(--surface)); }
+.rp-p.destaca, .rp-ley .sw.destaca { background: var(--g-valle); }
+.rp-ley { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; margin: 10px 0 0; padding: 0; font-size: 14px; color: var(--ink-2); }
+.rp-ley b { color: var(--ink); font-weight: 600; }
+.rp-ley .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+
+@media (max-width: 1000px) {
+  .cn-tesis ol { grid-template-columns: 1fr; gap: 8px; }
+  .cn-censura ol { grid-template-columns: 1fr; }
+  .cn-censura li { padding: 0 0 14px 26px; }
+  .cn-censura li::before { left: 5px; right: auto; top: 14px; bottom: 0; width: 2px; height: auto; }
+  .cn-censura li:last-child::before { display: none; }
+}
+}
 
 /* La tira de actos: un índice que se queda arriba y marca dónde vas */
 .cn-tira { position: sticky; top: 58px; z-index: 6; margin-top: 22px; background: color-mix(in srgb, var(--paper) 78%, transparent);
@@ -1298,6 +1339,7 @@ dialog.visor img { display: block; width: 100%; height: 100%; max-height: calc(1
 .ac-caja::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: var(--trazo); }
 .ac-texto { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .ac-t { font: 500 clamp(32px, 4.4vw, 52px)/1.05 var(--serif); letter-spacing: -.025em; }
+.ac-sub { margin-top: -4px; font: 500 italic clamp(17px, 1.8vw, 21px)/1.3 var(--serif); color: var(--accent); }
 .ac-p { max-width: 36em; font: 400 17px/1.6 var(--sans); color: var(--ink-2); }
 .ac-texto .btn { margin-top: 6px; }
 .ac-laminas { position: relative; height: 240px; }

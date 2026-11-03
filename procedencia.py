@@ -248,7 +248,17 @@ def verificar(cat, fichas, fuentes, casos, recorridos, wcvp=None):
                 if clave in p and p[clave] not in vistos:
                     errores.append(f"recorrido {r['id']}: {clave} «{p[clave]}» no existe")
 
-    capitulos = cuenta()["capitulos"]
+    cta = cuenta()
+    capitulos = cta["capitulos"]
+    # La portada del relato: los puntos que sostiene, con frases marcadas como los actos.
+    portada = {"id": "cuenta", "tesis": cta.get("tesis", [])}
+    for p in [t["texto"] for t in cta.get("tesis", [])]:
+        if p.count("[[") != len(MARCA.findall(p)) or p.count("]]") != p.count("[["):
+            errores.append(f"cuenta: marca [[frase|fuentes]] mal cerrada: {p[:60]}")
+    for x in fuentes_de_datos(portada):
+        usadas.add(x)
+        if x not in conjunto_fuentes:
+            errores.append(f"cuenta: fuente «{x}» no existe")
     for cap in capitulos:
         if cap["id"] in vistos:
             errores.append(f"{cap['id']}: id repetido")
@@ -258,7 +268,8 @@ def verificar(cat, fichas, fuentes, casos, recorridos, wcvp=None):
         for x in cap.get("fichas", []) + cap.get("casos", []):
             if x not in vistos:
                 errores.append(f"{cap['id']}: «{x}» no existe")
-        for p in cap.get("texto", []) + [n["texto"] for n in (cap.get("flujo") or {}).get("nodos", []) + cap.get("linea", [])]:
+        otros = (cap.get("flujo") or {}).get("nodos", []) + cap.get("linea", []) + (cap.get("censura") or {}).get("eventos", [])
+        for p in cap.get("texto", []) + [n["texto"] for n in otros]:
             if p.count("[[") != len(MARCA.findall(p)) or p.count("]]") != p.count("[["):
                 errores.append(f"{cap['id']}: marca [[frase|fuentes]] mal cerrada: {p[:60]}")
         lam = cap.get("lamina")
@@ -538,7 +549,7 @@ TRADUCIBLES = {
     "lengua", "glosa", "sin_originario", "excluye", "incluye", "respuesta", "lugar", "reclamo",
     "institucion", "ciudad", "codice", "nombre_propio", "autoria", "periodo", "enfoque", "pendiente",
     "conclusion", "creencia", "objetivo", "nota_alcance", "regla_tradicion", "donde", "decia", "como",
-    "marca", "por_que", "fecha_precio", "pie", "custodia", "quien",
+    "marca", "por_que", "fecha_precio", "pie", "custodia", "quien", "subtitulo", "cap",
 }
 NO_SE_TRADUCEN = {"fuentes", "relacionadas", "pueblos", "fichas", "heredan", "aqui", "alla", "lineas"}
 

@@ -291,6 +291,7 @@
           <span class="ac-texto">
             <span class="eyebrow">${L(`Un relato en ${CUENTA.capitulos.length} actos`, `A story in ${CUENTA.capitulos.length} acts`)}</span>
             <b class="ac-t">${esc(CUENTA.titulo)}</b>
+            ${CUENTA.subtitulo ? `<span class="ac-sub">${esc(CUENTA.subtitulo)}</span>` : ""}
             <span class="ac-p">${L("La riqueza que se sacó de México durante la Colonia, el trabajo forzado del pueblo indígena que la hizo posible y a dónde fue a parar. Contada con códices de la época, y con la fuente de cada dato a un clic. México lo enseña en sus escuelas; fuera de aquí, todavía se niega o se ignora.", "The wealth taken from Mexico during the colonial era, the forced labor of Indigenous people that made it possible, and where it ended up. Told with codices of the period, with the source of every fact one click away. Mexico teaches it in its schools; elsewhere it is still denied or ignored.")}</span>
             <span class="btn primary">${L("Leer el relato", "Read the story")}</span>
           </span>
@@ -969,6 +970,43 @@
         <p class="cap">${L("Se discute cuánta gente había, no si murió.", "What is debated is how many people there were, not whether they died.")}${N.cita(g.fuentes)}</p>
       </figure>`;
     }
+    // Barras horizontales de una sola serie, en pesos; la fila que destaca va en el otro color.
+    function barras(g, N) {
+      const filas = g.filas, W = 640, izq = 250, der = W - 96, alto = 26, H = filas.length * alto + 8;
+      const max = Math.max(...filas.map((f) => f.valor));
+      const X = (v) => izq + (v / max) * (der - izq);
+      const cifra = (f) => (f.rango ? `${r1(f.rango[0] / 1e6)}–${r1(f.rango[1] / 1e6)} ${L("millones", "million")}` : f.valor >= 1e6 ? `${r1(f.valor / 1e6)} ${L("millones", "million")}` : fmt(f.valor));
+      const barra = filas.map((f, i) => {
+        const y = 4 + i * alto, t = `<b>${esc(f.nombre)}</b>${f.rango ? `${fmt(f.rango[0])}–${fmt(f.rango[1])}` : fmt(f.valor)} ${L("pesos", "pesos")}${f.nota ? ` (${esc(f.nota)})` : ""}`;
+        return `<g class="fila${f.destaca ? " valle" : ""}" ${tip(t)}><rect class="hit" x="0" y="${y - 3}" width="${W}" height="${alto}"/>
+          <text class="gk" x="${izq - 10}" y="${y + 13}" text-anchor="end">${esc(f.nombre)}</text>
+          <rect class="b" x="${izq}" y="${y + 3}" width="${Math.max(2, r1(X(f.valor) - izq))}" height="13" rx="3"/>
+          <text class="gv" x="${r1(Math.max(X(f.valor), izq + 2) + 8)}" y="${y + 13}">${cifra(f)}</text></g>`;
+      }).join("");
+      return `<figure class="graf barras">
+        <figcaption class="graf-t">${esc(g.nombre)}</figcaption>
+        <div class="graf-scroll"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(g.nombre)}">${barra}</svg></div>
+        <details class="graf-datos"><summary>${L("Ver los datos", "See the data")}</summary><table><tbody>${filas.map((f) => `<tr><td>${esc(f.nombre)}</td><td>${f.rango ? `${fmt(f.rango[0])}–${fmt(f.rango[1])}` : fmt(f.valor)}${f.nota ? ` <span class="muted small">(${esc(f.nota)})</span>` : ""}</td></tr>`).join("")}</tbody></table></details>
+        <p class="cap">${esc(g.cap)}${N.cita(g.fuentes)}</p>
+      </figure>`;
+    }
+    // Una barra partida: a dónde iba lo que se cobraba.
+    function reparto(g, N) {
+      const total = g.partes.reduce((n, p) => n + p.valor, 0);
+      return `<figure class="graf reparto">
+        <figcaption class="graf-t">${esc(g.nombre)}</figcaption>
+        <div class="rp-barra">${g.partes.map((p, i) => `<span class="rp-p p${i}${p.destaca ? " destaca" : ""}" style="flex:${p.valor}" ${tip(`<b>${esc(p.nombre)}</b>${fmt(p.valor)} ${L("pesos", "pesos")} · ${pct(p.valor, total)} %`)}></span>`).join("")}</div>
+        <ul class="rp-ley">${g.partes.map((p, i) => `<li><i class="sw p${i}${p.destaca ? " destaca" : ""}"></i><b>${r1(p.valor / 1e6)} ${L("millones", "million")}</b> ${esc(p.nombre)}</li>`).join("")}</ul>
+        <p class="cap">${L("Hacia 1803, en pesos.", "Around 1803, in pesos.")}${N.cita(g.fuentes)}</p>
+      </figure>`;
+    }
+    // La censura, con fecha: una franja de hechos, cada uno con su fuente.
+    function censura(g, N) {
+      return `<section class="cn-censura" aria-label="${esc(g.titulo)}">
+          <span class="k">${esc(g.titulo)}</span>
+          <ol>${g.eventos.map((e) => `<li><span class="cs-anio">${e.anio === "Hoy" ? L("Hoy", "Today") : esc(e.anio)}</span><p>${prosa(e.texto, N)}</p></li>`).join("")}</ol>
+        </section>`;
+    }
     function ciudadCuenta(g, N) {
       return `<div class="ciudad">
         <div><span class="k">1519 · Tenochtitlan-Tlatelolco</span><b>${fmt(g.antes[0])}–${fmt(g.antes[1])}</b><span class="muted small">${L("personas, según la estimación", "people, depending on the estimate")}${N.cita(g.fuentes.slice(0, -1))}</span></div>
@@ -1040,7 +1078,9 @@
         ciudad: () => ciudadCuenta(c.ciudad, N),
         poblacion: () => graficaSerie(c.graficas.serie, N) + graficaCaidas(c.graficas.estimaciones, N),
         minas: () => mercurio(c.minas, N),
-        dinero: () => dineroCuenta(c.calculo, N),
+        dinero: () => dineroCuenta(c.calculo, N) + (c.exporta ? barras(c.exporta, N) : ""),
+        corona: () => barras(c.corona.ingresos, N) + reparto(c.corona.reparto, N),
+        censura: () => censura(c.censura, N),
         flujo: () => flujo(c.flujo, N),
         linea: () => lineaNiega(c.linea, N)
       }[c.visual] || (() => ""))();
@@ -1058,6 +1098,10 @@
           ${ultimo ? `<p class="cierre-enl"><a class="btn" href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> <a class="btn ghost" href="#/nombres">${L("Los nombres", "The names")}</a></p>` : ""}
         </section>`;
       };
+      // La portada va antes que los actos para que sus fuentes lleven los primeros números.
+      const tesis = (CUENTA.tesis || []).length ? `<section class="cn-tesis" aria-label="${L("Lo que este relato sostiene", "What this account holds")}">
+          <ol>${CUENTA.tesis.map((t, i) => `<li class="tesis">${numeral(i + 1)}<div><h2>${esc(t.titulo)}</h2><p>${prosa(t.texto, N)}</p>${t.enlace ? `<a class="tesis-enl" href="${esc(t.enlace.href)}">${esc(t.enlace.texto)} ↓</a>` : ""}</div></li>`).join("")}</ol>
+        </section>` : "";
       const actos = caps.map(acto).join("");
       const refs = N.lista(true);
       const tira = `<nav class="cn-tira" aria-label="${L("Actos", "Acts")}"><ol>${caps.map((c, i) => `<li><a href="#/cuenta#${c.id}" data-acto="${c.id}">${numeral(i + 1)}<span>${esc(c.titulo)}</span></a></li>`).join("")}</ol></nav>`;
@@ -1065,9 +1109,11 @@
         <header class="cn-hero wrap">
           <p class="eyebrow"><a href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> · ${L("contexto", "context")}</p>
           <div class="enc-h1"><h1>${esc(CUENTA.titulo)}</h1>${botonCompartir()}</div>
+          ${CUENTA.subtitulo ? `<p class="cn-sub"><a href="#/cuenta#cuenta-borrado">${esc(CUENTA.subtitulo)}</a></p>` : ""}
           <p class="cn-lead">${esc(CUENTA.entrada)}</p>
-          <p class="cn-guia"><span class="ev muestra">${L("Las frases subrayadas", "Underlined phrases")}</span> ${L("llevan su fuente: pasa el mouse para verla o haz clic para abrirla abajo. Las láminas son de códices de la época y se amplían con un clic.", "carry their source: hover to see it, or click to open it below. The plates come from codices of the period and enlarge with a click.")}</p>
+          <p class="cn-guia"><span class="ev muestra">${L("Las frases subrayadas", "Underlined phrases")}</span> ${L("llevan su fuente: un clic y se abre abajo.", "carry their source: click and it opens below.")}</p>
         </header>
+        <div class="cn-portada wrap">${tesis}</div>
         ${tira}
         <div class="cn-camino wrap"><div class="huellas" aria-hidden="true"><i></i></div>
           ${actos}

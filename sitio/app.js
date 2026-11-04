@@ -1233,7 +1233,7 @@
       const acto = (c, i) => {
         const ultimo = i === caps.length - 1;
         return `<section class="cn-acto${ultimo ? " cierre" : ""}" id="${c.id}">
-          <span class="acto-glifo">${numeral(i + 1)}</span>
+          <button class="acto-glifo" type="button" data-a-tira title="${L("Volver a los actos", "Back to the acts")}" aria-label="${L("Volver a los actos", "Back to the acts")}">${numeral(i + 1)}</button>
           <header class="acto-cab">${c.periodo ? `<p class="acto-per">${esc(c.periodo)}</p>` : ""}<h2>${esc(c.titulo)}</h2><p class="acto-ent">${esc(c.entrada)}</p></header>
           <div class="acto-cuerpo${c.lamina ? " con-lamina" : ""}">
             <div class="acto-texto">${c.texto.slice(0, c.corte).map((p) => `<p>${prosa(p, N)}</p>`).join("")}${c.cita && !c.corte ? voz(c.cita, N) : ""}</div>
@@ -1250,7 +1250,7 @@
         </section>` : "";
       const actos = caps.map(acto).join("");
       const refs = N.lista(true);
-      const tira = `<nav class="cn-tira" aria-label="${L("Actos", "Acts")}"><ol>${caps.map((c, i) => `<li><a href="#/cuenta#${c.id}" data-acto="${c.id}">${numeral(i + 1)}<span>${esc(c.titulo)}</span></a></li>`).join("")}</ol></nav>`;
+      const tira = `<nav class="cn-tira" aria-label="${L("Actos", "Acts")}"><p class="tira-guia">${L(`El relato en ${caps.length} actos, click para navegar:`, `The story in ${caps.length} acts, click to navigate:`)}</p><ol>${caps.map((c, i) => `<li><a href="#/cuenta#${c.id}" data-acto="${c.id}" title="${esc(c.titulo)}">${numeral(i + 1)}<span>${esc(c.titulo)}</span></a></li>`).join("")}</ol></nav>`;
       return `<article class="cuenta-n" id="arriba" data-lectura="${modo}">
         <header class="cn-hero wrap">
           <p class="eyebrow"><a href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> · ${L("contexto", "context")}</p>
@@ -1601,7 +1601,6 @@
     function prepararCuenta() {
       if (vigiaActos) vigiaActos.disconnect();
       const enlaces = Object.fromEntries([...document.querySelectorAll(".cn-tira a")].map((a) => [a.dataset.acto, a]));
-      const tira = document.querySelector(".cn-tira ol");
       vigiaActos = new IntersectionObserver((entradas) => {
         entradas.forEach((e) => {
           if (!e.isIntersecting) return;
@@ -1612,7 +1611,6 @@
           a.setAttribute("aria-current", "step");
           // La dirección sigue al acto que se lee, para que «Compartir» o copiarla lleven a ese acto.
           if (location.hash !== a.getAttribute("href")) history.replaceState(null, "", a.getAttribute("href"));
-          tira.scrollTo({ left: a.parentElement.offsetLeft - 16, behavior: "smooth" });
         });
       }, { rootMargin: "-35% 0px -55% 0px" });
       document.querySelectorAll(".cn-acto").forEach((s) => vigiaActos.observe(s));
@@ -1680,6 +1678,7 @@
       if (lam) { abrirVisor(lam.dataset.lamina); return; }
       const visor = e.target.closest("dialog.visor");
       if (visor && (e.target === visor || e.target.closest(".visor-x"))) { visor.close(); return; }
+      if (e.target.closest("[data-a-tira]")) { document.querySelector(".cn-tira").scrollIntoView({ block: "center" }); return; }
       const negocio = e.target.closest("[data-negocio]");
       if (negocio) { elegirNegocio(negocio); return; }
       if (e.target.closest(".ng-cerrar")) { cerrarNegocio(true); return; }

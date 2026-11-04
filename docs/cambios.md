@@ -11,6 +11,7 @@ Al unir actos, dos quedaron demasiado largos. Ahora el relato se recorre por par
 - **«Lo que aún se niega», por preguntas.** Seis preguntas que se abren una a una: México, España, la «leyenda negra», el mestizaje, el Estado y el resto del mundo.
 - **Remate al final.** La última frase de cada acto largo cierra después de sus gráficas, no antes.
 - **«Para seguir» más corto.** Seis enlaces a la vista y el resto con un botón.
+- **Una tira de actos que se entiende.** Ya no se corta ni se mueve sola: los diez numerales, a la vista, bajo la frase «El relato en 10 actos, click para navegar». El numeral de cada acto regresa a la tira.
 
 ### Casos de uso
 

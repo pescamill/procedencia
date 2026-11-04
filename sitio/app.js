@@ -1079,16 +1079,19 @@
     // La censura y la negación, con fecha: dos carriles, aquí y España, con el año en medio.
     function censura(g, N) {
       const anios = [...new Set(g.eventos.map((e) => e.anio))];
-      const aqui = L("La Nueva España y México", "New Spain and Mexico"), espana = L("España", "Spain");
-      const carril = (a, lado, nombre) => {
-        const es = g.eventos.filter((e) => e.anio === a && e.lado === lado);
-        return `<div class="cs-${lado}">${es.map((e) => `<div class="cs-e"><span class="cs-lado">${nombre}</span><p>${prosa(e.texto, N)}</p></div>`).join("")}</div>`;
+      const nombres = { espana: L("España", "Spain"), "nueva-espana": L("Nueva España", "New Spain"), mexico: L("México", "Mexico") };
+      const carril = (a, clase, lados) => {
+        const es = g.eventos.filter((e) => e.anio === a && lados.includes(e.lado));
+        return `<div class="cs-${clase}">${es.map((e) => `<div class="cs-e"><span class="cs-lado">${nombres[e.lado]}</span><p>${prosa(e.texto, N)}</p></div>`).join("")}</div>`;
       };
+      // La Nueva España termina en 1821: desde ahí, el carril es del México independiente.
+      const primero = g.eventos.find((e) => e.lado === "mexico").anio;
+      const corte = `<li class="cs-corte"><i></i><span class="cs-anio">1821</span><b>${L("México independiente", "Independent Mexico")}</b></li>`;
       const anio = (a) => (a === "Hoy" ? L("Hoy", "Today") : esc(a));
       return `<section class="cn-censura" aria-label="${esc(g.titulo)}">
           <span class="k">${esc(g.titulo)}</span>
-          <div class="cs-cab" aria-hidden="true"><b>${espana}</b><i></i><b>${aqui}</b></div>
-          <ol>${anios.map((a) => `<li>${carril(a, "espana", espana)}<span class="cs-anio">${anio(a)}</span>${carril(a, "aqui", aqui)}</li>`).join("")}</ol>
+          <div class="cs-cab" aria-hidden="true"><b>${nombres.espana}</b><i></i><b>${nombres["nueva-espana"]}</b></div>
+          <ol>${anios.map((a) => `${a === primero ? corte : ""}<li>${carril(a, "espana", ["espana"])}<span class="cs-anio">${anio(a)}</span>${carril(a, "aqui", ["nueva-espana", "mexico"])}</li>`).join("")}</ol>
         </section>`;
     }
     function ciudadCuenta(g, N) {
@@ -1135,6 +1138,7 @@
     function lineaNiega(eventos, N) {
       const lado = { reconoce: L("Lo reconoce", "Acknowledges it"), niega: L("Lo niega o lo minimiza", "Denies or downplays it") };
       return `<figure class="linea-niega">
+        <span class="k">${L("Quién lo reconoce y quién lo niega", "Who acknowledges it and who denies it")}</span>
         <p class="leyenda"><span><i class="sw reconoce"></i>${lado.reconoce}</span><span><i class="sw niega"></i>${lado.niega}</span></p>
         <ol>${eventos.map((e) => `<li class="${e.lado}"><span class="ln-anio">${esc(e.anio)}</span><div class="ln-c"><span class="k">${lado[e.lado]}</span><p>${prosa(e.texto, N)}</p></div></li>`).join("")}</ol>
       </figure>`;
@@ -1151,22 +1155,28 @@
     function vistaCuenta() {
       const N = notas();
       const caps = CUENTA.capitulos;
+      const minutos = Math.round(caps.flatMap((k) => k.texto).join(" ").replace(/\|[^\]]*\]\]/g, "").split(/\s+/).length / 200);
+      let modo = "completa";
+      try { if (localStorage.getItem("procedencia-lectura") === "breve") modo = "breve"; } catch {}
       const seguir = (c) => {
         const casos = c.casos.map((id) => CASO[id]).filter(Boolean), fichas = c.fichas.filter((id) => FICHA[id]);
         if (!casos.length && !fichas.length && !c.enlace) return "";
         return `<div class="seguir"><span class="k">${L("Para seguir", "Keep going")}</span>
-          ${casos.map((k) => `<a class="chip" href="#/caso/${k.id}"><span class="sw" style="background:${COLOR_CASO[k.tipo]}"></span>${esc(k.titulo)}</a>`).join("")}
-          ${fichas.map(chipFicha).join("")}${c.enlace ? `<a class="chip enl" href="${esc(c.enlace.href)}">${esc(c.enlace.texto)} →</a>` : ""}</div>`;
+          ${(() => {
+            const todos = [...casos.map((k) => `<a class="chip" href="#/caso/${k.id}"><span class="sw" style="background:${COLOR_CASO[k.tipo]}"></span>${esc(k.titulo)}</a>`), ...fichas.map(chipFicha)];
+            const resto = todos.slice(6);
+            return todos.slice(0, 6).join("") + (resto.length ? `<button class="chip seguir-mas" type="button">${L(`${resto.length} más`, `${resto.length} more`)}</button><span class="seguir-resto" hidden>${resto.join("")}</span>` : "");
+          })()}${[c.enlace, c.enlace2].filter(Boolean).map((l) => `<a class="chip enl" href="${esc(l.href)}">${esc(l.texto)} →</a>`).join("")}</div>`;
       };
       // Los negocios: cada tarjeta, su cifra. Las que vienen en pesos se pasan a plata de hoy con el mismo cálculo del acto del dinero.
-      const negocios = (d, N) => {
+      const negocios = (d, N, texto) => {
         const k = CAP["cuenta-plata"].calculo;
         const cifra = (t) => {
           if (!t.pesos) return esc(t.marca);
           const m = fmt(Math.round((t.pesos * k.onzas_por_peso * k.precio_onza) / 1e6));
           return `${t.mas ? L("Más de ", "Over ") : ""}US$${m} ${L("millones", "million")}`;
         };
-        const tarjeta = (t) => {
+        const tarjeta = (t, i) => {
           const f = t.ficha ? FICHA[t.ficha] : t;
           return `<li class="ng-t">${foto({ imagen: f.imagen, nombre: t.nombre, ambito: f.ambito })}
             <div class="ng-c"><h3>${esc(t.nombre)}</h3>
@@ -1174,6 +1184,7 @@
               ${t.pesos ? `<span class="ng-u">${L("en plata de hoy", "in today's silver")}</span>` : ""}
               <p class="ng-n">${esc(t.nota)}${N.cita(t.fuentes)}</p>
               <dl><dt>${L("Quién", "Who")}</dt><dd>${esc(t.quien)}</dd><dt>${L("Cómo", "How")}</dt><dd>${esc(t.como)}</dd></dl>
+              <button class="ng-abrir" type="button" data-negocio="${i}" aria-expanded="false" aria-controls="ng-panel">${L("Leer la historia", "Read the story")}</button>
               ${credito(f.imagen)}
             </div></li>`;
         };
@@ -1190,12 +1201,16 @@
           <p class="cap">${esc(d.cobro.pie)}${N.cita(d.cobro.fuentes)}</p>
         </figure>`;
         return `<section class="cn-negocios" aria-label="${L("Las cifras de cada negocio", "The figures for each business")}">
-          <ul class="ng-lista">${d.tarjetas.map(tarjeta).join("")}</ul>
+          <ul class="ng-lista">${d.tarjetas.map(tarjeta).join("")}
+            <li class="ng-panel" id="ng-panel" tabindex="-1" hidden>
+              <button class="ng-cerrar" type="button">${L("Cerrar", "Close")}</button>
+              ${d.tarjetas.map((t, i) => `<div data-historia="${i}" hidden><h4>${esc(t.nombre)}</h4>${t.parrafos.map((n) => `<p>${prosa(texto[n], N)}</p>`).join("")}</div>`).join("")}
+            </li></ul>
           <p class="cap">${esc(d.cap)} ${L(`«Plata de hoy» es cada peso en ${fmt(k.onzas_por_peso)} onzas de plata, a ${fmt(k.precio_onza)} dólares la onza (${esc(k.fecha_precio)}): dice el peso del metal, no lo que compraba.`, `“Today's silver” is each peso as ${fmt(k.onzas_por_peso)} ounces of silver, at ${fmt(k.precio_onza)} dollars an ounce (${esc(k.fecha_precio)}): it gives the weight of the metal, not what it bought.`)}</p>
           <div class="ng-dos">${oro}${cobro}</div>
         </section>`;
       };
-      const visual = (c) => ({
+      const visual = (c, clave = c.visual) => ({
         ciudad: () => ciudadCuenta(c.ciudad, N),
         poblacion: () => graficaSerie(c.graficas.serie, N) + graficaCaidas(c.graficas.estimaciones, N),
         minas: () => mercurio(c.minas, N),
@@ -1204,18 +1219,27 @@
         censura: () => censura(c.censura, N),
         flujo: () => flujo(c.flujo, N),
         linea: () => lineaNiega(c.linea, N),
-        negocios: () => negocios(c.negocios, N)
-      }[c.visual] || (() => ""))();
+        negocios: () => negocios(c.negocios, N, c.texto)
+      }[clave] || (() => ""))();
+      // Un acto puede tener dos partes; con «juntas», sus dos gráficas van seguidas al final.
+      const uno = (c) => (c.visual ? `<div class="acto-visual">${visual(c)}</div>` : "");
+      const parte = (c) => {
+        const ocupados = new Set([c.remate, ...[...(c.temas || []), ...((c.negocios || {}).tarjetas || [])].flatMap((x) => x.parrafos || [])]);
+        const libres = c.texto.filter((p, i) => i >= c.corte && !ocupados.has(i));
+        const temas = (c.temas || []).map((t, i) => `<details class="tema"${i ? "" : " open"}><summary>${esc(t.titulo)}</summary>${t.parrafos.map((n) => `<p>${prosa(c.texto[n], N)}</p>`).join("")}</details>`).join("");
+        return `<div class="acto-cuerpo acto-parte" id="${c.ancla}"><h3>${esc(c.subtitulo)}</h3>${temas ? `<div class="temas">${temas}</div>` : ""}<div class="acto-texto">${libres.map((p) => `<p>${prosa(p, N)}</p>`).join("")}</div></div>`;
+      };
+      const remate = (c) => `<div class="acto-remate"><p>${prosa(c.texto[c.remate], N)}</p>${c.cita ? voz(c.cita, N) : ""}</div>`;
       const acto = (c, i) => {
         const ultimo = i === caps.length - 1;
         return `<section class="cn-acto${ultimo ? " cierre" : ""}" id="${c.id}">
           <span class="acto-glifo">${numeral(i + 1)}</span>
           <header class="acto-cab">${c.periodo ? `<p class="acto-per">${esc(c.periodo)}</p>` : ""}<h2>${esc(c.titulo)}</h2><p class="acto-ent">${esc(c.entrada)}</p></header>
           <div class="acto-cuerpo${c.lamina ? " con-lamina" : ""}">
-            <div class="acto-texto">${c.texto.map((p) => `<p>${prosa(p, N)}</p>`).join("")}${c.cita ? voz(c.cita, N) : ""}</div>
+            <div class="acto-texto">${c.texto.slice(0, c.corte).map((p) => `<p>${prosa(p, N)}</p>`).join("")}${c.cita && !c.corte ? voz(c.cita, N) : ""}</div>
             ${c.lamina ? `<div class="acto-lam">${lamina(c.lamina, c.id)}</div>` : ""}
           </div>
-          ${c.visual ? `<div class="acto-visual">${visual(c)}</div>` : ""}
+          ${c.corte ? (c.juntas ? parte(c) + uno(c) : uno(c) + parte(c)) + `<div class="acto-visual">${visual(c, c.visual2)}</div>` + remate(c) : uno(c)}
           ${seguir(c)}
           ${ultimo ? `<p class="cierre-enl"><a class="btn" href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> <a class="btn ghost" href="#/nombres">${L("Los nombres", "The names")}</a></p>` : ""}
         </section>`;
@@ -1227,13 +1251,17 @@
       const actos = caps.map(acto).join("");
       const refs = N.lista(true);
       const tira = `<nav class="cn-tira" aria-label="${L("Actos", "Acts")}"><ol>${caps.map((c, i) => `<li><a href="#/cuenta#${c.id}" data-acto="${c.id}">${numeral(i + 1)}<span>${esc(c.titulo)}</span></a></li>`).join("")}</ol></nav>`;
-      return `<article class="cuenta-n" id="arriba">
+      return `<article class="cuenta-n" id="arriba" data-lectura="${modo}">
         <header class="cn-hero wrap">
           <p class="eyebrow"><a href="#/despojo">${L("Lo que se les quitó", "What was taken from them")}</a> · ${L("contexto", "context")}</p>
           <div class="enc-h1"><h1>${esc(CUENTA.titulo)}</h1>${botonCompartir()}</div>
           ${CUENTA.subtitulo ? `<p class="cn-sub"><a href="#/cuenta#cuenta-borrado">${esc(CUENTA.subtitulo)}</a></p>` : ""}
           <p class="cn-lead">${esc(CUENTA.entrada)}</p>
           <p class="cn-guia"><span class="ev muestra">${L("Las frases subrayadas", "Underlined phrases")}</span> ${L("llevan su fuente: un clic y se abre abajo.", "carry their source: click and it opens below.")}</p>
+          <div class="cn-modo" role="group" aria-label="${L("Cómo leer", "How to read")}">
+            <button type="button" data-lectura="completa" aria-pressed="${modo === "completa"}">${L(`Todo el texto · ${minutos} min`, `Full text · ${minutos} min`)}</button>
+            <button type="button" data-lectura="breve" aria-pressed="${modo === "breve"}">${L("Lo esencial: entradas y gráficas", "The essentials: intros and charts")}</button>
+          </div>
         </header>
         <div class="cn-portada wrap">${tesis}</div>
         ${tira}
@@ -1271,6 +1299,36 @@
           <p class="muted small">${esc(l.custodia)} · ${L("Dominio público", "Public domain")} · <a href="${esc(l.commons)}" target="_blank" rel="noopener">Wikimedia Commons</a></p>
           <p class="small">${l.fuentes.map((x) => refFuente(FUENTE[x])).join("<br>")}</p></div>`;
       v.showModal();
+    }
+    // La historia de un negocio se abre bajo la fila de su tarjeta.
+    function cerrarNegocio(volver) {
+      const panel = document.getElementById("ng-panel");
+      if (!panel || panel.hidden) return;
+      const abierto = document.querySelector('[data-negocio][aria-expanded="true"]');
+      panel.hidden = true;
+      if (abierto) {
+        abierto.setAttribute("aria-expanded", "false");
+        abierto.textContent = L("Leer la historia", "Read the story");
+        abierto.closest(".ng-t").classList.remove("abierta");
+        if (volver) abierto.focus();
+      }
+    }
+    function elegirNegocio(boton) {
+      const repetido = boton.getAttribute("aria-expanded") === "true";
+      cerrarNegocio(repetido);
+      if (repetido) return;
+      const lista = boton.closest(".ng-lista"), panel = document.getElementById("ng-panel");
+      const tarjetas = [...lista.querySelectorAll(".ng-t")], tarjeta = boton.closest(".ng-t");
+      const cols = getComputedStyle(lista).gridTemplateColumns.split(" ").length;
+      const i = tarjetas.indexOf(tarjeta);
+      tarjetas[Math.min(tarjetas.length - 1, (Math.floor(i / cols) + 1) * cols - 1)].after(panel);
+      panel.querySelectorAll("[data-historia]").forEach((h) => { h.hidden = h.dataset.historia !== boton.dataset.negocio; });
+      panel.hidden = false;
+      boton.setAttribute("aria-expanded", "true");
+      boton.textContent = L("Cerrar la historia", "Close the story");
+      tarjeta.classList.add("abierta");
+      panel.focus({ preventScroll: true });
+      panel.scrollIntoView({ block: "nearest" });
     }
     function elegirNodo(g) {
       const fig = g.closest(".flujo");
@@ -1620,6 +1678,19 @@
       if (lam) { abrirVisor(lam.dataset.lamina); return; }
       const visor = e.target.closest("dialog.visor");
       if (visor && (e.target === visor || e.target.closest(".visor-x"))) { visor.close(); return; }
+      const negocio = e.target.closest("[data-negocio]");
+      if (negocio) { elegirNegocio(negocio); return; }
+      if (e.target.closest(".ng-cerrar")) { cerrarNegocio(true); return; }
+      const lectura = e.target.closest("[data-lectura]:not(article)");
+      if (lectura) {
+        const modo = lectura.dataset.lectura;
+        document.querySelector(".cuenta-n").dataset.lectura = modo;
+        document.querySelectorAll(".cn-modo button").forEach((b) => b.setAttribute("aria-pressed", String(b === lectura)));
+        try { localStorage.setItem("procedencia-lectura", modo); } catch {}
+        return;
+      }
+      const mas = e.target.closest(".seguir-mas");
+      if (mas) { mas.nextElementSibling.hidden = false; mas.remove(); return; }
       const nodo = e.target.closest("[data-nodo]");
       if (nodo) { elegirNodo(nodo); return; }
       const paso = e.target.closest(".cn-tira a");

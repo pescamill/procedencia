@@ -1,5 +1,44 @@
 # Cambios
 
+## Iteración 18 · 3 de noviembre de 2026
+
+Al unir actos, dos quedaron demasiado largos. Ahora el relato se recorre por partes: se elige qué abrir y nada cambia de orden.
+
+### Qué cambió
+
+- **Dos formas de leer.** «Todo el texto» o «Lo esencial», que deja entradas, láminas, gráficas y líneas. El sitio recuerda la elección en ese navegador.
+- **Cada negocio guarda su historia.** Los párrafos del tabaco, la grana, el palo, la vainilla, el sisal, el henequén, la luz y las minas salen del muro de texto y se abren bajo su tarjeta con «Leer la historia».
+- **«Lo que aún se niega», por preguntas.** Seis preguntas que se abren una a una: México, España, la «leyenda negra», el mestizaje, el Estado y el resto del mundo.
+- **Remate al final.** La última frase de cada acto largo cierra después de sus gráficas, no antes.
+- **«Para seguir» más corto.** Seis enlaces a la vista y el resto con un botón.
+
+### Casos de uso
+
+- **Entender el relato en pocos minutos.** Quien tiene prisa elige «Lo esencial» y lo recorre por entradas y gráficas.
+- **Ir solo a lo que interesa.** Quien llega por la vainilla abre esa tarjeta y lee su historia sin pasar por las otras siete.
+- **Responder una duda concreta.** «¿Qué es la leyenda negra?» se abre sola, con sus citas.
+- **Sin perder el texto.** Sigue completo en la página sin JavaScript y en los datos abiertos.
+
+## Iteración 17 · 3 de noviembre de 2026
+
+«La plata, y todo lo demás» y «Los negocios que empezaron aquí» son ahora un solo acto, y también «Lo que se borró» y «Lo que aún se niega». El relato pasa de 12 a 10 actos.
+
+### Qué cambió
+
+- **Un acto en dos partes.** Primero la plata, con su cuenta y lo que salía por Veracruz. Después, bajo el subtítulo «Los negocios que empezaron aquí», las tarjetas y las gráficas.
+- **Otro orden.** «A dónde fue» y «Lo que cobraba la Corona» pasan antes del acto unido, para que el relato no salte de las minas de hoy de vuelta a 1765.
+- **Los enlaces siguen vivos.** `#/cuenta#cuenta-plata` abre el acto, y `#/cuenta#cuenta-negocios` lleva directo a la segunda parte.
+- **Menos repetición.** Sale la frase de la grana que el acto de los negocios ya decía con más detalle.
+- **«Lo que se borró y aún se niega».** Un solo acto en dos partes, con sus dos líneas de tiempo seguidas al final. `#/cuenta#cuenta-borrado` abre el acto y `#/cuenta#cuenta-niega`, la segunda parte.
+- **Una línea para quienes censuran.** La de la censura y el encubrimiento solo trae a quienes censuraron u oscurecieron, con un corte en 1821: antes, Nueva España; después, México independiente.
+- **Otra para quienes reconocen.** Bonfil Batalla, la reforma de 1992, el perdón a los yaquis y la reforma de 2024 pasan a la línea de quién lo reconoce y quién lo niega.
+
+### Casos de uso
+
+- **Seguir el dinero de corrido.** Quien lee va de la plata al tabaco, la grana y las mineras sin cambiar de acto.
+- **Compartir solo los negocios.** La dirección con `#cuenta-negocios` abre esa parte, también en los enlaces ya compartidos.
+- **Ver quién tapó y quién reconoció.** Las dos líneas seguidas muestran por un lado a quien censuró, y por otro lo que ya se admite y lo que no.
+
 ## Iteración 16 · 3 de noviembre de 2026
 
 «Lo que aún se niega» gana un acto sobre los negocios que empezaron aquí, con cifras a la vista, y la línea de la censura llega hasta hoy, con España y México frente a frente. Antes, la portada estrenó su mosaico y el sitio, un juego.

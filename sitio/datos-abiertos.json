@@ -15175,7 +15175,7 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "cuenta-negocios",
+    "cuenta-plata",
     "tabaco-comun"
    ]
   },
@@ -15344,7 +15344,6 @@
     "fecha": "2026-11-01"
    },
    "citada_por": [
-    "cuenta-plata",
     "grana"
    ]
   },
@@ -16087,7 +16086,7 @@
    "citada_por": [
     "calendarios",
     "caso-codices",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -16153,8 +16152,8 @@
    "citada_por": [
     "algodon",
     "caso-codices",
+    "cuenta-borrado",
     "cuenta-ciudad",
-    "cuenta-niega",
     "cuenta-plata",
     "educacion",
     "grana",
@@ -16786,7 +16785,7 @@
    },
    "citada_por": [
     "caso-penacho",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -17084,8 +17083,8 @@
     "caso-matanzas",
     "caso-medicina",
     "caso-tenochtitlan",
+    "cuenta-borrado",
     "cuenta-caida",
-    "cuenta-niega",
     "cuenta-peste",
     "tabaco-mesoamericano",
     "temazcal"
@@ -17863,7 +17862,7 @@
    },
    "citada_por": [
     "caso-matanzas",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -18060,7 +18059,7 @@
    },
    "citada_por": [
     "caso-matanzas",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19051,7 +19050,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega",
+    "cuenta-borrado",
     "cuenta-peste"
    ]
   },
@@ -19506,8 +19505,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19526,7 +19524,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19545,7 +19543,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19564,7 +19562,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19583,7 +19581,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19602,7 +19600,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19622,8 +19620,7 @@
     "fecha": "2026-11-02"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -19680,7 +19677,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19696,7 +19693,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19712,7 +19709,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19728,7 +19725,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19744,7 +19741,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19760,7 +19757,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19776,7 +19773,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19792,7 +19789,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19808,7 +19805,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19824,7 +19821,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19840,7 +19837,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19856,8 +19853,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19873,7 +19869,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19889,7 +19885,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19905,7 +19901,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19921,7 +19917,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19937,7 +19933,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19953,7 +19949,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19969,7 +19965,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -19985,7 +19981,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20001,7 +19997,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20017,7 +20013,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20033,7 +20029,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20049,7 +20045,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20065,7 +20061,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20081,7 +20077,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20097,7 +20093,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20113,7 +20109,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-negocios"
+    "cuenta-plata"
    ]
   },
   {
@@ -20129,8 +20125,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20146,8 +20141,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20179,8 +20173,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20196,8 +20189,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20229,8 +20221,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20246,8 +20237,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20263,7 +20253,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20279,8 +20269,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20296,8 +20285,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20313,8 +20301,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   },
   {
@@ -20330,8 +20317,7 @@
     "resultado": "sin_comprobar"
    },
    "citada_por": [
-    "cuenta-borrado",
-    "cuenta-niega"
+    "cuenta-borrado"
    ]
   }
  ],
@@ -20341,7 +20327,7 @@
   "deslindes": 5,
   "casos": 31,
   "recorridos": 10,
-  "capitulos": 12,
+  "capitulos": 10,
   "fuentes": 291,
   "fuentes_por_resultado": {
    "ok": 228,
@@ -21699,120 +21685,83 @@
     ]
    },
    {
-    "id": "cuenta-plata",
-    "titulo": "La plata, y todo lo demás",
-    "periodo": "1521–1821",
-    "entrada": "El oro fue lo primero que se vio. Lo que movió tres siglos fue la plata, y con ella salieron la grana, el azúcar, el algodón y lo que daba la tierra.",
-    "lamina": {
-     "archivo": "img/cuenta/mendoza-47r.jpg",
-     "codice": "Códice Mendoza, folio 47r",
-     "fecha": "c. 1542",
-     "custodia": "Biblioteca Bodleiana, Oxford",
-     "pie": "Una página de tributo: plumas preciosas, trajes de guerrero y escudos. El virrey quería saber qué daba la tierra.",
-     "commons": "https://commons.wikimedia.org/wiki/File:Codex_Mendoza_folio_47r.jpg",
-     "licencia": "dominio-publico",
-     "fuentes": [
-      "mendoza"
-     ]
-    },
+    "id": "cuenta-destino",
+    "titulo": "A dónde fue",
+    "periodo": "siglos XVI–XIX",
+    "entrada": "La plata salió por Veracruz hacia Sevilla y por Acapulco hacia Manila. Casi nunca se quedó en España.",
     "texto": [
-     "[[Entre 1500 y 1800, la América española produjo entre 85,000 y 150,000 toneladas de plata: más que todo el resto del mundo junto|abadpalma2021]].",
-     "[[Humboldt escribió en 1803 que de la Casa de Moneda de México habían salido «más de dos mil millones de pesos fuertes» en menos de 300 años|marichal1999]]. Esa sola cifra, pasada a plata de hoy, da la cuenta de abajo.",
-     "Con la plata salió todo lo demás. [[En los años de paz salían cada año por Veracruz unos 17 millones de pesos en oro y plata, 2.4 millones en grana cochinilla y 1.3 millones en azúcar; además, harina, añil, cueros, zarzaparrilla, vainilla, jalapa, jabón y palo de Campeche|humboldt1814]]. [[La grana fue, después de la plata, de las exportaciones más valiosas de la Nueva España|donkin1977]]. La caña de azúcar vino de fuera; la tierra donde se sembró era de aquí.",
-     "[[Entre los primeros envíos de Cortés a Carlos V iban mantas, colchas y tapices de algodón tejidos aquí|clavijero1807]].",
-     "Hasta el maguey se volvió negocio ajeno. [[Durante la Colonia, las únicas bebidas alcohólicas legales eran los vinos y aguardientes traídos de España y el pulque|lozano2005]]. [[El mezcal estuvo prohibido en la mayor parte de la Nueva España durante tres siglos; en Guadalajara, donde se permitió desde mediados del siglo XVII, se cobró con un estanco|lozano2005]]. De ese vino mezcal viene el tequila. [[Y se prohibió plantar viñedos, para proteger el comercio del imperio|lozano2005]].",
-     "Y las plantas que hoy el mundo cree suyas: el maíz, el jitomate, el chile, el cacao, la vainilla. Esas no dejaron una cuenta en pesos: [[los cultivos de América cambiaron la alimentación y la población del Viejo Mundo|nunnqian2010]]."
+     "Elige cada punto del mapa para seguir la plata.",
+     "[[Un estudio con seis economías europeas encuentra que, cuando subía la llegada de metales de América, el producto de esas economías subía a los seis a nueve años|abadpalma2021]]."
     ],
-    "visual": "dinero",
-    "calculo": {
-     "pesos": 2000000000,
-     "onzas_por_peso": 0.786,
-     "precio_onza": 50.43,
-     "fecha_precio": "3 de noviembre de 2026",
-     "total_america": [
-      85000,
-      150000
-     ],
-     "fuentes": [
-      "marichal1999",
-      "coinvarieties-8reales",
-      "goldapi-plata",
-      "abadpalma2021"
-     ],
-     "nota": "Es un piso, no un total. Los pesos anteriores a 1772 tenían más plata; no cuenta la plata sin acuñar, el contrabando, el oro, la grana, el tributo ni el trabajo. Y el precio de hoy no dice lo que esa plata compraba entonces."
-    },
-    "fichas": [
-     "grana",
-     "algodon",
-     "agave-bebidas",
-     "palo-campeche",
-     "maiz",
-     "jitomate",
-     "chile",
-     "cacao-chocolate",
-     "vainilla"
-    ],
-    "casos": [],
-    "exporta": {
-     "nombre": "Lo que salía cada año por Veracruz, en años de paz",
-     "unidad": "pesos",
-     "filas": [
+    "visual": "flujo",
+    "flujo": {
+     "nodos": [
       {
-       "nombre": "Oro y plata",
-       "valor": 17000000,
-       "destaca": true
+       "id": "minas",
+       "titulo": "Las minas",
+       "lugar": "Zacatecas, Guanajuato, Pachuca, Taxco",
+       "texto": "[[Desde 1554, la plata se separaba con mercurio en el beneficio de patio|nriagu1994]]. La sacaban y la cargaban manos indígenas."
       },
       {
-       "nombre": "Grana cochinilla",
-       "valor": 2400000
+       "id": "mexico",
+       "titulo": "Casa de Moneda",
+       "lugar": "Ciudad de México",
+       "texto": "[[Más de dos mil millones de pesos salieron de aquí en menos de 300 años, según Humboldt|marichal1999]]."
       },
       {
-       "nombre": "Azúcar",
-       "valor": 1300000
+       "id": "veracruz",
+       "titulo": "Veracruz",
+       "lugar": "Golfo de México",
+       "texto": "[[En los años buenos salían de las tesorerías de la Nueva España hasta nueve millones de pesos al año|marichal1999]]."
       },
       {
-       "nombre": "Harina",
-       "valor": 300000
+       "id": "caribe",
+       "titulo": "El Caribe",
+       "lugar": "Cuba, Puerto Rico y otras plazas",
+       "texto": "[[Con los situados, la plata mexicana pagaba las guarniciones del Gran Caribe y de Filipinas|marichal1999]]."
       },
       {
-       "nombre": "Añil",
-       "valor": 280000
+       "id": "sevilla",
+       "titulo": "España",
+       "lugar": "Sevilla y Cádiz",
+       "texto": "[[En la década de 1790 llegaban a España cerca de cinco millones de pesos al año, y el dinero de América era más del 25 % de los ingresos ordinarios de su tesorería|marichal1999]]."
       },
       {
-       "nombre": "Comestibles",
-       "valor": 100000,
-       "nota": "carne salada, legumbres secas y otros"
+       "id": "guerras",
+       "titulo": "Las guerras",
+       "lugar": "Europa",
+       "texto": "[[La plata de América pagó las grandes campañas militares del imperio español en Europa|abadpalma2021]]."
       },
       {
-       "nombre": "Zarzaparrilla",
-       "valor": 90000
+       "id": "norte",
+       "titulo": "Inglaterra y los Países Bajos",
+       "lugar": "Norte de Europa",
+       "texto": "[[A la larga, los que más ganaron fueron Inglaterra y los Países Bajos; España y Portugal no aprovecharon la riqueza de sus colonias|abadpalma2021]]."
       },
       {
-       "nombre": "Cueros curtidos",
-       "valor": 80000
+       "id": "acapulco",
+       "titulo": "Acapulco",
+       "lugar": "Pacífico",
+       "texto": "[[El galeón de Manila unía Acapulco con Filipinas|abadpalma2021]]."
       },
       {
-       "nombre": "Vainilla",
-       "valor": 60000
+       "id": "manila",
+       "titulo": "Manila",
+       "lugar": "Filipinas",
+       "texto": "[[En Manila, la plata se cambiaba por seda y porcelana|abadpalma2021]]."
       },
       {
-       "nombre": "Jalapa",
-       "valor": 60000
-      },
-      {
-       "nombre": "Jabón",
-       "valor": 50000
-      },
-      {
-       "nombre": "Palo de Campeche",
-       "valor": 40000
+       "id": "china",
+       "titulo": "China",
+       "lugar": "Asia",
+       "texto": "[[Buena parte de la plata terminó en China|abadpalma2021]]. [[El peso de plata fue moneda de referencia en China y en Estados Unidos hasta mediados del siglo XIX|irigoin2009]]."
       }
-     ],
-     "cap": "Valores declarados en la aduana hacia 1803, en pesos. No cuenta el contrabando.",
-     "fuentes": [
-      "humboldt1814"
      ]
-    }
+    },
+    "fichas": [],
+    "casos": [
+     "caso-plata"
+    ]
    },
    {
     "id": "cuenta-corona",
@@ -21932,102 +21881,141 @@
     }
    },
    {
-    "id": "cuenta-destino",
-    "titulo": "A dónde fue",
-    "periodo": "siglos XVI–XIX",
-    "entrada": "La plata salió por Veracruz hacia Sevilla y por Acapulco hacia Manila. Casi nunca se quedó en España.",
-    "texto": [
-     "Elige cada punto del mapa para seguir la plata.",
-     "[[Un estudio con seis economías europeas encuentra que, cuando subía la llegada de metales de América, el producto de esas economías subía a los seis a nueve años|abadpalma2021]]."
-    ],
-    "visual": "flujo",
-    "flujo": {
-     "nodos": [
-      {
-       "id": "minas",
-       "titulo": "Las minas",
-       "lugar": "Zacatecas, Guanajuato, Pachuca, Taxco",
-       "texto": "[[Desde 1554, la plata se separaba con mercurio en el beneficio de patio|nriagu1994]]. La sacaban y la cargaban manos indígenas."
-      },
-      {
-       "id": "mexico",
-       "titulo": "Casa de Moneda",
-       "lugar": "Ciudad de México",
-       "texto": "[[Más de dos mil millones de pesos salieron de aquí en menos de 300 años, según Humboldt|marichal1999]]."
-      },
-      {
-       "id": "veracruz",
-       "titulo": "Veracruz",
-       "lugar": "Golfo de México",
-       "texto": "[[En los años buenos salían de las tesorerías de la Nueva España hasta nueve millones de pesos al año|marichal1999]]."
-      },
-      {
-       "id": "caribe",
-       "titulo": "El Caribe",
-       "lugar": "Cuba, Puerto Rico y otras plazas",
-       "texto": "[[Con los situados, la plata mexicana pagaba las guarniciones del Gran Caribe y de Filipinas|marichal1999]]."
-      },
-      {
-       "id": "sevilla",
-       "titulo": "España",
-       "lugar": "Sevilla y Cádiz",
-       "texto": "[[En la década de 1790 llegaban a España cerca de cinco millones de pesos al año, y el dinero de América era más del 25 % de los ingresos ordinarios de su tesorería|marichal1999]]."
-      },
-      {
-       "id": "guerras",
-       "titulo": "Las guerras",
-       "lugar": "Europa",
-       "texto": "[[La plata de América pagó las grandes campañas militares del imperio español en Europa|abadpalma2021]]."
-      },
-      {
-       "id": "norte",
-       "titulo": "Inglaterra y los Países Bajos",
-       "lugar": "Norte de Europa",
-       "texto": "[[A la larga, los que más ganaron fueron Inglaterra y los Países Bajos; España y Portugal no aprovecharon la riqueza de sus colonias|abadpalma2021]]."
-      },
-      {
-       "id": "acapulco",
-       "titulo": "Acapulco",
-       "lugar": "Pacífico",
-       "texto": "[[El galeón de Manila unía Acapulco con Filipinas|abadpalma2021]]."
-      },
-      {
-       "id": "manila",
-       "titulo": "Manila",
-       "lugar": "Filipinas",
-       "texto": "[[En Manila, la plata se cambiaba por seda y porcelana|abadpalma2021]]."
-      },
-      {
-       "id": "china",
-       "titulo": "China",
-       "lugar": "Asia",
-       "texto": "[[Buena parte de la plata terminó en China|abadpalma2021]]. [[El peso de plata fue moneda de referencia en China y en Estados Unidos hasta mediados del siglo XIX|irigoin2009]]."
-      }
+    "id": "cuenta-plata",
+    "titulo": "La plata, y todo lo demás",
+    "periodo": "1521–hoy",
+    "entrada": "El oro fue lo primero que se vio. Lo que movió tres siglos fue la plata, y con ella salió todo lo demás: la grana, el tabaco, la vainilla. Muchos de esos negocios siguen hoy en otras manos.",
+    "lamina": {
+     "archivo": "img/cuenta/mendoza-47r.jpg",
+     "codice": "Códice Mendoza, folio 47r",
+     "fecha": "c. 1542",
+     "custodia": "Biblioteca Bodleiana, Oxford",
+     "pie": "Una página de tributo: plumas preciosas, trajes de guerrero y escudos. El virrey quería saber qué daba la tierra.",
+     "commons": "https://commons.wikimedia.org/wiki/File:Codex_Mendoza_folio_47r.jpg",
+     "licencia": "dominio-publico",
+     "fuentes": [
+      "mendoza"
      ]
     },
-    "fichas": [],
-    "casos": [
-     "caso-plata"
-    ]
-   },
-   {
-    "id": "cuenta-negocios",
-    "titulo": "Los negocios que empezaron aquí",
-    "periodo": "1550–hoy",
-    "entrada": "Aquí empezaron negocios que enriquecieron a otros: la renta del tabaco, los tintes de Europa, la vainilla, el cordel del trigo canadiense. Unos se tomaron por la fuerza; otros, sacando la planta.",
     "texto": [
+     "[[Entre 1500 y 1800, la América española produjo entre 85,000 y 150,000 toneladas de plata: más que todo el resto del mundo junto|abadpalma2021]].",
+     "[[Humboldt escribió en 1803 que de la Casa de Moneda de México habían salido «más de dos mil millones de pesos fuertes» en menos de 300 años|marichal1999]]. Esa sola cifra, pasada a plata de hoy, da la cuenta de abajo.",
+     "Con la plata salió todo lo demás. [[En los años de paz salían cada año por Veracruz unos 17 millones de pesos en oro y plata, 2.4 millones en grana cochinilla y 1.3 millones en azúcar; además, harina, añil, cueros, zarzaparrilla, vainilla, jalapa, jabón y palo de Campeche|humboldt1814]]. La caña de azúcar vino de fuera; la tierra donde se sembró era de aquí.",
+     "[[Entre los primeros envíos de Cortés a Carlos V iban mantas, colchas y tapices de algodón tejidos aquí|clavijero1807]].",
+     "Hasta el maguey se volvió negocio ajeno. [[Durante la Colonia, las únicas bebidas alcohólicas legales eran los vinos y aguardientes traídos de España y el pulque|lozano2005]]. [[El mezcal estuvo prohibido en la mayor parte de la Nueva España durante tres siglos; en Guadalajara, donde se permitió desde mediados del siglo XVII, se cobró con un estanco|lozano2005]]. De ese vino mezcal viene el tequila. [[Y se prohibió plantar viñedos, para proteger el comercio del imperio|lozano2005]].",
+     "Y las plantas que hoy el mundo cree suyas: el maíz, el jitomate, el chile, el cacao, la vainilla. Esas no dejaron una cuenta en pesos: [[los cultivos de América cambiaron la alimentación y la población del Viejo Mundo|nunnqian2010]].",
+     "Y hubo negocios que sí dejaron cuenta, en otras manos.",
      "[[En España, la renta del tabaco llegó a ser casi un tercio de los ingresos públicos internos; en América, los estancos sumados fueron la segunda renta de la Corona, después del oro y la plata|deanssmith2008]]. [[En 1767, Julián de Arriaga la llamó «la más florida que el Rey tiene en España»; en 1794, Joaquín Maniau llamó a la de aquí «la alhaja preciosa que el Rey tiene en sus dominios de América»|garateluxan2009]]. [[En Sevilla se levantó para ese negocio la mayor construcción industrial de la Europa del siglo XVIII|turespana-fabrica]]. Hoy es la universidad.",
      "[[La planta de ese negocio no es mexicana: casi todo el tabaco comercial es un híbrido sudamericano|sierro2014]]. [[Y Sevilla trabajaba sobre todo hoja de Cuba. Pero de la Nueva España se sacaba el dinero para pagarla|garateluxan2009]]. [[En 1765, el rey se quedó también con el tabaco de aquí: el estanco redujo las zonas tabaqueras y eliminó un buen número de cigarrerías|garateluxan2009]]. [[En 1796 ingresó 7.3 millones de pesos y gastó 3.4|garateluxan2009]]. [[De aquel estanco español de 1636 salió Tabacalera, que tuvo el monopolio hasta 1999 y ese año se fusionó con la francesa Seita en Altadis|ccoo-tabacalera]]. [[En 2007, la británica Imperial Tobacco acordó comprar Altadis por 16,200 millones de euros, con su deuda|aficionado2007]].",
      "Los tintes siguieron otro camino. [[La grana fue durante trescientos años la exportación más importante de México después de la plata, y teñía las telas finas de papas, príncipes y nobles de toda Europa|marichal2006]]. [[Llegaba por Sevilla y Cádiz a talleres de lujo como los de Florencia, y su precio se cuadruplicó en el siglo XVI|marichal2006]]. [[La criaban campesinos indígenas de Oaxaca. Con el repartimiento, los alcaldes mayores les prestaban dinero y cobraban en grana a un precio fijo, más bajo que el internacional; los historiadores discuten cuánto fue coacción y cuánto incentivo|marichal2006]]. [[Después de la Independencia se cultivó en gran escala en Guatemala y en las Canarias, donde llegó a ser el principal producto de exportación|marichal2006]].",
      "Con el palo de Campeche, el saqueo fue literal. [[Los tintoreros de Europa lo querían para sus negros y azules oscuros|dodge2024]]. [[En 1597, el capitán inglés William Parker asaltó las costas de Yucatán y se llevó palo como botín|dodge2024]]. [[Después de 1670, antiguos corsarios se quedaron a cortarlo en la Laguna de Términos y en Belice. A veces esclavizaron a mayas, y luego trajeron a africanos esclavizados desde Jamaica|dodge2024]]. [[Para 1750, Belice exportaba 8,000 toneladas, y en Holanda e Inglaterra ya había molinos para procesarlo|dodge2024]].",
-     "Otros negocios empezaron sacando la planta. [[Fuera de México, la vainilla casi no daba fruto|linnean2019]]. [[En 1841, en la isla francesa de Borbón, hoy Reunión, Edmond Albius, un niño esclavizado de doce años, la polinizó a mano|linnean2019]]. [[La isla pasó de 2 toneladas en 1858 a 200 en 1898 y rebasó a México como primer productor del mundo. En 2017, Madagascar daba 40 % y México, cerca de 6 %|linnean2019]]. [[El sisal, un agave domesticado en México, llegó en 1893 a la África oriental alemana con el botánico Richard Hindorf, desde Florida: de 62 plantas salió la producción de la región. Las plantaciones se trabajaron con gente obligada a pagar deudas de impuestos coloniales|potsdam-sisal]].",
+     "Otros negocios empezaron sacando la planta. [[Fuera de México, la vainilla casi no daba fruto|linnean2019]]. [[En 1841, en la isla francesa de Borbón, hoy Reunión, Edmond Albius, un niño esclavizado de doce años, la polinizó a mano|linnean2019]]. [[La isla pasó de 2 toneladas en 1858 a 200 en 1898 y rebasó a México como primer productor del mundo. En 2017, Madagascar daba 40 % y México, cerca de 6 %|linnean2019]].",
+     "[[El sisal, un agave domesticado en México, llegó en 1893 a la África oriental alemana con el botánico Richard Hindorf, desde Florida: de 62 plantas salió la producción de la región. Las plantaciones se trabajaron con gente obligada a pagar deudas de impuestos coloniales|potsdam-sisal]].",
      "Y Canadá. [[Antes de la cosechadora, cientos de miles de agricultores de Estados Unidos y Canadá ataban el grano con cordel, y el mejor salía del henequén y el sisal de Yucatán|evans2007]]. [[Para surtir la demanda estadounidense, los hacendados yucatecos usaron las deudas para atraer y amarrar a sus peones|alston2008]]. [[Y con la deportación de los yaquis de Sonora, ordenada bajo Porfirio Díaz, los empresarios de Yucatán cubrieron su falta de mano de obra|ramirez2008]].",
      "[[A principios del siglo XX, empresas con sede en Canadá dominaron los servicios públicos de México|armstrongnelles1984]]. [[Mexican Light and Power, Mexico Tramways y el Ferrocarril del Noroeste tuvieron de Porfirio Díaz concesiones largas, a veces perpetuas. Canadá puso sobre todo la intermediación: los títulos se vendían en Gran Bretaña, Europa y Estados Unidos|french1981]]. [[México compró en 1960 la gran mayoría de las acciones de Mexican Light and Power y ese año reservó la electricidad a la nación|viqueira2003]].",
      "Hoy la cuenta sigue en las minas. [[Entre 2006 y marzo de 2024, la Secretaría de Economía contó 415 empresas de capital canadiense en la minería de México|se2024canada]], y [[Canadá es el principal inversionista del sector: 16,511 millones de dólares entre 1999 y 2024|vanguardia2024]]. [[En 2021, las empresas con inversión extranjera, de todos los países, dieron cerca de 56 % de la plata y 72 % del oro del país|alatorre2023]]. [[En 2022, una compañía de Vancouver compró la mina Valenciana de Guanajuato, que según ella llegó a dar hasta un tercio de la plata del mundo|gsilver2022]].",
      "Las concesiones son el desfalco de hoy, con la misma lógica colonial. [[Entre 2008 y 2013, lo que el Estado cobró en derechos mineros fue 0.6 % del valor de lo extraído: 60 centavos de cada 100 pesos|gaceta2021]]. [[En 2009 mataron a Mariano Abarca en Chicomuselo, Chiapas. Encabezaba la oposición a una mina de barita de la canadiense Blackfire. En 2018 nadie había sido castigado. Su familia señala a la empresa y reclama a la embajada de Canadá; son acusaciones, no un fallo|miningwatch2018]]. [[En 2022, la Suprema Corte dejó sin efecto dos concesiones de Almaden en Tecoltemi, Puebla, porque nadie consultó a la comunidad|expansion2022]]. [[La empresa canadiense llevó a México a un arbitraje internacional: en mayo de 2026 reclamaba 2,680 millones de dólares|almaden2026]].",
      "El camino se repite. Lo que vale sale; lo que cuesta se queda aquí."
     ],
-    "visual": "negocios",
+    "visual": "dinero",
+    "calculo": {
+     "pesos": 2000000000,
+     "onzas_por_peso": 0.786,
+     "precio_onza": 50.43,
+     "fecha_precio": "3 de noviembre de 2026",
+     "total_america": [
+      85000,
+      150000
+     ],
+     "fuentes": [
+      "marichal1999",
+      "coinvarieties-8reales",
+      "goldapi-plata",
+      "abadpalma2021"
+     ],
+     "nota": "Es un piso, no un total. Los pesos anteriores a 1772 tenían más plata; no cuenta la plata sin acuñar, el contrabando, el oro, la grana, el tributo ni el trabajo. Y el precio de hoy no dice lo que esa plata compraba entonces."
+    },
+    "fichas": [
+     "grana",
+     "algodon",
+     "agave-bebidas",
+     "palo-campeche",
+     "maiz",
+     "jitomate",
+     "chile",
+     "cacao-chocolate",
+     "vainilla",
+     "tabaco-comun",
+     "henequen"
+    ],
+    "casos": [
+     "caso-barbasco",
+     "caso-vulcanizacion"
+    ],
+    "exporta": {
+     "nombre": "Lo que salía cada año por Veracruz, en años de paz",
+     "unidad": "pesos",
+     "filas": [
+      {
+       "nombre": "Oro y plata",
+       "valor": 17000000,
+       "destaca": true
+      },
+      {
+       "nombre": "Grana cochinilla",
+       "valor": 2400000
+      },
+      {
+       "nombre": "Azúcar",
+       "valor": 1300000
+      },
+      {
+       "nombre": "Harina",
+       "valor": 300000
+      },
+      {
+       "nombre": "Añil",
+       "valor": 280000
+      },
+      {
+       "nombre": "Comestibles",
+       "valor": 100000,
+       "nota": "carne salada, legumbres secas y otros"
+      },
+      {
+       "nombre": "Zarzaparrilla",
+       "valor": 90000
+      },
+      {
+       "nombre": "Cueros curtidos",
+       "valor": 80000
+      },
+      {
+       "nombre": "Vainilla",
+       "valor": 60000
+      },
+      {
+       "nombre": "Jalapa",
+       "valor": 60000
+      },
+      {
+       "nombre": "Jabón",
+       "valor": 50000
+      },
+      {
+       "nombre": "Palo de Campeche",
+       "valor": 40000
+      }
+     ],
+     "cap": "Valores declarados en la aduana hacia 1803, en pesos. No cuenta el contrabando.",
+     "fuentes": [
+      "humboldt1814"
+     ]
+    },
+    "corte": 3,
+    "subtitulo": "Los negocios que empezaron aquí",
+    "ancla": "cuenta-negocios",
+    "visual2": "negocios",
     "negocios": {
      "tarjetas": [
       {
@@ -22040,6 +22028,10 @@
        "fuentes": [
         "garateluxan2009",
         "aficionado2007"
+       ],
+       "parrafos": [
+        7,
+        8
        ]
       },
       {
@@ -22052,6 +22044,9 @@
        "como": "Repartimiento en Oaxaca; luego, llevarla a otra parte",
        "fuentes": [
         "marichal2006"
+       ],
+       "parrafos": [
+        9
        ]
       },
       {
@@ -22063,6 +22058,9 @@
        "como": "Corsarios y cortes en la Laguna de Términos y Belice",
        "fuentes": [
         "dodge2024"
+       ],
+       "parrafos": [
+        10
        ]
       },
       {
@@ -22074,6 +22072,9 @@
        "como": "Se llevaron la planta",
        "fuentes": [
         "newsmada2023"
+       ],
+       "parrafos": [
+        11
        ]
       },
       {
@@ -22090,6 +22091,9 @@
        "como": "Se llevaron la planta; plantaciones con trabajo forzado",
        "fuentes": [
         "hansard1958"
+       ],
+       "parrafos": [
+        12
        ]
       },
       {
@@ -22101,6 +22105,9 @@
        "como": "Peones endeudados y yaquis deportados",
        "fuentes": [
         "historicalmx-henequen"
+       ],
+       "parrafos": [
+        13
        ]
       },
       {
@@ -22117,6 +22124,9 @@
        "como": "Concesiones de Porfirio Díaz; México las compró en 1960",
        "fuentes": [
         "villalpando2021"
+       ],
+       "parrafos": [
+        14
        ]
       },
       {
@@ -22134,6 +22144,10 @@
        "fuentes": [
         "vanguardia2024",
         "gsilver2022"
+       ],
+       "parrafos": [
+        15,
+        16
        ]
       }
      ],
@@ -22164,24 +22178,13 @@
      },
      "cap": "Las cifras miden cosas distintas (ingresos, márgenes, exportaciones, inversión) y no se suman."
     },
-    "fichas": [
-     "tabaco-comun",
-     "grana",
-     "palo-campeche",
-     "vainilla",
-     "henequen",
-     "cacao-chocolate"
-    ],
-    "casos": [
-     "caso-barbasco",
-     "caso-vulcanizacion"
-    ]
+    "remate": 17
    },
    {
     "id": "cuenta-borrado",
-    "titulo": "Lo que se borró",
-    "periodo": "1536–1607",
-    "entrada": "No bastó con quitar la riqueza. Se quemaron los libros, se juntó a los pueblos, se cambiaron los nombres y se secó el lago.",
+    "titulo": "Lo que se borró y aún se niega",
+    "periodo": "1536–hoy",
+    "entrada": "No bastó con quitar la riqueza. Se quemaron los libros, se juntó a los pueblos, se cambiaron los nombres y se secó el lago. Y todavía se niega: en España suele contarse como un encuentro, y en el resto del mundo casi no se cuenta.",
     "lamina": {
      "archivo": "img/cuenta/munozcamargo-codices.jpg",
      "codice": "Descripción de la ciudad y provincia de Tlaxcala, de Diego Muñoz Camargo",
@@ -22195,130 +22198,10 @@
      ]
     },
     "texto": [
-     "Primero se persiguió a quienes guardaban el saber, y después a lo que se escribía. La franja de abajo pone las fechas. La lámina de la viruela que viste arriba es de la obra de Sahagún: la que Felipe II mandó recoger.",
+     "Primero se persiguió a quienes guardaban el saber, y después a lo que se escribía. La línea del final de este acto pone las fechas. La lámina de la viruela que viste arriba es de la obra de Sahagún: la que Felipe II mandó recoger.",
      "Se borró también el mapa. [[Para cobrar tributo y vigilar la fe, la Colonia juntó a la gente dispersa de los calpultin en pueblos nuevos, las congregaciones|gerhard1977]]. [[En Tututepec, los asentamientos otomíes y tepehuas pasaron de 88 a 27|gerhard1977]], y [[quien volvía a su parcela podía encontrarla ocupada por un rancho de ganado o una hacienda|gerhard1977]].",
      "Y los nombres. [[Cuauhnáhuac, «junto al bosque», se volvió Cuernavaca, «cuerno de vaca»|britannica-cuernavaca]]. [[Sobre un asentamiento purépecha se fundó Valladolid en 1541; hoy se llama Morelia, y su nombre propio no volvió|britannica-morelia]].",
-     "[[Desde 1607, el Desagüe de Huehuetoca empezó a secar los lagos para proteger a la ciudad española, y les quitó el sustento a los pueblos que vivían del lago|candiani2012]]."
-    ],
-    "enlace": {
-     "href": "#/nombres",
-     "texto": "Cómo llama el mundo a lo que salió de aquí"
-    },
-    "fichas": [
-     "escritura",
-     "calendarios",
-     "amate",
-     "chinampas"
-    ],
-    "casos": [
-     "caso-codices",
-     "caso-mani",
-     "caso-lenguas",
-     "caso-templos-iglesias"
-    ],
-    "visual": "censura",
-    "censura": {
-     "titulo": "La censura y la negación, con fecha",
-     "eventos": [
-      {
-       "anio": "1536–1543",
-       "texto": "[[El obispo Zumárraga usó la Inquisición contra unos treinta líderes, casi todos indígenas, acusados de paganismo|lopesdon2006]].",
-       "lado": "aqui"
-      },
-      {
-       "anio": "1539",
-       "texto": "[[La Inquisición quemó en la hoguera a don Carlos Ometochtzin, señor de Texcoco y nieto de Nezahualcóyotl|ruizmedrano2014]].",
-       "lado": "aqui"
-      },
-      {
-       "anio": "1562",
-       "texto": "[[Diego de Landa quemó los libros mayas en Maní porque «no tenían cosa en que no hubiese superstición»|landa1566]].",
-       "lado": "aqui"
-      },
-      {
-       "anio": "1577",
-       "texto": "[[Felipe II mandó recoger los manuscritos de Sahagún y prohibió escribir, «en ninguna lengua», sobre la manera de vivir de los indios|leonportilla1998]].",
-       "lado": "espana"
-      },
-      {
-       "anio": "Porfiriato",
-       "lado": "aqui",
-       "texto": "[[Nace la idea del mestizaje como destino nacional, entre intelectuales del régimen como Justo Sierra|navarrete-sm]]. [[El mismo régimen deporta a los yaquis de Sonora|ramirez2008]]."
-      },
-      {
-       "anio": "1925",
-       "lado": "aqui",
-       "texto": "[[Con José Vasconcelos, la mezcla se vuelve tarea de dimensión cósmica: una «raza cósmica»|navarrete2020]]."
-      },
-      {
-       "anio": "1940",
-       "lado": "espana",
-       "texto": "[[El franquismo crea el Consejo de la Hispanidad, plataforma de su propaganda en América. Llama a ese pasado «timbre de gloria»|fernandez2023]]."
-      },
-      {
-       "anio": "1987",
-       "lado": "espana",
-       "texto": "[[La democracia fija el 12 de octubre como fiesta nacional: ese día «inicia un período de proyección lingüística y cultural»|ley1987]]."
-      },
-      {
-       "anio": "1987",
-       "lado": "aqui",
-       "texto": "[[Guillermo Bonfil Batalla nombra la civilización negada: el México profundo, frente al México imaginario|bonfil-resena]]."
-      },
-      {
-       "anio": "1992",
-       "lado": "aqui",
-       "texto": "[[El quinto centenario se llama «encuentro de dos mundos». Hay quien lo acusa de ser «un eufemismo para encubrir» la conquista|lp2010]]."
-      },
-      {
-       "anio": "1992",
-       "lado": "aqui",
-       "texto": "[[Por primera vez, la Constitución dice que la nación se sustenta «originalmente en pueblos indígenas»|dof1992]]."
-      },
-      {
-       "anio": "2001",
-       "lado": "espana",
-       "texto": "[[Juan Carlos I, sobre el español: «Nunca fue la nuestra, lengua de imposición, sino de encuentro»|diarioleon2014]]."
-      },
-      {
-       "anio": "2016",
-       "lado": "espana",
-       "texto": "[[Imperiofobia y leyenda negra vende más de 100,000 ejemplares defendiendo el imperio|mendoza2022]]."
-      },
-      {
-       "anio": "2021",
-       "lado": "espana",
-       "texto": "[[Isabel Díaz Ayuso, presidenta de Madrid, llama a los indigenismos «el nuevo comunismo»|madrid2021]]."
-      },
-      {
-       "anio": "2021",
-       "lado": "aqui",
-       "texto": "[[El presidente pide perdón a los yaquis por «crímenes de estado»|expansion2021yaqui]]."
-      },
-      {
-       "anio": "2024",
-       "lado": "aqui",
-       "texto": "[[Los pueblos indígenas pasan a ser «sujetos de derecho público»|lara2026]]."
-      },
-      {
-       "anio": "Hoy",
-       "texto": "[[En los libros de Historia de secundaria en España, la aniquilación de la Conquista queda escondida tras el relato del «encuentro»|ramirez2026arbor]].",
-       "lado": "espana"
-      },
-      {
-       "anio": "Hoy",
-       "lado": "aqui",
-       "texto": "[[En Tlatelolco, una placa sigue diciendo de 1521: «No fue triunfo ni derrota. Fue el doloroso nacimiento del pueblo mestizo que es el México de hoy»|tres-culturas]]."
-      }
-     ]
-    }
-   },
-   {
-    "id": "cuenta-niega",
-    "titulo": "Lo que aún se niega",
-    "periodo": "Hoy",
-    "entrada": "Una cosa es exigir perdón y otra ignorar lo que pasó. En México se aprende en la escuela. En España suele contarse como un encuentro, y en el resto del mundo casi no se cuenta.",
-    "texto": [
+     "[[Desde 1607, el Desagüe de Huehuetoca empezó a secar los lagos para proteger a la ciudad española, y les quitó el sustento a los pueblos que vivían del lago|candiani2012]].",
      "Si México debe exigir que España pida perdón es una discusión. Saber lo que pasó es otra, y en México se aprende desde la primaria: [[la ficha de Historia de la SEP para cuarto grado enseña que las epidemias del siglo XVI hicieron caer la población indígena, que comunidades enteras de Mesoamérica se vaciaron y que llegaron nuevas formas de explotación del trabajo|sep2025caida]].",
      "Aun así, ni en México se dimensiona del todo. La misma ficha habla de «un descenso importante». [[Cook y Borah calcularon 25.2 millones de personas en el centro de México en 1518 y unas 730,000 hacia 1620–1625|cookborah1979]]: de cada cien, quedaron tres. Y lo que sobrevivió de su escritura está lejos: [[el Códice de Dresde, en Sajonia|dresde]]; [[el Mendoza, en Oxford|mendoza]]; [[el Florentino, en Florencia|sahagun1577]]. [[El penacho de plumas de quetzal sigue en Viena, que dice que es demasiado frágil para viajar|weltmuseum]].",
      "En España no suele ser parte de lo que se enseña. [[Un estudio de 2026 sobre tres libros de Historia de 2º de ESO, para alumnos de 13 y 14 años, encontró que la aniquilación demográfica y cultural de la Conquista queda escondida tras el relato del «encuentro» entre culturas y del avance de la civilización|ramirez2026arbor]]. [[En uno de esos libros, la esclavitud aparece como un trámite: personas «llevadas» desde África «allí donde la mano de obra indígena escaseaba»|ramirez2026arbor]]. [[El relato abiertamente civilizador se ha ido dejando atrás, pero la esclavitud se sigue omitiendo con frecuencia|ramirez2026arbor]].",
@@ -22328,11 +22211,124 @@
      "En México, la palabra que tapó el golpe fue otra: mestizaje. [[La idea del mestizaje como historia y destino nacional surgió en el porfirismo, con Justo Sierra, y la siguieron Manuel Gamio, José Vasconcelos y Octavio Paz, hasta volverse la definición hegemónica|navarrete-sm]]. Una placa lo dice en Tlatelolco: [[«No fue triunfo ni derrota. Fue el doloroso nacimiento del pueblo mestizo que es el México de hoy»|tres-culturas]]. Si nadie perdió, nadie tiene nada que reclamar. Pero [[«el mestizaje mexicano ha promovido siempre el blanqueamiento de los indios, no la indianización de los blancos», escribe el historiador Federico Navarrete, que lo llama una leyenda|navarrete-sm]]. [[En 1987, Guillermo Bonfil Batalla habló de una civilización negada: el México profundo, frente a un México imaginario que sigue el modelo occidental heredado de la Conquista|bonfil-resena]].",
      "El reconocimiento llegó tarde. [[La Constitución tardó hasta 1992 en decir que la nación tiene una «composición pluricultural sustentada originalmente en pueblos indígenas»|dof1992]]: 471 años después de la caída de Tenochtitlan. [[En 2021, en Guaymas, el presidente pidió perdón a los yaquis por «crímenes de estado» y ofreció devolverles 2,943 hectáreas|expansion2021yaqui]]. [[Hasta septiembre de 2024, una reforma al artículo 2º reconoció a los pueblos como «sujetos de derecho público, con personalidad jurídica y patrimonio propio»|lara2026]].",
      "Fuera de México y de España, lo que falta es más simple: saber de dónde vino. El chocolate se dice suizo o belga; la vainilla, de Madagascar o «Bourbon»; el jitomate, italiano. El guajolote se llama turkey, como si viniera de Turquía, y la nochebuena lleva el nombre de un diplomático estadounidense. El mundo usa cada día lo que México aportó sin saber que salió de aquí. Y quien no sabe lo que México dio tampoco puede ver lo que perdió.",
-     "Mientras tanto, el Estado mexicano lo dice cada vez más alto, y España empieza apenas a admitirlo. La línea de abajo pone frente a frente lo que se reconoce y lo que se niega.",
+     "Mientras tanto, el Estado mexicano lo dice cada vez más alto, y España empieza apenas a admitirlo. La segunda línea de abajo pone frente a frente lo que se reconoce y lo que se niega.",
      "Negarlo no lo borra, e ignorarlo tampoco. Los códices, las crónicas y las cifras de este recorrido están a la vista de quien quiera verlos."
     ],
-    "visual": "linea",
+    "enlace": {
+     "href": "#/nombres",
+     "texto": "Cómo llama el mundo a lo que salió de aquí"
+    },
+    "fichas": [
+     "escritura",
+     "calendarios",
+     "amate",
+     "chinampas",
+     "cacao-chocolate",
+     "vainilla",
+     "jitomate",
+     "guajolote",
+     "nochebuena"
+    ],
+    "casos": [
+     "caso-codices",
+     "caso-mani",
+     "caso-lenguas",
+     "caso-templos-iglesias",
+     "caso-matanzas",
+     "caso-penacho"
+    ],
+    "visual": "censura",
+    "censura": {
+     "titulo": "La censura y el encubrimiento, con fecha",
+     "eventos": [
+      {
+       "anio": "1536–1543",
+       "texto": "[[El obispo Zumárraga usó la Inquisición contra unos treinta líderes, casi todos indígenas, acusados de paganismo|lopesdon2006]].",
+       "lado": "nueva-espana"
+      },
+      {
+       "anio": "1539",
+       "texto": "[[La Inquisición quemó en la hoguera a don Carlos Ometochtzin, señor de Texcoco y nieto de Nezahualcóyotl|ruizmedrano2014]].",
+       "lado": "nueva-espana"
+      },
+      {
+       "anio": "1562",
+       "texto": "[[Diego de Landa quemó los libros mayas en Maní porque «no tenían cosa en que no hubiese superstición»|landa1566]].",
+       "lado": "nueva-espana"
+      },
+      {
+       "anio": "1577",
+       "texto": "[[Felipe II mandó recoger los manuscritos de Sahagún y prohibió escribir, «en ninguna lengua», sobre la manera de vivir de los indios|leonportilla1998]].",
+       "lado": "espana"
+      },
+      {
+       "anio": "Porfiriato",
+       "lado": "mexico",
+       "texto": "[[Nació la idea del mestizaje como destino nacional, entre intelectuales del régimen como Justo Sierra|navarrete-sm]]."
+      },
+      {
+       "anio": "1925",
+       "lado": "mexico",
+       "texto": "[[Con José Vasconcelos, la mezcla se volvió tarea de dimensión cósmica: una «raza cósmica»|navarrete2020]]."
+      },
+      {
+       "anio": "1940",
+       "lado": "espana",
+       "texto": "[[El franquismo creó el Consejo de la Hispanidad, plataforma de su propaganda en América. Llamó a ese pasado «timbre de gloria»|fernandez2023]]."
+      },
+      {
+       "anio": "1987",
+       "lado": "espana",
+       "texto": "[[La democracia fijó el 12 de octubre como fiesta nacional: ese día «inicia un período de proyección lingüística y cultural»|ley1987]]."
+      },
+      {
+       "anio": "1992",
+       "lado": "mexico",
+       "texto": "[[El quinto centenario se llamó «encuentro de dos mundos». Hubo quien lo acusó de ser «un eufemismo para encubrir» la conquista|lp2010]]."
+      },
+      {
+       "anio": "2001",
+       "lado": "espana",
+       "texto": "[[Juan Carlos I, sobre el español: «Nunca fue la nuestra, lengua de imposición, sino de encuentro»|diarioleon2014]]."
+      },
+      {
+       "anio": "2016",
+       "lado": "espana",
+       "texto": "[[Imperiofobia y leyenda negra vendió más de 100,000 ejemplares defendiendo el imperio|mendoza2022]]."
+      },
+      {
+       "anio": "2021",
+       "lado": "espana",
+       "texto": "[[Isabel Díaz Ayuso, presidenta de Madrid, llamó a los indigenismos «el nuevo comunismo»|madrid2021]]."
+      },
+      {
+       "anio": "Hoy",
+       "texto": "[[En los libros de Historia de secundaria en España, la aniquilación de la Conquista queda escondida tras el relato del «encuentro»|ramirez2026arbor]].",
+       "lado": "espana"
+      },
+      {
+       "anio": "Hoy",
+       "lado": "mexico",
+       "texto": "[[En Tlatelolco, una placa sigue diciendo de 1521: «No fue triunfo ni derrota. Fue el doloroso nacimiento del pueblo mestizo que es el México de hoy»|tres-culturas]]."
+      }
+     ]
+    },
+    "corte": 4,
+    "subtitulo": "Lo que aún se niega",
+    "ancla": "cuenta-niega",
+    "visual2": "linea",
+    "juntas": true,
     "linea": [
+     {
+      "anio": "1987",
+      "lado": "reconoce",
+      "texto": "[[Guillermo Bonfil Batalla nombró la civilización negada: el México profundo, frente al México imaginario|bonfil-resena]]."
+     },
+     {
+      "anio": "1992",
+      "lado": "reconoce",
+      "texto": "[[Por primera vez, la Constitución dijo que la nación se sustenta «originalmente en pueblos indígenas»|dof1992]]."
+     },
      {
       "anio": "2019",
       "lado": "reconoce",
@@ -22349,9 +22345,19 @@
       "texto": "[[El Estado mexicano pidió perdón al pueblo maya por los abusos de la Conquista, de la Colonia y de dos siglos de México independiente|aljazeera2021]]."
      },
      {
+      "anio": "2021",
+      "lado": "reconoce",
+      "texto": "[[El presidente pidió perdón a los yaquis por «crímenes de estado»|expansion2021yaqui]]."
+     },
+     {
       "anio": "2024",
       "lado": "reconoce",
       "texto": "[[La presidenta Claudia Sheinbaum no invitó al rey Felipe VI a su toma de posesión, porque nunca respondió la carta de 2019|expansion2024rey]]."
+     },
+     {
+      "anio": "2024",
+      "lado": "reconoce",
+      "texto": "[[Los pueblos indígenas pasaron a ser «sujetos de derecho público»|lara2026]]."
      },
      {
       "anio": "2025",
@@ -22369,18 +22375,6 @@
       "texto": "[[El rey Felipe VI admitió que hubo «mucho abuso» y que esos hechos «no pueden hacernos sentir orgullosos». Sheinbaum lo llamó un gesto de acercamiento, aunque «no fue todo lo que hubiéramos querido»|nmas2026rey]]."
      }
     ],
-    "fichas": [
-     "cacao-chocolate",
-     "vainilla",
-     "jitomate",
-     "guajolote",
-     "nochebuena"
-    ],
-    "casos": [
-     "caso-matanzas",
-     "caso-codices",
-     "caso-penacho"
-    ],
     "cita": {
      "texto": "Comunidades enteras de Mesoamérica se vaciaron.",
      "quien": "Ficha de Historia para cuarto de primaria, Secretaría de Educación Pública (2025)",
@@ -22388,10 +22382,52 @@
       "sep2025caida"
      ]
     },
-    "enlace": {
+    "enlace2": {
      "href": "#/explorar",
      "texto": "Todo lo que México aportó al mundo"
-    }
+    },
+    "temas": [
+     {
+      "titulo": "¿Se enseña en México?",
+      "parrafos": [
+       4,
+       5
+      ]
+     },
+     {
+      "titulo": "¿Y en España?",
+      "parrafos": [
+       6
+      ]
+     },
+     {
+      "titulo": "¿Qué es la «leyenda negra»?",
+      "parrafos": [
+       7,
+       8,
+       9
+      ]
+     },
+     {
+      "titulo": "¿Qué tapó el mestizaje?",
+      "parrafos": [
+       10
+      ]
+     },
+     {
+      "titulo": "¿Cuándo lo reconoció el Estado?",
+      "parrafos": [
+       11
+      ]
+     },
+     {
+      "titulo": "¿Y en el resto del mundo?",
+      "parrafos": [
+       12
+      ]
+     }
+    ],
+    "remate": 14
    },
    {
     "id": "cuenta-cierre",

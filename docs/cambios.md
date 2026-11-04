@@ -1,5 +1,31 @@
 # Cambios
 
+## Iteración 16 · 3 de noviembre de 2026
+
+«Lo que aún se niega» gana un acto sobre los negocios que empezaron aquí, con cifras a la vista, y la línea de la censura llega hasta hoy, con España y México frente a frente. Antes, la portada estrenó su mosaico y el sitio, un juego.
+
+### Qué cambió
+
+- **Portada y juego.** Mosaico de fotos en la portada, el juego en `#/juego`, más fotos, brillo en modo oscuro y el maíz con su tesis.
+- **Nuevo acto: «Los negocios que empezaron aquí».** Tabaco, grana, palo de Campeche, vainilla, sisal, henequén, la luz y las minas de hoy, con quién hizo el negocio y cómo.
+- **Ocho tarjetas con foto y cifra grande.** Lo que viene en pesos se pasa a plata de hoy con el mismo cálculo del acto del dinero, y cambia si cambia el precio.
+- **Dos gráficas.** El oro de 2000–2010 contra el de 1521–1830, y una cuadrícula de 100 pesos con los 60 centavos que el Estado cobró en derechos mineros.
+- **La censura y la negación, con fecha.** De 5 hechos a 18, en dos carriles: España y la Nueva España y México. Suma el Consejo de la Hispanidad de Franco, el mestizaje, la ley del 12 de octubre, el «encuentro de dos mundos», Juan Carlos I, Ayuso, el perdón a los yaquis y las reformas de 1992 y 2024.
+- **Cuatro párrafos nuevos en «Lo que aún se niega».** La negación oficial en España, su defensa política de hoy, el mestizaje como encubrimiento y el reconocimiento tardío del Estado mexicano.
+- **41 fuentes nuevas**, cada una con lo que se leyó de ella.
+
+### Casos de uso
+
+- **Entender el tamaño del negocio de un vistazo.** Quien llega al acto ve cuánto dejó cada cosa sin leer los párrafos, y cada cifra lleva su fuente.
+- **Responder «eso ya pasó».** La gráfica del oro y la de los 60 centavos muestran que la extracción no terminó con la Colonia.
+- **Responder «es leyenda negra».** La línea muestra quién negó qué y cuándo, con la cita y la fuente: de Felipe II a Ayuso.
+- **Hablar del mestizaje en clase.** La placa de Tlatelolco, Navarrete y Bonfil Batalla dan un punto de partida con fuentes para discutir qué tapó esa palabra.
+
+### Pendiente
+
+- La placa de Tlatelolco se cita de Wikipedia: no se encontró quién la puso ni cuándo, y por eso no lleva año.
+- De México profundo se leyó una reseña, no el libro. No hay fuente leída sobre los libros escolares del franquismo, y la línea no dice nada de ellos.
+
 ## Iteración 15 · 2 de noviembre de 2026
 
 Cada ficha, caso, pueblo, recorrido y «Lo que aún se niega» tiene ahora su propia dirección, en español y en inglés, con su propia vista previa al compartirla. Antes todo vivía en una sola página con rutas de `#`: los buscadores no leían más que la portada y un enlace en WhatsApp o X mostraba siempre la misma vista previa, sin imagen.

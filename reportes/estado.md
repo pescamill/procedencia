@@ -1,4 +1,4 @@
-# Estado de la verificación · 2026-11-02
+# Estado de la verificación · 2026-11-03
 
 Generado por `python3 procedencia.py construir`. No se edita a mano.
 
@@ -7,7 +7,7 @@ Generado por `python3 procedencia.py construir`. No se edita a mano.
 - Fichas: 100 (95 aportes, 5 deslindes); casos: 31; recorridos: 10.
 - Documentación: 4 expedientes, 91 fichas con fuente, 5 en investigación.
 - Afirmaciones: 339 — 293 con fuente comprobada, 34 citadas sin comprobar, 12 pendientes.
-- Fuentes: 250 — 11 bloqueada, 228 ok, 11 sin_enlace.
+- Fuentes: 291 — 11 bloqueada, 228 ok, 41 sin_comprobar, 11 sin_enlace.
 - Especies contrastadas con el WCVP: 43.
 
 ## Fuentes que no coinciden con su registro
@@ -184,7 +184,6 @@ Ninguna.
 - tomate-verde: la imagen Tomatillo.jpg no declara autor
 - zapotes: la imagen ARS-_Pouteria_sapota.jpg no declara autor
 - pato-criollo: la imagen MuscovyDuck.jpg no declara autor
-- cempasuchil: la imagen Tagetes_x_erecta1.jpg no declara autor
 - peyote: la imagen Peyote_Cactus.jpg no declara autor
 - salvia-divinorum: la imagen Salvia_divinorum_-_Herba_de_Maria.jpg no declara autor
 - fuente karttunen1983: sin DOI ni URL; no puede comprobarse automáticamente

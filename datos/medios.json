@@ -108,7 +108,8 @@
   "wiki": "Common sunflower"
  },
  "cacao-chocolate": {
-  "wiki": "Theobroma cacao"
+  "wiki": "Theobroma cacao",
+  "archivo": "Cocoa beans and its derivatives.jpg"
  },
  "vainilla": {
   "wiki": "Vanilla planifolia"
@@ -147,7 +148,8 @@
   "wiki": "Margarita"
  },
  "cempasuchil": {
-  "wiki": "Tagetes erecta"
+  "wiki": "Tagetes erecta",
+  "archivo": "Cempasúchil de Xochimico.jpg"
  },
  "nochebuena": {
   "wiki": "Poinsettia"

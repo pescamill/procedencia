@@ -301,6 +301,75 @@
         </a>
       </div></section>`;
     }
+    // La portada abre con el nombre que usa el mundo; al pasar el mouse aparece el original.
+    const VOLTEO = [
+      { id: "maiz", cree: ["Corn: cereal de caja y palomitas", "Corn: boxed cereal and popcorn"], donde: ["Estados Unidos", "United States"], es: ["Es maíz, de aquí", "It is maize, from here"] },
+      { id: "chile", cree: ["Paprika y gochugaru del kimchi", "Paprika and kimchi’s gochugaru"], donde: ["Hungría y Corea", "Hungary and Korea"], es: ["Es chile", "It is chile"] },
+      { id: "cacao-chocolate", cree: ["Chocolate suizo", "Swiss chocolate"], donde: ["Suiza", "Switzerland"], es: ["Nació aquí", "Born here"] },
+      { id: "vainilla", cree: ["Vainilla de Madagascar", "Madagascar vanilla"], donde: ["Madagascar", "Madagascar"], es: ["Es de Papantla", "From Papantla"] },
+      { id: "guajolote", cree: ["Turkey", "Turkey"], donde: ["Turquía", "Turkey, the country"], es: ["Es guajolote", "It is the guajolote"] },
+      { id: "cempasuchil", cree: ["African marigold", "African marigold"], donde: ["África e India", "Africa and India"], es: ["Es cempasúchil", "It is cempasúchil"] }
+    ];
+    // «¿De dónde viene?»: ocho preguntas sobre nombres que borran su origen. Dos son deslindes del sitio,
+    // donde la respuesta no es México: solo se reclama lo que se prueba.
+    const JUEGO = [
+      { ficha: "chile", dice: ["Paprika húngara", "Hungarian paprika"], lengua: "marca", pregunta: ["¿De dónde es la planta de la paprika?", "Where is the paprika plant from?"], op: [["Hungría", "Hungary"], ["México", "Mexico"], ["India", "India"]], ok: 1 },
+      { ficha: "chile", dice: ["Gochugaru del kimchi", "Kimchi’s gochugaru"], lengua: ["coreano", "Korean"], pregunta: ["Es el chile en polvo que pinta de rojo el kimchi. ¿De dónde es ese chile?", "It is the chile powder that turns kimchi red. Where is that chile from?"], op: [["Corea", "Korea"], ["México", "Mexico"], ["China", "China"]], ok: 1 },
+      { ficha: "maiz", dice: "Corn", lengua: ["inglés", "English"], pregunta: ["El cereal de caja, las palomitas del cine, el jarabe de los refrescos: ¿de dónde es esa planta?", "Boxed cereal, movie popcorn, the syrup in sodas: where is that plant from?"], op: [["Estados Unidos", "United States"], ["México", "Mexico"], ["Italia", "Italy"]], ok: 1 },
+      { ficha: "guajolote", dice: "Turkey", lengua: ["inglés", "English"], op: [["Turquía", "Turkey"], ["México", "Mexico"], ["India", "India"]], ok: 1 },
+      { ficha: "nochebuena", dice: "Poinsettia", lengua: ["inglés", "English"], op: [["Estados Unidos", "United States"], ["México", "Mexico"], ["Brasil", "Brazil"]], ok: 1 },
+      { ficha: "cacao-chocolate", dice: ["Chocolate suizo", "Swiss chocolate"], lengua: "marca", pregunta: ["¿Dónde nació el chocolate?", "Where was chocolate born?"], op: [["Suiza", "Switzerland"], ["México", "Mexico"], ["Bélgica", "Belgium"]], ok: 1 },
+      { ficha: "vainilla", dice: ["Vainilla de Madagascar", "Madagascar vanilla"], lengua: "marca", op: [["Madagascar", "Madagascar"], ["México", "Mexico"], ["India", "India"]], ok: 1 },
+      { ficha: "cempasuchil", dice: "African marigold", lengua: ["inglés", "English"], op: [["África", "Africa"], ["México", "Mexico"], ["India", "India"]], ok: 1 },
+      { ficha: "dalia", dice: "Dahlia", lengua: "todas", op: [["Suecia", "Sweden"], ["México", "Mexico"], ["Países Bajos", "Netherlands"]], ok: 1 },
+      { ficha: "calabaza", dice: "Zucchini", lengua: ["italiano e inglés", "Italian and English"], op: [["Italia", "Italy"], ["México", "Mexico"], ["Egipto", "Egypt"]], ok: 1 },
+      { ficha: "girasol", deslinde: true, debate: true, pregunta: ["El girasol también se siembra aquí. ¿Dónde se domesticó?", "Sunflowers are grown here too. Where were they domesticated?"], op: [["México", "Mexico"], ["El este de Norteamérica", "Eastern North America"], ["Rusia", "Russia"]], ok: 1 },
+      { ficha: "guayaba", deslinde: true, pregunta: ["La guayaba se come en todo México. ¿Dónde se domesticó?", "Guava is eaten all over Mexico. Where was it domesticated?"], op: [["México", "Mexico"], ["La Amazonia", "The Amazon"], ["India", "India"]], ok: 1 },
+      { ficha: "tabaco-comun", deslinde: true, pregunta: ["¿De dónde viene el tabaco de los cigarros comerciales?", "Where does the tobacco in commercial cigarettes come from?"], op: [["México", "Mexico"], ["Sudamérica", "South America"], ["Cuba", "Cuba"]], ok: 1 },
+      { ficha: "adobe", deslinde: true, pregunta: ["¿Dónde se usaron primero los ladrillos de adobe?", "Where were adobe bricks first used?"], op: [["México", "Mexico"], ["El Cercano Oriente", "The Near East"], ["China", "China"]], ok: 1 }
+    ];
+    let partida = null;
+    const tx = (v) => (Array.isArray(v) ? L(...v) : v);
+    const barajar = (a) => a.map((x) => [Math.random(), x]).sort((p, q) => p[0] - q[0]).map((p) => p[1]);
+    function nuevaPartida() {
+      const unaPorFicha = (qs) => qs.filter((q, k) => qs.findIndex((p) => p.ficha === q.ficha) === k);
+      const ap = unaPorFicha(barajar(JUEGO.filter((q) => !q.deslinde && FICHA[q.ficha]))).slice(0, 6), de = barajar(JUEGO.filter((q) => q.deslinde && FICHA[q.ficha])).slice(0, 2);
+      // Las opciones se barajan para que la respuesta no caiga siempre en el mismo lugar.
+      const qs = barajar(ap.concat(de)).map((q) => { const orden = barajar([0, 1, 2]); return { ...q, op: orden.map((i) => q.op[i]), ok: orden.indexOf(q.ok) }; });
+      partida = { qs, i: 0, aciertos: 0, respondida: null };
+    }
+    function vistaJuego() {
+      if (!partida) nuevaPartida();
+      const { qs, i, aciertos, respondida } = partida;
+      const cab = `<p class="eyebrow"><a href="#/nombres" style="color:inherit;text-decoration:none">${L("Nombres", "Names")}</a></p><h1>${L("¿De dónde viene?", "Where does it come from?")}</h1>`;
+      if (i >= qs.length) {
+        const txt = L(`Acerté ${aciertos} de ${qs.length} en «¿De dónde viene?», de Procedencia.`, `I got ${aciertos} of ${qs.length} in “Where does it come from?”, from Procedencia.`);
+        return `<div class="wrap juego">${cab}
+          <div class="jg-fin"><b>${aciertos} / ${qs.length}</b><p><strong>${L(`Acertaste ${aciertos} de ${qs.length}.`, `You got ${aciertos} of ${qs.length}.`)}</strong> ${aciertos === qs.length ? L("Las acertaste todas.", "You got them all.") : aciertos >= qs.length - 2 ? L("Casi todas. El mundo suele fallar más.", "Almost all. The world usually misses more.") : L("Así le pasa a buena parte del mundo: el nombre se quedó, el origen no.", "That is what happens to much of the world: the name stayed, the origin did not.")}</p>
+          <div class="cta"><button class="btn primary" type="button" data-jg-compartir="${esc(txt)}">${L("Compartir mi resultado", "Share my result")}</button><button class="btn" type="button" data-jg-otra>${L("Jugar otra vez", "Play again")}</button><a class="btn ghost" href="#/nombres">${L("Ver todos los nombres", "See all the names")}</a></div></div>
+        </div>`;
+      }
+      const q = qs[i], f = FICHA[q.ficha], o = f.originales[0];
+      const pregunta = q.pregunta ? L(...q.pregunta) : L("¿De dónde viene?", "Where does it come from?");
+      const opciones = q.op.map((op, k) => {
+        const cls = respondida === null ? "" : k === q.ok ? " correcta" : k === respondida ? " errada" : " apagada";
+        return `<button class="jg-op${cls}" type="button" data-jg-op="${k}"${respondida !== null ? " disabled" : ""}>${esc(L(...op))}</button>`;
+      }).join("");
+      const revela = respondida === null ? "" : `<div class="jg-revela" aria-live="polite">
+          <p class="k">${respondida === q.ok ? L("Correcto", "Correct") : L("No", "No")}${q.debate ? ` · ${L("En debate", "Under debate")}` : q.deslinde ? ` · ${L("Este no se reclama", "This one is not claimed")}` : ""}</p>
+          ${o && !q.deslinde ? `<p class="jg-orig"><b>${esc(o.forma)}</b> <span class="muted">${esc(o.lengua)}</span></p>` : ""}
+          <p>${esc(q.deslinde ? f.veredicto.texto : f.en_breve || f.veredicto.texto)}</p>
+          <div class="cta"><button class="btn primary" type="button" data-jg-sig>${i + 1 < qs.length ? L("Siguiente", "Next") : L("Ver mi resultado", "See my result")}</button><a class="btn ghost" href="#/ficha/${f.id}">${L("Ver la ficha", "See the entry")}</a></div></div>`;
+      return `<div class="wrap juego">${cab}
+        <p class="lede">${L("El mundo usa estos nombres todos los días. ¿Sabes de dónde viene cada cosa?", "The world uses these names every day. Do you know where each thing comes from?")}</p>
+        <div class="jg-tarjeta">
+          <div class="jg-prog" aria-label="${L(`Pregunta ${i + 1} de ${qs.length}`, `Question ${i + 1} of ${qs.length}`)}">${qs.map((_, k) => `<i class="${k < i ? "hecha" : k === i ? "ahora" : ""}"></i>`).join("")}</div>
+          <div class="jg-q">${foto(f, "", true)}<div>${q.dice ? `<p class="jg-dice">«${esc(tx(q.dice))}»</p><p class="muted small">${q.lengua === "marca" ? L("Así lo vende medio mundo", "That is how half the world sells it") : `${L("Así lo dicen en", "That is what they say in")} ${esc(q.lengua === "todas" ? L("casi todas las lenguas", "almost every language") : tx(q.lengua))}`}</p>` : `<p class="jg-dice">${esc(f.nombre)}</p>`}<p class="jg-preg">${esc(pregunta)}</p></div></div>
+          <div class="jg-ops">${opciones}</div>
+          ${revela}
+        </div>
+      </div>`;
+    }
     function vistaPortada() {
       const m = D.metricas;
       const aportes = D.fichas.filter((f) => f.clase === "aporte");
@@ -338,7 +407,9 @@
           <p class="lede">${L(`${fmt(m.aportes)} aportes, del maíz al cero, ordenados por cuánto cambiaron al mundo. Cada uno con su nombre en la lengua de quienes lo crearon, y cada afirmación con una fuente que se puede comprobar.`, `${fmt(m.aportes)} contributions, from maize to zero, ordered by how much they changed the world. Each one carries its name in the language of those who created it, and each claim a source that can be checked.`)}</p>
           <div class="cta"><a class="btn primary" href="#/explorar">${L("Ver los aportes", "See the contributions")}</a><a class="btn" href="#/cuenta">${L("Lo que aún se niega", "What is still denied")}</a></div>
         </div>
-        <div class="mosaico" aria-label="${L("Aportes que cambiaron al mundo", "Contributions that changed the world")}">${mundial.filter((f) => f.imagen).slice(0, 6).map((f, i) => `<a href="#/ficha/${f.id}" class="tesela t${i}">${foto(f, i === 0 ? "grande" : "", i < 3)}<span><b>${esc(f.originales[0] ? f.originales[0].forma : f.nombre)}</b>${esc(f.nombre)}</span></a>`).join("")}</div>
+        <div class="mos-wrap"><p class="mos-guia">${L("El mundo lo cree de otra parte, y muchos aquí también.", "The world thinks it comes from somewhere else.")} <span class="si-raton">${L("Pasa el mouse para ver de dónde es.", "Hover to see where it is from.")}</span><span class="si-tacto">${L("Toca una foto para ver de dónde es.", "Tap a photo to see where it is from.")}</span></p>
+        <div class="mosaico" aria-label="${L("Cómo llama el mundo a lo que salió de aquí", "What the world calls what came from here")}">${VOLTEO.filter((v) => FICHA[v.id] && FICHA[v.id].imagen).map((v, i) => { const f = FICHA[v.id], o = f.originales[0]; return `<a href="#/ficha/${f.id}" class="tesela volteo t${i}">${foto(f, i === 0 ? "grande" : "", i < 3)}<span class="vt"><em class="donde">${esc(tx(v.donde))}</em><s class="ajeno">${esc(tx(v.cree))}</s><b>${esc(tx(v.es))}</b><i>${esc(o.forma)}<span class="vt-len"> · ${esc(o.lengua)}</span> · ${L("México", "Mexico")}</i></span></a>`; }).join("")}</div>
+        <p class="mos-juego"><a href="#/juego">${L("¿De dónde viene? Ocho preguntas →", "Where does it come from? Eight questions →")}</a></p></div>
       </div></section>
       <div class="numbers"><div class="wrap"><dl>
         <div><dd>${fmt(mundial.length)}</dd><dt>${L("aportes que hoy usa buena parte de la humanidad", "contributions much of humanity uses today")}</dt></div>
@@ -774,6 +845,7 @@
       return `<div class="wrap map-page">
         <p class="eyebrow">${L("Nombres", "Names")}</p><h1>${L("Cómo lo llama el mundo", "What the world calls it")}</h1>
         <p class="lede">${L("Algunos nombres conservan el origen (chocolate, tomate, aguacate); otros lo trasladan a otro país, a otra persona o a un sintético. Cada nombre está en su ficha; aquí se agrupan por la forma en que borran o guardan el origen.", "Some names keep the origin (chocolate, tomato, avocado); others move it to another country, another person or a synthetic. Each name lives in its entry; here they are grouped by the way they erase or keep the origin.")}</p>
+        ${forma ? "" : `<a class="jg-entrada" href="#/juego"><b>${L("¿De dónde viene?", "Where does it come from?")}</b><span>${L("Ocho nombres que usa el mundo. Adivina el origen de cada uno.", "Eight names the world uses. Guess where each one comes from.")}</span><span class="btn primary">${L("Jugar", "Play")}</span></a>`}
         <div class="map-tools"><a class="chip" aria-pressed="${!forma}" href="#/nombres">${L("Todas las formas", "All forms")}</a>${C.borrado.map((b) => `<a class="chip" aria-pressed="${forma === b.id}" href="#/nombres/${b.id}">${esc(b.nombre)} <span class="n">${todos.filter((n) => n.forma === b.id).length}</span></a>`).join("")}</div>
         <div class="map-stage"><svg viewBox="0 0 ${GW.ancho} ${GW.alto}" role="img" aria-label="${L("Mapa del mundo: a dónde apunta cada nombre", "World map: where each name points")}">${tierras(GW)}${arcos}<circle class="pt-origen" cx="${r1(mx[0])}" cy="${r1(mx[1])}" r="7"/></svg></div>
         <p class="muted small" style="margin-top:8px">${L(`Cada arco va del lugar del aporte al lugar que el nombre señala. ${visibles.filter((n) => n.apunta).length} de ${visibles.length} nombres señalan un lugar.`, `Each arc goes from the place of the contribution to the place the name points to. ${visibles.filter((n) => n.apunta).length} of ${visibles.length} names point to a place.`)}</p>
@@ -1004,11 +1076,19 @@
         <p class="cap">${L("Hacia 1803, en pesos.", "Around 1803, in pesos.")}${N.cita(g.fuentes)}</p>
       </figure>`;
     }
-    // La censura, con fecha: una franja de hechos, cada uno con su fuente.
+    // La censura y la negación, con fecha: dos carriles, aquí y España, con el año en medio.
     function censura(g, N) {
+      const anios = [...new Set(g.eventos.map((e) => e.anio))];
+      const aqui = L("La Nueva España y México", "New Spain and Mexico"), espana = L("España", "Spain");
+      const carril = (a, lado, nombre) => {
+        const es = g.eventos.filter((e) => e.anio === a && e.lado === lado);
+        return `<div class="cs-${lado}">${es.map((e) => `<div class="cs-e"><span class="cs-lado">${nombre}</span><p>${prosa(e.texto, N)}</p></div>`).join("")}</div>`;
+      };
+      const anio = (a) => (a === "Hoy" ? L("Hoy", "Today") : esc(a));
       return `<section class="cn-censura" aria-label="${esc(g.titulo)}">
           <span class="k">${esc(g.titulo)}</span>
-          <ol>${g.eventos.map((e) => `<li><span class="cs-anio">${e.anio === "Hoy" ? L("Hoy", "Today") : esc(e.anio)}</span><p>${prosa(e.texto, N)}</p></li>`).join("")}</ol>
+          <div class="cs-cab" aria-hidden="true"><b>${espana}</b><i></i><b>${aqui}</b></div>
+          <ol>${anios.map((a) => `<li>${carril(a, "espana", espana)}<span class="cs-anio">${anio(a)}</span>${carril(a, "aqui", aqui)}</li>`).join("")}</ol>
         </section>`;
     }
     function ciudadCuenta(g, N) {
@@ -1078,6 +1158,43 @@
           ${casos.map((k) => `<a class="chip" href="#/caso/${k.id}"><span class="sw" style="background:${COLOR_CASO[k.tipo]}"></span>${esc(k.titulo)}</a>`).join("")}
           ${fichas.map(chipFicha).join("")}${c.enlace ? `<a class="chip enl" href="${esc(c.enlace.href)}">${esc(c.enlace.texto)} →</a>` : ""}</div>`;
       };
+      // Los negocios: cada tarjeta, su cifra. Las que vienen en pesos se pasan a plata de hoy con el mismo cálculo del acto del dinero.
+      const negocios = (d, N) => {
+        const k = CAP["cuenta-plata"].calculo;
+        const cifra = (t) => {
+          if (!t.pesos) return esc(t.marca);
+          const m = fmt(Math.round((t.pesos * k.onzas_por_peso * k.precio_onza) / 1e6));
+          return `${t.mas ? L("Más de ", "Over ") : ""}US$${m} ${L("millones", "million")}`;
+        };
+        const tarjeta = (t) => {
+          const f = t.ficha ? FICHA[t.ficha] : t;
+          return `<li class="ng-t">${foto({ imagen: f.imagen, nombre: t.nombre, ambito: f.ambito })}
+            <div class="ng-c"><h3>${esc(t.nombre)}</h3>
+              <b class="ng-m">${cifra(t)}</b>
+              ${t.pesos ? `<span class="ng-u">${L("en plata de hoy", "in today's silver")}</span>` : ""}
+              <p class="ng-n">${esc(t.nota)}${N.cita(t.fuentes)}</p>
+              <dl><dt>${L("Quién", "Who")}</dt><dd>${esc(t.quien)}</dd><dt>${L("Cómo", "How")}</dt><dd>${esc(t.como)}</dd></dl>
+              ${credito(f.imagen)}
+            </div></li>`;
+        };
+        const max = Math.max(...d.oro.barras.map((b) => b.kg));
+        const oro = `<figure class="ng-g">
+          <figcaption class="graf-t">${esc(d.oro.titulo)}</figcaption>
+          ${d.oro.barras.map((b, i) => `<div class="ng-b" ${tip(`<b>${esc(b.nombre)}</b>${fmt(b.kg)} kg`)}><span class="k">${esc(b.nombre)}</span><span class="ng-riel"><i class="o${i}" style="width:${((b.kg / max) * 100).toFixed(1)}%"></i></span><b>${fmt(b.kg)} kg</b></div>`).join("")}
+          <p class="cap">${esc(d.oro.pie)}${N.cita(d.oro.fuentes)}</p>
+        </figure>`;
+        const p = Math.round(d.cobro.parte * 100);
+        const cobro = `<figure class="ng-g">
+          <figcaption class="graf-t">${esc(d.cobro.titulo)}</figcaption>
+          <div class="ng-cien" role="img" aria-label="${esc(d.cobro.titulo)}" ${tip(`<b>0.6 %</b>${L("cobrado en derechos mineros, 2008–2013", "collected in mining duties, 2008–2013")}`)}><i style="background:linear-gradient(90deg, var(--accent) ${p}%, transparent ${p}%)"></i>${"<i></i>".repeat(99)}</div>
+          <p class="cap">${esc(d.cobro.pie)}${N.cita(d.cobro.fuentes)}</p>
+        </figure>`;
+        return `<section class="cn-negocios" aria-label="${L("Las cifras de cada negocio", "The figures for each business")}">
+          <ul class="ng-lista">${d.tarjetas.map(tarjeta).join("")}</ul>
+          <p class="cap">${esc(d.cap)} ${L(`«Plata de hoy» es cada peso en ${fmt(k.onzas_por_peso)} onzas de plata, a ${fmt(k.precio_onza)} dólares la onza (${esc(k.fecha_precio)}): dice el peso del metal, no lo que compraba.`, `“Today's silver” is each peso as ${fmt(k.onzas_por_peso)} ounces of silver, at ${fmt(k.precio_onza)} dollars an ounce (${esc(k.fecha_precio)}): it gives the weight of the metal, not what it bought.`)}</p>
+          <div class="ng-dos">${oro}${cobro}</div>
+        </section>`;
+      };
       const visual = (c) => ({
         ciudad: () => ciudadCuenta(c.ciudad, N),
         poblacion: () => graficaSerie(c.graficas.serie, N) + graficaCaidas(c.graficas.estimaciones, N),
@@ -1086,7 +1203,8 @@
         corona: () => barras(c.corona.ingresos, N) + reparto(c.corona.reparto, N),
         censura: () => censura(c.censura, N),
         flujo: () => flujo(c.flujo, N),
-        linea: () => lineaNiega(c.linea, N)
+        linea: () => lineaNiega(c.linea, N),
+        negocios: () => negocios(c.negocios, N)
       }[c.visual] || (() => ""))();
       const acto = (c, i) => {
         const ultimo = i === caps.length - 1;
@@ -1363,6 +1481,7 @@
         mapa: () => vistaMapa(filtros),
         tiempo: () => vistaTiempo(),
         nombres: () => vistaNombres(p1),
+        juego: () => vistaJuego(),
         casos: () => vistaCasos(),
         despojo: () => vistaDespojo(),
         cuenta: () => vistaCuenta(),
@@ -1379,7 +1498,7 @@
       if (p0 === "ficha") prepararFicha();
       if (p0 === "cuenta") prepararCuenta();
       ocultarTip();
-      const seccion = { ficha: "explorar", caso: "despojo", casos: "despojo", recorrido: "recorridos", pueblo: "pueblos" }[p0] || p0;
+      const seccion = { juego: "nombres", ficha: "explorar", caso: "despojo", casos: "despojo", recorrido: "recorridos", pueblo: "pueblos" }[p0] || p0;
       document.querySelectorAll("nav.main a").forEach((a) => {
         const secciones = a.dataset.secciones ? a.dataset.secciones.split(" ") : [a.getAttribute("href").slice(2)];
         if (secciones.includes(seccion)) a.setAttribute("aria-current", "page");
@@ -1475,6 +1594,25 @@
       $tip.style.top = Math.max(8, y) + "px";
     });
     document.addEventListener("click", (e) => {
+      // El juego: responder, seguir, otra partida, compartir.
+      const jo = e.target.closest("[data-jg-op]");
+      if (jo && partida && partida.respondida === null) {
+        partida.respondida = +jo.dataset.jgOp;
+        if (partida.respondida === partida.qs[partida.i].ok) partida.aciertos++;
+        pintar(); return;
+      }
+      if (e.target.closest("[data-jg-sig]") && partida) { partida.i++; partida.respondida = null; pintar(); return; }
+      if (e.target.closest("[data-jg-otra]")) { nuevaPartida(); pintar(); return; }
+      const jc = e.target.closest("[data-jg-compartir]");
+      if (jc) {
+        const url = location.href.split("#")[0] + "#/juego", text = jc.dataset.jgCompartir;
+        if (navigator.share) navigator.share({ text, url }).catch(() => {});
+        else if (navigator.clipboard) navigator.clipboard.writeText(`${text} ${url}`).then(() => { jc.textContent = L("Copiado", "Copied"); });
+        return;
+      }
+      // En pantallas táctiles, el primer toque voltea la tesela y el segundo abre la ficha.
+      const tv = e.target.closest(".tesela.volteo");
+      if (tv && matchMedia("(hover: none)").matches && !tv.classList.contains("volteada")) { e.preventDefault(); tv.classList.add("volteada"); return; }
       const ev = e.target.closest(".ev[data-ev]");
       if (ev) { ocultarTip(); abrirEvidencia(ev); return; }
       if (e.target.closest(".evid-x")) { cerrarEvidencia(); return; }

@@ -937,7 +937,7 @@ section.block.alt { border: 0; }
     --glass: color-mix(in srgb, var(--surface) 58%, transparent);
     --glass-fuerte: color-mix(in srgb, var(--surface) 78%, transparent);
     --glass-borde: inset 0 1px 0 rgba(255,255,255,.07), inset 0 0 0 1px rgba(255,255,255,.05), 0 0 0 1px rgba(0,0,0,.25);
-    --reflejo: linear-gradient(118deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.02) 26%, rgba(255,255,255,0) 42%);
+    --reflejo: linear-gradient(118deg, rgba(255,255,255,.17) 0%, rgba(255,255,255,.05) 26%, rgba(255,255,255,0) 42%);
     --sombra-suave: 0 1px 2px rgba(0,0,0,.2), 0 14px 36px -10px rgba(0,0,0,.5);
     --trazo: linear-gradient(90deg, #a8646d, #b08a48 30%, #5f8a76 62%, #5d8597 85%, #8a6f99);
   }
@@ -951,7 +951,7 @@ section.block.alt { border: 0; }
   --glass: color-mix(in srgb, var(--surface) 58%, transparent);
   --glass-fuerte: color-mix(in srgb, var(--surface) 78%, transparent);
   --glass-borde: inset 0 1px 0 rgba(255,255,255,.07), inset 0 0 0 1px rgba(255,255,255,.05), 0 0 0 1px rgba(0,0,0,.25);
-  --reflejo: linear-gradient(118deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,.02) 26%, rgba(255,255,255,0) 42%);
+  --reflejo: linear-gradient(118deg, rgba(255,255,255,.17) 0%, rgba(255,255,255,.05) 26%, rgba(255,255,255,0) 42%);
   --sombra-suave: 0 1px 2px rgba(0,0,0,.2), 0 14px 36px -10px rgba(0,0,0,.5);
   --trazo: linear-gradient(90deg, #a8646d, #b08a48 30%, #5f8a76 62%, #5d8597 85%, #8a6f99);
 }
@@ -1077,13 +1077,17 @@ footer.bottom { background: color-mix(in srgb, var(--surface) 45%, transparent);
 
 /* La censura, con fecha (va dentro del acto «Lo que se borró») */
 .cn-censura { padding: 16px 18px 18px; border-radius: var(--r); background: var(--surface); box-shadow: var(--ring); }
-.cn-censura ol { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
-.cn-censura li { position: relative; padding: 22px 14px 0 0; }
-.cn-censura li::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--line); }
-.cn-censura li::after { content: ""; position: absolute; left: 0; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--surface); }
-.cn-censura li:last-child::after { background: var(--surface); box-shadow: inset 0 0 0 2px var(--accent), 0 0 0 3px var(--surface); }
-.cs-anio { display: block; font: 700 12.5px/1.3 var(--sans); color: var(--accent); letter-spacing: .02em; }
-.cn-censura p { margin: 4px 0 0; font-size: 14px; line-height: 1.55; color: var(--ink-2); }
+.cs-cab, .cn-censura li { display: grid; grid-template-columns: minmax(0, 1fr) 92px minmax(0, 1fr); column-gap: 14px; }
+.cs-cab { margin-top: 12px; padding-bottom: 8px; font: 700 12.5px/1.3 var(--sans); color: var(--muted); }
+.cs-cab b:first-child { text-align: right; }
+.cn-censura ol { list-style: none; margin: 0; padding: 0; }
+.cn-censura li { position: relative; padding: 8px 0; }
+.cn-censura li::before { content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--line); }
+.cs-anio { position: relative; align-self: start; justify-self: center; padding: 2px 7px; border-radius: 99px; background: var(--surface); font: 700 12.5px/1.3 var(--sans); color: var(--accent); letter-spacing: .02em; text-align: center; }
+.cs-espana { text-align: right; }
+.cs-lado { display: none; }
+.cs-e + .cs-e { margin-top: 10px; }
+.cn-censura p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ink-2); }
 
 /* Lo que cobraba la Corona: a dónde iba */
 .rp-barra { display: flex; gap: 2px; height: 22px; border-radius: 6px; overflow: hidden; }
@@ -1096,10 +1100,16 @@ footer.bottom { background: color-mix(in srgb, var(--surface) 45%, transparent);
 
 @media (max-width: 1000px) {
   .cn-tesis ol { grid-template-columns: 1fr; gap: 8px; }
-  .cn-censura ol { grid-template-columns: 1fr; }
-  .cn-censura li { padding: 0 0 14px 26px; }
-  .cn-censura li::before { left: 5px; right: auto; top: 14px; bottom: 0; width: 2px; height: auto; }
-  .cn-censura li:last-child::before { display: none; }
+  .cs-cab { display: none; }
+  .cn-censura ol { margin-top: 10px; }
+  .cn-censura li { display: flex; flex-direction: column; padding: 0 0 14px 22px; }
+  .cn-censura li::before { left: 5px; margin-left: 0; }
+  .cn-censura li:last-child::before { bottom: 14px; }
+  .cs-anio { order: -1; align-self: flex-start; padding: 0; background: none; text-align: left; }
+  .cs-anio::before { content: ""; position: absolute; left: -22px; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+  .cs-espana { text-align: left; }
+  .cs-lado { display: block; margin-top: 4px; font: 700 11.5px/1.3 var(--sans); color: var(--muted); }
+  .cs-espana:empty, .cs-aqui:empty { display: none; }
 }
 }
 
@@ -1409,3 +1419,99 @@ nav.main .sub-menu a[aria-current="page"] { box-shadow: none; border-radius: 8px
 /* Fuentes y método: pestañas entre las dos páginas */
 .indice.comprobar { margin: 0 0 18px; padding: 0; flex-wrap: wrap; overflow: visible; }
 .indice.comprobar a[aria-current="page"] { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+
+/* Portada: el mosaico abre con el nombre que usa el mundo; al pasar el mouse (o tocar) aparece el original. */
+.mos-wrap { min-width: 0; }
+.mos-guia { margin: 0 0 10px; font: 600 13px/1.4 var(--sans); color: var(--muted); }
+.mos-guia .si-tacto { display: none; }
+@media (hover: none) { .mos-guia .si-raton { display: none; } .mos-guia .si-tacto { display: inline; } }
+.mos-juego { margin: 10px 0 0; font: 600 14px/1.4 var(--sans); text-align: right; }
+.mos-juego a { text-decoration: none; }
+.mos-juego a:hover { text-decoration: underline; }
+.tesela.volteo .ajeno { display: block; text-decoration: none; font: 600 17px/1.12 var(--serif); color: #fff; transition: font-size .25s ease, opacity .25s ease; }
+.tesela.volteo.t0 .ajeno { font-size: 27px; }
+.tesela.volteo b, .tesela.volteo i { max-height: 0; opacity: 0; overflow: hidden; transition: max-height .3s ease, opacity .3s ease; }
+.tesela.volteo i { display: block; font-style: normal; }
+.tesela.volteo:hover .ajeno, .tesela.volteo:focus-visible .ajeno, .tesela.volteo.volteada .ajeno { font: 600 12px/1.3 var(--sans); text-decoration: line-through; opacity: .75; }
+.tesela.volteo:hover b, .tesela.volteo:focus-visible b, .tesela.volteo.volteada b,
+.tesela.volteo:hover i, .tesela.volteo:focus-visible i, .tesela.volteo.volteada i { max-height: 3em; opacity: 1; }
+@media (max-width: 560px) { .tesela.volteo.t0 .ajeno { font-size: 24px; } .tesela.volteo .ajeno { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { .tesela.volteo .ajeno, .tesela.volteo b, .tesela.volteo i { transition: none; } }
+
+/* «¿De dónde viene?» */
+.jg-entrada { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 16px; margin: 22px 0 6px; padding: 16px 18px; border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; background: var(--surface); color: var(--ink); text-decoration: none; max-width: 640px; }
+.jg-entrada b { font: 600 20px/1.2 var(--serif); }
+.jg-entrada span:not(.btn) { grid-column: 1; color: var(--ink-2); font-size: 15px; }
+.jg-entrada .btn { grid-column: 2; grid-row: 1 / span 2; }
+.jg-entrada:hover { color: var(--ink); border-color: var(--accent); }
+.juego .jg-tarjeta, .juego .jg-fin { max-width: 640px; margin-top: 24px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.jg-prog { display: flex; gap: 6px; margin-bottom: 16px; }
+.jg-prog i { flex: 1; height: 4px; border-radius: 2px; background: var(--sand-2); }
+.jg-prog i.hecha { background: var(--muted); }
+.jg-prog i.ahora { background: var(--accent); }
+.jg-q { display: grid; grid-template-columns: 112px 1fr; gap: 16px; align-items: center; }
+.jg-q .foto { aspect-ratio: 1; border-radius: 10px; overflow: hidden; }
+.jg-dice { margin: 0; font: italic 600 30px/1.1 var(--serif); }
+.jg-q .small { margin: 4px 0 0; }
+.jg-preg { margin: 10px 0 0; font-weight: 600; }
+.jg-ops { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 18px; }
+.jg-op { min-height: 48px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); font: 600 15px/1.2 var(--sans); cursor: pointer; }
+.jg-op:hover:not(:disabled) { border-color: var(--accent); }
+.jg-op:disabled { cursor: default; }
+.jg-op.correcta { background: var(--ok); border-color: var(--ok); color: #fff; }
+.jg-op.correcta::before { content: "✓ "; }
+.jg-op.errada { border-color: var(--accent); color: var(--accent); text-decoration: line-through; }
+.jg-op.apagada { opacity: .5; }
+.jg-revela { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); }
+.jg-revela .k { margin: 0; font: 700 12px/1.4 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.jg-orig { margin: 6px 0 0; font: italic 600 26px/1.2 var(--serif); }
+.jg-orig .muted { font: 600 13px var(--sans); }
+.jg-revela p:not(.k):not(.jg-orig) { color: var(--ink-2); }
+.jg-revela .cta, .jg-fin .cta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.jg-fin b { display: block; font: 600 56px/1 var(--serif); color: var(--accent); }
+.jg-fin p { color: var(--ink-2); font-size: 18px; }
+@media (max-width: 560px) {
+  .jg-q { grid-template-columns: 80px 1fr; gap: 12px; }
+  .jg-dice { font-size: 24px; }
+  .jg-ops { grid-template-columns: 1fr; }
+  .jg-entrada { grid-template-columns: 1fr; }
+  .jg-entrada .btn { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; }
+}
+.tesela.volteo:not(.t0) .vt-len { display: none; }
+.tesela.volteo::after { transition: background .3s ease; }
+.tesela.volteo:hover::after, .tesela.volteo:focus-visible::after, .tesela.volteo.volteada::after { background: linear-gradient(180deg, transparent 25%, rgba(20, 14, 10, .88)); }
+.tesela.volteo .donde { display: block; font: 700 10.5px/1.3 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: #f1d9a6; transition: opacity .25s ease; }
+.tesela.volteo:hover .donde, .tesela.volteo:focus-visible .donde, .tesela.volteo.volteada .donde { opacity: .7; }
+.tesela.volteo i { font-style: italic; font-family: var(--serif); font-size: 14px; }
+.tesela.volteo.t0 i { font-size: 17px; }
+.tesela.volteo b { font: 600 20px/1.15 var(--serif); font-style: normal; }
+.tesela.volteo.t0 b { font-size: 32px; }
+
+/* Los negocios que empezaron aquí */
+.cn-negocios { display: grid; gap: 16px; }
+.ng-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.ng-t { display: flex; flex-direction: column; overflow: hidden; border-radius: var(--r); background: var(--surface); box-shadow: var(--ring); }
+.ng-t .foto { display: block; width: 100%; aspect-ratio: 2 / 1; border-radius: 0; }
+.ng-t .foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ng-c { display: flex; flex-direction: column; flex: 1; padding: 12px 16px 14px; }
+.ng-c h3 { margin: 0; font: 700 13px/1.3 var(--sans); color: var(--muted); }
+.ng-m { margin-top: 4px; font: 700 clamp(25px, 3vw, 31px)/1.12 var(--sans); letter-spacing: -.015em; color: var(--ink); }
+.ng-u { font: 600 12.5px/1.3 var(--sans); color: var(--muted); }
+.ng-n { margin: 6px 0 10px; font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+.ng-c dl { margin: auto 0 0; padding-top: 10px; border-top: 1px solid var(--line); display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; font-size: 13.5px; line-height: 1.4; }
+.ng-c dt { font: 700 12px/1.5 var(--sans); color: var(--muted); }
+.ng-c dd { margin: 0; color: var(--ink-2); }
+.ng-c .credito { margin-top: 8px; }
+.ng-dos { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; align-items: start; }
+.ng-g { margin: 0; padding: 14px 16px; border-radius: var(--r); background: var(--surface); box-shadow: var(--ring); }
+.ng-b { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 10px; align-items: center; margin-top: 10px; font-size: 14px; color: var(--ink); }
+.ng-riel { display: block; }
+.ng-riel i { display: block; height: 18px; border-radius: 0 4px 4px 0; background: var(--ochre); }
+.ng-riel i.o0 { background: color-mix(in srgb, var(--ochre) 50%, var(--surface)); }
+.ng-cien { display: grid; grid-template-columns: repeat(10, 1fr); gap: 3px; max-width: 190px; margin-top: 10px; }
+.ng-cien i { aspect-ratio: 1; border-radius: 2px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 28%, transparent); }
+@media (max-width: 640px) {
+  .ng-lista, .ng-dos { grid-template-columns: minmax(0, 1fr); }
+  .ng-b { grid-template-columns: minmax(0, 1fr) auto; }
+  .ng-b .k { grid-column: 1 / -1; }
+}

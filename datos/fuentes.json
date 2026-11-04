@@ -1759,7 +1759,7 @@
   "titulo": "The Columbian Exchange: A History of Disease, Food, and Ideas",
   "publicacion": "Journal of Economic Perspectives 24(2)",
   "doi": "10.1257/jep.24.2.163",
-  "nota": "Registro comprobado; el pasaje no se pudo leer (acceso restringido)."
+  "nota": "Pasaje leído el 3 de noviembre de 2026, en la copia de la autora (kellogg.northwestern.edu): el jitomate, en el centro de las cocinas de Italia, Grecia y el Mediterráneo, y entre sus mayores consumidores, países del Medio Oriente; el chile, en la paprika de Hungría, el curry de India, el kimchi de Corea y la cocina de Sichuan, Guizhou y Hunan."
  },
  {
   "id": "atlasobscura2024cesar",
@@ -2329,5 +2329,415 @@
   "publicacion": "México, UNAM, Instituto de Investigaciones Históricas; segunda edición, pp. 17–42",
   "url": "https://historicas.unam.mx/publicaciones/publicadigital/libros/305/305_04_02_BebidasProhibidas.pdf",
   "nota": "Leído el capítulo: bebidas legales, prohibición del mezcal y estanco de Guadalajara, viñedos."
+ },
+ {
+  "id": "deanssmith2008",
+  "tipo": "articulo",
+  "autores": "Deans-Smith, S.",
+  "anio": 2008,
+  "titulo": "Tobacco Monopoly",
+  "publicacion": "Encyclopedia of Latin American History and Culture",
+  "url": "https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/tobacco-monopoly",
+  "nota": "Leída la entrada completa: peso de la renta en España y en América."
+ },
+ {
+  "id": "garateluxan2009",
+  "tipo": "articulo",
+  "autores": "Gárate Ojanguren, M. M.; Luxán Meléndez, S. de",
+  "anio": 2009,
+  "titulo": "Cuba y Nueva España: los dos pilares del tabaco español en el siglo XVIII",
+  "publicacion": "Ulúa 14, Universidad Veracruzana",
+  "url": "https://ulua.uv.mx/index.php/ulua/article/download/1310/pdf_92/6252",
+  "nota": "Leído: los epígrafes, el esquema Cuba–Nueva España, el situado para comprar tabaco y el estanco novohispano desde 1765."
+ },
+ {
+  "id": "turespana-fabrica",
+  "tipo": "oficial",
+  "autores": "Turespaña",
+  "anio": 2026,
+  "titulo": "Real Fábrica de Tabacos. Universidad de Sevilla",
+  "publicacion": "spain.info, sitio oficial de turismo de España",
+  "url": "https://www.spain.info/es/lugares-interes/real-fabrica-tabacos-universidad-sevilla/",
+  "nota": "Consultada el 3 de noviembre de 2026. Otros estudios la sitúan «entre las mayores» de Europa."
+ },
+ {
+  "id": "ccoo-tabacalera",
+  "tipo": "institucion",
+  "autores": "CC.OO.",
+  "anio": 2026,
+  "titulo": "Inventario del fondo documental de la Sección Sindical de CC.OO. de Tabacalera",
+  "publicacion": "Comisiones Obreras de Castilla y León",
+  "url": "https://castillayleon.ccoo.es/ab5d2a6b835e1e9b67051cbd6dcaba92000001.pdf",
+  "nota": "Leída la introducción histórica: de 1636 a la fusión de 1999. Año de consulta; el documento no trae fecha."
+ },
+ {
+  "id": "aficionado2007",
+  "tipo": "prensa",
+  "autores": "Cigar Aficionado",
+  "anio": 2007,
+  "titulo": "Imperial Tobacco Agrees to Acquire Altadis for $22.4 Billion",
+  "publicacion": "Cigar Aficionado, 18 de julio de 2007",
+  "url": "https://www.cigaraficionado.com/article/imperial-tobacco-agrees-to-acquire-altadis-for-224-billion-2781",
+  "nota": "Leída completa. La compra se cerró el 25 de enero de 2008, según Imperial ante la SEC."
+ },
+ {
+  "id": "marichal2006",
+  "tipo": "articulo",
+  "autores": "Marichal, C.",
+  "anio": 2006,
+  "titulo": "Mexican Cochineal and the European Demand for American Dyes, 1550–1850",
+  "publicacion": "En Topik, Marichal y Frank (eds.), From Silver to Cocaine, Duke University Press",
+  "url": "https://carlosmarichal.colmex.mx/Historia%20econ%C3%B3mica/Un%20capitulo%20olvidado.pdf",
+  "nota": "Leída la versión en español que el autor publica en su sitio: «Un capítulo olvidado del comercio internacional»."
+ },
+ {
+  "id": "dodge2024",
+  "tipo": "articulo",
+  "autores": "Dodge, C. J. G.",
+  "anio": 2024,
+  "titulo": "From Piracy to Mechanization: The Atlantic Logwood Trade, 1550–1775",
+  "publicacion": "Itinerario 49(1)",
+  "url": "https://www.cambridge.org/core/product/45B0FCE2C9850515AB4F17B2FB459C45/core-reader",
+  "nota": "Leído. El autor aclara que la esclavitud nunca fue la fuente principal de trabajo en este comercio."
+ },
+ {
+  "id": "linnean2019",
+  "tipo": "institucion",
+  "autores": "Melbourne, L.",
+  "anio": 2019,
+  "titulo": "Edmond Albius: the boy who revolutionised the vanilla industry",
+  "publicacion": "The Linnean Society of London, 16 de octubre de 2019",
+  "url": "https://linnean.org/news/2019/10/16/edmond-albius",
+  "nota": "Leído completo. Hubo polinizaciones a mano antes de Albius; la suya fue la que sirvió para las plantaciones."
+ },
+ {
+  "id": "potsdam-sisal",
+  "tipo": "institucion",
+  "autores": "Jardín Botánico de la Universidad de Potsdam",
+  "anio": 2026,
+  "titulo": "Faserproduktion (Kolonialismus im Botanischen Garten)",
+  "publicacion": "Universität Potsdam",
+  "url": "https://uni-potsdam.de/en/botanischer-garten/unser-garten/kolonialismus/faserproduktion",
+  "nota": "Consultada el 3 de noviembre de 2026. La historia de que Hindorf sacó las plantas de contrabando desde Yucatán circula sin documento; aquí se sigue la ruta por Florida."
+ },
+ {
+  "id": "evans2007",
+  "tipo": "libro",
+  "autores": "Evans, S.",
+  "anio": 2007,
+  "titulo": "Bound in Twine: The History and Ecology of the Henequen-Wheat Complex for Mexico and the American and Canadian Plains, 1880–1950",
+  "publicacion": "Texas A&M University Press",
+  "url": "https://www.tamupress.com/book/9781623490478/bound-in-twine/",
+  "nota": "Leídos la descripción de la editorial y el índice, no el libro completo."
+ },
+ {
+  "id": "alston2008",
+  "tipo": "articulo",
+  "autores": "Alston, L.; Mattiace, S.; Nonnenmacher, T.",
+  "anio": 2008,
+  "titulo": "Coercion, Culture and Debt Contracts: The Henequen Industry in Yucatan, Mexico, 1870–1915",
+  "publicacion": "NBER Working Paper 13852; versión final en Journal of Economic History, 2009",
+  "url": "https://www.nber.org/papers/w13852",
+  "nota": "Leído el resumen."
+ },
+ {
+  "id": "ramirez2008",
+  "tipo": "articulo",
+  "autores": "Ramírez Zavala, A. L.",
+  "anio": 2008,
+  "titulo": "Reseña de Raquel Padilla Ramos, Progreso y libertad. Los yaquis en la víspera de la repatriación",
+  "publicacion": "Región y Sociedad XX(41)",
+  "url": "https://www.scielo.org.mx/pdf/regsoc/v20n41/v20n41a10.pdf",
+  "nota": "Leída completa."
+ },
+ {
+  "id": "armstrongnelles1984",
+  "tipo": "articulo",
+  "autores": "Armstrong, C.; Nelles, H. V.",
+  "anio": 1984,
+  "titulo": "A Curious Capital Flow: Canadian Investment in Mexico, 1902–1910",
+  "publicacion": "Business History Review 58(2)",
+  "doi": "10.2307/3115047",
+  "nota": "Leído el resumen."
+ },
+ {
+  "id": "french1981",
+  "tipo": "articulo",
+  "autores": "French, W. E.",
+  "anio": 1981,
+  "titulo": "The nature of Canadian investment in Mexico, 1902–1915",
+  "publicacion": "Tesis de maestría, Universidad de Calgary",
+  "url": "https://ucalgary.scholaris.ca/handle/1880/22194",
+  "nota": "Leído el resumen."
+ },
+ {
+  "id": "viqueira2003",
+  "tipo": "articulo",
+  "autores": "Viqueira Landa, J.",
+  "anio": 2003,
+  "titulo": "¿Reorganización o desorganización de la industria eléctrica mexicana?",
+  "publicacion": "Coloquio Energía, reformas institucionales y desarrollo en América Latina, UNAM",
+  "url": "https://www.depfe.unam.mx/p-cientifica/coloquio-erdal/13DJacintoViqueiraLtt.pdf",
+  "nota": "Leído el pasaje sobre 1937–1960."
+ },
+ {
+  "id": "se2024canada",
+  "tipo": "oficial",
+  "autores": "Secretaría de Economía, Dirección General de Inversión Extranjera",
+  "anio": 2024,
+  "titulo": "Inversión directa de Canadá en México",
+  "publicacion": "Gobierno de México, marzo de 2024",
+  "url": "https://www.gob.mx/cms/uploads/attachment/file/917815/Distribucion_de_inversion_de_Canad__2024_1T_VN.pdf",
+  "nota": "Leída la lámina de número de empresas. Cuenta personas morales y sociedades mexicanas, no minas."
+ },
+ {
+  "id": "vanguardia2024",
+  "tipo": "prensa",
+  "autores": "Vanguardia",
+  "anio": 2024,
+  "titulo": "Empresarios de industria minera canadiense invertirían 12 mil mdd",
+  "publicacion": "Vanguardia, 22 de octubre de 2024",
+  "url": "https://vanguardia.com.mx/dinero/empresarios-de-industria-minera-canadiense-invertirian-12-mil-mdd-CH13727454",
+  "nota": "La cifra viene de Data México, de la Secretaría de Economía; no pude abrir ese portal, así que se cita la nota."
+ },
+ {
+  "id": "alatorre2023",
+  "tipo": "prensa",
+  "autores": "Alatorre Campos, A. E.",
+  "anio": 2023,
+  "titulo": "To What Extent is Foreign Capital in Mexico's Mining Sector?",
+  "publicacion": "Mexico Business News, 25 de abril de 2023",
+  "url": "https://mexicobusiness.news/mining/news/what-extent-foreign-capital-mexicos-mining-sector",
+  "nota": "Leído. Usa el informe de la Cámara Minera de México con datos de 2021. No separa por país: las canadienses son parte de esa cifra."
+ },
+ {
+  "id": "gsilver2022",
+  "tipo": "institucion",
+  "autores": "Guanajuato Silver Company",
+  "anio": 2022,
+  "titulo": "GSilver Furthers Consolidation of the Guanajuato Mining District",
+  "publicacion": "Comunicado de la empresa, 4 de agosto de 2022",
+  "url": "https://gsilver.com/news/2022c/794-ilverlosescquisitionofreatanthersexicanin20220804",
+  "nota": "Leído completo. El dato de un tercio de la plata mundial es de la propia empresa."
+ },
+ {
+  "id": "miningwatch2018",
+  "tipo": "institucion",
+  "autores": "MiningWatch Canada",
+  "anio": 2018,
+  "titulo": "Declaración sobre el caso de Mariano Abarca",
+  "publicacion": "MiningWatch Canada, 26 de noviembre de 2018",
+  "url": "https://miningwatch.ca/node/10058",
+  "nota": "Leído completo. Es una organización que acompaña a la familia. Los vínculos con la empresa y el papel de la embajada son alegatos, no hechos probados."
+ },
+ {
+  "id": "expansion2022",
+  "tipo": "prensa",
+  "autores": "Expansión Política",
+  "anio": 2022,
+  "titulo": "La SCJN ampara a comunidades indígenas y frena concesión minera en Puebla",
+  "publicacion": "Expansión, 17 de febrero de 2022",
+  "url": "https://politica.expansion.mx/mexico/2022/02/17/scjn-amparo-a-comunidades-indigenas-y-freno-concesion-minera-en-puebla",
+  "nota": "Leído. Amparo en revisión 134/2021, Primera Sala."
+ },
+ {
+  "id": "almaden2026",
+  "tipo": "institucion",
+  "autores": "Almaden Minerals",
+  "anio": 2026,
+  "titulo": "Almaden Provides Update on Arbitration Process with Mexico",
+  "publicacion": "Comunicado de la empresa, 21 de mayo de 2026",
+  "url": "https://www.bnnbloomberg.ca/press-releases/2026/05/21/almaden-provides-update-on-arbitration-process-with-mexico/",
+  "nota": "Leído. La cifra es lo que reclama la empresa, no lo que un tribunal le haya concedido."
+ },
+ {
+  "id": "gaceta2021",
+  "tipo": "oficial",
+  "autores": "Cámara de Diputados",
+  "anio": 2021,
+  "titulo": "Gaceta Parlamentaria, 13 de enero de 2021, anexo III",
+  "publicacion": "Gaceta Parlamentaria",
+  "url": "https://gaceta.diputados.gob.mx/Gaceta/64/2021/ene/20210113-III.html",
+  "nota": "Leída la proposición, que cita la revisión de la Auditoría Superior de la Federación: 7,100 millones de pesos de 1.23 billones. Son solo los derechos, no otros impuestos; en 2014 se crearon derechos nuevos."
+ },
+ {
+  "id": "zuniga2014",
+  "tipo": "articulo",
+  "autores": "Zúñiga Alegría, J. G.; Castillo López, J. A.",
+  "anio": 2014,
+  "titulo": "Minería y propiedad del suelo y del subsuelo en México",
+  "publicacion": "Alegatos 87, pp. 403–418",
+  "url": "https://alegatos.azc.uam.mx/index.php/ra/article/view/111/104",
+  "nota": "Leído el pasaje del oro y la plata de 1521–1830 y 2000–2010. Cuenta toda la extracción, no solo la de empresas extranjeras."
+ },
+ {
+  "id": "newsmada2023",
+  "tipo": "prensa",
+  "autores": "Newsmada",
+  "anio": 2023,
+  "titulo": "Exportación de vainilla de Madagascar en 2022",
+  "publicacion": "Newsmada, 15 de septiembre de 2023",
+  "url": "https://newsmada.com/?p=49099",
+  "nota": "Leído. Cita al Banco Central de Madagascar: 543,654,000 dólares y 2,268 toneladas."
+ },
+ {
+  "id": "hansard1958",
+  "tipo": "oficial",
+  "autores": "Cámara de los Comunes del Reino Unido",
+  "anio": 1958,
+  "titulo": "Written answers: Economic Development, 21 de febrero de 1958",
+  "publicacion": "Hansard",
+  "url": "https://api.parliament.uk/historic-hansard/written-answers/1958/feb/21/economic-development",
+  "nota": "Leída la respuesta de John Profumo: el sisal de Tanganica pasó de £5,470,000 a £10,820,000 entre 1947 y 1956."
+ },
+ {
+  "id": "historicalmx-henequen",
+  "tipo": "base",
+  "autores": "Historical MX",
+  "titulo": "Henequén en Yucatán",
+  "publicacion": "Historical MX",
+  "url": "https://historicalmx.org/items/show/137",
+  "nota": "Leído. Da las pacas de 1915 citando a Sterling Evans.",
+  "anio": "s. f."
+ },
+ {
+  "id": "villalpando2021",
+  "tipo": "prensa",
+  "autores": "Villalpando, J. M.",
+  "anio": 2021,
+  "titulo": "Adolfo López Mateos y la industria eléctrica",
+  "publicacion": "Revista Abogacía, 29 de marzo de 2021",
+  "url": "https://www.revistaabogacia.com/adolfo-lopez-mateos-y-la-industria-electrica/",
+  "nota": "Leído. Da los 52 millones de dólares y el precio de $20 contra $16 en el mercado."
+ },
+ {
+  "id": "fernandez2023",
+  "tipo": "articulo",
+  "autores": "Fernández Gallego, A.",
+  "anio": 2023,
+  "titulo": "«Un timbre de gloria»: los lazos institucionales y discursivos entre el Consejo Superior de Investigaciones Científicas y América Latina durante el franquismo (1939-1975)",
+  "publicacion": "Revista de Historia 30",
+  "url": "https://dialnet.unirioja.es/descarga/articulo/9189008.pdf",
+  "nota": "Leídos los pasajes sobre el Consejo de la Hispanidad y el uso del pasado americano."
+ },
+ {
+  "id": "navarrete-sm",
+  "tipo": "consulta",
+  "autores": "Navarrete Linares, F.",
+  "titulo": "México sin mestizaje",
+  "publicacion": "Instituto de Investigaciones Históricas, UNAM (conferencia)",
+  "url": "https://filosoficas.unam.mx/docs/608/files/Navarrete,%20Me%cc%81xico%20sin%20mestizaje.pdf",
+  "nota": "Leído. El texto no da fecha.",
+  "anio": "s. f."
+ },
+ {
+  "id": "navarrete2020",
+  "tipo": "prensa",
+  "autores": "Navarrete, F.",
+  "anio": 2020,
+  "titulo": "The Myth of Mestizaje",
+  "publicacion": "Los Angeles Review of Books, 27 de noviembre de 2020",
+  "url": "https://lareviewofbooks.org/article/the-myth-of-mestizaje/",
+  "nota": "Leído el extracto de México racista, traducido por Ellen Jones. Nombra a Vasconcelos y la «raza cósmica», pero no da el año de su libro, 1925."
+ },
+ {
+  "id": "ley1987",
+  "tipo": "oficial",
+  "autores": "Cortes Generales de España",
+  "anio": 1987,
+  "titulo": "Ley 18/1987, que establece el día de la Fiesta Nacional de España en el 12 de octubre",
+  "publicacion": "Boletín Oficial del Estado, 8 de octubre de 1987",
+  "url": "https://www.boe.es/boe/dias/1987/10/08/pdfs/A30149-30149.pdf",
+  "nota": "Leída."
+ },
+ {
+  "id": "bonfil-resena",
+  "tipo": "articulo",
+  "autores": "Revista Iztapalapa",
+  "titulo": "Reseña de México profundo, una civilización negada, de Guillermo Bonfil Batalla",
+  "publicacion": "Revista Iztapalapa",
+  "url": "https://revistaiztapalapa.izt.uam.mx/index.php/izt/article/download/927/1081/3216",
+  "nota": "Leída la reseña, no el libro.",
+  "anio": "s. f."
+ },
+ {
+  "id": "lp2010",
+  "tipo": "primaria",
+  "autores": "León-Portilla, M.",
+  "anio": 2010,
+  "titulo": "Discurso de investidura como doctor honoris causa",
+  "publicacion": "Universidad Complutense de Madrid, 29 de enero de 2010",
+  "url": "https://www.ucm.es/data/cont/docs/35-2019-01-31-3-2013-11-25-León-Portillo, Miguel Discurso (29 de enero de 2010).pdf",
+  "nota": "Leído. León-Portilla cuenta las críticas a la expresión que él defendió."
+ },
+ {
+  "id": "dof1992",
+  "tipo": "oficial",
+  "autores": "Diario Oficial de la Federación",
+  "anio": 1992,
+  "titulo": "Decreto por el que se reforma el artículo 4º de la Constitución",
+  "publicacion": "Diario Oficial de la Federación, 28 de enero de 1992",
+  "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/dof/CPEUM_ref_122_28ene92.pdf",
+  "nota": "Leído."
+ },
+ {
+  "id": "diarioleon2014",
+  "tipo": "prensa",
+  "autores": "Diario de León",
+  "anio": 2014,
+  "titulo": "La Corona en frases",
+  "publicacion": "Diario de León, 18 de junio de 2014",
+  "url": "https://www.diariodeleon.es/sociedad/140618/712837/corona-frases.html",
+  "nota": "Leído. Recoge el discurso del 23 de abril de 2001, en la entrega del Premio Cervantes."
+ },
+ {
+  "id": "villacanas2019",
+  "tipo": "prensa",
+  "autores": "Zas Marcos, M.",
+  "anio": 2019,
+  "titulo": "Entrevista a José Luis Villacañas",
+  "publicacion": "eldiario.es, 24 de junio de 2019",
+  "url": "https://www.eldiario.es/cultura/historia/imperiofobia-abderraman-iii-barbaridad_128_1493640.amp.html",
+  "nota": "Leída."
+ },
+ {
+  "id": "madrid2021",
+  "tipo": "oficial",
+  "autores": "Comunidad de Madrid",
+  "anio": 2021,
+  "titulo": "Discurso de Isabel Díaz Ayuso en Washington, 30 de septiembre de 2021",
+  "publicacion": "Comunidad de Madrid",
+  "url": "https://www.comunidad.madrid/node/61223",
+  "nota": "Leído."
+ },
+ {
+  "id": "expansion2021yaqui",
+  "tipo": "prensa",
+  "autores": "Expansión Política",
+  "anio": 2021,
+  "titulo": "AMLO pide perdón a pueblos yaquis y gobierno ofrece tierras, agua y obras",
+  "publicacion": "Expansión Política, 28 de septiembre de 2021",
+  "url": "https://politica.expansion.mx/presidencia/2021/09/28/amlo-pide-perdon-a-pueblos-yaquis-y-gobierno-ofrece-tierras-agua-y-obras",
+  "nota": "Leído."
+ },
+ {
+  "id": "lara2026",
+  "tipo": "prensa",
+  "autores": "Lara López, U.",
+  "anio": 2026,
+  "titulo": "Derechos indígenas y afromexicanos: del reconocimiento a la garantía",
+  "publicacion": "Crónica, 21 de agosto de 2026",
+  "url": "https://www.cronica.com.mx/opinion/2026/08/21/derechos-indigenas-y-afromexicanos-del-reconocimiento-a-la-garantia/",
+  "nota": "Leído. Es una columna de opinión; cita el texto de la reforma de septiembre de 2024."
+ },
+ {
+  "id": "tres-culturas",
+  "tipo": "base",
+  "autores": "Wikipedia en español",
+  "titulo": "Plaza de las Tres Culturas",
+  "publicacion": "Wikipedia",
+  "url": "https://es.wikipedia.org/wiki/Plaza_de_las_Tres_Culturas",
+  "nota": "Leído. Transcribe la placa, frente a la iglesia de Santiago. No dice quién la puso ni cuándo; la página tampoco da fuente.",
+  "anio": "s. f."
  }
 ]
